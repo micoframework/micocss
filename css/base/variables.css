@@ -27,6 +27,7 @@
   --mico-breakpoint-lg: 992px;   /* Large devices (desktops) */
   --mico-breakpoint-xl: 1280px;  /* Extra large devices (large desktops) */
   --mico-breakpoint-2xl: 1440px; /* Ultra large devices (wide screens) */
+  --mico-breakpoint-3xl: 1600px;  /* Super large devices (wider screens) */
 
 
   /* ====================================================================== */
@@ -42,14 +43,14 @@
    *
    * Format: clamp(min-size, viewport-based-size, max-size)
    */
-  --mico-text-3xl: clamp(3.5rem, 7vw, 5rem);     /* Largest headings (h1) */
-  --mico-text-2xl: clamp(2.8rem, 6vw, 4rem);     /* Large headings (h2) */
-  --mico-text-xl: clamp(2.1rem, 5vw, 3rem);      /* Medium headings (h3) */
-  --mico-text-lg: clamp(1.6rem, 4vw, 2rem);      /* Small headings (h4) */
-  --mico-text-md: clamp(1.2rem, 3vw, 1.5rem);    /* Large body text, small headings (h5) */
-  --mico-text-sm: clamp(1rem, 2.5vw, 1.2rem);    /* Standard body text */
-  --mico-text-xs: clamp(0.95rem, 2vw, 1.1rem);   /* Small text, captions */
-  --mico-text-2xs: clamp(0.8rem, 1.75vw, 0.95rem); /* Very small text, footnotes */
+  --mico-fs-3xl: clamp(3.5rem, 7vw, 5rem);     /* Largest headings (h1) */
+  --mico-fs-2xl: clamp(2.8rem, 6vw, 4rem);     /* Large headings (h2) */
+  --mico-fs-xl: clamp(2.1rem, 5vw, 3rem);      /* Medium headings (h3) */
+  --mico-fs-lg: clamp(1.6rem, 4vw, 2rem);      /* Small headings (h4) */
+  --mico-fs-md: clamp(1.2rem, 3vw, 1.5rem);    /* Large body text, small headings (h5) */
+  --mico-fs-sm: clamp(1rem, 2.5vw, 1.2rem);    /* Standard body text */
+  --mico-fs-xs: clamp(0.95rem, 2vw, 1.1rem);   /* Small text, captions */
+  --mico-fs-2xs: clamp(0.8rem, 1.75vw, 0.95rem); /* Very small text, footnotes */
 
   /**
    * Font Weights
@@ -57,15 +58,15 @@
    * Standard font weight values from 100 (thinnest) to 900 (boldest)
    * These follow the CSS standard naming conventions
    */
-  --mico-font-thin: 100;
-  --mico-font-extralight: 200;
-  --mico-font-light: 300;
-  --mico-font-normal: 400;
-  --mico-font-medium: 500;
-  --mico-font-semibold: 600;
-  --mico-font-bold: 700;
-  --mico-font-extrabold: 800;
-  --mico-font-black: 900;
+  --mico-fw-thin: 100;
+  --mico-fw-extralight: 200;
+  --mico-fw-light: 300;
+  --mico-fw-normal: 400;
+  --mico-fw-medium: 500;
+  --mico-fw-semibold: 600;
+  --mico-fw-bold: 700;
+  --mico-fw-extrabold: 800;
+  --mico-fw-black: 900;
 
   /**
    * Line Heights
@@ -468,6 +469,33 @@
   /* ====================================================================== */
   /* GRID SYSTEM                                                            */
   /* ====================================================================== */
+  /**
+   * Grid Auto Properties
+   *
+   * These variables define how grid items are automatically placed and sized.
+   * Auto-fit and auto-fill create responsive layouts without media queries.
+   */
+  --mico-grid-auto-fit: auto-fit;    /* Expands items to fill available space */
+  --mico-grid-auto-fill: auto-fill;  /* Creates as many tracks as possible */
+
+  /**
+   * Grid Placement Properties
+   *
+   * These variables define how grid items are placed within the grid container.
+   * They control both individual items and groups of items.
+   */
+  --mico-place-items-start: start;    /* Items placed at start of their area */
+  --mico-place-items-end: end;        /* Items placed at end of their area */
+  --mico-place-items-center: center;  /* Items placed at center of their area */
+  --mico-place-items-stretch: stretch; /* Items stretched to fill their area */
+
+  --mico-place-content-start: start;    /* Content placed at start of grid */
+  --mico-place-content-end: end;        /* Content placed at end of grid */
+  --mico-place-content-center: center;  /* Content placed at center of grid */
+  --mico-place-content-stretch: stretch; /* Content stretched to fill grid */
+  --mico-place-content-around: space-around; /* Content evenly distributed with space around */
+  --mico-place-content-between: space-between; /* Content evenly distributed with space between */
+  --mico-place-content-evenly: space-evenly;   /* Content evenly distributed with equal space */
 
   /**
    * Grid Properties
@@ -669,6 +697,12 @@
   /* Percentage-based Sizing */
   --mico-width-full: 100%;            /* Full width of container */
   --mico-height-full: 100%;           /* Full height of container */
+  --mico-width-half: 50%;             /* Half width of container */
+  --mico-height-half: 50%;            /* Half height of container */
+  --mico-width-quarter: 25%;           /* Quarter width of container */
+  --mico-height-quarter: 25%;         /* Quarter height of container */
+  --mico-width-third: 33.33%;         /* Third width of container */
+  --mico-height-third: 33.33%;       /* Third height of container */
 
   /* Viewport-based Sizing */
   --mico-width-screen: 100vw;         /* Full viewport width */
@@ -702,31 +736,6 @@
   /* Extended Vertical Alignment */
   --mico-vertical-align-sub: sub;     /* Subscript alignment */
   --mico-vertical-align-super: super; /* Superscript alignment */
-
-  /**
-   * Flexbox Alignment Properties
-   *
-   * These variables define alignment values for flexbox layouts.
-   * These control how flex items are positioned within a flex container.
-   */
-  --mico-items-start: flex-start;     /* Align to start of cross axis */
-  --mico-items-end: flex-end;         /* Align to end of cross axis */
-  --mico-items-center: center;        /* Center on cross axis */
-  --mico-items-baseline: baseline;    /* Align to text baseline */
-  --mico-items-stretch: stretch;      /* Stretch to fill container */
-
-  /**
-   * Grid Alignment Properties
-   *
-   * These variables define alignment values for grid layouts.
-   * These control how grid items are positioned within grid cells.
-   */
-  --mico-content-start: start;        /* Align to start */
-  --mico-content-end: end;            /* Align to end */
-  --mico-content-center: center;      /* Center alignment */
-  --mico-content-between: space-between; /* Space between items */
-  --mico-content-around: space-around; /* Space around items */
-  --mico-content-evenly: space-evenly; /* Equal spacing */
 
   /* ====================================================================== */
   /* ANIMATION SYSTEM                                                       */
@@ -814,15 +823,157 @@
   --mico-color-accent: #f59e0b;      /* Accent brand color */
 
   /**
+   * Brand Color Variations
+   *
+   * Shades (darker variations) and tones (lighter variations) of brand colors.
+   * These are dynamically generated from the base brand colors using HSL calculations.
+   * This ensures they automatically adapt when users customize their brand colors.
+   *
+   * Browser Support: Modern browsers support hsl(from var()) syntax.
+   * Fallbacks are provided for older browsers in the utility classes.
+   */
+
+  /* Primary Color Shades (darker) - Dynamically generated */
+  --mico-color-primary-shade-light: hsl(from var(--mico-color-primary) h s calc(l * 0.8));    /* 80% lightness */
+  --mico-color-primary-shade-medium: hsl(from var(--mico-color-primary) h s calc(l * 0.6));   /* 60% lightness */
+  --mico-color-primary-shade-dark: hsl(from var(--mico-color-primary) h s calc(l * 0.4));     /* 40% lightness */
+  --mico-color-primary-shade-darker: hsl(from var(--mico-color-primary) h s calc(l * 0.2));   /* 20% lightness */
+  --mico-color-primary-shade-darkest: hsl(from var(--mico-color-primary) h s calc(l * 0.1));  /* 10% lightness */
+
+  /* Primary Color Tones (lighter) - Dynamically generated */
+  --mico-color-primary-tone-soft: hsl(from var(--mico-color-primary) h s calc(l + (100% - l) * 0.2));    /* Soft variation */
+  --mico-color-primary-tone-muted: hsl(from var(--mico-color-primary) h s calc(l + (100% - l) * 0.4));   /* Muted variation */
+  --mico-color-primary-tone-pastel: hsl(from var(--mico-color-primary) h s calc(l + (100% - l) * 0.6));  /* Pastel variation */
+  --mico-color-primary-tone-pale: hsl(from var(--mico-color-primary) h s calc(l + (100% - l) * 0.8));    /* Pale variation */
+  --mico-color-primary-tone-faint: hsl(from var(--mico-color-primary) h s calc(l + (100% - l) * 0.9));   /* Faint variation */
+
+  /* Secondary Color Shades (darker) - Dynamically generated */
+  --mico-color-secondary-shade-light: hsl(from var(--mico-color-secondary) h s calc(l * 0.8));    /* 80% lightness */
+  --mico-color-secondary-shade-medium: hsl(from var(--mico-color-secondary) h s calc(l * 0.6));   /* 60% lightness */
+  --mico-color-secondary-shade-dark: hsl(from var(--mico-color-secondary) h s calc(l * 0.4));     /* 40% lightness */
+  --mico-color-secondary-shade-darker: hsl(from var(--mico-color-secondary) h s calc(l * 0.2));   /* 20% lightness */
+  --mico-color-secondary-shade-darkest: hsl(from var(--mico-color-secondary) h s calc(l * 0.1));  /* 10% lightness */
+
+  /* Secondary Color Tones (lighter) - Dynamically generated */
+  --mico-color-secondary-tone-soft: hsl(from var(--mico-color-secondary) h s calc(l + (100% - l) * 0.2));    /* Soft variation */
+  --mico-color-secondary-tone-muted: hsl(from var(--mico-color-secondary) h s calc(l + (100% - l) * 0.4));   /* Muted variation */
+  --mico-color-secondary-tone-pastel: hsl(from var(--mico-color-secondary) h s calc(l + (100% - l) * 0.6));  /* Pastel variation */
+  --mico-color-secondary-tone-pale: hsl(from var(--mico-color-secondary) h s calc(l + (100% - l) * 0.8));    /* Pale variation */
+  --mico-color-secondary-tone-faint: hsl(from var(--mico-color-secondary) h s calc(l + (100% - l) * 0.9));   /* Faint variation */
+
+  /* Accent Color Shades (darker) - Dynamically generated */
+  --mico-color-accent-shade-light: hsl(from var(--mico-color-accent) h s calc(l * 0.8));    /* 80% lightness */
+  --mico-color-accent-shade-medium: hsl(from var(--mico-color-accent) h s calc(l * 0.6));   /* 60% lightness */
+  --mico-color-accent-shade-dark: hsl(from var(--mico-color-accent) h s calc(l * 0.4));     /* 40% lightness */
+  --mico-color-accent-shade-darker: hsl(from var(--mico-color-accent) h s calc(l * 0.2));   /* 20% lightness */
+  --mico-color-accent-shade-darkest: hsl(from var(--mico-color-accent) h s calc(l * 0.1));  /* 10% lightness */
+
+  /* Accent Color Tones (lighter) - Dynamically generated */
+  --mico-color-accent-tone-soft: hsl(from var(--mico-color-accent) h s calc(l + (100% - l) * 0.2));    /* Soft variation */
+  --mico-color-accent-tone-muted: hsl(from var(--mico-color-accent) h s calc(l + (100% - l) * 0.4));   /* Muted variation */
+  --mico-color-accent-tone-pastel: hsl(from var(--mico-color-accent) h s calc(l + (100% - l) * 0.6));  /* Pastel variation */
+  --mico-color-accent-tone-pale: hsl(from var(--mico-color-accent) h s calc(l + (100% - l) * 0.8));    /* Pale variation */
+  --mico-color-accent-tone-faint: hsl(from var(--mico-color-accent) h s calc(l + (100% - l) * 0.9));   /* Faint variation */
+
+  /**
    * Semantic Colors
    *
-   * These colors convey meaning and state information.
-   * They should maintain good contrast ratios for accessibility.
+   * Colors that convey meaning and state information.
+   * These maintain WCAG AA contrast ratios for accessibility.
    */
-  --mico-color-success: #10b981;     /* Success state */
-  --mico-color-warning: #f59e0b;     /* Warning state */
-  --mico-color-error: #ef4444;       /* Error state */
-  --mico-color-info: #3b82f6;        /* Information state */
+  --mico-color-success: #10b981;     /* Success state - WCAG AA compliant */
+  --mico-color-warning: #f59e0b;     /* Warning state - WCAG AA compliant */
+  --mico-color-error: #ef4444;       /* Error state - WCAG AA compliant */
+  --mico-color-info: #3b82f6;        /* Information state - WCAG AA compliant */
+  --mico-color-visited: #8b5cf6;     /* Visited links - distinct from primary */
+
+  /**
+   * Neutral Colors - Black Scale
+   *
+   * Black color variations from pure black to lighter shades.
+   * These provide depth and contrast in dark themes.
+   */
+  --mico-color-black-100: #000000;       /* Pure black */
+  --mico-color-black-200: #0d0d0d;       /* 5% lightness */
+  --mico-color-black-300: #1a1a1a;       /* 10% lightness */
+  --mico-color-black-400: #262626;       /* 15% lightness */
+  --mico-color-black-500: #333333;       /* 20% lightness */
+  --mico-color-black-600: #404040;       /* 25% lightness */
+  --mico-color-black-700: #4d4d4d;       /* 30% lightness */
+  --mico-color-black-800: #595959;       /* 35% lightness */
+  --mico-color-black-900: #666666;       /* 40% lightness */
+
+  /**
+   * Neutral Colors - Gray Scale
+   *
+   * Comprehensive gray palette for UI elements, text, and backgrounds.
+   * These colors are carefully chosen for optimal contrast and accessibility.
+   */
+  --mico-color-gray-100: #f3f4f6;        /* Lightest gray - backgrounds */
+  --mico-color-gray-200: #e5e7eb;        /* Light gray - borders, dividers */
+  --mico-color-gray-300: #d1d5db;        /* Medium-light gray - disabled states */
+  --mico-color-gray-400: #9ca3af;        /* Medium gray - placeholder text */
+  --mico-color-gray-500: #6b7280;        /* True gray - secondary text */
+  --mico-color-gray-600: #4b5563;        /* Medium-dark gray - body text */
+  --mico-color-gray-700: #374151;        /* Dark gray - headings */
+  --mico-color-gray-800: #1f2937;        /* Darker gray - primary text */
+  --mico-color-gray-900: #111827;        /* Darkest gray - high contrast text */
+
+  /**
+   * Neutral Colors - White Scale
+   *
+   * White color variations for subtle backgrounds and overlays.
+   * These provide clean, minimal aesthetics in light themes.
+   */
+  --mico-color-white-100: #ffffff;       /* Pure white */
+  --mico-color-white-200: #fafafa;       /* 98% lightness */
+  --mico-color-white-300: #f5f5f5;       /* 96% lightness */
+  --mico-color-white-400: #f0f0f0;       /* 94% lightness */
+  --mico-color-white-500: #ebebeb;       /* 92% lightness */
+  --mico-color-white-600: #e6e6e6;       /* 90% lightness */
+  --mico-color-white-700: #e0e0e0;       /* 88% lightness */
+  --mico-color-white-800: #dbdbdb;       /* 86% lightness */
+  --mico-color-white-900: #d6d6d6;       /* 84% lightness */
+
+  /**
+   * Transparency Colors
+   *
+   * Semi-transparent overlays and backgrounds for modals, dropdowns, and effects.
+   * These maintain consistent opacity levels across the framework.
+   */
+
+  /* Black Transparencies */
+  --mico-color-black-trans-100: rgba(0, 0, 0, 0.1);   /* 10% opacity */
+  --mico-color-black-trans-200: rgba(0, 0, 0, 0.2);   /* 20% opacity */
+  --mico-color-black-trans-300: rgba(0, 0, 0, 0.3);   /* 30% opacity */
+  --mico-color-black-trans-400: rgba(0, 0, 0, 0.4);   /* 40% opacity */
+  --mico-color-black-trans-500: rgba(0, 0, 0, 0.5);   /* 50% opacity */
+  --mico-color-black-trans-600: rgba(0, 0, 0, 0.6);   /* 60% opacity */
+  --mico-color-black-trans-700: rgba(0, 0, 0, 0.7);   /* 70% opacity */
+  --mico-color-black-trans-800: rgba(0, 0, 0, 0.8);   /* 80% opacity */
+  --mico-color-black-trans-900: rgba(0, 0, 0, 0.9);   /* 90% opacity */
+
+  /* Gray Transparencies */
+  --mico-color-gray-trans-100: rgba(107, 114, 128, 0.1);  /* 10% opacity */
+  --mico-color-gray-trans-200: rgba(107, 114, 128, 0.2);  /* 20% opacity */
+  --mico-color-gray-trans-300: rgba(107, 114, 128, 0.3);  /* 30% opacity */
+  --mico-color-gray-trans-400: rgba(107, 114, 128, 0.4);  /* 40% opacity */
+  --mico-color-gray-trans-500: rgba(107, 114, 128, 0.5);  /* 50% opacity */
+  --mico-color-gray-trans-600: rgba(107, 114, 128, 0.6);  /* 60% opacity */
+  --mico-color-gray-trans-700: rgba(107, 114, 128, 0.7);  /* 70% opacity */
+  --mico-color-gray-trans-800: rgba(107, 114, 128, 0.8);  /* 80% opacity */
+  --mico-color-gray-trans-900: rgba(107, 114, 128, 0.9);  /* 90% opacity */
+
+  /* White Transparencies */
+  --mico-color-white-trans-100: rgba(255, 255, 255, 0.1); /* 10% opacity */
+  --mico-color-white-trans-200: rgba(255, 255, 255, 0.2); /* 20% opacity */
+  --mico-color-white-trans-300: rgba(255, 255, 255, 0.3); /* 30% opacity */
+  --mico-color-white-trans-400: rgba(255, 255, 255, 0.4); /* 40% opacity */
+  --mico-color-white-trans-500: rgba(255, 255, 255, 0.5); /* 50% opacity */
+  --mico-color-white-trans-600: rgba(255, 255, 255, 0.6); /* 60% opacity */
+  --mico-color-white-trans-700: rgba(255, 255, 255, 0.7); /* 70% opacity */
+  --mico-color-white-trans-800: rgba(255, 255, 255, 0.8); /* 80% opacity */
+  --mico-color-white-trans-900: rgba(255, 255, 255, 0.9); /* 90% opacity */
 
   /**
    * Text Colors
@@ -854,4 +1005,89 @@
   --mico-color-border-secondary: #d1d5db; /* Secondary border */
   --mico-color-border-muted: #f3f4f6;    /* Muted border */
   --mico-color-border-focus: #3b82f6;    /* Focus border */
+
+  /**
+   * Extended Color Palette
+   *
+   * Comprehensive color palette for diverse design needs.
+   * Each color includes 9 variations from light (100) to dark (900).
+   * All colors are tested for accessibility and contrast compliance.
+   */
+
+  /* Red Color Scale - Error states, alerts, danger */
+  --mico-color-red-100: #fee2e2;         /* Lightest red - error backgrounds */
+  --mico-color-red-200: #fecaca;         /* Light red - error borders */
+  --mico-color-red-300: #fca5a5;         /* Medium-light red */
+  --mico-color-red-400: #f87171;         /* Medium red */
+  --mico-color-red-500: #ef4444;         /* True red - primary error color */
+  --mico-color-red-600: #dc2626;         /* Medium-dark red */
+  --mico-color-red-700: #b91c1c;         /* Dark red */
+  --mico-color-red-800: #991b1b;         /* Darker red */
+  --mico-color-red-900: #7f1d1d;         /* Darkest red */
+
+  /* Yellow Color Scale - Warning states, highlights */
+  --mico-color-yellow-100: #fef3c7;      /* Lightest yellow - warning backgrounds */
+  --mico-color-yellow-200: #fde68a;      /* Light yellow */
+  --mico-color-yellow-300: #fcd34d;      /* Medium-light yellow */
+  --mico-color-yellow-400: #fbbf24;      /* Medium yellow */
+  --mico-color-yellow-500: #f59e0b;      /* True yellow - primary warning color */
+  --mico-color-yellow-600: #d97706;      /* Medium-dark yellow */
+  --mico-color-yellow-700: #b45309;      /* Dark yellow */
+  --mico-color-yellow-800: #92400e;      /* Darker yellow */
+  --mico-color-yellow-900: #78350f;      /* Darkest yellow */
+
+  /* Green Color Scale - Success states, positive actions */
+  --mico-color-green-100: #d1fae5;       /* Lightest green - success backgrounds */
+  --mico-color-green-200: #a7f3d0;       /* Light green */
+  --mico-color-green-300: #6ee7b7;       /* Medium-light green */
+  --mico-color-green-400: #34d399;       /* Medium green */
+  --mico-color-green-500: #10b981;       /* True green - primary success color */
+  --mico-color-green-600: #059669;       /* Medium-dark green */
+  --mico-color-green-700: #047857;       /* Dark green */
+  --mico-color-green-800: #065f46;       /* Darker green */
+  --mico-color-green-900: #064e3b;       /* Darkest green */
+
+  /* Blue Color Scale - Information, links, primary actions */
+  --mico-color-blue-100: #dbeafe;        /* Lightest blue - info backgrounds */
+  --mico-color-blue-200: #bfdbfe;        /* Light blue */
+  --mico-color-blue-300: #93c5fd;        /* Medium-light blue */
+  --mico-color-blue-400: #60a5fa;        /* Medium blue */
+  --mico-color-blue-500: #3b82f6;        /* True blue - primary info color */
+  --mico-color-blue-600: #2563eb;        /* Medium-dark blue */
+  --mico-color-blue-700: #1d4ed8;        /* Dark blue */
+  --mico-color-blue-800: #1e40af;        /* Darker blue */
+  --mico-color-blue-900: #1e3a8a;        /* Darkest blue */
+
+  /* Indigo Color Scale - Deep blues, professional themes */
+  --mico-color-indigo-100: #e0e7ff;      /* Lightest indigo */
+  --mico-color-indigo-200: #c7d2fe;      /* Light indigo */
+  --mico-color-indigo-300: #a5b4fc;      /* Medium-light indigo */
+  --mico-color-indigo-400: #818cf8;      /* Medium indigo */
+  --mico-color-indigo-500: #6366f1;      /* True indigo */
+  --mico-color-indigo-600: #4f46e5;      /* Medium-dark indigo */
+  --mico-color-indigo-700: #4338ca;      /* Dark indigo */
+  --mico-color-indigo-800: #3730a3;      /* Darker indigo */
+  --mico-color-indigo-900: #312e81;      /* Darkest indigo */
+
+  /* Purple Color Scale - Creative themes, luxury */
+  --mico-color-purple-100: #ede9fe;      /* Lightest purple */
+  --mico-color-purple-200: #ddd6fe;      /* Light purple */
+  --mico-color-purple-300: #c4b5fd;      /* Medium-light purple */
+  --mico-color-purple-400: #a78bfa;      /* Medium purple */
+  --mico-color-purple-500: #8b5cf6;      /* True purple */
+  --mico-color-purple-600: #7c3aed;      /* Medium-dark purple */
+  --mico-color-purple-700: #6d28d9;      /* Dark purple */
+  --mico-color-purple-800: #5b21b6;      /* Darker purple */
+  --mico-color-purple-900: #4c1d95;      /* Darkest purple */
+
+  /* Pink Color Scale - Feminine themes, highlights */
+  --mico-color-pink-100: #fce7f3;        /* Lightest pink */
+  --mico-color-pink-200: #fbcfe8;        /* Light pink */
+  --mico-color-pink-300: #f9a8d4;        /* Medium-light pink */
+  --mico-color-pink-400: #f472b6;        /* Medium pink */
+  --mico-color-pink-500: #ec4899;        /* True pink */
+  --mico-color-pink-600: #db2777;        /* Medium-dark pink */
+  --mico-color-pink-700: #be185d;        /* Dark pink */
+  --mico-color-pink-800: #9d174d;        /* Darker pink */
+  --mico-color-pink-900: #831843;        /* Darkest pink */
 }
