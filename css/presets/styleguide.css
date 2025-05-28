@@ -42,6 +42,31 @@ html, *, *::before, *::after {
 }
 
 /* ====================================================================== */
+/* THEME AND COLOR SYSTEM                                                */
+/* ====================================================================== */
+
+/**
+ * Base Colors
+ * Define your brand's primary, secondary, and accent colors here
+ */
+:root {
+  --mico-color-primary: var(--mico-color-primary, #3b82f6); /*Add your primary color here*/
+  --mico-color-secondary: var(--mico-color-secondary, #6b7280); /*Add your secondary color here*/
+  --mico-color-accent: var(--mico-color-accent, #f59e0b); /*Add your accent color here*/
+}
+
+
+/**
+ * Base Theme
+ * Default color and typography settings
+ */
+body {
+  background-color: var(--mico-color-bg-primary, #ffffff);
+  color: var(--mico-color-text-primary, #111827);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ====================================================================== */
 /* TYPOGRAPHY SYSTEM                                                     */
 /* ====================================================================== */
 
@@ -326,16 +351,4 @@ li {
   font-family: inherit;
 }
 
-/* ====================================================================== */
-/* THEME AND COLOR SYSTEM                                                */
-/* ====================================================================== */
 
-/**
- * Base Theme
- * Default color and typography settings
- */
-body {
-  background-color: var(--mico-color-bg-primary, #ffffff);
-  color: var(--mico-color-text-primary, #111827);
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
