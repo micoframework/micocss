@@ -83,12 +83,14 @@
   --mico-line-height-extra: 2;      /* Extra spacing */
 
   /**
-   * Letter Spacing
+   * Letter Spacing (Tracking)
    *
    * Controls the horizontal spacing between characters.
    * - Negative values bring letters closer together
    * - Positive values spread letters apart
    * - 'em' units scale with the font size
+   *
+   * Note: These variables are used by typography utility classes
    */
   --mico-letter-spacing-tighter: -0.05em;
   --mico-letter-spacing-tight: -0.025em;
@@ -96,6 +98,14 @@
   --mico-letter-spacing-wide: 0.025em;
   --mico-letter-spacing-wider: 0.05em;
   --mico-letter-spacing-widest: 0.1em;
+
+  /* Tracking aliases for utility classes compatibility */
+  --mico-tracking-tighter: var(--mico-letter-spacing-tighter);
+  --mico-tracking-tight: var(--mico-letter-spacing-tight);
+  --mico-tracking-normal: var(--mico-letter-spacing-normal);
+  --mico-tracking-wide: var(--mico-letter-spacing-wide);
+  --mico-tracking-wider: var(--mico-letter-spacing-wider);
+  --mico-tracking-widest: var(--mico-letter-spacing-widest);
 
   /**
    * Text Decoration
@@ -138,11 +148,17 @@
   --mico-size-0: 0;                 /* No spacing */
   --mico-size-1: 1px;               /* Pixel-perfect adjustments */
   --mico-size-2: 2px;               /* Minimal spacing */
+  --mico-size-3: 3px;               /* Minimal spacing */
   --mico-size-4: calc(var(--mico-size-unit) * 1);    /* 4px - Tiny spacing */
+  --mico-size-6: 6px;               /* Small spacing */
   --mico-size-8: calc(var(--mico-size-unit) * 2);    /* 8px - Extra small spacing */
+  --mico-size-10: 10px;             /* Small spacing */
   --mico-size-12: calc(var(--mico-size-unit) * 3);   /* 12px - Small spacing */
+  --mico-size-14: 14px;             /* Small spacing */
   --mico-size-16: calc(var(--mico-size-unit) * 4);   /* 16px - Default spacing */
+  --mico-size-18: 18px;             /* Medium spacing */
   --mico-size-20: calc(var(--mico-size-unit) * 5);   /* 20px - Medium spacing */
+  --mico-size-22: 22px;             /* Medium spacing */
   --mico-size-24: calc(var(--mico-size-unit) * 6);   /* 24px - Medium spacing */
   --mico-size-28: calc(var(--mico-size-unit) * 7);   /* 28px - Medium spacing */
   --mico-size-32: calc(var(--mico-size-unit) * 8);   /* 32px - Large spacing */
@@ -150,10 +166,14 @@
   --mico-size-40: calc(var(--mico-size-unit) * 10);  /* 40px - Extra large spacing */
   --mico-size-44: calc(var(--mico-size-unit) * 11);  /* 44px - Extra large spacing */
   --mico-size-48: calc(var(--mico-size-unit) * 12);  /* 48px - Extra large spacing */
+  --mico-size-52: calc(var(--mico-size-unit) * 13);  /* 52px - Extra large spacing */
   --mico-size-56: calc(var(--mico-size-unit) * 14);  /* 56px - Huge spacing */
+  --mico-size-60: calc(var(--mico-size-unit) * 15);  /* 60px - Huge spacing */
   --mico-size-64: calc(var(--mico-size-unit) * 16);  /* 64px - Huge spacing */
+  --mico-size-72: calc(var(--mico-size-unit) * 18);  /* 72px - Huge spacing */
   --mico-size-80: calc(var(--mico-size-unit) * 20);  /* 80px - Huge spacing */
   --mico-size-96: calc(var(--mico-size-unit) * 24);  /* 96px - Giant spacing */
+  --mico-size-100: calc(var(--mico-size-unit) * 25); /* 100px - Giant spacing */
   --mico-size-112: calc(var(--mico-size-unit) * 28); /* 112px - Section spacing */
   --mico-size-128: calc(var(--mico-size-unit) * 32); /* 128px - Section spacing */
   --mico-size-144: calc(var(--mico-size-unit) * 36); /* 144px - Large section spacing */
@@ -165,7 +185,7 @@
   --mico-size-240: calc(var(--mico-size-unit) * 60); /* 240px - Maximum spacing */
   --mico-size-256: calc(var(--mico-size-unit) * 64); /* 256px - Maximum spacing */
 
-  
+
   /**
    * Main & Section Fluid Spacing Gutter
    *
@@ -775,4 +795,63 @@
   --mico-transition-opacity: opacity .4s var(--mico-ease); /* Opacity only */
   --mico-transition-transform: transform .4s var(--mico-ease); /* Transform only */
   --mico-transition-box-shadow: box-shadow .4s var(--mico-ease); /* Shadow only */
+
+  /* ====================================================================== */
+  /* COLOR SYSTEM                                                           */
+  /* ====================================================================== */
+
+  /**
+   * Base Brand Colors
+   *
+   * These are the foundational brand colors that should be defined in the
+   * styleguide.css file. They are referenced here to ensure they exist
+   * for the color utility system to work properly.
+   *
+   * Note: These default values should be overridden in styleguide.css
+   */
+  --mico-color-primary: #3b82f6;     /* Primary brand color */
+  --mico-color-secondary: #6b7280;   /* Secondary brand color */
+  --mico-color-accent: #f59e0b;      /* Accent brand color */
+
+  /**
+   * Semantic Colors
+   *
+   * These colors convey meaning and state information.
+   * They should maintain good contrast ratios for accessibility.
+   */
+  --mico-color-success: #10b981;     /* Success state */
+  --mico-color-warning: #f59e0b;     /* Warning state */
+  --mico-color-error: #ef4444;       /* Error state */
+  --mico-color-info: #3b82f6;        /* Information state */
+
+  /**
+   * Text Colors
+   *
+   * Standard text colors for consistent typography.
+   * These adapt to light/dark mode automatically.
+   */
+  --mico-color-text-primary: #111827;    /* Primary text */
+  --mico-color-text-secondary: #6b7280;  /* Secondary text */
+  --mico-color-text-muted: #9ca3af;      /* Muted text */
+  --mico-color-text-inverse: #ffffff;    /* Inverse text (for dark backgrounds) */
+
+  /**
+   * Background Colors
+   *
+   * Standard background colors for consistent layouts.
+   */
+  --mico-color-bg-primary: #ffffff;      /* Primary background */
+  --mico-color-bg-secondary: #f9fafb;    /* Secondary background */
+  --mico-color-bg-muted: #f3f4f6;        /* Muted background */
+  --mico-color-bg-inverse: #111827;      /* Inverse background */
+
+  /**
+   * Border Colors
+   *
+   * Standard border colors for consistent UI elements.
+   */
+  --mico-color-border-primary: #e5e7eb;  /* Primary border */
+  --mico-color-border-secondary: #d1d5db; /* Secondary border */
+  --mico-color-border-muted: #f3f4f6;    /* Muted border */
+  --mico-color-border-focus: #3b82f6;    /* Focus border */
 }
