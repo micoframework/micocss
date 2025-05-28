@@ -1,246 +1,341 @@
-/*
- * ========================================================================== 
- * Mico CSS Framework - Style Guide                                                     
- * ========================================================================== 
+/**
+ * ==========================================================================
+ * Mico CSS Framework - Style Guide
+ * ==========================================================================
+ *
  * This file serves as the starting point for users of the Mico CSS framework.
  * It contains the base styles and design tokens that can be easily customized
  * to match your brand's needs.
- * 
- * Features:
- * - Minimal and Scalable color palette system for your brand and website colors
+ *
+ * FEATURES:
+ * - Comprehensive reset and normalization
  * - Typography system with responsive font sizes
- * - Plus many more essential customized styles
+ * - Semantic color system for brand consistency
+ * - Accessible design patterns
+ * - Responsive layout foundations
+ *
+ * CUSTOMIZATION:
+ * - Modify CSS variables in the :root section to match your brand
+ * - All utility classes will automatically adapt to your custom values
+ * - Follow WCAG guidelines for color contrast and accessibility
  */
 
-/* Box Sizing */
-html, * {
+/* ====================================================================== */
+/* FOUNDATIONAL STYLES                                                   */
+/* ====================================================================== */
+
+/**
+ * Box Sizing Reset
+ * Ensures consistent box model behavior across all elements
+ */
+html, *, *::before, *::after {
   box-sizing: border-box;
 }
 
-
-/* Default Presets - Disabled by Default */
-*,*::before,*::after{
-  margin-inline: 0 !important;
-  margin-block: 0 !important;
-  padding-inline: 0;
-  padding-block: 0;
+/**
+ * CSS Reset and Normalization
+ * Removes default browser styling for consistent cross-browser appearance
+ */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
 }
 
+/* ====================================================================== */
+/* TYPOGRAPHY SYSTEM                                                     */
+/* ====================================================================== */
 
-header{ padding-block: var(--mico-size-4); }
-
-
-img, picture, svg, video{
-  display: block;
-  max-width: 100%;
-  object-fit: cover;
-
-}
-  
-  /* Apply base typography styles */
-  body {
-    font-feature-settings: "kern" 1;
-    text-rendering: optimizeLegibility;
-    margin-inline: auto !important;
-  }
-
-  
-  h1, h2, h3, h4, h5, h6 {
-    user-select: text !important;
-    cursor: text !important;
-  }
-  
-  h1 { font-size: var(--mico-text-ultra); }
-  h2 { font-size: var(--mico-text-lg); }
-  h3 { font-size: var(--mico-text-md); }
-  h4 { font-size: var(--mico-text-sm); }
-  h5 { font-size: var(--mico-text-xs); }
-  h6 { font-size: var(--mico-text-base); }
-
-/* Paragraphs: Ensure consistent spacing between text blocks */
-p { 
-  font-weight: var(--mico-font-normal);
-  line-height: var(--mico-line-height-sm);
-  cursor: text !important;
-}
-
-p~button, p~a, span~button, span~a{
-  margin-top: var(--mico-size-20) !important;
-
-}
-
-  li {
-    display: var(--mico-display-flex);
-    list-style-type: none;
-    font-family: var(--mico-secondary-font);
-      
-  }
-
-
-  button{
-    text-decoration: none !important; /* Remove underline by default */
-    cursor: pointer;
-  }
-  
-  /* Links: Establish a consistent style for all hyperlinks */
-  a {
-    text-decoration: none !important; /* Remove underline by default */
-    cursor: pointer;
-  }
-
-  
-  a:hover, a:focus {
-    text-decoration: underline; /* Add underline on hover/focus for better UX */
-    outline-color: transparent !important;
-  }
-
-  a:visited { color: var(--mico-color-link-visited); }
-  a:active { color: var(--mico-color-link-active); }
-  
-  /* Emphasis: Ensure italic and bold text is clearly distinguishable */
-  em, i {
-    font-style: italic; /* Italic style for emphasis */
-  }
-  
-  strong, b {
-    font-weight: bold; /* Bold style for strong emphasis */
-  }
-  
-  /* Blockquotes: Create a distinct style for quoted content */
-  blockquote {
-    margin: 1em 0; /* Vertical spacing */
-    padding-left: 1em; /* Indentation */
-    border-left: 4px solid #ccc; /* Left border for visual distinction */
-    font-style: italic; /* Italic text for quotes */
-  }
-  
-  /* Code: Style inline and block code elements */
-  code, pre {
-    font-family: monospace; /* Use a monospace font for code */
-    background-color: #f4f4f4; /* Light gray background */
-    padding: 0.2em 0.4em; /* Small padding around code */
-    border-radius: 3px; /* Rounded corners */
-  }
-  
-  pre {
-    padding: 1em; /* More padding for code blocks */
-    overflow-x: auto; /* Allow horizontal scrolling for long lines */
-  }
-  
-  /* Tables: Ensure consistent and readable table styles */
-  table {
-    border-collapse: collapse; /* Combine cell borders */
-    width: 100%; /* Full width tables */
-    margin-bottom: 1em; /* Space below tables */
-  }
-  
-  th, td {
-    border: 1px solid #ccc; /* Light gray borders */
-    padding: 0.5em; /* Cell padding */
-    text-align: left; /* Left-align cell content */
-  }
-  
-  th {
-    background-color: #f4f4f4; /* Light gray background for headers */
-    font-weight: bold; /* Bold text for headers */
-  }
-  
-  /* Horizontal rule: Create a consistent separator */
-  hr {
-    border: none;
-    border-top: 1px solid #ccc; /* Light gray line */
-    margin: 1em 0; /* Vertical spacing */
-  }
-  
-  /* Images: Ensure responsive image sizing */
-  img {
-    max-width: 100%; /* Prevent images from overflowing containers */
-    height: auto; /* Maintain aspect ratio */
-  }
-
-  input{
-    margin-bottom: var(--mico-size-16) !important;
-  }
-  
-  /* Figures: Style figure elements and captions */
-  figure {
-    margin: 1em 0; /* Vertical spacing */
-  }
-  
-  figcaption {
-    font-style: italic; /* Italic style for captions */
-    text-align: center;
-  }
-
-  main, section{
-    position: relative;
-  }
-
-  section>.d-grid{
-    width: var(--mico-width-full);
-    gap: var(--mico-size-16);
-    grid-template-columns: repeat(auto-fit, minmax(var(--mico-min-column-width), 1fr));
-
-  }
-
-  section>.d-flex{
-    width: var(--mico-width-full);
-  }
-
-  .d-grid>div{
-  padding: var(--mico-size-24);    
-  }
-
-  h1~div, h2~div, h3~div, h4~div, h5~div, h6~div{
-    margin-top: var(--mico-size-16) !important;
-  
-  }
-  
-  h1~p, h2~p, h3~p, h4~p, h5~p, h6~p{
-    margin-top: var(--mico-size-16) !important;
-  
-  }
-  
-  div~h1, div~h2, div~h3, div~h4, div~h5, div~h6{
-    margin-top: var(--mico-size-8) !important;
-  
-  }
-  
-  div~p{
-    margin-top: var(--mico-size-16) !important;
-  
-  }
-  
-  main{
-  padding-block: var(--mico-padding-adaptive-y) !important;
-  }
-  
-
-/* Base styles for the body */
+/**
+ * Base Typography Settings
+ * Establishes the foundation for all text rendering
+ */
 body {
-  font-family: var(--mico-font-primary);
-  background-color: var(--mico-color-background);
-  color: var(--mico-color-text);
-  line-height: 1.5;
-  transition: background-color 0.3s, color 0.3s;
+  font-family: var(--mico-font-primary, system-ui, -apple-system, sans-serif);
+  font-feature-settings: "kern" 1;
+  text-rendering: optimizeLegibility;
+  line-height: var(--mico-line-height-normal, 1.5);
+  margin-inline: auto;
 }
 
-/* Links */
+/**
+ * Heading Styles
+ * Responsive typography scale using CSS custom properties
+ */
+h1, h2, h3, h4, h5, h6 {
+  user-select: text;
+  cursor: text;
+  font-weight: var(--mico-fw-bold, 700);
+  line-height: var(--mico-line-height-tight, 1.1);
+}
+
+h1 { font-size: var(--mico-fs-3xl, clamp(3.5rem, 7vw, 5rem)); }
+h2 { font-size: var(--mico-fs-2xl, clamp(2.8rem, 6vw, 4rem)); }
+h3 { font-size: var(--mico-fs-xl, clamp(2.1rem, 5vw, 3rem)); }
+h4 { font-size: var(--mico-fs-lg, clamp(1.6rem, 4vw, 2rem)); }
+h5 { font-size: var(--mico-fs-md, clamp(1.2rem, 3vw, 1.5rem)); }
+h6 { font-size: var(--mico-fs-sm, clamp(1rem, 2.5vw, 1.2rem)); }
+
+/**
+ * Paragraph Styles
+ * Consistent spacing and typography for body text
+ */
+p {
+  font-weight: var(--mico-fw-normal, 400);
+  line-height: var(--mico-line-height-relaxed, 1.625);
+  cursor: text;
+  font-size: var(--mico-fs-sm, clamp(1rem, 2.5vw, 1.2rem));
+}
+
+/**
+ * Interactive Element Spacing
+ * Ensures proper spacing between text and interactive elements
+ */
+p ~ button, p ~ a, span ~ button, span ~ a {
+  margin-top: var(--mico-size-20, 20px);
+}
+
+/* ====================================================================== */
+/* INTERACTIVE ELEMENTS                                                  */
+/* ====================================================================== */
+
+/**
+ * Button Styles
+ * Base styling for all button elements
+ */
+button {
+  text-decoration: none;
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  background: transparent;
+}
+
+/**
+ * Link Styles
+ * Accessible and consistent hyperlink styling
+ */
 a {
-  color: var(--mico-color-link);
+  color: var(--mico-color-primary, #3b82f6);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+a:hover, a:focus {
   text-decoration: underline;
   text-underline-offset: 0.2em;
-  transition: color 0.2s;
-}
-
-a:hover {
-  color: var(--mico-color-link-hover);
+  outline: 2px solid transparent;
 }
 
 a:visited {
-  color: var(--mico-color-link-visited);
+  color: var(--mico-color-visited, #8b5cf6);
 }
 
 a:active {
-  color: var(--mico-color-link-active);
+  color: var(--mico-color-primary-1xdark, #2563eb);
+}
+
+/* ====================================================================== */
+/* TEXT FORMATTING                                                       */
+/* ====================================================================== */
+
+/**
+ * Text Emphasis
+ * Semantic styling for emphasized text
+ */
+em, i {
+  font-style: italic;
+}
+
+strong, b {
+  font-weight: var(--mico-fw-bold, 700);
+}
+
+/**
+ * Blockquotes
+ * Distinctive styling for quoted content
+ */
+blockquote {
+  margin: var(--mico-size-16, 16px) 0;
+  padding-left: var(--mico-size-16, 16px);
+  border-left: 4px solid var(--mico-color-border-primary, #e5e7eb);
+  font-style: italic;
+  color: var(--mico-color-text-secondary, #6b7280);
+}
+
+/**
+ * Code Elements
+ * Monospace styling for code and preformatted text
+ */
+code, pre {
+  font-family: var(--mico-font-mono, 'SFMono-Regular', Menlo, Monaco, Consolas, monospace);
+  background-color: var(--mico-color-bg-muted, #f3f4f6);
+  border-radius: var(--mico-radius-sm, 2px);
+}
+
+code {
+  padding: 0.2em 0.4em;
+  font-size: 0.875em;
+}
+
+pre {
+  padding: var(--mico-size-16, 16px);
+  overflow-x: auto;
+  line-height: 1.4;
+}
+
+/* ====================================================================== */
+/* MEDIA AND CONTENT ELEMENTS                                            */
+/* ====================================================================== */
+
+/**
+ * Tables
+ * Consistent and accessible table styling
+ */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: var(--mico-size-16, 16px);
+  border-radius: var(--mico-radius-md, 4px);
+  overflow: hidden;
+}
+
+th, td {
+  border: 1px solid var(--mico-color-border-primary, #e5e7eb);
+  padding: var(--mico-size-12, 12px);
+  text-align: left;
+}
+
+th {
+  background-color: var(--mico-color-bg-secondary, #f9fafb);
+  font-weight: var(--mico-fw-semibold, 600);
+  color: var(--mico-color-text-primary, #111827);
+}
+
+/**
+ * Horizontal Rules
+ * Semantic section dividers
+ */
+hr {
+  border: none;
+  border-top: 1px solid var(--mico-color-border-primary, #e5e7eb);
+  margin: var(--mico-size-32, 32px) 0;
+}
+
+/**
+ * Media Elements
+ * Responsive images and media
+ */
+img, picture, svg, video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/**
+ * Form Elements
+ * Basic form styling
+ */
+input, textarea, select {
+  margin-bottom: var(--mico-size-16, 16px);
+  font-family: inherit;
+}
+
+/**
+ * Figures and Captions
+ * Semantic content grouping
+ */
+figure {
+  margin: var(--mico-size-24, 24px) 0;
+}
+
+figcaption {
+  font-style: italic;
+  text-align: center;
+  color: var(--mico-color-text-secondary, #6b7280);
+  font-size: var(--mico-fs-xs, 0.875rem);
+  margin-top: var(--mico-size-8, 8px);
+}
+
+/* ====================================================================== */
+/* LAYOUT AND SPACING                                                    */
+/* ====================================================================== */
+
+/**
+ * Layout Containers
+ * Base positioning for main layout elements
+ */
+main, section {
+  position: relative;
+}
+
+main {
+  padding-block: var(--mico-size-fluid-lg, clamp(16px, 8vw, 80px));
+}
+
+header {
+  padding-block: var(--mico-size-16, 16px);
+}
+
+/**
+ * Grid and Flex Layouts
+ * Responsive layout patterns
+ */
+section > .d-grid {
+  width: 100%;
+  gap: var(--mico-size-16, 16px);
+  grid-template-columns: repeat(auto-fit, minmax(var(--mico-grid-min-column-width, 200px), 1fr));
+}
+
+section > .d-flex {
+  width: 100%;
+}
+
+.d-grid > div {
+  padding: var(--mico-size-24, 24px);
+}
+
+/**
+ * Content Spacing
+ * Consistent spacing between content elements
+ */
+h1 ~ div, h2 ~ div, h3 ~ div, h4 ~ div, h5 ~ div, h6 ~ div {
+  margin-top: var(--mico-size-16, 16px);
+}
+
+h1 ~ p, h2 ~ p, h3 ~ p, h4 ~ p, h5 ~ p, h6 ~ p {
+  margin-top: var(--mico-size-16, 16px);
+}
+
+div ~ h1, div ~ h2, div ~ h3, div ~ h4, div ~ h5, div ~ h6 {
+  margin-top: var(--mico-size-32, 32px);
+}
+
+div ~ p {
+  margin-top: var(--mico-size-16, 16px);
+}
+
+/**
+ * List Styles
+ * Clean list presentation
+ */
+li {
+  display: flex;
+  list-style-type: none;
+  font-family: inherit;
+}
+
+/* ====================================================================== */
+/* THEME AND COLOR SYSTEM                                                */
+/* ====================================================================== */
+
+/**
+ * Base Theme
+ * Default color and typography settings
+ */
+body {
+  background-color: var(--mico-color-bg-primary, #ffffff);
+  color: var(--mico-color-text-primary, #111827);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }

@@ -34,92 +34,92 @@
  * Shades (darker) and tones (lighter) of the primary brand color
  */
 
-/* Primary Shade Text Colors - With fallbacks for browser compatibility */
-.text-primary-light {
-  color: #2563eb; /* Fallback for older browsers */
-  color: var(--mico-color-primary-shade-light) !important;
-}
-.text-primary-medium {
-  color: #1d4ed8; /* Fallback for older browsers */
-  color: var(--mico-color-primary-shade-medium) !important;
-}
-.text-primary-dark {
-  color: #1e40af; /* Fallback for older browsers */
-  color: var(--mico-color-primary-shade-dark) !important;
-}
-.text-primary-darker {
-  color: #1e3a8a; /* Fallback for older browsers */
-  color: var(--mico-color-primary-shade-darker) !important;
-}
-.text-primary-darkest {
-  color: #172554; /* Fallback for older browsers */
-  color: var(--mico-color-primary-shade-darkest) !important;
-}
-
-/* Primary Tone Text Colors - With fallbacks for browser compatibility */
-.text-primary-soft {
+/* Primary Tone Text Colors (lighter) - With fallbacks for browser compatibility */
+.text-primary-1xlight {
   color: #60a5fa; /* Fallback for older browsers */
-  color: var(--mico-color-primary-tone-soft) !important;
+  color: var(--mico-color-primary-1xlight) !important;
 }
-.text-primary-muted {
+.text-primary-2xlight {
   color: #93c5fd; /* Fallback for older browsers */
-  color: var(--mico-color-primary-tone-muted) !important;
+  color: var(--mico-color-primary-2xlight) !important;
 }
-.text-primary-pastel {
+.text-primary-3xlight {
   color: #bfdbfe; /* Fallback for older browsers */
-  color: var(--mico-color-primary-tone-pastel) !important;
+  color: var(--mico-color-primary-3xlight) !important;
 }
-.text-primary-pale {
+.text-primary-4xlight {
   color: #dbeafe; /* Fallback for older browsers */
-  color: var(--mico-color-primary-tone-pale) !important;
+  color: var(--mico-color-primary-4xlight) !important;
 }
-.text-primary-faint {
+.text-primary-5xlight {
   color: #eff6ff; /* Fallback for older browsers */
-  color: var(--mico-color-primary-tone-faint) !important;
+  color: var(--mico-color-primary-5xlight) !important;
 }
 
-/* Primary Shade Background Colors - With fallbacks for browser compatibility */
-.bg-primary-light {
-  background-color: #2563eb; /* Fallback for older browsers */
-  background-color: var(--mico-color-primary-shade-light) !important;
+/* Primary Shade Text Colors (darker) - With fallbacks for browser compatibility */
+.text-primary-1xdark {
+  color: #2563eb; /* Fallback for older browsers */
+  color: var(--mico-color-primary-1xdark) !important;
 }
-.bg-primary-medium {
-  background-color: #1d4ed8; /* Fallback for older browsers */
-  background-color: var(--mico-color-primary-shade-medium) !important;
+.text-primary-2xdark {
+  color: #1d4ed8; /* Fallback for older browsers */
+  color: var(--mico-color-primary-2xdark) !important;
 }
-.bg-primary-dark {
-  background-color: #1e40af; /* Fallback for older browsers */
-  background-color: var(--mico-color-primary-shade-dark) !important;
+.text-primary-3xdark {
+  color: #1e40af; /* Fallback for older browsers */
+  color: var(--mico-color-primary-3xdark) !important;
 }
-.bg-primary-darker {
-  background-color: #1e3a8a; /* Fallback for older browsers */
-  background-color: var(--mico-color-primary-shade-darker) !important;
+.text-primary-4xdark {
+  color: #1e3a8a; /* Fallback for older browsers */
+  color: var(--mico-color-primary-4xdark) !important;
 }
-.bg-primary-darkest {
-  background-color: #172554; /* Fallback for older browsers */
-  background-color: var(--mico-color-primary-shade-darkest) !important;
+.text-primary-5xdark {
+  color: #172554; /* Fallback for older browsers */
+  color: var(--mico-color-primary-5xdark) !important;
 }
 
-/* Primary Tone Background Colors - With fallbacks for browser compatibility */
-.bg-primary-soft {
+/* Primary Tone Background Colors (lighter) - With fallbacks for browser compatibility */
+.bg-primary-1xlight {
   background-color: #60a5fa; /* Fallback for older browsers */
-  background-color: var(--mico-color-primary-tone-soft) !important;
+  background-color: var(--mico-color-primary-1xlight) !important;
 }
-.bg-primary-muted {
+.bg-primary-2xlight {
   background-color: #93c5fd; /* Fallback for older browsers */
-  background-color: var(--mico-color-primary-tone-muted) !important;
+  background-color: var(--mico-color-primary-2xlight) !important;
 }
-.bg-primary-pastel {
+.bg-primary-3xlight {
   background-color: #bfdbfe; /* Fallback for older browsers */
-  background-color: var(--mico-color-primary-tone-pastel) !important;
+  background-color: var(--mico-color-primary-3xlight) !important;
 }
-.bg-primary-pale {
+.bg-primary-4xlight {
   background-color: #dbeafe; /* Fallback for older browsers */
-  background-color: var(--mico-color-primary-tone-pale) !important;
+  background-color: var(--mico-color-primary-4xlight) !important;
 }
-.bg-primary-faint {
+.bg-primary-5xlight {
   background-color: #eff6ff; /* Fallback for older browsers */
-  background-color: var(--mico-color-primary-tone-faint) !important;
+  background-color: var(--mico-color-primary-5xlight) !important;
+}
+
+/* Primary Shade Background Colors (darker) - With fallbacks for browser compatibility */
+.bg-primary-1xdark {
+  background-color: #2563eb; /* Fallback for older browsers */
+  background-color: var(--mico-color-primary-1xdark) !important;
+}
+.bg-primary-2xdark {
+  background-color: #1d4ed8; /* Fallback for older browsers */
+  background-color: var(--mico-color-primary-2xdark) !important;
+}
+.bg-primary-3xdark {
+  background-color: #1e40af; /* Fallback for older browsers */
+  background-color: var(--mico-color-primary-3xdark) !important;
+}
+.bg-primary-4xdark {
+  background-color: #1e3a8a; /* Fallback for older browsers */
+  background-color: var(--mico-color-primary-4xdark) !important;
+}
+.bg-primary-5xdark {
+  background-color: #172554; /* Fallback for older browsers */
+  background-color: var(--mico-color-primary-5xdark) !important;
 }
 
 /**
@@ -127,66 +127,66 @@
  * Shades (darker) and tones (lighter) of the secondary brand color
  */
 
-/* Secondary Shade Text Colors */
-.text-secondary-light { color: var(--mico-color-secondary-shade-light) !important; }
-.text-secondary-medium { color: var(--mico-color-secondary-shade-medium) !important; }
-.text-secondary-dark { color: var(--mico-color-secondary-shade-dark) !important; }
-.text-secondary-darker { color: var(--mico-color-secondary-shade-darker) !important; }
-.text-secondary-darkest { color: var(--mico-color-secondary-shade-darkest) !important; }
+/* Secondary Tone Text Colors (lighter) */
+.text-secondary-1xlight { color: var(--mico-color-secondary-1xlight) !important; }
+.text-secondary-2xlight { color: var(--mico-color-secondary-2xlight) !important; }
+.text-secondary-3xlight { color: var(--mico-color-secondary-3xlight) !important; }
+.text-secondary-4xlight { color: var(--mico-color-secondary-4xlight) !important; }
+.text-secondary-5xlight { color: var(--mico-color-secondary-5xlight) !important; }
 
-/* Secondary Tone Text Colors */
-.text-secondary-soft { color: var(--mico-color-secondary-tone-soft) !important; }
-.text-secondary-muted { color: var(--mico-color-secondary-tone-muted) !important; }
-.text-secondary-pastel { color: var(--mico-color-secondary-tone-pastel) !important; }
-.text-secondary-pale { color: var(--mico-color-secondary-tone-pale) !important; }
-.text-secondary-faint { color: var(--mico-color-secondary-tone-faint) !important; }
+/* Secondary Shade Text Colors (darker) */
+.text-secondary-1xdark { color: var(--mico-color-secondary-1xdark) !important; }
+.text-secondary-2xdark { color: var(--mico-color-secondary-2xdark) !important; }
+.text-secondary-3xdark { color: var(--mico-color-secondary-3xdark) !important; }
+.text-secondary-4xdark { color: var(--mico-color-secondary-4xdark) !important; }
+.text-secondary-5xdark { color: var(--mico-color-secondary-5xdark) !important; }
 
-/* Secondary Shade Background Colors */
-.bg-secondary-light { background-color: var(--mico-color-secondary-shade-light) !important; }
-.bg-secondary-medium { background-color: var(--mico-color-secondary-shade-medium) !important; }
-.bg-secondary-dark { background-color: var(--mico-color-secondary-shade-dark) !important; }
-.bg-secondary-darker { background-color: var(--mico-color-secondary-shade-darker) !important; }
-.bg-secondary-darkest { background-color: var(--mico-color-secondary-shade-darkest) !important; }
+/* Secondary Tone Background Colors (lighter) */
+.bg-secondary-1xlight { background-color: var(--mico-color-secondary-1xlight) !important; }
+.bg-secondary-2xlight { background-color: var(--mico-color-secondary-2xlight) !important; }
+.bg-secondary-3xlight { background-color: var(--mico-color-secondary-3xlight) !important; }
+.bg-secondary-4xlight { background-color: var(--mico-color-secondary-4xlight) !important; }
+.bg-secondary-5xlight { background-color: var(--mico-color-secondary-5xlight) !important; }
 
-/* Secondary Tone Background Colors */
-.bg-secondary-soft { background-color: var(--mico-color-secondary-tone-soft) !important; }
-.bg-secondary-muted { background-color: var(--mico-color-secondary-tone-muted) !important; }
-.bg-secondary-pastel { background-color: var(--mico-color-secondary-tone-pastel) !important; }
-.bg-secondary-pale { background-color: var(--mico-color-secondary-tone-pale) !important; }
-.bg-secondary-faint { background-color: var(--mico-color-secondary-tone-faint) !important; }
+/* Secondary Shade Background Colors (darker) */
+.bg-secondary-1xdark { background-color: var(--mico-color-secondary-1xdark) !important; }
+.bg-secondary-2xdark { background-color: var(--mico-color-secondary-2xdark) !important; }
+.bg-secondary-3xdark { background-color: var(--mico-color-secondary-3xdark) !important; }
+.bg-secondary-4xdark { background-color: var(--mico-color-secondary-4xdark) !important; }
+.bg-secondary-5xdark { background-color: var(--mico-color-secondary-5xdark) !important; }
 
 /**
  * Accent Color Variations
  * Shades (darker) and tones (lighter) of the accent brand color
  */
 
-/* Accent Shade Text Colors */
-.text-accent-light { color: var(--mico-color-accent-shade-light) !important; }
-.text-accent-medium { color: var(--mico-color-accent-shade-medium) !important; }
-.text-accent-dark { color: var(--mico-color-accent-shade-dark) !important; }
-.text-accent-darker { color: var(--mico-color-accent-shade-darker) !important; }
-.text-accent-darkest { color: var(--mico-color-accent-shade-darkest) !important; }
+/* Accent Tone Text Colors (lighter) */
+.text-accent-1xlight { color: var(--mico-color-accent-1xlight) !important; }
+.text-accent-2xlight { color: var(--mico-color-accent-2xlight) !important; }
+.text-accent-3xlight { color: var(--mico-color-accent-3xlight) !important; }
+.text-accent-4xlight { color: var(--mico-color-accent-4xlight) !important; }
+.text-accent-5xlight { color: var(--mico-color-accent-5xlight) !important; }
 
-/* Accent Tone Text Colors */
-.text-accent-soft { color: var(--mico-color-accent-tone-soft) !important; }
-.text-accent-muted { color: var(--mico-color-accent-tone-muted) !important; }
-.text-accent-pastel { color: var(--mico-color-accent-tone-pastel) !important; }
-.text-accent-pale { color: var(--mico-color-accent-tone-pale) !important; }
-.text-accent-faint { color: var(--mico-color-accent-tone-faint) !important; }
+/* Accent Shade Text Colors (darker) */
+.text-accent-1xdark { color: var(--mico-color-accent-1xdark) !important; }
+.text-accent-2xdark { color: var(--mico-color-accent-2xdark) !important; }
+.text-accent-3xdark { color: var(--mico-color-accent-3xdark) !important; }
+.text-accent-4xdark { color: var(--mico-color-accent-4xdark) !important; }
+.text-accent-5xdark { color: var(--mico-color-accent-5xdark) !important; }
 
-/* Accent Shade Background Colors */
-.bg-accent-light { background-color: var(--mico-color-accent-shade-light) !important; }
-.bg-accent-medium { background-color: var(--mico-color-accent-shade-medium) !important; }
-.bg-accent-dark { background-color: var(--mico-color-accent-shade-dark) !important; }
-.bg-accent-darker { background-color: var(--mico-color-accent-shade-darker) !important; }
-.bg-accent-darkest { background-color: var(--mico-color-accent-shade-darkest) !important; }
+/* Accent Tone Background Colors (lighter) */
+.bg-accent-1xlight { background-color: var(--mico-color-accent-1xlight) !important; }
+.bg-accent-2xlight { background-color: var(--mico-color-accent-2xlight) !important; }
+.bg-accent-3xlight { background-color: var(--mico-color-accent-3xlight) !important; }
+.bg-accent-4xlight { background-color: var(--mico-color-accent-4xlight) !important; }
+.bg-accent-5xlight { background-color: var(--mico-color-accent-5xlight) !important; }
 
-/* Accent Tone Background Colors */
-.bg-accent-soft { background-color: var(--mico-color-accent-tone-soft) !important; }
-.bg-accent-muted { background-color: var(--mico-color-accent-tone-muted) !important; }
-.bg-accent-pastel { background-color: var(--mico-color-accent-tone-pastel) !important; }
-.bg-accent-pale { background-color: var(--mico-color-accent-tone-pale) !important; }
-.bg-accent-faint { background-color: var(--mico-color-accent-tone-faint) !important; }
+/* Accent Shade Background Colors (darker) */
+.bg-accent-1xdark { background-color: var(--mico-color-accent-1xdark) !important; }
+.bg-accent-2xdark { background-color: var(--mico-color-accent-2xdark) !important; }
+.bg-accent-3xdark { background-color: var(--mico-color-accent-3xdark) !important; }
+.bg-accent-4xdark { background-color: var(--mico-color-accent-4xdark) !important; }
+.bg-accent-5xdark { background-color: var(--mico-color-accent-5xdark) !important; }
 
 /* ====================================================================== */
 /* NEUTRAL COLOR UTILITIES                                                */
