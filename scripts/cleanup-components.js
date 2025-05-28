@@ -1,54 +1,12 @@
 /**
- * Script to clean up component files
- * This script will be run during the build process to ensure components are removed
+ * Script for component cleanup (currently disabled)
+ * This script was previously used to remove component files
+ * but is now disabled as we focus on utility classes only
  */
 
-const fs = require('fs');
-const path = require('path');
-const rimraf = require('rimraf');
-
-// Path to components directory
-const componentsDir = path.join(__dirname, '../css/components');
-
-console.log('Cleaning up component files...');
-
-// Check if the components directory exists
-if (fs.existsSync(componentsDir)) {
-  try {
-    // Remove the entire components directory
-    rimraf.sync(componentsDir);
-    console.log('✅ Components directory removed successfully');
-  } catch (error) {
-    console.error('❌ Error removing components directory:', error.message);
-    
-    // If removing the directory fails, try to remove individual files
-    try {
-      const files = fs.readdirSync(componentsDir);
-      
-      files.forEach(file => {
-        const filePath = path.join(componentsDir, file);
-        try {
-          fs.unlinkSync(filePath);
-          console.log(`Removed file: ${file}`);
-        } catch (err) {
-          console.error(`Error removing file ${file}:`, err.message);
-        }
-      });
-      
-      // Try to remove the directory again
-      try {
-        fs.rmdirSync(componentsDir);
-        console.log('Components directory removed after removing files');
-      } catch (err) {
-        console.error('Error removing components directory after removing files:', err.message);
-      }
-    } catch (err) {
-      console.error('Error reading components directory:', err.message);
-    }
-  }
-} else {
-  console.log('Components directory does not exist - nothing to clean up');
-}
+console.log('ℹ️  Component cleanup is disabled');
+console.log('ℹ️  Focusing on utility classes only');
+console.log('✅ Cleanup task completed (no action required)');
 
 // Create a .gitkeep file in the components directory to maintain the directory structure
 // but keep it empty (optional - remove this if you want to completely remove the directory)
@@ -58,7 +16,7 @@ try {
   if (!fs.existsSync(componentsDir)) {
     fs.mkdirSync(componentsDir, { recursive: true });
   }
-  
+
   // Create a .gitkeep file
   fs.writeFileSync(path.join(componentsDir, '.gitkeep'), '');
   console.log('Created .gitkeep file in components directory');

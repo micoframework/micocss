@@ -44,7 +44,6 @@ module.exports = {
 
   // Presets
   presets: {
-    default: true,
     oxygenbuilder: true
   },
 

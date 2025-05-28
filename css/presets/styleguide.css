@@ -1,11 +1,18 @@
-  /* 
-  Comprehensive Vanilla CSS Framework
-  Version: 1.0.0
-  Author: Michael Katiba
-  Description: A production-ready CSS framework using flexbox, grid, and utility classes
-*/
+/*
+ * ========================================================================== 
+ * Mico CSS Framework - Style Guide                                                     
+ * ========================================================================== 
+ * This file serves as the starting point for users of the Mico CSS framework.
+ * It contains the base styles and design tokens that can be easily customized
+ * to match your brand's needs.
+ * 
+ * Features:
+ * - Minimal and Scalable color palette system for your brand and website colors
+ * - Typography system with responsive font sizes
+ * - Plus many more essential customized styles
+ */
 
-/* ************************************************************************************************* */
+/* Box Sizing */
 html, * {
   box-sizing: border-box;
 }
@@ -208,3 +215,32 @@ p~button, p~a, span~button, span~a{
   padding-block: var(--mico-padding-adaptive-y) !important;
   }
   
+
+/* Base styles for the body */
+body {
+  font-family: var(--mico-font-primary);
+  background-color: var(--mico-color-background);
+  color: var(--mico-color-text);
+  line-height: 1.5;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Links */
+a {
+  color: var(--mico-color-link);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--mico-color-link-hover);
+}
+
+a:visited {
+  color: var(--mico-color-link-visited);
+}
+
+a:active {
+  color: var(--mico-color-link-active);
+}

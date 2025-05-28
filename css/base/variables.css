@@ -833,47 +833,47 @@
    * Fallbacks are provided for older browsers in the utility classes.
    */
 
+     /* Primary Color Tones (lighter) - Dynamically generated */
+  --mico-color-primary-1xlight: hsl(from var(--mico-color-primary) h s calc(l + (100% - l) * 0.2));    /* Soft variation */
+  --mico-color-primary-2xlight: hsl(from var(--mico-color-primary) h s calc(l + (100% - l) * 0.4));   /* Muted variation */
+  --mico-color-primary-3xlight: hsl(from var(--mico-color-primary) h s calc(l + (100% - l) * 0.6));  /* Pastel variation */
+  --mico-color-primary-4xlight: hsl(from var(--mico-color-primary) h s calc(l + (100% - l) * 0.8));    /* Pale variation */
+  --mico-color-primary-5xlight: hsl(from var(--mico-color-primary) h s calc(l + (100% - l) * 0.9));   /* Faint variation */
+
   /* Primary Color Shades (darker) - Dynamically generated */
-  --mico-color-primary-shade-light: hsl(from var(--mico-color-primary) h s calc(l * 0.8));    /* 80% lightness */
-  --mico-color-primary-shade-medium: hsl(from var(--mico-color-primary) h s calc(l * 0.6));   /* 60% lightness */
-  --mico-color-primary-shade-dark: hsl(from var(--mico-color-primary) h s calc(l * 0.4));     /* 40% lightness */
-  --mico-color-primary-shade-darker: hsl(from var(--mico-color-primary) h s calc(l * 0.2));   /* 20% lightness */
-  --mico-color-primary-shade-darkest: hsl(from var(--mico-color-primary) h s calc(l * 0.1));  /* 10% lightness */
-
-  /* Primary Color Tones (lighter) - Dynamically generated */
-  --mico-color-primary-tone-soft: hsl(from var(--mico-color-primary) h s calc(l + (100% - l) * 0.2));    /* Soft variation */
-  --mico-color-primary-tone-muted: hsl(from var(--mico-color-primary) h s calc(l + (100% - l) * 0.4));   /* Muted variation */
-  --mico-color-primary-tone-pastel: hsl(from var(--mico-color-primary) h s calc(l + (100% - l) * 0.6));  /* Pastel variation */
-  --mico-color-primary-tone-pale: hsl(from var(--mico-color-primary) h s calc(l + (100% - l) * 0.8));    /* Pale variation */
-  --mico-color-primary-tone-faint: hsl(from var(--mico-color-primary) h s calc(l + (100% - l) * 0.9));   /* Faint variation */
-
-  /* Secondary Color Shades (darker) - Dynamically generated */
-  --mico-color-secondary-shade-light: hsl(from var(--mico-color-secondary) h s calc(l * 0.8));    /* 80% lightness */
-  --mico-color-secondary-shade-medium: hsl(from var(--mico-color-secondary) h s calc(l * 0.6));   /* 60% lightness */
-  --mico-color-secondary-shade-dark: hsl(from var(--mico-color-secondary) h s calc(l * 0.4));     /* 40% lightness */
-  --mico-color-secondary-shade-darker: hsl(from var(--mico-color-secondary) h s calc(l * 0.2));   /* 20% lightness */
-  --mico-color-secondary-shade-darkest: hsl(from var(--mico-color-secondary) h s calc(l * 0.1));  /* 10% lightness */
+  --mico-color-primary-1xdark: hsl(from var(--mico-color-primary) h s calc(l * 0.8));    /* 80% lightness */
+  --mico-color-primary-2xdark: hsl(from var(--mico-color-primary) h s calc(l * 0.6));   /* 60% lightness */
+  --mico-color-primary-3xdark: hsl(from var(--mico-color-primary) h s calc(l * 0.4));     /* 40% lightness */
+  --mico-color-primary-4xdark: hsl(from var(--mico-color-primary) h s calc(l * 0.2));   /* 20% lightness */
+  --mico-color-primary-5xdark: hsl(from var(--mico-color-primary) h s calc(l * 0.1));  /* 10% lightness */
 
   /* Secondary Color Tones (lighter) - Dynamically generated */
-  --mico-color-secondary-tone-soft: hsl(from var(--mico-color-secondary) h s calc(l + (100% - l) * 0.2));    /* Soft variation */
-  --mico-color-secondary-tone-muted: hsl(from var(--mico-color-secondary) h s calc(l + (100% - l) * 0.4));   /* Muted variation */
-  --mico-color-secondary-tone-pastel: hsl(from var(--mico-color-secondary) h s calc(l + (100% - l) * 0.6));  /* Pastel variation */
-  --mico-color-secondary-tone-pale: hsl(from var(--mico-color-secondary) h s calc(l + (100% - l) * 0.8));    /* Pale variation */
-  --mico-color-secondary-tone-faint: hsl(from var(--mico-color-secondary) h s calc(l + (100% - l) * 0.9));   /* Faint variation */
+  --mico-color-secondary-1xlight: hsl(from var(--mico-color-secondary) h s calc(l + (100% - l) * 0.2));    /* Soft variation */
+  --mico-color-secondary-2xlight: hsl(from var(--mico-color-secondary) h s calc(l + (100% - l) * 0.4));   /* Muted variation */
+  --mico-color-secondary-3xlight: hsl(from var(--mico-color-secondary) h s calc(l + (100% - l) * 0.6));  /* Pastel variation */
+  --mico-color-secondary-4xlight: hsl(from var(--mico-color-secondary) h s calc(l + (100% - l) * 0.8));    /* Pale variation */
+  --mico-color-secondary-5xlight: hsl(from var(--mico-color-secondary) h s calc(l + (100% - l) * 0.9));   /* Faint variation */
 
-  /* Accent Color Shades (darker) - Dynamically generated */
-  --mico-color-accent-shade-light: hsl(from var(--mico-color-accent) h s calc(l * 0.8));    /* 80% lightness */
-  --mico-color-accent-shade-medium: hsl(from var(--mico-color-accent) h s calc(l * 0.6));   /* 60% lightness */
-  --mico-color-accent-shade-dark: hsl(from var(--mico-color-accent) h s calc(l * 0.4));     /* 40% lightness */
-  --mico-color-accent-shade-darker: hsl(from var(--mico-color-accent) h s calc(l * 0.2));   /* 20% lightness */
-  --mico-color-accent-shade-darkest: hsl(from var(--mico-color-accent) h s calc(l * 0.1));  /* 10% lightness */
+  /* Secondary Color Shades (darker) - Dynamically generated */
+  --mico-color-secondary-1xdark: hsl(from var(--mico-color-secondary) h s calc(l * 0.8));    /* 80% lightness */
+  --mico-color-secondary-2xdark: hsl(from var(--mico-color-secondary) h s calc(l * 0.6));   /* 60% lightness */
+  --mico-color-secondary-3xdark: hsl(from var(--mico-color-secondary) h s calc(l * 0.4));     /* 40% lightness */
+  --mico-color-secondary-4xdark: hsl(from var(--mico-color-secondary) h s calc(l * 0.2));   /* 20% lightness */
+  --mico-color-secondary-5xdark: hsl(from var(--mico-color-secondary) h s calc(l * 0.1));  /* 10% lightness */
 
   /* Accent Color Tones (lighter) - Dynamically generated */
-  --mico-color-accent-tone-soft: hsl(from var(--mico-color-accent) h s calc(l + (100% - l) * 0.2));    /* Soft variation */
-  --mico-color-accent-tone-muted: hsl(from var(--mico-color-accent) h s calc(l + (100% - l) * 0.4));   /* Muted variation */
-  --mico-color-accent-tone-pastel: hsl(from var(--mico-color-accent) h s calc(l + (100% - l) * 0.6));  /* Pastel variation */
-  --mico-color-accent-tone-pale: hsl(from var(--mico-color-accent) h s calc(l + (100% - l) * 0.8));    /* Pale variation */
-  --mico-color-accent-tone-faint: hsl(from var(--mico-color-accent) h s calc(l + (100% - l) * 0.9));   /* Faint variation */
+  --mico-color-accent-1xlight: hsl(from var(--mico-color-accent) h s calc(l + (100% - l) * 0.2));    /* Soft variation */
+  --mico-color-accent-2xlight: hsl(from var(--mico-color-accent) h s calc(l + (100% - l) * 0.4));   /* Muted variation */
+  --mico-color-accent-3xlight: hsl(from var(--mico-color-accent) h s calc(l + (100% - l) * 0.6));  /* Pastel variation */
+  --mico-color-accent-4xlight: hsl(from var(--mico-color-accent) h s calc(l + (100% - l) * 0.8));    /* Pale variation */
+  --mico-color-accent-5xlight: hsl(from var(--mico-color-accent) h s calc(l + (100% - l) * 0.9));   /* Faint variation */
+
+  /* Accent Color Shades (darker) - Dynamically generated */
+  --mico-color-accent-1xdark: hsl(from var(--mico-color-accent) h s calc(l * 0.8));    /* 80% lightness */
+  --mico-color-accent-2xdark: hsl(from var(--mico-color-accent) h s calc(l * 0.6));   /* 60% lightness */
+  --mico-color-accent-3xdark: hsl(from var(--mico-color-accent) h s calc(l * 0.4));     /* 40% lightness */
+  --mico-color-accent-4xdark: hsl(from var(--mico-color-accent) h s calc(l * 0.2));   /* 20% lightness */
+  --mico-color-accent-5xdark: hsl(from var(--mico-color-accent) h s calc(l * 0.1));  /* 10% lightness */
 
   /**
    * Semantic Colors

@@ -7,7 +7,6 @@
 
 /* Base and Theming */
 @import "base/variables.css";
-@import "themes/styleguide.css";
 
 /* Core Utilities */
 @import "utils/typography/typography.css";
@@ -20,11 +19,7 @@
 @import "utils/animation/animation.css";
 @import "utils/navigation/navigation.css";
 
-/* Motion */
-@import "motion/mico.motion.css";
-
 /* Presets */
-@import "presets/default.pre.css";
 @import "presets/oxygenbuilder.pre.css";
 
 /* Accessibility */

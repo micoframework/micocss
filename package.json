@@ -6,21 +6,20 @@
   "scripts": {
     "dev": "npm run watch:css",
     "start": "npm run dev",
-    "build": "node scripts/cleanup-components.js && npm run build:css && npm run build:js",
+    "build": "npm run build:css && npm run build:variables",
     "preview": "echo \"Use a local server to preview the built files in the dist directory\"",
-    "build:css": "npm run clean && npm run ensure-dirs && postcss css/mico.css -o dist/css/mico.min.css --env production && postcss css/mico.css -o dist/css/mico.css --env development && node scripts/copy-theme.js",
-    "ensure-dirs": "node -e \"const fs = require('fs'); const path = require('path'); const dirs = ['dist/css', 'dist/css/themes', 'dist/js']; dirs.forEach(dir => { if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true }); });\"",
+    "build:css": "npm run clean && npm run ensure-dirs && postcss css/mico.css -o dist/css/mico.min.css --env production && postcss css/mico.css -o dist/css/mico.css --env development",
+    "build:variables": "node scripts/build-variables.js",
+    "ensure-dirs": "node -e \"const fs = require('fs'); const path = require('path'); const dirs = ['dist/css', 'dist/js']; dirs.forEach(dir => { if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true }); });\"",
     "build:custom": "node scripts/build-custom.js",
     "clean": "rimraf dist/css dist/js",
     "watch:css": "postcss css/mico.css -o dist/css/mico.css --watch",
     "lint:css": "stylelint \"css/**/*.css\"",
     "test": "node tests/run-tests.js",
     "test:visual": "echo \"Visual regression tests would run here\"",
-    "build:js": "node scripts/build-js.js",
     "serve": "npx serve -l 8080",
     "serve:http": "node --no-deprecation node_modules/http-server/bin/http-server . -o -c-1",
-    "demo": "npm run build && npm run serve",
-    "cleanup:components": "node scripts/cleanup-components.js"
+    "demo": "npm run build && npm run serve"
   },
   "keywords": [
     "css",
