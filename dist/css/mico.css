@@ -87,40 +87,25 @@
   --mico-fs-2xl: max(1.875rem, min(5vw, 3rem));   /* Large headings (h2) */
   --mico-fs-xl: max(1.5rem, min(4vw, 2.25rem));   /* Medium headings (h3) */
   --mico-fs-lg: max(1.25rem, min(3vw, 1.875rem)); /* Small headings (h4) */
-  --mico-fs-base: max(1rem, min(2.5vw, 1.125rem)); /* Base body text (h5, p) */
-  --mico-fs-md: var(--mico-fs-base);           /* Alias for base */
+  --mico-fs-md: max(1rem, min(2.5vw, 1.125rem));  /* Standard body text */
   --mico-fs-sm: max(0.875rem, min(2vw, 1rem));    /* Small text */
   --mico-fs-xs: max(0.75rem, min(1.5vw, 0.875rem));
-
-  /* Legacy aliases for backward compatibility */
-  --mico-fs-ultra: var(--mico-fs-9xl);
 
   /**
    * Font Weights
    *
    * Standard font weight values from 100 (thinnest) to 900 (boldest)
-   * These follow the CSS standard naming conventions
+   * Using consistent naming pattern with descriptive suffixes
    */
-  --mico-fw-100: 100;
-  --mico-fw-200: 200;
-  --mico-fw-300: 300;
-  --mico-fw-400: 400;
-  --mico-fw-500: 500;
-  --mico-fw-600: 600;
-  --mico-fw-700: 700;
-  --mico-fw-800: 800;
+  --mico-fw-100: 100;  /* Thinnest */
+  --mico-fw-200: 200;  /* Extra light */
+  --mico-fw-300: 300;  /* Light */
+  --mico-fw-400: 400;  /* Normal/Regular */
+  --mico-fw-500: 500;  /* Medium */
+  --mico-fw-600: 600;  /* Semi bold */
+  --mico-fw-700: 700;  /* Bold */
+  --mico-fw-800: 800;  /* Extra bold */
   --mico-fw-900: 900;
-
-  /* Named font weight aliases for better readability */
-  --mico-fw-thin: var(--mico-fw-100);
-  --mico-fw-extralight: var(--mico-fw-200);
-  --mico-fw-light: var(--mico-fw-300);
-  --mico-fw-normal: var(--mico-fw-400);
-  --mico-fw-medium: var(--mico-fw-500);
-  --mico-fw-semibold: var(--mico-fw-600);
-  --mico-fw-bold: var(--mico-fw-700);
-  --mico-fw-extrabold: var(--mico-fw-800);
-  --mico-fw-black: var(--mico-fw-900);
 
   /**
    * Font Stretch Properties
@@ -196,56 +181,35 @@
    * - Values 1.5-1.7 are ideal for body text for readability
    * - Larger values create more spacing for easier reading
    */
-  --mico-line-height-xs: 1;       /* Compact (headings) */
-  --mico-line-height-sm: 1.25;    /* Slightly compact */
-  --mico-line-height-base: 1.5;   /* Standard body text */
-  --mico-line-height-md: var(--mico-line-height-base); /* Alias for base */
-  --mico-line-height-lg: 1.625;   /* Slightly relaxed */
-  --mico-line-height-xl: 2;       /* Loose (easy reading) */
-  --mico-line-height-2xl: 0.75rem; /* Fixed line height for small text */
-  --mico-line-height-3xl: 1rem;    /* Fixed line height */
-  --mico-line-height-4xl: 1.25rem; /* Fixed line height */
-  --mico-line-height-5xl: 1.5rem;  /* Fixed line height */
-  --mico-line-height-6xl: 1.75rem; /* Fixed line height */
-  --mico-line-height-7xl: 2rem;    /* Fixed line height */
-  --mico-line-height-8xl: 2.25rem; /* Fixed line height */
-  --mico-line-height-9xl: 2.5rem;
+  --mico-lh-xs: 1;       /* Compact (headings) */
+  --mico-lh-sm: 1.25;    /* Slightly compact */
+  --mico-lh-md: 1.5;     /* Standard body text */
+  --mico-lh-lg: 1.625;   /* Slightly relaxed */
+  --mico-lh-xl: 2;       /* Loose (easy reading) */
+  --mico-lh-2xl: 0.75rem; /* Fixed line height for small text */
+  --mico-lh-3xl: 1rem;    /* Fixed line height */
+  --mico-lh-4xl: 1.25rem; /* Fixed line height */
+  --mico-lh-5xl: 1.5rem;  /* Fixed line height */
+  --mico-lh-6xl: 1.75rem; /* Fixed line height */
+  --mico-lh-7xl: 2rem;    /* Fixed line height */
+  --mico-lh-8xl: 2.25rem; /* Fixed line height */
+  --mico-lh-9xl: 2.5rem;
 
-  /* Legacy aliases for backward compatibility */
-  --mico-line-height-ultra: var(--mico-line-height-9xl);
 
   /**
-   * Letter Spacing (Tracking)
+   * Letter Spacing
    *
    * Controls the horizontal spacing between characters.
    * - Negative values bring letters closer together
    * - Positive values spread letters apart
    * - 'em' units scale with the font size
-   *
-   * Note: These variables are used by typography utility classes
    */
-  --mico-letter-spacing-xs: -0.05em;
-  --mico-letter-spacing-sm: -0.025em;
-  --mico-letter-spacing-md: 0em;
-  --mico-letter-spacing-lg: 0.025em;
-  --mico-letter-spacing-xl: 0.05em;
-  --mico-letter-spacing-2xl: 0.1em;
-
-  /* Tracking aliases for utility classes compatibility */
-  --mico-tracking-xs: var(--mico-letter-spacing-xs);
-  --mico-tracking-sm: var(--mico-letter-spacing-sm);
-  --mico-tracking-md: var(--mico-letter-spacing-md);
-  --mico-tracking-lg: var(--mico-letter-spacing-lg);
-  --mico-tracking-xl: var(--mico-letter-spacing-xl);
-  --mico-tracking-2xl: var(--mico-letter-spacing-2xl);
-
-  /* Additional tracking aliases for utility classes */
-  --mico-tracking-tighter: var(--mico-letter-spacing-xs);
-  --mico-tracking-tight: var(--mico-letter-spacing-sm);
-  --mico-tracking-normal: var(--mico-letter-spacing-md);
-  --mico-tracking-wide: var(--mico-letter-spacing-lg);
-  --mico-tracking-wider: var(--mico-letter-spacing-xl);
-  --mico-tracking-widest: var(--mico-letter-spacing-2xl);
+  --mico-ls-xs: -0.05em;   /* Tighter spacing */
+  --mico-ls-sm: -0.025em;  /* Slightly tighter */
+  --mico-ls-md: 0em;       /* Normal spacing */
+  --mico-ls-lg: 0.025em;   /* Slightly wider */
+  --mico-ls-xl: 0.05em;    /* Wider spacing */
+  --mico-ls-2xl: 0.1em;
 
   /**
    * Text Decoration Properties
@@ -302,12 +266,6 @@
   --mico-text-align-start: start;
   --mico-text-align-end: end;
 
-  /* Legacy aliases */
-  --mico-text-center: center;
-  --mico-text-left: left;
-  --mico-text-right: right;
-  --mico-text-justify: justify;
-
   /**
    * Text Overflow Properties
    *
@@ -328,22 +286,19 @@
   --mico-whitespace-pre-wrap: pre-wrap;
   --mico-whitespace-break-spaces: break-spaces;
 
-  /* Legacy aliases */
-  --mico-text-nowrap: nowrap;
-  --mico-text-wrap: wrap;
-  --mico-text-ellipsis: ellipsis;
+
 
   /**
    * Text Indent Properties
    *
    * Controls the indentation of the first line of text
    */
-  --mico-text-indent-0: var(--mico-value-0);
-  --mico-text-indent-xs: 1px;
-  --mico-text-indent-sm: 0.25rem;
-  --mico-text-indent-base: 0.5rem;
-  --mico-text-indent-lg: 1rem;
-  --mico-text-indent-xl: 2rem;
+  --mico-indent-0: var(--mico-value-0);
+  --mico-indent-xs: 1px;
+  --mico-indent-sm: 0.25rem;
+  --mico-indent-md: 0.5rem;
+  --mico-indent-lg: 1rem;
+  --mico-indent-xl: 2rem;
 
   /**
    * Text Shadow Properties
@@ -353,7 +308,7 @@
   --mico-text-shadow-none: var(--mico-value-none);
   --mico-text-shadow-xs: 1px 1px 2px rgba(0, 0, 0, 0.1);
   --mico-text-shadow-sm: 2px 2px 4px rgba(0, 0, 0, 0.1);
-  --mico-text-shadow-base: 4px 4px 6px rgba(0, 0, 0, 0.1);
+  --mico-text-shadow-md: 4px 4px 6px rgba(0, 0, 0, 0.1);
   --mico-text-shadow-lg: 6px 6px 8px rgba(0, 0, 0, 0.15);
 
   /**
@@ -363,7 +318,7 @@
    */
   --mico-text-stroke-xs: 1px;
   --mico-text-stroke-sm: 2px;
-  --mico-text-stroke-base: 4px;
+  --mico-text-stroke-md: 4px;
 
   /**
    * List Style Properties
@@ -1230,7 +1185,7 @@
 
   /* ====================================================================== */
   /* TYPOGRAPHY SYSTEM                                                      */
-  /* ====================================================================== */    /* Can be customized in styleguide.css */ /* Extra small text, captions */   /* 200% */  /* Fixed line height */
+  /* ====================================================================== */    /* Can be customized in styleguide.css */ /* Extra small text, captions */  /* Black/Heaviest */   /* 200% */  /* Fixed line height */    /* Widest spacing */
 
   /* ====================================================================== */
   /* SPACING SYSTEM                                                         */
@@ -1609,13 +1564,37 @@
 
 /* Core Utilities */
 
-/* Font Size Utilities */
+/* ========================================================================== */
+
+/* MICO CSS FRAMEWORK - TYPOGRAPHY UTILITIES                                 */
+
+/* ========================================================================== */
+
+/* ========================================================================== */
+
+/* FONT FAMILY UTILITIES                                                     */
+
+/* ========================================================================== */
+
+.f-sans { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important; }
+
+.f-serif { font-family: Georgia, Cambria, 'Times New Roman', Times, serif !important; }
+
+.f-mono { font-family: 'SFMono-Regular', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace !important; }
+
+.f-display { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important; }
+
+.f-body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important; }
+
+/* ========================================================================== */
+
+/* FONT SIZE UTILITIES                                                       */
+
+/* ========================================================================== */
 
 .fs-xs { font-size: max(0.75rem, min(1.5vw, 0.875rem)) !important; }
 
 .fs-sm { font-size: max(0.875rem, min(2vw, 1rem)) !important; }
-
-.fs-base { font-size: max(1rem, min(2.5vw, 1.125rem)) !important; }
 
 .fs-md { font-size: max(1rem, min(2.5vw, 1.125rem)) !important; }
 
@@ -1639,35 +1618,39 @@
 
 .fs-9xl { font-size: max(4.5rem, min(9vw, 7rem)) !important; }
 
-.fs-ultra { font-size: max(4.5rem, min(9vw, 7rem)) !important; }
+/* ========================================================================== */
 
-/* Font Weight Utilities */
+/* FONT WEIGHT UTILITIES                                                     */
 
-.fw-thin { font-weight: 100 !important; }
+/* ========================================================================== */
 
-.fw-extralight { font-weight: 200 !important; }
+.fw-100 { font-weight: 100 !important; }
 
-.fw-light { font-weight: 300 !important; }
+.fw-200 { font-weight: 200 !important; }
 
-.fw-normal { font-weight: 400 !important; }
+.fw-300 { font-weight: 300 !important; }
 
-.fw-medium { font-weight: 500 !important; }
+.fw-400 { font-weight: 400 !important; }
 
-.fw-semibold { font-weight: 600 !important; }
+.fw-500 { font-weight: 500 !important; }
 
-.fw-bold { font-weight: 700 !important; }
+.fw-600 { font-weight: 600 !important; }
 
-.fw-extrabold { font-weight: 800 !important; }
+.fw-700 { font-weight: 700 !important; }
 
-.fw-black { font-weight: 900 !important; }
+.fw-800 { font-weight: 800 !important; }
 
-/* Line Height Utilities */
+.fw-900 { font-weight: 900 !important; }
+
+/* ========================================================================== */
+
+/* LINE HEIGHT UTILITIES                                                     */
+
+/* ========================================================================== */
 
 .lh-xs { line-height: 1 !important; }
 
 .lh-sm { line-height: 1.25 !important; }
-
-.lh-base { line-height: 1.5 !important; }
 
 .lh-md { line-height: 1.5 !important; }
 
@@ -1691,288 +1674,39 @@
 
 .lh-9xl { line-height: 2.5rem !important; }
 
-/* Legacy line height utilities */
+/* ========================================================================== */
 
-.line-height-xs { line-height: 1 !important; }
-
-.line-height-sm { line-height: 1.25 !important; }
-
-.line-height-md { line-height: 1.5 !important; }
-
-.line-height-lg { line-height: 1.625 !important; }
-
-.line-height-xl { line-height: 2 !important; }
-
-.line-height-ultra { line-height: 2.5rem !important; }
-
-/* Letter Spacing Utilities */
-
-.letter-size-xs { letter-spacing: -0.05em !important; }
-
-.letter-size-sm { letter-spacing: -0.025em !important; }
-
-.letter-size-md { letter-spacing: 0em !important; }
-
-.letter-size-lg { letter-spacing: 0.025em !important; }
-
-.letter-size-xl { letter-spacing: 0.05em !important; }
-
-.letter-size-ultra { letter-spacing: 0.1em !important; }
-
-/* Text Alignment Utilities */
-
-.text-left { text-align: left !important; }
-
-.text-center { text-align: center !important; }
-
-.text-right { text-align: right !important; }
-
-.text-justify { text-align: justify !important; }
-
-/* Text Transform Utilities */
-
-.uppercase { text-transform: uppercase !important; }
-
-.lowercase { text-transform: lowercase !important; }
-
-.capitalize { text-transform: capitalize !important; }
-
-.normal-case { text-transform: none !important; }
-
-/* Text Decoration Utilities */
-
-.underline {
-  -webkit-text-decoration: underline !important;
-  text-decoration: underline !important;
-  text-underline-offset: 0.15em !important;
-  text-decoration-thickness: 0.05em !important;
-}
-
-.overline { -webkit-text-decoration: overline !important; text-decoration: overline !important; }
-
-.line-through { -webkit-text-decoration: line-through !important; text-decoration: line-through !important; }
-
-.no-underline { -webkit-text-decoration: none !important; text-decoration: none !important; }
-
-/* Font Style Utilities */
-
-.italic { font-style: italic !important; }
-
-.not-italic { font-style: normal !important; }
-
-/* Text Overflow Utilities */
-
-.truncate {
-  overflow: hidden !important;
-  text-overflow: ellipsis !important;
-  white-space: nowrap !important;
-}
-
-.overflow-ellipsis { text-overflow: ellipsis !important; }
-
-.text-clip { text-overflow: clip !important; }
-
-/* Word Break Utilities */
-
-.break-normal { word-wrap: normal !important; word-break: normal !important; }
-
-.break-words { word-wrap: break-word !important ; }
-
-.break-all { word-break: break-all !important; }
-
-/* Whitespace Utilities */
-
-.whitespace-normal { white-space: normal !important; }
-
-.whitespace-nowrap { white-space: nowrap !important; }
-
-.whitespace-pre { white-space: pre !important; }
-
-.whitespace-pre-line { white-space: pre-line !important; }
-
-.whitespace-pre-wrap { white-space: pre-wrap !important; }
-
-/* Text Direction Utilities */
-
-.text-ltr { direction: ltr !important; }
-
-.text-rtl { direction: rtl !important; }
-
-/* Vertical Alignment Utilities */
-
-.align-baseline { vertical-align: baseline !important; }
-
-.align-top { vertical-align: top !important; }
-
-.align-middle { vertical-align: middle !important; }
-
-.align-bottom { vertical-align: bottom !important; }
-
-.align-text-top { vertical-align: text-top !important; }
-
-.align-text-bottom { vertical-align: text-bottom !important; }
-
-/* Font Variant Numeric Utilities */
-
-.normal-nums { font-feature-settings: normal; font-variant-numeric: normal; }
-
-.ordinal { font-feature-settings: "ordn"; font-variant-numeric: ordinal; }
-
-.slashed-zero { font-feature-settings: "zero"; font-variant-numeric: slashed-zero; }
-
-.lining-nums { font-feature-settings: "lnum"; font-variant-numeric: lining-nums; }
-
-.oldstyle-nums { font-feature-settings: "onum"; font-variant-numeric: oldstyle-nums; }
-
-.proportional-nums { font-feature-settings: "pnum"; font-variant-numeric: proportional-nums; }
-
-.tabular-nums { font-feature-settings: "tnum"; font-variant-numeric: tabular-nums; }
-
-.diagonal-fractions { font-feature-settings: "frac"; font-variant-numeric: diagonal-fractions; }
-
-.stacked-fractions { font-feature-settings: "afrc"; font-variant-numeric: stacked-fractions; }
-
-/* Text Columns Utilities */
-
-.columns-1 { -moz-columns: 1; columns: 1; }
-
-.columns-2 { -moz-columns: 2; columns: 2; }
-
-.columns-3 { -moz-columns: 3; columns: 3; }
-
-.columns-4 { -moz-columns: 4; columns: 4; }
-
-/* Text Shadow Utilities */
-
-.text-shadow-xs { text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); }
-
-.text-shadow-sm { text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); }
-
-.text-shadow-md { text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1); }
-
-.text-shadow-none { text-shadow: none; }
-
-/* Font Smoothing Utilities */
-
-.antialiased {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.subpixel-antialiased {
-  -webkit-font-smoothing: auto;
-  -moz-osx-font-smoothing: auto;
-}
-
-/* Text Stroke Utilities */
-
-.text-stroke-1 { -webkit-text-stroke-width: 1px; }
-
-.text-stroke-2 { -webkit-text-stroke-width: 2px; }
-
-.text-stroke-4 { -webkit-text-stroke-width: 4px; }
-
-/* Writing Mode Utilities */
-
-.writing-vertical-rl { writing-mode: vertical-rl; }
-
-.writing-vertical-lr { writing-mode: vertical-lr; }
-
-.writing-horizontal-tb { writing-mode: horizontal-tb; }
-
-/* Text Indent Utilities */
-
-.indent-sm { text-indent: 1em; }
-
-.indent-md { text-indent: 2em; }
-
-.indent-lg { text-indent: 3em; }
-
-/* Hyphenation Utilities */
-
-.hyphens-auto { hyphens: auto; }
-
-.hyphens-manual { hyphens: manual; }
-
-.hyphens-none { hyphens: none; }
-
-/* Responsive Typography */
-
-@media (min-width: 640px) {
-  .sm\:text-left { text-align: left; }
-  .sm\:text-center { text-align: center; }
-  .sm\:text-right { text-align: right; }
-  /* Add more responsive classes as needed */
-}
-
-@media (min-width: 768px) {
-  .md\:text-left { text-align: left; }
-  .md\:text-center { text-align: center; }
-  .md\:text-right { text-align: right; }
-  /* Add more responsive classes as needed */
-}
-
-@media (min-width: 1024px) {
-  .lg\:text-left { text-align: left; }
-  .lg\:text-center { text-align: center; }
-  .lg\:text-right { text-align: right; }
-  /* Add more responsive classes as needed */
-}
-
-@media (min-width: 1280px) {
-  .xl\:text-left { text-align: left; }
-  .xl\:text-center { text-align: center; }
-  .xl\:text-right { text-align: right; }
-  /* Add more responsive classes as needed */
-}
-
-/* Advanced Typography Features */
-
-[data-drop-cap]::first-letter {
-  float: left;
-  font-size: 3em;
-  line-height: 0.8;
-  padding-right: 0.1em;
-  padding-top: 0.1em;
-}
-
-[data-balance-text] {
-  text-wrap: balance;
-}
-
-[data-pretty-quote]::before {
-  content: open-quote;
-}
-
-[data-pretty-quote]::after {
-  content: close-quote;
-}
-
-[data-gradient-text] {
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
+/* LETTER SPACING UTILITIES                                                  */
 
 /* ========================================================================== */
 
-/* ADDITIONAL TYPOGRAPHY UTILITIES FROM TYPOGRAPHY.MD                        */
+.ls-xs { letter-spacing: -0.05em !important; }
+
+.ls-sm { letter-spacing: -0.025em !important; }
+
+.ls-md { letter-spacing: 0em !important; }
+
+.ls-lg { letter-spacing: 0.025em !important; }
+
+.ls-xl { letter-spacing: 0.05em !important; }
+
+.ls-2xl { letter-spacing: 0.1em !important; }
 
 /* ========================================================================== */
 
-/* Font Family Utilities */
+/* FONT STYLE UTILITIES                                                      */
 
-.f-sans { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important; }
+/* ========================================================================== */
 
-.f-serif { font-family: Georgia, Cambria, 'Times New Roman', Times, serif !important; }
+.f-normal { font-style: normal !important; }
 
-.f-mono { font-family: 'SFMono-Regular', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace !important; }
+.f-italic { font-style: italic !important; }
 
-.f-display { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important; }
+/* ========================================================================== */
 
-.f-body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important; }
+/* FONT STRETCH UTILITIES                                                    */
 
-/* Font Stretch Utilities */
+/* ========================================================================== */
 
 .f-stretch-ultra-condensed { font-stretch: ultra-condensed !important; }
 
@@ -1992,61 +1726,53 @@
 
 .f-stretch-ultra-expanded { font-stretch: ultra-expanded !important; }
 
-/* Letter Spacing Utilities (Additional) */
+/* ========================================================================== */
 
-.ls-xs { letter-spacing: -0.05em !important; }
+/* TEXT ALIGNMENT UTILITIES                                                  */
 
-.ls-sm { letter-spacing: -0.025em !important; }
+/* ========================================================================== */
 
-.ls-base { letter-spacing: 0em !important; }
+.text-left { text-align: left !important; }
 
-.ls-lg { letter-spacing: 0.025em !important; }
+.text-center { text-align: center !important; }
 
-.ls-xl { letter-spacing: 0.05em !important; }
+.text-right { text-align: right !important; }
 
-/* Font Variant Ligatures Utilities */
+.text-justify { text-align: justify !important; }
 
-.common-ligatures { font-feature-settings: common-ligatures !important; font-variant-ligatures: common-ligatures !important; }
+.text-start { text-align: left !important; }
 
-.no-common-ligatures { font-feature-settings: no-common-ligatures !important; font-variant-ligatures: no-common-ligatures !important; }
+.text-end { text-align: right !important; }
 
-.discretionary-ligatures { font-feature-settings: discretionary-ligatures !important; font-variant-ligatures: discretionary-ligatures !important; }
+/* ========================================================================== */
 
-.no-discretionary-ligatures { font-feature-settings: no-discretionary-ligatures !important; font-variant-ligatures: no-discretionary-ligatures !important; }
+/* TEXT TRANSFORM UTILITIES                                                  */
 
-.historical-ligatures { font-feature-settings: historical-ligatures !important; font-variant-ligatures: historical-ligatures !important; }
+/* ========================================================================== */
 
-.no-historical-ligatures { font-feature-settings: no-historical-ligatures !important; font-variant-ligatures: no-historical-ligatures !important; }
+.text-uppercase { text-transform: uppercase !important; }
 
-.contextual-ligatures { font-feature-settings: contextual !important; font-variant-ligatures: contextual !important; }
+.text-lowercase { text-transform: lowercase !important; }
 
-.no-contextual-ligatures { font-feature-settings: no-contextual !important; font-variant-ligatures: no-contextual !important; }
+.text-capitalize { text-transform: capitalize !important; }
 
-/* Font Variant Caps Utilities */
+.text-normal-case { text-transform: none !important; }
 
-.small-caps { font-feature-settings: small-caps !important; font-variant-caps: small-caps !important; }
+/* ========================================================================== */
 
-.all-small-caps { font-feature-settings: all-small-caps !important; font-variant-caps: all-small-caps !important; }
+/* TEXT DECORATION UTILITIES                                                 */
 
-.petite-caps { font-feature-settings: petite-caps !important; font-variant-caps: petite-caps !important; }
+/* ========================================================================== */
 
-.all-petite-caps { font-feature-settings: all-petite-caps !important; font-variant-caps: all-petite-caps !important; }
+.underline { text-decoration-line: underline !important; }
 
-.unicase { font-feature-settings: unicase !important; font-variant-caps: unicase !important; }
+.overline { text-decoration-line: overline !important; }
 
-.titling-caps { font-feature-settings: titling-caps !important; font-variant-caps: titling-caps !important; }
+.line-through { text-decoration-line: line-through !important; }
 
-.normal-caps { font-feature-settings: normal !important; font-variant-caps: normal !important; }
+.no-underline { text-decoration-line: none !important; }
 
-/* Text Decoration Color Utilities */
-
-.decoration-inherit { text-decoration-color: inherit !important; }
-
-.decoration-current { text-decoration-color: currentColor !important; }
-
-.decoration-transparent { text-decoration-color: transparent !important; }
-
-/* Text Decoration Style Utilities */
+/* Text Decoration Style */
 
 .decoration-solid { text-decoration-style: solid !important; }
 
@@ -2058,7 +1784,7 @@
 
 .decoration-wavy { text-decoration-style: wavy !important; }
 
-/* Text Decoration Thickness Utilities */
+/* Text Decoration Thickness */
 
 .decoration-auto { text-decoration-thickness: auto !important; }
 
@@ -2074,7 +1800,7 @@
 
 .decoration-8 { text-decoration-thickness: 8px !important; }
 
-/* Text Underline Offset Utilities */
+/* Text Underline Offset */
 
 .underline-offset-auto { text-underline-offset: auto !important; }
 
@@ -2088,53 +1814,45 @@
 
 .underline-offset-8 { text-underline-offset: 8px !important; }
 
-/* Text Underline Position Utilities */
+/* ========================================================================== */
 
-.underline-pos-auto { text-underline-position: auto !important; }
+/* TEXT OVERFLOW UTILITIES                                                   */
 
-.underline-pos-under { text-underline-position: under !important; }
+/* ========================================================================== */
 
-.underline-pos-left { text-underline-position: left !important; }
+.text-ellipsis { text-overflow: ellipsis !important; }
 
-.underline-pos-right { text-underline-position: right !important; }
+.text-clip { text-overflow: clip !important; }
 
-/* Text Indent Utilities */
+.truncate {
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
 
-.indent-0 { text-indent: 0 !important; }
+/* ========================================================================== */
 
-.indent-xs { text-indent: 1px !important; }
+/* WHITESPACE UTILITIES                                                      */
 
-.indent-sm { text-indent: 0.25rem !important; }
+/* ========================================================================== */
 
-.indent-base { text-indent: 0.5rem !important; }
+.whitespace-normal { white-space: normal !important; }
 
-.indent-lg { text-indent: 1rem !important; }
+.whitespace-nowrap { white-space: nowrap !important; }
 
-.indent-xl { text-indent: 2rem !important; }
+.whitespace-pre { white-space: pre !important; }
 
-/* Text Orientation Utilities */
+.whitespace-pre-line { white-space: pre-line !important; }
 
-.orientation-mixed { text-orientation: mixed !important; }
-
-.orientation-upright { text-orientation: upright !important; }
-
-.orientation-sideways { text-orientation: sideways !important; }
-
-/* Text Shadow Utilities (Enhanced) */
-
-.text-shadow-lg { text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.15) !important; }
-
-/* Vertical Alignment Utilities (Additional) */
-
-.align-sub { vertical-align: sub !important; }
-
-.align-super { vertical-align: super !important; }
-
-/* Whitespace Utilities (Additional) */
+.whitespace-pre-wrap { white-space: pre-wrap !important; }
 
 .whitespace-break-spaces { white-space: break-spaces !important; }
 
-/* Word Break Utilities (Enhanced) */
+/* ========================================================================== */
+
+/* WORD BREAK UTILITIES                                                      */
+
+/* ========================================================================== */
 
 .break-normal {
   word-wrap: normal !important;
@@ -2147,57 +1865,149 @@
 
 .break-keep { word-break: keep-all !important; }
 
-/* Text Align Last Utilities */
+/* ========================================================================== */
 
-.text-align-last-auto { -moz-text-align-last: auto !important; text-align-last: auto !important; }
+/* TEXT DIRECTION UTILITIES                                                  */
 
-.text-align-last-start { -moz-text-align-last: start !important; text-align-last: start !important; }
+/* ========================================================================== */
 
-.text-align-last-end { -moz-text-align-last: end !important; text-align-last: end !important; }
+.text-ltr { direction: ltr !important; }
 
-.text-align-last-left { -moz-text-align-last: left !important; text-align-last: left !important; }
+.text-rtl { direction: rtl !important; }
 
-.text-align-last-right { -moz-text-align-last: right !important; text-align-last: right !important; }
+/* ========================================================================== */
 
-.text-align-last-center { -moz-text-align-last: center !important; text-align-last: center !important; }
+/* VERTICAL ALIGNMENT UTILITIES                                              */
 
-.text-align-last-justify { -moz-text-align-last: justify !important; text-align-last: justify !important; }
+/* ========================================================================== */
 
-/* Text Justify Utilities */
+.align-baseline { vertical-align: baseline !important; }
 
-.text-justify-auto { text-justify: auto !important; }
+.align-top { vertical-align: top !important; }
 
-.text-justify-inter-word { text-justify: inter-word !important; }
+.align-middle { vertical-align: middle !important; }
 
-.text-justify-inter-character { text-justify: inter-character !important; }
+.align-bottom { vertical-align: bottom !important; }
 
-.text-justify-none { text-justify: none !important; }
+.align-text-top { vertical-align: text-top !important; }
 
-/* User Select Utilities */
+.align-text-bottom { vertical-align: text-bottom !important; }
 
-.select-none { -webkit-user-select: none !important; -moz-user-select: none !important; user-select: none !important; }
+.align-sub { vertical-align: sub !important; }
 
-.select-text { -webkit-user-select: text !important; -moz-user-select: text !important; user-select: text !important; }
+.align-super { vertical-align: super !important; }
 
-.select-all { -webkit-user-select: all !important; -moz-user-select: all !important; user-select: all !important; }
+/* ========================================================================== */
 
-.select-auto { -webkit-user-select: auto !important; -moz-user-select: auto !important; user-select: auto !important; }
+/* TEXT INDENT UTILITIES                                                     */
 
-/* Text Alignment Utilities (Enhanced) */
+/* ========================================================================== */
 
-.text-start { text-align: left !important; }
+.indent-0 { text-indent: 0 !important; }
 
-.text-end { text-align: right !important; }
+.indent-xs { text-indent: 1px !important; }
 
-/* Text Color Utilities (Basic) */
+.indent-sm { text-indent: 0.25rem !important; }
 
-.text-inherit { color: inherit !important; }
+.indent-md { text-indent: 0.5rem !important; }
 
-.text-current { color: currentColor !important; }
+.indent-lg { text-indent: 1rem !important; }
 
-.text-transparent { color: transparent !important; }
+.indent-xl { text-indent: 2rem !important; }
 
-/* List Style Utilities */
+/* ========================================================================== */
+
+/* TEXT SHADOW UTILITIES                                                     */
+
+/* ========================================================================== */
+
+.text-shadow-none { text-shadow: none !important; }
+
+.text-shadow-xs { text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1) !important; }
+
+.text-shadow-sm { text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1) !important; }
+
+.text-shadow-md { text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1) !important; }
+
+.text-shadow-lg { text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.15) !important; }
+
+/* ========================================================================== */
+
+/* TEXT STROKE UTILITIES                                                     */
+
+/* ========================================================================== */
+
+.text-stroke-xs { -webkit-text-stroke-width: 1px !important; }
+
+.text-stroke-sm { -webkit-text-stroke-width: 2px !important; }
+
+.text-stroke-md { -webkit-text-stroke-width: 4px !important; }
+
+/* ========================================================================== */
+
+/* FONT VARIANT UTILITIES                                                    */
+
+/* ========================================================================== */
+
+/* Font Variant Numeric */
+
+.font-variant-normal { font-feature-settings: normal !important; font-variant-numeric: normal !important; }
+
+.font-variant-ordinal { font-feature-settings: ordinal !important; font-variant-numeric: ordinal !important; }
+
+.font-variant-slashed-zero { font-feature-settings: slashed-zero !important; font-variant-numeric: slashed-zero !important; }
+
+.font-variant-lining-nums { font-feature-settings: lining-nums !important; font-variant-numeric: lining-nums !important; }
+
+.font-variant-oldstyle-nums { font-feature-settings: oldstyle-nums !important; font-variant-numeric: oldstyle-nums !important; }
+
+.font-variant-proportional-nums { font-feature-settings: proportional-nums !important; font-variant-numeric: proportional-nums !important; }
+
+.font-variant-tabular-nums { font-feature-settings: tabular-nums !important; font-variant-numeric: tabular-nums !important; }
+
+.font-variant-diagonal-fractions { font-feature-settings: diagonal-fractions !important; font-variant-numeric: diagonal-fractions !important; }
+
+.font-variant-stacked-fractions { font-feature-settings: stacked-fractions !important; font-variant-numeric: stacked-fractions !important; }
+
+/* Font Variant Ligatures */
+
+.ligatures-common { font-feature-settings: common-ligatures !important; font-variant-ligatures: common-ligatures !important; }
+
+.ligatures-no-common { font-feature-settings: no-common-ligatures !important; font-variant-ligatures: no-common-ligatures !important; }
+
+.ligatures-discretionary { font-feature-settings: discretionary-ligatures !important; font-variant-ligatures: discretionary-ligatures !important; }
+
+.ligatures-no-discretionary { font-feature-settings: no-discretionary-ligatures !important; font-variant-ligatures: no-discretionary-ligatures !important; }
+
+.ligatures-historical { font-feature-settings: historical-ligatures !important; font-variant-ligatures: historical-ligatures !important; }
+
+.ligatures-no-historical { font-feature-settings: no-historical-ligatures !important; font-variant-ligatures: no-historical-ligatures !important; }
+
+.ligatures-contextual { font-feature-settings: contextual !important; font-variant-ligatures: contextual !important; }
+
+.ligatures-no-contextual { font-feature-settings: no-contextual !important; font-variant-ligatures: no-contextual !important; }
+
+/* Font Variant Caps */
+
+.caps-normal { font-feature-settings: normal !important; font-variant-caps: normal !important; }
+
+.caps-small { font-feature-settings: small-caps !important; font-variant-caps: small-caps !important; }
+
+.caps-all-small { font-feature-settings: all-small-caps !important; font-variant-caps: all-small-caps !important; }
+
+.caps-petite { font-feature-settings: petite-caps !important; font-variant-caps: petite-caps !important; }
+
+.caps-all-petite { font-feature-settings: all-petite-caps !important; font-variant-caps: all-petite-caps !important; }
+
+.caps-unicase { font-feature-settings: unicase !important; font-variant-caps: unicase !important; }
+
+.caps-titling { font-feature-settings: titling-caps !important; font-variant-caps: titling-caps !important; }
+
+/* ========================================================================== */
+
+/* LIST STYLE UTILITIES                                                      */
+
+/* ========================================================================== */
 
 .list-none { list-style-type: none !important; }
 
@@ -2207,21 +2017,73 @@
 
 .list-square { list-style-type: square !important; }
 
-.list-roman { list-style-type: upper-roman !important; }
+.list-upper-roman { list-style-type: upper-roman !important; }
 
 .list-lower-roman { list-style-type: lower-roman !important; }
 
-.list-alpha { list-style-type: upper-alpha !important; }
+.list-upper-alpha { list-style-type: upper-alpha !important; }
 
 .list-lower-alpha { list-style-type: lower-alpha !important; }
-
-/* List Style Position Utilities */
 
 .list-inside { list-style-position: inside !important; }
 
 .list-outside { list-style-position: outside !important; }
 
-/* Advanced Typography Features (Class-based) */
+/* ========================================================================== */
+
+/* USER SELECT UTILITIES                                                     */
+
+/* ========================================================================== */
+
+.select-none { -webkit-user-select: none !important; -moz-user-select: none !important; user-select: none !important; }
+
+.select-text { -webkit-user-select: text !important; -moz-user-select: text !important; user-select: text !important; }
+
+.select-all { -webkit-user-select: all !important; -moz-user-select: all !important; user-select: all !important; }
+
+.select-auto { -webkit-user-select: auto !important; -moz-user-select: auto !important; user-select: auto !important; }
+
+/* ========================================================================== */
+
+/* WRITING MODE UTILITIES                                                    */
+
+/* ========================================================================== */
+
+.writing-horizontal { writing-mode: horizontal-tb !important; }
+
+.writing-vertical-rl { writing-mode: vertical-rl !important; }
+
+.writing-vertical-lr { writing-mode: vertical-lr !important; }
+
+/* ========================================================================== */
+
+/* TEXT ORIENTATION UTILITIES                                                */
+
+/* ========================================================================== */
+
+.orientation-mixed { text-orientation: mixed !important; }
+
+.orientation-upright { text-orientation: upright !important; }
+
+.orientation-sideways { text-orientation: sideways !important; }
+
+/* ========================================================================== */
+
+/* HYPHENS UTILITIES                                                         */
+
+/* ========================================================================== */
+
+.hyphens-none { hyphens: none !important; }
+
+.hyphens-manual { hyphens: manual !important; }
+
+.hyphens-auto { hyphens: auto !important; }
+
+/* ========================================================================== */
+
+/* ADVANCED TYPOGRAPHY FEATURES                                              */
+
+/* ========================================================================== */
 
 .drop-cap::first-letter {
   float: left;
@@ -2231,30 +2093,32 @@
   padding-top: 0.1em;
 }
 
-.text-wrap-balance {
-  text-wrap: balance;
-}
+.text-wrap-balance { text-wrap: balance; }
 
-.text-wrap-pretty {
-  text-wrap: pretty;
-}
+.text-wrap-pretty { text-wrap: pretty; }
 
-.text-wrap-stable {
-  text-wrap: stable;
-}
-
-.pretty-quote::before {
-  content: open-quote;
-}
-
-.pretty-quote::after {
-  content: close-quote;
-}
+.text-wrap-stable { text-wrap: stable; }
 
 .gradient-text {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+}
+
+/* ========================================================================== */
+
+/* FONT SMOOTHING UTILITIES                                                  */
+
+/* ========================================================================== */
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.subpixel-antialiased {
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
 }
 
 /**
@@ -7515,7 +7379,7 @@
 .btn {
   display: inline-block;
   border: none;
-  text-align: center;
+  text-align: var(--mico-text-center);
   cursor: pointer;
   transition: all .4s cubic-bezier(0.25, 0.1, 0.25, 1.0);
   margin-top: calc(4px * 2);

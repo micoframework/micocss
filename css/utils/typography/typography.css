@@ -1,7 +1,23 @@
-/* Font Size Utilities */
+/* ========================================================================== */
+/* MICO CSS FRAMEWORK - TYPOGRAPHY UTILITIES                                 */
+/* ========================================================================== */
+
+/* ========================================================================== */
+/* FONT FAMILY UTILITIES                                                     */
+/* ========================================================================== */
+
+.f-sans { font-family: var(--mico-font-sans) !important; }
+.f-serif { font-family: var(--mico-font-serif) !important; }
+.f-mono { font-family: var(--mico-font-mono) !important; }
+.f-display { font-family: var(--mico-font-display) !important; }
+.f-body { font-family: var(--mico-font-body) !important; }
+
+/* ========================================================================== */
+/* FONT SIZE UTILITIES                                                       */
+/* ========================================================================== */
+
 .fs-xs { font-size: var(--mico-fs-xs) !important; }
 .fs-sm { font-size: var(--mico-fs-sm) !important; }
-.fs-base { font-size: var(--mico-fs-base) !important; }
 .fs-md { font-size: var(--mico-fs-md) !important; }
 .fs-lg { font-size: var(--mico-fs-lg) !important; }
 .fs-xl { font-size: var(--mico-fs-xl) !important; }
@@ -13,231 +29,61 @@
 .fs-7xl { font-size: var(--mico-fs-7xl) !important; }
 .fs-8xl { font-size: var(--mico-fs-8xl) !important; }
 .fs-9xl { font-size: var(--mico-fs-9xl) !important; }
-.fs-ultra { font-size: var(--mico-fs-ultra) !important; }
-
-/* Font Weight Utilities */
-.fw-thin { font-weight: var(--mico-fw-thin) !important; }
-.fw-extralight { font-weight: var(--mico-fw-extralight) !important; }
-.fw-light { font-weight: var(--mico-fw-light) !important; }
-.fw-normal { font-weight: var(--mico-fw-normal) !important; }
-.fw-medium { font-weight: var(--mico-fw-medium) !important; }
-.fw-semibold { font-weight: var(--mico-fw-semibold) !important; }
-.fw-bold { font-weight: var(--mico-fw-bold) !important; }
-.fw-extrabold { font-weight: var(--mico-fw-extrabold) !important; }
-.fw-black { font-weight: var(--mico-fw-black) !important; }
-
-/* Line Height Utilities */
-.lh-xs { line-height: var(--mico-line-height-xs) !important; }
-.lh-sm { line-height: var(--mico-line-height-sm) !important; }
-.lh-base { line-height: var(--mico-line-height-base) !important; }
-.lh-md { line-height: var(--mico-line-height-md) !important; }
-.lh-lg { line-height: var(--mico-line-height-lg) !important; }
-.lh-xl { line-height: var(--mico-line-height-xl) !important; }
-.lh-2xl { line-height: var(--mico-line-height-2xl) !important; }
-.lh-3xl { line-height: var(--mico-line-height-3xl) !important; }
-.lh-4xl { line-height: var(--mico-line-height-4xl) !important; }
-.lh-5xl { line-height: var(--mico-line-height-5xl) !important; }
-.lh-6xl { line-height: var(--mico-line-height-6xl) !important; }
-.lh-7xl { line-height: var(--mico-line-height-7xl) !important; }
-.lh-8xl { line-height: var(--mico-line-height-8xl) !important; }
-.lh-9xl { line-height: var(--mico-line-height-9xl) !important; }
-
-/* Legacy line height utilities */
-.line-height-xs { line-height: var(--mico-line-height-xs) !important; }
-.line-height-sm { line-height: var(--mico-line-height-sm) !important; }
-.line-height-md { line-height: var(--mico-line-height-md) !important; }
-.line-height-lg { line-height: var(--mico-line-height-lg) !important; }
-.line-height-xl { line-height: var(--mico-line-height-xl) !important; }
-.line-height-ultra { line-height: var(--mico-line-height-ultra) !important; }
-
-/* Letter Spacing Utilities */
-.letter-size-xs { letter-spacing: var(--mico-tracking-tighter) !important; }
-.letter-size-sm { letter-spacing: var(--mico-tracking-tight) !important; }
-.letter-size-md { letter-spacing: var(--mico-tracking-normal) !important; }
-.letter-size-lg { letter-spacing: var(--mico-tracking-wide) !important; }
-.letter-size-xl { letter-spacing: var(--mico-tracking-wider) !important; }
-.letter-size-ultra { letter-spacing: var(--mico-tracking-widest) !important; }
-
-/* Text Alignment Utilities */
-.text-left { text-align: left !important; }
-.text-center { text-align: center !important; }
-.text-right { text-align: right !important; }
-.text-justify { text-align: justify !important; }
-
-/* Text Transform Utilities */
-.uppercase { text-transform: uppercase !important; }
-.lowercase { text-transform: lowercase !important; }
-.capitalize { text-transform: capitalize !important; }
-.normal-case { text-transform: none !important; }
-
-/* Text Decoration Utilities */
-.underline {
-  text-decoration: underline !important;
-  text-underline-offset: var(--mico-underline-offset) !important;
-  text-decoration-thickness: var(--mico-underline-thickness) !important;
-}
-.overline { text-decoration: overline !important; }
-.line-through { text-decoration: line-through !important; }
-.no-underline { text-decoration: none !important; }
-
-/* Font Style Utilities */
-.italic { font-style: italic !important; }
-.not-italic { font-style: normal !important; }
-
-/* Text Overflow Utilities */
-.truncate {
-  overflow: hidden !important;
-  text-overflow: ellipsis !important;
-  white-space: nowrap !important;
-}
-.overflow-ellipsis { text-overflow: ellipsis !important; }
-.text-clip { text-overflow: clip !important; }
-
-/* Word Break Utilities */
-.break-normal { overflow-wrap: normal !important; word-break: normal !important; }
-.break-words { overflow-wrap: break-word !important ; }
-.break-all { word-break: break-all !important; }
-
-/* Whitespace Utilities */
-.whitespace-normal { white-space: normal !important; }
-.whitespace-nowrap { white-space: nowrap !important; }
-.whitespace-pre { white-space: pre !important; }
-.whitespace-pre-line { white-space: pre-line !important; }
-.whitespace-pre-wrap { white-space: pre-wrap !important; }
-
-/* Text Direction Utilities */
-.text-ltr { direction: ltr !important; }
-.text-rtl { direction: rtl !important; }
-
-/* Vertical Alignment Utilities */
-.align-baseline { vertical-align: baseline !important; }
-.align-top { vertical-align: top !important; }
-.align-middle { vertical-align: middle !important; }
-.align-bottom { vertical-align: bottom !important; }
-.align-text-top { vertical-align: text-top !important; }
-.align-text-bottom { vertical-align: text-bottom !important; }
-
-/* Font Variant Numeric Utilities */
-.normal-nums { font-variant-numeric: normal; }
-.ordinal { font-variant-numeric: ordinal; }
-.slashed-zero { font-variant-numeric: slashed-zero; }
-.lining-nums { font-variant-numeric: lining-nums; }
-.oldstyle-nums { font-variant-numeric: oldstyle-nums; }
-.proportional-nums { font-variant-numeric: proportional-nums; }
-.tabular-nums { font-variant-numeric: tabular-nums; }
-.diagonal-fractions { font-variant-numeric: diagonal-fractions; }
-.stacked-fractions { font-variant-numeric: stacked-fractions; }
-
-/* Text Columns Utilities */
-.columns-1 { columns: 1; }
-.columns-2 { columns: 2; }
-.columns-3 { columns: 3; }
-.columns-4 { columns: 4; }
-
-/* Text Shadow Utilities */
-.text-shadow-xs { text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); }
-.text-shadow-sm { text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); }
-.text-shadow-md { text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1); }
-.text-shadow-none { text-shadow: none; }
-
-/* Font Smoothing Utilities */
-.antialiased {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.subpixel-antialiased {
-  -webkit-font-smoothing: auto;
-  -moz-osx-font-smoothing: auto;
-}
-
-/* Text Stroke Utilities */
-.text-stroke-1 { -webkit-text-stroke-width: 1px; }
-.text-stroke-2 { -webkit-text-stroke-width: 2px; }
-.text-stroke-4 { -webkit-text-stroke-width: 4px; }
-
-/* Writing Mode Utilities */
-.writing-vertical-rl { writing-mode: vertical-rl; }
-.writing-vertical-lr { writing-mode: vertical-lr; }
-.writing-horizontal-tb { writing-mode: horizontal-tb; }
-
-/* Text Indent Utilities */
-.indent-sm { text-indent: 1em; }
-.indent-md { text-indent: 2em; }
-.indent-lg { text-indent: 3em; }
-
-/* Hyphenation Utilities */
-.hyphens-auto { hyphens: auto; }
-.hyphens-manual { hyphens: manual; }
-.hyphens-none { hyphens: none; }
-
-/* Responsive Typography */
-@media (min-width: 640px) {
-  .sm\:text-left { text-align: left; }
-  .sm\:text-center { text-align: center; }
-  .sm\:text-right { text-align: right; }
-  /* Add more responsive classes as needed */
-}
-
-@media (min-width: 768px) {
-  .md\:text-left { text-align: left; }
-  .md\:text-center { text-align: center; }
-  .md\:text-right { text-align: right; }
-  /* Add more responsive classes as needed */
-}
-
-@media (min-width: 1024px) {
-  .lg\:text-left { text-align: left; }
-  .lg\:text-center { text-align: center; }
-  .lg\:text-right { text-align: right; }
-  /* Add more responsive classes as needed */
-}
-
-@media (min-width: 1280px) {
-  .xl\:text-left { text-align: left; }
-  .xl\:text-center { text-align: center; }
-  .xl\:text-right { text-align: right; }
-  /* Add more responsive classes as needed */
-}
-
-/* Advanced Typography Features */
-[data-drop-cap]::first-letter {
-  float: left;
-  font-size: 3em;
-  line-height: 0.8;
-  padding-right: 0.1em;
-  padding-top: 0.1em;
-}
-
-[data-balance-text] {
-  text-wrap: balance;
-}
-
-[data-pretty-quote]::before {
-  content: open-quote;
-}
-
-[data-pretty-quote]::after {
-  content: close-quote;
-}
-
-[data-gradient-text] {
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
 
 /* ========================================================================== */
-/* ADDITIONAL TYPOGRAPHY UTILITIES FROM TYPOGRAPHY.MD                        */
+/* FONT WEIGHT UTILITIES                                                     */
 /* ========================================================================== */
 
-/* Font Family Utilities */
-.f-sans { font-family: var(--mico-font-sans) !important; }
-.f-serif { font-family: var(--mico-font-serif) !important; }
-.f-mono { font-family: var(--mico-font-mono) !important; }
-.f-display { font-family: var(--mico-font-display) !important; }
-.f-body { font-family: var(--mico-font-body) !important; }
+.fw-100 { font-weight: var(--mico-fw-100) !important; }
+.fw-200 { font-weight: var(--mico-fw-200) !important; }
+.fw-300 { font-weight: var(--mico-fw-300) !important; }
+.fw-400 { font-weight: var(--mico-fw-400) !important; }
+.fw-500 { font-weight: var(--mico-fw-500) !important; }
+.fw-600 { font-weight: var(--mico-fw-600) !important; }
+.fw-700 { font-weight: var(--mico-fw-700) !important; }
+.fw-800 { font-weight: var(--mico-fw-800) !important; }
+.fw-900 { font-weight: var(--mico-fw-900) !important; }
 
-/* Font Stretch Utilities */
+/* ========================================================================== */
+/* LINE HEIGHT UTILITIES                                                     */
+/* ========================================================================== */
+
+.lh-xs { line-height: var(--mico-lh-xs) !important; }
+.lh-sm { line-height: var(--mico-lh-sm) !important; }
+.lh-md { line-height: var(--mico-lh-md) !important; }
+.lh-lg { line-height: var(--mico-lh-lg) !important; }
+.lh-xl { line-height: var(--mico-lh-xl) !important; }
+.lh-2xl { line-height: var(--mico-lh-2xl) !important; }
+.lh-3xl { line-height: var(--mico-lh-3xl) !important; }
+.lh-4xl { line-height: var(--mico-lh-4xl) !important; }
+.lh-5xl { line-height: var(--mico-lh-5xl) !important; }
+.lh-6xl { line-height: var(--mico-lh-6xl) !important; }
+.lh-7xl { line-height: var(--mico-lh-7xl) !important; }
+.lh-8xl { line-height: var(--mico-lh-8xl) !important; }
+.lh-9xl { line-height: var(--mico-lh-9xl) !important; }
+
+/* ========================================================================== */
+/* LETTER SPACING UTILITIES                                                  */
+/* ========================================================================== */
+
+.ls-xs { letter-spacing: var(--mico-ls-xs) !important; }
+.ls-sm { letter-spacing: var(--mico-ls-sm) !important; }
+.ls-md { letter-spacing: var(--mico-ls-md) !important; }
+.ls-lg { letter-spacing: var(--mico-ls-lg) !important; }
+.ls-xl { letter-spacing: var(--mico-ls-xl) !important; }
+.ls-2xl { letter-spacing: var(--mico-ls-2xl) !important; }
+
+/* ========================================================================== */
+/* FONT STYLE UTILITIES                                                      */
+/* ========================================================================== */
+
+.f-normal { font-style: var(--mico-font-style-normal) !important; }
+.f-italic { font-style: var(--mico-font-style-italic) !important; }
+
+/* ========================================================================== */
+/* FONT STRETCH UTILITIES                                                    */
+/* ========================================================================== */
+
 .f-stretch-ultra-condensed { font-stretch: var(--mico-font-stretch-ultra-condensed) !important; }
 .f-stretch-extra-condensed { font-stretch: var(--mico-font-stretch-extra-condensed) !important; }
 .f-stretch-condensed { font-stretch: var(--mico-font-stretch-condensed) !important; }
@@ -248,45 +94,43 @@
 .f-stretch-extra-expanded { font-stretch: var(--mico-font-stretch-extra-expanded) !important; }
 .f-stretch-ultra-expanded { font-stretch: var(--mico-font-stretch-ultra-expanded) !important; }
 
-/* Letter Spacing Utilities (Additional) */
-.ls-xs { letter-spacing: var(--mico-letter-spacing-xs) !important; }
-.ls-sm { letter-spacing: var(--mico-letter-spacing-sm) !important; }
-.ls-base { letter-spacing: var(--mico-letter-spacing-md) !important; }
-.ls-lg { letter-spacing: var(--mico-letter-spacing-lg) !important; }
-.ls-xl { letter-spacing: var(--mico-letter-spacing-xl) !important; }
+/* ========================================================================== */
+/* TEXT ALIGNMENT UTILITIES                                                  */
+/* ========================================================================== */
 
-/* Font Variant Ligatures Utilities */
-.common-ligatures { font-variant-ligatures: var(--mico-font-variant-ligatures-common) !important; }
-.no-common-ligatures { font-variant-ligatures: var(--mico-font-variant-ligatures-no-common) !important; }
-.discretionary-ligatures { font-variant-ligatures: var(--mico-font-variant-ligatures-discretionary) !important; }
-.no-discretionary-ligatures { font-variant-ligatures: var(--mico-font-variant-ligatures-no-discretionary) !important; }
-.historical-ligatures { font-variant-ligatures: var(--mico-font-variant-ligatures-historical) !important; }
-.no-historical-ligatures { font-variant-ligatures: var(--mico-font-variant-ligatures-no-historical) !important; }
-.contextual-ligatures { font-variant-ligatures: var(--mico-font-variant-ligatures-contextual) !important; }
-.no-contextual-ligatures { font-variant-ligatures: var(--mico-font-variant-ligatures-no-contextual) !important; }
+.text-left { text-align: var(--mico-text-align-left) !important; }
+.text-center { text-align: var(--mico-text-align-center) !important; }
+.text-right { text-align: var(--mico-text-align-right) !important; }
+.text-justify { text-align: var(--mico-text-align-justify) !important; }
+.text-start { text-align: var(--mico-text-align-start) !important; }
+.text-end { text-align: var(--mico-text-align-end) !important; }
 
-/* Font Variant Caps Utilities */
-.small-caps { font-variant-caps: var(--mico-font-variant-caps-small-caps) !important; }
-.all-small-caps { font-variant-caps: var(--mico-font-variant-caps-all-small-caps) !important; }
-.petite-caps { font-variant-caps: var(--mico-font-variant-caps-petite-caps) !important; }
-.all-petite-caps { font-variant-caps: var(--mico-font-variant-caps-all-petite-caps) !important; }
-.unicase { font-variant-caps: var(--mico-font-variant-caps-unicase) !important; }
-.titling-caps { font-variant-caps: var(--mico-font-variant-caps-titling-caps) !important; }
-.normal-caps { font-variant-caps: var(--mico-font-variant-caps-normal) !important; }
+/* ========================================================================== */
+/* TEXT TRANSFORM UTILITIES                                                  */
+/* ========================================================================== */
 
-/* Text Decoration Color Utilities */
-.decoration-inherit { text-decoration-color: var(--mico-value-inherit) !important; }
-.decoration-current { text-decoration-color: var(--mico-value-current) !important; }
-.decoration-transparent { text-decoration-color: var(--mico-value-transparent) !important; }
+.text-uppercase { text-transform: var(--mico-text-transform-uppercase) !important; }
+.text-lowercase { text-transform: var(--mico-text-transform-lowercase) !important; }
+.text-capitalize { text-transform: var(--mico-text-transform-capitalize) !important; }
+.text-normal-case { text-transform: var(--mico-text-transform-none) !important; }
 
-/* Text Decoration Style Utilities */
+/* ========================================================================== */
+/* TEXT DECORATION UTILITIES                                                 */
+/* ========================================================================== */
+
+.underline { text-decoration-line: underline !important; }
+.overline { text-decoration-line: overline !important; }
+.line-through { text-decoration-line: line-through !important; }
+.no-underline { text-decoration-line: var(--mico-value-none) !important; }
+
+/* Text Decoration Style */
 .decoration-solid { text-decoration-style: var(--mico-decoration-style-solid) !important; }
 .decoration-double { text-decoration-style: var(--mico-decoration-style-double) !important; }
 .decoration-dotted { text-decoration-style: var(--mico-decoration-style-dotted) !important; }
 .decoration-dashed { text-decoration-style: var(--mico-decoration-style-dashed) !important; }
 .decoration-wavy { text-decoration-style: var(--mico-decoration-style-wavy) !important; }
 
-/* Text Decoration Thickness Utilities */
+/* Text Decoration Thickness */
 .decoration-auto { text-decoration-thickness: var(--mico-decoration-thickness-auto) !important; }
 .decoration-from-font { text-decoration-thickness: var(--mico-decoration-thickness-from-font) !important; }
 .decoration-0 { text-decoration-thickness: var(--mico-decoration-thickness-0) !important; }
@@ -295,7 +139,7 @@
 .decoration-4 { text-decoration-thickness: var(--mico-decoration-thickness-4) !important; }
 .decoration-8 { text-decoration-thickness: var(--mico-decoration-thickness-8) !important; }
 
-/* Text Underline Offset Utilities */
+/* Text Underline Offset */
 .underline-offset-auto { text-underline-offset: var(--mico-underline-offset-auto) !important; }
 .underline-offset-0 { text-underline-offset: var(--mico-underline-offset-0) !important; }
 .underline-offset-1 { text-underline-offset: var(--mico-underline-offset-1) !important; }
@@ -303,36 +147,34 @@
 .underline-offset-4 { text-underline-offset: var(--mico-underline-offset-4) !important; }
 .underline-offset-8 { text-underline-offset: var(--mico-underline-offset-8) !important; }
 
-/* Text Underline Position Utilities */
-.underline-pos-auto { text-underline-position: var(--mico-underline-position-auto) !important; }
-.underline-pos-under { text-underline-position: var(--mico-underline-position-under) !important; }
-.underline-pos-left { text-underline-position: var(--mico-underline-position-left) !important; }
-.underline-pos-right { text-underline-position: var(--mico-underline-position-right) !important; }
+/* ========================================================================== */
+/* TEXT OVERFLOW UTILITIES                                                   */
+/* ========================================================================== */
 
-/* Text Indent Utilities */
-.indent-0 { text-indent: var(--mico-text-indent-0) !important; }
-.indent-xs { text-indent: var(--mico-text-indent-xs) !important; }
-.indent-sm { text-indent: var(--mico-text-indent-sm) !important; }
-.indent-base { text-indent: var(--mico-text-indent-base) !important; }
-.indent-lg { text-indent: var(--mico-text-indent-lg) !important; }
-.indent-xl { text-indent: var(--mico-text-indent-xl) !important; }
+.text-ellipsis { text-overflow: var(--mico-text-overflow-ellipsis) !important; }
+.text-clip { text-overflow: var(--mico-text-overflow-clip) !important; }
 
-/* Text Orientation Utilities */
-.orientation-mixed { text-orientation: var(--mico-text-orientation-mixed) !important; }
-.orientation-upright { text-orientation: var(--mico-text-orientation-upright) !important; }
-.orientation-sideways { text-orientation: var(--mico-text-orientation-sideways) !important; }
+.truncate {
+  overflow: hidden !important;
+  text-overflow: var(--mico-text-overflow-ellipsis) !important;
+  white-space: var(--mico-whitespace-nowrap) !important;
+}
 
-/* Text Shadow Utilities (Enhanced) */
-.text-shadow-lg { text-shadow: var(--mico-text-shadow-lg) !important; }
+/* ========================================================================== */
+/* WHITESPACE UTILITIES                                                      */
+/* ========================================================================== */
 
-/* Vertical Alignment Utilities (Additional) */
-.align-sub { vertical-align: sub !important; }
-.align-super { vertical-align: super !important; }
-
-/* Whitespace Utilities (Additional) */
+.whitespace-normal { white-space: var(--mico-whitespace-normal) !important; }
+.whitespace-nowrap { white-space: var(--mico-whitespace-nowrap) !important; }
+.whitespace-pre { white-space: var(--mico-whitespace-pre) !important; }
+.whitespace-pre-line { white-space: var(--mico-whitespace-pre-line) !important; }
+.whitespace-pre-wrap { white-space: var(--mico-whitespace-pre-wrap) !important; }
 .whitespace-break-spaces { white-space: var(--mico-whitespace-break-spaces) !important; }
 
-/* Word Break Utilities (Enhanced) */
+/* ========================================================================== */
+/* WORD BREAK UTILITIES                                                      */
+/* ========================================================================== */
+
 .break-normal {
   overflow-wrap: var(--mico-overflow-wrap-normal) !important;
   word-break: var(--mico-word-break-normal) !important;
@@ -341,51 +183,142 @@
 .break-all { word-break: var(--mico-word-break-break-all) !important; }
 .break-keep { word-break: var(--mico-word-break-keep-all) !important; }
 
-/* Text Align Last Utilities */
-.text-align-last-auto { text-align-last: var(--mico-text-align-last-auto) !important; }
-.text-align-last-start { text-align-last: var(--mico-text-align-last-start) !important; }
-.text-align-last-end { text-align-last: var(--mico-text-align-last-end) !important; }
-.text-align-last-left { text-align-last: var(--mico-text-align-last-left) !important; }
-.text-align-last-right { text-align-last: var(--mico-text-align-last-right) !important; }
-.text-align-last-center { text-align-last: var(--mico-text-align-last-center) !important; }
-.text-align-last-justify { text-align-last: var(--mico-text-align-last-justify) !important; }
+/* ========================================================================== */
+/* TEXT DIRECTION UTILITIES                                                  */
+/* ========================================================================== */
 
-/* Text Justify Utilities */
-.text-justify-auto { text-justify: var(--mico-text-justify-auto) !important; }
-.text-justify-inter-word { text-justify: var(--mico-text-justify-inter-word) !important; }
-.text-justify-inter-character { text-justify: var(--mico-text-justify-inter-character) !important; }
-.text-justify-none { text-justify: var(--mico-text-justify-none) !important; }
+.text-ltr { direction: var(--mico-text-direction-ltr) !important; }
+.text-rtl { direction: var(--mico-text-direction-rtl) !important; }
 
-/* User Select Utilities */
+/* ========================================================================== */
+/* VERTICAL ALIGNMENT UTILITIES                                              */
+/* ========================================================================== */
+
+.align-baseline { vertical-align: baseline !important; }
+.align-top { vertical-align: top !important; }
+.align-middle { vertical-align: middle !important; }
+.align-bottom { vertical-align: bottom !important; }
+.align-text-top { vertical-align: text-top !important; }
+.align-text-bottom { vertical-align: text-bottom !important; }
+.align-sub { vertical-align: sub !important; }
+.align-super { vertical-align: super !important; }
+
+/* ========================================================================== */
+/* TEXT INDENT UTILITIES                                                     */
+/* ========================================================================== */
+
+.indent-0 { text-indent: var(--mico-indent-0) !important; }
+.indent-xs { text-indent: var(--mico-indent-xs) !important; }
+.indent-sm { text-indent: var(--mico-indent-sm) !important; }
+.indent-md { text-indent: var(--mico-indent-md) !important; }
+.indent-lg { text-indent: var(--mico-indent-lg) !important; }
+.indent-xl { text-indent: var(--mico-indent-xl) !important; }
+
+/* ========================================================================== */
+/* TEXT SHADOW UTILITIES                                                     */
+/* ========================================================================== */
+
+.text-shadow-none { text-shadow: var(--mico-text-shadow-none) !important; }
+.text-shadow-xs { text-shadow: var(--mico-text-shadow-xs) !important; }
+.text-shadow-sm { text-shadow: var(--mico-text-shadow-sm) !important; }
+.text-shadow-md { text-shadow: var(--mico-text-shadow-md) !important; }
+.text-shadow-lg { text-shadow: var(--mico-text-shadow-lg) !important; }
+
+/* ========================================================================== */
+/* TEXT STROKE UTILITIES                                                     */
+/* ========================================================================== */
+
+.text-stroke-xs { -webkit-text-stroke-width: var(--mico-text-stroke-xs) !important; }
+.text-stroke-sm { -webkit-text-stroke-width: var(--mico-text-stroke-sm) !important; }
+.text-stroke-md { -webkit-text-stroke-width: var(--mico-text-stroke-md) !important; }
+
+/* ========================================================================== */
+/* FONT VARIANT UTILITIES                                                    */
+/* ========================================================================== */
+
+/* Font Variant Numeric */
+.font-variant-normal { font-variant-numeric: var(--mico-font-variant-numeric-normal) !important; }
+.font-variant-ordinal { font-variant-numeric: var(--mico-font-variant-numeric-ordinal) !important; }
+.font-variant-slashed-zero { font-variant-numeric: var(--mico-font-variant-numeric-slashed-zero) !important; }
+.font-variant-lining-nums { font-variant-numeric: var(--mico-font-variant-numeric-lining-nums) !important; }
+.font-variant-oldstyle-nums { font-variant-numeric: var(--mico-font-variant-numeric-oldstyle-nums) !important; }
+.font-variant-proportional-nums { font-variant-numeric: var(--mico-font-variant-numeric-proportional-nums) !important; }
+.font-variant-tabular-nums { font-variant-numeric: var(--mico-font-variant-numeric-tabular-nums) !important; }
+.font-variant-diagonal-fractions { font-variant-numeric: var(--mico-font-variant-numeric-diagonal-fractions) !important; }
+.font-variant-stacked-fractions { font-variant-numeric: var(--mico-font-variant-numeric-stacked-fractions) !important; }
+
+/* Font Variant Ligatures */
+.ligatures-common { font-variant-ligatures: var(--mico-font-variant-ligatures-common) !important; }
+.ligatures-no-common { font-variant-ligatures: var(--mico-font-variant-ligatures-no-common) !important; }
+.ligatures-discretionary { font-variant-ligatures: var(--mico-font-variant-ligatures-discretionary) !important; }
+.ligatures-no-discretionary { font-variant-ligatures: var(--mico-font-variant-ligatures-no-discretionary) !important; }
+.ligatures-historical { font-variant-ligatures: var(--mico-font-variant-ligatures-historical) !important; }
+.ligatures-no-historical { font-variant-ligatures: var(--mico-font-variant-ligatures-no-historical) !important; }
+.ligatures-contextual { font-variant-ligatures: var(--mico-font-variant-ligatures-contextual) !important; }
+.ligatures-no-contextual { font-variant-ligatures: var(--mico-font-variant-ligatures-no-contextual) !important; }
+
+/* Font Variant Caps */
+.caps-normal { font-variant-caps: var(--mico-font-variant-caps-normal) !important; }
+.caps-small { font-variant-caps: var(--mico-font-variant-caps-small-caps) !important; }
+.caps-all-small { font-variant-caps: var(--mico-font-variant-caps-all-small-caps) !important; }
+.caps-petite { font-variant-caps: var(--mico-font-variant-caps-petite-caps) !important; }
+.caps-all-petite { font-variant-caps: var(--mico-font-variant-caps-all-petite-caps) !important; }
+.caps-unicase { font-variant-caps: var(--mico-font-variant-caps-unicase) !important; }
+.caps-titling { font-variant-caps: var(--mico-font-variant-caps-titling-caps) !important; }
+
+/* ========================================================================== */
+/* LIST STYLE UTILITIES                                                      */
+/* ========================================================================== */
+
+.list-none { list-style-type: var(--mico-list-style-type-none) !important; }
+.list-disc { list-style-type: var(--mico-list-style-type-disc) !important; }
+.list-decimal { list-style-type: var(--mico-list-style-type-decimal) !important; }
+.list-square { list-style-type: var(--mico-list-style-type-square) !important; }
+.list-upper-roman { list-style-type: var(--mico-list-style-type-upper-roman) !important; }
+.list-lower-roman { list-style-type: var(--mico-list-style-type-lower-roman) !important; }
+.list-upper-alpha { list-style-type: var(--mico-list-style-type-upper-alpha) !important; }
+.list-lower-alpha { list-style-type: var(--mico-list-style-type-lower-alpha) !important; }
+
+.list-inside { list-style-position: var(--mico-list-style-position-inside) !important; }
+.list-outside { list-style-position: var(--mico-list-style-position-outside) !important; }
+
+/* ========================================================================== */
+/* USER SELECT UTILITIES                                                     */
+/* ========================================================================== */
+
 .select-none { user-select: var(--mico-user-select-none) !important; }
 .select-text { user-select: var(--mico-user-select-text) !important; }
 .select-all { user-select: var(--mico-user-select-all) !important; }
 .select-auto { user-select: var(--mico-user-select-auto) !important; }
 
-/* Text Alignment Utilities (Enhanced) */
-.text-start { text-align: var(--mico-text-align-start) !important; }
-.text-end { text-align: var(--mico-text-align-end) !important; }
+/* ========================================================================== */
+/* WRITING MODE UTILITIES                                                    */
+/* ========================================================================== */
 
-/* Text Color Utilities (Basic) */
-.text-inherit { color: var(--mico-value-inherit) !important; }
-.text-current { color: var(--mico-value-current) !important; }
-.text-transparent { color: var(--mico-value-transparent) !important; }
+.writing-horizontal { writing-mode: var(--mico-writing-mode-horizontal-tb) !important; }
+.writing-vertical-rl { writing-mode: var(--mico-writing-mode-vertical-rl) !important; }
+.writing-vertical-lr { writing-mode: var(--mico-writing-mode-vertical-lr) !important; }
 
-/* List Style Utilities */
-.list-none { list-style-type: var(--mico-list-style-type-none) !important; }
-.list-disc { list-style-type: var(--mico-list-style-type-disc) !important; }
-.list-decimal { list-style-type: var(--mico-list-style-type-decimal) !important; }
-.list-square { list-style-type: var(--mico-list-style-type-square) !important; }
-.list-roman { list-style-type: var(--mico-list-style-type-upper-roman) !important; }
-.list-lower-roman { list-style-type: var(--mico-list-style-type-lower-roman) !important; }
-.list-alpha { list-style-type: var(--mico-list-style-type-upper-alpha) !important; }
-.list-lower-alpha { list-style-type: var(--mico-list-style-type-lower-alpha) !important; }
+/* ========================================================================== */
+/* TEXT ORIENTATION UTILITIES                                                */
+/* ========================================================================== */
 
-/* List Style Position Utilities */
-.list-inside { list-style-position: var(--mico-list-style-position-inside) !important; }
-.list-outside { list-style-position: var(--mico-list-style-position-outside) !important; }
+.orientation-mixed { text-orientation: var(--mico-text-orientation-mixed) !important; }
+.orientation-upright { text-orientation: var(--mico-text-orientation-upright) !important; }
+.orientation-sideways { text-orientation: var(--mico-text-orientation-sideways) !important; }
 
-/* Advanced Typography Features (Class-based) */
+/* ========================================================================== */
+/* HYPHENS UTILITIES                                                         */
+/* ========================================================================== */
+
+.hyphens-none { hyphens: var(--mico-hyphens-none) !important; }
+.hyphens-manual { hyphens: var(--mico-hyphens-manual) !important; }
+.hyphens-auto { hyphens: var(--mico-hyphens-auto) !important; }
+
+/* ========================================================================== */
+/* ADVANCED TYPOGRAPHY FEATURES                                              */
+/* ========================================================================== */
+
 .drop-cap::first-letter {
   float: left;
   font-size: 3em;
@@ -394,30 +327,28 @@
   padding-top: 0.1em;
 }
 
-.text-wrap-balance {
-  text-wrap: balance;
-}
-
-.text-wrap-pretty {
-  text-wrap: pretty;
-}
-
-.text-wrap-stable {
-  text-wrap: stable;
-}
-
-.pretty-quote::before {
-  content: open-quote;
-}
-
-.pretty-quote::after {
-  content: close-quote;
-}
+.text-wrap-balance { text-wrap: balance; }
+.text-wrap-pretty { text-wrap: pretty; }
+.text-wrap-stable { text-wrap: stable; }
 
 .gradient-text {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+}
+
+/* ========================================================================== */
+/* FONT SMOOTHING UTILITIES                                                  */
+/* ========================================================================== */
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.subpixel-antialiased {
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
 }
 
 

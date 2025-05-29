@@ -85,40 +85,25 @@
   --mico-fs-2xl: clamp(1.875rem, 5vw, 3rem);   /* Large headings (h2) */
   --mico-fs-xl: clamp(1.5rem, 4vw, 2.25rem);   /* Medium headings (h3) */
   --mico-fs-lg: clamp(1.25rem, 3vw, 1.875rem); /* Small headings (h4) */
-  --mico-fs-base: clamp(1rem, 2.5vw, 1.125rem); /* Base body text (h5, p) */
-  --mico-fs-md: var(--mico-fs-base);           /* Alias for base */
+  --mico-fs-md: clamp(1rem, 2.5vw, 1.125rem);  /* Standard body text */
   --mico-fs-sm: clamp(0.875rem, 2vw, 1rem);    /* Small text */
   --mico-fs-xs: clamp(0.75rem, 1.5vw, 0.875rem); /* Extra small text, captions */
-
-  /* Legacy aliases for backward compatibility */
-  --mico-fs-ultra: var(--mico-fs-9xl);
 
   /**
    * Font Weights
    *
    * Standard font weight values from 100 (thinnest) to 900 (boldest)
-   * These follow the CSS standard naming conventions
+   * Using consistent naming pattern with descriptive suffixes
    */
-  --mico-fw-100: 100;
-  --mico-fw-200: 200;
-  --mico-fw-300: 300;
-  --mico-fw-400: 400;
-  --mico-fw-500: 500;
-  --mico-fw-600: 600;
-  --mico-fw-700: 700;
-  --mico-fw-800: 800;
-  --mico-fw-900: 900;
-
-  /* Named font weight aliases for better readability */
-  --mico-fw-thin: var(--mico-fw-100);
-  --mico-fw-extralight: var(--mico-fw-200);
-  --mico-fw-light: var(--mico-fw-300);
-  --mico-fw-normal: var(--mico-fw-400);
-  --mico-fw-medium: var(--mico-fw-500);
-  --mico-fw-semibold: var(--mico-fw-600);
-  --mico-fw-bold: var(--mico-fw-700);
-  --mico-fw-extrabold: var(--mico-fw-800);
-  --mico-fw-black: var(--mico-fw-900);
+  --mico-fw-100: 100;  /* Thinnest */
+  --mico-fw-200: 200;  /* Extra light */
+  --mico-fw-300: 300;  /* Light */
+  --mico-fw-400: 400;  /* Normal/Regular */
+  --mico-fw-500: 500;  /* Medium */
+  --mico-fw-600: 600;  /* Semi bold */
+  --mico-fw-700: 700;  /* Bold */
+  --mico-fw-800: 800;  /* Extra bold */
+  --mico-fw-900: 900;  /* Black/Heaviest */
 
   /**
    * Font Stretch Properties
@@ -194,56 +179,35 @@
    * - Values 1.5-1.7 are ideal for body text for readability
    * - Larger values create more spacing for easier reading
    */
-  --mico-line-height-xs: 1;       /* Compact (headings) */
-  --mico-line-height-sm: 1.25;    /* Slightly compact */
-  --mico-line-height-base: 1.5;   /* Standard body text */
-  --mico-line-height-md: var(--mico-line-height-base); /* Alias for base */
-  --mico-line-height-lg: 1.625;   /* Slightly relaxed */
-  --mico-line-height-xl: 2;       /* Loose (easy reading) */
-  --mico-line-height-2xl: 0.75rem; /* Fixed line height for small text */
-  --mico-line-height-3xl: 1rem;    /* Fixed line height */
-  --mico-line-height-4xl: 1.25rem; /* Fixed line height */
-  --mico-line-height-5xl: 1.5rem;  /* Fixed line height */
-  --mico-line-height-6xl: 1.75rem; /* Fixed line height */
-  --mico-line-height-7xl: 2rem;    /* Fixed line height */
-  --mico-line-height-8xl: 2.25rem; /* Fixed line height */
-  --mico-line-height-9xl: 2.5rem;  /* Fixed line height */
+  --mico-lh-xs: 1;       /* Compact (headings) */
+  --mico-lh-sm: 1.25;    /* Slightly compact */
+  --mico-lh-md: 1.5;     /* Standard body text */
+  --mico-lh-lg: 1.625;   /* Slightly relaxed */
+  --mico-lh-xl: 2;       /* Loose (easy reading) */
+  --mico-lh-2xl: 0.75rem; /* Fixed line height for small text */
+  --mico-lh-3xl: 1rem;    /* Fixed line height */
+  --mico-lh-4xl: 1.25rem; /* Fixed line height */
+  --mico-lh-5xl: 1.5rem;  /* Fixed line height */
+  --mico-lh-6xl: 1.75rem; /* Fixed line height */
+  --mico-lh-7xl: 2rem;    /* Fixed line height */
+  --mico-lh-8xl: 2.25rem; /* Fixed line height */
+  --mico-lh-9xl: 2.5rem;  /* Fixed line height */
 
-  /* Legacy aliases for backward compatibility */
-  --mico-line-height-ultra: var(--mico-line-height-9xl);
 
   /**
-   * Letter Spacing (Tracking)
+   * Letter Spacing
    *
    * Controls the horizontal spacing between characters.
    * - Negative values bring letters closer together
    * - Positive values spread letters apart
    * - 'em' units scale with the font size
-   *
-   * Note: These variables are used by typography utility classes
    */
-  --mico-letter-spacing-xs: -0.05em;
-  --mico-letter-spacing-sm: -0.025em;
-  --mico-letter-spacing-md: 0em;
-  --mico-letter-spacing-lg: 0.025em;
-  --mico-letter-spacing-xl: 0.05em;
-  --mico-letter-spacing-2xl: 0.1em;
-
-  /* Tracking aliases for utility classes compatibility */
-  --mico-tracking-xs: var(--mico-letter-spacing-xs);
-  --mico-tracking-sm: var(--mico-letter-spacing-sm);
-  --mico-tracking-md: var(--mico-letter-spacing-md);
-  --mico-tracking-lg: var(--mico-letter-spacing-lg);
-  --mico-tracking-xl: var(--mico-letter-spacing-xl);
-  --mico-tracking-2xl: var(--mico-letter-spacing-2xl);
-
-  /* Additional tracking aliases for utility classes */
-  --mico-tracking-tighter: var(--mico-letter-spacing-xs);
-  --mico-tracking-tight: var(--mico-letter-spacing-sm);
-  --mico-tracking-normal: var(--mico-letter-spacing-md);
-  --mico-tracking-wide: var(--mico-letter-spacing-lg);
-  --mico-tracking-wider: var(--mico-letter-spacing-xl);
-  --mico-tracking-widest: var(--mico-letter-spacing-2xl);
+  --mico-ls-xs: -0.05em;   /* Tighter spacing */
+  --mico-ls-sm: -0.025em;  /* Slightly tighter */
+  --mico-ls-md: 0em;       /* Normal spacing */
+  --mico-ls-lg: 0.025em;   /* Slightly wider */
+  --mico-ls-xl: 0.05em;    /* Wider spacing */
+  --mico-ls-2xl: 0.1em;    /* Widest spacing */
 
   /**
    * Text Decoration Properties
@@ -300,12 +264,6 @@
   --mico-text-align-start: start;
   --mico-text-align-end: end;
 
-  /* Legacy aliases */
-  --mico-text-center: center;
-  --mico-text-left: left;
-  --mico-text-right: right;
-  --mico-text-justify: justify;
-
   /**
    * Text Overflow Properties
    *
@@ -326,22 +284,19 @@
   --mico-whitespace-pre-wrap: pre-wrap;
   --mico-whitespace-break-spaces: break-spaces;
 
-  /* Legacy aliases */
-  --mico-text-nowrap: nowrap;
-  --mico-text-wrap: wrap;
-  --mico-text-ellipsis: ellipsis;
+
 
   /**
    * Text Indent Properties
    *
    * Controls the indentation of the first line of text
    */
-  --mico-text-indent-0: var(--mico-value-0);
-  --mico-text-indent-xs: 1px;
-  --mico-text-indent-sm: 0.25rem;
-  --mico-text-indent-base: 0.5rem;
-  --mico-text-indent-lg: 1rem;
-  --mico-text-indent-xl: 2rem;
+  --mico-indent-0: var(--mico-value-0);
+  --mico-indent-xs: 1px;
+  --mico-indent-sm: 0.25rem;
+  --mico-indent-md: 0.5rem;
+  --mico-indent-lg: 1rem;
+  --mico-indent-xl: 2rem;
 
   /**
    * Text Shadow Properties
@@ -351,7 +306,7 @@
   --mico-text-shadow-none: var(--mico-value-none);
   --mico-text-shadow-xs: 1px 1px 2px rgba(0, 0, 0, 0.1);
   --mico-text-shadow-sm: 2px 2px 4px rgba(0, 0, 0, 0.1);
-  --mico-text-shadow-base: 4px 4px 6px rgba(0, 0, 0, 0.1);
+  --mico-text-shadow-md: 4px 4px 6px rgba(0, 0, 0, 0.1);
   --mico-text-shadow-lg: 6px 6px 8px rgba(0, 0, 0, 0.15);
 
   /**
@@ -361,7 +316,7 @@
    */
   --mico-text-stroke-xs: 1px;
   --mico-text-stroke-sm: 2px;
-  --mico-text-stroke-base: 4px;
+  --mico-text-stroke-md: 4px;
 
   /**
    * List Style Properties
