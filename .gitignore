@@ -2,6 +2,7 @@
 pinegrow.json
 _pgbackup/
 _pginfo/
+sandbox/
 projectdb.pgml
 index.html
 css/theme.css
@@ -15,7 +16,7 @@ yarn-error.log
 package-lock.json
 
 # Build output
-dist/
+# dist/ - Removed to include dist files in repository
 
 # IDE and editor files
 .idea/
