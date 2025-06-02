@@ -32,23 +32,23 @@
  * Essential for accessibility compliance.
  */
 .skip-link {
-  position: absolute;
-  top: calc(var(--mico-size-40) * -1);
-  left: var(--mico-size-6);
-  background: var(--mico-color-black);
-  color: var(--mico-color-white);
-  padding: var(--mico-size-8);
-  text-decoration: var(--mico-value-none);
-  z-index: var(--mico-z-50);
-  border-radius: var(--mico-radius-sm);
-  font-weight: var(--mico-fw-500);
-  transition: var(--mico-transition-all);
+  position: absolute !important;
+  top: calc(var(--mico-size-40) * -1) !important;
+  left: var(--mico-size-6) !important;
+  background: var(--mico-color-black) !important;
+  color: var(--mico-color-white) !important;
+  padding: var(--mico-size-8) !important;
+  text-decoration: var(--mico-value-none) !important;
+  z-index: var(--mico-z-50) !important;
+  border-radius: var(--mico-radius-sm) !important;
+  font-weight: var(--mico-fw-500) !important;
+  transition: var(--mico-transition-all) !important;
 }
 
 .skip-link:focus {
-  top: var(--mico-size-6);
-  outline: var(--mico-border-width-2) solid var(--mico-color-primary);
-  outline-offset: var(--mico-size-2);
+  top: var(--mico-size-6) !important;
+  outline: var(--mico-border-width-2) solid var(--mico-color-primary) !important;
+  outline-offset: var(--mico-size-2) !important;
 }
 
 /**
@@ -58,15 +58,15 @@
  * Use for descriptive text that aids accessibility.
  */
 .sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: var(--mico-value-0);
-  margin: calc(var(--mico-size-1) * -1);
-  overflow: var(--mico-overflow-hidden);
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: var(--mico-value-0);
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: var(--mico-value-0) !important;
+  margin: calc(var(--mico-size-1) * -1) !important;
+  overflow: var(--mico-overflow-hidden) !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: var(--mico-value-0) !important;
 }
 
 /**
@@ -75,14 +75,14 @@
  * Reverses .sr-only for responsive or conditional visibility.
  */
 .not-sr-only {
-  position: static;
-  width: var(--mico-value-auto);
-  height: var(--mico-value-auto);
-  padding: var(--mico-value-0);
-  margin: var(--mico-value-0);
-  overflow: var(--mico-overflow-visible);
-  clip: var(--mico-value-auto);
-  white-space: normal;
+  position: static !important;
+  width: var(--mico-value-auto) !important;
+  height: var(--mico-value-auto) !important;
+  padding: var(--mico-value-0) !important;
+  margin: var(--mico-value-0) !important;
+  overflow: var(--mico-overflow-visible) !important;
+  clip: var(--mico-value-auto) !important;
+  white-space: normal !important;
 }
 
 /* ========================================================================== */

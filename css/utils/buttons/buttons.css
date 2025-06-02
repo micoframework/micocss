@@ -82,65 +82,65 @@
 
 /* Brand Colors */
 .btn-primary {
-  background-color: var(--mico-color-primary);
-  color: var(--mico-color-white);
-  border-color: var(--mico-color-primary);
+  background-color: var(--mico-color-primary) !important;
+  color: var(--mico-color-white) !important;
+  border-color: var(--mico-color-primary) !important;
 }
 
 .btn-secondary {
-  background-color: var(--mico-color-secondary);
-  color: var(--mico-color-white);
-  border-color: var(--mico-color-secondary);
+  background-color: var(--mico-color-secondary) !important;
+  color: var(--mico-color-white) !important;
+  border-color: var(--mico-color-secondary) !important;
 }
 
 .btn-accent {
-  background-color: var(--mico-color-accent);
-  color: var(--mico-color-white);
-  border-color: var(--mico-color-accent);
+  background-color: var(--mico-color-accent) !important;
+  color: var(--mico-color-white) !important;
+  border-color: var(--mico-color-accent) !important;
 }
 
 /* State Colors */
 .btn-success {
-  background-color: var(--mico-color-success);
-  color: var(--mico-color-white);
-  border-color: var(--mico-color-success);
+  background-color: var(--mico-color-success) !important;
+  color: var(--mico-color-white) !important;
+  border-color: var(--mico-color-success) !important;
 }
 
 .btn-danger {
-  background-color: var(--mico-color-error);
-  color: var(--mico-color-white);
-  border-color: var(--mico-color-error);
+  background-color: var(--mico-color-error) !important;
+  color: var(--mico-color-white) !important;
+  border-color: var(--mico-color-error) !important;
 }
 
 .btn-warning {
-  background-color: var(--mico-color-warning);
-  color: var(--mico-color-black);
-  border-color: var(--mico-color-warning);
+  background-color: var(--mico-color-warning) !important;
+  color: var(--mico-color-black) !important;
+  border-color: var(--mico-color-warning) !important;
 }
 
 .btn-info {
-  background-color: var(--mico-color-info);
-  color: var(--mico-color-white);
-  border-color: var(--mico-color-info);
+  background-color: var(--mico-color-info) !important;
+  color: var(--mico-color-white) !important;
+  border-color: var(--mico-color-info) !important;
 }
 
 /* Neutral Colors */
 .btn-light {
-  background-color: var(--mico-color-gray-100);
-  color: var(--mico-color-gray-900);
-  border-color: var(--mico-color-gray-100);
+  background-color: var(--mico-color-gray-100) !important;
+  color: var(--mico-color-gray-900) !important;
+  border-color: var(--mico-color-gray-100) !important;
 }
 
 .btn-dark {
-  background-color: var(--mico-color-gray-900);
-  color: var(--mico-color-white);
-  border-color: var(--mico-color-gray-900);
+  background-color: var(--mico-color-gray-900) !important;
+  color: var(--mico-color-white) !important;
+  border-color: var(--mico-color-gray-900) !important;
 }
 
 .btn-transparent {
-  background-color: var(--mico-value-transparent);
-  color: var(--mico-value-inherit);
-  border-color: var(--mico-value-transparent);
+  background-color: var(--mico-value-transparent) !important;
+  color: var(--mico-value-inherit) !important;
+  border-color: var(--mico-value-transparent) !important;
 }
 
 /* ========================================================================== */

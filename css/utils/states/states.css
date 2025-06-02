@@ -25,7 +25,7 @@
 [class^="hover-"], [class*=" hover-"],
 [class^="focus-"], [class*=" focus-"],
 [class^="active-"], [class*=" active-"] {
-    transition: var(--mico-transition-all) !important;
+    transition: var(--mico-transition-all);
 }
 
 /* ========================================================================== */

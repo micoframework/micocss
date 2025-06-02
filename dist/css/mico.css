@@ -4471,25 +4471,25 @@
     margin-right: auto !important;
   }
 
-.px-fluid-xs { padding-top: max(calc(4px * 4), min(3vw, calc(4px * 8))) !important; padding-bottom: max(calc(4px * 4), min(3vw, calc(4px * 8))) !important; }
+.px-fluid-xs { padding-left: max(calc(4px * 4), min(3vw, calc(4px * 8))) !important; padding-right: max(calc(4px * 4), min(3vw, calc(4px * 8))) !important; }
 
-.py-fluid-xs { padding-left: max(calc(4px * 4), min(3vw, calc(4px * 8))) !important; padding-right: max(calc(4px * 4), min(3vw, calc(4px * 8))) !important; }
+.py-fluid-xs { padding-top: max(calc(4px * 4), min(3vw, calc(4px * 8))) !important; padding-bottom: max(calc(4px * 4), min(3vw, calc(4px * 8))) !important; }
 
-.px-fluid-sm { padding-top: max(calc(4px * 4), min(4vw, calc(4px * 14))) !important; padding-bottom: max(calc(4px * 4), min(4vw, calc(4px * 14))) !important; }
+.px-fluid-sm { padding-left: max(calc(4px * 4), min(4vw, calc(4px * 14))) !important; padding-right: max(calc(4px * 4), min(4vw, calc(4px * 14))) !important; }
 
-.py-fluid-sm { padding-left: max(calc(4px * 4), min(4vw, calc(4px * 14))) !important; padding-right: max(calc(4px * 4), min(4vw, calc(4px * 14))) !important; }
+.py-fluid-sm { padding-top: max(calc(4px * 4), min(4vw, calc(4px * 14))) !important; padding-bottom: max(calc(4px * 4), min(4vw, calc(4px * 14))) !important; }
 
-.px-fluid-md { padding-top: max(calc(4px * 4), min(6vw, calc(4px * 20))) !important; padding-bottom: max(calc(4px * 4), min(6vw, calc(4px * 20))) !important; }
+.px-fluid-md { padding-left: max(calc(4px * 4), min(6vw, calc(4px * 20))) !important; padding-right: max(calc(4px * 4), min(6vw, calc(4px * 20))) !important; }
 
-.py-fluid-md { padding-left: max(calc(4px * 4), min(6vw, calc(4px * 20))) !important; padding-right: max(calc(4px * 4), min(6vw, calc(4px * 20))) !important; }
+.py-fluid-md { padding-top: max(calc(4px * 4), min(6vw, calc(4px * 20))) !important; padding-bottom: max(calc(4px * 4), min(6vw, calc(4px * 20))) !important; }
 
-.px-fluid-lg { padding-top: max(calc(4px * 4), min(8vw, calc(4px * 25))) !important; padding-bottom: max(calc(4px * 4), min(8vw, calc(4px * 25))) !important; }
+.px-fluid-lg { padding-left: max(calc(4px * 4), min(8vw, calc(4px * 25))) !important; padding-right: max(calc(4px * 4), min(8vw, calc(4px * 25))) !important; }
 
-.py-fluid-lg { padding-left: max(calc(4px * 4), min(8vw, calc(4px * 25))) !important; padding-right: max(calc(4px * 4), min(8vw, calc(4px * 25))) !important; }
+.py-fluid-lg { padding-top: max(calc(4px * 4), min(8vw, calc(4px * 25))) !important; padding-bottom: max(calc(4px * 4), min(8vw, calc(4px * 25))) !important; }
 
-.px-fluid-xl { padding-top: max(calc(4px * 4), min(10vw, calc(4px * 32))) !important; padding-bottom: max(calc(4px * 4), min(10vw, calc(4px * 32))) !important; }
+.px-fluid-xl { padding-left: max(calc(4px * 4), min(10vw, calc(4px * 32))) !important; padding-right: max(calc(4px * 4), min(10vw, calc(4px * 32))) !important; }
 
-.py-fluid-xl { padding-left: max(calc(4px * 4), min(10vw, calc(4px * 32))) !important; padding-right: max(calc(4px * 4), min(10vw, calc(4px * 32))) !important; }
+.py-fluid-xl { padding-top: max(calc(4px * 4), min(10vw, calc(4px * 32))) !important; padding-bottom: max(calc(4px * 4), min(10vw, calc(4px * 32))) !important; }
 
 .px-fluid-2xl { padding-top: max(calc(4px * 4), min(12vw, calc(4px * 48))) !important; padding-bottom: max(calc(4px * 4), min(12vw, calc(4px * 48))) !important; }
 

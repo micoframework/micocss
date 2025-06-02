@@ -41,20 +41,20 @@
     margin-inline: auto !important;
   }
 
-.px-fluid-xs { padding-block: var(--mico-size-fluid-xs) !important; }
-.py-fluid-xs { padding-inline: var(--mico-size-fluid-xs) !important; }
+.px-fluid-xs { padding-inline: var(--mico-size-fluid-xs) !important; }
+.py-fluid-xs { padding-block: var(--mico-size-fluid-xs) !important; }
 
-.px-fluid-sm { padding-block: var(--mico-size-fluid-sm) !important; }
-.py-fluid-sm { padding-inline: var(--mico-size-fluid-sm) !important; }
+.px-fluid-sm { padding-inline: var(--mico-size-fluid-sm) !important; }
+.py-fluid-sm { padding-block: var(--mico-size-fluid-sm) !important; }
 
-.px-fluid-md { padding-block: var(--mico-size-fluid-md) !important; }
-.py-fluid-md { padding-inline: var(--mico-size-fluid-md) !important; }
+.px-fluid-md { padding-inline: var(--mico-size-fluid-md) !important; }
+.py-fluid-md { padding-block: var(--mico-size-fluid-md) !important; }
 
-.px-fluid-lg { padding-block: var(--mico-size-fluid-lg) !important; }
-.py-fluid-lg { padding-inline: var(--mico-size-fluid-lg) !important; }
+.px-fluid-lg { padding-inline: var(--mico-size-fluid-lg) !important; }
+.py-fluid-lg { padding-block: var(--mico-size-fluid-lg) !important; }
 
-.px-fluid-xl { padding-block: var(--mico-size-fluid-xl) !important; }
-.py-fluid-xl { padding-inline: var(--mico-size-fluid-xl) !important; }
+.px-fluid-xl { padding-inline: var(--mico-size-fluid-xl) !important; }
+.py-fluid-xl { padding-block: var(--mico-size-fluid-xl) !important; }
 
 .px-fluid-2xl { padding-block: var(--mico-size-fluid-2xl) !important; }
 .py-fluid-2xl { padding-inline: var(--mico-size-fluid-2xl) !important; }
