@@ -17,7 +17,7 @@
 @import "utils/buttons/buttons.css";
 @import "utils/states/states.css";
 @import "utils/animation/animation.css";
-@import "utils/navigation/navigation.css";
+@import "utils/miscellaneous/misc.css";
 
 /* Presets */
 @import "presets/oxygenbuilder.pre.css";

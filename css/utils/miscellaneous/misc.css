@@ -1,0 +1,460 @@
+/**
+ * Mico CSS Framework - Miscellaneous Utilities
+ *
+ * This file provides various utility classes that don't fit into other categories
+ * but are essential for modern web development. These utilities cover:
+ *
+ * - Accessibility helpers (skip links, screen reader utilities)
+ * - Appearance control (form elements, browser defaults)
+ * - Pointer events and user interaction
+ * - Performance optimization hints
+ * - Layout bleeding effects
+ * - CSS masking and visual effects
+ * - Browser compatibility helpers
+ *
+ * USAGE:
+ * Accessibility: .skip-link, .sr-only
+ * Appearance: .appearance-none, .appearance-auto
+ * Interaction: .pointer-events-none, .user-select-none
+ * Performance: .will-change-transform, .will-change-opacity
+ * Layout: .bleed-full, .bleed-column
+ * Effects: .mask-fade-bottom, .mask-fade-top
+ */
+
+/* ========================================================================== */
+/* ACCESSIBILITY UTILITIES                                                   */
+/* ========================================================================== */
+
+/**
+ * Skip Link
+ *
+ * Provides keyboard users a way to skip to main content.
+ * Essential for accessibility compliance.
+ */
+.skip-link {
+  position: absolute;
+  top: calc(var(--mico-size-40) * -1);
+  left: var(--mico-size-6);
+  background: var(--mico-color-black);
+  color: var(--mico-color-white);
+  padding: var(--mico-size-8);
+  text-decoration: var(--mico-value-none);
+  z-index: var(--mico-z-50);
+  border-radius: var(--mico-radius-sm);
+  font-weight: var(--mico-fw-500);
+  transition: var(--mico-transition-all);
+}
+
+.skip-link:focus {
+  top: var(--mico-size-6);
+  outline: var(--mico-border-width-2) solid var(--mico-color-primary);
+  outline-offset: var(--mico-size-2);
+}
+
+/**
+ * Screen Reader Only
+ *
+ * Hides content visually but keeps it available to screen readers.
+ * Use for descriptive text that aids accessibility.
+ */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: var(--mico-value-0);
+  margin: calc(var(--mico-size-1) * -1);
+  overflow: var(--mico-overflow-hidden);
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: var(--mico-value-0);
+}
+
+/**
+ * Not Screen Reader Only
+ *
+ * Reverses .sr-only for responsive or conditional visibility.
+ */
+.not-sr-only {
+  position: static;
+  width: var(--mico-value-auto);
+  height: var(--mico-value-auto);
+  padding: var(--mico-value-0);
+  margin: var(--mico-value-0);
+  overflow: var(--mico-overflow-visible);
+  clip: var(--mico-value-auto);
+  white-space: normal;
+}
+
+/* ========================================================================== */
+/* APPEARANCE CONTROL                                                        */
+/* ========================================================================== */
+
+/**
+ * Appearance Utilities
+ *
+ * Controls the appearance property to remove or restore browser default styling.
+ * Particularly useful for form elements and custom components.
+ */
+.appearance-none {
+  -webkit-appearance: var(--mico-appearance-none);
+  -moz-appearance: var(--mico-appearance-none);
+  appearance: var(--mico-appearance-none);
+}
+
+.appearance-auto {
+  -webkit-appearance: var(--mico-appearance-auto);
+  -moz-appearance: var(--mico-appearance-auto);
+  appearance: var(--mico-appearance-auto);
+}
+
+/* ========================================================================== */
+/* POINTER EVENTS & USER INTERACTION                                         */
+/* ========================================================================== */
+
+/**
+ * Pointer Events Control
+ *
+ * Controls whether elements can be the target of pointer events.
+ * Useful for overlays, disabled states, and complex layouts.
+ */
+.pointer-events-none {
+  pointer-events: var(--mico-pointer-events-none);
+}
+
+.pointer-events-auto {
+  pointer-events: var(--mico-pointer-events-auto);
+}
+
+/**
+ * User Select Control
+ *
+ * Controls text selection behavior for better user experience.
+ */
+.user-select-none {
+  -webkit-user-select: var(--mico-user-select-none);
+  -moz-user-select: var(--mico-user-select-none);
+  user-select: var(--mico-user-select-none);
+}
+
+.user-select-text {
+  -webkit-user-select: var(--mico-user-select-text);
+  -moz-user-select: var(--mico-user-select-text);
+  user-select: var(--mico-user-select-text);
+}
+
+.user-select-all {
+  -webkit-user-select: var(--mico-user-select-all);
+  -moz-user-select: var(--mico-user-select-all);
+  user-select: var(--mico-user-select-all);
+}
+
+.user-select-auto {
+  -webkit-user-select: var(--mico-user-select-auto);
+  -moz-user-select: var(--mico-user-select-auto);
+  user-select: var(--mico-user-select-auto);
+}
+
+/* ========================================================================== */
+/* PERFORMANCE OPTIMIZATION                                                  */
+/* ========================================================================== */
+
+/**
+ * Will Change Utilities
+ *
+ * Provides performance hints to the browser about what properties will change.
+ * Use sparingly as they can consume more resources if overused.
+ */
+.will-change-auto {
+  will-change: var(--mico-will-change-auto);
+}
+
+.will-change-transform {
+  will-change: var(--mico-will-change-transform);
+}
+
+.will-change-opacity {
+  will-change: var(--mico-will-change-opacity);
+}
+
+.will-change-scroll {
+  will-change: var(--mico-will-change-scroll);
+}
+
+/* ========================================================================== */
+/* LAYOUT BLEEDING EFFECTS                                                   */
+/* ========================================================================== */
+
+/**
+ * Bleed Utilities
+ *
+ * Creates full-bleed and column-bleed effects that extend beyond container bounds.
+ * Useful for hero sections, backgrounds, and visual emphasis.
+ */
+
+/* Full viewport bleed */
+.bleed-full {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+/* Column bleed with configurable offsets */
+.bleed-column {
+  margin-left: calc(var(--mico-bleed-offset-md) * -1);
+  margin-right: calc(var(--mico-bleed-offset-md) * -1);
+}
+
+.bleed-column-sm {
+  margin-left: calc(var(--mico-bleed-offset-sm) * -1);
+  margin-right: calc(var(--mico-bleed-offset-sm) * -1);
+}
+
+.bleed-column-lg {
+  margin-left: calc(var(--mico-bleed-offset-lg) * -1);
+  margin-right: calc(var(--mico-bleed-offset-lg) * -1);
+}
+
+/* Horizontal only bleed */
+.bleed-x {
+  margin-left: calc(var(--mico-bleed-offset-md) * -1);
+  margin-right: calc(var(--mico-bleed-offset-md) * -1);
+}
+
+/* Vertical only bleed */
+.bleed-y {
+  margin-top: calc(var(--mico-bleed-offset-md) * -1);
+  margin-bottom: calc(var(--mico-bleed-offset-md) * -1);
+}
+
+/* ========================================================================== */
+/* CSS MASKING & VISUAL EFFECTS                                              */
+/* ========================================================================== */
+
+/**
+ * Mask Utilities
+ *
+ * Applies CSS masks for fade effects and visual transitions.
+ * Useful for creating smooth visual boundaries and focus effects.
+ */
+
+/* Directional fade masks */
+.mask-fade-top {
+  -webkit-mask-image: var(--mico-mask-fade-to-top);
+  mask-image: var(--mico-mask-fade-to-top);
+}
+
+.mask-fade-bottom {
+  -webkit-mask-image: var(--mico-mask-fade-to-bottom);
+  mask-image: var(--mico-mask-fade-to-bottom);
+}
+
+.mask-fade-left {
+  -webkit-mask-image: var(--mico-mask-fade-to-left);
+  mask-image: var(--mico-mask-fade-to-left);
+}
+
+.mask-fade-right {
+  -webkit-mask-image: var(--mico-mask-fade-to-right);
+  mask-image: var(--mico-mask-fade-to-right);
+}
+
+/* Fade intensity variations */
+.mask-fade-short {
+  -webkit-mask-image: var(--mico-mask-fade-short);
+  mask-image: var(--mico-mask-fade-short);
+}
+
+.mask-fade-long {
+  -webkit-mask-image: var(--mico-mask-fade-long);
+  mask-image: var(--mico-mask-fade-long);
+}
+
+/* Remove mask */
+.mask-none {
+  -webkit-mask-image: var(--mico-value-none);
+  mask-image: var(--mico-value-none);
+}
+
+/* ========================================================================== */
+/* BROWSER COMPATIBILITY HELPERS                                             */
+/* ========================================================================== */
+
+/**
+ * Scrollbar Styling
+ *
+ * Provides consistent scrollbar styling across browsers.
+ * Note: Limited support in Firefox.
+ */
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+.scrollbar-none {
+  scrollbar-width: var(--mico-value-none);
+  -ms-overflow-style: var(--mico-value-none);
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: var(--mico-value-none);
+}
+
+/**
+ * Webkit Scrollbar Styling
+ *
+ * Detailed scrollbar customization for Webkit browsers.
+ */
+.scrollbar-custom::-webkit-scrollbar {
+  width: var(--mico-size-12);
+  height: var(--mico-size-12);
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: var(--mico-color-gray-100);
+  border-radius: var(--mico-radius-md);
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background: var(--mico-color-gray-400);
+  border-radius: var(--mico-radius-md);
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background: var(--mico-color-gray-500);
+}
+
+/**
+ * Touch Action Control
+ *
+ * Controls touch behavior for better mobile experience.
+ */
+.touch-auto {
+  touch-action: auto;
+}
+
+.touch-none {
+  touch-action: var(--mico-value-none);
+}
+
+.touch-pan-x {
+  touch-action: pan-x;
+}
+
+.touch-pan-y {
+  touch-action: pan-y;
+}
+
+.touch-manipulation {
+  touch-action: manipulation;
+}
+
+/* ========================================================================== */
+/* ACCESSIBILITY & MEDIA QUERIES                                             */
+/* ========================================================================== */
+
+/**
+ * High Contrast Mode Support
+ *
+ * Enhanced visibility for high contrast environments.
+ */
+@media (prefers-contrast: high) {
+  .skip-link {
+    border: var(--mico-border-width-2) solid currentColor;
+  }
+
+  .mask-fade-top,
+  .mask-fade-bottom,
+  .mask-fade-left,
+  .mask-fade-right,
+  .mask-fade-short,
+  .mask-fade-long {
+    -webkit-mask-image: var(--mico-value-none);
+    mask-image: var(--mico-value-none);
+  }
+}
+
+/**
+ * Reduced Motion Support
+ *
+ * Respects user preferences for reduced motion.
+ */
+@media (prefers-reduced-motion: reduce) {
+  .skip-link {
+    transition: var(--mico-value-none);
+  }
+
+  .will-change-transform,
+  .will-change-opacity,
+  .will-change-scroll {
+    will-change: var(--mico-will-change-auto);
+  }
+}
+
+/**
+ * Print Media Support
+ *
+ * Optimized styles for print media.
+ */
+@media print {
+  .skip-link {
+    display: var(--mico-value-none);
+  }
+
+  .mask-fade-top,
+  .mask-fade-bottom,
+  .mask-fade-left,
+  .mask-fade-right,
+  .mask-fade-short,
+  .mask-fade-long {
+    -webkit-mask-image: var(--mico-value-none);
+    mask-image: var(--mico-value-none);
+  }
+
+  .bleed-full,
+  .bleed-column,
+  .bleed-column-sm,
+  .bleed-column-lg,
+  .bleed-x,
+  .bleed-y {
+    margin: var(--mico-value-0);
+    width: var(--mico-value-auto);
+  }
+}
+
+/* ========================================================================== */
+/* USAGE EXAMPLES AND DOCUMENTATION                                          */
+/* ========================================================================== */
+
+/**
+ * USAGE EXAMPLES:
+ *
+ * 1. Accessible skip link:
+ *    <a href="#main" class="skip-link">Skip to main content</a>
+ *
+ * 2. Screen reader only text:
+ *    <span class="sr-only">This text is only for screen readers</span>
+ *
+ * 3. Custom form element:
+ *    <select class="appearance-none">...</select>
+ *
+ * 4. Disabled overlay:
+ *    <div class="pointer-events-none">...</div>
+ *
+ * 5. Performance optimized element:
+ *    <div class="will-change-transform">...</div>
+ *
+ * 6. Full bleed hero section:
+ *    <section class="bleed-full">...</section>
+ *
+ * 7. Fade effect:
+ *    <div class="mask-fade-bottom">...</div>
+ *
+ * 8. Custom scrollbar:
+ *    <div class="scrollbar-custom overflow-auto">...</div>
+ *
+ * ACCESSIBILITY NOTES:
+ * - Always include skip links for keyboard navigation
+ * - Use .sr-only for descriptive text that aids screen readers
+ * - Test with high contrast mode and reduced motion preferences
+ * - Ensure touch targets are appropriately sized for mobile
+ */
+

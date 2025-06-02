@@ -26,7 +26,7 @@ if (!fs.existsSync(themesDir)) {
 
 // Core CSS files that are always included
 const coreFiles = [
-  'mico.variables.css'
+  'base/variables.css'
 ];
 
 // Generate imports based on configuration
@@ -35,15 +35,32 @@ let imports = [];
 // Add core files
 if (config.core) {
   coreFiles.forEach(file => {
-    const content = fs.readFileSync(path.join(cssDir, file), 'utf8');
-    imports.push(content);
+    const filePath = path.join(cssDir, file);
+    if (fs.existsSync(filePath)) {
+      const content = fs.readFileSync(filePath, 'utf8');
+      imports.push(content);
+    } else {
+      console.warn(`Warning: Core file ${filePath} not found`);
+    }
   });
 }
 
 // Add utility files
+const utilityFileMap = {
+  typography: 'utils/typography/typography.css',
+  color: 'utils/colors/colors.css',
+  layout: 'utils/layout/layout.css',
+  border: 'utils/borders/borders.css',
+  spacing: 'utils/layout/spacing.css',
+  states: 'utils/states/states.css',
+  button: 'utils/buttons/buttons.css',
+  animation: 'utils/animation/animation.css',
+  navigation: 'utils/navigation/navigation.css'
+};
+
 Object.entries(config.utilities).forEach(([name, enabled]) => {
   if (enabled) {
-    const filePath = path.join(cssDir, 'utils', `${name}.utils.css`);
+    const filePath = path.join(cssDir, utilityFileMap[name] || `utils/${name}/${name}.css`);
     if (fs.existsSync(filePath)) {
       const content = fs.readFileSync(filePath, 'utf8');
       imports.push(content);
@@ -71,7 +88,7 @@ Object.entries(config.presets).forEach(([name, enabled]) => {
 
 // Add feature files
 if (config.features.accessibility) {
-  const filePath = path.join(cssDir, 'mico.accessibility.css');
+  const filePath = path.join(cssDir, 'accessibility', 'accessibility.css');
   if (fs.existsSync(filePath)) {
     const content = fs.readFileSync(filePath, 'utf8');
     imports.push(content);
@@ -80,14 +97,9 @@ if (config.features.accessibility) {
   }
 }
 
+// Motion features are now part of the animation utility
 if (config.features.motion) {
-  const filePath = path.join(cssDir, 'motion', 'mico.motion.css');
-  if (fs.existsSync(filePath)) {
-    const content = fs.readFileSync(filePath, 'utf8');
-    imports.push(content);
-  } else {
-    console.warn(`Warning: Motion file ${filePath} not found`);
-  }
+  console.log('Motion features are included in the animation utility');
 }
 
 // Write the custom build file

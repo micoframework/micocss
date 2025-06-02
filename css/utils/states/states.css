@@ -44,49 +44,52 @@
 .hover-bg-accent:hover { background-color: var(--mico-color-accent) !important; }
 
 /* ---------- Primary Color Variations ---------- */
-/* Shades - Darker variations */
-.hover-bg-primary-light:hover { background-color: var(--mico-color-primary-shade-light) !important; }
-.hover-bg-primary-medium:hover { background-color: var(--mico-color-primary-shade-medium) !important; }
-.hover-bg-primary-dark:hover { background-color: var(--mico-color-primary-shade-dark) !important; }
-.hover-bg-primary-darker:hover { background-color: var(--mico-color-primary-shade-darker) !important; }
-.hover-bg-primary-darkest:hover { background-color: var(--mico-color-primary-shade-darkest) !important; }
+/* Tints - Lighter variations */
+.hover-bg-primary-light:hover { background-color: var(--mico-color-primary-light) !important; }
+.hover-bg-primary-2xlight:hover { background-color: var(--mico-color-primary-2xlight) !important; }
+.hover-bg-primary-3xlight:hover { background-color: var(--mico-color-primary-3xlight) !important; }
+.hover-bg-primary-4xlight:hover { background-color: var(--mico-color-primary-4xlight) !important; }
+.hover-bg-primary-5xlight:hover { background-color: var(--mico-color-primary-5xlight) !important; }
 
-/* Tones - Lighter variations */
-.hover-bg-primary-soft:hover { background-color: var(--mico-color-primary-tone-soft) !important; }
-.hover-bg-primary-muted:hover { background-color: var(--mico-color-primary-tone-muted) !important; }
-.hover-bg-primary-pastel:hover { background-color: var(--mico-color-primary-tone-pastel) !important; }
-.hover-bg-primary-pale:hover { background-color: var(--mico-color-primary-tone-pale) !important; }
-.hover-bg-primary-faint:hover { background-color: var(--mico-color-primary-tone-faint) !important; }
+/* Shades - Darker variations */
+.hover-bg-primary-dark:hover { background-color: var(--mico-color-primary-dark) !important; }
+.hover-bg-primary-2xdark:hover { background-color: var(--mico-color-primary-2xdark) !important; }
+.hover-bg-primary-3xdark:hover { background-color: var(--mico-color-primary-3xdark) !important; }
+.hover-bg-primary-4xdark:hover { background-color: var(--mico-color-primary-4xdark) !important; }
+.hover-bg-primary-5xdark:hover { background-color: var(--mico-color-primary-5xdark) !important; }
+
 
 /* ---------- Secondary Color Variations ---------- */
-/* Shades - Darker variations */
-.hover-bg-secondary-light:hover { background-color: var(--mico-color-secondary-shade-light) !important; }
-.hover-bg-secondary-medium:hover { background-color: var(--mico-color-secondary-shade-medium) !important; }
-.hover-bg-secondary-dark:hover { background-color: var(--mico-color-secondary-shade-dark) !important; }
-.hover-bg-secondary-darker:hover { background-color: var(--mico-color-secondary-shade-darker) !important; }
-.hover-bg-secondary-darkest:hover { background-color: var(--mico-color-secondary-shade-darkest) !important; }
+/* Tints - Lighter variations */
+.hover-bg-secondary-light:hover { background-color: var(--mico-color-secondary-light) !important; }
+.hover-bg-secondary-2xlight:hover { background-color: var(--mico-color-secondary-2xlight) !important; }
+.hover-bg-secondary-3xlight:hover { background-color: var(--mico-color-secondary-3xlight) !important; }
+.hover-bg-secondary-4xlight:hover { background-color: var(--mico-color-secondary-4xlight) !important; }
+.hover-bg-secondary-5xlight:hover { background-color: var(--mico-color-secondary-5xlight) !important; }
 
-/* Tones - Lighter variations */
-.hover-bg-secondary-soft:hover { background-color: var(--mico-color-secondary-tone-soft) !important; }
-.hover-bg-secondary-muted:hover { background-color: var(--mico-color-secondary-tone-muted) !important; }
-.hover-bg-secondary-pastel:hover { background-color: var(--mico-color-secondary-tone-pastel) !important; }
-.hover-bg-secondary-pale:hover { background-color: var(--mico-color-secondary-tone-pale) !important; }
-.hover-bg-secondary-faint:hover { background-color: var(--mico-color-secondary-tone-faint) !important; }
+/* Shades - Darker variations */
+.hover-bg-secondary-dark:hover { background-color: var(--mico-color-secondary-dark) !important; }
+.hover-bg-secondary-2xdark:hover { background-color: var(--mico-color-secondary-2xdark) !important; }
+.hover-bg-secondary-3xdark:hover { background-color: var(--mico-color-secondary-3xdark) !important; }
+.hover-bg-secondary-4xdark:hover { background-color: var(--mico-color-secondary-4xdark) !important; }
+.hover-bg-secondary-5xdark:hover { background-color: var(--mico-color-secondary-5xdark) !important; }
+
+
 
 /* ---------- Accent Color Variations ---------- */
-/* Shades - Darker variations */
-.hover-bg-accent-light:hover { background-color: var(--mico-color-accent-shade-light) !important; }
-.hover-bg-accent-medium:hover { background-color: var(--mico-color-accent-shade-medium) !important; }
-.hover-bg-accent-dark:hover { background-color: var(--mico-color-accent-shade-dark) !important; }
-.hover-bg-accent-darker:hover { background-color: var(--mico-color-accent-shade-darker) !important; }
-.hover-bg-accent-darkest:hover { background-color: var(--mico-color-accent-shade-darkest) !important; }
+/* Tints - Lighter variations */
+.hover-bg-accent-light:hover { background-color: var(--mico-color-accent-light) !important; }
+.hover-bg-accent-2xlight:hover { background-color: var(--mico-color-accent-2xlight) !important; }
+.hover-bg-accent-3xlight:hover { background-color: var(--mico-color-accent-3xlight) !important; }
+.hover-bg-accent-4xlight:hover { background-color: var(--mico-color-accent-4xlight) !important; }
+.hover-bg-accent-5xlight:hover { background-color: var(--mico-color-accent-5xlight) !important; }
 
-/* Tones - Lighter variations */
-.hover-bg-accent-soft:hover { background-color: var(--mico-color-accent-tone-soft) !important; }
-.hover-bg-accent-muted:hover { background-color: var(--mico-color-accent-tone-muted) !important; }
-.hover-bg-accent-pastel:hover { background-color: var(--mico-color-accent-tone-pastel) !important; }
-.hover-bg-accent-pale:hover { background-color: var(--mico-color-accent-tone-pale) !important; }
-.hover-bg-accent-faint:hover { background-color: var(--mico-color-accent-tone-faint) !important; }
+/* Shades - Darker variations */
+.hover-bg-accent-dark:hover { background-color: var(--mico-color-accent-dark) !important; }
+.hover-bg-accent-2xdark:hover { background-color: var(--mico-color-accent-2xdark) !important; }
+.hover-bg-accent-3xdark:hover { background-color: var(--mico-color-accent-3xdark) !important; }
+.hover-bg-accent-4xdark:hover { background-color: var(--mico-color-accent-4xdark) !important; }
+.hover-bg-accent-5xdark:hover { background-color: var(--mico-color-accent-5xdark) !important; }
 
 /* ---------- Grayscale ---------- */
 .hover-bg-gray-100:hover { background-color: var(--mico-color-gray-100) !important; }
@@ -153,49 +156,51 @@
 .focus-bg-accent:focus { background-color: var(--mico-color-accent) !important; }
 
 /* ---------- Primary Color Variations ---------- */
-/* Shades - Darker variations */
-.focus-bg-primary-light:focus { background-color: var(--mico-color-primary-shade-light) !important; }
-.focus-bg-primary-medium:focus { background-color: var(--mico-color-primary-shade-medium) !important; }
-.focus-bg-primary-dark:focus { background-color: var(--mico-color-primary-shade-dark) !important; }
-.focus-bg-primary-darker:focus { background-color: var(--mico-color-primary-shade-darker) !important; }
-.focus-bg-primary-darkest:focus { background-color: var(--mico-color-primary-shade-darkest) !important; }
+/* Tints - Lighter variations */
+.focus-bg-primary-light:focus { background-color: var(--mico-color-primary-light) !important; }
+.focus-bg-primary-2xlight:focus { background-color: var(--mico-color-primary-2xlight) !important; }
+.focus-bg-primary-3xlight:focus { background-color: var(--mico-color-primary-3xlight) !important; }
+.focus-bg-primary-4xlight:focus { background-color: var(--mico-color-primary-4xlight) !important; }
+.focus-bg-primary-5xlight:focus { background-color: var(--mico-color-primary-5xlight) !important; }
 
-/* Tones - Lighter variations */
-.focus-bg-primary-soft:focus { background-color: var(--mico-color-primary-tone-soft) !important; }
-.focus-bg-primary-muted:focus { background-color: var(--mico-color-primary-tone-muted) !important; }
-.focus-bg-primary-pastel:focus { background-color: var(--mico-color-primary-tone-pastel) !important; }
-.focus-bg-primary-pale:focus { background-color: var(--mico-color-primary-tone-pale) !important; }
-.focus-bg-primary-faint:focus { background-color: var(--mico-color-primary-tone-faint) !important; }
+/* Shades - Darker variations */
+.focus-bg-primary-dark:focus { background-color: var(--mico-color-primary-dark) !important; }
+.focus-bg-primary-2xdark:focus { background-color: var(--mico-color-primary-2xdark) !important; }
+.focus-bg-primary-3xdark:focus { background-color: var(--mico-color-primary-3xdark) !important; }
+.focus-bg-primary-4xdark:focus { background-color: var(--mico-color-primary-4xdark) !important; }
+.focus-bg-primary-5xdark:focus { background-color: var(--mico-color-primary-5xdark) !important; }
 
 /* ---------- Secondary Color Variations ---------- */
-/* Shades - Darker variations */
-.focus-bg-secondary-light:focus { background-color: var(--mico-color-secondary-shade-light) !important; }
-.focus-bg-secondary-medium:focus { background-color: var(--mico-color-secondary-shade-medium) !important; }
-.focus-bg-secondary-dark:focus { background-color: var(--mico-color-secondary-shade-dark) !important; }
-.focus-bg-secondary-darker:focus { background-color: var(--mico-color-secondary-shade-darker) !important; }
-.focus-bg-secondary-darkest:focus { background-color: var(--mico-color-secondary-shade-darkest) !important; }
+/* Tints - Lighter variations */
+.focus-bg-secondary-light:focus { background-color: var(--mico-color-secondary-light) !important; }
+.focus-bg-secondary-2xlight:focus { background-color: var(--mico-color-secondary-2xlight) !important; }
+.focus-bg-secondary-3xlight:focus { background-color: var(--mico-color-secondary-3xlight) !important; }
+.focus-bg-secondary-4xlight:focus { background-color: var(--mico-color-secondary-4xlight) !important; }
+.focus-bg-secondary-5xlight:focus { background-color: var(--mico-color-secondary-5xlight) !important; }
 
-/* Tones - Lighter variations */
-.focus-bg-secondary-soft:focus { background-color: var(--mico-color-secondary-tone-soft) !important; }
-.focus-bg-secondary-muted:focus { background-color: var(--mico-color-secondary-tone-muted) !important; }
-.focus-bg-secondary-pastel:focus { background-color: var(--mico-color-secondary-tone-pastel) !important; }
-.focus-bg-secondary-pale:focus { background-color: var(--mico-color-secondary-tone-pale) !important; }
-.focus-bg-secondary-faint:focus { background-color: var(--mico-color-secondary-tone-faint) !important; }
+/* Shades - Darker variations */
+.focus-bg-secondary-dark:focus { background-color: var(--mico-color-secondary-dark) !important; }
+.focus-bg-secondary-2xdark:focus { background-color: var(--mico-color-secondary-2xdark) !important; }
+.focus-bg-secondary-3xdark:focus { background-color: var(--mico-color-secondary-3xdark) !important; }
+.focus-bg-secondary-4xdark:focus { background-color: var(--mico-color-secondary-4xdark) !important; }
+.focus-bg-secondary-5xdark:focus { background-color: var(--mico-color-secondary-5xdark) !important; }
+
 
 /* ---------- Accent Color Variations ---------- */
-/* Shades - Darker variations */
-.focus-bg-accent-light:focus { background-color: var(--mico-color-accent-shade-light) !important; }
-.focus-bg-accent-medium:focus { background-color: var(--mico-color-accent-shade-medium) !important; }
-.focus-bg-accent-dark:focus { background-color: var(--mico-color-accent-shade-dark) !important; }
-.focus-bg-accent-darker:focus { background-color: var(--mico-color-accent-shade-darker) !important; }
-.focus-bg-accent-darkest:focus { background-color: var(--mico-color-accent-shade-darkest) !important; }
+/* Tints - Lighter variations */
+.focus-bg-accent-light:focus { background-color: var(--mico-color-accent-light) !important; }
+.focus-bg-accent-2xlight:focus { background-color: var(--mico-color-accent-2xlight) !important; }
+.focus-bg-accent-3xlight:focus { background-color: var(--mico-color-accent-3xlight) !important; }
+.focus-bg-accent-4xlight:focus { background-color: var(--mico-color-accent-4xlight) !important; }
+.focus-bg-accent-5xlight:focus { background-color: var(--mico-color-accent-5xlight) !important; }
 
-/* Tones - Lighter variations */
-.focus-bg-accent-soft:focus { background-color: var(--mico-color-accent-tone-soft) !important; }
-.focus-bg-accent-muted:focus { background-color: var(--mico-color-accent-tone-muted) !important; }
-.focus-bg-accent-pastel:focus { background-color: var(--mico-color-accent-tone-pastel) !important; }
-.focus-bg-accent-pale:focus { background-color: var(--mico-color-accent-tone-pale) !important; }
-.focus-bg-accent-faint:focus { background-color: var(--mico-color-accent-tone-faint) !important; }
+/* Shades - Darker variations */
+.focus-bg-accent-dark:focus { background-color: var(--mico-color-accent-dark) !important; }
+.focus-bg-accent-2xdark:focus { background-color: var(--mico-color-accent-2xdark) !important; }
+.focus-bg-accent-3xdark:focus { background-color: var(--mico-color-accent-3xdark) !important; }
+.focus-bg-accent-4xdark:focus { background-color: var(--mico-color-accent-4xdark) !important; }
+.focus-bg-accent-5xdark:focus { background-color: var(--mico-color-accent-5xdark) !important; }
+
 
 /* ---------- Grayscale ---------- */
 .focus-bg-gray-100:focus { background-color: var(--mico-color-gray-100) !important; }
@@ -261,49 +266,193 @@
 .active-bg-accent:active { background-color: var(--mico-color-accent) !important; }
 
 /* ---------- Primary Color Variations ---------- */
-/* Shades - Darker variations */
-.active-bg-primary-light:active { background-color: var(--mico-color-primary-shade-light) !important; }
-.active-bg-primary-medium:active { background-color: var(--mico-color-primary-shade-medium) !important; }
-.active-bg-primary-dark:active { background-color: var(--mico-color-primary-shade-dark) !important; }
-.active-bg-primary-darker:active { background-color: var(--mico-color-primary-shade-darker) !important; }
-.active-bg-primary-darkest:active { background-color: var(--mico-color-primary-shade-darkest) !important; }
+/* Tints - Lighter variations */
+.active-bg-primary-light:active { background-color: var(--mico-color-primary-light) !important; }
+.active-bg-primary-2xlight:active { background-color: var(--mico-color-primary-2xlight) !important; }
+.active-bg-primary-3xlight:active { background-color: var(--mico-color-primary-3xlight) !important; }
+.active-bg-primary-4xlight:active { background-color: var(--mico-color-primary-4xlight) !important; }
+.active-bg-primary-5xlight:active { background-color: var(--mico-color-primary-5xlight) !important; }
 
-/* Tones - Lighter variations */
-.active-bg-primary-soft:active { background-color: var(--mico-color-primary-tone-soft) !important; }
-.active-bg-primary-muted:active { background-color: var(--mico-color-primary-tone-muted) !important; }
-.active-bg-primary-pastel:active { background-color: var(--mico-color-primary-tone-pastel) !important; }
-.active-bg-primary-pale:active { background-color: var(--mico-color-primary-tone-pale) !important; }
-.active-bg-primary-faint:active { background-color: var(--mico-color-primary-tone-faint) !important; }
+/* Shades - Darker variations */
+.active-bg-primary-dark:active { background-color: var(--mico-color-primary-dark) !important; }
+.active-bg-primary-2xdark:active { background-color: var(--mico-color-primary-2xdark) !important; }
+.active-bg-primary-3xdark:active { background-color: var(--mico-color-primary-3xdark) !important; }
+.active-bg-primary-4xdark:active { background-color: var(--mico-color-primary-4xdark) !important; }
+.active-bg-primary-5xdark:active { background-color: var(--mico-color-primary-5xdark) !important; }
 
 /* ---------- Secondary Color Variations ---------- */
-/* Shades - Darker variations */
-.active-bg-secondary-light:active { background-color: var(--mico-color-secondary-shade-light) !important; }
-.active-bg-secondary-medium:active { background-color: var(--mico-color-secondary-shade-medium) !important; }
-.active-bg-secondary-dark:active { background-color: var(--mico-color-secondary-shade-dark) !important; }
-.active-bg-secondary-darker:active { background-color: var(--mico-color-secondary-shade-darker) !important; }
-.active-bg-secondary-darkest:active { background-color: var(--mico-color-secondary-shade-darkest) !important; }
+/* Tints - Lighter variations */
+.active-bg-secondary-light:active { background-color: var(--mico-color-secondary-light) !important; }
+.active-bg-secondary-2xlight:active { background-color: var(--mico-color-secondary-2xlight) !important; }
+.active-bg-secondary-3xlight:active { background-color: var(--mico-color-secondary-3xlight) !important; }
+.active-bg-secondary-4xlight:active { background-color: var(--mico-color-secondary-4xlight) !important; }
+.active-bg-secondary-5xlight:active { background-color: var(--mico-color-secondary-5xlight) !important; }
 
-/* Tones - Lighter variations */
-.active-bg-secondary-soft:active { background-color: var(--mico-color-secondary-tone-soft) !important; }
-.active-bg-secondary-muted:active { background-color: var(--mico-color-secondary-tone-muted) !important; }
-.active-bg-secondary-pastel:active { background-color: var(--mico-color-secondary-tone-pastel) !important; }
-.active-bg-secondary-pale:active { background-color: var(--mico-color-secondary-tone-pale) !important; }
-.active-bg-secondary-faint:active { background-color: var(--mico-color-secondary-tone-faint) !important; }
+/* Shades - Darker variations */
+.active-bg-secondary-dark:active { background-color: var(--mico-color-secondary-dark) !important; }
+.active-bg-secondary-2xdark:active { background-color: var(--mico-color-secondary-2xdark) !important; }
+.active-bg-secondary-3xdark:active { background-color: var(--mico-color-secondary-3xdark) !important; }
+.active-bg-secondary-4xdark:active { background-color: var(--mico-color-secondary-4xdark) !important; }
+.active-bg-secondary-5xdark:active { background-color: var(--mico-color-secondary-5xdark) !important; }
 
 /* ---------- Accent Color Variations ---------- */
-/* Shades - Darker variations */
-.active-bg-accent-light:active { background-color: var(--mico-color-accent-shade-light) !important; }
-.active-bg-accent-medium:active { background-color: var(--mico-color-accent-shade-medium) !important; }
-.active-bg-accent-dark:active { background-color: var(--mico-color-accent-shade-dark) !important; }
-.active-bg-accent-darker:active { background-color: var(--mico-color-accent-shade-darker) !important; }
-.active-bg-accent-darkest:active { background-color: var(--mico-color-accent-shade-darkest) !important; }
+/* Tints - Lighter variations */
+.active-bg-accent-light:active { background-color: var(--mico-color-accent-light) !important; }
+.active-bg-accent-2xlight:active { background-color: var(--mico-color-accent-2xlight) !important; }
+.active-bg-accent-3xlight:active { background-color: var(--mico-color-accent-3xlight) !important; }
+.active-bg-accent-4xlight:active { background-color: var(--mico-color-accent-4xlight) !important; }
+.active-bg-accent-5xlight:active { background-color: var(--mico-color-accent-5xlight) !important; }
 
-/* Tones - Lighter variations */
-.active-bg-accent-soft:active { background-color: var(--mico-color-accent-tone-soft) !important; }
-.active-bg-accent-muted:active { background-color: var(--mico-color-accent-tone-muted) !important; }
-.active-bg-accent-pastel:active { background-color: var(--mico-color-accent-tone-pastel) !important; }
-.active-bg-accent-pale:active { background-color: var(--mico-color-accent-tone-pale) !important; }
-.active-bg-accent-faint:active { background-color: var(--mico-color-accent-tone-faint) !important; }
+/* Shades - Darker variations */
+.active-bg-accent-dark:active { background-color: var(--mico-color-accent-dark) !important; }
+.active-bg-accent-2xdark:active { background-color: var(--mico-color-accent-2xdark) !important; }
+.active-bg-accent-3xdark:active { background-color: var(--mico-color-accent-3xdark) !important; }
+.active-bg-accent-4xdark:active { background-color: var(--mico-color-accent-4xdark) !important; }
+.active-bg-accent-5xdark:active { background-color: var(--mico-color-accent-5xdark) !important; }
+
+/* ========================================================================== */
+/* BORDER STATE UTILITIES                                                    */
+/* ========================================================================== */
+
+/**
+ * Border Color States
+ *
+ * These utilities change border colors on hover, focus, and active states.
+ */
+
+/* Hover Border Colors */
+.hover-border-primary:hover { border-color: var(--mico-color-primary) !important; }
+.hover-border-secondary:hover { border-color: var(--mico-color-secondary) !important; }
+.hover-border-accent:hover { border-color: var(--mico-color-accent) !important; }
+.hover-border-success:hover { border-color: var(--mico-color-success) !important; }
+.hover-border-error:hover { border-color: var(--mico-color-error) !important; }
+.hover-border-warning:hover { border-color: var(--mico-color-warning) !important; }
+.hover-border-info:hover { border-color: var(--mico-color-info) !important; }
+.hover-border-gray-300:hover { border-color: var(--mico-color-gray-300) !important; }
+.hover-border-gray-500:hover { border-color: var(--mico-color-gray-500) !important; }
+.hover-border-gray-700:hover { border-color: var(--mico-color-gray-700) !important; }
+
+/* Focus Border Colors */
+.focus-border-primary:focus { border-color: var(--mico-color-primary) !important; }
+.focus-border-secondary:focus { border-color: var(--mico-color-secondary) !important; }
+.focus-border-accent:focus { border-color: var(--mico-color-accent) !important; }
+.focus-border-success:focus { border-color: var(--mico-color-success) !important; }
+.focus-border-error:focus { border-color: var(--mico-color-error) !important; }
+.focus-border-warning:focus { border-color: var(--mico-color-warning) !important; }
+.focus-border-info:focus { border-color: var(--mico-color-info) !important; }
+
+/* Active Border Colors */
+.active-border-primary:active { border-color: var(--mico-color-primary-dark) !important; }
+.active-border-secondary:active { border-color: var(--mico-color-secondary-dark) !important; }
+.active-border-accent:active { border-color: var(--mico-color-accent-dark) !important; }
+
+/* ========================================================================== */
+/* SHADOW STATE UTILITIES                                                    */
+/* ========================================================================== */
+
+/**
+ * Shadow States
+ *
+ * These utilities change box shadows on hover, focus, and active states.
+ */
+
+/* Hover Shadows */
+.hover-shadow:hover { box-shadow: var(--mico-shadow-md) !important; }
+.hover-shadow-sm:hover { box-shadow: var(--mico-shadow-sm) !important; }
+.hover-shadow-lg:hover { box-shadow: var(--mico-shadow-lg) !important; }
+.hover-shadow-xl:hover { box-shadow: var(--mico-shadow-xl) !important; }
+.hover-shadow-2xl:hover { box-shadow: var(--mico-shadow-2xl) !important; }
+.hover-shadow-none:hover { box-shadow: var(--mico-shadow-none) !important; }
+
+/* Focus Shadows */
+.focus-shadow:focus { box-shadow: var(--mico-shadow-md) !important; }
+.focus-shadow-lg:focus { box-shadow: var(--mico-shadow-lg) !important; }
+
+/* Active Shadows */
+.active-shadow-sm:active { box-shadow: var(--mico-shadow-sm) !important; }
+.active-shadow-none:active { box-shadow: var(--mico-shadow-none) !important; }
+
+/* ========================================================================== */
+/* TRANSFORM STATE UTILITIES                                                 */
+/* ========================================================================== */
+
+/**
+ * Transform States
+ *
+ * These utilities apply transforms on hover, focus, and active states.
+ */
+
+/* Hover Transforms */
+.hover-scale-105:hover { transform: scale(1.05) !important; }
+.hover-scale-110:hover { transform: scale(1.1) !important; }
+.hover-scale-95:hover { transform: scale(0.95) !important; }
+.hover-translate-y-1:hover { transform: translateY(-0.25rem) !important; }
+.hover-translate-y-2:hover { transform: translateY(-0.5rem) !important; }
+.hover-rotate-1:hover { transform: rotate(1deg) !important; }
+.hover-rotate-3:hover { transform: rotate(3deg) !important; }
+.hover-rotate-6:hover { transform: rotate(6deg) !important; }
+
+/* Focus Transforms */
+.focus-scale-105:focus { transform: scale(1.05) !important; }
+.focus-translate-y-1:focus { transform: translateY(-0.25rem) !important; }
+
+/* Active Transforms */
+.active-scale-95:active { transform: scale(0.95) !important; }
+.active-translate-y-0:active { transform: translateY(0) !important; }
+
+/* ========================================================================== */
+/* OPACITY STATE UTILITIES                                                   */
+/* ========================================================================== */
+
+/**
+ * Opacity States
+ *
+ * These utilities change opacity on hover, focus, and active states.
+ */
+
+/* Hover Opacity */
+.hover-opacity-100:hover { opacity: var(--mico-opacity-100) !important; }
+.hover-opacity-75:hover { opacity: var(--mico-opacity-75) !important; }
+.hover-opacity-50:hover { opacity: var(--mico-opacity-50) !important; }
+.hover-opacity-25:hover { opacity: var(--mico-opacity-25) !important; }
+.hover-opacity-0:hover { opacity: var(--mico-opacity-0) !important; }
+
+/* Focus Opacity */
+.focus-opacity-100:focus { opacity: var(--mico-opacity-100) !important; }
+.focus-opacity-75:focus { opacity: var(--mico-opacity-75) !important; }
+
+/* Active Opacity */
+.active-opacity-75:active { opacity: var(--mico-opacity-75) !important; }
+.active-opacity-50:active { opacity: var(--mico-opacity-50) !important; }
+
+/* ========================================================================== */
+/* RING STATE UTILITIES                                                      */
+/* ========================================================================== */
+
+/**
+ * Ring States
+ *
+ * These utilities apply ring effects on hover, focus, and active states.
+ */
+
+/* Hover Rings */
+.hover-ring:hover { box-shadow: 0 0 0 var(--mico-ring-width-2) var(--mico-color-primary) !important; }
+.hover-ring-primary:hover { box-shadow: 0 0 0 var(--mico-ring-width-2) var(--mico-color-primary) !important; }
+.hover-ring-secondary:hover { box-shadow: 0 0 0 var(--mico-ring-width-2) var(--mico-color-secondary) !important; }
+.hover-ring-accent:hover { box-shadow: 0 0 0 var(--mico-ring-width-2) var(--mico-color-accent) !important; }
+
+/* Focus Rings */
+.focus-ring:focus { box-shadow: 0 0 0 var(--mico-ring-width-2) var(--mico-color-primary) !important; }
+.focus-ring-primary:focus { box-shadow: 0 0 0 var(--mico-ring-width-2) var(--mico-color-primary) !important; }
+.focus-ring-secondary:focus { box-shadow: 0 0 0 var(--mico-ring-width-2) var(--mico-color-secondary) !important; }
+.focus-ring-accent:focus { box-shadow: 0 0 0 var(--mico-ring-width-2) var(--mico-color-accent) !important; }
+.focus-ring-error:focus { box-shadow: 0 0 0 var(--mico-ring-width-2) var(--mico-color-error) !important; }
+
+/* Ring with Offset */
+.focus-ring-offset-2:focus {
+  box-shadow: 0 0 0 var(--mico-ring-offset-width-2) var(--mico-color-white),
+              0 0 0 calc(var(--mico-ring-width-2) + var(--mico-ring-offset-width-2)) var(--mico-color-primary) !important;
+}
 
 /* ---------- Grayscale ---------- */
 .active-bg-gray-100:active { background-color: var(--mico-color-gray-100) !important; }
@@ -417,15 +566,15 @@
  *    <button class="hover-bg-primary hover-text-white">Button</button>
  *
  * 2. Elevated card on hover:
- *    <div class="hover-elevate hover-bg-primary-pale">Card content</div>
+ *    <div class="hover-elevate hover-bg-primary">Card content</div>
  *
  * 3. Interactive link:
- *    <a class="hover-text-primary focus-text-primary-dark active-text-primary-darker">Link</a>
+ *    <a class="hover-text-primary focus-text-primary active-text-primary">Link</a>
  *
  * 4. Subtle image hover effect:
  *    <img class="hover-brightness-110 hover-scale-sm" src="image.jpg" alt="Image">
  *
  * 5. Button with multiple states:
- *    <button class="hover-bg-primary focus-bg-primary-dark active-bg-primary-darker">Button</button>
+ *    <button class="hover-bg-primary focus-bg-primary active-bg-primary">Button</button>
  */
 

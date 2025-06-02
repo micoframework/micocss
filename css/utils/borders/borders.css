@@ -1,19 +1,478 @@
-.border-none { border-style: var(--mico-border-none) !important; }
-.border-solid { border-style: var(--mico-border-solid) !important; }
-.border-w-0 { border-width: var(--mico-border-width-0) !important; }
-.border-w-1 { border-width: var(--mico-border-width-1) !important; }
-.border-w-2 { border-width: var(--mico-border-width-2) !important; }
-.border-w-4 { border-width: var(--mico-border-width-4) !important; }
-.border-w-5 { border-width: var(--mico-border-width-8) !important; }
+/**
+ * Mico CSS Framework - Border, Outline, Shadow & Ring Utilities
+ *
+ * This file provides comprehensive border and visual enhancement utilities:
+ *
+ * - Border width, style, and color control
+ * - Border radius for rounded corners
+ * - Outline utilities for accessibility and focus states
+ * - Box shadow utilities for depth and elevation
+ * - Ring utilities for focus indicators and highlights
+ * - Divide utilities for separating child elements
+ *
+ * FEATURES:
+ * - Complete border control (width, style, color, radius)
+ * - Accessible outline and focus management
+ * - Flexible shadow system for visual hierarchy
+ * - Modern ring utilities using box-shadow
+ * - Child element dividers with consistent styling
+ *
+ * USAGE:
+ * Borders: .border, .border-2, .border-primary
+ * Radius: .rounded, .rounded-lg, .rounded-full
+ * Outlines: .outline, .outline-2, .outline-primary
+ * Shadows: .shadow, .shadow-lg, .shadow-none
+ * Rings: .ring, .ring-2, .ring-primary
+ * Dividers: .divide-y, .divide-x, .divide-gray-200
+ */
 
-.border-r-0 { border-radius: var(--mico-size-0) !important; }
-.border-r-1 { border-radius: var(--mico-size-1) !important; }
-.border-r-2 { border-radius: var(--mico-size-2) !important; }
-.border-r-3 { border-radius: var(--mico-size-3) !important; }
-.border-r-4 { border-radius: var(--mico-size-4) !important; }
-.border-r-round { border-radius: var(--mico-border-radius-round) !important; }
+/* ========================================================================== */
+/* BORDER WIDTH UTILITIES                                                    */
+/* ========================================================================== */
 
-.border-c-primary { border-color: var(--mico-color-primary) !important; }
-.border-c-secondary { border-color: var(--mico-color-secondary) !important; }
-.border-c-base { border-color: var(--mico-color-base) !important; }
-.border-c-black { border-color: var(--mico-black-900) !important; }
+/**
+ * Border Width Control
+ *
+ * These utilities control the thickness of borders on all sides or specific sides.
+ * Use .border-0 to remove borders completely.
+ */
+
+/* All sides */
+.border-0 { border-width: var(--mico-border-width-0); }
+.border   { border-width: var(--mico-border-width-1); }
+.border-2 { border-width: var(--mico-border-width-2); }
+.border-4 { border-width: var(--mico-border-width-4); }
+.border-8 { border-width: var(--mico-border-width-8); }
+
+/* Individual sides */
+.border-t-0 { border-top-width: var(--mico-border-width-0); }
+.border-t   { border-top-width: var(--mico-border-width-1); }
+.border-t-2 { border-top-width: var(--mico-border-width-2); }
+.border-t-4 { border-top-width: var(--mico-border-width-4); }
+.border-t-8 { border-top-width: var(--mico-border-width-8); }
+
+.border-r-0 { border-right-width: var(--mico-border-width-0); }
+.border-r   { border-right-width: var(--mico-border-width-1); }
+.border-r-2 { border-right-width: var(--mico-border-width-2); }
+.border-r-4 { border-right-width: var(--mico-border-width-4); }
+.border-r-8 { border-right-width: var(--mico-border-width-8); }
+
+.border-b-0 { border-bottom-width: var(--mico-border-width-0); }
+.border-b   { border-bottom-width: var(--mico-border-width-1); }
+.border-b-2 { border-bottom-width: var(--mico-border-width-2); }
+.border-b-4 { border-bottom-width: var(--mico-border-width-4); }
+.border-b-8 { border-bottom-width: var(--mico-border-width-8); }
+
+.border-l-0 { border-left-width: var(--mico-border-width-0); }
+.border-l   { border-left-width: var(--mico-border-width-1); }
+.border-l-2 { border-left-width: var(--mico-border-width-2); }
+.border-l-4 { border-left-width: var(--mico-border-width-4); }
+.border-l-8 { border-left-width: var(--mico-border-width-8); }
+
+/* Horizontal and vertical */
+.border-x-0 { border-left-width: var(--mico-border-width-0); border-right-width: var(--mico-border-width-0); }
+.border-x   { border-left-width: var(--mico-border-width-1); border-right-width: var(--mico-border-width-1); }
+.border-x-2 { border-left-width: var(--mico-border-width-2); border-right-width: var(--mico-border-width-2); }
+.border-x-4 { border-left-width: var(--mico-border-width-4); border-right-width: var(--mico-border-width-4); }
+.border-x-8 { border-left-width: var(--mico-border-width-8); border-right-width: var(--mico-border-width-8); }
+
+.border-y-0 { border-top-width: var(--mico-border-width-0); border-bottom-width: var(--mico-border-width-0); }
+.border-y   { border-top-width: var(--mico-border-width-1); border-bottom-width: var(--mico-border-width-1); }
+.border-y-2 { border-top-width: var(--mico-border-width-2); border-bottom-width: var(--mico-border-width-2); }
+.border-y-4 { border-top-width: var(--mico-border-width-4); border-bottom-width: var(--mico-border-width-4); }
+.border-y-8 { border-top-width: var(--mico-border-width-8); border-bottom-width: var(--mico-border-width-8); }
+
+/* ========================================================================== */
+/* BORDER STYLE UTILITIES                                                    */
+/* ========================================================================== */
+
+/**
+ * Border Style Control
+ *
+ * These utilities control the style of borders (solid, dashed, dotted, etc.).
+ */
+.border-solid  { border-style: var(--mico-border-solid); }
+.border-dashed { border-style: var(--mico-border-dashed); }
+.border-dotted { border-style: var(--mico-border-dotted); }
+.border-double { border-style: var(--mico-border-double); }
+.border-none   { border-style: var(--mico-border-none); }
+
+/* ========================================================================== */
+/* BORDER COLOR UTILITIES                                                    */
+/* ========================================================================== */
+
+/**
+ * Border Color Control
+ *
+ * These utilities control the color of borders using the framework's color system.
+ */
+
+/* Brand Colors */
+.border-primary   { border-color: var(--mico-color-primary); }
+.border-secondary { border-color: var(--mico-color-secondary); }
+.border-accent    { border-color: var(--mico-color-accent); }
+
+/* State Colors */
+.border-success { border-color: var(--mico-color-success); }
+.border-error   { border-color: var(--mico-color-error); }
+.border-warning { border-color: var(--mico-color-warning); }
+.border-info    { border-color: var(--mico-color-info); }
+
+/* Neutral Colors */
+.border-white { border-color: var(--mico-color-white); }
+.border-black { border-color: var(--mico-color-black); }
+
+/* Gray Scale */
+.border-gray-50  { border-color: var(--mico-color-gray-50); }
+.border-gray-100 { border-color: var(--mico-color-gray-100); }
+.border-gray-200 { border-color: var(--mico-color-gray-200); }
+.border-gray-300 { border-color: var(--mico-color-gray-300); }
+.border-gray-400 { border-color: var(--mico-color-gray-400); }
+.border-gray-500 { border-color: var(--mico-color-gray-500); }
+.border-gray-600 { border-color: var(--mico-color-gray-600); }
+.border-gray-700 { border-color: var(--mico-color-gray-700); }
+.border-gray-800 { border-color: var(--mico-color-gray-800); }
+.border-gray-900 { border-color: var(--mico-color-gray-900); }
+
+/* Special Colors */
+.border-transparent { border-color: var(--mico-value-transparent); }
+.border-current     { border-color: currentColor; }
+
+/* ========================================================================== */
+/* BORDER RADIUS UTILITIES                                                   */
+/* ========================================================================== */
+
+/**
+ * Border Radius Control
+ *
+ * These utilities control the roundness of corners for visual design.
+ */
+
+/* All corners */
+.rounded-none { border-radius: var(--mico-radius-none); }
+.rounded-sm   { border-radius: var(--mico-radius-sm); }
+.rounded      { border-radius: var(--mico-radius-md); }
+.rounded-md   { border-radius: var(--mico-radius-md); }
+.rounded-lg   { border-radius: var(--mico-radius-lg); }
+.rounded-xl   { border-radius: var(--mico-radius-xl); }
+.rounded-2xl  { border-radius: var(--mico-radius-2xl); }
+.rounded-3xl  { border-radius: var(--mico-radius-3xl); }
+.rounded-full { border-radius: var(--mico-radius-full); }
+
+/* Individual corners */
+.rounded-t-none { border-top-left-radius: var(--mico-radius-none); border-top-right-radius: var(--mico-radius-none); }
+.rounded-t-sm   { border-top-left-radius: var(--mico-radius-sm); border-top-right-radius: var(--mico-radius-sm); }
+.rounded-t      { border-top-left-radius: var(--mico-radius-md); border-top-right-radius: var(--mico-radius-md); }
+.rounded-t-md   { border-top-left-radius: var(--mico-radius-md); border-top-right-radius: var(--mico-radius-md); }
+.rounded-t-lg   { border-top-left-radius: var(--mico-radius-lg); border-top-right-radius: var(--mico-radius-lg); }
+.rounded-t-xl   { border-top-left-radius: var(--mico-radius-xl); border-top-right-radius: var(--mico-radius-xl); }
+.rounded-t-2xl  { border-top-left-radius: var(--mico-radius-2xl); border-top-right-radius: var(--mico-radius-2xl); }
+.rounded-t-3xl  { border-top-left-radius: var(--mico-radius-3xl); border-top-right-radius: var(--mico-radius-3xl); }
+.rounded-t-full { border-top-left-radius: var(--mico-radius-full); border-top-right-radius: var(--mico-radius-full); }
+
+.rounded-r-none { border-top-right-radius: var(--mico-radius-none); border-bottom-right-radius: var(--mico-radius-none); }
+.rounded-r-sm   { border-top-right-radius: var(--mico-radius-sm); border-bottom-right-radius: var(--mico-radius-sm); }
+.rounded-r      { border-top-right-radius: var(--mico-radius-md); border-bottom-right-radius: var(--mico-radius-md); }
+.rounded-r-md   { border-top-right-radius: var(--mico-radius-md); border-bottom-right-radius: var(--mico-radius-md); }
+.rounded-r-lg   { border-top-right-radius: var(--mico-radius-lg); border-bottom-right-radius: var(--mico-radius-lg); }
+.rounded-r-xl   { border-top-right-radius: var(--mico-radius-xl); border-bottom-right-radius: var(--mico-radius-xl); }
+.rounded-r-2xl  { border-top-right-radius: var(--mico-radius-2xl); border-bottom-right-radius: var(--mico-radius-2xl); }
+.rounded-r-3xl  { border-top-right-radius: var(--mico-radius-3xl); border-bottom-right-radius: var(--mico-radius-3xl); }
+.rounded-r-full { border-top-right-radius: var(--mico-radius-full); border-bottom-right-radius: var(--mico-radius-full); }
+
+.rounded-b-none { border-bottom-left-radius: var(--mico-radius-none); border-bottom-right-radius: var(--mico-radius-none); }
+.rounded-b-sm   { border-bottom-left-radius: var(--mico-radius-sm); border-bottom-right-radius: var(--mico-radius-sm); }
+.rounded-b      { border-bottom-left-radius: var(--mico-radius-md); border-bottom-right-radius: var(--mico-radius-md); }
+.rounded-b-md   { border-bottom-left-radius: var(--mico-radius-md); border-bottom-right-radius: var(--mico-radius-md); }
+.rounded-b-lg   { border-bottom-left-radius: var(--mico-radius-lg); border-bottom-right-radius: var(--mico-radius-lg); }
+.rounded-b-xl   { border-bottom-left-radius: var(--mico-radius-xl); border-bottom-right-radius: var(--mico-radius-xl); }
+.rounded-b-2xl  { border-bottom-left-radius: var(--mico-radius-2xl); border-bottom-right-radius: var(--mico-radius-2xl); }
+.rounded-b-3xl  { border-bottom-left-radius: var(--mico-radius-3xl); border-bottom-right-radius: var(--mico-radius-3xl); }
+.rounded-b-full { border-bottom-left-radius: var(--mico-radius-full); border-bottom-right-radius: var(--mico-radius-full); }
+
+.rounded-l-none { border-top-left-radius: var(--mico-radius-none); border-bottom-left-radius: var(--mico-radius-none); }
+.rounded-l-sm   { border-top-left-radius: var(--mico-radius-sm); border-bottom-left-radius: var(--mico-radius-sm); }
+.rounded-l      { border-top-left-radius: var(--mico-radius-md); border-bottom-left-radius: var(--mico-radius-md); }
+.rounded-l-md   { border-top-left-radius: var(--mico-radius-md); border-bottom-left-radius: var(--mico-radius-md); }
+.rounded-l-lg   { border-top-left-radius: var(--mico-radius-lg); border-bottom-left-radius: var(--mico-radius-lg); }
+.rounded-l-xl   { border-top-left-radius: var(--mico-radius-xl); border-bottom-left-radius: var(--mico-radius-xl); }
+.rounded-l-2xl  { border-top-left-radius: var(--mico-radius-2xl); border-bottom-left-radius: var(--mico-radius-2xl); }
+.rounded-l-3xl  { border-top-left-radius: var(--mico-radius-3xl); border-bottom-left-radius: var(--mico-radius-3xl); }
+.rounded-l-full { border-top-left-radius: var(--mico-radius-full); border-bottom-left-radius: var(--mico-radius-full); }
+
+/* ========================================================================== */
+/* OUTLINE UTILITIES                                                         */
+/* ========================================================================== */
+
+/**
+ * Outline Control
+ *
+ * These utilities control outlines for accessibility and focus states.
+ * Outlines are essential for keyboard navigation and accessibility compliance.
+ */
+
+/* Outline Width */
+.outline-0 { outline-width: var(--mico-outline-width-0); }
+.outline   { outline-width: var(--mico-outline-width-2); }
+.outline-1 { outline-width: var(--mico-outline-width-1); }
+.outline-2 { outline-width: var(--mico-outline-width-2); }
+.outline-4 { outline-width: var(--mico-outline-width-4); }
+.outline-8 { outline-width: var(--mico-outline-width-8); }
+
+/* Outline Style */
+.outline-none   { outline-style: var(--mico-outline-style-none); }
+.outline-solid  { outline-style: var(--mico-outline-style-solid); }
+.outline-dashed { outline-style: var(--mico-outline-style-dashed); }
+.outline-dotted { outline-style: var(--mico-outline-style-dotted); }
+.outline-double { outline-style: var(--mico-outline-style-double); }
+
+/* Outline Color */
+.outline-primary   { outline-color: var(--mico-color-primary); }
+.outline-secondary { outline-color: var(--mico-color-secondary); }
+.outline-accent    { outline-color: var(--mico-color-accent); }
+.outline-success   { outline-color: var(--mico-color-success); }
+.outline-error     { outline-color: var(--mico-color-error); }
+.outline-warning   { outline-color: var(--mico-color-warning); }
+.outline-info      { outline-color: var(--mico-color-info); }
+.outline-white     { outline-color: var(--mico-color-white); }
+.outline-black     { outline-color: var(--mico-color-black); }
+.outline-gray-300  { outline-color: var(--mico-color-gray-300); }
+.outline-gray-500  { outline-color: var(--mico-color-gray-500); }
+.outline-gray-700  { outline-color: var(--mico-color-gray-700); }
+
+/* Outline Offset */
+.outline-offset-0 { outline-offset: var(--mico-outline-offset-0); }
+.outline-offset-1 { outline-offset: var(--mico-outline-offset-1); }
+.outline-offset-2 { outline-offset: var(--mico-outline-offset-2); }
+.outline-offset-4 { outline-offset: var(--mico-outline-offset-4); }
+.outline-offset-8 { outline-offset: var(--mico-outline-offset-8); }
+
+/* ========================================================================== */
+/* BOX SHADOW UTILITIES                                                      */
+/* ========================================================================== */
+
+/**
+ * Box Shadow Control
+ *
+ * These utilities control box shadows for depth, elevation, and visual hierarchy.
+ */
+
+/* Shadow Presets */
+.shadow-none { box-shadow: var(--mico-shadow-none); }
+.shadow-xs   { box-shadow: var(--mico-shadow-xs); }
+.shadow-sm   { box-shadow: var(--mico-shadow-sm); }
+.shadow      { box-shadow: var(--mico-shadow-md); }
+.shadow-md   { box-shadow: var(--mico-shadow-md); }
+.shadow-lg   { box-shadow: var(--mico-shadow-lg); }
+.shadow-xl   { box-shadow: var(--mico-shadow-xl); }
+.shadow-2xl  { box-shadow: var(--mico-shadow-2xl); }
+.shadow-3xl  { box-shadow: var(--mico-shadow-3xl); }
+
+/* Inner Shadow */
+.shadow-inner { box-shadow: var(--mico-shadow-inner); }
+
+/* Colored Shadows */
+.shadow-primary   { box-shadow: 0 4px 6px -1px rgba(var(--mico-color-primary-rgb), 0.1), 0 2px 4px -1px rgba(var(--mico-color-primary-rgb), 0.06); }
+.shadow-secondary { box-shadow: 0 4px 6px -1px rgba(var(--mico-color-secondary-rgb), 0.1), 0 2px 4px -1px rgba(var(--mico-color-secondary-rgb), 0.06); }
+.shadow-accent    { box-shadow: 0 4px 6px -1px rgba(var(--mico-color-accent-rgb), 0.1), 0 2px 4px -1px rgba(var(--mico-color-accent-rgb), 0.06); }
+.shadow-success   { box-shadow: 0 4px 6px -1px rgba(var(--mico-color-success-rgb), 0.1), 0 2px 4px -1px rgba(var(--mico-color-success-rgb), 0.06); }
+.shadow-error     { box-shadow: 0 4px 6px -1px rgba(var(--mico-color-error-rgb), 0.1), 0 2px 4px -1px rgba(var(--mico-color-error-rgb), 0.06); }
+.shadow-warning   { box-shadow: 0 4px 6px -1px rgba(var(--mico-color-warning-rgb), 0.1), 0 2px 4px -1px rgba(var(--mico-color-warning-rgb), 0.06); }
+.shadow-info      { box-shadow: 0 4px 6px -1px rgba(var(--mico-color-info-rgb), 0.1), 0 2px 4px -1px rgba(var(--mico-color-info-rgb), 0.06); }
+
+/* ========================================================================== */
+/* RING UTILITIES                                                            */
+/* ========================================================================== */
+
+/**
+ * Ring Control
+ *
+ * These utilities create ring effects using box-shadow for modern focus indicators
+ * and highlights. Rings are perfect for focus states and interactive elements.
+ */
+
+/* Ring Width */
+.ring-0 { box-shadow: 0 0 0 var(--mico-ring-width-0) var(--mico-color-primary); }
+.ring   { box-shadow: 0 0 0 var(--mico-ring-width-2) var(--mico-color-primary); }
+.ring-1 { box-shadow: 0 0 0 var(--mico-ring-width-1) var(--mico-color-primary); }
+.ring-2 { box-shadow: 0 0 0 var(--mico-ring-width-2) var(--mico-color-primary); }
+.ring-4 { box-shadow: 0 0 0 var(--mico-ring-width-4) var(--mico-color-primary); }
+.ring-8 { box-shadow: 0 0 0 var(--mico-ring-width-8) var(--mico-color-primary); }
+
+/* Ring Colors */
+.ring-primary   { --ring-color: var(--mico-color-primary); }
+.ring-secondary { --ring-color: var(--mico-color-secondary); }
+.ring-accent    { --ring-color: var(--mico-color-accent); }
+.ring-success   { --ring-color: var(--mico-color-success); }
+.ring-error     { --ring-color: var(--mico-color-error); }
+.ring-warning   { --ring-color: var(--mico-color-warning); }
+.ring-info      { --ring-color: var(--mico-color-info); }
+.ring-white     { --ring-color: var(--mico-color-white); }
+.ring-black     { --ring-color: var(--mico-color-black); }
+.ring-gray-300  { --ring-color: var(--mico-color-gray-300); }
+.ring-gray-500  { --ring-color: var(--mico-color-gray-500); }
+
+/* Apply ring color to ring utilities */
+.ring-primary.ring   { box-shadow: 0 0 0 var(--mico-ring-width-2) var(--mico-color-primary); }
+.ring-secondary.ring { box-shadow: 0 0 0 var(--mico-ring-width-2) var(--mico-color-secondary); }
+.ring-accent.ring    { box-shadow: 0 0 0 var(--mico-ring-width-2) var(--mico-color-accent); }
+.ring-success.ring   { box-shadow: 0 0 0 var(--mico-ring-width-2) var(--mico-color-success); }
+.ring-error.ring     { box-shadow: 0 0 0 var(--mico-ring-width-2) var(--mico-color-error); }
+.ring-warning.ring   { box-shadow: 0 0 0 var(--mico-ring-width-2) var(--mico-color-warning); }
+.ring-info.ring      { box-shadow: 0 0 0 var(--mico-ring-width-2) var(--mico-color-info); }
+
+/* Ring Offset */
+.ring-offset-0 { box-shadow: 0 0 0 var(--mico-ring-offset-width-0) var(--mico-color-white), 0 0 0 calc(var(--mico-ring-width-2) + var(--mico-ring-offset-width-0)) var(--mico-color-primary); }
+.ring-offset-1 { box-shadow: 0 0 0 var(--mico-ring-offset-width-1) var(--mico-color-white), 0 0 0 calc(var(--mico-ring-width-2) + var(--mico-ring-offset-width-1)) var(--mico-color-primary); }
+.ring-offset-2 { box-shadow: 0 0 0 var(--mico-ring-offset-width-2) var(--mico-color-white), 0 0 0 calc(var(--mico-ring-width-2) + var(--mico-ring-offset-width-2)) var(--mico-color-primary); }
+.ring-offset-4 { box-shadow: 0 0 0 var(--mico-ring-offset-width-4) var(--mico-color-white), 0 0 0 calc(var(--mico-ring-width-2) + var(--mico-ring-offset-width-4)) var(--mico-color-primary); }
+.ring-offset-8 { box-shadow: 0 0 0 var(--mico-ring-offset-width-8) var(--mico-color-white), 0 0 0 calc(var(--mico-ring-width-2) + var(--mico-ring-offset-width-8)) var(--mico-color-primary); }
+
+/* ========================================================================== */
+/* DIVIDE UTILITIES                                                          */
+/* ========================================================================== */
+
+/**
+ * Divide Control
+ *
+ * These utilities add borders between child elements for visual separation.
+ * Perfect for lists, navigation items, and grouped content.
+ */
+
+/* Divide Y (Horizontal borders between children) */
+.divide-y-0 > * + * { border-top-width: var(--mico-divide-width-0); }
+.divide-y   > * + * { border-top-width: var(--mico-divide-width-1); }
+.divide-y-2 > * + * { border-top-width: var(--mico-divide-width-2); }
+.divide-y-4 > * + * { border-top-width: var(--mico-divide-width-4); }
+.divide-y-8 > * + * { border-top-width: var(--mico-divide-width-8); }
+
+/* Divide X (Vertical borders between children) */
+.divide-x-0 > * + * { border-left-width: var(--mico-divide-width-0); }
+.divide-x   > * + * { border-left-width: var(--mico-divide-width-1); }
+.divide-x-2 > * + * { border-left-width: var(--mico-divide-width-2); }
+.divide-x-4 > * + * { border-left-width: var(--mico-divide-width-4); }
+.divide-x-8 > * + * { border-left-width: var(--mico-divide-width-8); }
+
+/* Divide Colors */
+.divide-primary   > * + * { border-color: var(--mico-color-primary); }
+.divide-secondary > * + * { border-color: var(--mico-color-secondary); }
+.divide-gray-200  > * + * { border-color: var(--mico-color-gray-200); }
+.divide-gray-300  > * + * { border-color: var(--mico-color-gray-300); }
+.divide-gray-400  > * + * { border-color: var(--mico-color-gray-400); }
+.divide-gray-500  > * + * { border-color: var(--mico-color-gray-500); }
+
+/* Divide Styles */
+.divide-solid  > * + * { border-style: var(--mico-border-solid); }
+.divide-dashed > * + * { border-style: var(--mico-border-dashed); }
+.divide-dotted > * + * { border-style: var(--mico-border-dotted); }
+
+/* ========================================================================== */
+/* ACCESSIBILITY & BROWSER SUPPORT                                           */
+/* ========================================================================== */
+
+/**
+ * High Contrast Mode Support
+ *
+ * Enhanced visibility for high contrast environments.
+ */
+@media (prefers-contrast: high) {
+  .border,
+  .border-2,
+  .border-4,
+  .border-8 {
+    border-color: currentColor;
+  }
+
+  .outline,
+  .outline-1,
+  .outline-2,
+  .outline-4,
+  .outline-8 {
+    outline-color: currentColor;
+  }
+
+  .ring,
+  .ring-1,
+  .ring-2,
+  .ring-4,
+  .ring-8 {
+    box-shadow: 0 0 0 var(--mico-ring-width-2) currentColor;
+  }
+}
+
+/**
+ * Reduced Motion Support
+ *
+ * Respects user preferences for reduced motion.
+ */
+@media (prefers-reduced-motion: reduce) {
+  .shadow,
+  .shadow-sm,
+  .shadow-md,
+  .shadow-lg,
+  .shadow-xl,
+  .shadow-2xl,
+  .shadow-3xl {
+    transition: var(--mico-value-none);
+  }
+}
+
+/**
+ * Print Media Support
+ *
+ * Optimized styles for print media.
+ */
+@media print {
+  .shadow,
+  .shadow-sm,
+  .shadow-md,
+  .shadow-lg,
+  .shadow-xl,
+  .shadow-2xl,
+  .shadow-3xl {
+    box-shadow: var(--mico-value-none) !important;
+  }
+
+  .ring,
+  .ring-1,
+  .ring-2,
+  .ring-4,
+  .ring-8 {
+    box-shadow: var(--mico-value-none) !important;
+  }
+}
+
+/* ========================================================================== */
+/* USAGE EXAMPLES AND DOCUMENTATION                                          */
+/* ========================================================================== */
+
+/**
+ * USAGE EXAMPLES:
+ *
+ * 1. Basic border:
+ *    <div class="border border-gray-300 rounded">Content</div>
+ *
+ * 2. Focus ring:
+ *    <button class="ring ring-primary ring-offset-2">Button</button>
+ *
+ * 3. Card with shadow:
+ *    <div class="border border-gray-200 rounded-lg shadow-md">Card</div>
+ *
+ * 4. Divided list:
+ *    <ul class="divide-y divide-gray-200">
+ *      <li>Item 1</li>
+ *      <li>Item 2</li>
+ *    </ul>
+ *
+ * 5. Accessible outline:
+ *    <input class="outline outline-2 outline-primary outline-offset-2">
+ *
+ * 6. Complex border styling:
+ *    <div class="border-2 border-dashed border-primary rounded-xl">
+ *
+ * ACCESSIBILITY NOTES:
+ * - Always provide sufficient contrast for borders and outlines
+ * - Use outline utilities for focus indicators
+ * - Test with high contrast mode
+ * - Ensure ring utilities are visible for keyboard navigation
+ */

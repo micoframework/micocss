@@ -1,6 +1,6 @@
 /**
- * Simple JavaScript bundler for Mico CSS Framework
- * This script concatenates and minifies JavaScript files
+ * JavaScript build script for Mico CSS Framework
+ * Concatenates and minifies JavaScript files
  */
 
 const fs = require('fs');
@@ -16,95 +16,105 @@ if (!fs.existsSync(distDir)) {
   fs.mkdirSync(distDir, { recursive: true });
 }
 
-// Function to concatenate JS files
-function concatenateJS() {
-  console.log('Concatenating JavaScript files...');
+// JavaScript files to include (in order)
+const jsFiles = [
+  'animation/animation-helpers.js',
+  'animation/animation-engine.js',
+  'mico.js'
+];
 
-  // Core JS files
-  const coreFiles = [
-    'mico.script.js',
-    'mico.motion.js'
-  ];
+/**
+ * Build JavaScript files
+ */
+function buildJavaScript() {
+  console.log('🔧 Building JavaScript files...\n');
 
-  // Read and concatenate core files
-  let coreContent = '';
-  coreFiles.forEach(file => {
-    const filePath = path.join(jsDir, file);
-    if (fs.existsSync(filePath)) {
-      const content = fs.readFileSync(filePath, 'utf8');
-      coreContent += `/* ${file} */\n${content}\n\n`;
-    } else {
-      console.warn(`Warning: File ${file} not found`);
-    }
-  });
+  try {
+    let combinedContent = '';
 
-  // Write concatenated file
-  fs.writeFileSync(path.join(distDir, 'mico.js'), coreContent);
-  console.log('✅ Core JS files concatenated to dist/js/mico.js');
+    // Add header comment
+    combinedContent += `/**
+ * Mico CSS Framework - JavaScript Bundle
+ * Version: 1.0.0
+ * Author: Michael Katiba
+ *
+ * This file contains all JavaScript functionality for the Mico CSS Framework.
+ * It includes animation engine, utilities, and framework initialization.
+ */
 
-  // Theme JS file (separate)
-  const themeFilePath = path.join(jsDir, 'mico.theme.js');
-  if (fs.existsSync(themeFilePath)) {
-    const themeContent = fs.readFileSync(themeFilePath, 'utf8');
-    fs.writeFileSync(path.join(distDir, 'mico.theme.js'), themeContent);
-    console.log('✅ Theme JS file copied to dist/js/mico.theme.js');
-  } else {
-    console.warn('Warning: Theme JS file not found');
+`;
+
+    // Combine all JavaScript files
+    jsFiles.forEach(file => {
+      const filePath = path.join(jsDir, file);
+      if (fs.existsSync(filePath)) {
+        const content = fs.readFileSync(filePath, 'utf8');
+        combinedContent += `\n/* === ${file} === */\n`;
+        combinedContent += content;
+        combinedContent += '\n';
+        console.log(`✅ Added ${file}`);
+      } else {
+        console.warn(`⚠️ Warning: JavaScript file ${filePath} not found`);
+      }
+    });
+
+    // Write unminified version
+    const outputFile = path.join(distDir, 'mico.js');
+    fs.writeFileSync(outputFile, combinedContent);
+    console.log('✅ Created mico.js');
+
+    return { success: true, outputFile, combinedContent };
+  } catch (error) {
+    console.error('❌ Error building JavaScript files:', error.message);
+    return { success: false };
   }
-
-  return true;
 }
 
-// Function to minify JS files
-function minifyJS() {
+/**
+ * Minify JavaScript files
+ */
+function minifyJS(outputFile, combinedContent) {
   console.log('\nMinifying JavaScript files...');
 
   try {
-    // Check if terser is installed
-    execSync('npx terser --version', { stdio: 'ignore' });
-
-    // Minify core JS
-    execSync(`npx terser ${path.join(distDir, 'mico.js')} -o ${path.join(distDir, 'mico.min.js')} --compress --mangle`, { stdio: 'inherit' });
-    console.log('✅ Core JS minified to dist/js/mico.min.js');
-
-    // Minify theme JS
-    if (fs.existsSync(path.join(distDir, 'mico.theme.js'))) {
-      execSync(`npx terser ${path.join(distDir, 'mico.theme.js')} -o ${path.join(distDir, 'mico.theme.min.js')} --compress --mangle`, { stdio: 'inherit' });
-      console.log('✅ Theme JS minified to dist/js/mico.theme.min.js');
-    }
-
+    // Try to use Terser for minification
+    const minOutputFile = path.join(distDir, 'mico.min.js');
+    execSync(`npx terser ${outputFile} -o ${minOutputFile} --compress --mangle`, { stdio: 'inherit' });
+    console.log('✅ Created mico.min.js');
     return true;
   } catch (error) {
-    console.error('❌ Error minifying JavaScript files. Make sure terser is installed.');
-    console.error('Run: npm install terser --save-dev');
-    return false;
+    console.warn('⚠️ Terser not available, creating unminified copy');
+    // Fallback: just copy the file
+    const minOutputFile = path.join(distDir, 'mico.min.js');
+    fs.writeFileSync(minOutputFile, combinedContent);
+    console.log('✅ Created mico.min.js (unminified fallback)');
+    return true;
   }
 }
 
 // Run the build process
-async function buildJS() {
-  console.log('🔧 Building JavaScript files...\n');
+async function main() {
+  console.log('🚀 Starting JavaScript build process...\n');
 
-  const results = [];
+  const buildResult = buildJavaScript();
 
-  results.push(concatenateJS());
-  results.push(minifyJS());
+  if (buildResult.success) {
+    const minifyResult = minifyJS(buildResult.outputFile, buildResult.combinedContent);
 
-  const passedSteps = results.filter(Boolean).length;
-  const totalSteps = results.length;
-
-  console.log(`\n📊 Build Results: ${passedSteps}/${totalSteps} steps completed`);
-
-  if (passedSteps === totalSteps) {
-    console.log('✅ JavaScript build completed successfully!');
-    return 0;
-  } else {
-    console.error(`❌ ${totalSteps - passedSteps} steps failed`);
-    return 1;
+    if (minifyResult) {
+      console.log('\n✅ JavaScript build completed successfully!');
+      console.log('📁 Files created:');
+      console.log('   - dist/js/mico.js');
+      console.log('   - dist/js/mico.min.js');
+      return 0;
+    }
   }
+
+  console.error('\n❌ JavaScript build failed');
+  return 1;
 }
 
 // Run the build
-buildJS().then(exitCode => {
+main().then(exitCode => {
   process.exit(exitCode);
 });

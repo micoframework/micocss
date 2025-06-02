@@ -77,19 +77,19 @@
    *
    * Format: clamp(min-size, viewport-based-size, max-size)
    */
-  --mico-fs-9xl: max(4.5rem, min(9vw, 7rem));     /* Massive headings */
-  --mico-fs-8xl: max(4rem, min(8vw, 6rem));       /* Extra massive headings */
-  --mico-fs-7xl: max(3.75rem, min(7.5vw, 5.5rem)); /* Very large headings */
-  --mico-fs-6xl: max(3.5rem, min(7vw, 5rem));     /* Large headings */
-  --mico-fs-5xl: max(3rem, min(6.5vw, 4.5rem));   /* Large headings */
-  --mico-fs-4xl: max(2.5rem, min(6vw, 4rem));     /* Large headings */
-  --mico-fs-3xl: max(2.25rem, min(5.5vw, 3.5rem)); /* Large headings (h1) */
-  --mico-fs-2xl: max(1.875rem, min(5vw, 3rem));   /* Large headings (h2) */
-  --mico-fs-xl: max(1.5rem, min(4vw, 2.25rem));   /* Medium headings (h3) */
-  --mico-fs-lg: max(1.25rem, min(3vw, 1.875rem)); /* Small headings (h4) */
-  --mico-fs-md: max(1rem, min(2.5vw, 1.125rem));  /* Standard body text */
+  --mico-fs-xs: max(0.75rem, min(1.5vw, 0.875rem)); /* Extra small text, captions */
   --mico-fs-sm: max(0.875rem, min(2vw, 1rem));    /* Small text */
-  --mico-fs-xs: max(0.75rem, min(1.5vw, 0.875rem));
+  --mico-fs-md: max(1rem, min(2.5vw, 1.125rem));  /* Standard body text */
+  --mico-fs-lg: max(1.25rem, min(3vw, 1.875rem)); /* Small headings (h4) */
+  --mico-fs-xl: max(1.5rem, min(4vw, 2.25rem));   /* Medium headings (h3) */
+  --mico-fs-2xl: max(1.875rem, min(5vw, 3rem));   /* Large headings (h2) */
+  --mico-fs-3xl: max(2.25rem, min(5.5vw, 3.5rem)); /* Large headings (h1) */
+  --mico-fs-4xl: max(2.5rem, min(6vw, 4rem));     /* Large headings */
+  --mico-fs-5xl: max(3rem, min(6.5vw, 4.5rem));   /* Large headings */
+  --mico-fs-6xl: max(3.5rem, min(7vw, 5rem));     /* Large headings */
+  --mico-fs-7xl: max(3.75rem, min(7.5vw, 5.5rem)); /* Very large headings */
+  --mico-fs-8xl: max(4rem, min(8vw, 6rem));       /* Extra massive headings */
+  --mico-fs-9xl: max(4.5rem, min(9vw, 7rem));
 
   /**
    * Font Weights
@@ -528,6 +528,57 @@
   --mico-border-width-4: 4px;       /* Thick border */
   --mico-border-width-8: 8px;
 
+  /**
+   * Outline Properties
+   *
+   * These variables define outline styles for accessibility and focus states.
+   */
+  --mico-outline-width-0: 0px;      /* No outline */
+  --mico-outline-width-1: 1px;      /* Thin outline */
+  --mico-outline-width-2: 2px;      /* Medium outline */
+  --mico-outline-width-4: 4px;      /* Thick outline */
+  --mico-outline-width-8: 8px;      /* Very thick outline */
+
+  --mico-outline-style-none: none;  /* No outline */
+  --mico-outline-style-solid: solid; /* Solid outline */
+  --mico-outline-style-dashed: dashed; /* Dashed outline */
+  --mico-outline-style-dotted: dotted; /* Dotted outline */
+  --mico-outline-style-double: double; /* Double outline */
+
+  --mico-outline-offset-0: 0px;     /* No offset */
+  --mico-outline-offset-1: 1px;     /* Small offset */
+  --mico-outline-offset-2: 2px;     /* Medium offset */
+  --mico-outline-offset-4: 4px;     /* Large offset */
+  --mico-outline-offset-8: 8px;
+
+  /**
+   * Ring Properties (Box Shadow Based)
+   *
+   * These variables define ring effects using box-shadow for flexible styling.
+   */
+  --mico-ring-width-0: 0px;         /* No ring */
+  --mico-ring-width-1: 1px;         /* Thin ring */
+  --mico-ring-width-2: 2px;         /* Medium ring */
+  --mico-ring-width-4: 4px;         /* Thick ring */
+  --mico-ring-width-8: 8px;         /* Very thick ring */
+
+  --mico-ring-offset-width-0: 0px;  /* No ring offset */
+  --mico-ring-offset-width-1: 1px;  /* Small ring offset */
+  --mico-ring-offset-width-2: 2px;  /* Medium ring offset */
+  --mico-ring-offset-width-4: 4px;  /* Large ring offset */
+  --mico-ring-offset-width-8: 8px;
+
+  /**
+   * Divide Properties
+   *
+   * These variables define border styles for dividing child elements.
+   */
+  --mico-divide-width-0: 0px;       /* No divide border */
+  --mico-divide-width-1: 1px;       /* Thin divide border */
+  --mico-divide-width-2: 2px;       /* Medium divide border */
+  --mico-divide-width-4: 4px;       /* Thick divide border */
+  --mico-divide-width-8: 8px;
+
   /* Light Mode Shadows */
   --mico-shadow-sm-light: 0 1px 2px rgba(0, 0, 0, 0.05);  /* Subtle shadow */
   --mico-shadow-md-light: 0 4px 6px rgba(0, 0, 0, 0.1);   /* Medium shadow */
@@ -830,6 +881,53 @@
   --mico-stroke-current: currentColor;
 
   /**
+   * Button Size Variables
+   *
+   * These variables define consistent button sizing across the framework.
+   */
+  --mico-btn-padding-xs: var(--mico-size-8) var(--mico-size-12);       /* Extra small button padding */
+  --mico-btn-padding-sm: var(--mico-size-12) var(--mico-size-16);      /* Small button padding */
+  --mico-btn-padding-md: var(--mico-size-16) var(--mico-size-24);      /* Medium button padding (default) */
+  --mico-btn-padding-lg: var(--mico-size-20) var(--mico-size-32);      /* Large button padding */
+  --mico-btn-padding-xl: var(--mico-size-24) var(--mico-size-40);      /* Extra large button padding */
+
+  --mico-btn-font-size-xs: var(--mico-fs-xs);                          /* Extra small button font size */
+  --mico-btn-font-size-sm: var(--mico-fs-sm);                          /* Small button font size */
+  --mico-btn-font-size-md: var(--mico-fs-md);                          /* Medium button font size (default) */
+  --mico-btn-font-size-lg: var(--mico-fs-lg);                          /* Large button font size */
+  --mico-btn-font-size-xl: var(--mico-fs-xl);
+
+  /**
+   * Button Border Radius Variables
+   *
+   * These variables define button border radius options.
+   */
+  --mico-btn-radius-square: var(--mico-radius-none);                    /* Square buttons (no radius) */
+  --mico-btn-radius-sm: var(--mico-radius-sm);                         /* Small radius */
+  --mico-btn-radius-md: var(--mico-radius-md);                         /* Medium radius (default) */
+  --mico-btn-radius-lg: var(--mico-radius-lg);                         /* Large radius */
+  --mico-btn-radius-pill: var(--mico-radius-full);                     /* Pill-shaped buttons */
+  --mico-btn-radius-circle: var(--mico-radius-full);
+
+  /**
+   * Button Shadow Variables
+   *
+   * These variables define button shadow options for depth and elevation.
+   */
+  --mico-btn-shadow-none: none;                                         /* No shadow */
+  --mico-btn-shadow-sm: var(--mico-shadow-sm);                         /* Small shadow */
+  --mico-btn-shadow-md: var(--mico-shadow-md);                         /* Medium shadow (default) */
+  --mico-btn-shadow-lg: var(--mico-shadow-lg);
+
+  /**
+   * Button Icon Variables
+   *
+   * These variables define spacing and sizing for buttons with icons.
+   */
+  --mico-btn-icon-gap: var(--mico-size-8);                             /* Gap between icon and text */
+  --mico-btn-icon-only-size: var(--mico-size-40);
+
+  /**
    * Cursor Properties
    *
    * These variables define cursor styles for different interactive states.
@@ -841,7 +939,60 @@
   --mico-cursor-wait: wait;           /* Waiting (hourglass) */
   --mico-cursor-text: text;           /* Text selection (I-beam) */
   --mico-cursor-move: move;           /* Movement indicator */
-  --mico-cursor-not-allowed: not-allowed;
+  --mico-cursor-not-allowed: not-allowed; /* Forbidden action */
+  --mico-cursor-grab: grab;           /* Grabbable element */
+  --mico-cursor-grabbing: grabbing;   /* Element being grabbed */
+  --mico-cursor-help: help;
+
+  /**
+   * Appearance Variables
+   *
+   * These variables control the appearance property for form elements.
+   */
+  --mico-appearance-none: none;       /* Remove default browser styling */
+  --mico-appearance-auto: auto;
+
+  /**
+   * Pointer Events Variables
+   *
+   * These variables control pointer event behavior.
+   */
+  --mico-pointer-events-none: none;   /* Element cannot be target of pointer events */
+  --mico-pointer-events-auto: auto;
+
+  /**
+   * Will Change Variables
+   *
+   * These variables provide performance hints to the browser.
+   * Use with caution as they can consume more resources if overused.
+   */
+  --mico-will-change-auto: auto;      /* Browser decides what to optimize */
+  --mico-will-change-transform: transform; /* Optimize for transform changes */
+  --mico-will-change-opacity: opacity; /* Optimize for opacity changes */
+  --mico-will-change-scroll: scroll-position;
+
+  /**
+   * Bleed Utility Variables
+   *
+   * These variables control full-bleed and column-bleed effects.
+   */
+  --mico-bleed-offset-sm: 10vw;       /* Small bleed offset */
+  --mico-bleed-offset-md: 20vw;       /* Medium bleed offset (default) */
+  --mico-bleed-offset-lg: 30vw;
+
+  /**
+   * Mask Variables
+   *
+   * These variables define CSS mask gradients for fade effects.
+   */
+  --mico-mask-fade-to-top: linear-gradient(to top, black 50%, transparent 100%);
+  --mico-mask-fade-to-bottom: linear-gradient(to bottom, black 50%, transparent 100%);
+  --mico-mask-fade-to-left: linear-gradient(to left, black 50%, transparent 100%);
+  --mico-mask-fade-to-right: linear-gradient(to right, black 50%, transparent 100%);
+
+  /* Fade intensity variations */
+  --mico-mask-fade-short: linear-gradient(to bottom, black 80%, transparent 100%);
+  --mico-mask-fade-long: linear-gradient(to bottom, black 20%, transparent 100%);
 
   /* Content-based Sizing */
   --mico-fit-content: fit-content;    /* Size based on content with constraints */
@@ -879,6 +1030,47 @@
   /* Extended Vertical Alignment */
   --mico-vertical-align-sub: sub;     /* Subscript alignment */
   --mico-vertical-align-super: super;
+
+  /**
+   * Animation Duration Variables
+   *
+   * These variables define animation durations for consistent timing across the framework.
+   * Used by both transitions and animations for unified motion design.
+   */
+  --mico-duration-xs: 0.2s;          /* Extra fast animations */
+  --mico-duration-sm: 0.5s;          /* Fast animations */
+  --mico-duration-md: 0.8s;          /* Standard animations */
+  --mico-duration-lg: 1.2s;          /* Slow animations */
+  --mico-duration-xl: 2s;
+
+  /**
+   * Animation Delay Variables
+   *
+   * These variables define animation delays for staggered effects.
+   */
+  --mico-delay-xs: 0.1s;             /* Minimal delay */
+  --mico-delay-sm: 0.2s;             /* Small delay */
+  --mico-delay-md: 0.4s;             /* Medium delay */
+  --mico-delay-lg: 0.6s;             /* Large delay */
+  --mico-delay-xl: 0.8s;
+
+  /**
+   * Animation Engine Variables
+   *
+   * These variables control the default behavior of the animation engine.
+   */
+  --mico-anim-default-duration: var(--mico-duration-md);        /* Default animation duration */
+  --mico-anim-default-timing: ease-out;                         /* Default timing function */
+  --mico-anim-default-fill-mode: both;
+
+  /**
+   * Interactive Animation Variables
+   *
+   * These variables control interactive elements like ripples and typewriter effects.
+   */
+  --mico-ripple-bg-default: rgba(255, 255, 255, 0.3);          /* Default ripple background */
+  --mico-ripple-bg-dark: rgba(0, 0, 0, 0.2);                   /* Dark ripple background */
+  --mico-typewriter-cursor-color: currentColor;
 
   /**
    * Animation Properties
@@ -936,42 +1128,42 @@
   --mico-color-accent: #f59e0b;
 
      /* Primary Color Tones (lighter) - Dynamically generated */
-  --mico-color-primary-1xlight: hsl(from var(--mico-color-primary) h s calc(l + (100% - l) * 0.2));    /* Soft variation */
+  --mico-color-primary-light: hsl(from var(--mico-color-primary) h s calc(l + (100% - l) * 0.2));    /* Soft variation */
   --mico-color-primary-2xlight: hsl(from var(--mico-color-primary) h s calc(l + (100% - l) * 0.4));   /* Muted variation */
   --mico-color-primary-3xlight: hsl(from var(--mico-color-primary) h s calc(l + (100% - l) * 0.6));  /* Pastel variation */
   --mico-color-primary-4xlight: hsl(from var(--mico-color-primary) h s calc(l + (100% - l) * 0.8));    /* Pale variation */
   --mico-color-primary-5xlight: hsl(from var(--mico-color-primary) h s calc(l + (100% - l) * 0.9));
 
   /* Primary Color Shades (darker) - Dynamically generated */
-  --mico-color-primary-1xdark: hsl(from var(--mico-color-primary) h s calc(l * 0.8));    /* 80% lightness */
+  --mico-color-primary-dark: hsl(from var(--mico-color-primary) h s calc(l * 0.8));    /* 80% lightness */
   --mico-color-primary-2xdark: hsl(from var(--mico-color-primary) h s calc(l * 0.6));   /* 60% lightness */
   --mico-color-primary-3xdark: hsl(from var(--mico-color-primary) h s calc(l * 0.4));     /* 40% lightness */
   --mico-color-primary-4xdark: hsl(from var(--mico-color-primary) h s calc(l * 0.2));   /* 20% lightness */
   --mico-color-primary-5xdark: hsl(from var(--mico-color-primary) h s calc(l * 0.1));
 
   /* Secondary Color Tones (lighter) - Dynamically generated */
-  --mico-color-secondary-1xlight: hsl(from var(--mico-color-secondary) h s calc(l + (100% - l) * 0.2));    /* Soft variation */
+  --mico-color-secondary-light: hsl(from var(--mico-color-secondary) h s calc(l + (100% - l) * 0.2));    /* Soft variation */
   --mico-color-secondary-2xlight: hsl(from var(--mico-color-secondary) h s calc(l + (100% - l) * 0.4));   /* Muted variation */
   --mico-color-secondary-3xlight: hsl(from var(--mico-color-secondary) h s calc(l + (100% - l) * 0.6));  /* Pastel variation */
   --mico-color-secondary-4xlight: hsl(from var(--mico-color-secondary) h s calc(l + (100% - l) * 0.8));    /* Pale variation */
   --mico-color-secondary-5xlight: hsl(from var(--mico-color-secondary) h s calc(l + (100% - l) * 0.9));
 
   /* Secondary Color Shades (darker) - Dynamically generated */
-  --mico-color-secondary-1xdark: hsl(from var(--mico-color-secondary) h s calc(l * 0.8));    /* 80% lightness */
+  --mico-color-secondary-dark: hsl(from var(--mico-color-secondary) h s calc(l * 0.8));    /* 80% lightness */
   --mico-color-secondary-2xdark: hsl(from var(--mico-color-secondary) h s calc(l * 0.6));   /* 60% lightness */
   --mico-color-secondary-3xdark: hsl(from var(--mico-color-secondary) h s calc(l * 0.4));     /* 40% lightness */
   --mico-color-secondary-4xdark: hsl(from var(--mico-color-secondary) h s calc(l * 0.2));   /* 20% lightness */
   --mico-color-secondary-5xdark: hsl(from var(--mico-color-secondary) h s calc(l * 0.1));
 
   /* Accent Color Tones (lighter) - Dynamically generated */
-  --mico-color-accent-1xlight: hsl(from var(--mico-color-accent) h s calc(l + (100% - l) * 0.2));    /* Soft variation */
+  --mico-color-accent-light: hsl(from var(--mico-color-accent) h s calc(l + (100% - l) * 0.2));    /* Soft variation */
   --mico-color-accent-2xlight: hsl(from var(--mico-color-accent) h s calc(l + (100% - l) * 0.4));   /* Muted variation */
   --mico-color-accent-3xlight: hsl(from var(--mico-color-accent) h s calc(l + (100% - l) * 0.6));  /* Pastel variation */
   --mico-color-accent-4xlight: hsl(from var(--mico-color-accent) h s calc(l + (100% - l) * 0.8));    /* Pale variation */
   --mico-color-accent-5xlight: hsl(from var(--mico-color-accent) h s calc(l + (100% - l) * 0.9));
 
   /* Accent Color Shades (darker) - Dynamically generated */
-  --mico-color-accent-1xdark: hsl(from var(--mico-color-accent) h s calc(l * 0.8));    /* 80% lightness */
+  --mico-color-accent-dark: hsl(from var(--mico-color-accent) h s calc(l * 0.8));    /* 80% lightness */
   --mico-color-accent-2xdark: hsl(from var(--mico-color-accent) h s calc(l * 0.6));   /* 60% lightness */
   --mico-color-accent-3xdark: hsl(from var(--mico-color-accent) h s calc(l * 0.4));     /* 40% lightness */
   --mico-color-accent-4xdark: hsl(from var(--mico-color-accent) h s calc(l * 0.2));   /* 20% lightness */
@@ -1185,7 +1377,7 @@
 
   /* ====================================================================== */
   /* TYPOGRAPHY SYSTEM                                                      */
-  /* ====================================================================== */    /* Can be customized in styleguide.css */ /* Extra small text, captions */  /* Black/Heaviest */   /* 200% */  /* Fixed line height */    /* Widest spacing */
+  /* ====================================================================== */    /* Can be customized in styleguide.css */     /* Massive headings */  /* Black/Heaviest */   /* 200% */  /* Fixed line height */    /* Widest spacing */
 
   /* ====================================================================== */
   /* SPACING SYSTEM                                                         */
@@ -1194,7 +1386,7 @@
 
   /* ====================================================================== */
   /* BORDER SYSTEM                                                          */
-  /* ====================================================================== */       /* Fully rounded (circles/pills) */       /* Very thick border */
+  /* ====================================================================== */       /* Fully rounded (circles/pills) */       /* Very thick border */     /* Extra large offset */  /* Extra large ring offset */       /* Very thick divide border */
 
   /* ====================================================================== */
   /* SHADOW SYSTEM                                                          */
@@ -1398,11 +1590,39 @@
 
 /* ====================================================================== */
 
+/* BUTTON SYSTEM                                                          */
+
+/* ====================================================================== */
+
+/* Extra large button font size */
+
+/* Circular buttons */
+
+/* Large shadow */
+
+/* Size for icon-only buttons */
+
+/* ====================================================================== */
+
 /* CURSOR SYSTEM                                                          */
 
 /* ====================================================================== */
 
-/* Forbidden action */
+/* Help cursor */
+
+/* ====================================================================== */
+
+/* MISCELLANEOUS UTILITIES SYSTEM                                         */
+
+/* ====================================================================== */
+
+/* Use default browser styling */
+
+/* Element can be target of pointer events */
+
+/* Optimize for scroll changes */
+
+/* Large bleed offset */
 
 /* ====================================================================== */
 
@@ -1447,6 +1667,14 @@
 /* ANIMATION SYSTEM                                                       */
 
 /* ====================================================================== */
+
+/* Very slow animations */
+
+/* Extra large delay */
+
+/* Default fill mode */
+
+/* Typewriter cursor color */
 
 /* Bouncing effect */
 
@@ -2164,182 +2392,62 @@
  * Shades (darker) and tones (lighter) of the primary brand color
  */
 
-/* Primary Tone Text Colors (lighter) - With fallbacks for browser compatibility */
+/* Primary Tint Text Colors (lighter)  */
 
-.text-primary-1xlight {
-  color: hsl(from #3b82f6 h s calc(l + (100% - l) * 0.2)) !important;
-}
+.text-primary-ligth { color: var(--mico-color-primary-ligth) !important; }
 
-.text-primary-1xlight {
-  color: #60a5fa; /* Fallback for older browsers */
-}
+.text-primary-2xlight { color: hsl(from #3b82f6 h s calc(l + (100% - l) * 0.4)) !important; }
 
-.text-primary-2xlight {
-  color: hsl(from #3b82f6 h s calc(l + (100% - l) * 0.4)) !important;
-}
+.text-primary-3xlight {color: hsl(from #3b82f6 h s calc(l + (100% - l) * 0.6)) !important; }
 
-.text-primary-2xlight {
-  color: #93c5fd; /* Fallback for older browsers */
-}
+.text-primary-4xlight { color: hsl(from #3b82f6 h s calc(l + (100% - l) * 0.8)) !important; }
 
-.text-primary-3xlight {
-  color: hsl(from #3b82f6 h s calc(l + (100% - l) * 0.6)) !important;
-}
+.text-primary-5xlight { color: hsl(from #3b82f6 h s calc(l + (100% - l) * 0.9)) !important; }
 
-.text-primary-3xlight {
-  color: #bfdbfe; /* Fallback for older browsers */
-}
+/* Primary Shade Text Colors (darker)  */
 
-.text-primary-4xlight {
-  color: hsl(from #3b82f6 h s calc(l + (100% - l) * 0.8)) !important;
-}
+.text-primary-dark { color: rgb(11, 95, 233) !important; }
 
-.text-primary-4xlight {
-  color: #dbeafe; /* Fallback for older browsers */
-}
+.text-primary-2xdark { color: rgb(8, 71, 175) !important; }
 
-.text-primary-5xlight {
-  color: hsl(from #3b82f6 h s calc(l + (100% - l) * 0.9)) !important;
-}
+.text-primary-3xdark { color: rgb(5, 48, 117) !important; }
 
-.text-primary-5xlight {
-  color: #eff6ff; /* Fallback for older browsers */
-}
+.text-primary-4xdark { color: rgb(3, 24, 58) !important;}
 
-/* Primary Shade Text Colors (darker) - With fallbacks for browser compatibility */
+.text-primary-5xdark { color: rgb(1, 12, 29) !important; }
 
-.text-primary-1xdark {
-  color: hsl(from #3b82f6 h s calc(l * 0.8)) !important;
-}
+/* Primary Tint Background Colors (lighter)  */
 
-.text-primary-1xdark {
-  color: #2563eb; /* Fallback for older browsers */
-}
+.bg-primary-ligth { background-color: var(--mico-color-primary-ligth) !important; }
 
-.text-primary-2xdark {
-  color: hsl(from #3b82f6 h s calc(l * 0.6)) !important;
-}
+.bg-primary-2xlight { background-color: hsl(from #3b82f6 h s calc(l + (100% - l) * 0.4)) !important; }
 
-.text-primary-2xdark {
-  color: #1d4ed8; /* Fallback for older browsers */
-}
+.bg-primary-3xlight { background-color: hsl(from #3b82f6 h s calc(l + (100% - l) * 0.6)) !important; }
 
-.text-primary-3xdark {
-  color: hsl(from #3b82f6 h s calc(l * 0.4)) !important;
-}
+.bg-primary-4xlight { background-color: hsl(from #3b82f6 h s calc(l + (100% - l) * 0.8)) !important; }
 
-.text-primary-3xdark {
-  color: #1e40af; /* Fallback for older browsers */
-}
+.bg-primary-5xlight { background-color: hsl(from #3b82f6 h s calc(l + (100% - l) * 0.9)) !important; }
 
-.text-primary-4xdark {
-  color: hsl(from #3b82f6 h s calc(l * 0.2)) !important;
-}
+/* Primary Shade Background Colors (darker)  */
 
-.text-primary-4xdark {
-  color: #1e3a8a; /* Fallback for older browsers */
-}
+.bg-primary-dark { background-color: rgb(11, 95, 233) !important }
 
-.text-primary-5xdark {
-  color: hsl(from #3b82f6 h s calc(l * 0.1)) !important;
-}
+.bg-primary-2xdark { background-color: rgb(8, 71, 175) !important; }
 
-.text-primary-5xdark {
-  color: #172554; /* Fallback for older browsers */
-}
+.bg-primary-3xdark { background-color: rgb(5, 48, 117) !important; }
 
-/* Primary Tone Background Colors (lighter) - With fallbacks for browser compatibility */
+.bg-primary-4xdark { background-color: rgb(3, 24, 58) !important; }
 
-.bg-primary-1xlight {
-  background-color: hsl(from #3b82f6 h s calc(l + (100% - l) * 0.2)) !important;
-}
-
-.bg-primary-1xlight {
-  background-color: #60a5fa; /* Fallback for older browsers */
-}
-
-.bg-primary-2xlight {
-  background-color: hsl(from #3b82f6 h s calc(l + (100% - l) * 0.4)) !important;
-}
-
-.bg-primary-2xlight {
-  background-color: #93c5fd; /* Fallback for older browsers */
-}
-
-.bg-primary-3xlight {
-  background-color: hsl(from #3b82f6 h s calc(l + (100% - l) * 0.6)) !important;
-}
-
-.bg-primary-3xlight {
-  background-color: #bfdbfe; /* Fallback for older browsers */
-}
-
-.bg-primary-4xlight {
-  background-color: hsl(from #3b82f6 h s calc(l + (100% - l) * 0.8)) !important;
-}
-
-.bg-primary-4xlight {
-  background-color: #dbeafe; /* Fallback for older browsers */
-}
-
-.bg-primary-5xlight {
-  background-color: hsl(from #3b82f6 h s calc(l + (100% - l) * 0.9)) !important;
-}
-
-.bg-primary-5xlight {
-  background-color: #eff6ff; /* Fallback for older browsers */
-}
-
-/* Primary Shade Background Colors (darker) - With fallbacks for browser compatibility */
-
-.bg-primary-1xdark {
-  background-color: hsl(from #3b82f6 h s calc(l * 0.8)) !important;
-}
-
-.bg-primary-1xdark {
-  background-color: #2563eb; /* Fallback for older browsers */
-}
-
-.bg-primary-2xdark {
-  background-color: hsl(from #3b82f6 h s calc(l * 0.6)) !important;
-}
-
-.bg-primary-2xdark {
-  background-color: #1d4ed8; /* Fallback for older browsers */
-}
-
-.bg-primary-3xdark {
-  background-color: hsl(from #3b82f6 h s calc(l * 0.4)) !important;
-}
-
-.bg-primary-3xdark {
-  background-color: #1e40af; /* Fallback for older browsers */
-}
-
-.bg-primary-4xdark {
-  background-color: hsl(from #3b82f6 h s calc(l * 0.2)) !important;
-}
-
-.bg-primary-4xdark {
-  background-color: #1e3a8a; /* Fallback for older browsers */
-}
-
-.bg-primary-5xdark {
-  background-color: hsl(from #3b82f6 h s calc(l * 0.1)) !important;
-}
-
-.bg-primary-5xdark {
-  background-color: #172554; /* Fallback for older browsers */
-}
+.bg-primary-5xdark { background-color: rgb(1, 12, 29) !important; }
 
 /**
  * Secondary Color Variations
  * Shades (darker) and tones (lighter) of the secondary brand color
  */
 
-/* Secondary Tone Text Colors (lighter) */
+/* Secondary Tint Text Colors (lighter) */
 
-.text-secondary-1xlight { color: hsl(from #6b7280 h s calc(l + (100% - l) * 0.2)) !important; }
+.text-secondary-ligth { color: var(--mico-color-secondary-ligth) !important; }
 
 .text-secondary-2xlight { color: hsl(from #6b7280 h s calc(l + (100% - l) * 0.4)) !important; }
 
@@ -2351,7 +2459,7 @@
 
 /* Secondary Shade Text Colors (darker) */
 
-.text-secondary-1xdark { color: rgb(86, 91, 102) !important; }
+.text-secondary-dark { color: rgb(86, 91, 102) !important; }
 
 .text-secondary-2xdark { color: rgb(64, 68, 77) !important; }
 
@@ -2361,9 +2469,9 @@
 
 .text-secondary-5xdark { color: rgb(11, 11, 13) !important; }
 
-/* Secondary Tone Background Colors (lighter) */
+/* Secondary Tint Background Colors (lighter) */
 
-.bg-secondary-1xlight { background-color: hsl(from #6b7280 h s calc(l + (100% - l) * 0.2)) !important; }
+.bg-secondary-ligth { background-color: var(--mico-color-secondary-ligth) !important; }
 
 .bg-secondary-2xlight { background-color: hsl(from #6b7280 h s calc(l + (100% - l) * 0.4)) !important; }
 
@@ -2375,7 +2483,7 @@
 
 /* Secondary Shade Background Colors (darker) */
 
-.bg-secondary-1xdark { background-color: rgb(86, 91, 102) !important; }
+.bg-secondary-dark { background-color: rgb(86, 91, 102) !important; }
 
 .bg-secondary-2xdark { background-color: rgb(64, 68, 77) !important; }
 
@@ -2390,9 +2498,9 @@
  * Shades (darker) and tones (lighter) of the accent brand color
  */
 
-/* Accent Tone Text Colors (lighter) */
+/* Accent Tint Text Colors (lighter) */
 
-.text-accent-1xlight { color: hsl(from #f59e0b h s calc(l + (100% - l) * 0.2)) !important; }
+.text-accent-ligth { color: var(--mico-color-accent-ligth) !important; }
 
 .text-accent-2xlight { color: hsl(from #f59e0b h s calc(l + (100% - l) * 0.4)) !important; }
 
@@ -2404,7 +2512,7 @@
 
 /* Accent Shade Text Colors (darker) */
 
-.text-accent-1xdark { color: rgb(197, 127, 8) !important; }
+.text-accent-dark { color: rgb(197, 127, 8) !important; }
 
 .text-accent-2xdark { color: rgb(148, 95, 6) !important; }
 
@@ -2414,9 +2522,9 @@
 
 .text-accent-5xdark { color: rgb(25, 16, 1) !important; }
 
-/* Accent Tone Background Colors (lighter) */
+/* Accent Tint Background Colors (lighter) */
 
-.bg-accent-1xlight { background-color: hsl(from #f59e0b h s calc(l + (100% - l) * 0.2)) !important; }
+.bg-accent-ligth { background-color: var(--mico-color-accent-ligth) !important; }
 
 .bg-accent-2xlight { background-color: hsl(from #f59e0b h s calc(l + (100% - l) * 0.4)) !important; }
 
@@ -2428,7 +2536,7 @@
 
 /* Accent Shade Background Colors (darker) */
 
-.bg-accent-1xdark { background-color: rgb(197, 127, 8) !important; }
+.bg-accent-dark { background-color: rgb(197, 127, 8) !important; }
 
 .bg-accent-2xdark { background-color: rgb(148, 95, 6) !important; }
 
@@ -3395,25 +3503,25 @@
 
 .w-screen { width: 100vw !important; }
 
-.w-10 { width: 10% !important; }
+.w-10p { width: 10% !important; }
 
-.w-20 { width: 20% !important; }
+.w-20p { width: 20% !important; }
 
-.w-30 { width: 30% !important; }
+.w-30p { width: 30% !important; }
 
-.w-40 { width: 40% !important; }
+.w-40p { width: 40% !important; }
 
-.w-50 { width: 50% !important; }
+.w-50p { width: 50% !important; }
 
-.w-60 { width: 60% !important; }
+.w-60p { width: 60% !important; }
 
-.w-70 { width: 70% !important; }
+.w-70p { width: 70% !important; }
 
-.w-80 { width: 80% !important; }
+.w-80p { width: 80% !important; }
 
-.w-90 { width: 90% !important; }
+.w-90p { width: 90% !important; }
 
-.w-100 { width: 100% !important; }
+.w-100p { width: 100% !important; }
 
 .h-none { height: none !important; }
 
@@ -3421,25 +3529,25 @@
 
 .h-screen { height: 100vh !important; }
 
-.h-10 { height: 10% !important; }
+.h-10p { height: 10% !important; }
 
-.h-20 { height: 20% !important; }
+.h-20p { height: 20% !important; }
 
-.h-30 { height: 30% !important; }
+.h-30p { height: 30% !important; }
 
-.h-40 { height: 40% !important; }
+.h-40p { height: 40% !important; }
 
-.h-50 { height: 50% !important; }
+.h-50p { height: 50% !important; }
 
-.h-60 { height: 60% !important; }
+.h-60p { height: 60% !important; }
 
-.h-70 { height: 70% !important; }
+.h-70p { height: 70% !important; }
 
-.h-80 { height: 80% !important; }
+.h-80p { height: 80% !important; }
 
-.h-90 { height: 90% !important; }
+.h-90p { height: 90% !important; }
 
-.h-100 { height: 100% !important; }
+.h-100p { height: 100% !important; }
 
 /* Column spans */
 
@@ -7335,221 +7443,1061 @@
 
 .py-400 { padding-top: var(--mico-size-400) !important; padding-bottom: var(--mico-size-400) !important; }
 
-.border-none { border-style: none !important; }
+/**
+ * Mico CSS Framework - Border, Outline, Shadow & Ring Utilities
+ *
+ * This file provides comprehensive border and visual enhancement utilities:
+ *
+ * - Border width, style, and color control
+ * - Border radius for rounded corners
+ * - Outline utilities for accessibility and focus states
+ * - Box shadow utilities for depth and elevation
+ * - Ring utilities for focus indicators and highlights
+ * - Divide utilities for separating child elements
+ *
+ * FEATURES:
+ * - Complete border control (width, style, color, radius)
+ * - Accessible outline and focus management
+ * - Flexible shadow system for visual hierarchy
+ * - Modern ring utilities using box-shadow
+ * - Child element dividers with consistent styling
+ *
+ * USAGE:
+ * Borders: .border, .border-2, .border-primary
+ * Radius: .rounded, .rounded-lg, .rounded-full
+ * Outlines: .outline, .outline-2, .outline-primary
+ * Shadows: .shadow, .shadow-lg, .shadow-none
+ * Rings: .ring, .ring-2, .ring-primary
+ * Dividers: .divide-y, .divide-x, .divide-gray-200
+ */
 
-.border-solid { border-style: solid !important; }
+/* ========================================================================== */
 
-.border-w-0 { border-width: 0px !important; }
+/* BORDER WIDTH UTILITIES                                                    */
 
-.border-w-1 { border-width: 1px !important; }
+/* ========================================================================== */
 
-.border-w-2 { border-width: 2px !important; }
+/**
+ * Border Width Control
+ *
+ * These utilities control the thickness of borders on all sides or specific sides.
+ * Use .border-0 to remove borders completely.
+ */
 
-.border-w-4 { border-width: 4px !important; }
+/* All sides */
 
-.border-w-5 { border-width: 8px !important; }
+.border-0 { border-width: 0px; }
 
-.border-r-0 { border-radius: 0 !important; }
+.border   { border-width: 1px; }
 
-.border-r-1 { border-radius: 1px !important; }
+.border-2 { border-width: 2px; }
 
-.border-r-2 { border-radius: 2px !important; }
+.border-4 { border-width: 4px; }
 
-.border-r-3 { border-radius: 3px !important; }
+.border-8 { border-width: 8px; }
 
-.border-r-4 { border-radius: calc(4px * 1) !important; }
+/* Individual sides */
 
-.border-r-round { border-radius: var(--mico-border-radius-round) !important; }
+.border-t-0 { border-top-width: 0px; }
 
-.border-c-primary { border-color: #3b82f6 !important; }
+.border-t   { border-top-width: 1px; }
 
-.border-c-secondary { border-color: #6b7280 !important; }
+.border-t-2 { border-top-width: 2px; }
 
-.border-c-base { border-color: var(--mico-color-base) !important; }
+.border-t-4 { border-top-width: 4px; }
 
-.border-c-black { border-color: var(--mico-black-900) !important; }
+.border-t-8 { border-top-width: 8px; }
 
-/* btn base */
+.border-r-0 { border-right-width: 0px; }
 
-.btn {
-  position: relative !important;
-  overflow: hidden !important; 
+.border-r   { border-right-width: 1px; }
+
+.border-r-2 { border-right-width: 2px; }
+
+.border-r-4 { border-right-width: 4px; }
+
+.border-r-8 { border-right-width: 8px; }
+
+.border-b-0 { border-bottom-width: 0px; }
+
+.border-b   { border-bottom-width: 1px; }
+
+.border-b-2 { border-bottom-width: 2px; }
+
+.border-b-4 { border-bottom-width: 4px; }
+
+.border-b-8 { border-bottom-width: 8px; }
+
+.border-l-0 { border-left-width: 0px; }
+
+.border-l   { border-left-width: 1px; }
+
+.border-l-2 { border-left-width: 2px; }
+
+.border-l-4 { border-left-width: 4px; }
+
+.border-l-8 { border-left-width: 8px; }
+
+/* Horizontal and vertical */
+
+.border-x-0 { border-left-width: 0px; border-right-width: 0px; }
+
+.border-x   { border-left-width: 1px; border-right-width: 1px; }
+
+.border-x-2 { border-left-width: 2px; border-right-width: 2px; }
+
+.border-x-4 { border-left-width: 4px; border-right-width: 4px; }
+
+.border-x-8 { border-left-width: 8px; border-right-width: 8px; }
+
+.border-y-0 { border-top-width: 0px; border-bottom-width: 0px; }
+
+.border-y   { border-top-width: 1px; border-bottom-width: 1px; }
+
+.border-y-2 { border-top-width: 2px; border-bottom-width: 2px; }
+
+.border-y-4 { border-top-width: 4px; border-bottom-width: 4px; }
+
+.border-y-8 { border-top-width: 8px; border-bottom-width: 8px; }
+
+/* ========================================================================== */
+
+/* BORDER STYLE UTILITIES                                                    */
+
+/* ========================================================================== */
+
+/**
+ * Border Style Control
+ *
+ * These utilities control the style of borders (solid, dashed, dotted, etc.).
+ */
+
+.border-solid  { border-style: solid; }
+
+.border-dashed { border-style: dashed; }
+
+.border-dotted { border-style: dotted; }
+
+.border-double { border-style: double; }
+
+.border-none   { border-style: none; }
+
+/* ========================================================================== */
+
+/* BORDER COLOR UTILITIES                                                    */
+
+/* ========================================================================== */
+
+/**
+ * Border Color Control
+ *
+ * These utilities control the color of borders using the framework's color system.
+ */
+
+/* Brand Colors */
+
+.border-primary   { border-color: #3b82f6; }
+
+.border-secondary { border-color: #6b7280; }
+
+.border-accent    { border-color: #f59e0b; }
+
+/* State Colors */
+
+.border-success { border-color: #10b981; }
+
+.border-error   { border-color: #ef4444; }
+
+.border-warning { border-color: #f59e0b; }
+
+.border-info    { border-color: #3b82f6; }
+
+/* Neutral Colors */
+
+.border-white { border-color: var(--mico-color-white); }
+
+.border-black { border-color: var(--mico-color-black); }
+
+/* Gray Scale */
+
+.border-gray-50  { border-color: var(--mico-color-gray-50); }
+
+.border-gray-100 { border-color: #f3f4f6; }
+
+.border-gray-200 { border-color: #e5e7eb; }
+
+.border-gray-300 { border-color: #d1d5db; }
+
+.border-gray-400 { border-color: #9ca3af; }
+
+.border-gray-500 { border-color: #6b7280; }
+
+.border-gray-600 { border-color: #4b5563; }
+
+.border-gray-700 { border-color: #374151; }
+
+.border-gray-800 { border-color: #1f2937; }
+
+.border-gray-900 { border-color: #111827; }
+
+/* Special Colors */
+
+.border-transparent { border-color: transparent; }
+
+.border-current     { border-color: currentColor; }
+
+/* ========================================================================== */
+
+/* BORDER RADIUS UTILITIES                                                   */
+
+/* ========================================================================== */
+
+/**
+ * Border Radius Control
+ *
+ * These utilities control the roundness of corners for visual design.
+ */
+
+/* All corners */
+
+.rounded-none { border-radius: 0; }
+
+.rounded-sm   { border-radius: 2px; }
+
+.rounded      { border-radius: 4px; }
+
+.rounded-md   { border-radius: 4px; }
+
+.rounded-lg   { border-radius: 8px; }
+
+.rounded-xl   { border-radius: 12px; }
+
+.rounded-2xl  { border-radius: 16px; }
+
+.rounded-3xl  { border-radius: var(--mico-radius-3xl); }
+
+.rounded-full { border-radius: 9999px; }
+
+/* Individual corners */
+
+.rounded-t-none { border-top-left-radius: 0; border-top-right-radius: 0; }
+
+.rounded-t-sm   { border-top-left-radius: 2px; border-top-right-radius: 2px; }
+
+.rounded-t      { border-top-left-radius: 4px; border-top-right-radius: 4px; }
+
+.rounded-t-md   { border-top-left-radius: 4px; border-top-right-radius: 4px; }
+
+.rounded-t-lg   { border-top-left-radius: 8px; border-top-right-radius: 8px; }
+
+.rounded-t-xl   { border-top-left-radius: 12px; border-top-right-radius: 12px; }
+
+.rounded-t-2xl  { border-top-left-radius: 16px; border-top-right-radius: 16px; }
+
+.rounded-t-3xl  { border-top-left-radius: var(--mico-radius-3xl); border-top-right-radius: var(--mico-radius-3xl); }
+
+.rounded-t-full { border-top-left-radius: 9999px; border-top-right-radius: 9999px; }
+
+.rounded-r-none { border-top-right-radius: 0; border-bottom-right-radius: 0; }
+
+.rounded-r-sm   { border-top-right-radius: 2px; border-bottom-right-radius: 2px; }
+
+.rounded-r      { border-top-right-radius: 4px; border-bottom-right-radius: 4px; }
+
+.rounded-r-md   { border-top-right-radius: 4px; border-bottom-right-radius: 4px; }
+
+.rounded-r-lg   { border-top-right-radius: 8px; border-bottom-right-radius: 8px; }
+
+.rounded-r-xl   { border-top-right-radius: 12px; border-bottom-right-radius: 12px; }
+
+.rounded-r-2xl  { border-top-right-radius: 16px; border-bottom-right-radius: 16px; }
+
+.rounded-r-3xl  { border-top-right-radius: var(--mico-radius-3xl); border-bottom-right-radius: var(--mico-radius-3xl); }
+
+.rounded-r-full { border-top-right-radius: 9999px; border-bottom-right-radius: 9999px; }
+
+.rounded-b-none { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+
+.rounded-b-sm   { border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; }
+
+.rounded-b      { border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; }
+
+.rounded-b-md   { border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; }
+
+.rounded-b-lg   { border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; }
+
+.rounded-b-xl   { border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; }
+
+.rounded-b-2xl  { border-bottom-left-radius: 16px; border-bottom-right-radius: 16px; }
+
+.rounded-b-3xl  { border-bottom-left-radius: var(--mico-radius-3xl); border-bottom-right-radius: var(--mico-radius-3xl); }
+
+.rounded-b-full { border-bottom-left-radius: 9999px; border-bottom-right-radius: 9999px; }
+
+.rounded-l-none { border-top-left-radius: 0; border-bottom-left-radius: 0; }
+
+.rounded-l-sm   { border-top-left-radius: 2px; border-bottom-left-radius: 2px; }
+
+.rounded-l      { border-top-left-radius: 4px; border-bottom-left-radius: 4px; }
+
+.rounded-l-md   { border-top-left-radius: 4px; border-bottom-left-radius: 4px; }
+
+.rounded-l-lg   { border-top-left-radius: 8px; border-bottom-left-radius: 8px; }
+
+.rounded-l-xl   { border-top-left-radius: 12px; border-bottom-left-radius: 12px; }
+
+.rounded-l-2xl  { border-top-left-radius: 16px; border-bottom-left-radius: 16px; }
+
+.rounded-l-3xl  { border-top-left-radius: var(--mico-radius-3xl); border-bottom-left-radius: var(--mico-radius-3xl); }
+
+.rounded-l-full { border-top-left-radius: 9999px; border-bottom-left-radius: 9999px; }
+
+/* ========================================================================== */
+
+/* OUTLINE UTILITIES                                                         */
+
+/* ========================================================================== */
+
+/**
+ * Outline Control
+ *
+ * These utilities control outlines for accessibility and focus states.
+ * Outlines are essential for keyboard navigation and accessibility compliance.
+ */
+
+/* Outline Width */
+
+.outline-0 { outline-width: 0px; }
+
+.outline   { outline-width: 2px; }
+
+.outline-1 { outline-width: 1px; }
+
+.outline-2 { outline-width: 2px; }
+
+.outline-4 { outline-width: 4px; }
+
+.outline-8 { outline-width: 8px; }
+
+/* Outline Style */
+
+.outline-none   { outline-style: none; }
+
+.outline-solid  { outline-style: solid; }
+
+.outline-dashed { outline-style: dashed; }
+
+.outline-dotted { outline-style: dotted; }
+
+.outline-double { outline-style: double; }
+
+/* Outline Color */
+
+.outline-primary   { outline-color: #3b82f6; }
+
+.outline-secondary { outline-color: #6b7280; }
+
+.outline-accent    { outline-color: #f59e0b; }
+
+.outline-success   { outline-color: #10b981; }
+
+.outline-error     { outline-color: #ef4444; }
+
+.outline-warning   { outline-color: #f59e0b; }
+
+.outline-info      { outline-color: #3b82f6; }
+
+.outline-white     { outline-color: var(--mico-color-white); }
+
+.outline-black     { outline-color: var(--mico-color-black); }
+
+.outline-gray-300  { outline-color: #d1d5db; }
+
+.outline-gray-500  { outline-color: #6b7280; }
+
+.outline-gray-700  { outline-color: #374151; }
+
+/* Outline Offset */
+
+.outline-offset-0 { outline-offset: 0px; }
+
+.outline-offset-1 { outline-offset: 1px; }
+
+.outline-offset-2 { outline-offset: 2px; }
+
+.outline-offset-4 { outline-offset: 4px; }
+
+.outline-offset-8 { outline-offset: 8px; }
+
+/* ========================================================================== */
+
+/* BOX SHADOW UTILITIES                                                      */
+
+/* ========================================================================== */
+
+/**
+ * Box Shadow Control
+ *
+ * These utilities control box shadows for depth, elevation, and visual hierarchy.
+ */
+
+/* Shadow Presets */
+
+.shadow-none { box-shadow: var(--mico-shadow-none); }
+
+.shadow-xs   { box-shadow: var(--mico-shadow-xs); }
+
+.shadow-sm   { box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); }
+
+.shadow      { box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+
+.shadow-md   { box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+
+.shadow-lg   { box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); }
+
+.shadow-xl   { box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15); }
+
+.shadow-2xl  { box-shadow: var(--mico-shadow-2xl); }
+
+.shadow-3xl  { box-shadow: var(--mico-shadow-3xl); }
+
+/* Inner Shadow */
+
+.shadow-inner { box-shadow: var(--mico-shadow-inner); }
+
+/* Colored Shadows */
+
+.shadow-primary   { box-shadow: 0 4px 6px -1px rgba(var(--mico-color-primary-rgb), 0.1), 0 2px 4px -1px rgba(var(--mico-color-primary-rgb), 0.06); }
+
+.shadow-secondary { box-shadow: 0 4px 6px -1px rgba(var(--mico-color-secondary-rgb), 0.1), 0 2px 4px -1px rgba(var(--mico-color-secondary-rgb), 0.06); }
+
+.shadow-accent    { box-shadow: 0 4px 6px -1px rgba(var(--mico-color-accent-rgb), 0.1), 0 2px 4px -1px rgba(var(--mico-color-accent-rgb), 0.06); }
+
+.shadow-success   { box-shadow: 0 4px 6px -1px rgba(var(--mico-color-success-rgb), 0.1), 0 2px 4px -1px rgba(var(--mico-color-success-rgb), 0.06); }
+
+.shadow-error     { box-shadow: 0 4px 6px -1px rgba(var(--mico-color-error-rgb), 0.1), 0 2px 4px -1px rgba(var(--mico-color-error-rgb), 0.06); }
+
+.shadow-warning   { box-shadow: 0 4px 6px -1px rgba(var(--mico-color-warning-rgb), 0.1), 0 2px 4px -1px rgba(var(--mico-color-warning-rgb), 0.06); }
+
+.shadow-info      { box-shadow: 0 4px 6px -1px rgba(var(--mico-color-info-rgb), 0.1), 0 2px 4px -1px rgba(var(--mico-color-info-rgb), 0.06); }
+
+/* ========================================================================== */
+
+/* RING UTILITIES                                                            */
+
+/* ========================================================================== */
+
+/**
+ * Ring Control
+ *
+ * These utilities create ring effects using box-shadow for modern focus indicators
+ * and highlights. Rings are perfect for focus states and interactive elements.
+ */
+
+/* Ring Width */
+
+.ring-0 { box-shadow: 0 0 0 0px #3b82f6; }
+
+.ring   { box-shadow: 0 0 0 2px #3b82f6; }
+
+.ring-1 { box-shadow: 0 0 0 1px #3b82f6; }
+
+.ring-2 { box-shadow: 0 0 0 2px #3b82f6; }
+
+.ring-4 { box-shadow: 0 0 0 4px #3b82f6; }
+
+.ring-8 { box-shadow: 0 0 0 8px #3b82f6; }
+
+/* Ring Colors */
+
+.ring-primary   { --ring-color: var(--mico-color-primary); }
+
+.ring-secondary { --ring-color: var(--mico-color-secondary); }
+
+.ring-accent    { --ring-color: var(--mico-color-accent); }
+
+.ring-success   { --ring-color: var(--mico-color-success); }
+
+.ring-error     { --ring-color: var(--mico-color-error); }
+
+.ring-warning   { --ring-color: var(--mico-color-warning); }
+
+.ring-info      { --ring-color: var(--mico-color-info); }
+
+.ring-white     { --ring-color: var(--mico-color-white); }
+
+.ring-black     { --ring-color: var(--mico-color-black); }
+
+.ring-gray-300  { --ring-color: var(--mico-color-gray-300); }
+
+.ring-gray-500  { --ring-color: var(--mico-color-gray-500); }
+
+/* Apply ring color to ring utilities */
+
+.ring-primary.ring   { box-shadow: 0 0 0 2px #3b82f6; }
+
+.ring-secondary.ring { box-shadow: 0 0 0 2px #6b7280; }
+
+.ring-accent.ring    { box-shadow: 0 0 0 2px #f59e0b; }
+
+.ring-success.ring   { box-shadow: 0 0 0 2px #10b981; }
+
+.ring-error.ring     { box-shadow: 0 0 0 2px #ef4444; }
+
+.ring-warning.ring   { box-shadow: 0 0 0 2px #f59e0b; }
+
+.ring-info.ring      { box-shadow: 0 0 0 2px #3b82f6; }
+
+/* Ring Offset */
+
+.ring-offset-0 { box-shadow: 0 0 0 0px var(--mico-color-white), 0 0 0 calc(2px + 0px) #3b82f6; }
+
+.ring-offset-1 { box-shadow: 0 0 0 1px var(--mico-color-white), 0 0 0 calc(2px + 1px) #3b82f6; }
+
+.ring-offset-2 { box-shadow: 0 0 0 2px var(--mico-color-white), 0 0 0 calc(2px + 2px) #3b82f6; }
+
+.ring-offset-4 { box-shadow: 0 0 0 4px var(--mico-color-white), 0 0 0 calc(2px + 4px) #3b82f6; }
+
+.ring-offset-8 { box-shadow: 0 0 0 8px var(--mico-color-white), 0 0 0 calc(2px + 8px) #3b82f6; }
+
+/* ========================================================================== */
+
+/* DIVIDE UTILITIES                                                          */
+
+/* ========================================================================== */
+
+/**
+ * Divide Control
+ *
+ * These utilities add borders between child elements for visual separation.
+ * Perfect for lists, navigation items, and grouped content.
+ */
+
+/* Divide Y (Horizontal borders between children) */
+
+.divide-y-0 > * + * { border-top-width: 0px; }
+
+.divide-y   > * + * { border-top-width: 1px; }
+
+.divide-y-2 > * + * { border-top-width: 2px; }
+
+.divide-y-4 > * + * { border-top-width: 4px; }
+
+.divide-y-8 > * + * { border-top-width: 8px; }
+
+/* Divide X (Vertical borders between children) */
+
+.divide-x-0 > * + * { border-left-width: 0px; }
+
+.divide-x   > * + * { border-left-width: 1px; }
+
+.divide-x-2 > * + * { border-left-width: 2px; }
+
+.divide-x-4 > * + * { border-left-width: 4px; }
+
+.divide-x-8 > * + * { border-left-width: 8px; }
+
+/* Divide Colors */
+
+.divide-primary   > * + * { border-color: #3b82f6; }
+
+.divide-secondary > * + * { border-color: #6b7280; }
+
+.divide-gray-200  > * + * { border-color: #e5e7eb; }
+
+.divide-gray-300  > * + * { border-color: #d1d5db; }
+
+.divide-gray-400  > * + * { border-color: #9ca3af; }
+
+.divide-gray-500  > * + * { border-color: #6b7280; }
+
+/* Divide Styles */
+
+.divide-solid  > * + * { border-style: solid; }
+
+.divide-dashed > * + * { border-style: dashed; }
+
+.divide-dotted > * + * { border-style: dotted; }
+
+/* ========================================================================== */
+
+/* ACCESSIBILITY & BROWSER SUPPORT                                           */
+
+/* ========================================================================== */
+
+/**
+ * High Contrast Mode Support
+ *
+ * Enhanced visibility for high contrast environments.
+ */
+
+@media (prefers-contrast: high) {
+  .border,
+  .border-2,
+  .border-4,
+  .border-8 {
+    border-color: currentColor;
+  }
+
+  .outline,
+  .outline-1,
+  .outline-2,
+  .outline-4,
+  .outline-8 {
+    outline-color: currentColor;
+  }
+
+  .ring,
+  .ring-1,
+  .ring-2,
+  .ring-4,
+  .ring-8 {
+    box-shadow: 0 0 0 2px currentColor;
+  }
 }
 
+/**
+ * Reduced Motion Support
+ *
+ * Respects user preferences for reduced motion.
+ */
+
+@media (prefers-reduced-motion: reduce) {
+  .shadow,
+  .shadow-sm,
+  .shadow-md,
+  .shadow-lg,
+  .shadow-xl,
+  .shadow-2xl,
+  .shadow-3xl {
+    transition: none;
+  }
+}
+
+/**
+ * Print Media Support
+ *
+ * Optimized styles for print media.
+ */
+
+@media print {
+  .shadow,
+  .shadow-sm,
+  .shadow-md,
+  .shadow-lg,
+  .shadow-xl,
+  .shadow-2xl,
+  .shadow-3xl {
+    box-shadow: none !important;
+  }
+
+  .ring,
+  .ring-1,
+  .ring-2,
+  .ring-4,
+  .ring-8 {
+    box-shadow: none !important;
+  }
+}
+
+/* ========================================================================== */
+
+/* USAGE EXAMPLES AND DOCUMENTATION                                          */
+
+/* ========================================================================== */
+
+/**
+ * USAGE EXAMPLES:
+ *
+ * 1. Basic border:
+ *    <div class="border border-gray-300 rounded">Content</div>
+ *
+ * 2. Focus ring:
+ *    <button class="ring ring-primary ring-offset-2">Button</button>
+ *
+ * 3. Card with shadow:
+ *    <div class="border border-gray-200 rounded-lg shadow-md">Card</div>
+ *
+ * 4. Divided list:
+ *    <ul class="divide-y divide-gray-200">
+ *      <li>Item 1</li>
+ *      <li>Item 2</li>
+ *    </ul>
+ *
+ * 5. Accessible outline:
+ *    <input class="outline outline-2 outline-primary outline-offset-2">
+ *
+ * 6. Complex border styling:
+ *    <div class="border-2 border-dashed border-primary rounded-xl">
+ *
+ * ACCESSIBILITY NOTES:
+ * - Always provide sufficient contrast for borders and outlines
+ * - Use outline utilities for focus indicators
+ * - Test with high contrast mode
+ * - Ensure ring utilities are visible for keyboard navigation
+ */
+
+/**
+ * Mico CSS Framework - Button & Link Utilities
+ *
+ * This file provides comprehensive button and link styling utilities following
+ * the guidelines for modern, accessible, and flexible button design.
+ *
+ * FEATURES:
+ * - Base button class with consistent styling
+ * - Color variants (primary, secondary, success, etc.)
+ * - Style modifiers (outline, text, ghost)
+ * - Size modifiers (xs, sm, md, lg, xl)
+ * - Shape modifiers (pill, square, circle)
+ * - Shadow modifiers for depth
+ * - State modifiers (active, loading, disabled)
+ * - Layout modifiers (block, icon support)
+ * - Link utilities with advanced underline control
+ *
+ * USAGE:
+ * Basic: .btn .btn-primary
+ * Variants: .btn .btn-secondary .btn-outline
+ * Sizes: .btn .btn-primary .btn-lg
+ * Links: .link-primary .link-underline-thick
+ */
+
+/* ========================================================================== */
+
+/* BASE BUTTON CLASS                                                         */
+
+/* ========================================================================== */
+
+/**
+ * Base Button Class
+ *
+ * The foundational class for all button styling. Provides consistent
+ * base styles that work across all button variants.
+ */
+
 .btn {
+  /* Layout and positioning */
+  position: relative;
   display: inline-block;
-  border: none;
-  text-align: var(--mico-text-center);
+
+  /* Typography */
+  font-size: max(1rem, min(2.5vw, 1.125rem));
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.25;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  white-space: nowrap;
+
+  /* Spacing */
+  padding: calc(4px * 4) calc(4px * 6);
+  margin: 0;
+
+  /* Borders and appearance */
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  /* Interaction */
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+
+  /* Transitions */
   transition: all .4s cubic-bezier(0.25, 0.1, 0.25, 1.0);
-  margin-top: calc(4px * 2);
-  white-space: nowrap; 
+
+  /* Accessibility */
+  vertical-align: middle;
+
+  /* Prevent text selection and improve touch targets */
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
-.btn-ghost{
-  color: #333333 !important;
-}
+/* ========================================================================== */
 
-.btn-ghost{
-  background-color: transparent;
-}
+/* BUTTON COLOR VARIANTS                                                     */
 
-/* btn sizes */
+/* ========================================================================== */
 
-.btn-sm {
-  font-size: max(0.99rem, min(1.4vw, 1.25rem)) !important;
-  padding: calc(4px * 4) calc(4px * 5) !important;
+/**
+ * Button Color Variants
+ *
+ * These classes control the background color, text color, and border color
+ * for different button purposes and emphasis levels.
+ */
 
-}
-
-.btn-lg {
-  padding: calc(4px * 5) calc(4px * 6) !important;
-
-}
-
-.btn-lg {
-  font-size: var(--mico-text-base);
-
-}
-
-/* btn color variations */
+/* Brand Colors */
 
 .btn-primary {
-  background-color: var(--mico-primary-color);
-  color: var(--mico-color-grey-900);
+  background-color: #3b82f6;
+  color: var(--mico-color-white);
+  border-color: #3b82f6;
 }
 
 .btn-secondary {
-  background-color: var(--mico-secondary-color);
+  background-color: #6b7280;
+  color: var(--mico-color-white);
+  border-color: #6b7280;
+}
+
+.btn-accent {
+  background-color: #f59e0b;
+  color: var(--mico-color-white);
+  border-color: #f59e0b;
+}
+
+/* State Colors */
+
+.btn-success {
+  background-color: #10b981;
+  color: var(--mico-color-white);
+  border-color: #10b981;
 }
 
 .btn-danger {
-  background-color: var(--mico-danger-color);
+  background-color: #ef4444;
+  color: var(--mico-color-white);
+  border-color: #ef4444;
 }
 
+.btn-warning {
+  background-color: #f59e0b;
+  color: var(--mico-color-black);
+  border-color: #f59e0b;
+}
+
+.btn-info {
+  background-color: #3b82f6;
+  color: var(--mico-color-white);
+  border-color: #3b82f6;
+}
+
+/* Neutral Colors */
+
 .btn-light {
-  background-color: var(--mico-light-color);
-  color: var(--mico-dark-color);
+  background-color: #f3f4f6;
+  color: #111827;
+  border-color: #f3f4f6;
 }
 
 .btn-dark {
-  background-color: var(--mico-dark-color);
-  color: white;
+  background-color: #111827;
+  color: var(--mico-color-white);
+  border-color: #111827;
 }
+
+.btn-transparent {
+  background-color: transparent;
+  color: inherit;
+  border-color: transparent;
+}
+
+/* ========================================================================== */
+
+/* BUTTON STYLE MODIFIERS                                                    */
+
+/* ========================================================================== */
+
+/**
+ * Button Style Modifiers
+ *
+ * These classes modify the visual style of button variants.
+ * They should be combined with color variant classes.
+ */
+
+/* Outline Style - Transparent background with colored border and text */
 
 .btn-outline {
   background-color: transparent;
-  border: 2px solid currentColor;
+  border-width: 2px;
 }
 
-.btn-outline.btn-mico-primary { color: var(--mico-primary-color); }
-
-.btn-outline.btn-mico-secondary { color: var(--mico-secondary-color); }
-
-.btn-outline.btn-mico-danger { color: var(--mico-danger-color); }
-
-.btn-outline.btn-mico-light { color: var(--mico-light-color); }
-
-.btn-outline.btn-mico-dark { color: var(--mico-dark-color); }
-
-/* btn states */
-
-.btn:hover,
-.btn:focus {
-  filter: brightness(110%);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.btn-outline.btn-primary {
+  color: #3b82f6;
+  border-color: #3b82f6;
 }
 
-.btn:active {
-  transform: translateY(0);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.btn-outline.btn-secondary {
+  color: #6b7280;
+  border-color: #6b7280;
 }
 
-.btn-outline:hover,
-.btn-outline:focus {
-  outline: 2px solid currentColor !important;
+.btn-outline.btn-accent {
+  color: #f59e0b;
+  border-color: #f59e0b;
 }
 
-.btn-outline:hover,
-.btn-outline:focus {
-  outline-offset: 2px;
+.btn-outline.btn-success {
+  color: #10b981;
+  border-color: #10b981;
 }
 
-.btn:disabled,
-.btn-disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-  transform: none;
-  box-shadow: none;
+.btn-outline.btn-danger {
+  color: #ef4444;
+  border-color: #ef4444;
 }
 
-/* btn with icon */
+.btn-outline.btn-warning {
+  color: #f59e0b;
+  border-color: #f59e0b;
+}
 
-.btn-icon {
+.btn-outline.btn-info {
+  color: #3b82f6;
+  border-color: #3b82f6;
+}
+
+.btn-outline.btn-light {
+  color: #4b5563;
+  border-color: #d1d5db;
+}
+
+.btn-outline.btn-dark {
+  color: #111827;
+  border-color: #111827;
+}
+
+/* Text Style - No background or border, only colored text */
+
+.btn-text {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+/* Ghost Style - Minimal styling with subtle hover effects */
+
+.btn-ghost {
+  background-color: transparent;
+  border-color: transparent;
+  color: #4b5563;
+}
+
+/* ========================================================================== */
+
+/* BUTTON SIZE MODIFIERS                                                     */
+
+/* ========================================================================== */
+
+/**
+ * Button Size Modifiers
+ *
+ * These classes control the padding and font size of buttons.
+ * The .btn class provides the default/medium size.
+ */
+
+.btn-xs {
+  padding: calc(4px * 2) calc(4px * 3);
+  font-size: max(0.75rem, min(1.5vw, 0.875rem));
+}
+
+.btn-sm {
+  padding: calc(4px * 3) calc(4px * 4);
+  font-size: max(0.875rem, min(2vw, 1rem));
+}
+
+.btn-lg {
+  padding: calc(4px * 5) calc(4px * 8);
+  font-size: max(1.25rem, min(3vw, 1.875rem));
+}
+
+.btn-xl {
+  padding: calc(4px * 6) calc(4px * 10);
+  font-size: max(1.5rem, min(4vw, 2.25rem));
+}
+
+/* ========================================================================== */
+
+/* BUTTON SHAPE MODIFIERS                                                    */
+
+/* ========================================================================== */
+
+/**
+ * Button Shape Modifiers
+ *
+ * These classes control the border-radius of buttons.
+ */
+
+.btn-pill {
+  border-radius: 9999px;
+}
+
+.btn-square {
+  border-radius: 0;
+}
+
+.btn-circle {
+  border-radius: 9999px;
+  width: calc(4px * 10);
+  height: calc(4px * 10);
+  padding: 0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5em;
 }
 
-.btn-icon-only {
-  padding: 0.75em;
-  border-radius: 50%;
+/* ========================================================================== */
+
+/* BUTTON SHADOW MODIFIERS                                                   */
+
+/* ========================================================================== */
+
+/**
+ * Button Shadow Modifiers
+ *
+ * These classes apply box-shadow for depth and elevation.
+ */
+
+.btn-shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Ripple effect */
-
-.btn-ripple {
-  overflow: hidden !important;
-
+.btn-shadow-sm {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
-.btn-ripple {
-  position: relative;
-
+.btn-shadow-lg {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
-.btn-ripple::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 5px;
-  height: 5px;
-  background: rgba(255, 255, 255, 0.5);
-  opacity: 0;
-  border-radius: 100%;
-  transform: scale(1, 1) translate(50%);
-  transform-origin: 50% 50%;
+.btn-shadow-none {
+  box-shadow: none;
 }
 
-@keyframes ripple {
-  0% {
-    transform: scale(0, 0);
-    opacity: 0.5;
-  }
-  100% {
-    transform: scale(60, 60);
-    opacity: 0;
-  }
+/* ========================================================================== */
+
+/* BUTTON STATE MODIFIERS                                                    */
+
+/* ========================================================================== */
+
+/**
+ * Button State Modifiers
+ *
+ * These classes provide visual feedback for different button states.
+ */
+
+/* Active State */
+
+.is-active,
+.btn-active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
-.btn-ripple:focus:not(:active)::after {
-  animation: ripple 1s ease-out;
-}
+/* Loading State */
 
-/* Loading state */
-
+.is-loading,
 .btn-loading {
   color: transparent !important;
 }
 
+.is-loading,
 .btn-loading {
   pointer-events: none;
   position: relative;
 }
 
+.is-loading::after,
 .btn-loading::after {
   content: "";
   position: absolute;
@@ -7559,103 +8507,346 @@
   left: 50%;
   margin-top: -0.5em;
   margin-left: -0.5em;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  border-top-color: white;
-  border-radius: 50%;
-  animation: btn-loading-spinner 1s ease infinite;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: currentColor;
+  border-radius: 9999px;
+  animation: btn-loading-spinner 1s linear infinite;
 }
 
 @keyframes btn-loading-spinner {
-  from {
-    transform: rotate(0turn);
-  }
-  to {
-    transform: rotate(1turn);
-  }
+  from { transform: rotate(0turn); }
+  to { transform: rotate(1turn); }
 }
 
-/* Link styles */
+/* Disabled State */
 
-.link {
-  color: var(--mico-white-900);
+.btn:disabled,
+.btn-disabled,
+.is-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Hover Effects */
+
+.btn-hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* ========================================================================== */
+
+/* BUTTON LAYOUT MODIFIERS                                                   */
+
+/* ========================================================================== */
+
+/**
+ * Button Layout Modifiers
+ *
+ * These classes control button layout and icon integration.
+ */
+
+/* Block Button */
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+/* Icon Buttons */
+
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: calc(4px * 2);
+}
+
+.btn-icon-leading {
+  display: inline-flex;
+  align-items: center;
+  gap: calc(4px * 2);
+}
+
+.btn-icon-trailing {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: calc(4px * 2);
+}
+
+.btn-icon-only {
+  padding: calc(4px * 3);
+  width: calc(4px * 10);
+  height: calc(4px * 10);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ========================================================================== */
+
+/* BUTTON GROUPING UTILITIES                                                 */
+
+/* ========================================================================== */
+
+/**
+ * Button Grouping Utilities
+ *
+ * These classes create grouped button layouts.
+ */
+
+/* Horizontal Button Group */
+
+.btn-group {
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.btn-group > .btn {
+  position: relative;
+  flex: 1 1 auto;
+  margin: 0;
+}
+
+.btn-group > .btn:not(:first-child) {
+  margin-left: calc(1px * -1);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.btn-group > .btn:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.btn-group > .btn:hover,
+.btn-group > .btn:focus,
+.btn-group > .btn:active {
+  z-index: 1;
+}
+
+/* Vertical Button Group */
+
+.btn-group-vertical {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.btn-group-vertical > .btn {
+  width: 100%;
+  margin: 0;
+}
+
+.btn-group-vertical > .btn:not(:first-child) {
+  margin-top: calc(1px * -1);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.btn-group-vertical > .btn:not(:last-child) {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Button Toolbar */
+
+.btn-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: calc(4px * 2);
+}
+
+/* ========================================================================== */
+
+/* LINK UTILITIES                                                            */
+
+/* ========================================================================== */
+
+/**
+ * Link Color Modifiers
+ *
+ * These classes control the color of links for different purposes.
+ */
+
+/* Brand Link Colors */
+
+.link-primary { color: #3b82f6; }
+
+.link-secondary { color: #6b7280; }
+
+.link-accent { color: #f59e0b; }
+
+/* State Link Colors */
+
+.link-success { color: #10b981; }
+
+.link-danger { color: #ef4444; }
+
+.link-warning { color: #f59e0b; }
+
+.link-info { color: #3b82f6; }
+
+/* Neutral Link Colors */
+
+.link-light { color: #d1d5db; }
+
+.link-dark { color: #111827; }
+
+.link-muted { color: #4b5563; }
+
+.link-body { color: inherit; }
+
+/**
+ * Link Underline Control
+ *
+ * These classes control the presence and behavior of link underlines.
+ */
+
+/* Basic Underline Control */
+
+.link-underline { -webkit-text-decoration: underline; text-decoration: underline; }
+
+.link-no-underline { -webkit-text-decoration: none; text-decoration: none; }
+
+.link-underline-hover:hover { -webkit-text-decoration: underline; text-decoration: underline; }
+
+.link-no-underline-hover:hover { -webkit-text-decoration: none; text-decoration: none; }
+
+/* Underline Thickness */
+
+.link-underline-auto { text-decoration-thickness: auto; }
+
+.link-underline-from-font { text-decoration-thickness: from-font; }
+
+.link-underline-thin { text-decoration-thickness: 1px; }
+
+.link-underline-normal { text-decoration-thickness: 2px; }
+
+.link-underline-thick { text-decoration-thickness: 4px; }
+
+/* Underline Offset */
+
+.link-underline-offset-auto { text-underline-offset: auto; }
+
+.link-underline-offset-sm { text-underline-offset: 1px; }
+
+.link-underline-offset-md { text-underline-offset: 2px; }
+
+.link-underline-offset-lg { text-underline-offset: 4px; }
+
+/* Underline Style */
+
+.link-underline-solid { text-decoration-style: solid; }
+
+.link-underline-dotted { text-decoration-style: dotted; }
+
+.link-underline-dashed { text-decoration-style: dashed; }
+
+.link-underline-wavy { text-decoration-style: wavy; }
+
+.link-underline-double { text-decoration-style: double; }
+
+/* Underline Color */
+
+.link-underline-color-current { text-decoration-color: currentColor; }
+
+.link-underline-color-transparent { text-decoration-color: transparent; }
+
+.link-underline-color-primary { text-decoration-color: #3b82f6; }
+
+.link-underline-color-secondary { text-decoration-color: #6b7280; }
+
+/**
+ * Link Opacity Control
+ *
+ * These classes control link opacity for visual hierarchy.
+ */
+
+.link-opacity-100 { opacity: 1; }
+
+.link-opacity-75 { opacity: 0.75; }
+
+.link-opacity-50 { opacity: 0.5; }
+
+.link-opacity-25 { opacity: 0.25; }
+
+.link-hover-opacity-100:hover { opacity: 1; }
+
+.link-hover-opacity-75:hover { opacity: 0.75; }
+
+/**
+ * Link Layout Control
+ *
+ * These classes control link display and layout behavior.
+ */
+
+.link-reset {
+  color: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  position: relative;
-  transition: color var(--mico-transition-speed) ease;
 }
 
-.link:hover,
-.link:focus {
-  color: rgb(47, 104, 197);
-}
+.link-block { display: block; }
 
-.link::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: -2px;
-  left: 0;
-  background-color: currentColor;
-  transform: scaleX(0);
-  transition: transform var(--mico-transition-speed) ease;
-}
+.link-inline-block { display: inline-block; }
 
-.link:hover::after,
-.link:focus::after {
-  transform: scaleX(1);
-}
+/* ========================================================================== */
 
-/* Link variations */
+/* ACCESSIBILITY & BROWSER SUPPORT                                           */
 
-.link-underline {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
+/* ========================================================================== */
 
-.link-bold {
-  font-weight: bold;
-}
+/**
+ * Focus Styles
+ *
+ * Accessible focus indicators for keyboard navigation.
+ */
 
-.link-external::after {
-  content: '\2197';
-  display: inline-block;
-  margin-left: 0.25em;
-  font-size: 0.8em;
-}
-
-/* Accessibility */
-
-.btn:focus-visible,
-.link:focus-visible {
-  outline: 2px solid currentColor;
+.btn:focus-visible {
+  outline: 2px solid #3b82f6;
   outline-offset: 2px;
 }
 
-/* High contrast mode */
+/**
+ * High Contrast Mode Support
+ *
+ * Enhanced visibility for high contrast environments.
+ */
 
 @media (prefers-contrast: high) {
-  .btn,
-  .link {
+  .btn {
     border: 2px solid currentColor;
   }
 
   .btn-outline {
-    border-width: 3px;
+    border-width: 4px;
+  }
+
+  .link-underline {
+    text-decoration-thickness: 2px;
   }
 }
 
-/* Reduced motion */
+/**
+ * Reduced Motion Support
+ *
+ * Respects user preferences for reduced motion.
+ */
 
 @media (prefers-reduced-motion: reduce) {
   .btn,
-  .link,
   .btn::after,
-  .link::after {
+  .btn::before {
     transition: none;
-  }
-
-  .btn-ripple::after {
     animation: none;
   }
 
@@ -7664,138 +8855,68 @@
     border: 2px solid currentColor;
     border-right-color: transparent;
   }
-}
 
-/* Interactive States for Buttons and Links */
-
-/* Primary Button States */
-
-.btn-primary {
-  background-color: #3b82f6;
-  color: #ffffff;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.btn-primary:hover {
-  background-color: var(--mico-color-primary-shade-dark);
-}
-
-.btn-primary:active {
-  background-color: var(--mico-color-primary-shade-darker);
-}
-
-.btn-primary:focus {
-  outline: 2px solid var(--mico-color-primary-shade-light);
-  outline-offset: 2px;
-}
-
-/* Secondary Button States */
-
-.btn-secondary {
-  background-color: #6b7280;
-  color: #ffffff;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.btn-secondary:hover {
-  background-color: var(--mico-color-secondary-shade-dark);
-}
-
-.btn-secondary:active {
-  background-color: var(--mico-color-secondary-shade-darker);
-}
-
-.btn-secondary:focus {
-  outline: 2px solid var(--mico-color-secondary-shade-light);
-  outline-offset: 2px;
-}
-
-/* Base Button States */
-
-.btn-base {
-  background-color: var(--mico-color-base);
-  color: #ffffff;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.btn-base:hover {
-  background-color: var(--mico-color-base-shade-dark);
-}
-
-.btn-base:active {
-  background-color: var(--mico-color-base-shade-darker);
-}
-
-.btn-base:focus {
-  outline: 2px solid var(--mico-color-base-shade-light);
-  outline-offset: 2px;
-}
-
-/* Link States */
-
-a {
-  color: #3b82f6;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  transition: color 0.3s ease, -webkit-text-decoration 0.3s ease;
-  transition: color 0.3s ease, text-decoration 0.3s ease;
-  transition: color 0.3s ease, text-decoration 0.3s ease, -webkit-text-decoration 0.3s ease;
-}
-
-a:hover {
-  color: var(--mico-color-primary-shade-dark);
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-a:active {
-  color: var(--mico-color-primary-shade-darker);
-}
-
-a:focus {
-  outline: 2px solid var(--mico-color-primary-shade-light);
-  outline-offset: 2px;
-}
-
-/* Disabled State */
-
-.btn-primary:disabled,
-.btn-secondary:disabled,
-.btn-base:disabled,
-a:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-/* High Contrast Mode Adjustments */
-
-@media (prefers-contrast: high) {
-  .btn-primary,
-  .btn-secondary,
-  .btn-base {
-    border: 2px solid #000000;
-    color: #000000;
-    background-color: #ffffff;
-  }
-
-  .btn-primary:hover,
-  .btn-secondary:hover,
-  .btn-base:hover {
-    background-color: #000000;
-    color: #ffffff;
-  }
-
-  a {
-    color: #000000;
-    -webkit-text-decoration: underline;
-    text-decoration: underline;
-  }
-
-  a:hover {
-    color: #ffffff;
-    background-color: #000000;
+  .btn-hover-lift:hover,
+  .btn-hover-scale:hover {
+    transform: none;
   }
 }
+
+/**
+ * Print Media Support
+ *
+ * Optimized styles for print media.
+ */
+
+@media print {
+  .btn {
+    background: transparent !important;
+    color: var(--mico-color-black) !important;
+    border: 1px solid var(--mico-color-black) !important;
+    box-shadow: none !important;
+  }
+
+  .link-underline {
+    -webkit-text-decoration: underline !important;
+    text-decoration: underline !important;
+  }
+}
+
+/* ========================================================================== */
+
+/* USAGE EXAMPLES AND DOCUMENTATION                                          */
+
+/* ========================================================================== */
+
+/**
+ * USAGE EXAMPLES:
+ *
+ * 1. Primary button with shadow:
+ *    <button class="btn btn-primary btn-shadow">Save Changes</button>
+ *
+ * 2. Outline button with hover lift:
+ *    <button class="btn btn-secondary btn-outline btn-hover-lift">Cancel</button>
+ *
+ * 3. Icon button:
+ *    <button class="btn btn-primary btn-icon">
+ *      <svg>...</svg> Download
+ *    </button>
+ *
+ * 4. Button group:
+ *    <div class="btn-group">
+ *      <button class="btn btn-primary">Left</button>
+ *      <button class="btn btn-primary">Middle</button>
+ *      <button class="btn btn-primary">Right</button>
+ *    </div>
+ *
+ * 5. Advanced link styling:
+ *    <a href="#" class="link-primary link-underline-thick link-underline-offset-sm link-underline-wavy">
+ *      Styled Link
+ *    </a>
+ *
+ * 6. Loading button:
+ *    <button class="btn btn-primary btn-loading">Processing...</button>
+ */
 
 /**
  * Mico CSS Framework - Interactive States
@@ -7852,81 +8973,81 @@ a:disabled {
 
 /* ---------- Primary Color Variations ---------- */
 
+/* Tints - Lighter variations */
+
+.hover-bg-primary-light:hover { background-color: hsl(from #3b82f6 h s calc(l + (100% - l) * 0.2)) !important; }
+
+.hover-bg-primary-2xlight:hover { background-color: hsl(from #3b82f6 h s calc(l + (100% - l) * 0.4)) !important; }
+
+.hover-bg-primary-3xlight:hover { background-color: hsl(from #3b82f6 h s calc(l + (100% - l) * 0.6)) !important; }
+
+.hover-bg-primary-4xlight:hover { background-color: hsl(from #3b82f6 h s calc(l + (100% - l) * 0.8)) !important; }
+
+.hover-bg-primary-5xlight:hover { background-color: hsl(from #3b82f6 h s calc(l + (100% - l) * 0.9)) !important; }
+
 /* Shades - Darker variations */
 
-.hover-bg-primary-light:hover { background-color: var(--mico-color-primary-shade-light) !important; }
+.hover-bg-primary-dark:hover { background-color: rgb(11, 95, 233) !important; }
 
-.hover-bg-primary-medium:hover { background-color: var(--mico-color-primary-shade-medium) !important; }
+.hover-bg-primary-2xdark:hover { background-color: rgb(8, 71, 175) !important; }
 
-.hover-bg-primary-dark:hover { background-color: var(--mico-color-primary-shade-dark) !important; }
+.hover-bg-primary-3xdark:hover { background-color: rgb(5, 48, 117) !important; }
 
-.hover-bg-primary-darker:hover { background-color: var(--mico-color-primary-shade-darker) !important; }
+.hover-bg-primary-4xdark:hover { background-color: rgb(3, 24, 58) !important; }
 
-.hover-bg-primary-darkest:hover { background-color: var(--mico-color-primary-shade-darkest) !important; }
-
-/* Tones - Lighter variations */
-
-.hover-bg-primary-soft:hover { background-color: var(--mico-color-primary-tone-soft) !important; }
-
-.hover-bg-primary-muted:hover { background-color: var(--mico-color-primary-tone-muted) !important; }
-
-.hover-bg-primary-pastel:hover { background-color: var(--mico-color-primary-tone-pastel) !important; }
-
-.hover-bg-primary-pale:hover { background-color: var(--mico-color-primary-tone-pale) !important; }
-
-.hover-bg-primary-faint:hover { background-color: var(--mico-color-primary-tone-faint) !important; }
+.hover-bg-primary-5xdark:hover { background-color: rgb(1, 12, 29) !important; }
 
 /* ---------- Secondary Color Variations ---------- */
 
+/* Tints - Lighter variations */
+
+.hover-bg-secondary-light:hover { background-color: hsl(from #6b7280 h s calc(l + (100% - l) * 0.2)) !important; }
+
+.hover-bg-secondary-2xlight:hover { background-color: hsl(from #6b7280 h s calc(l + (100% - l) * 0.4)) !important; }
+
+.hover-bg-secondary-3xlight:hover { background-color: hsl(from #6b7280 h s calc(l + (100% - l) * 0.6)) !important; }
+
+.hover-bg-secondary-4xlight:hover { background-color: hsl(from #6b7280 h s calc(l + (100% - l) * 0.8)) !important; }
+
+.hover-bg-secondary-5xlight:hover { background-color: hsl(from #6b7280 h s calc(l + (100% - l) * 0.9)) !important; }
+
 /* Shades - Darker variations */
 
-.hover-bg-secondary-light:hover { background-color: var(--mico-color-secondary-shade-light) !important; }
+.hover-bg-secondary-dark:hover { background-color: rgb(86, 91, 102) !important; }
 
-.hover-bg-secondary-medium:hover { background-color: var(--mico-color-secondary-shade-medium) !important; }
+.hover-bg-secondary-2xdark:hover { background-color: rgb(64, 68, 77) !important; }
 
-.hover-bg-secondary-dark:hover { background-color: var(--mico-color-secondary-shade-dark) !important; }
+.hover-bg-secondary-3xdark:hover { background-color: rgb(43, 46, 51) !important; }
 
-.hover-bg-secondary-darker:hover { background-color: var(--mico-color-secondary-shade-darker) !important; }
+.hover-bg-secondary-4xdark:hover { background-color: rgb(21, 23, 26) !important; }
 
-.hover-bg-secondary-darkest:hover { background-color: var(--mico-color-secondary-shade-darkest) !important; }
-
-/* Tones - Lighter variations */
-
-.hover-bg-secondary-soft:hover { background-color: var(--mico-color-secondary-tone-soft) !important; }
-
-.hover-bg-secondary-muted:hover { background-color: var(--mico-color-secondary-tone-muted) !important; }
-
-.hover-bg-secondary-pastel:hover { background-color: var(--mico-color-secondary-tone-pastel) !important; }
-
-.hover-bg-secondary-pale:hover { background-color: var(--mico-color-secondary-tone-pale) !important; }
-
-.hover-bg-secondary-faint:hover { background-color: var(--mico-color-secondary-tone-faint) !important; }
+.hover-bg-secondary-5xdark:hover { background-color: rgb(11, 11, 13) !important; }
 
 /* ---------- Accent Color Variations ---------- */
 
+/* Tints - Lighter variations */
+
+.hover-bg-accent-light:hover { background-color: hsl(from #f59e0b h s calc(l + (100% - l) * 0.2)) !important; }
+
+.hover-bg-accent-2xlight:hover { background-color: hsl(from #f59e0b h s calc(l + (100% - l) * 0.4)) !important; }
+
+.hover-bg-accent-3xlight:hover { background-color: hsl(from #f59e0b h s calc(l + (100% - l) * 0.6)) !important; }
+
+.hover-bg-accent-4xlight:hover { background-color: hsl(from #f59e0b h s calc(l + (100% - l) * 0.8)) !important; }
+
+.hover-bg-accent-5xlight:hover { background-color: hsl(from #f59e0b h s calc(l + (100% - l) * 0.9)) !important; }
+
 /* Shades - Darker variations */
 
-.hover-bg-accent-light:hover { background-color: var(--mico-color-accent-shade-light) !important; }
+.hover-bg-accent-dark:hover { background-color: rgb(197, 127, 8) !important; }
 
-.hover-bg-accent-medium:hover { background-color: var(--mico-color-accent-shade-medium) !important; }
+.hover-bg-accent-2xdark:hover { background-color: rgb(148, 95, 6) !important; }
 
-.hover-bg-accent-dark:hover { background-color: var(--mico-color-accent-shade-dark) !important; }
+.hover-bg-accent-3xdark:hover { background-color: rgb(98, 63, 4) !important; }
 
-.hover-bg-accent-darker:hover { background-color: var(--mico-color-accent-shade-darker) !important; }
+.hover-bg-accent-4xdark:hover { background-color: rgb(49, 32, 2) !important; }
 
-.hover-bg-accent-darkest:hover { background-color: var(--mico-color-accent-shade-darkest) !important; }
-
-/* Tones - Lighter variations */
-
-.hover-bg-accent-soft:hover { background-color: var(--mico-color-accent-tone-soft) !important; }
-
-.hover-bg-accent-muted:hover { background-color: var(--mico-color-accent-tone-muted) !important; }
-
-.hover-bg-accent-pastel:hover { background-color: var(--mico-color-accent-tone-pastel) !important; }
-
-.hover-bg-accent-pale:hover { background-color: var(--mico-color-accent-tone-pale) !important; }
-
-.hover-bg-accent-faint:hover { background-color: var(--mico-color-accent-tone-faint) !important; }
+.hover-bg-accent-5xdark:hover { background-color: rgb(25, 16, 1) !important; }
 
 /* ---------- Grayscale ---------- */
 
@@ -8032,81 +9153,81 @@ a:disabled {
 
 /* ---------- Primary Color Variations ---------- */
 
+/* Tints - Lighter variations */
+
+.focus-bg-primary-light:focus { background-color: hsl(from #3b82f6 h s calc(l + (100% - l) * 0.2)) !important; }
+
+.focus-bg-primary-2xlight:focus { background-color: hsl(from #3b82f6 h s calc(l + (100% - l) * 0.4)) !important; }
+
+.focus-bg-primary-3xlight:focus { background-color: hsl(from #3b82f6 h s calc(l + (100% - l) * 0.6)) !important; }
+
+.focus-bg-primary-4xlight:focus { background-color: hsl(from #3b82f6 h s calc(l + (100% - l) * 0.8)) !important; }
+
+.focus-bg-primary-5xlight:focus { background-color: hsl(from #3b82f6 h s calc(l + (100% - l) * 0.9)) !important; }
+
 /* Shades - Darker variations */
 
-.focus-bg-primary-light:focus { background-color: var(--mico-color-primary-shade-light) !important; }
+.focus-bg-primary-dark:focus { background-color: rgb(11, 95, 233) !important; }
 
-.focus-bg-primary-medium:focus { background-color: var(--mico-color-primary-shade-medium) !important; }
+.focus-bg-primary-2xdark:focus { background-color: rgb(8, 71, 175) !important; }
 
-.focus-bg-primary-dark:focus { background-color: var(--mico-color-primary-shade-dark) !important; }
+.focus-bg-primary-3xdark:focus { background-color: rgb(5, 48, 117) !important; }
 
-.focus-bg-primary-darker:focus { background-color: var(--mico-color-primary-shade-darker) !important; }
+.focus-bg-primary-4xdark:focus { background-color: rgb(3, 24, 58) !important; }
 
-.focus-bg-primary-darkest:focus { background-color: var(--mico-color-primary-shade-darkest) !important; }
-
-/* Tones - Lighter variations */
-
-.focus-bg-primary-soft:focus { background-color: var(--mico-color-primary-tone-soft) !important; }
-
-.focus-bg-primary-muted:focus { background-color: var(--mico-color-primary-tone-muted) !important; }
-
-.focus-bg-primary-pastel:focus { background-color: var(--mico-color-primary-tone-pastel) !important; }
-
-.focus-bg-primary-pale:focus { background-color: var(--mico-color-primary-tone-pale) !important; }
-
-.focus-bg-primary-faint:focus { background-color: var(--mico-color-primary-tone-faint) !important; }
+.focus-bg-primary-5xdark:focus { background-color: rgb(1, 12, 29) !important; }
 
 /* ---------- Secondary Color Variations ---------- */
 
+/* Tints - Lighter variations */
+
+.focus-bg-secondary-light:focus { background-color: hsl(from #6b7280 h s calc(l + (100% - l) * 0.2)) !important; }
+
+.focus-bg-secondary-2xlight:focus { background-color: hsl(from #6b7280 h s calc(l + (100% - l) * 0.4)) !important; }
+
+.focus-bg-secondary-3xlight:focus { background-color: hsl(from #6b7280 h s calc(l + (100% - l) * 0.6)) !important; }
+
+.focus-bg-secondary-4xlight:focus { background-color: hsl(from #6b7280 h s calc(l + (100% - l) * 0.8)) !important; }
+
+.focus-bg-secondary-5xlight:focus { background-color: hsl(from #6b7280 h s calc(l + (100% - l) * 0.9)) !important; }
+
 /* Shades - Darker variations */
 
-.focus-bg-secondary-light:focus { background-color: var(--mico-color-secondary-shade-light) !important; }
+.focus-bg-secondary-dark:focus { background-color: rgb(86, 91, 102) !important; }
 
-.focus-bg-secondary-medium:focus { background-color: var(--mico-color-secondary-shade-medium) !important; }
+.focus-bg-secondary-2xdark:focus { background-color: rgb(64, 68, 77) !important; }
 
-.focus-bg-secondary-dark:focus { background-color: var(--mico-color-secondary-shade-dark) !important; }
+.focus-bg-secondary-3xdark:focus { background-color: rgb(43, 46, 51) !important; }
 
-.focus-bg-secondary-darker:focus { background-color: var(--mico-color-secondary-shade-darker) !important; }
+.focus-bg-secondary-4xdark:focus { background-color: rgb(21, 23, 26) !important; }
 
-.focus-bg-secondary-darkest:focus { background-color: var(--mico-color-secondary-shade-darkest) !important; }
-
-/* Tones - Lighter variations */
-
-.focus-bg-secondary-soft:focus { background-color: var(--mico-color-secondary-tone-soft) !important; }
-
-.focus-bg-secondary-muted:focus { background-color: var(--mico-color-secondary-tone-muted) !important; }
-
-.focus-bg-secondary-pastel:focus { background-color: var(--mico-color-secondary-tone-pastel) !important; }
-
-.focus-bg-secondary-pale:focus { background-color: var(--mico-color-secondary-tone-pale) !important; }
-
-.focus-bg-secondary-faint:focus { background-color: var(--mico-color-secondary-tone-faint) !important; }
+.focus-bg-secondary-5xdark:focus { background-color: rgb(11, 11, 13) !important; }
 
 /* ---------- Accent Color Variations ---------- */
 
+/* Tints - Lighter variations */
+
+.focus-bg-accent-light:focus { background-color: hsl(from #f59e0b h s calc(l + (100% - l) * 0.2)) !important; }
+
+.focus-bg-accent-2xlight:focus { background-color: hsl(from #f59e0b h s calc(l + (100% - l) * 0.4)) !important; }
+
+.focus-bg-accent-3xlight:focus { background-color: hsl(from #f59e0b h s calc(l + (100% - l) * 0.6)) !important; }
+
+.focus-bg-accent-4xlight:focus { background-color: hsl(from #f59e0b h s calc(l + (100% - l) * 0.8)) !important; }
+
+.focus-bg-accent-5xlight:focus { background-color: hsl(from #f59e0b h s calc(l + (100% - l) * 0.9)) !important; }
+
 /* Shades - Darker variations */
 
-.focus-bg-accent-light:focus { background-color: var(--mico-color-accent-shade-light) !important; }
+.focus-bg-accent-dark:focus { background-color: rgb(197, 127, 8) !important; }
 
-.focus-bg-accent-medium:focus { background-color: var(--mico-color-accent-shade-medium) !important; }
+.focus-bg-accent-2xdark:focus { background-color: rgb(148, 95, 6) !important; }
 
-.focus-bg-accent-dark:focus { background-color: var(--mico-color-accent-shade-dark) !important; }
+.focus-bg-accent-3xdark:focus { background-color: rgb(98, 63, 4) !important; }
 
-.focus-bg-accent-darker:focus { background-color: var(--mico-color-accent-shade-darker) !important; }
+.focus-bg-accent-4xdark:focus { background-color: rgb(49, 32, 2) !important; }
 
-.focus-bg-accent-darkest:focus { background-color: var(--mico-color-accent-shade-darkest) !important; }
-
-/* Tones - Lighter variations */
-
-.focus-bg-accent-soft:focus { background-color: var(--mico-color-accent-tone-soft) !important; }
-
-.focus-bg-accent-muted:focus { background-color: var(--mico-color-accent-tone-muted) !important; }
-
-.focus-bg-accent-pastel:focus { background-color: var(--mico-color-accent-tone-pastel) !important; }
-
-.focus-bg-accent-pale:focus { background-color: var(--mico-color-accent-tone-pale) !important; }
-
-.focus-bg-accent-faint:focus { background-color: var(--mico-color-accent-tone-faint) !important; }
+.focus-bg-accent-5xdark:focus { background-color: rgb(25, 16, 1) !important; }
 
 /* ---------- Grayscale ---------- */
 
@@ -8212,81 +9333,296 @@ a:disabled {
 
 /* ---------- Primary Color Variations ---------- */
 
+/* Tints - Lighter variations */
+
+.active-bg-primary-light:active { background-color: hsl(from #3b82f6 h s calc(l + (100% - l) * 0.2)) !important; }
+
+.active-bg-primary-2xlight:active { background-color: hsl(from #3b82f6 h s calc(l + (100% - l) * 0.4)) !important; }
+
+.active-bg-primary-3xlight:active { background-color: hsl(from #3b82f6 h s calc(l + (100% - l) * 0.6)) !important; }
+
+.active-bg-primary-4xlight:active { background-color: hsl(from #3b82f6 h s calc(l + (100% - l) * 0.8)) !important; }
+
+.active-bg-primary-5xlight:active { background-color: hsl(from #3b82f6 h s calc(l + (100% - l) * 0.9)) !important; }
+
 /* Shades - Darker variations */
 
-.active-bg-primary-light:active { background-color: var(--mico-color-primary-shade-light) !important; }
+.active-bg-primary-dark:active { background-color: rgb(11, 95, 233) !important; }
 
-.active-bg-primary-medium:active { background-color: var(--mico-color-primary-shade-medium) !important; }
+.active-bg-primary-2xdark:active { background-color: rgb(8, 71, 175) !important; }
 
-.active-bg-primary-dark:active { background-color: var(--mico-color-primary-shade-dark) !important; }
+.active-bg-primary-3xdark:active { background-color: rgb(5, 48, 117) !important; }
 
-.active-bg-primary-darker:active { background-color: var(--mico-color-primary-shade-darker) !important; }
+.active-bg-primary-4xdark:active { background-color: rgb(3, 24, 58) !important; }
 
-.active-bg-primary-darkest:active { background-color: var(--mico-color-primary-shade-darkest) !important; }
-
-/* Tones - Lighter variations */
-
-.active-bg-primary-soft:active { background-color: var(--mico-color-primary-tone-soft) !important; }
-
-.active-bg-primary-muted:active { background-color: var(--mico-color-primary-tone-muted) !important; }
-
-.active-bg-primary-pastel:active { background-color: var(--mico-color-primary-tone-pastel) !important; }
-
-.active-bg-primary-pale:active { background-color: var(--mico-color-primary-tone-pale) !important; }
-
-.active-bg-primary-faint:active { background-color: var(--mico-color-primary-tone-faint) !important; }
+.active-bg-primary-5xdark:active { background-color: rgb(1, 12, 29) !important; }
 
 /* ---------- Secondary Color Variations ---------- */
 
+/* Tints - Lighter variations */
+
+.active-bg-secondary-light:active { background-color: hsl(from #6b7280 h s calc(l + (100% - l) * 0.2)) !important; }
+
+.active-bg-secondary-2xlight:active { background-color: hsl(from #6b7280 h s calc(l + (100% - l) * 0.4)) !important; }
+
+.active-bg-secondary-3xlight:active { background-color: hsl(from #6b7280 h s calc(l + (100% - l) * 0.6)) !important; }
+
+.active-bg-secondary-4xlight:active { background-color: hsl(from #6b7280 h s calc(l + (100% - l) * 0.8)) !important; }
+
+.active-bg-secondary-5xlight:active { background-color: hsl(from #6b7280 h s calc(l + (100% - l) * 0.9)) !important; }
+
 /* Shades - Darker variations */
 
-.active-bg-secondary-light:active { background-color: var(--mico-color-secondary-shade-light) !important; }
+.active-bg-secondary-dark:active { background-color: rgb(86, 91, 102) !important; }
 
-.active-bg-secondary-medium:active { background-color: var(--mico-color-secondary-shade-medium) !important; }
+.active-bg-secondary-2xdark:active { background-color: rgb(64, 68, 77) !important; }
 
-.active-bg-secondary-dark:active { background-color: var(--mico-color-secondary-shade-dark) !important; }
+.active-bg-secondary-3xdark:active { background-color: rgb(43, 46, 51) !important; }
 
-.active-bg-secondary-darker:active { background-color: var(--mico-color-secondary-shade-darker) !important; }
+.active-bg-secondary-4xdark:active { background-color: rgb(21, 23, 26) !important; }
 
-.active-bg-secondary-darkest:active { background-color: var(--mico-color-secondary-shade-darkest) !important; }
-
-/* Tones - Lighter variations */
-
-.active-bg-secondary-soft:active { background-color: var(--mico-color-secondary-tone-soft) !important; }
-
-.active-bg-secondary-muted:active { background-color: var(--mico-color-secondary-tone-muted) !important; }
-
-.active-bg-secondary-pastel:active { background-color: var(--mico-color-secondary-tone-pastel) !important; }
-
-.active-bg-secondary-pale:active { background-color: var(--mico-color-secondary-tone-pale) !important; }
-
-.active-bg-secondary-faint:active { background-color: var(--mico-color-secondary-tone-faint) !important; }
+.active-bg-secondary-5xdark:active { background-color: rgb(11, 11, 13) !important; }
 
 /* ---------- Accent Color Variations ---------- */
 
+/* Tints - Lighter variations */
+
+.active-bg-accent-light:active { background-color: hsl(from #f59e0b h s calc(l + (100% - l) * 0.2)) !important; }
+
+.active-bg-accent-2xlight:active { background-color: hsl(from #f59e0b h s calc(l + (100% - l) * 0.4)) !important; }
+
+.active-bg-accent-3xlight:active { background-color: hsl(from #f59e0b h s calc(l + (100% - l) * 0.6)) !important; }
+
+.active-bg-accent-4xlight:active { background-color: hsl(from #f59e0b h s calc(l + (100% - l) * 0.8)) !important; }
+
+.active-bg-accent-5xlight:active { background-color: hsl(from #f59e0b h s calc(l + (100% - l) * 0.9)) !important; }
+
 /* Shades - Darker variations */
 
-.active-bg-accent-light:active { background-color: var(--mico-color-accent-shade-light) !important; }
+.active-bg-accent-dark:active { background-color: rgb(197, 127, 8) !important; }
 
-.active-bg-accent-medium:active { background-color: var(--mico-color-accent-shade-medium) !important; }
+.active-bg-accent-2xdark:active { background-color: rgb(148, 95, 6) !important; }
 
-.active-bg-accent-dark:active { background-color: var(--mico-color-accent-shade-dark) !important; }
+.active-bg-accent-3xdark:active { background-color: rgb(98, 63, 4) !important; }
 
-.active-bg-accent-darker:active { background-color: var(--mico-color-accent-shade-darker) !important; }
+.active-bg-accent-4xdark:active { background-color: rgb(49, 32, 2) !important; }
 
-.active-bg-accent-darkest:active { background-color: var(--mico-color-accent-shade-darkest) !important; }
+.active-bg-accent-5xdark:active { background-color: rgb(25, 16, 1) !important; }
 
-/* Tones - Lighter variations */
+/* ========================================================================== */
 
-.active-bg-accent-soft:active { background-color: var(--mico-color-accent-tone-soft) !important; }
+/* BORDER STATE UTILITIES                                                    */
 
-.active-bg-accent-muted:active { background-color: var(--mico-color-accent-tone-muted) !important; }
+/* ========================================================================== */
 
-.active-bg-accent-pastel:active { background-color: var(--mico-color-accent-tone-pastel) !important; }
+/**
+ * Border Color States
+ *
+ * These utilities change border colors on hover, focus, and active states.
+ */
 
-.active-bg-accent-pale:active { background-color: var(--mico-color-accent-tone-pale) !important; }
+/* Hover Border Colors */
 
-.active-bg-accent-faint:active { background-color: var(--mico-color-accent-tone-faint) !important; }
+.hover-border-primary:hover { border-color: #3b82f6 !important; }
+
+.hover-border-secondary:hover { border-color: #6b7280 !important; }
+
+.hover-border-accent:hover { border-color: #f59e0b !important; }
+
+.hover-border-success:hover { border-color: #10b981 !important; }
+
+.hover-border-error:hover { border-color: #ef4444 !important; }
+
+.hover-border-warning:hover { border-color: #f59e0b !important; }
+
+.hover-border-info:hover { border-color: #3b82f6 !important; }
+
+.hover-border-gray-300:hover { border-color: #d1d5db !important; }
+
+.hover-border-gray-500:hover { border-color: #6b7280 !important; }
+
+.hover-border-gray-700:hover { border-color: #374151 !important; }
+
+/* Focus Border Colors */
+
+.focus-border-primary:focus { border-color: #3b82f6 !important; }
+
+.focus-border-secondary:focus { border-color: #6b7280 !important; }
+
+.focus-border-accent:focus { border-color: #f59e0b !important; }
+
+.focus-border-success:focus { border-color: #10b981 !important; }
+
+.focus-border-error:focus { border-color: #ef4444 !important; }
+
+.focus-border-warning:focus { border-color: #f59e0b !important; }
+
+.focus-border-info:focus { border-color: #3b82f6 !important; }
+
+/* Active Border Colors */
+
+.active-border-primary:active { border-color: rgb(11, 95, 233) !important; }
+
+.active-border-secondary:active { border-color: rgb(86, 91, 102) !important; }
+
+.active-border-accent:active { border-color: rgb(197, 127, 8) !important; }
+
+/* ========================================================================== */
+
+/* SHADOW STATE UTILITIES                                                    */
+
+/* ========================================================================== */
+
+/**
+ * Shadow States
+ *
+ * These utilities change box shadows on hover, focus, and active states.
+ */
+
+/* Hover Shadows */
+
+.hover-shadow:hover { box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important; }
+
+.hover-shadow-sm:hover { box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important; }
+
+.hover-shadow-lg:hover { box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1) !important; }
+
+.hover-shadow-xl:hover { box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15) !important; }
+
+.hover-shadow-2xl:hover { box-shadow: var(--mico-shadow-2xl) !important; }
+
+.hover-shadow-none:hover { box-shadow: var(--mico-shadow-none) !important; }
+
+/* Focus Shadows */
+
+.focus-shadow:focus { box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important; }
+
+.focus-shadow-lg:focus { box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1) !important; }
+
+/* Active Shadows */
+
+.active-shadow-sm:active { box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important; }
+
+.active-shadow-none:active { box-shadow: var(--mico-shadow-none) !important; }
+
+/* ========================================================================== */
+
+/* TRANSFORM STATE UTILITIES                                                 */
+
+/* ========================================================================== */
+
+/**
+ * Transform States
+ *
+ * These utilities apply transforms on hover, focus, and active states.
+ */
+
+/* Hover Transforms */
+
+.hover-scale-105:hover { transform: scale(1.05) !important; }
+
+.hover-scale-110:hover { transform: scale(1.1) !important; }
+
+.hover-scale-95:hover { transform: scale(0.95) !important; }
+
+.hover-translate-y-1:hover { transform: translateY(-0.25rem) !important; }
+
+.hover-translate-y-2:hover { transform: translateY(-0.5rem) !important; }
+
+.hover-rotate-1:hover { transform: rotate(1deg) !important; }
+
+.hover-rotate-3:hover { transform: rotate(3deg) !important; }
+
+.hover-rotate-6:hover { transform: rotate(6deg) !important; }
+
+/* Focus Transforms */
+
+.focus-scale-105:focus { transform: scale(1.05) !important; }
+
+.focus-translate-y-1:focus { transform: translateY(-0.25rem) !important; }
+
+/* Active Transforms */
+
+.active-scale-95:active { transform: scale(0.95) !important; }
+
+.active-translate-y-0:active { transform: translateY(0) !important; }
+
+/* ========================================================================== */
+
+/* OPACITY STATE UTILITIES                                                   */
+
+/* ========================================================================== */
+
+/**
+ * Opacity States
+ *
+ * These utilities change opacity on hover, focus, and active states.
+ */
+
+/* Hover Opacity */
+
+.hover-opacity-100:hover { opacity: 1 !important; }
+
+.hover-opacity-75:hover { opacity: 0.75 !important; }
+
+.hover-opacity-50:hover { opacity: 0.5 !important; }
+
+.hover-opacity-25:hover { opacity: 0.25 !important; }
+
+.hover-opacity-0:hover { opacity: 0 !important; }
+
+/* Focus Opacity */
+
+.focus-opacity-100:focus { opacity: 1 !important; }
+
+.focus-opacity-75:focus { opacity: 0.75 !important; }
+
+/* Active Opacity */
+
+.active-opacity-75:active { opacity: 0.75 !important; }
+
+.active-opacity-50:active { opacity: 0.5 !important; }
+
+/* ========================================================================== */
+
+/* RING STATE UTILITIES                                                      */
+
+/* ========================================================================== */
+
+/**
+ * Ring States
+ *
+ * These utilities apply ring effects on hover, focus, and active states.
+ */
+
+/* Hover Rings */
+
+.hover-ring:hover { box-shadow: 0 0 0 2px #3b82f6 !important; }
+
+.hover-ring-primary:hover { box-shadow: 0 0 0 2px #3b82f6 !important; }
+
+.hover-ring-secondary:hover { box-shadow: 0 0 0 2px #6b7280 !important; }
+
+.hover-ring-accent:hover { box-shadow: 0 0 0 2px #f59e0b !important; }
+
+/* Focus Rings */
+
+.focus-ring:focus { box-shadow: 0 0 0 2px #3b82f6 !important; }
+
+.focus-ring-primary:focus { box-shadow: 0 0 0 2px #3b82f6 !important; }
+
+.focus-ring-secondary:focus { box-shadow: 0 0 0 2px #6b7280 !important; }
+
+.focus-ring-accent:focus { box-shadow: 0 0 0 2px #f59e0b !important; }
+
+.focus-ring-error:focus { box-shadow: 0 0 0 2px #ef4444 !important; }
+
+/* Ring with Offset */
+
+.focus-ring-offset-2:focus {
+  box-shadow: 0 0 0 2px var(--mico-color-white),
+              0 0 0 calc(2px + 2px) #3b82f6 !important;
+}
 
 /* ---------- Grayscale ---------- */
 
@@ -8458,372 +9794,621 @@ a:disabled {
  *    <button class="hover-bg-primary hover-text-white">Button</button>
  *
  * 2. Elevated card on hover:
- *    <div class="hover-elevate hover-bg-primary-pale">Card content</div>
+ *    <div class="hover-elevate hover-bg-primary">Card content</div>
  *
  * 3. Interactive link:
- *    <a class="hover-text-primary focus-text-primary-dark active-text-primary-darker">Link</a>
+ *    <a class="hover-text-primary focus-text-primary active-text-primary">Link</a>
  *
  * 4. Subtle image hover effect:
  *    <img class="hover-brightness-110 hover-scale-sm" src="image.jpg" alt="Image">
  *
  * 5. Button with multiple states:
- *    <button class="hover-bg-primary focus-bg-primary-dark active-bg-primary-darker">Button</button>
+ *    <button class="hover-bg-primary focus-bg-primary active-bg-primary">Button</button>
  */
 
-/* Transitions */
+/**
+ * Mico CSS Framework - Animation & Motion Utilities
+ *
+ * This file provides a comprehensive animation engine with:
+ * - Transition utilities for smooth property changes
+ * - Scroll-triggered entrance animations
+ * - Continuous animations for ongoing effects
+ * - Interactive animations (ripple, typewriter)
+ * - Animation control utilities
+ *
+ * USAGE:
+ * Basic transitions: .transition-all, .transition-colors
+ * Scroll animations: .animate-on-scroll .anim-fade-in
+ * Continuous: .anim-pulse, .anim-subtle-bounce
+ * Interactive: .btn-ripple, .anim-typewriter
+ */
 
-.transition-all { transition: all .4s cubic-bezier(0.25, 0.1, 0.25, 1.0); }
+/* ========================================================================== */
 
-.transition-color { transition: color .4s cubic-bezier(0.25, 0.1, 0.25, 1.0); }
+/* TRANSITION UTILITIES                                                       */
 
-.transition-background { transition: background .4s cubic-bezier(0.25, 0.1, 0.25, 1.0); }
+/* ========================================================================== */
 
-.transition-border { transition: border .4s cubic-bezier(0.25, 0.1, 0.25, 1.0); }
+/**
+ * Transition Property Utilities
+ *
+ * These utilities control which CSS properties are animated during transitions.
+ * They provide smooth animations for interactive states like hover and focus.
+ */
 
-.transition-opacity { transition: opacity .4s cubic-bezier(0.25, 0.1, 0.25, 1.0); }
+/* Property-specific transitions */
 
-.transition-transform { transition: transform .4s cubic-bezier(0.25, 0.1, 0.25, 1.0); }
-
-.transition-box-shadow { transition: box-shadow .4s cubic-bezier(0.25, 0.1, 0.25, 1.0); }
-
-.transition-none {transition-property: none;}
-
-/* Performance Optimizations */
-
-@media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-      scroll-behavior: auto !important;
-    }
-  }
-
-/* navigation.utils.css */
-
-/* Utility classes */
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
+.transition-none {
+  transition-property: none !important;
 }
 
-/* Header Navigation */
-
-.header__nav {
-  background-color: #333;
-  color: #fff;
-  padding: 1rem;
+.transition-all {
+  transition-property: all !important;
 }
 
-.nav__list {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.transition-all {
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
+  transition-delay: 0;
 }
 
-.nav__item {
+.transition-colors {
+  transition-property: background-color, border-color, color, fill, stroke, text-decoration-color !important;
+}
+
+.transition-colors {
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
+  transition-delay: 0;
+}
+
+.transition-opacity {
+  transition-property: opacity !important;
+}
+
+.transition-opacity {
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
+  transition-delay: 0;
+}
+
+.transition-transform {
+  transition-property: transform !important;
+}
+
+.transition-transform {
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
+  transition-delay: 0;
+}
+
+.transition-shadow {
+  transition-property: box-shadow, filter !important;
+}
+
+.transition-shadow {
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
+  transition-delay: 0;
+}
+
+.transition-background {
+  transition-property: background-color, background-image, background-position, background-size !important;
+}
+
+.transition-background {
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
+  transition-delay: 0;
+}
+
+.transition-border {
+  transition-property: border-color, border-width, border-style !important;
+}
+
+.transition-border {
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
+  transition-delay: 0;
+}
+
+/**
+ * Transition Duration Utilities
+ *
+ * These utilities override the default transition duration.
+ */
+
+.duration-0    { transition-duration: 0ms !important; }
+
+.duration-75   { transition-duration: 75ms !important; }
+
+.duration-100  { transition-duration: 100ms !important; }
+
+.duration-150  { transition-duration: 150ms !important; }
+
+.duration-200  { transition-duration: 200ms !important; }
+
+.duration-300  { transition-duration: 300ms !important; }
+
+.duration-500  { transition-duration: 500ms !important; }
+
+.duration-700  { transition-duration: 700ms !important; }
+
+.duration-1000 { transition-duration: 1000ms !important; }
+
+/**
+ * Transition Timing Function Utilities
+ *
+ * These utilities control the acceleration curve of transitions.
+ */
+
+.ease-linear  { transition-timing-function: linear !important; }
+
+.ease-in      { transition-timing-function: cubic-bezier(0.42, 0, 1.0, 1.0) !important; }
+
+.ease-out     { transition-timing-function: cubic-bezier(0, 0, 0.58, 1.0) !important; }
+
+.ease-in-out  { transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0) !important; }
+
+/**
+ * Transition Delay Utilities
+ *
+ * These utilities add delays before transitions start.
+ */
+
+.delay-0    { transition-delay: 0ms !important; }
+
+.delay-75   { transition-delay: 75ms !important; }
+
+.delay-100  { transition-delay: 100ms !important; }
+
+.delay-150  { transition-delay: 150ms !important; }
+
+.delay-200  { transition-delay: 200ms !important; }
+
+.delay-300  { transition-delay: 300ms !important; }
+
+.delay-500  { transition-delay: 500ms !important; }
+
+.delay-700  { transition-delay: 700ms !important; }
+
+.delay-1000 { transition-delay: 1000ms !important; }
+
+/* ========================================================================== */
+
+/* ANIMATION ENGINE BASE & KEYFRAMES                                         */
+
+/* ========================================================================== */
+
+/**
+ * Animation Engine Base Classes
+ *
+ * These classes provide the foundation for scroll-triggered animations.
+ * Elements with .animate-on-scroll will be hidden initially and animated
+ * when they come into view via JavaScript intersection observer.
+ */
+
+.animate-on-scroll {
+  opacity: 0;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: none; /* Reset initial transforms */
+}
+
+/* No-JS Fallback - Show all animations if JavaScript is disabled */
+
+.no-js .animate-on-scroll {
+  opacity: 1;
+  transform: none;
+}
+
+/**
+ * Animation Keyframes
+ *
+ * These keyframes define the actual animation movements.
+ * They are applied to elements when the .is-visible class is added.
+ */
+
+/* Fade Animations */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translate3d(0, 40px, 0); }
+  to { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translate3d(0, -40px, 0); }
+  to { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translate3d(-40px, 0, 0); }
+  to { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translate3d(40px, 0, 0); }
+  to { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+/* Slide Animations */
+
+@keyframes slideInUp {
+  from { transform: translate3d(0, 100%, 0); opacity: 0; visibility: visible; }
+  to { transform: translate3d(0, 0, 0); opacity: 1; }
+}
+
+@keyframes slideInDown {
+  from { transform: translate3d(0, -100%, 0); opacity: 0; visibility: visible; }
+  to { transform: translate3d(0, 0, 0); opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from { transform: translate3d(-100%, 0, 0); opacity: 0; visibility: visible; }
+  to { transform: translate3d(0, 0, 0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+  from { transform: translate3d(100%, 0, 0); opacity: 0; visibility: visible; }
+  to { transform: translate3d(0, 0, 0); opacity: 1; }
+}
+
+/* Scale and Rotate Animations */
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale3d(0.3, 0.3, 0.3); }
+  to { opacity: 1; transform: scale3d(1, 1, 1); }
+}
+
+@keyframes rotateIn {
+  from { opacity: 0; transform: rotate3d(0, 0, 1, -180deg); }
+  to { opacity: 1; transform: rotate3d(0, 0, 1, 0deg); }
+}
+
+/* Continuous Animation Keyframes */
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+@keyframes subtleBounce {
+  0%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-8px); }
+  60% { transform: translateY(-4px); }
+}
+
+@keyframes subtleFloat {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Interactive Animation Keyframes */
+
+@keyframes ripple-effect {
+  to { transform: scale(4); opacity: 0; }
+}
+
+@keyframes blink-caret {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* ========================================================================== */
+
+/* SCROLL-TRIGGERED ANIMATION UTILITIES                                      */
+
+/* ========================================================================== */
+
+/**
+ * Entrance Animation Classes
+ *
+ * These classes apply specific animations when the .is-visible class is added
+ * by the JavaScript intersection observer. They must be combined with .animate-on-scroll.
+ */
+
+/* Fade Entrance Animations */
+
+.anim-fade-in.is-visible { animation-name: fadeIn; }
+
+.anim-fade-in-up.is-visible { animation-name: fadeInUp; }
+
+.anim-fade-in-down.is-visible { animation-name: fadeInDown; }
+
+.anim-fade-in-left.is-visible { animation-name: fadeInLeft; }
+
+.anim-fade-in-right.is-visible { animation-name: fadeInRight; }
+
+/* Slide Entrance Animations */
+
+.anim-slide-in-up.is-visible { animation-name: slideInUp; }
+
+.anim-slide-in-down.is-visible { animation-name: slideInDown; }
+
+.anim-slide-in-left.is-visible { animation-name: slideInLeft; }
+
+.anim-slide-in-right.is-visible { animation-name: slideInRight; }
+
+/* Scale and Rotate Entrance Animations */
+
+.anim-scale-in.is-visible { animation-name: scaleIn; }
+
+.anim-rotate-in.is-visible { animation-name: rotateIn; }
+
+/**
+ * Common Properties for Entrance Animations
+ *
+ * These properties are applied to all entrance animations when they become visible.
+ */
+
+.animate-on-scroll[class*="anim-fade-in"].is-visible,
+.animate-on-scroll[class*="anim-slide-in"].is-visible,
+.animate-on-scroll.anim-scale-in.is-visible,
+.animate-on-scroll.anim-rotate-in.is-visible {
+  animation-duration: 0.8s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+
+/* ========================================================================== */
+
+/* CONTINUOUS ANIMATION UTILITIES                                            */
+
+/* ========================================================================== */
+
+/**
+ * Continuous Animation Classes
+ *
+ * These animations run continuously and don't require JavaScript.
+ * They can be applied directly to elements.
+ */
+
+/* Continuous Animations */
+
+.anim-pulse {
+  animation: pulse 2s infinite ease-in-out;
+}
+
+.anim-subtle-bounce {
+  animation: subtleBounce 2.5s infinite ease-in-out;
+}
+
+.anim-subtle-float {
+  animation: subtleFloat 3s infinite ease-in-out;
+}
+
+/* Apply default duration to continuous animations if not overridden */
+
+.anim-pulse,
+.anim-subtle-bounce,
+.anim-subtle-float {
+  animation-duration: 0.8s;
+}
+
+/* ========================================================================== */
+
+/* ANIMATION CONTROL UTILITIES                                               */
+
+/* ========================================================================== */
+
+/**
+ * Animation Duration Controls
+ *
+ * These utilities override the default animation duration.
+ */
+
+.anim-duration-xs   { animation-duration: 0.2s !important; }
+
+.anim-duration-sm   { animation-duration: 0.5s !important; }
+
+.anim-duration-md   { animation-duration: 0.8s !important; }
+
+.anim-duration-lg   { animation-duration: 1.2s !important; }
+
+.anim-duration-xl   { animation-duration: 2s !important; }
+
+/**
+ * Animation Delay Controls
+ *
+ * These utilities add delays before animations start.
+ */
+
+.anim-delay-xs   { animation-delay: 0.1s !important; }
+
+.anim-delay-sm   { animation-delay: 0.2s !important; }
+
+.anim-delay-md   { animation-delay: 0.4s !important; }
+
+.anim-delay-lg   { animation-delay: 0.6s !important; }
+
+.anim-delay-xl   { animation-delay: 0.8s !important; }
+
+/**
+ * Animation Timing Function Controls
+ *
+ * These utilities control the acceleration curve of animations.
+ */
+
+.anim-ease-linear  { animation-timing-function: linear !important; }
+
+.anim-ease-in      { animation-timing-function: ease-in !important; }
+
+.anim-ease-out     { animation-timing-function: ease-out !important; }
+
+.anim-ease-in-out  { animation-timing-function: ease-in-out !important; }
+
+/**
+ * Animation Iteration Controls
+ *
+ * These utilities control how many times animations repeat.
+ */
+
+.anim-infinite   { animation-iteration-count: infinite !important; }
+
+.anim-iter-1     { animation-iteration-count: 1 !important; }
+
+.anim-iter-2     { animation-iteration-count: 2 !important; }
+
+.anim-iter-3     { animation-iteration-count: 3 !important; }
+
+/**
+ * Animation Direction Controls
+ *
+ * These utilities control the direction of animation playback.
+ */
+
+.anim-direction-normal           { animation-direction: normal !important; }
+
+.anim-direction-reverse          { animation-direction: reverse !important; }
+
+.anim-direction-alternate        { animation-direction: alternate !important; }
+
+.anim-direction-alternate-reverse{ animation-direction: alternate-reverse !important; }
+
+/**
+ * Animation Fill Mode Controls
+ *
+ * These utilities control how animations apply styles before and after execution.
+ */
+
+.anim-fill-none     { animation-fill-mode: none !important; }
+
+.anim-fill-forwards { animation-fill-mode: forwards !important; }
+
+.anim-fill-backwards{ animation-fill-mode: backwards !important; }
+
+.anim-fill-both     { animation-fill-mode: both !important; }
+
+/**
+ * Animation Play State Controls
+ *
+ * These utilities control whether animations are running or paused.
+ */
+
+.anim-paused  { animation-play-state: paused !important; }
+
+.anim-running { animation-play-state: running !important; }
+
+/* ========================================================================== */
+
+/* INTERACTIVE ANIMATION UTILITIES                                           */
+
+/* ========================================================================== */
+
+/**
+ * Ripple Effect for Buttons
+ *
+ * Creates a ripple animation effect on button interactions.
+ * JavaScript is required to position and trigger the ripple.
+ */
+
+.btn-ripple {
   position: relative;
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.nav__link {
-  font-size: max(0.99rem, min(1.4vw, 1.25rem)) !important;
-  -webkit-text-decoration: none !important;
-  text-decoration: none !important;
+.ripple-element {
+  position: absolute;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(0);
+  animation: ripple-effect 0.6s linear;
+  pointer-events: none;
 }
 
-.nav__link {
-  transition: color 0.3s ease;
+/* Dark mode ripple */
+
+@media (prefers-color-scheme: dark) {
+  .ripple-element {
+    background: rgba(0, 0, 0, 0.2);
+  }
 }
 
-.nav__link:hover,
-.nav__link:focus {
+/**
+ * Typewriter Effect
+ *
+ * Creates a typewriter animation effect for text.
+ * JavaScript is required to control the typing animation.
+ */
+
+.typewriter-container {
+  display: inline-block;
+}
+
+.anim-typewriter {
+  display: inline;
+}
+
+.typewriter-cursor::after {
+  content: '|';
+  display: inline-block;
+  animation: blink-caret 0.75s step-end infinite;
+  margin-left: 0.05em;
   color: currentColor;
 }
 
-/* Mobile Navigation */
+/* JavaScript-managed cursor for more control */
 
-.nav__toggle {
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0.5rem;
+.typewriter-cursor-managed {
+  display: inline-block;
+  margin-left: 0.05em;
+  color: currentColor;
 }
 
-.nav__hamburger,
-.nav__hamburger::before,
-.nav__hamburger::after {
-  content: '';
-  display: block;
-  background-color: #d60c0c;
-  height: 3px;
-  width: 30px;
-  transition: all 0.3s ease-in-out;
+.typewriter-cursor-paused::after,
+.typewriter-cursor-managed.is-paused {
+  animation-play-state: paused !important;
+  opacity: 1 !important;
 }
 
-.nav__hamburger::before {
-  transform: translateY(-8px);
-}
+/* ========================================================================== */
 
-.nav__hamburger::after {
-  transform: translateY(5px);
-}
+/* ACCESSIBILITY & PERFORMANCE                                               */
 
-/* Hamburger animation */
+/* ========================================================================== */
 
-.nav__toggle[aria-expanded="true"] .nav__hamburger {
-  background-color: transparent;
-}
-
-.nav__toggle[aria-expanded="true"] .nav__hamburger::before {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-.nav__toggle[aria-expanded="true"] .nav__hamburger::after {
-  transform: rotate(-45deg) translate(5px, -5px);
-}
-
-/* Footer Navigation */
-
-.footer__nav {
-  background-color: #f4f4f4;
-  padding: 1rem;
-}
-
-.footer__nav .nav__list {
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.footer__nav .nav__link {
-  color: #333;
-  font-size: 0.9rem;
-}
-
-/* Breadcrumbs */
-
-.breadcrumbs {
-  display: flex;
-  list-style: none;
-  padding: 1rem;
-  background-color: #f0f0f0;
-}
-
-.breadcrumbs__item {
-  display: flex;
-  align-items: center;
-}
-
-.breadcrumbs__item:not(:last-child)::after {
-  content: '/';
-  margin: 0 0.5rem;
-  color: #777;
-}
-
-.breadcrumbs__link {
-  color: #333;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.breadcrumbs__link:hover,
-.breadcrumbs__link:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-/* Pagination */
-
-.pagination {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin: 2rem 0;
-}
-
-.pagination__item {
-  margin: 0 0.25rem;
-}
-
-.pagination__link {
-  display: block;
-  padding: 0.5rem 1rem;
-  border: 1px solid #ddd;
-  color: #333;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.pagination__link:hover,
-.pagination__link:focus {
-  background-color: #f0f0f0;
-}
-
-.pagination__link--active {
-  background-color: #333;
-  color: #fff;
-  border-color: #333;
-}
-
-/* Responsive styles */
-
-@media screen and (max-width: 768px) {
-  .header__nav .nav__list {
-    display: none;
-  }
-
-  .nav__toggle {
-    display: block;
-  }
-
-  .header__nav--open .nav__list {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    padding: 1rem;
-  }
-
-  .header__nav--open .nav__item {
-    margin: 0.5rem 0;
-  }
-
-  /* Mobile navigation views */
-  .nav__mobile--top {
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
-
-  .nav__mobile--left {
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 80%;
-    max-width: 300px;
-    transform: translateX(-100%);
-  }
-
-  .nav__mobile--bottom {
-    bottom: 0;
-    left: 0;
-    width: 100%;
-  }
-
-  .nav__mobile--right {
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 80%;
-    max-width: 300px;
-    transform: translateX(100%);
-  }
-
-  .header__nav--open .nav__mobile--left,
-  .header__nav--open .nav__mobile--right {
-    transform: translateX(0);
-  }
-
-  /* Mobile navigation animation */
-  .header__nav .nav__list {
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .nav__mobile--top,
-  .nav__mobile--bottom {
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .nav__mobile--left,
-  .nav__mobile--right {
-    transition: transform 0.3s ease-in-out;
-  }
-}
-
-/* Accessibility improvements */
-
-.nav__link:focus-visible,
-.nav__toggle:focus-visible,
-.breadcrumbs__link:focus-visible,
-.pagination__link:focus-visible {
-  /* outline: 2px solid #ffd700; */
-  outline-offset: 2px;
-}
-
-/* Skip to main content link */
-
-.skip-link {
-  position: absolute;
-  top: -40px;
-  left: 0;
-  background-color: #333;
-  color: #fff;
-  padding: 8px;
-  z-index: 100;
-}
-
-.skip-link:focus {
-  top: 0;
-}
-
-/* High contrast mode */
-
-@media (prefers-contrast: high) {
-  .header__nav,
-  .footer__nav {
-    background-color: #000;
-    color: #fff;
-  }
-
-  .nav__link,
-  .footer__nav .nav__link {
-    color: #fff;
-  }
-
-  .nav__link:hover,
-  .nav__link:focus,
-  .footer__nav .nav__link:hover,
-  .footer__nav .nav__link:focus {
-    color: currentColor;
-    -webkit-text-decoration: underline;
-    text-decoration: underline;
-  }
-
-  .breadcrumbs {
-    background-color: #fff;
-    border: 1px solid #000;
-  }
-
-  .breadcrumbs__link,
-  .pagination__link {
-    color: #000;
-    border-color: #000;
-  }
-
-  .pagination__link--active {
-    background-color: #000;
-    color: #fff;
-  }
-}
-
-/* Reduced motion */
+/**
+ * Reduced Motion Support
+ *
+ * Respects user preferences for reduced motion by disabling or simplifying animations.
+ * This is crucial for accessibility and user comfort.
+ */
 
 @media (prefers-reduced-motion: reduce) {
+  /* Disable all animations and transitions for users who prefer reduced motion */
+  .animate-on-scroll,
+  .animate-on-scroll.is-visible,
+  [class*="anim-"] {
+    animation-name: none !important;
+    animation-duration: 0s !important;
+    animation-play-state: paused !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  /* Disable interactive animations */
+  .typewriter-cursor::after,
+  .typewriter-cursor-managed {
+    animation: none !important;
+    opacity: 1 !important;
+  }
+
+  .ripple-element {
+    animation-name: none !important;
+  }
+
+  /* Reduce transition durations to minimal values */
   *,
   *::before,
   *::after {
@@ -8833,6 +10418,566 @@ a:disabled {
     scroll-behavior: auto !important;
   }
 }
+
+/**
+ * High Contrast Mode Support
+ *
+ * Ensures animations work well in high contrast mode.
+ */
+
+@media (prefers-contrast: high) {
+  .ripple-element {
+    background: currentColor;
+    opacity: 0.3;
+  }
+}
+
+/**
+ * Print Media Support
+ *
+ * Disables animations in print media to avoid issues.
+ */
+
+@media print {
+  .animate-on-scroll,
+  [class*="anim-"] {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* ========================================================================== */
+
+/* USAGE EXAMPLES AND DOCUMENTATION                                          */
+
+/* ========================================================================== */
+
+/**
+ * USAGE EXAMPLES:
+ *
+ * 1. Basic scroll-triggered fade in:
+ *    <div class="animate-on-scroll anim-fade-in">Content</div>
+ *
+ * 2. Slide in from left with delay:
+ *    <div class="animate-on-scroll anim-slide-in-left anim-delay-sm">Content</div>
+ *
+ * 3. Continuous pulse animation:
+ *    <div class="anim-pulse">Pulsing content</div>
+ *
+ * 4. Button with ripple effect:
+ *    <button class="btn btn-ripple">Click me</button>
+ *
+ * 5. Typewriter effect:
+ *    <span class="anim-typewriter typewriter-cursor" data-type-text="Hello World!">
+ *
+ * 6. Custom animation timing:
+ *    <div class="animate-on-scroll anim-fade-in anim-duration-lg anim-ease-out">
+ *
+ * JAVASCRIPT REQUIREMENTS:
+ * - Intersection Observer for scroll-triggered animations
+ * - Event handlers for ripple effects
+ * - Text animation logic for typewriter effects
+ */
+
+/**
+ * Mico CSS Framework - Miscellaneous Utilities
+ *
+ * This file provides various utility classes that don't fit into other categories
+ * but are essential for modern web development. These utilities cover:
+ *
+ * - Accessibility helpers (skip links, screen reader utilities)
+ * - Appearance control (form elements, browser defaults)
+ * - Pointer events and user interaction
+ * - Performance optimization hints
+ * - Layout bleeding effects
+ * - CSS masking and visual effects
+ * - Browser compatibility helpers
+ *
+ * USAGE:
+ * Accessibility: .skip-link, .sr-only
+ * Appearance: .appearance-none, .appearance-auto
+ * Interaction: .pointer-events-none, .user-select-none
+ * Performance: .will-change-transform, .will-change-opacity
+ * Layout: .bleed-full, .bleed-column
+ * Effects: .mask-fade-bottom, .mask-fade-top
+ */
+
+/* ========================================================================== */
+
+/* ACCESSIBILITY UTILITIES                                                   */
+
+/* ========================================================================== */
+
+/**
+ * Skip Link
+ *
+ * Provides keyboard users a way to skip to main content.
+ * Essential for accessibility compliance.
+ */
+
+.skip-link {
+  position: absolute;
+  top: calc((4px * 10) * -1);
+  left: 6px;
+  background: var(--mico-color-black);
+  color: var(--mico-color-white);
+  padding: calc(4px * 2);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  z-index: var(--mico-z-50);
+  border-radius: 2px;
+  font-weight: 500;
+  transition: all .4s cubic-bezier(0.25, 0.1, 0.25, 1.0);
+}
+
+.skip-link:focus {
+  top: 6px;
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/**
+ * Screen Reader Only
+ *
+ * Hides content visually but keeps it available to screen readers.
+ * Use for descriptive text that aids accessibility.
+ */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: calc(1px * -1);
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/**
+ * Not Screen Reader Only
+ *
+ * Reverses .sr-only for responsive or conditional visibility.
+ */
+
+.not-sr-only {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+/* ========================================================================== */
+
+/* APPEARANCE CONTROL                                                        */
+
+/* ========================================================================== */
+
+/**
+ * Appearance Utilities
+ *
+ * Controls the appearance property to remove or restore browser default styling.
+ * Particularly useful for form elements and custom components.
+ */
+
+.appearance-none {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.appearance-auto {
+  -webkit-appearance: auto;
+  -moz-appearance: auto;
+  appearance: auto;
+}
+
+/* ========================================================================== */
+
+/* POINTER EVENTS & USER INTERACTION                                         */
+
+/* ========================================================================== */
+
+/**
+ * Pointer Events Control
+ *
+ * Controls whether elements can be the target of pointer events.
+ * Useful for overlays, disabled states, and complex layouts.
+ */
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.pointer-events-auto {
+  pointer-events: auto;
+}
+
+/**
+ * User Select Control
+ *
+ * Controls text selection behavior for better user experience.
+ */
+
+.user-select-none {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.user-select-text {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  user-select: text;
+}
+
+.user-select-all {
+  -webkit-user-select: all;
+  -moz-user-select: all;
+  user-select: all;
+}
+
+.user-select-auto {
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  user-select: auto;
+}
+
+/* ========================================================================== */
+
+/* PERFORMANCE OPTIMIZATION                                                  */
+
+/* ========================================================================== */
+
+/**
+ * Will Change Utilities
+ *
+ * Provides performance hints to the browser about what properties will change.
+ * Use sparingly as they can consume more resources if overused.
+ */
+
+.will-change-auto {
+  will-change: auto;
+}
+
+.will-change-transform {
+  will-change: transform;
+}
+
+.will-change-opacity {
+  will-change: opacity;
+}
+
+.will-change-scroll {
+  will-change: scroll-position;
+}
+
+/* ========================================================================== */
+
+/* LAYOUT BLEEDING EFFECTS                                                   */
+
+/* ========================================================================== */
+
+/**
+ * Bleed Utilities
+ *
+ * Creates full-bleed and column-bleed effects that extend beyond container bounds.
+ * Useful for hero sections, backgrounds, and visual emphasis.
+ */
+
+/* Full viewport bleed */
+
+.bleed-full {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+/* Column bleed with configurable offsets */
+
+.bleed-column {
+  margin-left: calc(20vw * -1);
+  margin-right: calc(20vw * -1);
+}
+
+.bleed-column-sm {
+  margin-left: calc(10vw * -1);
+  margin-right: calc(10vw * -1);
+}
+
+.bleed-column-lg {
+  margin-left: calc(30vw * -1);
+  margin-right: calc(30vw * -1);
+}
+
+/* Horizontal only bleed */
+
+.bleed-x {
+  margin-left: calc(20vw * -1);
+  margin-right: calc(20vw * -1);
+}
+
+/* Vertical only bleed */
+
+.bleed-y {
+  margin-top: calc(20vw * -1);
+  margin-bottom: calc(20vw * -1);
+}
+
+/* ========================================================================== */
+
+/* CSS MASKING & VISUAL EFFECTS                                              */
+
+/* ========================================================================== */
+
+/**
+ * Mask Utilities
+ *
+ * Applies CSS masks for fade effects and visual transitions.
+ * Useful for creating smooth visual boundaries and focus effects.
+ */
+
+/* Directional fade masks */
+
+.mask-fade-top {
+  -webkit-mask-image: linear-gradient(to top, black 50%, transparent 100%);
+  mask-image: linear-gradient(to top, black 50%, transparent 100%);
+}
+
+.mask-fade-bottom {
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+}
+
+.mask-fade-left {
+  -webkit-mask-image: linear-gradient(to left, black 50%, transparent 100%);
+  mask-image: linear-gradient(to left, black 50%, transparent 100%);
+}
+
+.mask-fade-right {
+  -webkit-mask-image: linear-gradient(to right, black 50%, transparent 100%);
+  mask-image: linear-gradient(to right, black 50%, transparent 100%);
+}
+
+/* Fade intensity variations */
+
+.mask-fade-short {
+  -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+
+.mask-fade-long {
+  -webkit-mask-image: linear-gradient(to bottom, black 20%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 20%, transparent 100%);
+}
+
+/* Remove mask */
+
+.mask-none {
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
+/* ========================================================================== */
+
+/* BROWSER COMPATIBILITY HELPERS                                             */
+
+/* ========================================================================== */
+
+/**
+ * Scrollbar Styling
+ *
+ * Provides consistent scrollbar styling across browsers.
+ * Note: Limited support in Firefox.
+ */
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+.scrollbar-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+/**
+ * Webkit Scrollbar Styling
+ *
+ * Detailed scrollbar customization for Webkit browsers.
+ */
+
+.scrollbar-custom::-webkit-scrollbar {
+  width: calc(4px * 3);
+  height: calc(4px * 3);
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: #f3f4f6;
+  border-radius: 4px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background: #9ca3af;
+  border-radius: 4px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/**
+ * Touch Action Control
+ *
+ * Controls touch behavior for better mobile experience.
+ */
+
+.touch-auto {
+  touch-action: auto;
+}
+
+.touch-none {
+  touch-action: none;
+}
+
+.touch-pan-x {
+  touch-action: pan-x;
+}
+
+.touch-pan-y {
+  touch-action: pan-y;
+}
+
+.touch-manipulation {
+  touch-action: manipulation;
+}
+
+/* ========================================================================== */
+
+/* ACCESSIBILITY & MEDIA QUERIES                                             */
+
+/* ========================================================================== */
+
+/**
+ * High Contrast Mode Support
+ *
+ * Enhanced visibility for high contrast environments.
+ */
+
+@media (prefers-contrast: high) {
+  .skip-link {
+    border: 2px solid currentColor;
+  }
+
+  .mask-fade-top,
+  .mask-fade-bottom,
+  .mask-fade-left,
+  .mask-fade-right,
+  .mask-fade-short,
+  .mask-fade-long {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+}
+
+/**
+ * Reduced Motion Support
+ *
+ * Respects user preferences for reduced motion.
+ */
+
+@media (prefers-reduced-motion: reduce) {
+  .skip-link {
+    transition: none;
+  }
+
+  .will-change-transform,
+  .will-change-opacity,
+  .will-change-scroll {
+    will-change: auto;
+  }
+}
+
+/**
+ * Print Media Support
+ *
+ * Optimized styles for print media.
+ */
+
+@media print {
+  .skip-link {
+    display: none;
+  }
+
+  .mask-fade-top,
+  .mask-fade-bottom,
+  .mask-fade-left,
+  .mask-fade-right,
+  .mask-fade-short,
+  .mask-fade-long {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .bleed-full,
+  .bleed-column,
+  .bleed-column-sm,
+  .bleed-column-lg,
+  .bleed-x,
+  .bleed-y {
+    margin: 0;
+    width: auto;
+  }
+}
+
+/* ========================================================================== */
+
+/* USAGE EXAMPLES AND DOCUMENTATION                                          */
+
+/* ========================================================================== */
+
+/**
+ * USAGE EXAMPLES:
+ *
+ * 1. Accessible skip link:
+ *    <a href="#main" class="skip-link">Skip to main content</a>
+ *
+ * 2. Screen reader only text:
+ *    <span class="sr-only">This text is only for screen readers</span>
+ *
+ * 3. Custom form element:
+ *    <select class="appearance-none">...</select>
+ *
+ * 4. Disabled overlay:
+ *    <div class="pointer-events-none">...</div>
+ *
+ * 5. Performance optimized element:
+ *    <div class="will-change-transform">...</div>
+ *
+ * 6. Full bleed hero section:
+ *    <section class="bleed-full">...</section>
+ *
+ * 7. Fade effect:
+ *    <div class="mask-fade-bottom">...</div>
+ *
+ * 8. Custom scrollbar:
+ *    <div class="scrollbar-custom overflow-auto">...</div>
+ *
+ * ACCESSIBILITY NOTES:
+ * - Always include skip links for keyboard navigation
+ * - Use .sr-only for descriptive text that aids screen readers
+ * - Test with high contrast mode and reduced motion preferences
+ * - Ensure touch targets are appropriately sized for mobile
+ */
 
 /* Presets */
 

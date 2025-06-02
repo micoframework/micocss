@@ -75,19 +75,19 @@
    *
    * Format: clamp(min-size, viewport-based-size, max-size)
    */
-  --mico-fs-9xl: clamp(4.5rem, 9vw, 7rem);     /* Massive headings */
-  --mico-fs-8xl: clamp(4rem, 8vw, 6rem);       /* Extra massive headings */
-  --mico-fs-7xl: clamp(3.75rem, 7.5vw, 5.5rem); /* Very large headings */
-  --mico-fs-6xl: clamp(3.5rem, 7vw, 5rem);     /* Large headings */
-  --mico-fs-5xl: clamp(3rem, 6.5vw, 4.5rem);   /* Large headings */
-  --mico-fs-4xl: clamp(2.5rem, 6vw, 4rem);     /* Large headings */
-  --mico-fs-3xl: clamp(2.25rem, 5.5vw, 3.5rem); /* Large headings (h1) */
-  --mico-fs-2xl: clamp(1.875rem, 5vw, 3rem);   /* Large headings (h2) */
-  --mico-fs-xl: clamp(1.5rem, 4vw, 2.25rem);   /* Medium headings (h3) */
-  --mico-fs-lg: clamp(1.25rem, 3vw, 1.875rem); /* Small headings (h4) */
-  --mico-fs-md: clamp(1rem, 2.5vw, 1.125rem);  /* Standard body text */
-  --mico-fs-sm: clamp(0.875rem, 2vw, 1rem);    /* Small text */
   --mico-fs-xs: clamp(0.75rem, 1.5vw, 0.875rem); /* Extra small text, captions */
+  --mico-fs-sm: clamp(0.875rem, 2vw, 1rem);    /* Small text */
+  --mico-fs-md: clamp(1rem, 2.5vw, 1.125rem);  /* Standard body text */
+  --mico-fs-lg: clamp(1.25rem, 3vw, 1.875rem); /* Small headings (h4) */
+  --mico-fs-xl: clamp(1.5rem, 4vw, 2.25rem);   /* Medium headings (h3) */
+  --mico-fs-2xl: clamp(1.875rem, 5vw, 3rem);   /* Large headings (h2) */
+  --mico-fs-3xl: clamp(2.25rem, 5.5vw, 3.5rem); /* Large headings (h1) */
+  --mico-fs-4xl: clamp(2.5rem, 6vw, 4rem);     /* Large headings */
+  --mico-fs-5xl: clamp(3rem, 6.5vw, 4.5rem);   /* Large headings */
+  --mico-fs-6xl: clamp(3.5rem, 7vw, 5rem);     /* Large headings */
+  --mico-fs-7xl: clamp(3.75rem, 7.5vw, 5.5rem); /* Very large headings */
+  --mico-fs-8xl: clamp(4rem, 8vw, 6rem);       /* Extra massive headings */
+  --mico-fs-9xl: clamp(4.5rem, 9vw, 7rem);     /* Massive headings */
 
   /**
    * Font Weights
@@ -535,6 +535,57 @@
   --mico-border-width-4: 4px;       /* Thick border */
   --mico-border-width-8: 8px;       /* Very thick border */
 
+  /**
+   * Outline Properties
+   *
+   * These variables define outline styles for accessibility and focus states.
+   */
+  --mico-outline-width-0: 0px;      /* No outline */
+  --mico-outline-width-1: 1px;      /* Thin outline */
+  --mico-outline-width-2: 2px;      /* Medium outline */
+  --mico-outline-width-4: 4px;      /* Thick outline */
+  --mico-outline-width-8: 8px;      /* Very thick outline */
+
+  --mico-outline-style-none: none;  /* No outline */
+  --mico-outline-style-solid: solid; /* Solid outline */
+  --mico-outline-style-dashed: dashed; /* Dashed outline */
+  --mico-outline-style-dotted: dotted; /* Dotted outline */
+  --mico-outline-style-double: double; /* Double outline */
+
+  --mico-outline-offset-0: 0px;     /* No offset */
+  --mico-outline-offset-1: 1px;     /* Small offset */
+  --mico-outline-offset-2: 2px;     /* Medium offset */
+  --mico-outline-offset-4: 4px;     /* Large offset */
+  --mico-outline-offset-8: 8px;     /* Extra large offset */
+
+  /**
+   * Ring Properties (Box Shadow Based)
+   *
+   * These variables define ring effects using box-shadow for flexible styling.
+   */
+  --mico-ring-width-0: 0px;         /* No ring */
+  --mico-ring-width-1: 1px;         /* Thin ring */
+  --mico-ring-width-2: 2px;         /* Medium ring */
+  --mico-ring-width-4: 4px;         /* Thick ring */
+  --mico-ring-width-8: 8px;         /* Very thick ring */
+
+  --mico-ring-offset-width-0: 0px;  /* No ring offset */
+  --mico-ring-offset-width-1: 1px;  /* Small ring offset */
+  --mico-ring-offset-width-2: 2px;  /* Medium ring offset */
+  --mico-ring-offset-width-4: 4px;  /* Large ring offset */
+  --mico-ring-offset-width-8: 8px;  /* Extra large ring offset */
+
+  /**
+   * Divide Properties
+   *
+   * These variables define border styles for dividing child elements.
+   */
+  --mico-divide-width-0: 0px;       /* No divide border */
+  --mico-divide-width-1: 1px;       /* Thin divide border */
+  --mico-divide-width-2: 2px;       /* Medium divide border */
+  --mico-divide-width-4: 4px;       /* Thick divide border */
+  --mico-divide-width-8: 8px;       /* Very thick divide border */
+
   /* ====================================================================== */
   /* SHADOW SYSTEM                                                          */
   /* ====================================================================== */
@@ -947,6 +998,57 @@
   --mico-stroke-current: currentColor; /* Use current text color for stroke */
 
   /* ====================================================================== */
+  /* BUTTON SYSTEM                                                          */
+  /* ====================================================================== */
+
+  /**
+   * Button Size Variables
+   *
+   * These variables define consistent button sizing across the framework.
+   */
+  --mico-btn-padding-xs: var(--mico-size-8) var(--mico-size-12);       /* Extra small button padding */
+  --mico-btn-padding-sm: var(--mico-size-12) var(--mico-size-16);      /* Small button padding */
+  --mico-btn-padding-md: var(--mico-size-16) var(--mico-size-24);      /* Medium button padding (default) */
+  --mico-btn-padding-lg: var(--mico-size-20) var(--mico-size-32);      /* Large button padding */
+  --mico-btn-padding-xl: var(--mico-size-24) var(--mico-size-40);      /* Extra large button padding */
+
+  --mico-btn-font-size-xs: var(--mico-fs-xs);                          /* Extra small button font size */
+  --mico-btn-font-size-sm: var(--mico-fs-sm);                          /* Small button font size */
+  --mico-btn-font-size-md: var(--mico-fs-md);                          /* Medium button font size (default) */
+  --mico-btn-font-size-lg: var(--mico-fs-lg);                          /* Large button font size */
+  --mico-btn-font-size-xl: var(--mico-fs-xl);                          /* Extra large button font size */
+
+  /**
+   * Button Border Radius Variables
+   *
+   * These variables define button border radius options.
+   */
+  --mico-btn-radius-square: var(--mico-radius-none);                    /* Square buttons (no radius) */
+  --mico-btn-radius-sm: var(--mico-radius-sm);                         /* Small radius */
+  --mico-btn-radius-md: var(--mico-radius-md);                         /* Medium radius (default) */
+  --mico-btn-radius-lg: var(--mico-radius-lg);                         /* Large radius */
+  --mico-btn-radius-pill: var(--mico-radius-full);                     /* Pill-shaped buttons */
+  --mico-btn-radius-circle: var(--mico-radius-full);                   /* Circular buttons */
+
+  /**
+   * Button Shadow Variables
+   *
+   * These variables define button shadow options for depth and elevation.
+   */
+  --mico-btn-shadow-none: none;                                         /* No shadow */
+  --mico-btn-shadow-sm: var(--mico-shadow-sm);                         /* Small shadow */
+  --mico-btn-shadow-md: var(--mico-shadow-md);                         /* Medium shadow (default) */
+  --mico-btn-shadow-lg: var(--mico-shadow-lg);                         /* Large shadow */
+
+  /**
+   * Button Icon Variables
+   *
+   * These variables define spacing and sizing for buttons with icons.
+   */
+  --mico-btn-icon-gap: var(--mico-size-8);                             /* Gap between icon and text */
+  --mico-btn-icon-only-size: var(--mico-size-40);                      /* Size for icon-only buttons */
+
+  /* ====================================================================== */
   /* CURSOR SYSTEM                                                          */
   /* ====================================================================== */
 
@@ -963,6 +1065,63 @@
   --mico-cursor-text: text;           /* Text selection (I-beam) */
   --mico-cursor-move: move;           /* Movement indicator */
   --mico-cursor-not-allowed: not-allowed; /* Forbidden action */
+  --mico-cursor-grab: grab;           /* Grabbable element */
+  --mico-cursor-grabbing: grabbing;   /* Element being grabbed */
+  --mico-cursor-help: help;           /* Help cursor */
+
+  /* ====================================================================== */
+  /* MISCELLANEOUS UTILITIES SYSTEM                                         */
+  /* ====================================================================== */
+
+  /**
+   * Appearance Variables
+   *
+   * These variables control the appearance property for form elements.
+   */
+  --mico-appearance-none: none;       /* Remove default browser styling */
+  --mico-appearance-auto: auto;       /* Use default browser styling */
+
+  /**
+   * Pointer Events Variables
+   *
+   * These variables control pointer event behavior.
+   */
+  --mico-pointer-events-none: none;   /* Element cannot be target of pointer events */
+  --mico-pointer-events-auto: auto;   /* Element can be target of pointer events */
+
+  /**
+   * Will Change Variables
+   *
+   * These variables provide performance hints to the browser.
+   * Use with caution as they can consume more resources if overused.
+   */
+  --mico-will-change-auto: auto;      /* Browser decides what to optimize */
+  --mico-will-change-transform: transform; /* Optimize for transform changes */
+  --mico-will-change-opacity: opacity; /* Optimize for opacity changes */
+  --mico-will-change-scroll: scroll-position; /* Optimize for scroll changes */
+
+  /**
+   * Bleed Utility Variables
+   *
+   * These variables control full-bleed and column-bleed effects.
+   */
+  --mico-bleed-offset-sm: 10vw;       /* Small bleed offset */
+  --mico-bleed-offset-md: 20vw;       /* Medium bleed offset (default) */
+  --mico-bleed-offset-lg: 30vw;       /* Large bleed offset */
+
+  /**
+   * Mask Variables
+   *
+   * These variables define CSS mask gradients for fade effects.
+   */
+  --mico-mask-fade-to-top: linear-gradient(to top, black 50%, transparent 100%);
+  --mico-mask-fade-to-bottom: linear-gradient(to bottom, black 50%, transparent 100%);
+  --mico-mask-fade-to-left: linear-gradient(to left, black 50%, transparent 100%);
+  --mico-mask-fade-to-right: linear-gradient(to right, black 50%, transparent 100%);
+
+  /* Fade intensity variations */
+  --mico-mask-fade-short: linear-gradient(to bottom, black 80%, transparent 100%);
+  --mico-mask-fade-long: linear-gradient(to bottom, black 20%, transparent 100%);
 
   /* ====================================================================== */
   /* SIZING SYSTEM                                                          */
@@ -1026,6 +1185,47 @@
   /* ====================================================================== */
   /* ANIMATION SYSTEM                                                       */
   /* ====================================================================== */
+
+  /**
+   * Animation Duration Variables
+   *
+   * These variables define animation durations for consistent timing across the framework.
+   * Used by both transitions and animations for unified motion design.
+   */
+  --mico-duration-xs: 0.2s;          /* Extra fast animations */
+  --mico-duration-sm: 0.5s;          /* Fast animations */
+  --mico-duration-md: 0.8s;          /* Standard animations */
+  --mico-duration-lg: 1.2s;          /* Slow animations */
+  --mico-duration-xl: 2s;            /* Very slow animations */
+
+  /**
+   * Animation Delay Variables
+   *
+   * These variables define animation delays for staggered effects.
+   */
+  --mico-delay-xs: 0.1s;             /* Minimal delay */
+  --mico-delay-sm: 0.2s;             /* Small delay */
+  --mico-delay-md: 0.4s;             /* Medium delay */
+  --mico-delay-lg: 0.6s;             /* Large delay */
+  --mico-delay-xl: 0.8s;             /* Extra large delay */
+
+  /**
+   * Animation Engine Variables
+   *
+   * These variables control the default behavior of the animation engine.
+   */
+  --mico-anim-default-duration: var(--mico-duration-md);        /* Default animation duration */
+  --mico-anim-default-timing: ease-out;                         /* Default timing function */
+  --mico-anim-default-fill-mode: both;                          /* Default fill mode */
+
+  /**
+   * Interactive Animation Variables
+   *
+   * These variables control interactive elements like ripples and typewriter effects.
+   */
+  --mico-ripple-bg-default: rgba(255, 255, 255, 0.3);          /* Default ripple background */
+  --mico-ripple-bg-dark: rgba(0, 0, 0, 0.2);                   /* Dark ripple background */
+  --mico-typewriter-cursor-color: currentColor;                 /* Typewriter cursor color */
 
   /**
    * Animation Properties
@@ -1120,42 +1320,42 @@
    */
 
      /* Primary Color Tones (lighter) - Dynamically generated */
-  --mico-color-primary-1xlight: hsl(from var(--mico-color-primary) h s calc(l + (100% - l) * 0.2));    /* Soft variation */
+  --mico-color-primary-light: hsl(from var(--mico-color-primary) h s calc(l + (100% - l) * 0.2));    /* Soft variation */
   --mico-color-primary-2xlight: hsl(from var(--mico-color-primary) h s calc(l + (100% - l) * 0.4));   /* Muted variation */
   --mico-color-primary-3xlight: hsl(from var(--mico-color-primary) h s calc(l + (100% - l) * 0.6));  /* Pastel variation */
   --mico-color-primary-4xlight: hsl(from var(--mico-color-primary) h s calc(l + (100% - l) * 0.8));    /* Pale variation */
   --mico-color-primary-5xlight: hsl(from var(--mico-color-primary) h s calc(l + (100% - l) * 0.9));   /* Faint variation */
 
   /* Primary Color Shades (darker) - Dynamically generated */
-  --mico-color-primary-1xdark: hsl(from var(--mico-color-primary) h s calc(l * 0.8));    /* 80% lightness */
+  --mico-color-primary-dark: hsl(from var(--mico-color-primary) h s calc(l * 0.8));    /* 80% lightness */
   --mico-color-primary-2xdark: hsl(from var(--mico-color-primary) h s calc(l * 0.6));   /* 60% lightness */
   --mico-color-primary-3xdark: hsl(from var(--mico-color-primary) h s calc(l * 0.4));     /* 40% lightness */
   --mico-color-primary-4xdark: hsl(from var(--mico-color-primary) h s calc(l * 0.2));   /* 20% lightness */
   --mico-color-primary-5xdark: hsl(from var(--mico-color-primary) h s calc(l * 0.1));  /* 10% lightness */
 
   /* Secondary Color Tones (lighter) - Dynamically generated */
-  --mico-color-secondary-1xlight: hsl(from var(--mico-color-secondary) h s calc(l + (100% - l) * 0.2));    /* Soft variation */
+  --mico-color-secondary-light: hsl(from var(--mico-color-secondary) h s calc(l + (100% - l) * 0.2));    /* Soft variation */
   --mico-color-secondary-2xlight: hsl(from var(--mico-color-secondary) h s calc(l + (100% - l) * 0.4));   /* Muted variation */
   --mico-color-secondary-3xlight: hsl(from var(--mico-color-secondary) h s calc(l + (100% - l) * 0.6));  /* Pastel variation */
   --mico-color-secondary-4xlight: hsl(from var(--mico-color-secondary) h s calc(l + (100% - l) * 0.8));    /* Pale variation */
   --mico-color-secondary-5xlight: hsl(from var(--mico-color-secondary) h s calc(l + (100% - l) * 0.9));   /* Faint variation */
 
   /* Secondary Color Shades (darker) - Dynamically generated */
-  --mico-color-secondary-1xdark: hsl(from var(--mico-color-secondary) h s calc(l * 0.8));    /* 80% lightness */
+  --mico-color-secondary-dark: hsl(from var(--mico-color-secondary) h s calc(l * 0.8));    /* 80% lightness */
   --mico-color-secondary-2xdark: hsl(from var(--mico-color-secondary) h s calc(l * 0.6));   /* 60% lightness */
   --mico-color-secondary-3xdark: hsl(from var(--mico-color-secondary) h s calc(l * 0.4));     /* 40% lightness */
   --mico-color-secondary-4xdark: hsl(from var(--mico-color-secondary) h s calc(l * 0.2));   /* 20% lightness */
   --mico-color-secondary-5xdark: hsl(from var(--mico-color-secondary) h s calc(l * 0.1));  /* 10% lightness */
 
   /* Accent Color Tones (lighter) - Dynamically generated */
-  --mico-color-accent-1xlight: hsl(from var(--mico-color-accent) h s calc(l + (100% - l) * 0.2));    /* Soft variation */
+  --mico-color-accent-light: hsl(from var(--mico-color-accent) h s calc(l + (100% - l) * 0.2));    /* Soft variation */
   --mico-color-accent-2xlight: hsl(from var(--mico-color-accent) h s calc(l + (100% - l) * 0.4));   /* Muted variation */
   --mico-color-accent-3xlight: hsl(from var(--mico-color-accent) h s calc(l + (100% - l) * 0.6));  /* Pastel variation */
   --mico-color-accent-4xlight: hsl(from var(--mico-color-accent) h s calc(l + (100% - l) * 0.8));    /* Pale variation */
   --mico-color-accent-5xlight: hsl(from var(--mico-color-accent) h s calc(l + (100% - l) * 0.9));   /* Faint variation */
 
   /* Accent Color Shades (darker) - Dynamically generated */
-  --mico-color-accent-1xdark: hsl(from var(--mico-color-accent) h s calc(l * 0.8));    /* 80% lightness */
+  --mico-color-accent-dark: hsl(from var(--mico-color-accent) h s calc(l * 0.8));    /* 80% lightness */
   --mico-color-accent-2xdark: hsl(from var(--mico-color-accent) h s calc(l * 0.6));   /* 60% lightness */
   --mico-color-accent-3xdark: hsl(from var(--mico-color-accent) h s calc(l * 0.4));     /* 40% lightness */
   --mico-color-accent-4xdark: hsl(from var(--mico-color-accent) h s calc(l * 0.2));   /* 20% lightness */

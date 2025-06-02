@@ -6,9 +6,10 @@
   "scripts": {
     "dev": "npm run watch:css",
     "start": "npm run dev",
-    "build": "npm run clean && npm run ensure-dirs && npm run build:css && npm run build:variables",
+    "build": "npm run clean && npm run ensure-dirs && npm run build:css && npm run build:js && npm run build:variables",
     "preview": "echo \"Use a local server to preview the built files in the dist directory\"",
     "build:css": "postcss css/mico.css -o dist/css/mico.min.css --env production && postcss css/mico.css -o dist/css/mico.css --env development",
+    "build:js": "node scripts/build-js.js",
     "build:variables": "node scripts/build-variables.js",
     "ensure-dirs": "node -e \"const fs = require('fs'); const path = require('path'); const dirs = ['dist/css', 'dist/js']; dirs.forEach(dir => { if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true }); });\"",
     "build:custom": "node scripts/build-custom.js",
