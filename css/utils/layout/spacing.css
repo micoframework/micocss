@@ -1,27 +1,21 @@
 
 /* ************************************************************************************************ */
 /* Fluid Padding Spacing */
-.container-fluid {
-    padding-block: var(--mico-size-fluid-sm) !important;
-    padding-inline: var(--mico-size-fluid-lg) !important;
-    margin-inline: auto !important;
-  }
-
-  .container-fluid-xs {
+.container-fluid-xs {
     padding-block: var(--mico-size-fluid-xs) !important;
-    padding-inline: var(--mico-size-fluid-xs) !important;
+    padding-inline: var(--mico-size-fluid-lg) !important;
     margin-inline: auto !important;
   }
   
   .container-fluid-sm {
     padding-block: var(--mico-size-fluid-sm) !important;
-    padding-inline: var(--mico-size-fluid-sm) !important;
+    padding-inline: var(--mico-size-fluid-lg) !important;
     margin-inline: auto !important;
   }
   
   .container-fluid-md {
     padding-block: var(--mico-size-fluid-md) !important;
-    padding-inline: var(--mico-size-fluid-md) !important;
+    padding-inline: var(--mico-size-fluid-lg) !important;
     margin-inline: auto !important;
   }
   .container-fluid-lg {

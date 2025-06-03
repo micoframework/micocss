@@ -38,16 +38,16 @@
   display: var(--mico-display-inline-block);
 
   /* Typography */
-  font-size: var(--mico-btn-font-size-md);
+  font-size: var(--mico-fs-sm);
   font-family: var(--mico-value-inherit);
-  font-weight: var(--mico-fw-500);
+  font-weight: var(--mico-fw-400);
   line-height: var(--mico-lh-sm);
   text-align: center;
-  text-decoration: var(--mico-value-none);
+  text-decoration: var(--mico-value-none) !important;
   white-space: nowrap;
 
   /* Spacing */
-  padding: var(--mico-btn-padding-md);
+  padding: var(--mico-size-16) var(--mico-size-32);
   margin: var(--mico-value-0);
 
   /* Borders and appearance */
@@ -57,9 +57,6 @@
   /* Interaction */
   cursor: var(--mico-cursor-pointer);
   user-select: var(--mico-user-select-none);
-
-  /* Transitions */
-  transition: var(--mico-transition-all);
 
   /* Accessibility */
   vertical-align: middle;
@@ -83,44 +80,41 @@
 /* Brand Colors */
 .btn-primary {
   background-color: var(--mico-color-primary) !important;
-  color: var(--mico-color-white) !important;
   border-color: var(--mico-color-primary) !important;
 }
 
 .btn-secondary {
   background-color: var(--mico-color-secondary) !important;
-  color: var(--mico-color-white) !important;
   border-color: var(--mico-color-secondary) !important;
 }
 
 .btn-accent {
   background-color: var(--mico-color-accent) !important;
-  color: var(--mico-color-white) !important;
   border-color: var(--mico-color-accent) !important;
 }
 
 /* State Colors */
 .btn-success {
   background-color: var(--mico-color-success) !important;
-  color: var(--mico-color-white) !important;
+  color: var(--mico-color-white-200) !important;
   border-color: var(--mico-color-success) !important;
 }
 
 .btn-danger {
   background-color: var(--mico-color-error) !important;
-  color: var(--mico-color-white) !important;
+  color: var(--mico-color-white-200) !important;
   border-color: var(--mico-color-error) !important;
 }
 
 .btn-warning {
   background-color: var(--mico-color-warning) !important;
-  color: var(--mico-color-black) !important;
+  color: var(--mico-color-black-200) !important;
   border-color: var(--mico-color-warning) !important;
 }
 
 .btn-info {
   background-color: var(--mico-color-info) !important;
-  color: var(--mico-color-white) !important;
+  color: var(--mico-color-white-200) !important;
   border-color: var(--mico-color-info) !important;
 }
 
@@ -133,7 +127,7 @@
 
 .btn-dark {
   background-color: var(--mico-color-gray-900) !important;
-  color: var(--mico-color-white) !important;
+  color: var(--mico-color-white-200) !important;
   border-color: var(--mico-color-gray-900) !important;
 }
 
@@ -156,66 +150,66 @@
 
 /* Outline Style - Transparent background with colored border and text */
 .btn-outline {
-  background-color: var(--mico-value-transparent);
-  border-width: var(--mico-border-width-2);
+  background-color: var(--mico-value-transparent) !important;
+  border-width: var(--mico-border-width-1) !important;
 }
 
 .btn-outline.btn-primary {
-  color: var(--mico-color-primary);
-  border-color: var(--mico-color-primary);
+  color: var(--mico-color-primary) !important;
+  border-color: var(--mico-color-primary) !important;
 }
 
 .btn-outline.btn-secondary {
-  color: var(--mico-color-secondary);
-  border-color: var(--mico-color-secondary);
+  color: var(--mico-color-secondary) !important;
+  border-color: var(--mico-color-secondary) !important;
 }
 
 .btn-outline.btn-accent {
-  color: var(--mico-color-accent);
-  border-color: var(--mico-color-accent);
+  color: var(--mico-color-accent) !important;
+  border-color: var(--mico-color-accent) !important;
 }
 
 .btn-outline.btn-success {
-  color: var(--mico-color-success);
-  border-color: var(--mico-color-success);
+  color: var(--mico-color-success) !important;
+  border-color: var(--mico-color-success) !important;
 }
 
 .btn-outline.btn-danger {
-  color: var(--mico-color-error);
-  border-color: var(--mico-color-error);
+  color: var(--mico-color-error) !important;
+  border-color: var(--mico-color-error) !important;
 }
 
 .btn-outline.btn-warning {
-  color: var(--mico-color-warning);
-  border-color: var(--mico-color-warning);
+  color: var(--mico-color-warning) !important;
+  border-color: var(--mico-color-warning) !important;
 }
 
 .btn-outline.btn-info {
-  color: var(--mico-color-info);
-  border-color: var(--mico-color-info);
+  color: var(--mico-color-info) !important;
+  border-color: var(--mico-color-info) !important;
 }
 
 .btn-outline.btn-light {
-  color: var(--mico-color-gray-600);
-  border-color: var(--mico-color-gray-300);
+  color: var(--mico-color-gray-600) !important;
+  border-color: var(--mico-color-gray-300) !important;
 }
 
 .btn-outline.btn-dark {
-  color: var(--mico-color-gray-900);
-  border-color: var(--mico-color-gray-900);
+  color: var(--mico-color-gray-900) !important;
+  border-color: var(--mico-color-gray-900) !important;
 }
 
 /* Text Style - No background or border, only colored text */
 .btn-text {
-  background-color: var(--mico-value-transparent);
-  border-color: var(--mico-value-transparent);
+  background-color: var(--mico-value-transparent) !important;
+  border-color: var(--mico-value-transparent) !important;
 }
 
 /* Ghost Style - Minimal styling with subtle hover effects */
 .btn-ghost {
-  background-color: var(--mico-value-transparent);
-  border-color: var(--mico-value-transparent);
-  color: var(--mico-color-gray-600);
+  background-color: var(--mico-value-transparent) !important;
+  border-color: var(--mico-value-transparent) !important;
+  color: var(--mico-color-gray-600) !important;
 }
 
 
@@ -230,23 +224,23 @@
  * The .btn class provides the default/medium size.
  */
 .btn-xs {
-  padding: var(--mico-btn-padding-xs);
-  font-size: var(--mico-btn-font-size-xs);
+  padding: var(--mico-btn-padding-xs) !important;
+  font-size: var(--mico-btn-font-size-xs) !important;
 }
 
 .btn-sm {
-  padding: var(--mico-btn-padding-sm);
-  font-size: var(--mico-btn-font-size-sm);
+  padding: var(--mico-btn-padding-sm) !important;
+  font-size: var(--mico-btn-font-size-sm) !important;
 }
 
 .btn-lg {
-  padding: var(--mico-btn-padding-lg);
-  font-size: var(--mico-btn-font-size-lg);
+  padding: var(--mico-btn-padding-lg) !important;
+  font-size: var(--mico-btn-font-size-lg) !important;
 }
 
 .btn-xl {
-  padding: var(--mico-btn-padding-xl);
-  font-size: var(--mico-btn-font-size-xl);
+  padding: var(--mico-btn-padding-xl) !important;
+  font-size: var(--mico-btn-font-size-xl) !important;
 }
 
 /* ========================================================================== */
@@ -259,21 +253,21 @@
  * These classes control the border-radius of buttons.
  */
 .btn-pill {
-  border-radius: var(--mico-btn-radius-pill);
+  border-radius: var(--mico-btn-radius-pill) !important;
 }
 
 .btn-square {
-  border-radius: var(--mico-btn-radius-square);
+  border-radius: var(--mico-btn-radius-square) !important;
 }
 
 .btn-circle {
-  border-radius: var(--mico-btn-radius-circle);
-  width: var(--mico-btn-icon-only-size);
-  height: var(--mico-btn-icon-only-size);
-  padding: var(--mico-value-0);
-  display: var(--mico-display-inline-flex);
-  align-items: center;
-  justify-content: center;
+  border-radius: var(--mico-btn-radius-circle) !important;
+  width: var(--mico-btn-icon-only-size) !important;
+  height: var(--mico-btn-icon-only-size) !important;
+  padding: var(--mico-value-0) !important;
+  display: var(--mico-display-inline-flex) !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 /* ========================================================================== */
@@ -286,19 +280,19 @@
  * These classes apply box-shadow for depth and elevation.
  */
 .btn-shadow {
-  box-shadow: var(--mico-btn-shadow-md);
+  box-shadow: var(--mico-btn-shadow-md) !important;
 }
 
 .btn-shadow-sm {
-  box-shadow: var(--mico-btn-shadow-sm);
+  box-shadow: var(--mico-btn-shadow-sm) !important;
 }
 
 .btn-shadow-lg {
-  box-shadow: var(--mico-btn-shadow-lg);
+  box-shadow: var(--mico-btn-shadow-lg) !important;
 }
 
 .btn-shadow-none {
-  box-shadow: var(--mico-btn-shadow-none);
+  box-shadow: var(--mico-btn-shadow-none) !important;
 }
 
 /* ========================================================================== */
@@ -314,16 +308,16 @@
 /* Active State */
 .is-active,
 .btn-active {
-  transform: translateY(1px);
-  box-shadow: var(--mico-shadow-sm);
+  transform: translateY(1px) !important;
+  box-shadow: var(--mico-shadow-sm) !important;
 }
 
 /* Loading State */
 .is-loading,
 .btn-loading {
   color: var(--mico-value-transparent) !important;
-  pointer-events: var(--mico-pointer-events-none);
-  position: relative;
+  pointer-events: var(--mico-pointer-events-none) !important;
+  position: relative !important;
 }
 
 .is-loading::after,
@@ -390,13 +384,13 @@
   gap: var(--mico-btn-icon-gap);
 }
 
-.btn-icon-leading {
+.btn-icon-left {
   display: var(--mico-display-inline-flex);
   align-items: center;
   gap: var(--mico-btn-icon-gap);
 }
 
-.btn-icon-trailing {
+.btn-icon-right {
   display: var(--mico-display-inline-flex);
   align-items: center;
   flex-direction: row-reverse;
@@ -486,6 +480,7 @@
 /* ========================================================================== */
 /* LINK UTILITIES                                                            */
 /* ========================================================================== */
+
 
 /**
  * Link Color Modifiers
