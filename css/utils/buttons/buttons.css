@@ -77,58 +77,61 @@
  * for different button purposes and emphasis levels.
  */
 
-/* Brand Colors */
+/* Brand Colors - OKLCH System */
 .btn-primary {
   background-color: var(--mico-color-primary) !important;
-  border-color: var(--mico-color-primary) !important;
+  color: var(--mico-color-white) !important;
+  border-color: var(--mico-color-primary-2xlight) !important;
 }
 
 .btn-secondary {
   background-color: var(--mico-color-secondary) !important;
+  color: var(--mico-color-white) !important;
   border-color: var(--mico-color-secondary) !important;
 }
 
 .btn-accent {
   background-color: var(--mico-color-accent) !important;
+  color: var(--mico-color-white) !important;
   border-color: var(--mico-color-accent) !important;
 }
 
-/* State Colors */
+/* State Colors - OKLCH System */
 .btn-success {
   background-color: var(--mico-color-success) !important;
-  color: var(--mico-color-white-200) !important;
+  color: var(--mico-color-white) !important;
   border-color: var(--mico-color-success) !important;
 }
 
 .btn-danger {
   background-color: var(--mico-color-error) !important;
-  color: var(--mico-color-white-200) !important;
+  color: var(--mico-color-white) !important;
   border-color: var(--mico-color-error) !important;
 }
 
 .btn-warning {
   background-color: var(--mico-color-warning) !important;
-  color: var(--mico-color-black-200) !important;
+  color: var(--mico-color-black-2xdark) !important;
   border-color: var(--mico-color-warning) !important;
 }
 
 .btn-info {
   background-color: var(--mico-color-info) !important;
-  color: var(--mico-color-white-200) !important;
+  color: var(--mico-color-white) !important;
   border-color: var(--mico-color-info) !important;
 }
 
-/* Neutral Colors */
+/* Neutral Colors - OKLCH System */
 .btn-light {
-  background-color: var(--mico-color-gray-100) !important;
-  color: var(--mico-color-gray-900) !important;
-  border-color: var(--mico-color-gray-100) !important;
+  background-color: var(--mico-color-gray-5xlight) !important;
+  color: var(--mico-color-gray-5xdark) !important;
+  border-color: var(--mico-color-gray-5xlight) !important;
 }
 
 .btn-dark {
-  background-color: var(--mico-color-gray-900) !important;
-  color: var(--mico-color-white-200) !important;
-  border-color: var(--mico-color-gray-900) !important;
+  background-color: var(--mico-color-gray-5xdark) !important;
+  color: var(--mico-color-white) !important;
+  border-color: var(--mico-color-gray-5xdark) !important;
 }
 
 .btn-transparent {
@@ -151,65 +154,66 @@
 /* Outline Style - Transparent background with colored border and text */
 .btn-outline {
   background-color: var(--mico-value-transparent) !important;
+  border-style: solid;
   border-width: var(--mico-border-width-1) !important;
 }
 
 .btn-outline.btn-primary {
-  color: var(--mico-color-primary) !important;
-  border-color: var(--mico-color-primary) !important;
+  color: var(--mico-color-primary);
+  border-color: var(--mico-color-primary);
 }
 
 .btn-outline.btn-secondary {
-  color: var(--mico-color-secondary) !important;
-  border-color: var(--mico-color-secondary) !important;
+  color: var(--mico-color-secondary);
+  border-color: var(--mico-color-secondary);
 }
 
 .btn-outline.btn-accent {
-  color: var(--mico-color-accent) !important;
-  border-color: var(--mico-color-accent) !important;
+  color: var(--mico-color-accent);
+  border-color: var(--mico-color-accent);
 }
 
 .btn-outline.btn-success {
-  color: var(--mico-color-success) !important;
-  border-color: var(--mico-color-success) !important;
+  color: var(--mico-color-success);
+  border-color: var(--mico-color-success);
 }
 
 .btn-outline.btn-danger {
-  color: var(--mico-color-error) !important;
-  border-color: var(--mico-color-error) !important;
+  color: var(--mico-color-error);
+  border-color: var(--mico-color-error);
 }
 
 .btn-outline.btn-warning {
-  color: var(--mico-color-warning) !important;
-  border-color: var(--mico-color-warning) !important;
+  color: var(--mico-color-warning);
+  border-color: var(--mico-color-warning);
 }
 
 .btn-outline.btn-info {
-  color: var(--mico-color-info) !important;
-  border-color: var(--mico-color-info) !important;
+  color: var(--mico-color-info);
+  border-color: var(--mico-color-info);
 }
 
 .btn-outline.btn-light {
-  color: var(--mico-color-gray-600) !important;
-  border-color: var(--mico-color-gray-300) !important;
+  color: var(--mico-color-gray-3xdark) !important;
+  border-color: var(--mico-color-gray-3xlight) !important;
 }
 
 .btn-outline.btn-dark {
-  color: var(--mico-color-gray-900) !important;
-  border-color: var(--mico-color-gray-900) !important;
+  color: var(--mico-color-gray-4xdark) !important;
+  border-color: var(--mico-color-gray-4xdark) !important;
 }
 
 /* Text Style - No background or border, only colored text */
 .btn-text {
   background-color: var(--mico-value-transparent) !important;
-  border-color: var(--mico-value-transparent) !important;
+  border-color: var(--mico-value-transparent);
 }
 
 /* Ghost Style - Minimal styling with subtle hover effects */
 .btn-ghost {
   background-color: var(--mico-value-transparent) !important;
-  border-color: var(--mico-value-transparent) !important;
-  color: var(--mico-color-gray-600) !important;
+  border-color: var(--mico-value-transparent);
+  color: var(--mico-color-gray-3xdark);
 }
 
 
@@ -313,8 +317,8 @@
 }
 
 /* Loading State */
-.is-loading,
-.btn-loading {
+.is-loading:active,
+.btn-loading:active {
   color: var(--mico-value-transparent) !important;
   pointer-events: var(--mico-pointer-events-none) !important;
   position: relative !important;
@@ -348,16 +352,6 @@
   opacity: var(--mico-opacity-50);
   cursor: var(--mico-cursor-not-allowed);
   pointer-events: var(--mico-pointer-events-none);
-}
-
-/* Hover Effects */
-.btn-hover-lift:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--mico-shadow-lg);
-}
-
-.btn-hover-scale:hover {
-  transform: scale(1.05);
 }
 
 /* ========================================================================== */
@@ -500,9 +494,9 @@
 .link-info { color: var(--mico-color-info); }
 
 /* Neutral Link Colors */
-.link-light { color: var(--mico-color-gray-300); }
-.link-dark { color: var(--mico-color-gray-900); }
-.link-muted { color: var(--mico-color-gray-600); }
+.link-light { color: var(--mico-color-gray-3xlight); }
+.link-dark { color: var(--mico-color-gray-5xdark); }
+.link-muted { color: var(--mico-color-gray-3xdark); }
 .link-body { color: var(--mico-value-inherit); }
 
 /**
@@ -621,10 +615,6 @@
     border-right-color: var(--mico-value-transparent);
   }
 
-  .btn-hover-lift:hover,
-  .btn-hover-scale:hover {
-    transform: var(--mico-value-none);
-  }
 }
 
 /**
@@ -656,7 +646,7 @@
  *    <button class="btn btn-primary btn-shadow">Save Changes</button>
  *
  * 2. Outline button with hover lift:
- *    <button class="btn btn-secondary btn-outline btn-hover-lift">Cancel</button>
+ *    <button class="btn btn-secondary btn-outline hover-btn-lift">Cancel</button>
  *
  * 3. Icon button:
  *    <button class="btn btn-primary btn-icon">

@@ -309,17 +309,17 @@
 }
 
 .scrollbar-custom::-webkit-scrollbar-track {
-  background: var(--mico-color-gray-100);
+  background: var(--mico-color-gray-5xlight);
   border-radius: var(--mico-radius-md);
 }
 
 .scrollbar-custom::-webkit-scrollbar-thumb {
-  background: var(--mico-color-gray-400);
+  background: var(--mico-color-gray-2xlight);
   border-radius: var(--mico-radius-md);
 }
 
 .scrollbar-custom::-webkit-scrollbar-thumb:hover {
-  background: var(--mico-color-gray-500);
+  background: var(--mico-color-gray);
 }
 
 /**

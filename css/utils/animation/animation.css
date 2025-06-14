@@ -305,7 +305,7 @@
 }
 
 .anim-subtle-float {
-  animation: subtleFloat 3s infinite ease-in-out;
+  animation: subtleFloat 5 s infinite ease-in-out;
 }
 
 /* Apply default duration to continuous animations if not overridden */

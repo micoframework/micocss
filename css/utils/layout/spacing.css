@@ -1,6 +1,6 @@
 
 /* ************************************************************************************************ */
-/* Fluid Padding Spacing */
+/* Fluid Padding Spacing - Useful for section paddings e.g, <section class="container-fluid-md"> */
 .container-fluid-xs {
     padding-block: var(--mico-size-fluid-xs) !important;
     padding-inline: var(--mico-size-fluid-lg) !important;
@@ -35,6 +35,7 @@
     margin-inline: auto !important;
   }
 
+/* Fluid Padding Spacing - Useful for individual sides, x-axis or y-axis paddings e.g, <div class="container-fluid-md"> */
 .px-fluid-xs { padding-inline: var(--mico-size-fluid-xs) !important; }
 .py-fluid-xs { padding-block: var(--mico-size-fluid-xs) !important; }
 
@@ -50,38 +51,33 @@
 .px-fluid-xl { padding-inline: var(--mico-size-fluid-xl) !important; }
 .py-fluid-xl { padding-block: var(--mico-size-fluid-xl) !important; }
 
-.px-fluid-2xl { padding-block: var(--mico-size-fluid-2xl) !important; }
-.py-fluid-2xl { padding-inline: var(--mico-size-fluid-2xl) !important; }
+.px-fluid-2xl { padding-inline: var(--mico-size-fluid-2xl) !important; }
+.py-fluid-2xl { padding-block: var(--mico-size-fluid-2xl) !important; }
 
-.p-fluid{ padding: var(--mico-size-fluid-lg) !important; }
 .p-fluid-sm { padding: var(--mico-size-fluid-sm) !important; }
 .p-fluid-md { padding: var(--mico-size-fluid-md) !important; }
 .p-fluid-lg { padding: var(--mico-size-fluid-lg) !important; }
 .p-fluid-xl { padding: var(--mico-size-fluid-xl) !important; }
 .p-fluid-2xl { padding: var(--mico-size-fluid-2xl) !important; }
 
-.pt-fluid{ padding-top: var(--mico-size-fluid-lg) !important; }
 .pt-fluid-sm{ padding-top: var(--mico-size-fluid-sm) !important; }
 .pt-fluid-md{ padding-top: var(--mico-size-fluid-md) !important; }
 .pt-fluid-lg{ padding-top: var(--mico-size-fluid-lg) !important; }
 .pt-fluid-xl{ padding-top: var(--mico-size-fluid-xl) !important; }
 .pt-fluid-2xl{ padding-top: var(--mico-size-fluid-2xl) !important; }
 
-.pl-fluid{ padding-left: var(--mico-size-fluid-lg) !important; }
 .pl-fluid-sm{ padding-left: var(--mico-size-fluid-sm) !important; }
 .pl-fluid-md{ padding-left: var(--mico-size-fluid-md) !important; }
 .pl-fluid-lg{ padding-left: var(--mico-size-fluid-lg) !important; }
 .pl-fluid-xl{ padding-left: var(--mico-size-fluid-xl) !important; }
 .pl-fluid-2xl{ padding-left: var(--mico-size-fluid-2xl) !important; }
 
-.pb-fluid{ padding-bottom: var(--mico-size-fluid-lg) !important;}
 .pb-fluid-sm{ padding-bottom: var(--mico-size-fluid-sm) !important; }
 .pb-fluid-md{ padding-bottom: var(--mico-size-fluid-md) !important; }
 .pb-fluid-lg{ padding-bottom: var(--mico-size-fluid-lg) !important; }
 .pb-fluid-xl{ padding-bottom: var(--mico-size-fluid-xl) !important; }
 .pb-fluid-2xl{ padding-bottom: var(--mico-size-fluid-2xl) !important; }
 
-.pr-fluid{ padding-right: var(--mico-size-fluid-lg) !important; }
 .pr-fluid-sm{ padding-right: var(--mico-size-fluid-sm) !important; }
 .pr-fluid-md{ padding-right: var(--mico-size-fluid-md) !important; }
 .pr-fluid-lg{ padding-right: var(--mico-size-fluid-lg) !important; }

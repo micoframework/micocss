@@ -46,13 +46,19 @@ html, *, *::before, *::after {
 /* ====================================================================== */
 
 /**
- * Base Colors
- * Define your brand's primary, secondary, and accent colors here
+ * Base Colors - OKLCH System
+ * Define your brand's primary, secondary, and accent colors here using OKLCH
+ * OKLCH provides superior color manipulation and perceptual uniformity
+ *
+ * Format: oklch(lightness chroma hue)
+ * - Lightness: 0-1 (0 = black, 1 = white)
+ * - Chroma: 0-0.4+ (0 = gray, higher = more saturated)
+ * - Hue: 0-360 (color wheel degrees)
  */
 :root {
-  --mico-color-primary: var(--mico-color-primary, #3b82f6); /*Add your primary color here*/
-  --mico-color-secondary: var(--mico-color-secondary, #6b7280); /*Add your secondary color here*/
-  --mico-color-accent: var(--mico-color-accent, #f59e0b); /*Add your accent color here*/
+  --mico-color-primary: oklch(0.6 0.15 250); /* Modern blue - customize this */
+  --mico-color-secondary: oklch(0.5 0.08 270); /* Neutral gray-blue - customize this */
+  --mico-color-accent: oklch(0.7 0.18 60); /* Warm amber - customize this */
 }
 
 
@@ -63,7 +69,7 @@ html, *, *::before, *::after {
 body {
   background-color: var(--mico-color-bg-primary, #ffffff);
   color: var(--mico-color-text-primary, #111827);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, color 0.3s ease;
 }
 
 /* ====================================================================== */

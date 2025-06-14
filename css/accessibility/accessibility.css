@@ -34,11 +34,11 @@
   position: absolute;
   top: -40px;
   left: 0;
-  background: var(--mico-color-primary);
-  color: white;
+  background: var(--mico-color-accent);
+  color: var(--mico-color-white);
   padding: 8px;
   z-index: 100;
-  transition: top 0.2s ease;
+  transition: all .11s ease;
 }
 
 .skip-link:focus {
@@ -47,13 +47,15 @@
 
 /* Focus styles */
 :focus {
-  outline: 2px solid var(--mico-color-primary);
+  outline: 1px solid var(--mico-color-accent);
   outline-offset: 2px;
+  transition: all .11s ease;
 }
 
 .focusable:focus {
-  outline: 2px solid var(--mico-color-primary);
+  outline: 1px solid var(--mico-color-accent);
   outline-offset: 2px;
+  transition: all .11s ease;
 }
 
 /* Remove focus outline for mouse users, but keep for keyboard navigation */
@@ -64,17 +66,17 @@
 /* High contrast mode adjustments */
 @media (prefers-contrast: high) {
   :root {
-    --mico-color-primary: #000000;
-    --mico-color-secondary: #000000;
-    --mico-color-accent: #000000;
-    --mico-color-background: #ffffff;
-    --mico-color-text: #000000;
+    --mico-color-primary: oklch(0.2 0.01 270);
+    --mico-color-secondary: oklch(0.2 0.01 270);
+    --mico-color-accent: oklch(0.2 0.01 270);
+    --mico-color-background: oklch(0.98 0.005 270);
+    --mico-color-text: oklch(0.2 0.01 270);
   }
 
   /* Ensure all text has sufficient contrast */
   body {
-    color: #000000;
-    background-color: #ffffff;
+    color: var(--mico-color-black);
+    background-color: var(--mico-color-white);
   }
 
   /* Enhance borders for better visibility */
@@ -85,7 +87,7 @@
   .btn,
   .card,
   .alert {
-    border: 1px solid #000000 !important;
+    border: 1px solid var(--mico-color-black) !important;
   }
 
   /* Ensure links are underlined */
@@ -95,7 +97,7 @@
 
   /* Enhance focus states */
   :focus {
-    outline: 3px solid #000000 !important;
+    outline: 3px solid var(--mico-color-black) !important;
     outline-offset: 3px !important;
   }
 }
@@ -125,9 +127,9 @@
 input,
 select,
 textarea {
-  background-color: #ffffff;
-  color: #000000;
-  border: 1px solid #767676; /* WCAG AA compliant */
+  background-color: var(--mico-color-white);
+  color: var(--mico-color-black);
+  border: 1px solid var(--mico-color-gray-3xdark); /* WCAG AA compliant */
 }
 
 /* Ensure form labels are visible */
@@ -139,11 +141,11 @@ label {
 /* Ensure error messages are properly styled for accessibility */
 .error,
 [aria-invalid="true"] {
-  border-color: #d32f2f !important;
+  border-color: var(--mico-color-error) !important;
 }
 
 .error-message {
-  color: #d32f2f;
+  color: var(--mico-color-error);
   margin-top: 0.25rem;
   font-size: 0.875rem;
 }
@@ -158,7 +160,7 @@ textarea:focus,
 [role="radio"]:focus,
 [role="tab"]:focus,
 [role="menuitem"]:focus {
-  outline: 2px solid var(--mico-color-primary);
+  outline: 1px solid var(--mico-color-accent);
   outline-offset: 2px;
   z-index: 1;
 }
@@ -179,8 +181,8 @@ textarea:disabled,
 }
 
 [aria-selected="true"] {
-  background-color: var(--mico-color-primary-shade-light);
-  color: var(--mico-color-primary-contrast);
+  background-color: var(--mico-color-primary-2xlight);
+  color: var(--mico-color-primary-5xdark);
 }
 
 [aria-current="page"] {
