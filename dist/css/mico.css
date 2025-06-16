@@ -1153,12 +1153,6 @@
   --mico-transition-transform: transform .4s var(--mico-ease); /* Transform only */
   --mico-transition-box-shadow: box-shadow .4s var(--mico-ease);
 
-  /**
-   * Brand Colors - Primary
-   * Base color defined in styleguide.css, variations auto-generated here
-   */
-  --mico-color-primary: rgb(39, 132, 213);
-
   /* Primary Color Tints (lighter variations) */
   --mico-color-primary-2xlight: oklch(from var(--mico-color-primary) calc(l + (1 - l) * 0.3) calc(c * 0.8) h); /* Soft tint */
   --mico-color-primary-3xlight: oklch(from var(--mico-color-primary) calc(l + (1 - l) * 0.5) calc(c * 0.6) h); /* Medium tint */
@@ -1171,12 +1165,6 @@
   --mico-color-primary-4xdark: oklch(from var(--mico-color-primary) calc(l * 0.4) calc(c * 1.3) h); /* Dark shade */
   --mico-color-primary-5xdark: oklch(from var(--mico-color-primary) calc(l * 0.25) calc(c * 1.4) h);
 
-  /**
-   * Brand Colors - Secondary
-   * Base color defined in styleguide.css, variations auto-generated here
-   */
-  --mico-color-secondary: rgb(81, 97, 145);
-
   /* Secondary Color Tints (lighter variations) */
   --mico-color-secondary-2xlight: oklch(from var(--mico-color-secondary) calc(l + (1 - l) * 0.3) calc(c * 0.8) h); /* Soft tint */
   --mico-color-secondary-3xlight: oklch(from var(--mico-color-secondary) calc(l + (1 - l) * 0.5) calc(c * 0.6) h); /* Medium tint */
@@ -1188,12 +1176,6 @@
   --mico-color-secondary-3xdark: oklch(from var(--mico-color-secondary) calc(l * 0.6) calc(c * 1.2) h); /* Medium shade */
   --mico-color-secondary-4xdark: oklch(from var(--mico-color-secondary) calc(l * 0.4) calc(c * 1.3) h); /* Dark shade */
   --mico-color-secondary-5xdark: oklch(from var(--mico-color-secondary) calc(l * 0.25) calc(c * 1.4) h);
-
-  /**
-   * Brand Colors - Accent
-   * Base color defined in styleguide.css, variations auto-generated here
-   */
-  --mico-color-accent: rgb(236, 125, 0);
 
   /* Accent Color Tints (lighter variations) */
   --mico-color-accent-2xlight: oklch(from var(--mico-color-accent) calc(l + (1 - l) * 0.3) calc(c * 0.8) h); /* Soft tint */
@@ -1410,7 +1392,7 @@
   --mico-color-red-5xdark: oklch(from var(--mico-color-red) calc(l * 0.35) calc(c * 1.2) h);
 
   /* Yellow Color System - Warning states, highlights */
-  --mico-color-yellow: rgb(212, 167, 62);
+  --mico-color-yellow: rgb(255, 252, 46);
 
   /* Yellow Tints (lighter variations) - Warm, inviting progression */
   --mico-color-yellow-2xlight: oklch(from var(--mico-color-yellow) calc(l + (1 - l) * 0.4) calc(c * 0.7) h); /* Cream yellow */
@@ -1425,7 +1407,7 @@
   --mico-color-yellow-5xdark: oklch(from var(--mico-color-yellow) calc(l * 0.4) calc(c * 1.2) calc(h - 12));
 
   /* Green Color System - Success states, positive actions */
-  --mico-color-green: rgb(61, 151, 53);
+  --mico-color-green: rgb(59, 180, 48);
 
   /* Green Tints (lighter variations) - Fresh, natural progression */
   --mico-color-green-2xlight: oklch(from var(--mico-color-green) calc(l + (1 - l) * 0.4) calc(c * 0.7) h); /* Mint green */
@@ -1440,7 +1422,7 @@
   --mico-color-green-5xdark: oklch(from var(--mico-color-green) calc(l * 0.35) calc(c * 1.2) h);
 
   /* Blue Color System - Information, links, primary actions */
-  --mico-color-blue: rgb(0, 127, 218);
+  --mico-color-blue: rgb(0, 95, 220);
 
   /* Blue Tints (lighter variations) - Clean, professional progression */
   --mico-color-blue-2xlight: oklch(from var(--mico-color-blue) calc(l + (1 - l) * 0.4) calc(c * 0.7) h); /* Sky blue */
@@ -1470,7 +1452,7 @@
   --mico-color-indigo-5xdark: oklch(from var(--mico-color-indigo) calc(l * 0.35) calc(c * 1.2) h);
 
   /* Purple Color System - Creative themes, luxury */
-  --mico-color-purple: rgb(150, 74, 198);
+  --mico-color-purple: rgb(127, 40, 182);
 
   /* Purple Tints (lighter variations) - Luxurious, creative progression */
   --mico-color-purple-2xlight: oklch(from var(--mico-color-purple) calc(l + (1 - l) * 0.4) calc(c * 0.7) h); /* Orchid */
@@ -1535,13 +1517,6 @@
    * - Dark mode: Uses lighter shadows on dark backgrounds
    * - High contrast mode: Uses more visible focus indicators
    */
-}
-
-@supports (color: color(display-p3 0 0 0)) {
-:root {
-  --mico-color-accent: color(display-p3 0.86926 0.51255 0.09455);
-  --mico-color-blue: color(display-p3 0.0875 0.49016 0.83544);
-}
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1882,19 +1857,28 @@
    * Fallbacks are provided for older browsers.
    */
 
-/* Base primary color - customizable in styleguide.css */
+/**
+   * Brand Colors - Primary
+   * Base color defined in styleguide.css, variations auto-generated here
+   */
 
 /* Pale tint */
 
 /* Deep shade */
 
-/* Base secondary color - customizable in styleguide.css */
+/**
+   * Brand Colors - Secondary
+   * Base color defined in styleguide.css, variations auto-generated here
+   */
 
 /* Pale tint */
 
 /* Deep shade */
 
-/* Base accent color - customizable in styleguide.css */
+/**
+   * Brand Colors - Accent
+   * Base color defined in styleguide.css, variations auto-generated here
+   */
 
 /* Pale tint */
 
@@ -2601,19 +2585,19 @@
 
 /* Base Brand Background Colors */
 
-.bg-primary { background-color: rgb(39, 132, 213) !important; }
+.bg-primary { background-color: var(--mico-color-primary) !important; }
 
-.bg-secondary { background-color: rgb(81, 97, 145) !important; }
+.bg-secondary { background-color: var(--mico-color-secondary) !important; }
 
-.bg-accent { background-color: rgb(236, 125, 0) !important; background-color: color(display-p3 0.86926 0.51255 0.09455) !important; }
+.bg-accent { background-color: var(--mico-color-accent) !important; }
 
 /* Base Brand Text Colors */
 
-.text-primary { color: rgb(39, 132, 213) !important; }
+.text-primary { color: var(--mico-color-primary) !important; }
 
-.text-secondary { color: rgb(81, 97, 145) !important; }
+.text-secondary { color: var(--mico-color-secondary) !important; }
 
-.text-accent { color: rgb(236, 125, 0) !important; color: color(display-p3 0.86926 0.51255 0.09455) !important; }
+.text-accent { color: var(--mico-color-accent) !important; }
 
 /**
  * Primary Color Variations
@@ -2622,43 +2606,43 @@
 
 /* Primary Tint Text Colors (lighter) */
 
-.text-primary-2xlight { color: rgb(103, 170, 237) !important; }
+.text-primary-2xlight { color: var(--mico-color-primary-2xlight) !important; }
 
-.text-primary-3xlight { color: rgb(145, 195, 246) !important; }
+.text-primary-3xlight { color: var(--mico-color-primary-3xlight) !important; }
 
-.text-primary-4xlight { color: rgb(186, 219, 254) !important; }
+.text-primary-4xlight { color: var(--mico-color-primary-4xlight) !important; }
 
-.text-primary-5xlight { color: rgb(221, 237, 255) !important; color: color(display-p3 0.87736 0.92848 0.9935) !important; }
+.text-primary-5xlight { color: var(--mico-color-primary-5xlight) !important; }
 
 /* Primary Shade Text Colors (darker) */
 
-.text-primary-2xdark { color: rgb(0, 94, 181) !important; color: color(display-p3 0.06248 0.36112 0.68706) !important; }
+.text-primary-2xdark { color: var(--mico-color-primary-2xdark) !important; }
 
-.text-primary-3xdark { color: rgb(0, 60, 129) !important; color: color(display-p3 0 0.21727 0.54103) !important; }
+.text-primary-3xdark { color: var(--mico-color-primary-3xdark) !important; }
 
-.text-primary-4xdark { color: rgb(0, 29, 78) !important; color: color(display-p3 0 0.10188 0.3246) !important; }
+.text-primary-4xdark { color: var(--mico-color-primary-4xdark) !important; }
 
-.text-primary-5xdark { color: rgb(0, 8, 44) !important; color: color(display-p3 0 0.02366 0.17799) !important; }
+.text-primary-5xdark { color: var(--mico-color-primary-5xdark) !important; }
 
 /* Primary Tint Background Colors (lighter) */
 
-.bg-primary-2xlight { background-color: rgb(103, 170, 237) !important; }
+.bg-primary-2xlight { background-color: var(--mico-color-primary-2xlight) !important; }
 
-.bg-primary-3xlight { background-color: rgb(145, 195, 246) !important; }
+.bg-primary-3xlight { background-color: var(--mico-color-primary-3xlight) !important; }
 
-.bg-primary-4xlight { background-color: rgb(186, 219, 254) !important; }
+.bg-primary-4xlight { background-color: var(--mico-color-primary-4xlight) !important; }
 
-.bg-primary-5xlight { background-color: rgb(221, 237, 255) !important; background-color: color(display-p3 0.87736 0.92848 0.9935) !important; }
+.bg-primary-5xlight { background-color: var(--mico-color-primary-5xlight) !important; }
 
 /* Primary Shade Background Colors (darker) */
 
-.bg-primary-2xdark { background-color: rgb(0, 94, 181) !important; background-color: color(display-p3 0.06248 0.36112 0.68706) !important; }
+.bg-primary-2xdark { background-color: var(--mico-color-primary-2xdark) !important; }
 
-.bg-primary-3xdark { background-color: rgb(0, 60, 129) !important; background-color: color(display-p3 0 0.21727 0.54103) !important; }
+.bg-primary-3xdark { background-color: var(--mico-color-primary-3xdark) !important; }
 
-.bg-primary-4xdark { background-color: rgb(0, 29, 78) !important; background-color: color(display-p3 0 0.10188 0.3246) !important; }
+.bg-primary-4xdark { background-color: var(--mico-color-primary-4xdark) !important; }
 
-.bg-primary-5xdark { background-color: rgb(0, 8, 44) !important; background-color: color(display-p3 0 0.02366 0.17799) !important; }
+.bg-primary-5xdark { background-color: var(--mico-color-primary-5xdark) !important; }
 
 /**
  * Secondary Color Variations
@@ -2667,43 +2651,43 @@
 
 /* Secondary Tint Text Colors (lighter) */
 
-.text-secondary-2xlight { color: rgb(128, 142, 183) !important; }
+.text-secondary-2xlight { color: var(--mico-color-secondary-2xlight) !important; }
 
-.text-secondary-3xlight { color: rgb(162, 173, 205) !important; }
+.text-secondary-3xlight { color: var(--mico-color-secondary-3xlight) !important; }
 
-.text-secondary-4xlight { color: rgb(197, 205, 227) !important; }
+.text-secondary-4xlight { color: var(--mico-color-secondary-4xlight) !important; }
 
-.text-secondary-5xlight { color: rgb(226, 230, 241) !important; }
+.text-secondary-5xlight { color: var(--mico-color-secondary-5xlight) !important; }
 
 /* Secondary Shade Text Colors (darker) */
 
-.text-secondary-2xdark { color: rgb(53, 68, 119) !important; }
+.text-secondary-2xdark { color: var(--mico-color-secondary-2xdark) !important; }
 
-.text-secondary-3xdark { color: rgb(28, 40, 93) !important; }
+.text-secondary-3xdark { color: var(--mico-color-secondary-3xdark) !important; }
 
-.text-secondary-4xdark { color: rgb(7, 10, 68) !important; }
+.text-secondary-4xdark { color: var(--mico-color-secondary-4xdark) !important; }
 
-.text-secondary-5xdark { color: rgb(3, 0, 47) !important; color: color(display-p3 0.00631 0 0.17626) !important; }
+.text-secondary-5xdark { color: var(--mico-color-secondary-5xdark) !important; }
 
 /* Secondary Tint Background Colors (lighter) */
 
-.bg-secondary-2xlight { background-color: rgb(128, 142, 183) !important; }
+.bg-secondary-2xlight { background-color: var(--mico-color-secondary-2xlight) !important; }
 
-.bg-secondary-3xlight { background-color: rgb(162, 173, 205) !important; }
+.bg-secondary-3xlight { background-color: var(--mico-color-secondary-3xlight) !important; }
 
-.bg-secondary-4xlight { background-color: rgb(197, 205, 227) !important; }
+.bg-secondary-4xlight { background-color: var(--mico-color-secondary-4xlight) !important; }
 
-.bg-secondary-5xlight { background-color: rgb(226, 230, 241) !important; }
+.bg-secondary-5xlight { background-color: var(--mico-color-secondary-5xlight) !important; }
 
 /* Secondary Shade Background Colors (darker) */
 
-.bg-secondary-2xdark { background-color: rgb(53, 68, 119) !important; }
+.bg-secondary-2xdark { background-color: var(--mico-color-secondary-2xdark) !important; }
 
-.bg-secondary-3xdark { background-color: rgb(28, 40, 93) !important; }
+.bg-secondary-3xdark { background-color: var(--mico-color-secondary-3xdark) !important; }
 
-.bg-secondary-4xdark { background-color: rgb(7, 10, 68) !important; }
+.bg-secondary-4xdark { background-color: var(--mico-color-secondary-4xdark) !important; }
 
-.bg-secondary-5xdark { background-color: rgb(3, 0, 47) !important; background-color: color(display-p3 0.00631 0 0.17626) !important; }
+.bg-secondary-5xdark { background-color: var(--mico-color-secondary-5xdark) !important; }
 
 /**
  * Accent Color Variations
@@ -2712,43 +2696,43 @@
 
 /* Accent Tint Text Colors (lighter) */
 
-.text-accent-2xlight { color: rgb(253, 162, 81) !important; }
+.text-accent-2xlight { color: var(--mico-color-accent-2xlight) !important; }
 
-.text-accent-3xlight { color: rgb(255, 189, 132) !important; color: color(display-p3 0.97138 0.75229 0.55196) !important; }
+.text-accent-3xlight { color: var(--mico-color-accent-3xlight) !important; }
 
-.text-accent-4xlight { color: rgb(255, 215, 178) !important; color: color(display-p3 0.99752 0.84938 0.71576) !important; }
+.text-accent-4xlight { color: var(--mico-color-accent-4xlight) !important; }
 
-.text-accent-5xlight { color: rgb(255, 235, 217) !important; color: color(display-p3 1 0.92547 0.85819) !important; }
+.text-accent-5xlight { color: var(--mico-color-accent-5xlight) !important; }
 
 /* Accent Shade Text Colors (darker) */
 
-.text-accent-2xdark { color: rgb(178, 89, 0) !important; color: color(display-p3 0.67601 0.3501 0) !important; }
+.text-accent-2xdark { color: var(--mico-color-accent-2xdark) !important; }
 
-.text-accent-3xdark { color: rgb(122, 56, 0) !important; color: color(display-p3 0.46076 0.22297 0) !important; }
+.text-accent-3xdark { color: var(--mico-color-accent-3xdark) !important; }
 
-.text-accent-4xdark { color: rgb(70, 27, 0) !important; color: color(display-p3 0.26237 0.10629 0) !important; }
+.text-accent-4xdark { color: var(--mico-color-accent-4xdark) !important; }
 
-.text-accent-5xdark { color: rgb(35, 7, 0) !important; color: color(display-p3 0.12787 0.02868 0) !important; }
+.text-accent-5xdark { color: var(--mico-color-accent-5xdark) !important; }
 
 /* Accent Tint Background Colors (lighter) */
 
-.bg-accent-2xlight { background-color: rgb(253, 162, 81) !important; }
+.bg-accent-2xlight { background-color: var(--mico-color-accent-2xlight) !important; }
 
-.bg-accent-3xlight { background-color: rgb(255, 189, 132) !important; background-color: color(display-p3 0.97138 0.75229 0.55196) !important; }
+.bg-accent-3xlight { background-color: var(--mico-color-accent-3xlight) !important; }
 
-.bg-accent-4xlight { background-color: rgb(255, 215, 178) !important; background-color: color(display-p3 0.99752 0.84938 0.71576) !important; }
+.bg-accent-4xlight { background-color: var(--mico-color-accent-4xlight) !important; }
 
-.bg-accent-5xlight { background-color: rgb(255, 235, 217) !important; background-color: color(display-p3 1 0.92547 0.85819) !important; }
+.bg-accent-5xlight { background-color: var(--mico-color-accent-5xlight) !important; }
 
 /* Accent Shade Background Colors (darker) */
 
-.bg-accent-2xdark { background-color: rgb(178, 89, 0) !important; background-color: color(display-p3 0.67601 0.3501 0) !important; }
+.bg-accent-2xdark { background-color: var(--mico-color-accent-2xdark) !important; }
 
-.bg-accent-3xdark { background-color: rgb(122, 56, 0) !important; background-color: color(display-p3 0.46076 0.22297 0) !important; }
+.bg-accent-3xdark { background-color: var(--mico-color-accent-3xdark) !important; }
 
-.bg-accent-4xdark { background-color: rgb(70, 27, 0) !important; background-color: color(display-p3 0.26237 0.10629 0) !important; }
+.bg-accent-4xdark { background-color: var(--mico-color-accent-4xdark) !important; }
 
-.bg-accent-5xdark { background-color: rgb(35, 7, 0) !important; background-color: color(display-p3 0.12787 0.02868 0) !important; }
+.bg-accent-5xdark { background-color: var(--mico-color-accent-5xdark) !important; }
 
 /* ====================================================================== */
 
@@ -2974,49 +2958,49 @@
 
 /* Yellow Base Color */
 
-.bg-yellow { background-color: rgb(212, 167, 62) !important; }
+.bg-yellow { background-color: rgb(255, 252, 46) !important; }
 
-.text-yellow { color: rgb(212, 167, 62) !important; }
+.text-yellow { color: rgb(255, 252, 46) !important; }
 
 /* Yellow Tint Background Colors (lighter) */
 
-.bg-yellow-2xlight { background-color: rgb(233, 202, 136) !important; }
+.bg-yellow-2xlight { background-color: rgb(255, 255, 138) !important; background-color: color(display-p3 1 1 0.60383) !important; }
 
-.bg-yellow-3xlight { background-color: rgb(242, 219, 173) !important; }
+.bg-yellow-3xlight { background-color: rgb(255, 255, 177) !important; background-color: color(display-p3 1 1 0.72785) !important; }
 
-.bg-yellow-4xlight { background-color: rgb(246, 233, 206) !important; }
+.bg-yellow-4xlight { background-color: rgb(255, 255, 210) !important; background-color: color(display-p3 1 1 0.84008) !important; }
 
-.bg-yellow-5xlight { background-color: rgb(251, 244, 231) !important; }
+.bg-yellow-5xlight { background-color: rgb(255, 255, 233) !important; background-color: color(display-p3 1 1 0.92135) !important; }
 
 /* Yellow Tint Text Colors (lighter) */
 
-.text-yellow-2xlight { color: rgb(233, 202, 136) !important; }
+.text-yellow-2xlight { color: rgb(255, 255, 138) !important; color: color(display-p3 1 1 0.60383) !important; }
 
-.text-yellow-3xlight { color: rgb(242, 219, 173) !important; }
+.text-yellow-3xlight { color: rgb(255, 255, 177) !important; color: color(display-p3 1 1 0.72785) !important; }
 
-.text-yellow-4xlight { color: rgb(246, 233, 206) !important; }
+.text-yellow-4xlight { color: rgb(255, 255, 210) !important; color: color(display-p3 1 1 0.84008) !important; }
 
-.text-yellow-5xlight { color: rgb(251, 244, 231) !important; }
+.text-yellow-5xlight { color: rgb(255, 255, 233) !important; color: color(display-p3 1 1 0.92135) !important; }
 
 /* Yellow Shade Background Colors (darker) */
 
-.bg-yellow-2xdark { background-color: rgb(182, 128, 0) !important; background-color: color(display-p3 0.68269 0.51122 0.14346) !important; }
+.bg-yellow-2xdark { background-color: rgb(218, 199, 0) !important; background-color: color(display-p3 0.84956 0.78339 0) !important; }
 
-.bg-yellow-3xdark { background-color: rgb(147, 94, 0) !important; background-color: color(display-p3 0.55977 0.36969 0) !important; }
+.bg-yellow-3xdark { background-color: rgb(173, 151, 0) !important; background-color: color(display-p3 0.6746 0.59419 0) !important; }
 
-.bg-yellow-4xdark { background-color: rgb(108, 64, 0) !important; background-color: color(display-p3 0.40982 0.25238 0) !important; }
+.bg-yellow-4xdark { background-color: rgb(127, 107, 0) !important; background-color: color(display-p3 0.49406 0.42077 0) !important; }
 
-.bg-yellow-5xdark { background-color: rgb(70, 37, 0) !important; background-color: color(display-p3 0.265 0.14578 0) !important; }
+.bg-yellow-5xdark { background-color: rgb(83, 66, 0) !important; background-color: color(display-p3 0.32127 0.26099 0) !important; }
 
 /* Yellow Shade Text Colors (darker) */
 
-.text-yellow-2xdark { color: rgb(182, 128, 0) !important; color: color(display-p3 0.68269 0.51122 0.14346) !important; }
+.text-yellow-2xdark { color: rgb(218, 199, 0) !important; color: color(display-p3 0.84956 0.78339 0) !important; }
 
-.text-yellow-3xdark { color: rgb(147, 94, 0) !important; color: color(display-p3 0.55977 0.36969 0) !important; }
+.text-yellow-3xdark { color: rgb(173, 151, 0) !important; color: color(display-p3 0.6746 0.59419 0) !important; }
 
-.text-yellow-4xdark { color: rgb(108, 64, 0) !important; color: color(display-p3 0.40982 0.25238 0) !important; }
+.text-yellow-4xdark { color: rgb(127, 107, 0) !important; color: color(display-p3 0.49406 0.42077 0) !important; }
 
-.text-yellow-5xdark { color: rgb(70, 37, 0) !important; color: color(display-p3 0.265 0.14578 0) !important; }
+.text-yellow-5xdark { color: rgb(83, 66, 0) !important; color: color(display-p3 0.32127 0.26099 0) !important; }
 
 /**
  * Green Color System - OKLCH
@@ -3025,49 +3009,49 @@
 
 /* Green Base Color */
 
-.bg-green { background-color: rgb(61, 151, 53) !important; }
+.bg-green { background-color: rgb(59, 180, 48) !important; }
 
-.text-green { color: rgb(61, 151, 53) !important; }
+.text-green { color: rgb(59, 180, 48) !important; }
 
 /* Green Tint Background Colors (lighter) */
 
-.bg-green-2xlight { background-color: rgb(135, 195, 128) !important; }
+.bg-green-2xlight { background-color: rgb(137, 214, 129) !important; }
 
-.bg-green-3xlight { background-color: rgb(173, 216, 168) !important; }
+.bg-green-3xlight { background-color: rgb(175, 230, 169) !important; }
 
-.bg-green-4xlight { background-color: rgb(205, 231, 201) !important; }
+.bg-green-4xlight { background-color: rgb(207, 239, 202) !important; }
 
-.bg-green-5xlight { background-color: rgb(230, 244, 229) !important; }
+.bg-green-5xlight { background-color: rgb(231, 248, 229) !important; }
 
 /* Green Tint Text Colors (lighter) */
 
-.text-green-2xlight { color: rgb(135, 195, 128) !important; }
+.text-green-2xlight { color: rgb(137, 214, 129) !important; }
 
-.text-green-3xlight { color: rgb(173, 216, 168) !important; }
+.text-green-3xlight { color: rgb(175, 230, 169) !important; }
 
-.text-green-4xlight { color: rgb(205, 231, 201) !important; }
+.text-green-4xlight { color: rgb(207, 239, 202) !important; }
 
-.text-green-5xlight { color: rgb(230, 244, 229) !important; }
+.text-green-5xlight { color: rgb(231, 248, 229) !important; }
 
 /* Green Shade Background Colors (darker) */
 
-.bg-green-2xdark { background-color: rgb(18, 124, 7) !important; }
+.bg-green-2xdark { background-color: rgb(0, 149, 0) !important; background-color: color(display-p3 0.23724 0.57348 0.10605) !important; }
 
-.bg-green-3xdark { background-color: rgb(0, 97, 0) !important; background-color: color(display-p3 0.09921 0.37628 0) !important; }
+.bg-green-3xdark { background-color: rgb(0, 114, 0) !important; background-color: color(display-p3 0.0732 0.45306 0) !important; }
 
-.bg-green-4xdark { background-color: rgb(0, 59, 0) !important; background-color: color(display-p3 0 0.23465 0) !important; }
+.bg-green-4xdark { background-color: rgb(0, 71, 0) !important; background-color: color(display-p3 0.00662 0.28104 0) !important; }
 
-.bg-green-5xdark { background-color: rgb(0, 33, 0) !important; background-color: color(display-p3 0 0.13211 0) !important; }
+.bg-green-5xdark { background-color: rgb(0, 41, 0) !important; background-color: color(display-p3 0 0.16202 0) !important; }
 
 /* Green Shade Text Colors (darker) */
 
-.text-green-2xdark { color: rgb(18, 124, 7) !important; }
+.text-green-2xdark { color: rgb(0, 149, 0) !important; color: color(display-p3 0.23724 0.57348 0.10605) !important; }
 
-.text-green-3xdark { color: rgb(0, 97, 0) !important; color: color(display-p3 0.09921 0.37628 0) !important; }
+.text-green-3xdark { color: rgb(0, 114, 0) !important; color: color(display-p3 0.0732 0.45306 0) !important; }
 
-.text-green-4xdark { color: rgb(0, 59, 0) !important; color: color(display-p3 0 0.23465 0) !important; }
+.text-green-4xdark { color: rgb(0, 71, 0) !important; color: color(display-p3 0.00662 0.28104 0) !important; }
 
-.text-green-5xdark { color: rgb(0, 33, 0) !important; color: color(display-p3 0 0.13211 0) !important; }
+.text-green-5xdark { color: rgb(0, 41, 0) !important; color: color(display-p3 0 0.16202 0) !important; }
 
 /**
  * Blue Color System - OKLCH
@@ -3076,49 +3060,49 @@
 
 /* Blue Base Color */
 
-.bg-blue { background-color: rgb(0, 127, 218) !important; background-color: color(display-p3 0.0875 0.49016 0.83544) !important; }
+.bg-blue { background-color: rgb(0, 95, 220) !important; }
 
-.text-blue { color: rgb(0, 127, 218) !important; color: color(display-p3 0.0875 0.49016 0.83544) !important; }
+.text-blue { color: rgb(0, 95, 220) !important; }
 
 /* Blue Tint Background Colors (lighter) */
 
-.bg-blue-2xlight { background-color: rgb(98, 181, 248) !important; }
+.bg-blue-2xlight { background-color: rgb(106, 162, 251) !important; }
 
-.bg-blue-3xlight { background-color: rgb(150, 207, 255) !important; background-color: color(display-p3 0.63536 0.80429 0.98287) !important; }
+.bg-blue-3xlight { background-color: rgb(153, 194, 255) !important; background-color: color(display-p3 0.631 0.75496 0.99425) !important; }
 
-.bg-blue-4xlight { background-color: rgb(191, 225, 254) !important; }
+.bg-blue-4xlight { background-color: rgb(192, 217, 255) !important; background-color: color(display-p3 0.77081 0.84819 0.99378) !important; }
 
-.bg-blue-5xlight { background-color: rgb(224, 241, 255) !important; background-color: color(display-p3 0.89067 0.94224 0.99703) !important; }
+.bg-blue-5xlight { background-color: rgb(224, 237, 255) !important; background-color: color(display-p3 0.88772 0.92757 1) !important; }
 
 /* Blue Tint Text Colors (lighter) */
 
-.text-blue-2xlight { color: rgb(98, 181, 248) !important; }
+.text-blue-2xlight { color: rgb(106, 162, 251) !important; }
 
-.text-blue-3xlight { color: rgb(150, 207, 255) !important; color: color(display-p3 0.63536 0.80429 0.98287) !important; }
+.text-blue-3xlight { color: rgb(153, 194, 255) !important; color: color(display-p3 0.631 0.75496 0.99425) !important; }
 
-.text-blue-4xlight { color: rgb(191, 225, 254) !important; }
+.text-blue-4xlight { color: rgb(192, 217, 255) !important; color: color(display-p3 0.77081 0.84819 0.99378) !important; }
 
-.text-blue-5xlight { color: rgb(224, 241, 255) !important; color: color(display-p3 0.89067 0.94224 0.99703) !important; }
+.text-blue-5xlight { color: rgb(224, 237, 255) !important; color: color(display-p3 0.88772 0.92757 1) !important; }
 
 /* Blue Shade Background Colors (darker) */
 
-.bg-blue-2xdark { background-color: rgb(0, 101, 178) !important; background-color: color(display-p3 0 0.38145 0.73899) !important; }
+.bg-blue-2xdark { background-color: rgb(0, 67, 199) !important; background-color: color(display-p3 0.01497 0.25801 0.74955) !important; }
 
-.bg-blue-3xdark { background-color: rgb(0, 76, 139) !important; background-color: color(display-p3 0 0.28498 0.58203) !important; }
+.bg-blue-3xdark { background-color: rgb(0, 36, 175) !important; background-color: color(display-p3 0 0.1292 0.66701) !important; }
 
-.bg-blue-4xdark { background-color: rgb(0, 45, 91) !important; background-color: color(display-p3 0 0.1653 0.37824) !important; }
+.bg-blue-4xdark { background-color: rgb(0, 0, 127) !important; background-color: color(display-p3 0 0 0.47723) !important; }
 
-.bg-blue-5xdark { background-color: rgb(0, 23, 57) !important; background-color: color(display-p3 0 0.08252 0.23701) !important; }
+.bg-blue-5xdark { background-color: rgb(0, 0, 80) !important; background-color: color(display-p3 0 0 0.29986) !important; }
 
 /* Blue Shade Text Colors (darker) */
 
-.text-blue-2xdark { color: rgb(0, 101, 178) !important; color: color(display-p3 0 0.38145 0.73899) !important; }
+.text-blue-2xdark { color: rgb(0, 67, 199) !important; color: color(display-p3 0.01497 0.25801 0.74955) !important; }
 
-.text-blue-3xdark { color: rgb(0, 76, 139) !important; color: color(display-p3 0 0.28498 0.58203) !important; }
+.text-blue-3xdark { color: rgb(0, 36, 175) !important; color: color(display-p3 0 0.1292 0.66701) !important; }
 
-.text-blue-4xdark { color: rgb(0, 45, 91) !important; color: color(display-p3 0 0.1653 0.37824) !important; }
+.text-blue-4xdark { color: rgb(0, 0, 127) !important; color: color(display-p3 0 0 0.47723) !important; }
 
-.text-blue-5xdark { color: rgb(0, 23, 57) !important; color: color(display-p3 0 0.08252 0.23701) !important; }
+.text-blue-5xdark { color: rgb(0, 0, 80) !important; color: color(display-p3 0 0 0.29986) !important; }
 
 /**
  * Indigo Color System - OKLCH
@@ -3178,49 +3162,49 @@
 
 /* Purple Base Color */
 
-.bg-purple { background-color: rgb(150, 74, 198) !important; }
+.bg-purple { background-color: rgb(127, 40, 182) !important; }
 
-.text-purple { color: rgb(150, 74, 198) !important; }
+.text-purple { color: rgb(127, 40, 182) !important; }
 
 /* Purple Tint Background Colors (lighter) */
 
-.bg-purple-2xlight { background-color: rgb(195, 145, 232) !important; }
+.bg-purple-2xlight { background-color: rgb(180, 128, 224) !important; }
 
-.bg-purple-3xlight { background-color: rgb(216, 181, 244) !important; }
+.bg-purple-3xlight { background-color: rgb(206, 169, 240) !important; }
 
-.bg-purple-4xlight { background-color: rgb(230, 209, 248) !important; }
+.bg-purple-4xlight { background-color: rgb(224, 202, 245) !important; }
 
-.bg-purple-5xlight { background-color: rgb(243, 233, 252) !important; }
+.bg-purple-5xlight { background-color: rgb(240, 229, 251) !important; }
 
 /* Purple Tint Text Colors (lighter) */
 
-.text-purple-2xlight { color: rgb(195, 145, 232) !important; }
+.text-purple-2xlight { color: rgb(180, 128, 224) !important; }
 
-.text-purple-3xlight { color: rgb(216, 181, 244) !important; }
+.text-purple-3xlight { color: rgb(206, 169, 240) !important; }
 
-.text-purple-4xlight { color: rgb(230, 209, 248) !important; }
+.text-purple-4xlight { color: rgb(224, 202, 245) !important; }
 
-.text-purple-5xlight { color: rgb(243, 233, 252) !important; }
+.text-purple-5xlight { color: rgb(240, 229, 251) !important; }
 
 /* Purple Shade Background Colors (darker) */
 
-.bg-purple-2xdark { background-color: rgb(126, 42, 174) !important; }
+.bg-purple-2xdark { background-color: rgb(107, 0, 162) !important; background-color: color(display-p3 0.38277 0.00265 0.61157) !important; }
 
-.bg-purple-3xdark { background-color: rgb(103, 0, 150) !important; background-color: color(display-p3 0.36702 0.0042 0.56425) !important; }
+.bg-purple-3xdark { background-color: rgb(83, 0, 129) !important; background-color: color(display-p3 0.29793 0 0.49936) !important; }
 
-.bg-purple-4xdark { background-color: rgb(65, 0, 99) !important; background-color: color(display-p3 0.2318 0 0.38096) !important; }
+.bg-purple-4xdark { background-color: rgb(51, 0, 82) !important; background-color: color(display-p3 0.17921 0 0.31713) !important; }
 
-.bg-purple-5xdark { background-color: rgb(37, 0, 60) !important; background-color: color(display-p3 0.1312 0 0.2319) !important; }
+.bg-purple-5xdark { background-color: rgb(28, 0, 50) !important; background-color: color(display-p3 0.09733 0 0.19106) !important; }
 
 /* Purple Shade Text Colors (darker) */
 
-.text-purple-2xdark { color: rgb(126, 42, 174) !important; }
+.text-purple-2xdark { color: rgb(107, 0, 162) !important; color: color(display-p3 0.38277 0.00265 0.61157) !important; }
 
-.text-purple-3xdark { color: rgb(103, 0, 150) !important; color: color(display-p3 0.36702 0.0042 0.56425) !important; }
+.text-purple-3xdark { color: rgb(83, 0, 129) !important; color: color(display-p3 0.29793 0 0.49936) !important; }
 
-.text-purple-4xdark { color: rgb(65, 0, 99) !important; color: color(display-p3 0.2318 0 0.38096) !important; }
+.text-purple-4xdark { color: rgb(51, 0, 82) !important; color: color(display-p3 0.17921 0 0.31713) !important; }
 
-.text-purple-5xdark { color: rgb(37, 0, 60) !important; color: color(display-p3 0.1312 0 0.2319) !important; }
+.text-purple-5xdark { color: rgb(28, 0, 50) !important; color: color(display-p3 0.09733 0 0.19106) !important; }
 
 /**
  * Pink Color System - OKLCH
@@ -3346,35 +3330,35 @@
 
 /* Brand Color Transparency Background Colors */
 
-.bg-primary-whisper { background-color: rgba(39, 132, 213, 0.1) !important; }
+.bg-primary-whisper { background-color: var(--mico-color-primary-whisper) !important; }
 
-.bg-primary-breath { background-color: rgba(39, 132, 213, 0.2) !important; }
+.bg-primary-breath { background-color: var(--mico-color-primary-breath) !important; }
 
-.bg-primary-mist { background-color: rgba(39, 132, 213, 0.3) !important; }
+.bg-primary-mist { background-color: var(--mico-color-primary-mist) !important; }
 
-.bg-primary-veil { background-color: rgba(39, 132, 213, 0.4) !important; }
+.bg-primary-veil { background-color: var(--mico-color-primary-veil) !important; }
 
-.bg-primary-shadow { background-color: rgba(39, 132, 213, 0.5) !important; }
+.bg-primary-shadow { background-color: var(--mico-color-primary-shadow) !important; }
 
-.bg-secondary-whisper { background-color: rgba(81, 97, 145, 0.1) !important; }
+.bg-secondary-whisper { background-color: var(--mico-color-secondary-whisper) !important; }
 
-.bg-secondary-breath { background-color: rgba(81, 97, 145, 0.2) !important; }
+.bg-secondary-breath { background-color: var(--mico-color-secondary-breath) !important; }
 
-.bg-secondary-mist { background-color: rgba(81, 97, 145, 0.3) !important; }
+.bg-secondary-mist { background-color: var(--mico-color-secondary-mist) !important; }
 
-.bg-secondary-veil { background-color: rgba(81, 97, 145, 0.4) !important; }
+.bg-secondary-veil { background-color: var(--mico-color-secondary-veil) !important; }
 
-.bg-secondary-shadow { background-color: rgba(81, 97, 145, 0.5) !important; }
+.bg-secondary-shadow { background-color: var(--mico-color-secondary-shadow) !important; }
 
-.bg-accent-whisper { background-color: rgba(236, 125, 0, 0.1) !important; background-color: color(display-p3 0.86926 0.51255 0.09455 / 0.1) !important; }
+.bg-accent-whisper { background-color: var(--mico-color-accent-whisper) !important; }
 
-.bg-accent-breath { background-color: rgba(236, 125, 0, 0.2) !important; background-color: color(display-p3 0.86926 0.51255 0.09455 / 0.2) !important; }
+.bg-accent-breath { background-color: var(--mico-color-accent-breath) !important; }
 
-.bg-accent-mist { background-color: rgba(236, 125, 0, 0.3) !important; background-color: color(display-p3 0.86926 0.51255 0.09455 / 0.3) !important; }
+.bg-accent-mist { background-color: var(--mico-color-accent-mist) !important; }
 
-.bg-accent-veil { background-color: rgba(236, 125, 0, 0.4) !important; background-color: color(display-p3 0.86926 0.51255 0.09455 / 0.4) !important; }
+.bg-accent-veil { background-color: var(--mico-color-accent-veil) !important; }
 
-.bg-accent-shadow { background-color: rgba(236, 125, 0, 0.5) !important; background-color: color(display-p3 0.86926 0.51255 0.09455 / 0.5) !important; }
+.bg-accent-shadow { background-color: var(--mico-color-accent-shadow) !important; }
 
 /* ====================================================================== */
 
@@ -7320,11 +7304,11 @@
 
 /* Brand Colors */
 
-.border-primary   { border-color: rgb(39, 132, 213) !important; }
+.border-primary   { border-color: var(--mico-color-primary) !important; }
 
-.border-secondary { border-color: rgb(81, 97, 145) !important; }
+.border-secondary { border-color: var(--mico-color-secondary) !important; }
 
-.border-accent    { border-color: rgb(236, 125, 0) !important; border-color: color(display-p3 0.86926 0.51255 0.09455) !important; }
+.border-accent    { border-color: var(--mico-color-accent) !important; }
 
 /* State Colors */
 
@@ -7366,15 +7350,15 @@
 
 .border-red { border-color: rgb(212, 12, 26) !important; }
 
-.border-yellow { border-color: rgb(212, 167, 62) !important; }
+.border-yellow { border-color: rgb(255, 252, 46) !important; }
 
-.border-green { border-color: rgb(61, 151, 53) !important; }
+.border-green { border-color: rgb(59, 180, 48) !important; }
 
-.border-blue { border-color: rgb(0, 127, 218) !important; border-color: color(display-p3 0.0875 0.49016 0.83544) !important; }
+.border-blue { border-color: rgb(0, 95, 220) !important; }
 
 .border-indigo { border-color: rgb(80, 90, 200) !important; }
 
-.border-purple { border-color: rgb(150, 74, 198) !important; }
+.border-purple { border-color: rgb(127, 40, 182) !important; }
 
 .border-pink { border-color: rgb(231, 104, 139) !important; }
 
@@ -7529,11 +7513,11 @@
 
 /* Outline Color - OKLCH System */
 
-.outline-primary   { outline-color: rgb(39, 132, 213); }
+.outline-primary   { outline-color: var(--mico-color-primary); }
 
-.outline-secondary { outline-color: rgb(81, 97, 145); }
+.outline-secondary { outline-color: var(--mico-color-secondary); }
 
-.outline-accent    { outline-color: rgb(236, 125, 0); outline-color: color(display-p3 0.86926 0.51255 0.09455); }
+.outline-accent    { outline-color: var(--mico-color-accent); }
 
 .outline-success   { outline-color: rgb(58, 168, 91); }
 
@@ -7619,11 +7603,11 @@
 
 /* Colored Shadows */
 
-.shadow-primary { box-shadow: 0px 4.5px 4px -2.8px rgb(79, 129, 174) !important; }
+.shadow-primary { box-shadow: var(--mico-shadow-primary) !important; }
 
-.shadow-secondary { box-shadow: 0px 4.5px 4px -2.8px rgb(96, 104, 131) !important; }
+.shadow-secondary { box-shadow: var(--mico-shadow-secondary) !important; }
 
-.shadow-accent { box-shadow: 0px 4.5px 4px -2.8px rgb(174, 113, 22) !important; }
+.shadow-accent { box-shadow: var(--mico-shadow-accent) !important; }
 
 .shadow-success   { box-shadow: 0px 4.5px 4px -2.8px rgb(83, 143, 101) !important; }
 
@@ -7672,11 +7656,11 @@
 
 /* Divide Colors - OKLCH System */
 
-.divide-primary   > * + * { border-color: rgb(39, 132, 213); }
+.divide-primary   > * + * { border-color: var(--mico-color-primary); }
 
-.divide-secondary > * + * { border-color: rgb(81, 97, 145); }
+.divide-secondary > * + * { border-color: var(--mico-color-secondary); }
 
-.divide-accent    > * + * { border-color: rgb(236, 125, 0); border-color: color(display-p3 0.86926 0.51255 0.09455); }
+.divide-accent    > * + * { border-color: var(--mico-color-accent); }
 
 .divide-gray      > * + * { border-color: rgb(97, 99, 105); }
 
@@ -7834,12 +7818,12 @@
  * base styles that work across all button variants.
  */
 
-.btn {
+.btn,button {
   -webkit-text-decoration: none !important;
   text-decoration: none !important;
 }
 
-.btn {
+.btn,button {
   /* Layout and positioning */
   position: relative;
   display: inline-block;
@@ -7890,49 +7874,40 @@
 /* Brand Colors - OKLCH System */
 
 .btn-primary {
-  background-color: rgb(39, 132, 213) !important;
-  color: rgb(237, 238, 242) !important;
-  border-color: rgb(103, 170, 237) !important;
+  background-color: var(--mico-color-primary) ;
+  border-color: var(--mico-color-primary-2xlight) ;
 }
 
 .btn-secondary {
-  background-color: rgb(81, 97, 145) !important;
-  color: rgb(237, 238, 242) !important;
-  border-color: rgb(81, 97, 145) !important;
+  background-color: var(--mico-color-secondary) ;
+  border-color: var(--mico-color-secondary) ;
 }
 
 .btn-accent {
-  background-color: rgb(236, 125, 0) !important;
-  background-color: color(display-p3 0.86926 0.51255 0.09455) !important;
-  color: rgb(237, 238, 242) !important;
-  border-color: rgb(236, 125, 0) !important;
-  border-color: color(display-p3 0.86926 0.51255 0.09455) !important;
+  background-color: var(--mico-color-accent) ;
+  border-color: var(--mico-color-accent) ;
 }
 
 /* State Colors - OKLCH System */
 
 .btn-success {
-  background-color: rgb(58, 168, 91) !important;
-  color: rgb(237, 238, 242) !important;
-  border-color: rgb(58, 168, 91) !important;
+  background-color: rgb(58, 168, 91);
+  border-color: rgb(58, 168, 91);
 }
 
 .btn-danger {
-  background-color: rgb(215, 71, 69) !important;
-  color: rgb(237, 238, 242) !important;
-  border-color: rgb(215, 71, 69) !important;
+  background-color: rgb(215, 71, 69);
+  border-color: rgb(215, 71, 69);
 }
 
 .btn-warning {
-  background-color: rgb(223, 161, 26) !important;
-  color: rgb(1, 2, 3) !important;
-  border-color: rgb(223, 161, 26) !important;
+  background-color: rgb(223, 161, 26);
+  border-color: rgb(223, 161, 26);
 }
 
 .btn-info {
-  background-color: rgb(39, 132, 213) !important;
-  color: rgb(237, 238, 242) !important;
-  border-color: rgb(39, 132, 213) !important;
+  background-color: rgb(39, 132, 213);
+  border-color: rgb(39, 132, 213);
 }
 
 /* Neutral Colors - OKLCH System */
@@ -7972,48 +7947,54 @@
 
 .btn-outline {
   background-color: transparent !important;
-  border-width: 1px !important;
 }
 
 .btn-outline {
   border-style: solid;
+  border-width: 1px;
 }
 
 .btn-outline.btn-primary {
-  color: rgb(39, 132, 213);
-  border-color: rgb(39, 132, 213);
+  color: var(--mico-color-primary-2xdark);
+  border-color: var(--mico-color-primary-2xdark);
 }
 
 .btn-outline.btn-secondary {
-  color: rgb(81, 97, 145);
-  border-color: rgb(81, 97, 145);
+  color: var(--mico-color-secondary-2xdark);
+  border-color: var(--mico-color-secondary-2xdark);
 }
 
 .btn-outline.btn-accent {
-  color: rgb(236, 125, 0);
-  color: color(display-p3 0.86926 0.51255 0.09455);
-  border-color: rgb(236, 125, 0);
-  border-color: color(display-p3 0.86926 0.51255 0.09455);
+  color: var(--mico-color-accent-2xdark);
+  border-color: var(--mico-color-accent-2xdark);
 }
 
 .btn-outline.btn-success {
-  color: rgb(58, 168, 91);
-  border-color: rgb(58, 168, 91);
+  color: rgb(0, 129, 46);
+  color: color(display-p3 0.16319 0.49824 0.22189);
+  border-color: rgb(0, 129, 46);
+  border-color: color(display-p3 0.16319 0.49824 0.22189);
 }
 
 .btn-outline.btn-danger {
-  color: rgb(215, 71, 69);
-  border-color: rgb(215, 71, 69);
+  color: rgb(179, 0, 25);
+  color: color(display-p3 0.64135 0.11604 0.13463);
+  border-color: rgb(179, 0, 25);
+  border-color: color(display-p3 0.64135 0.11604 0.13463);
 }
 
 .btn-outline.btn-warning {
-  color: rgb(223, 161, 26);
-  border-color: rgb(223, 161, 26);
+  color: rgb(172, 116, 0);
+  color: color(display-p3 0.65974 0.4553 0);
+  border-color: rgb(172, 116, 0);
+  border-color: color(display-p3 0.65974 0.4553 0);
 }
 
 .btn-outline.btn-info {
-  color: rgb(39, 132, 213);
-  border-color: rgb(39, 132, 213);
+  color: rgb(0, 94, 181);
+  color: color(display-p3 0.06248 0.36112 0.68706);
+  border-color: rgb(0, 94, 181);
+  border-color: color(display-p3 0.06248 0.36112 0.68706);
 }
 
 .btn-outline.btn-light {
@@ -8338,11 +8319,11 @@
 
 /* Brand Link Colors */
 
-.link-primary { color: rgb(39, 132, 213); }
+.link-primary { color: var(--mico-color-primary); }
 
-.link-secondary { color: rgb(81, 97, 145); }
+.link-secondary { color: var(--mico-color-secondary); }
 
-.link-accent { color: rgb(236, 125, 0); color: color(display-p3 0.86926 0.51255 0.09455); }
+.link-accent { color: var(--mico-color-accent); }
 
 /* State Link Colors */
 
@@ -8420,9 +8401,9 @@
 
 .link-underline-color-transparent { text-decoration-color: transparent; }
 
-.link-underline-color-primary { text-decoration-color: rgb(39, 132, 213); }
+.link-underline-color-primary { text-decoration-color: var(--mico-color-primary); }
 
-.link-underline-color-secondary { text-decoration-color: rgb(81, 97, 145); }
+.link-underline-color-secondary { text-decoration-color: var(--mico-color-secondary); }
 
 /**
  * Link Opacity Control
@@ -8471,7 +8452,7 @@
  */
 
 .btn:focus-visible {
-  outline: 2px solid rgb(39, 132, 213);
+  outline: 2px solid var(--mico-color-primary);
   outline-offset: 2px;
 }
 
@@ -8620,77 +8601,77 @@
 
 /* ---------- Brand Colors ---------- */
 
-.hover-bg-primary:hover { background-color: rgb(39, 132, 213) !important; }
+.hover-bg-primary:hover { background-color: var(--mico-color-primary) !important; }
 
-.hover-bg-secondary:hover { background-color: rgb(81, 97, 145) !important; }
+.hover-bg-secondary:hover { background-color: var(--mico-color-secondary) !important; }
 
-.hover-bg-accent:hover { background-color: rgb(236, 125, 0) !important; background-color: color(display-p3 0.86926 0.51255 0.09455) !important; }
+.hover-bg-accent:hover { background-color: var(--mico-color-accent) !important; }
 
 /* ---------- Primary Color Variations ---------- */
 
 /* Tints - Lighter variations */
 
-.hover-bg-primary-2xlight:hover { background-color: rgb(103, 170, 237) !important; }
+.hover-bg-primary-2xlight:hover { background-color: var(--mico-color-primary-2xlight) !important; }
 
-.hover-bg-primary-3xlight:hover { background-color: rgb(145, 195, 246) !important; }
+.hover-bg-primary-3xlight:hover { background-color: var(--mico-color-primary-3xlight) !important; }
 
-.hover-bg-primary-4xlight:hover { background-color: rgb(186, 219, 254) !important; }
+.hover-bg-primary-4xlight:hover { background-color: var(--mico-color-primary-4xlight) !important; }
 
-.hover-bg-primary-5xlight:hover { background-color: rgb(221, 237, 255) !important; background-color: color(display-p3 0.87736 0.92848 0.9935) !important; }
+.hover-bg-primary-5xlight:hover { background-color: var(--mico-color-primary-5xlight) !important; }
 
 /* Shades - Darker variations */
 
-.hover-bg-primary-2xdark:hover { background-color: rgb(0, 94, 181) !important; background-color: color(display-p3 0.06248 0.36112 0.68706) !important; }
+.hover-bg-primary-2xdark:hover { background-color: var(--mico-color-primary-2xdark) !important; }
 
-.hover-bg-primary-3xdark:hover { background-color: rgb(0, 60, 129) !important; background-color: color(display-p3 0 0.21727 0.54103) !important; }
+.hover-bg-primary-3xdark:hover { background-color: var(--mico-color-primary-3xdark) !important; }
 
-.hover-bg-primary-4xdark:hover { background-color: rgb(0, 29, 78) !important; background-color: color(display-p3 0 0.10188 0.3246) !important; }
+.hover-bg-primary-4xdark:hover { background-color: var(--mico-color-primary-4xdark) !important; }
 
-.hover-bg-primary-5xdark:hover { background-color: rgb(0, 8, 44) !important; background-color: color(display-p3 0 0.02366 0.17799) !important; }
+.hover-bg-primary-5xdark:hover { background-color: var(--mico-color-primary-5xdark) !important; }
 
 /* ---------- Secondary Color Variations ---------- */
 
 /* Tints - Lighter variations */
 
-.hover-bg-secondary-2xlight:hover { background-color: rgb(128, 142, 183) !important; }
+.hover-bg-secondary-2xlight:hover { background-color: var(--mico-color-secondary-2xlight) !important; }
 
-.hover-bg-secondary-3xlight:hover { background-color: rgb(162, 173, 205) !important; }
+.hover-bg-secondary-3xlight:hover { background-color: var(--mico-color-secondary-3xlight) !important; }
 
-.hover-bg-secondary-4xlight:hover { background-color: rgb(197, 205, 227) !important; }
+.hover-bg-secondary-4xlight:hover { background-color: var(--mico-color-secondary-4xlight) !important; }
 
-.hover-bg-secondary-5xlight:hover { background-color: rgb(226, 230, 241) !important; }
+.hover-bg-secondary-5xlight:hover { background-color: var(--mico-color-secondary-5xlight) !important; }
 
 /* Shades - Darker variations */
 
-.hover-bg-secondary-2xdark:hover { background-color: rgb(53, 68, 119) !important; }
+.hover-bg-secondary-2xdark:hover { background-color: var(--mico-color-secondary-2xdark) !important; }
 
-.hover-bg-secondary-3xdark:hover { background-color: rgb(28, 40, 93) !important; }
+.hover-bg-secondary-3xdark:hover { background-color: var(--mico-color-secondary-3xdark) !important; }
 
-.hover-bg-secondary-4xdark:hover { background-color: rgb(7, 10, 68) !important; }
+.hover-bg-secondary-4xdark:hover { background-color: var(--mico-color-secondary-4xdark) !important; }
 
-.hover-bg-secondary-5xdark:hover { background-color: rgb(3, 0, 47) !important; background-color: color(display-p3 0.00631 0 0.17626) !important; }
+.hover-bg-secondary-5xdark:hover { background-color: var(--mico-color-secondary-5xdark) !important; }
 
 /* ---------- Accent Color Variations ---------- */
 
 /* Tints - Lighter variations */
 
-.hover-bg-accent-2xlight:hover { background-color: rgb(253, 162, 81) !important; }
+.hover-bg-accent-2xlight:hover { background-color: var(--mico-color-accent-2xlight) !important; }
 
-.hover-bg-accent-3xlight:hover { background-color: rgb(255, 189, 132) !important; background-color: color(display-p3 0.97138 0.75229 0.55196) !important; }
+.hover-bg-accent-3xlight:hover { background-color: var(--mico-color-accent-3xlight) !important; }
 
-.hover-bg-accent-4xlight:hover { background-color: rgb(255, 215, 178) !important; background-color: color(display-p3 0.99752 0.84938 0.71576) !important; }
+.hover-bg-accent-4xlight:hover { background-color: var(--mico-color-accent-4xlight) !important; }
 
-.hover-bg-accent-5xlight:hover { background-color: rgb(255, 235, 217) !important; background-color: color(display-p3 1 0.92547 0.85819) !important; }
+.hover-bg-accent-5xlight:hover { background-color: var(--mico-color-accent-5xlight) !important; }
 
 /* Shades - Darker variations */
 
-.hover-bg-accent-2xdark:hover { background-color: rgb(178, 89, 0) !important; background-color: color(display-p3 0.67601 0.3501 0) !important; }
+.hover-bg-accent-2xdark:hover { background-color: var(--mico-color-accent-2xdark) !important; }
 
-.hover-bg-accent-3xdark:hover { background-color: rgb(122, 56, 0) !important; background-color: color(display-p3 0.46076 0.22297 0) !important; }
+.hover-bg-accent-3xdark:hover { background-color: var(--mico-color-accent-3xdark) !important; }
 
-.hover-bg-accent-4xdark:hover { background-color: rgb(70, 27, 0) !important; background-color: color(display-p3 0.26237 0.10629 0) !important; }
+.hover-bg-accent-4xdark:hover { background-color: var(--mico-color-accent-4xdark) !important; }
 
-.hover-bg-accent-5xdark:hover { background-color: rgb(35, 7, 0) !important; background-color: color(display-p3 0.12787 0.02868 0) !important; }
+.hover-bg-accent-5xdark:hover { background-color: var(--mico-color-accent-5xdark) !important; }
 
 /* ---------- Neutral Colors - OKLCH System ---------- */
 
@@ -8800,11 +8781,11 @@
  * These utilities apply text colors on hover
  */
 
-.hover-text-primary:hover { color: rgb(39, 132, 213) !important; }
+.hover-text-primary:hover { color: var(--mico-color-primary) !important; }
 
-.hover-text-secondary:hover { color: rgb(81, 97, 145) !important; }
+.hover-text-secondary:hover { color: var(--mico-color-secondary) !important; }
 
-.hover-text-accent:hover { color: rgb(236, 125, 0) !important; color: color(display-p3 0.86926 0.51255 0.09455) !important; }
+.hover-text-accent:hover { color: var(--mico-color-accent) !important; }
 
 /* ========================================================================== */
 
@@ -8820,77 +8801,77 @@
 
 /* ---------- Brand Colors ---------- */
 
-.focus-bg-primary:focus { background-color: rgb(39, 132, 213) !important; }
+.focus-bg-primary:focus { background-color: var(--mico-color-primary) !important; }
 
-.focus-bg-secondary:focus { background-color: rgb(81, 97, 145) !important; }
+.focus-bg-secondary:focus { background-color: var(--mico-color-secondary) !important; }
 
-.focus-bg-accent:focus { background-color: rgb(236, 125, 0) !important; background-color: color(display-p3 0.86926 0.51255 0.09455) !important; }
+.focus-bg-accent:focus { background-color: var(--mico-color-accent) !important; }
 
 /* ---------- Primary Color Variations ---------- */
 
 /* Tints - Lighter variations */
 
-.focus-bg-primary-2xlight:focus { background-color: rgb(103, 170, 237) !important; }
+.focus-bg-primary-2xlight:focus { background-color: var(--mico-color-primary-2xlight) !important; }
 
-.focus-bg-primary-3xlight:focus { background-color: rgb(145, 195, 246) !important; }
+.focus-bg-primary-3xlight:focus { background-color: var(--mico-color-primary-3xlight) !important; }
 
-.focus-bg-primary-4xlight:focus { background-color: rgb(186, 219, 254) !important; }
+.focus-bg-primary-4xlight:focus { background-color: var(--mico-color-primary-4xlight) !important; }
 
-.focus-bg-primary-5xlight:focus { background-color: rgb(221, 237, 255) !important; background-color: color(display-p3 0.87736 0.92848 0.9935) !important; }
+.focus-bg-primary-5xlight:focus { background-color: var(--mico-color-primary-5xlight) !important; }
 
 /* Shades - Darker variations */
 
-.focus-bg-primary-2xdark:focus { background-color: rgb(0, 94, 181) !important; background-color: color(display-p3 0.06248 0.36112 0.68706) !important; }
+.focus-bg-primary-2xdark:focus { background-color: var(--mico-color-primary-2xdark) !important; }
 
-.focus-bg-primary-3xdark:focus { background-color: rgb(0, 60, 129) !important; background-color: color(display-p3 0 0.21727 0.54103) !important; }
+.focus-bg-primary-3xdark:focus { background-color: var(--mico-color-primary-3xdark) !important; }
 
-.focus-bg-primary-4xdark:focus { background-color: rgb(0, 29, 78) !important; background-color: color(display-p3 0 0.10188 0.3246) !important; }
+.focus-bg-primary-4xdark:focus { background-color: var(--mico-color-primary-4xdark) !important; }
 
-.focus-bg-primary-5xdark:focus { background-color: rgb(0, 8, 44) !important; background-color: color(display-p3 0 0.02366 0.17799) !important; }
+.focus-bg-primary-5xdark:focus { background-color: var(--mico-color-primary-5xdark) !important; }
 
 /* ---------- Secondary Color Variations ---------- */
 
 /* Tints - Lighter variations */
 
-.focus-bg-secondary-2xlight:focus { background-color: rgb(128, 142, 183) !important; }
+.focus-bg-secondary-2xlight:focus { background-color: var(--mico-color-secondary-2xlight) !important; }
 
-.focus-bg-secondary-3xlight:focus { background-color: rgb(162, 173, 205) !important; }
+.focus-bg-secondary-3xlight:focus { background-color: var(--mico-color-secondary-3xlight) !important; }
 
-.focus-bg-secondary-4xlight:focus { background-color: rgb(197, 205, 227) !important; }
+.focus-bg-secondary-4xlight:focus { background-color: var(--mico-color-secondary-4xlight) !important; }
 
-.focus-bg-secondary-5xlight:focus { background-color: rgb(226, 230, 241) !important; }
+.focus-bg-secondary-5xlight:focus { background-color: var(--mico-color-secondary-5xlight) !important; }
 
 /* Shades - Darker variations */
 
-.focus-bg-secondary-2xdark:focus { background-color: rgb(53, 68, 119) !important; }
+.focus-bg-secondary-2xdark:focus { background-color: var(--mico-color-secondary-2xdark) !important; }
 
-.focus-bg-secondary-3xdark:focus { background-color: rgb(28, 40, 93) !important; }
+.focus-bg-secondary-3xdark:focus { background-color: var(--mico-color-secondary-3xdark) !important; }
 
-.focus-bg-secondary-4xdark:focus { background-color: rgb(7, 10, 68) !important; }
+.focus-bg-secondary-4xdark:focus { background-color: var(--mico-color-secondary-4xdark) !important; }
 
-.focus-bg-secondary-5xdark:focus { background-color: rgb(3, 0, 47) !important; background-color: color(display-p3 0.00631 0 0.17626) !important; }
+.focus-bg-secondary-5xdark:focus { background-color: var(--mico-color-secondary-5xdark) !important; }
 
 /* ---------- Accent Color Variations ---------- */
 
 /* Tints - Lighter variations */
 
-.focus-bg-accent-2xlight:focus { background-color: rgb(253, 162, 81) !important; }
+.focus-bg-accent-2xlight:focus { background-color: var(--mico-color-accent-2xlight) !important; }
 
-.focus-bg-accent-3xlight:focus { background-color: rgb(255, 189, 132) !important; background-color: color(display-p3 0.97138 0.75229 0.55196) !important; }
+.focus-bg-accent-3xlight:focus { background-color: var(--mico-color-accent-3xlight) !important; }
 
-.focus-bg-accent-4xlight:focus { background-color: rgb(255, 215, 178) !important; background-color: color(display-p3 0.99752 0.84938 0.71576) !important; }
+.focus-bg-accent-4xlight:focus { background-color: var(--mico-color-accent-4xlight) !important; }
 
-.focus-bg-accent-5xlight:focus { background-color: rgb(255, 235, 217) !important; background-color: color(display-p3 1 0.92547 0.85819) !important; }
+.focus-bg-accent-5xlight:focus { background-color: var(--mico-color-accent-5xlight) !important; }
 
 /* Shades - Darker variations */
 
-.focus-bg-accent-2xdark:focus { background-color: rgb(178, 89, 0) !important; background-color: color(display-p3 0.67601 0.3501 0) !important; }
+.focus-bg-accent-2xdark:focus { background-color: var(--mico-color-accent-2xdark) !important; }
 
-.focus-bg-accent-3xdark:focus { background-color: rgb(122, 56, 0) !important; background-color: color(display-p3 0.46076 0.22297 0) !important; }
+.focus-bg-accent-3xdark:focus { background-color: var(--mico-color-accent-3xdark) !important; }
 
-.focus-bg-accent-4xdark:focus { background-color: rgb(70, 27, 0) !important; background-color: color(display-p3 0.26237 0.10629 0) !important; }
+.focus-bg-accent-4xdark:focus { background-color: var(--mico-color-accent-4xdark) !important; }
 
-.focus-bg-accent-5xdark:focus { background-color: rgb(35, 7, 0) !important; background-color: color(display-p3 0.12787 0.02868 0) !important; }
+.focus-bg-accent-5xdark:focus { background-color: var(--mico-color-accent-5xdark) !important; }
 
 /* ---------- Grayscale ---------- */
 
@@ -8968,11 +8949,11 @@
  * These utilities apply text colors on focus
  */
 
-.focus-text-primary:focus { color: rgb(39, 132, 213) !important; }
+.focus-text-primary:focus { color: var(--mico-color-primary) !important; }
 
-.focus-text-secondary:focus { color: rgb(81, 97, 145) !important; }
+.focus-text-secondary:focus { color: var(--mico-color-secondary) !important; }
 
-.focus-text-accent:focus { color: rgb(236, 125, 0) !important; color: color(display-p3 0.86926 0.51255 0.09455) !important; }
+.focus-text-accent:focus { color: var(--mico-color-accent) !important; }
 
 /* ========================================================================== */
 
@@ -8988,11 +8969,11 @@
 
 /* ---------- Brand Colors ---------- */
 
-.active-bg-primary:active { background-color: rgb(39, 132, 213) !important; }
+.active-bg-primary:active { background-color: var(--mico-color-primary) !important; }
 
-.active-bg-secondary:active { background-color: rgb(81, 97, 145) !important; }
+.active-bg-secondary:active { background-color: var(--mico-color-secondary) !important; }
 
-.active-bg-accent:active { background-color: rgb(236, 125, 0) !important; background-color: color(display-p3 0.86926 0.51255 0.09455) !important; }
+.active-bg-accent:active { background-color: var(--mico-color-accent) !important; }
 
 /* ---------- Primary Color Variations ---------- */
 
@@ -9000,25 +8981,25 @@
 
 .active-bg-primary-light:active { background-color: var(--mico-color-primary-light) !important; }
 
-.active-bg-primary-2xlight:active { background-color: rgb(103, 170, 237) !important; }
+.active-bg-primary-2xlight:active { background-color: var(--mico-color-primary-2xlight) !important; }
 
-.active-bg-primary-3xlight:active { background-color: rgb(145, 195, 246) !important; }
+.active-bg-primary-3xlight:active { background-color: var(--mico-color-primary-3xlight) !important; }
 
-.active-bg-primary-4xlight:active { background-color: rgb(186, 219, 254) !important; }
+.active-bg-primary-4xlight:active { background-color: var(--mico-color-primary-4xlight) !important; }
 
-.active-bg-primary-5xlight:active { background-color: rgb(221, 237, 255) !important; background-color: color(display-p3 0.87736 0.92848 0.9935) !important; }
+.active-bg-primary-5xlight:active { background-color: var(--mico-color-primary-5xlight) !important; }
 
 /* Shades - Darker variations */
 
 .active-bg-primary-dark:active { background-color: var(--mico-color-primary-dark) !important; }
 
-.active-bg-primary-2xdark:active { background-color: rgb(0, 94, 181) !important; background-color: color(display-p3 0.06248 0.36112 0.68706) !important; }
+.active-bg-primary-2xdark:active { background-color: var(--mico-color-primary-2xdark) !important; }
 
-.active-bg-primary-3xdark:active { background-color: rgb(0, 60, 129) !important; background-color: color(display-p3 0 0.21727 0.54103) !important; }
+.active-bg-primary-3xdark:active { background-color: var(--mico-color-primary-3xdark) !important; }
 
-.active-bg-primary-4xdark:active { background-color: rgb(0, 29, 78) !important; background-color: color(display-p3 0 0.10188 0.3246) !important; }
+.active-bg-primary-4xdark:active { background-color: var(--mico-color-primary-4xdark) !important; }
 
-.active-bg-primary-5xdark:active { background-color: rgb(0, 8, 44) !important; background-color: color(display-p3 0 0.02366 0.17799) !important; }
+.active-bg-primary-5xdark:active { background-color: var(--mico-color-primary-5xdark) !important; }
 
 /* ---------- Secondary Color Variations ---------- */
 
@@ -9026,25 +9007,25 @@
 
 .active-bg-secondary-light:active { background-color: var(--mico-color-secondary-light) !important; }
 
-.active-bg-secondary-2xlight:active { background-color: rgb(128, 142, 183) !important; }
+.active-bg-secondary-2xlight:active { background-color: var(--mico-color-secondary-2xlight) !important; }
 
-.active-bg-secondary-3xlight:active { background-color: rgb(162, 173, 205) !important; }
+.active-bg-secondary-3xlight:active { background-color: var(--mico-color-secondary-3xlight) !important; }
 
-.active-bg-secondary-4xlight:active { background-color: rgb(197, 205, 227) !important; }
+.active-bg-secondary-4xlight:active { background-color: var(--mico-color-secondary-4xlight) !important; }
 
-.active-bg-secondary-5xlight:active { background-color: rgb(226, 230, 241) !important; }
+.active-bg-secondary-5xlight:active { background-color: var(--mico-color-secondary-5xlight) !important; }
 
 /* Shades - Darker variations */
 
 .active-bg-secondary-dark:active { background-color: var(--mico-color-secondary-dark) !important; }
 
-.active-bg-secondary-2xdark:active { background-color: rgb(53, 68, 119) !important; }
+.active-bg-secondary-2xdark:active { background-color: var(--mico-color-secondary-2xdark) !important; }
 
-.active-bg-secondary-3xdark:active { background-color: rgb(28, 40, 93) !important; }
+.active-bg-secondary-3xdark:active { background-color: var(--mico-color-secondary-3xdark) !important; }
 
-.active-bg-secondary-4xdark:active { background-color: rgb(7, 10, 68) !important; }
+.active-bg-secondary-4xdark:active { background-color: var(--mico-color-secondary-4xdark) !important; }
 
-.active-bg-secondary-5xdark:active { background-color: rgb(3, 0, 47) !important; background-color: color(display-p3 0.00631 0 0.17626) !important; }
+.active-bg-secondary-5xdark:active { background-color: var(--mico-color-secondary-5xdark) !important; }
 
 /* ---------- Accent Color Variations ---------- */
 
@@ -9052,25 +9033,25 @@
 
 .active-bg-accent-light:active { background-color: var(--mico-color-accent-light) !important; }
 
-.active-bg-accent-2xlight:active { background-color: rgb(253, 162, 81) !important; }
+.active-bg-accent-2xlight:active { background-color: var(--mico-color-accent-2xlight) !important; }
 
-.active-bg-accent-3xlight:active { background-color: rgb(255, 189, 132) !important; background-color: color(display-p3 0.97138 0.75229 0.55196) !important; }
+.active-bg-accent-3xlight:active { background-color: var(--mico-color-accent-3xlight) !important; }
 
-.active-bg-accent-4xlight:active { background-color: rgb(255, 215, 178) !important; background-color: color(display-p3 0.99752 0.84938 0.71576) !important; }
+.active-bg-accent-4xlight:active { background-color: var(--mico-color-accent-4xlight) !important; }
 
-.active-bg-accent-5xlight:active { background-color: rgb(255, 235, 217) !important; background-color: color(display-p3 1 0.92547 0.85819) !important; }
+.active-bg-accent-5xlight:active { background-color: var(--mico-color-accent-5xlight) !important; }
 
 /* Shades - Darker variations */
 
 .active-bg-accent-dark:active { background-color: var(--mico-color-accent-dark) !important; }
 
-.active-bg-accent-2xdark:active { background-color: rgb(178, 89, 0) !important; background-color: color(display-p3 0.67601 0.3501 0) !important; }
+.active-bg-accent-2xdark:active { background-color: var(--mico-color-accent-2xdark) !important; }
 
-.active-bg-accent-3xdark:active { background-color: rgb(122, 56, 0) !important; background-color: color(display-p3 0.46076 0.22297 0) !important; }
+.active-bg-accent-3xdark:active { background-color: var(--mico-color-accent-3xdark) !important; }
 
-.active-bg-accent-4xdark:active { background-color: rgb(70, 27, 0) !important; background-color: color(display-p3 0.26237 0.10629 0) !important; }
+.active-bg-accent-4xdark:active { background-color: var(--mico-color-accent-4xdark) !important; }
 
-.active-bg-accent-5xdark:active { background-color: rgb(35, 7, 0) !important; background-color: color(display-p3 0.12787 0.02868 0) !important; }
+.active-bg-accent-5xdark:active { background-color: var(--mico-color-accent-5xdark) !important; }
 
 /* ========================================================================== */
 
@@ -9086,11 +9067,11 @@
 
 /* Hover Border Colors */
 
-.hover-border-primary:hover { border-color: rgb(39, 132, 213) !important; }
+.hover-border-primary:hover { border-color: var(--mico-color-primary) !important; }
 
-.hover-border-secondary:hover { border-color: rgb(81, 97, 145) !important; }
+.hover-border-secondary:hover { border-color: var(--mico-color-secondary) !important; }
 
-.hover-border-accent:hover { border-color: rgb(236, 125, 0) !important; border-color: color(display-p3 0.86926 0.51255 0.09455) !important; }
+.hover-border-accent:hover { border-color: var(--mico-color-accent) !important; }
 
 .hover-border-success:hover { border-color: rgb(58, 168, 91) !important; }
 
@@ -9108,11 +9089,11 @@
 
 /* Focus Border Colors */
 
-.focus-border-primary:focus { border-color: rgb(39, 132, 213) !important; }
+.focus-border-primary:focus { border-color: var(--mico-color-primary) !important; }
 
-.focus-border-secondary:focus { border-color: rgb(81, 97, 145) !important; }
+.focus-border-secondary:focus { border-color: var(--mico-color-secondary) !important; }
 
-.focus-border-accent:focus { border-color: rgb(236, 125, 0) !important; border-color: color(display-p3 0.86926 0.51255 0.09455) !important; }
+.focus-border-accent:focus { border-color: var(--mico-color-accent) !important; }
 
 .focus-border-success:focus { border-color: rgb(58, 168, 91) !important; }
 
@@ -9124,11 +9105,11 @@
 
 /* Active Border Colors */
 
-.active-border-primary:active { border-color: rgb(0, 94, 181) !important; border-color: color(display-p3 0.06248 0.36112 0.68706) !important; }
+.active-border-primary:active { border-color: var(--mico-color-primary-2xdark) !important; }
 
-.active-border-secondary:active { border-color: rgb(53, 68, 119) !important; }
+.active-border-secondary:active { border-color: var(--mico-color-secondary-2xdark) !important; }
 
-.active-border-accent:active { border-color: rgb(178, 89, 0) !important; border-color: color(display-p3 0.67601 0.3501 0) !important; }
+.active-border-accent:active { border-color: var(--mico-color-accent-2xdark) !important; }
 
 /* ========================================================================== */
 
@@ -9144,11 +9125,11 @@
 
 /* Hover Shadows */
 
-.shadow-primary:hover { box-shadow: 0px 4.5px 4px -3.8px rgb(48, 131, 205) !important; }
+.shadow-primary:hover { box-shadow: var(--mico-shadow-hover-primary) !important; }
 
-.shadow-secondary:hover { box-shadow: 0px 4.5px 4px -3.8px rgb(85, 98, 142) !important; }
+.shadow-secondary:hover { box-shadow: var(--mico-shadow-hover-secondary) !important; }
 
-.shadow-accent:hover { box-shadow: 0px 4.5px 4px -3.8px rgb(222, 122, 0) !important; box-shadow: 0px 4.5px 4px -3.8px color(display-p3 0.8198 0.499 0.1369) !important; }
+.shadow-accent:hover { box-shadow: var(--mico-shadow-hover-accent) !important; }
 
 .hover-shadow-none:hover { box-shadow: none !important; }
 
@@ -9156,19 +9137,19 @@
 
 .hover-shadow-dark:hover { box-shadow: var(--mico-shadow-xs-dark) !important; }
 
-.hover-shadow-primary:hover { box-shadow: 0px 4.5px 4px -3.8px rgb(48, 131, 205) !important; }
+.hover-shadow-primary:hover { box-shadow: var(--mico-shadow-hover-primary) !important; }
 
-.hover-shadow-secondary:hover { box-shadow: 0px 4.5px 4px -3.8px rgb(85, 98, 142) !important; }
+.hover-shadow-secondary:hover { box-shadow: var(--mico-shadow-hover-secondary) !important; }
 
-.hover-shadow-accent:hover { box-shadow: 0px 4.5px 4px -3.8px rgb(222, 122, 0) !important; box-shadow: 0px 4.5px 4px -3.8px color(display-p3 0.8198 0.499 0.1369) !important; }
+.hover-shadow-accent:hover { box-shadow: var(--mico-shadow-hover-accent) !important; }
 
 /* Focus Shadows */
 
-.shadow-primary:focus { box-shadow: 0px 4.6px 4px -3.8px rgb(57, 131, 196) !important; }
+.shadow-primary:focus { box-shadow: var(--mico-shadow-focus-primary) !important; }
 
-.shadow-secondary:focus { box-shadow: 0px 4.6px 4px -3.8px rgb(88, 100, 139) !important; }
+.shadow-secondary:focus { box-shadow: var(--mico-shadow-focus-secondary) !important; }
 
-.shadow-accent:focus { box-shadow: 0px 4.6px 4px -3.8px rgb(209, 119, 0) !important; box-shadow: 0px 4.6px 4px -3.8px color(display-p3 0.77044 0.48557 0.15436) !important; }
+.shadow-accent:focus { box-shadow: var(--mico-shadow-focus-accent) !important; }
 
 .focus-shadow-none:focus { box-shadow: none !important; }
 
@@ -9176,19 +9157,19 @@
 
 .focus-shadow-dark:focus { box-shadow: var(--mico-shadow-sm-dark) !important; }
 
-.focus-shadow-primary:focus { box-shadow: 0px 4.6px 4px -3.8px rgb(57, 131, 196) !important; }
+.focus-shadow-primary:focus { box-shadow: var(--mico-shadow-focus-primary) !important; }
 
-.focus-shadow-secondary:focus { box-shadow: 0px 4.6px 4px -3.8px rgb(88, 100, 139) !important; }
+.focus-shadow-secondary:focus { box-shadow: var(--mico-shadow-focus-secondary) !important; }
 
-.focus-shadow-accent:focus { box-shadow: 0px 4.6px 4px -3.8px rgb(209, 119, 0) !important; box-shadow: 0px 4.6px 4px -3.8px color(display-p3 0.77044 0.48557 0.15436) !important; }
+.focus-shadow-accent:focus { box-shadow: var(--mico-shadow-focus-accent) !important; }
 
 /* Active Shadows */
 
-.shadow-primary:active { box-shadow: 0px 4.8px 4px -2.8px rgb(66, 130, 187) !important; }
+.shadow-primary:active { box-shadow: var(--mico-shadow-active-primary) !important; }
 
-.shadow-secondary:active { box-shadow: 0px 4.8px 4px -2.8px rgb(91, 102, 136) !important; }
+.shadow-secondary:active { box-shadow: var(--mico-shadow-active-secondary) !important; }
 
-.shadow-accent:active { box-shadow: 0px 4.8px 4px -2.8px rgb(195, 117, 1) !important; }
+.shadow-accent:active { box-shadow: var(--mico-shadow-active-accent) !important; }
 
 .active-shadow-none:active { box-shadow: none !important; }
 
@@ -9196,11 +9177,11 @@
 
 .active-shadow-dark:active { box-shadow: var(--mico-shadow-md-dark) !important; }
 
-.active-shadow-primary:active { box-shadow: 0px 4.8px 4px -2.8px rgb(66, 130, 187) !important; }
+.active-shadow-primary:active { box-shadow: var(--mico-shadow-active-primary) !important; }
 
-.active-shadow-secondary:active { box-shadow: 0px 4.8px 4px -2.8px rgb(91, 102, 136) !important; }
+.active-shadow-secondary:active { box-shadow: var(--mico-shadow-active-secondary) !important; }
 
-.active-shadow-accent:active { box-shadow: 0px 4.8px 4px -2.8px rgb(195, 117, 1) !important; }
+.active-shadow-accent:active { box-shadow: var(--mico-shadow-active-accent) !important; }
 
 /* ========================================================================== */
 
@@ -9626,11 +9607,11 @@
  * These utilities apply text colors on active state
  */
 
-.active-text-primary:active { color: rgb(39, 132, 213) !important; }
+.active-text-primary:active { color: var(--mico-color-primary) !important; }
 
-.active-text-secondary:active { color: rgb(81, 97, 145) !important; }
+.active-text-secondary:active { color: var(--mico-color-secondary) !important; }
 
-.active-text-accent:active { color: rgb(236, 125, 0) !important; color: color(display-p3 0.86926 0.51255 0.09455) !important; }
+.active-text-accent:active { color: var(--mico-color-accent) !important; }
 
 /* ========================================================================== */
 
@@ -10417,7 +10398,7 @@
 
 .skip-link:focus {
   top: var(--mico-size-6) !important;
-  outline: 2px solid rgb(39, 132, 213) !important;
+  outline: 2px solid var(--mico-color-primary) !important;
   outline-offset: 2px !important;
 }
 
@@ -11850,8 +11831,7 @@ margin-top: 0 !important;
   position: absolute;
   top: -40px;
   left: 0;
-  background: rgb(236, 125, 0);
-  background: color(display-p3 0.86926 0.51255 0.09455);
+  background: var(--mico-color-accent);
   color: rgb(237, 238, 242);
   padding: 8px;
   z-index: 100;
@@ -11865,15 +11845,13 @@ margin-top: 0 !important;
 /* Focus styles */
 
 :focus {
-  outline: 1px solid rgb(236, 125, 0);
-  outline: 1px solid color(display-p3 0.86926 0.51255 0.09455);
+  outline: 1px solid var(--mico-color-accent);
   outline-offset: 2px;
   transition: all .11s ease;
 }
 
 .focusable:focus {
-  outline: 1px solid rgb(236, 125, 0);
-  outline: 1px solid color(display-p3 0.86926 0.51255 0.09455);
+  outline: 1px solid var(--mico-color-accent);
   outline-offset: 2px;
   transition: all .11s ease;
 }
@@ -11988,8 +11966,7 @@ textarea:focus,
 [role="radio"]:focus,
 [role="tab"]:focus,
 [role="menuitem"]:focus {
-  outline: 1px solid rgb(236, 125, 0);
-  outline: 1px solid color(display-p3 0.86926 0.51255 0.09455);
+  outline: 1px solid var(--mico-color-accent);
   outline-offset: 2px;
   z-index: 1;
 }
@@ -12012,9 +11989,8 @@ textarea:disabled,
 }
 
 [aria-selected="true"] {
-  background-color: rgb(103, 170, 237);
-  color: rgb(0, 8, 44);
-  color: color(display-p3 0 0.02366 0.17799);
+  background-color: var(--mico-color-primary-2xlight);
+  color: var(--mico-color-primary-5xdark);
 }
 
 [aria-current="page"] {

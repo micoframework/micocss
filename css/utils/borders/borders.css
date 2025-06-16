@@ -118,6 +118,25 @@
 .border-secondary { border-color: var(--mico-color-secondary) !important; }
 .border-accent    { border-color: var(--mico-color-accent) !important; }
 
+/* Primary Color Variations */
+.border-primary-light { border-color: var(--mico-color-primary-light) !important; }
+.border-primary-2xlight { border-color: var(--mico-color-primary-2xlight) !important; }
+.border-primary-3xlight { border-color: var(--mico-color-primary-3xlight) !important; }
+.border-primary-4xlight { border-color: var(--mico-color-primary-4xlight) !important; }
+.border-primary-5xlight { border-color: var(--mico-color-primary-5xlight) !important; }
+.border-primary-6xlight { border-color: var(--mico-color-primary-6xlight) !important; }
+.border-primary-7xlight { border-color: var(--mico-color-primary-7xlight) !important; }
+.border-primary-8xlight { border-color: var(--mico-color-primary-8xlight) !important; }
+
+.border-primary-dark { border-color: var(--mico-color-primary-dark) !important; }
+.border-primary-2xdark { border-color: var(--mico-color-primary-2xdark) !important; }
+.border-primary-3xdark { border-color: var(--mico-color-primary-3xdark) !important; }
+.border-primary-4xdark { border-color: var(--mico-color-primary-4xdark) !important; }
+.border-primary-5xdark { border-color: var(--mico-color-primary-5xdark) !important; }
+.border-primary-6xdark { border-color: var(--mico-color-primary-6xdark) !important; }
+.border-primary-7xdark { border-color: var(--mico-color-primary-7xdark) !important; }
+.border-primary-8xdark { border-color: var(--mico-color-primary-8xdark) !important; }
+
 /* State Colors */
 .border-success { border-color: var(--mico-color-success) !important; }
 .border-error   { border-color: var(--mico-color-error) !important; }

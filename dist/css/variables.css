@@ -1363,7 +1363,6 @@
    * Brand Colors - Primary
    * Base color defined in styleguide.css, variations auto-generated here
    */
-  --mico-color-primary: oklch(0.6 0.15 250); /* Base primary color - customizable in styleguide.css */
 
   /* Primary Color Tints (lighter variations) */
   --mico-color-primary-2xlight: oklch(from var(--mico-color-primary) calc(l + (1 - l) * 0.3) calc(c * 0.8) h); /* Soft tint */
@@ -1381,7 +1380,6 @@
    * Brand Colors - Secondary
    * Base color defined in styleguide.css, variations auto-generated here
    */
-  --mico-color-secondary: oklch(0.5 0.08 270); /* Base secondary color - customizable in styleguide.css */
 
   /* Secondary Color Tints (lighter variations) */
   --mico-color-secondary-2xlight: oklch(from var(--mico-color-secondary) calc(l + (1 - l) * 0.3) calc(c * 0.8) h); /* Soft tint */
@@ -1399,7 +1397,6 @@
    * Brand Colors - Accent
    * Base color defined in styleguide.css, variations auto-generated here
    */
-  --mico-color-accent: oklch(0.7 0.18 60); /* Base accent color - customizable in styleguide.css */
 
   /* Accent Color Tints (lighter variations) */
   --mico-color-accent-2xlight: oklch(from var(--mico-color-accent) calc(l + (1 - l) * 0.3) calc(c * 0.8) h); /* Soft tint */
@@ -1640,7 +1637,7 @@
   --mico-color-red-5xdark: oklch(from var(--mico-color-red) calc(l * 0.35) calc(c * 1.2) h); /* Maroon red */
 
   /* Yellow Color System - Warning states, highlights */
-  --mico-color-yellow: oklch(0.75 0.13 85); /* Base yellow color - warm amber, not harsh */
+  --mico-color-yellow: oklch(96.267% 0.19961 108.728); /* Base yellow color - warm amber, not harsh */
 
   /* Yellow Tints (lighter variations) - Warm, inviting progression */
   --mico-color-yellow-2xlight: oklch(from var(--mico-color-yellow) calc(l + (1 - l) * 0.4) calc(c * 0.7) h); /* Cream yellow */
@@ -1655,7 +1652,7 @@
   --mico-color-yellow-5xdark: oklch(from var(--mico-color-yellow) calc(l * 0.4) calc(c * 1.2) calc(h - 12)); /* Dark gold */
 
   /* Green Color System - Success states, positive actions */
-  --mico-color-green: oklch(0.6 0.16 142); /* Base green color - fresh emerald, nature-inspired */
+  --mico-color-green: oklch(67.749% 0.19955 141.94); /* Base green color - fresh emerald, nature-inspired */
 
   /* Green Tints (lighter variations) - Fresh, natural progression */
   --mico-color-green-2xlight: oklch(from var(--mico-color-green) calc(l + (1 - l) * 0.4) calc(c * 0.7) h); /* Mint green */
@@ -1670,7 +1667,7 @@
   --mico-color-green-5xdark: oklch(from var(--mico-color-green) calc(l * 0.35) calc(c * 1.2) h); /* Deep forest */
 
   /* Blue Color System - Information, links, primary actions */
-  --mico-color-blue: oklch(0.58 0.18 245); /* Base blue color - trustworthy azure, professional */
+  --mico-color-blue: oklch(52% 0.20589 259.44); /* Base blue color - trustworthy azure, professional */
 
   /* Blue Tints (lighter variations) - Clean, professional progression */
   --mico-color-blue-2xlight: oklch(from var(--mico-color-blue) calc(l + (1 - l) * 0.4) calc(c * 0.7) h); /* Sky blue */
@@ -1700,7 +1697,7 @@
   --mico-color-indigo-5xdark: oklch(from var(--mico-color-indigo) calc(l * 0.35) calc(c * 1.2) h); /* Deep indigo */
 
   /* Purple Color System - Creative themes, luxury */
-  --mico-color-purple: oklch(0.56 0.19 310); /* Base purple color - rich amethyst, creative */
+  --mico-color-purple: oklch(48.171% 0.20979 307.996); /* Base purple color - rich amethyst, creative */
 
   /* Purple Tints (lighter variations) - Luxurious, creative progression */
   --mico-color-purple-2xlight: oklch(from var(--mico-color-purple) calc(l + (1 - l) * 0.4) calc(c * 0.7) h); /* Orchid */
