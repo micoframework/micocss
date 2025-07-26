@@ -20,10 +20,14 @@ module.exports = (ctx) => ({
         normalizeWhitespace: true,
         // Disable calc optimization to avoid errors
         calc: false,
-        // Merge duplicate rules
-        mergeRules: true,
+        // IMPORTANT: Disable mergeRules to prevent splitting multi-property classes
+        mergeRules: false,
         // Remove duplicate properties
-        discardDuplicates: true
+        discardDuplicates: true,
+        // Disable mergeLonghand to preserve multi-property utility classes
+        mergeLonghand: false,
+        // Disable minifySelectors to preserve exact class names
+        minifySelectors: false
       }]
     }) : false,
     require('autoprefixer')
