@@ -1,0 +1,2474 @@
+[
+  {
+    "id": "mico-dad556abfe15731b",
+    "name": "border-0",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-7fb8f44874131a99",
+    "name": "border-1",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-17630fe25d276c64",
+    "name": "border-2",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-fd674769f48e4e44",
+    "name": "border-4",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-9a5f069fb987a666",
+    "name": "border-8",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-c64ab861a846ec5f",
+    "name": "border-accent",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-2fb61480fe345cb1",
+    "name": "border-accent-2xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-6c7ef8de2640eccc",
+    "name": "border-accent-2xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-574a9a724c677c58",
+    "name": "border-accent-3xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-6004e61cc4c4228d",
+    "name": "border-accent-3xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-15a52d934de46491",
+    "name": "border-accent-4xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-7443aa316a9fba30",
+    "name": "border-accent-4xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-fe9a6e7c4af8e5c5",
+    "name": "border-accent-5xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-5fcc6ab1083eaaad",
+    "name": "border-accent-5xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-2c2040931e015e76",
+    "name": "border-accent-6xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-5ac41246f9a85445",
+    "name": "border-accent-6xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-0c3ebf4cf86398b9",
+    "name": "border-accent-7xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-df1c99bd669abef3",
+    "name": "border-accent-7xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-fb6f22a2e329cad3",
+    "name": "border-accent-8xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-3c13d903d1ef3d0e",
+    "name": "border-accent-8xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-e0e7b48dfd1acf7e",
+    "name": "border-accent-dark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-9f53f36644525e33",
+    "name": "border-accent-light",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-7f728e1f20551355",
+    "name": "border-black",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-e25db26769cb2b5e",
+    "name": "border-blue",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-0811616480b4bb4e",
+    "name": "border-current",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-8450eb0f1857a1ee",
+    "name": "border-dashed",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-705790930103b845",
+    "name": "border-dashed-0",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-e0128f7e2b096bfe",
+    "name": "border-dashed-1",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-355981e73e8fb191",
+    "name": "border-dashed-2",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-6cd7f29fc2b2b1aa",
+    "name": "border-dashed-4",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-078af490c7f8f612",
+    "name": "border-dashed-8",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-8c24a75bd6aed4a0",
+    "name": "border-dotted",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-13aa8788eb8d6261",
+    "name": "border-dotted-0",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-e08d2ed072a1a31b",
+    "name": "border-dotted-1",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-42ad9fdf96be0990",
+    "name": "border-dotted-2",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-d763dd12ab62cd8f",
+    "name": "border-dotted-4",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-1b6828c2797f466b",
+    "name": "border-dotted-8",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-f2dcdfa8ccfa57a2",
+    "name": "border-double",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-0dc1024e355301aa",
+    "name": "border-error",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-25ee8956f284d799",
+    "name": "border-gray",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-d5d15022fb24b54c",
+    "name": "border-gray-2xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-572bc595ac97728c",
+    "name": "border-gray-2xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-61746563b70a95ce",
+    "name": "border-gray-3xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-bb1c3265744a3d48",
+    "name": "border-gray-3xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-5f4d333ffce27ea2",
+    "name": "border-gray-4xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-e57a9df2f1c9e247",
+    "name": "border-gray-4xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-cf02aa693865be83",
+    "name": "border-gray-5xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-02b832f6e9ddac8c",
+    "name": "border-gray-5xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-aabf6ecd047c7637",
+    "name": "border-gray-6xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-bc7e10e0f777a9b9",
+    "name": "border-gray-6xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-49fb9ef1a4c88a23",
+    "name": "border-gray-7xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-ef142e7218bd5d86",
+    "name": "border-gray-7xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-216b1dc5759eda40",
+    "name": "border-gray-8xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-c6c68c917c7d3ef6",
+    "name": "border-gray-8xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-1b3973fd84f48cfb",
+    "name": "border-gray-dark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-9c94e0288621a8ab",
+    "name": "border-gray-light",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-ed58a8da61466937",
+    "name": "border-green",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-c51b1d016e7c1bbe",
+    "name": "border-indigo",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-d5e6bba6cf01cade",
+    "name": "border-info",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-be97b11af432ca60",
+    "name": "border-none",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-7f493242e99c623e",
+    "name": "border-pink",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-515f9fdc6db72a16",
+    "name": "border-primary",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-23c2dfe9fb26298d",
+    "name": "border-primary-2xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-1897f126f8667b8a",
+    "name": "border-primary-2xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-322b1bfb52bb8560",
+    "name": "border-primary-3xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-c487b8176e79ec4a",
+    "name": "border-primary-3xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-f80bf38208fea89f",
+    "name": "border-primary-4xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-f3c114f64babca29",
+    "name": "border-primary-4xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-c19505c723953185",
+    "name": "border-primary-5xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-49f390a29a889c8b",
+    "name": "border-primary-5xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-601eba1a9970c2dd",
+    "name": "border-primary-6xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-71f9740ee05c8f5e",
+    "name": "border-primary-6xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-7da1f858316af4f7",
+    "name": "border-primary-7xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-da06fd3ea39f2f9b",
+    "name": "border-primary-7xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-60bf5345814fcde8",
+    "name": "border-primary-8xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-baa01b46eda44414",
+    "name": "border-primary-8xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-c70719d409f8e201",
+    "name": "border-primary-dark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-53b0ec9736eeffde",
+    "name": "border-primary-light",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-3e97482bc8482098",
+    "name": "border-purple",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-33a13530ead633f9",
+    "name": "border-red",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-fe0c8ea841f03a80",
+    "name": "border-secondary",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-8b20c48806c3d9ce",
+    "name": "border-secondary-2xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-5ccda5bafe08f350",
+    "name": "border-secondary-2xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-5e673f73e781cb92",
+    "name": "border-secondary-3xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-07cb171000414b13",
+    "name": "border-secondary-3xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-e138808d04521bdc",
+    "name": "border-secondary-4xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-a8986b2ecbdb8883",
+    "name": "border-secondary-4xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-57216c6310273a67",
+    "name": "border-secondary-5xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-af537fec376f1bfd",
+    "name": "border-secondary-5xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-85b85ab12aece3a5",
+    "name": "border-secondary-6xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-1c84045415b13b5a",
+    "name": "border-secondary-6xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-0d59275e3a47d0a6",
+    "name": "border-secondary-7xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-d1f475deae2a872e",
+    "name": "border-secondary-7xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-5ca8e384854f30dd",
+    "name": "border-secondary-8xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-a2f212375533f88b",
+    "name": "border-secondary-8xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-4517a26c403dacb2",
+    "name": "border-secondary-dark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-61ccbd9d52ff6fca",
+    "name": "border-secondary-light",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-29266f7eef018d6e",
+    "name": "border-solid",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-2387bcaf5587c155",
+    "name": "border-solid-0",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-d3c99cdd4aa1dc62",
+    "name": "border-solid-1",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-501838b20062e3e1",
+    "name": "border-solid-2",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-85d6e0fb6e9c0bfc",
+    "name": "border-solid-4",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-484b47dccc103fb0",
+    "name": "border-solid-8",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-96b6022ff1d0fad1",
+    "name": "border-solid-b-0",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-237a1ed54770489e",
+    "name": "border-solid-b-1",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-8e8c77749ff3a0fa",
+    "name": "border-solid-b-2",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-04b0ee4b8f8bcaa1",
+    "name": "border-solid-b-4",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-36881eecd7cb118b",
+    "name": "border-solid-b-8",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-7a79f3a969660f37",
+    "name": "border-solid-l-0",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-07bcd4db8af9a084",
+    "name": "border-solid-l-1",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-043b7d618dc4e6fe",
+    "name": "border-solid-l-2",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-44fb12d93ff6e6b9",
+    "name": "border-solid-l-4",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-3a01a767c947d8e8",
+    "name": "border-solid-l-8",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-e2188927e2165701",
+    "name": "border-solid-r-0",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-7054487944c53487",
+    "name": "border-solid-r-1",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-a688ad6191ac6a59",
+    "name": "border-solid-r-2",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-230bffe829e69914",
+    "name": "border-solid-r-4",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-770913209a72fae1",
+    "name": "border-solid-r-8",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-7a87b79f6f918750",
+    "name": "border-solid-t-0",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-c50537640b543343",
+    "name": "border-solid-t-1",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-294007df6b24361a",
+    "name": "border-solid-t-2",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-0499213de25119a8",
+    "name": "border-solid-t-4",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-474bad6b44f9344b",
+    "name": "border-solid-t-8",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-dc8752192e21d58e",
+    "name": "border-success",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-e9c0d2f3599ed5d5",
+    "name": "border-transparent",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-0d8088f4aeb84590",
+    "name": "border-warning",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-254d1672a3511e21",
+    "name": "border-white",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-7d23c9b43448886b",
+    "name": "border-x-0",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-bf216e77b73bbd03",
+    "name": "border-x-1",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-6f4e351b6e912a4f",
+    "name": "border-x-2",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-942da0dcf1f87d3c",
+    "name": "border-x-4",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-16418fd6a897c12b",
+    "name": "border-x-8",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-12b7aa8603920b09",
+    "name": "border-y-0",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-18d7961d430c4d5e",
+    "name": "border-y-1",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-ba971dce17e4745c",
+    "name": "border-y-2",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-18d6f7c9d1c17d39",
+    "name": "border-y-4",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-452d51879aa9a6b8",
+    "name": "border-y-8",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-76817ad2e4c0b208",
+    "name": "border-yellow",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-2f6daf261e5db7da",
+    "name": "divide-accent",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-3246fc966fa689da",
+    "name": "divide-dashed",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-aec487812fcee63f",
+    "name": "divide-dotted",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-7bb17f4729454d77",
+    "name": "divide-gray",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-487bb2f630b972bc",
+    "name": "divide-gray-2xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-f32a46fc35d3493f",
+    "name": "divide-gray-2xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-4e5f3c8a92b5fec3",
+    "name": "divide-gray-3xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-5539c18c4f4ddc76",
+    "name": "divide-primary",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-ddcb07e9daf42658",
+    "name": "divide-secondary",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-556f41d91b4df4d3",
+    "name": "divide-solid",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-ab7de011b2e6354b",
+    "name": "divide-x-0",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-9efe96ef6f1ddd8b",
+    "name": "divide-x-1",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-98f427781972c3a9",
+    "name": "divide-x-2",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-f65bf08d564acfb1",
+    "name": "divide-x-4",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-43724dfdba333959",
+    "name": "divide-x-8",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-5b1d4fb8b26ff88c",
+    "name": "divide-y-0",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-1bf2c28a66c4fe46",
+    "name": "divide-y-1",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-bcd9eee3c7b52024",
+    "name": "divide-y-2",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-2f3e00f8770a1aca",
+    "name": "divide-y-4",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-7b5bf7bf183ac24a",
+    "name": "divide-y-8",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-f057c9f55d47d69a",
+    "name": "outline-0",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-0f1b7fbf9da11099",
+    "name": "outline-1",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-deaf18429ecad774",
+    "name": "outline-2",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-809f9b8ffbf9b295",
+    "name": "outline-4",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-2ac395a6e4a58627",
+    "name": "outline-8",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-67dc50390702465f",
+    "name": "outline-accent",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-ae6084f0c547c118",
+    "name": "outline-black",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-ceb5d5157b01fc3b",
+    "name": "outline-dashed",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-c9250311a18e3719",
+    "name": "outline-dotted",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-30ef5c9a93255144",
+    "name": "outline-double",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-be4f84479dcde1aa",
+    "name": "outline-error",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-9cc9390a6d6261f3",
+    "name": "outline-gray",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-10057d436f71a072",
+    "name": "outline-gray-3xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-473f4bd11fdd4819",
+    "name": "outline-gray-3xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-b4b8162b98761c49",
+    "name": "outline-info",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-b30fc56058b668b7",
+    "name": "outline-none",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-f11f97e12c7a341c",
+    "name": "outline-offset-0",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-c7e4650983b4c809",
+    "name": "outline-offset-1",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-36ea5118d1b5bb9a",
+    "name": "outline-offset-2",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-bfedba0069c3f9f6",
+    "name": "outline-offset-4",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-a966fb38d7922fe0",
+    "name": "outline-offset-8",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-df5619099be5cfe8",
+    "name": "outline-primary",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-e40aa98d7ad37e8d",
+    "name": "outline-s-0",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-62249745a8778618",
+    "name": "outline-s-1",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-6660cadaf335d6f5",
+    "name": "outline-s-2",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-eb24fe55e53398f6",
+    "name": "outline-s-4",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-eab55cbcce2843ac",
+    "name": "outline-s-8",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-251cb88b94d82e4b",
+    "name": "outline-secondary",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-9819fd323b9ee753",
+    "name": "outline-solid",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-3bf93bdabf549433",
+    "name": "outline-success",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-9038f9eb989d8872",
+    "name": "outline-warning",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-78e9cfdf6639d8ee",
+    "name": "outline-white",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-b741b095195e5ff5",
+    "name": "rounded-2xl",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-035dbac9f0e2d734",
+    "name": "rounded-3xl",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-d3ccb1a451e5cf9e",
+    "name": "rounded-b-2xl",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-c3b7b7091af8a85b",
+    "name": "rounded-b-3xl",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-a6ba9936882ef27c",
+    "name": "rounded-b-full",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-e7cf0ebfe2bdd9c3",
+    "name": "rounded-b-lg",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-5f83db000641a66e",
+    "name": "rounded-b-md",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-9b5cb9ec47f4882a",
+    "name": "rounded-b-none",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-8634fc23a686bcb1",
+    "name": "rounded-b-sm",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-6c6bfe5d8aec747b",
+    "name": "rounded-b-xl",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-b005d61d09538902",
+    "name": "rounded-full",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-5479b41386c78110",
+    "name": "rounded-l-2xl",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-5c7c6f9219926295",
+    "name": "rounded-l-3xl",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-14002896411e31ae",
+    "name": "rounded-l-full",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-f07533cfae86707d",
+    "name": "rounded-l-lg",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-10c0bae8cba94e1f",
+    "name": "rounded-l-md",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-0758eaa618f2f88a",
+    "name": "rounded-l-none",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-0af8d7f6b728c4ea",
+    "name": "rounded-l-sm",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-de6c6556660c28c0",
+    "name": "rounded-l-xl",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-49abc543ea42d080",
+    "name": "rounded-lg",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-3fa8c572949b7f98",
+    "name": "rounded-md",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-52417259a4f50fc5",
+    "name": "rounded-none",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-1bb0169160d92e96",
+    "name": "rounded-r-2xl",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-36be4717a07366a3",
+    "name": "rounded-r-3xl",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-0b2176e1e50dfa8c",
+    "name": "rounded-r-full",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-b7c7f8f82e6a37ea",
+    "name": "rounded-r-lg",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-34bbd346e74c571e",
+    "name": "rounded-r-md",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-5e8009f17d615f65",
+    "name": "rounded-r-none",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-a13cc698e6207ddc",
+    "name": "rounded-r-sm",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-f194f5b3b1b38c1e",
+    "name": "rounded-r-xl",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-02e60394404081a7",
+    "name": "rounded-sm",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-6cab9da2df149311",
+    "name": "rounded-t-2xl",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-41adbc7132c15f87",
+    "name": "rounded-t-3xl",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-6d9563ca345abc37",
+    "name": "rounded-t-full",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-2d01024c78c07498",
+    "name": "rounded-t-lg",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-c45c7a0994aa5a09",
+    "name": "rounded-t-md",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-a22ea0ba562ab884",
+    "name": "rounded-t-none",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-d95ab724af699f5d",
+    "name": "rounded-t-sm",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-4feb6fcb8854028e",
+    "name": "rounded-t-xl",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-6ad537f2bbaaf542",
+    "name": "rounded-xl",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-1326f98cf5d83966",
+    "name": "shadow-2xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-5b90a071c851b051",
+    "name": "shadow-2xl",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-bb37f674162a5ca6",
+    "name": "shadow-2xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-381e99cbf4e1ccae",
+    "name": "shadow-3xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-202bf2531678591c",
+    "name": "shadow-3xl",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-7da2d0fcf89a1384",
+    "name": "shadow-3xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-eeec34094c405c2a",
+    "name": "shadow-4xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-fd11796af0a278ac",
+    "name": "shadow-4xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-403f930433769329",
+    "name": "shadow-5xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-c1a452b5cb45aa4e",
+    "name": "shadow-5xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-a19082d16261c772",
+    "name": "shadow-6xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-2a65aa5815c7f793",
+    "name": "shadow-6xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-41ea1b7d713c56f2",
+    "name": "shadow-7xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-60b4e38a1c054429",
+    "name": "shadow-7xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-84ce659ca82f3027",
+    "name": "shadow-8xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-f013974b94b62ce6",
+    "name": "shadow-8xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-87a99f5c51c4c2cf",
+    "name": "shadow-accent",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-db351178cb52a1e2",
+    "name": "shadow-accent-2xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-72cd2234073ede6d",
+    "name": "shadow-accent-2xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-4e7f8beee42c6bf4",
+    "name": "shadow-accent-3xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-41a0674705600c24",
+    "name": "shadow-accent-3xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-e84a9031f9df0382",
+    "name": "shadow-accent-4xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-c3b422b7e7a1bb93",
+    "name": "shadow-accent-4xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-d6032bb1212b3ad5",
+    "name": "shadow-accent-5xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-46710b9ee766eba3",
+    "name": "shadow-accent-5xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-8b0299f73575ebb8",
+    "name": "shadow-accent-6xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-b4156bcb4f43bf4c",
+    "name": "shadow-accent-6xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-de7aa22f5bb5c359",
+    "name": "shadow-accent-7xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-3651e148bf3564ef",
+    "name": "shadow-accent-7xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-d462773187078c62",
+    "name": "shadow-accent-8xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-2ce5da7f78edf284",
+    "name": "shadow-accent-8xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-156f3ee3802451b3",
+    "name": "shadow-accent-dark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-37b9c9f8be14db6d",
+    "name": "shadow-accent-light",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-71ce38a37ca14535",
+    "name": "shadow-dark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-4523e99d2ffe4fd2",
+    "name": "shadow-error",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-f1d36631a4188d0e",
+    "name": "shadow-info",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-0d4ca75de41c9f54",
+    "name": "shadow-lg",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-ce7de7f34326fd72",
+    "name": "shadow-light",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-94ea94fde25fc763",
+    "name": "shadow-md",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-89c3006b27226131",
+    "name": "shadow-none",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-f3497c856f618faf",
+    "name": "shadow-primary",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-8a5bf484a7abc9aa",
+    "name": "shadow-primary-2xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-ee9fb83c0c93907a",
+    "name": "shadow-primary-2xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-3a5d40d94e8d6721",
+    "name": "shadow-primary-3xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-d10187eddd0a6695",
+    "name": "shadow-primary-3xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-f30be42a5dbacd19",
+    "name": "shadow-primary-4xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-f38fc6ac7b6c5799",
+    "name": "shadow-primary-4xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-c4229da6b746bf44",
+    "name": "shadow-primary-5xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-d9277280846ddc85",
+    "name": "shadow-primary-5xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-e9872250f979719b",
+    "name": "shadow-primary-6xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-425c220dbcb49fd0",
+    "name": "shadow-primary-6xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-51783234debbf13d",
+    "name": "shadow-primary-7xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-ad24e83650abf398",
+    "name": "shadow-primary-7xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-b0012cb59a0965a5",
+    "name": "shadow-primary-8xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-84bacb9dc7047501",
+    "name": "shadow-primary-8xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-74998fe49d7303db",
+    "name": "shadow-primary-dark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-03eace57a5c085b9",
+    "name": "shadow-primary-light",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-8fd5f62326132b46",
+    "name": "shadow-secondary",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-74617ab621d746c9",
+    "name": "shadow-secondary-2xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-28b55579ea3f1eaf",
+    "name": "shadow-secondary-2xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-0e75344008e326a6",
+    "name": "shadow-secondary-3xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-8b6803db5ecdc35b",
+    "name": "shadow-secondary-3xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-2c05c7d88c7da197",
+    "name": "shadow-secondary-4xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-9d9e0938af1f040c",
+    "name": "shadow-secondary-4xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-84e8b62c661ec3b1",
+    "name": "shadow-secondary-5xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-38b37eec6ef466d9",
+    "name": "shadow-secondary-5xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-9c8d2ca964b9d0cf",
+    "name": "shadow-secondary-6xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-75e5b439ab8ad029",
+    "name": "shadow-secondary-6xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-a79c057d5e1979ba",
+    "name": "shadow-secondary-7xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-cdb1d6f42e41234d",
+    "name": "shadow-secondary-7xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-582d320b9b3d967a",
+    "name": "shadow-secondary-8xdark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-5185128d8bc2b831",
+    "name": "shadow-secondary-8xlight",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-97c5626dbe2fc5b1",
+    "name": "shadow-secondary-dark",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-ec61e752f38f41cb",
+    "name": "shadow-secondary-light",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-70acc1d559ffd269",
+    "name": "shadow-sm",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-bf49b5131bdc0cfe",
+    "name": "shadow-success",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-493f5d32d1ff4bbe",
+    "name": "shadow-warning",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-dd3cce6282564ca9",
+    "name": "shadow-xl",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  },
+  {
+    "id": "mico-7de07d413c137b4d",
+    "name": "shadow-xs",
+    "children": [],
+    "locked": false,
+    "collection": "Borders & Shadows",
+    "type": "class"
+  }
+]

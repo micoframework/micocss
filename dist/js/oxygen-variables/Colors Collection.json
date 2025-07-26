@@ -1,0 +1,3146 @@
+[
+  {
+    "id": "mico-092a69ec01ba1338",
+    "type": "color",
+    "label": "color light tint",
+    "cssVariableName": "--mico-color-light-tint",
+    "collection": "Colors Collection",
+    "value": "--mico-color-light-tint"
+  },
+  {
+    "id": "mico-5a95c5ec615346bc",
+    "type": "color",
+    "label": "color light 2xtint",
+    "cssVariableName": "--mico-color-light-2xtint",
+    "collection": "Colors Collection",
+    "value": "--mico-color-light-2xtint"
+  },
+  {
+    "id": "mico-72920362dbcaed39",
+    "type": "color",
+    "label": "color light 3xtint",
+    "cssVariableName": "--mico-color-light-3xtint",
+    "collection": "Colors Collection",
+    "value": "--mico-color-light-3xtint"
+  },
+  {
+    "id": "mico-52d8823b8e2fef89",
+    "type": "color",
+    "label": "color light 4xtint",
+    "cssVariableName": "--mico-color-light-4xtint",
+    "collection": "Colors Collection",
+    "value": "--mico-color-light-4xtint"
+  },
+  {
+    "id": "mico-c39e4f5c6d1a5e81",
+    "type": "color",
+    "label": "color light 5xtint",
+    "cssVariableName": "--mico-color-light-5xtint",
+    "collection": "Colors Collection",
+    "value": "--mico-color-light-5xtint"
+  },
+  {
+    "id": "mico-071abb46140e97de",
+    "type": "color",
+    "label": "color light 6xtint",
+    "cssVariableName": "--mico-color-light-6xtint",
+    "collection": "Colors Collection",
+    "value": "--mico-color-light-6xtint"
+  },
+  {
+    "id": "mico-cbafbc9274af13a8",
+    "type": "color",
+    "label": "color light 7xtint",
+    "cssVariableName": "--mico-color-light-7xtint",
+    "collection": "Colors Collection",
+    "value": "--mico-color-light-7xtint"
+  },
+  {
+    "id": "mico-70028fb597782183",
+    "type": "color",
+    "label": "color light 8xtint",
+    "cssVariableName": "--mico-color-light-8xtint",
+    "collection": "Colors Collection",
+    "value": "--mico-color-light-8xtint"
+  },
+  {
+    "id": "mico-03daefd50266f09c",
+    "type": "color",
+    "label": "color chrome tint",
+    "cssVariableName": "--mico-color-chrome-tint",
+    "collection": "Colors Collection",
+    "value": "--mico-color-chrome-tint"
+  },
+  {
+    "id": "mico-be8b896b2fcd92b3",
+    "type": "color",
+    "label": "color chrome 2xtint",
+    "cssVariableName": "--mico-color-chrome-2xtint",
+    "collection": "Colors Collection",
+    "value": "--mico-color-chrome-2xtint"
+  },
+  {
+    "id": "mico-782977adf6133d7b",
+    "type": "color",
+    "label": "color chrome 3xtint",
+    "cssVariableName": "--mico-color-chrome-3xtint",
+    "collection": "Colors Collection",
+    "value": "--mico-color-chrome-3xtint"
+  },
+  {
+    "id": "mico-9db8a6280608cb6d",
+    "type": "color",
+    "label": "color chrome 4xtint",
+    "cssVariableName": "--mico-color-chrome-4xtint",
+    "collection": "Colors Collection",
+    "value": "--mico-color-chrome-4xtint"
+  },
+  {
+    "id": "mico-026c5530ee06c6e1",
+    "type": "color",
+    "label": "color chrome 5xtint",
+    "cssVariableName": "--mico-color-chrome-5xtint",
+    "collection": "Colors Collection",
+    "value": "--mico-color-chrome-5xtint"
+  },
+  {
+    "id": "mico-05c2453cdf660d29",
+    "type": "color",
+    "label": "color chrome 6xtint",
+    "cssVariableName": "--mico-color-chrome-6xtint",
+    "collection": "Colors Collection",
+    "value": "--mico-color-chrome-6xtint"
+  },
+  {
+    "id": "mico-9d04762def9f276b",
+    "type": "color",
+    "label": "color chrome 7xtint",
+    "cssVariableName": "--mico-color-chrome-7xtint",
+    "collection": "Colors Collection",
+    "value": "--mico-color-chrome-7xtint"
+  },
+  {
+    "id": "mico-49556b839946711b",
+    "type": "color",
+    "label": "color chrome 8xtint",
+    "cssVariableName": "--mico-color-chrome-8xtint",
+    "collection": "Colors Collection",
+    "value": "--mico-color-chrome-8xtint"
+  },
+  {
+    "id": "mico-8e38ae8c089487f3",
+    "type": "color",
+    "label": "color hue tint",
+    "cssVariableName": "--mico-color-hue-tint",
+    "collection": "Colors Collection",
+    "value": "--mico-color-hue-tint"
+  },
+  {
+    "id": "mico-98b41669c1217cda",
+    "type": "color",
+    "label": "color hue 2xtint",
+    "cssVariableName": "--mico-color-hue-2xtint",
+    "collection": "Colors Collection",
+    "value": "--mico-color-hue-2xtint"
+  },
+  {
+    "id": "mico-164d2672c8942383",
+    "type": "color",
+    "label": "color hue 3xtint",
+    "cssVariableName": "--mico-color-hue-3xtint",
+    "collection": "Colors Collection",
+    "value": "--mico-color-hue-3xtint"
+  },
+  {
+    "id": "mico-d305e9ae33f1d0df",
+    "type": "color",
+    "label": "color hue 4xtint",
+    "cssVariableName": "--mico-color-hue-4xtint",
+    "collection": "Colors Collection",
+    "value": "--mico-color-hue-4xtint"
+  },
+  {
+    "id": "mico-3ebfc43215166fef",
+    "type": "color",
+    "label": "color hue 5xtint",
+    "cssVariableName": "--mico-color-hue-5xtint",
+    "collection": "Colors Collection",
+    "value": "--mico-color-hue-5xtint"
+  },
+  {
+    "id": "mico-b7bd1d8826d2c1fa",
+    "type": "color",
+    "label": "color hue 6xtint",
+    "cssVariableName": "--mico-color-hue-6xtint",
+    "collection": "Colors Collection",
+    "value": "--mico-color-hue-6xtint"
+  },
+  {
+    "id": "mico-95150bb45983e0c6",
+    "type": "color",
+    "label": "color hue 7xtint",
+    "cssVariableName": "--mico-color-hue-7xtint",
+    "collection": "Colors Collection",
+    "value": "--mico-color-hue-7xtint"
+  },
+  {
+    "id": "mico-4aa497a3706bd216",
+    "type": "color",
+    "label": "color hue 8xtint",
+    "cssVariableName": "--mico-color-hue-8xtint",
+    "collection": "Colors Collection",
+    "value": "--mico-color-hue-8xtint"
+  },
+  {
+    "id": "mico-07e4d1088c21755e",
+    "type": "color",
+    "label": "color light shade",
+    "cssVariableName": "--mico-color-light-shade",
+    "collection": "Colors Collection",
+    "value": "--mico-color-light-shade"
+  },
+  {
+    "id": "mico-1049cb90264d52f8",
+    "type": "color",
+    "label": "color light 2xshade",
+    "cssVariableName": "--mico-color-light-2xshade",
+    "collection": "Colors Collection",
+    "value": "--mico-color-light-2xshade"
+  },
+  {
+    "id": "mico-4f646ff3f288e366",
+    "type": "color",
+    "label": "color light 3xshade",
+    "cssVariableName": "--mico-color-light-3xshade",
+    "collection": "Colors Collection",
+    "value": "--mico-color-light-3xshade"
+  },
+  {
+    "id": "mico-43b0a14e510c012f",
+    "type": "color",
+    "label": "color light 4xshade",
+    "cssVariableName": "--mico-color-light-4xshade",
+    "collection": "Colors Collection",
+    "value": "--mico-color-light-4xshade"
+  },
+  {
+    "id": "mico-f8f7f58efde2c308",
+    "type": "color",
+    "label": "color light 5xshade",
+    "cssVariableName": "--mico-color-light-5xshade",
+    "collection": "Colors Collection",
+    "value": "--mico-color-light-5xshade"
+  },
+  {
+    "id": "mico-c1a94ee1a4d4fd54",
+    "type": "color",
+    "label": "color light 6xshade",
+    "cssVariableName": "--mico-color-light-6xshade",
+    "collection": "Colors Collection",
+    "value": "--mico-color-light-6xshade"
+  },
+  {
+    "id": "mico-000379d2e98ea0d5",
+    "type": "color",
+    "label": "color light 7xshade",
+    "cssVariableName": "--mico-color-light-7xshade",
+    "collection": "Colors Collection",
+    "value": "--mico-color-light-7xshade"
+  },
+  {
+    "id": "mico-d470a7b0fab97f50",
+    "type": "color",
+    "label": "color light 8xshade",
+    "cssVariableName": "--mico-color-light-8xshade",
+    "collection": "Colors Collection",
+    "value": "--mico-color-light-8xshade"
+  },
+  {
+    "id": "mico-f3d41ec1e97bca27",
+    "type": "color",
+    "label": "color chrome shade",
+    "cssVariableName": "--mico-color-chrome-shade",
+    "collection": "Colors Collection",
+    "value": "--mico-color-chrome-shade"
+  },
+  {
+    "id": "mico-3902303ce5e9f03f",
+    "type": "color",
+    "label": "color chrome 2xshade",
+    "cssVariableName": "--mico-color-chrome-2xshade",
+    "collection": "Colors Collection",
+    "value": "--mico-color-chrome-2xshade"
+  },
+  {
+    "id": "mico-3621c768db51aba5",
+    "type": "color",
+    "label": "color chrome 3xshade",
+    "cssVariableName": "--mico-color-chrome-3xshade",
+    "collection": "Colors Collection",
+    "value": "--mico-color-chrome-3xshade"
+  },
+  {
+    "id": "mico-fc9ba00d98f3db13",
+    "type": "color",
+    "label": "color chrome 4xshade",
+    "cssVariableName": "--mico-color-chrome-4xshade",
+    "collection": "Colors Collection",
+    "value": "--mico-color-chrome-4xshade"
+  },
+  {
+    "id": "mico-12864ae526f6880f",
+    "type": "color",
+    "label": "color chrome 5xshade",
+    "cssVariableName": "--mico-color-chrome-5xshade",
+    "collection": "Colors Collection",
+    "value": "--mico-color-chrome-5xshade"
+  },
+  {
+    "id": "mico-fff640f2f9de46be",
+    "type": "color",
+    "label": "color chrome 6xshade",
+    "cssVariableName": "--mico-color-chrome-6xshade",
+    "collection": "Colors Collection",
+    "value": "--mico-color-chrome-6xshade"
+  },
+  {
+    "id": "mico-587098d19c84b8ae",
+    "type": "color",
+    "label": "color chrome 7xshade",
+    "cssVariableName": "--mico-color-chrome-7xshade",
+    "collection": "Colors Collection",
+    "value": "--mico-color-chrome-7xshade"
+  },
+  {
+    "id": "mico-e8602d19c896d588",
+    "type": "color",
+    "label": "color chrome 8xshade",
+    "cssVariableName": "--mico-color-chrome-8xshade",
+    "collection": "Colors Collection",
+    "value": "--mico-color-chrome-8xshade"
+  },
+  {
+    "id": "mico-c8ee9cc246687ad2",
+    "type": "color",
+    "label": "color hue shade",
+    "cssVariableName": "--mico-color-hue-shade",
+    "collection": "Colors Collection",
+    "value": "--mico-color-hue-shade"
+  },
+  {
+    "id": "mico-6049b95d5c69f7c0",
+    "type": "color",
+    "label": "color hue 2xshade",
+    "cssVariableName": "--mico-color-hue-2xshade",
+    "collection": "Colors Collection",
+    "value": "--mico-color-hue-2xshade"
+  },
+  {
+    "id": "mico-b795a46ca7f16d8f",
+    "type": "color",
+    "label": "color hue 3xshade",
+    "cssVariableName": "--mico-color-hue-3xshade",
+    "collection": "Colors Collection",
+    "value": "--mico-color-hue-3xshade"
+  },
+  {
+    "id": "mico-198508f64b845cda",
+    "type": "color",
+    "label": "color hue 4xshade",
+    "cssVariableName": "--mico-color-hue-4xshade",
+    "collection": "Colors Collection",
+    "value": "--mico-color-hue-4xshade"
+  },
+  {
+    "id": "mico-2d54f1b4744d98fd",
+    "type": "color",
+    "label": "color hue 5xshade",
+    "cssVariableName": "--mico-color-hue-5xshade",
+    "collection": "Colors Collection",
+    "value": "--mico-color-hue-5xshade"
+  },
+  {
+    "id": "mico-f742ca10e60d6a3a",
+    "type": "color",
+    "label": "color hue 6xshade",
+    "cssVariableName": "--mico-color-hue-6xshade",
+    "collection": "Colors Collection",
+    "value": "--mico-color-hue-6xshade"
+  },
+  {
+    "id": "mico-31a0684b0ed213e3",
+    "type": "color",
+    "label": "color hue 7xshade",
+    "cssVariableName": "--mico-color-hue-7xshade",
+    "collection": "Colors Collection",
+    "value": "--mico-color-hue-7xshade"
+  },
+  {
+    "id": "mico-cd79f28a9a18a1c5",
+    "type": "color",
+    "label": "color hue 8xshade",
+    "cssVariableName": "--mico-color-hue-8xshade",
+    "collection": "Colors Collection",
+    "value": "--mico-color-hue-8xshade"
+  },
+  {
+    "id": "mico-b0acec4c7d4b106e",
+    "type": "color",
+    "label": "color primary light",
+    "cssVariableName": "--mico-color-primary-light",
+    "collection": "Colors Collection",
+    "value": "--mico-color-primary-light"
+  },
+  {
+    "id": "mico-2f328ded947fef63",
+    "type": "color",
+    "label": "color primary 2xlight",
+    "cssVariableName": "--mico-color-primary-2xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-primary-2xlight"
+  },
+  {
+    "id": "mico-72c2d0ca8bc14f45",
+    "type": "color",
+    "label": "color primary 3xlight",
+    "cssVariableName": "--mico-color-primary-3xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-primary-3xlight"
+  },
+  {
+    "id": "mico-1a3c30af0c283209",
+    "type": "color",
+    "label": "color primary 4xlight",
+    "cssVariableName": "--mico-color-primary-4xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-primary-4xlight"
+  },
+  {
+    "id": "mico-bcdadbe26afefe8c",
+    "type": "color",
+    "label": "color primary 5xlight",
+    "cssVariableName": "--mico-color-primary-5xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-primary-5xlight"
+  },
+  {
+    "id": "mico-cdd02deb3fc9a42a",
+    "type": "color",
+    "label": "color primary 6xlight",
+    "cssVariableName": "--mico-color-primary-6xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-primary-6xlight"
+  },
+  {
+    "id": "mico-515bc5e842e758d7",
+    "type": "color",
+    "label": "color primary 7xlight",
+    "cssVariableName": "--mico-color-primary-7xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-primary-7xlight"
+  },
+  {
+    "id": "mico-a90a03a2cbd85ab7",
+    "type": "color",
+    "label": "color primary 8xlight",
+    "cssVariableName": "--mico-color-primary-8xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-primary-8xlight"
+  },
+  {
+    "id": "mico-aad3e17fc9611125",
+    "type": "color",
+    "label": "color primary dark",
+    "cssVariableName": "--mico-color-primary-dark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-primary-dark"
+  },
+  {
+    "id": "mico-12bea346a5e6df42",
+    "type": "color",
+    "label": "color primary 2xdark",
+    "cssVariableName": "--mico-color-primary-2xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-primary-2xdark"
+  },
+  {
+    "id": "mico-ca1d5fa41d43122e",
+    "type": "color",
+    "label": "color primary 3xdark",
+    "cssVariableName": "--mico-color-primary-3xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-primary-3xdark"
+  },
+  {
+    "id": "mico-e09ab5020c05ca9b",
+    "type": "color",
+    "label": "color primary 4xdark",
+    "cssVariableName": "--mico-color-primary-4xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-primary-4xdark"
+  },
+  {
+    "id": "mico-9749b3d293162a4b",
+    "type": "color",
+    "label": "color primary 5xdark",
+    "cssVariableName": "--mico-color-primary-5xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-primary-5xdark"
+  },
+  {
+    "id": "mico-a634590ca3a74bda",
+    "type": "color",
+    "label": "color primary 6xdark",
+    "cssVariableName": "--mico-color-primary-6xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-primary-6xdark"
+  },
+  {
+    "id": "mico-9d25a808caca7d42",
+    "type": "color",
+    "label": "color primary 7xdark",
+    "cssVariableName": "--mico-color-primary-7xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-primary-7xdark"
+  },
+  {
+    "id": "mico-9c3ef7793e736407",
+    "type": "color",
+    "label": "color primary 8xdark",
+    "cssVariableName": "--mico-color-primary-8xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-primary-8xdark"
+  },
+  {
+    "id": "mico-458514141fb8d614",
+    "type": "color",
+    "label": "color secondary light",
+    "cssVariableName": "--mico-color-secondary-light",
+    "collection": "Colors Collection",
+    "value": "--mico-color-secondary-light"
+  },
+  {
+    "id": "mico-b1c8bd4118ed87fd",
+    "type": "color",
+    "label": "color secondary 2xlight",
+    "cssVariableName": "--mico-color-secondary-2xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-secondary-2xlight"
+  },
+  {
+    "id": "mico-05893ef9a53b7d36",
+    "type": "color",
+    "label": "color secondary 3xlight",
+    "cssVariableName": "--mico-color-secondary-3xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-secondary-3xlight"
+  },
+  {
+    "id": "mico-5d56ee7beca28f0a",
+    "type": "color",
+    "label": "color secondary 4xlight",
+    "cssVariableName": "--mico-color-secondary-4xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-secondary-4xlight"
+  },
+  {
+    "id": "mico-e3f7a194a5aea58a",
+    "type": "color",
+    "label": "color secondary 5xlight",
+    "cssVariableName": "--mico-color-secondary-5xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-secondary-5xlight"
+  },
+  {
+    "id": "mico-54a9e671ff741c4a",
+    "type": "color",
+    "label": "color secondary 6xlight",
+    "cssVariableName": "--mico-color-secondary-6xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-secondary-6xlight"
+  },
+  {
+    "id": "mico-59ebf7287a05ad67",
+    "type": "color",
+    "label": "color secondary 7xlight",
+    "cssVariableName": "--mico-color-secondary-7xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-secondary-7xlight"
+  },
+  {
+    "id": "mico-1bb39d31865d908f",
+    "type": "color",
+    "label": "color secondary 8xlight",
+    "cssVariableName": "--mico-color-secondary-8xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-secondary-8xlight"
+  },
+  {
+    "id": "mico-d9710f4af3bf34dc",
+    "type": "color",
+    "label": "color secondary dark",
+    "cssVariableName": "--mico-color-secondary-dark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-secondary-dark"
+  },
+  {
+    "id": "mico-f5f44132c5a486b5",
+    "type": "color",
+    "label": "color secondary 2xdark",
+    "cssVariableName": "--mico-color-secondary-2xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-secondary-2xdark"
+  },
+  {
+    "id": "mico-75aa91ef9029671a",
+    "type": "color",
+    "label": "color secondary 3xdark",
+    "cssVariableName": "--mico-color-secondary-3xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-secondary-3xdark"
+  },
+  {
+    "id": "mico-cddec4a1f36cc069",
+    "type": "color",
+    "label": "color secondary 4xdark",
+    "cssVariableName": "--mico-color-secondary-4xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-secondary-4xdark"
+  },
+  {
+    "id": "mico-bb3ebeac697357d1",
+    "type": "color",
+    "label": "color secondary 5xdark",
+    "cssVariableName": "--mico-color-secondary-5xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-secondary-5xdark"
+  },
+  {
+    "id": "mico-45a8f899d7c017cb",
+    "type": "color",
+    "label": "color secondary 6xdark",
+    "cssVariableName": "--mico-color-secondary-6xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-secondary-6xdark"
+  },
+  {
+    "id": "mico-124501d8b486c5c8",
+    "type": "color",
+    "label": "color secondary 7xdark",
+    "cssVariableName": "--mico-color-secondary-7xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-secondary-7xdark"
+  },
+  {
+    "id": "mico-4f6ba85f7a1628a7",
+    "type": "color",
+    "label": "color secondary 8xdark",
+    "cssVariableName": "--mico-color-secondary-8xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-secondary-8xdark"
+  },
+  {
+    "id": "mico-8d7c6eb2e1b5ea15",
+    "type": "color",
+    "label": "color accent light",
+    "cssVariableName": "--mico-color-accent-light",
+    "collection": "Colors Collection",
+    "value": "--mico-color-accent-light"
+  },
+  {
+    "id": "mico-98be4df438176106",
+    "type": "color",
+    "label": "color accent 2xlight",
+    "cssVariableName": "--mico-color-accent-2xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-accent-2xlight"
+  },
+  {
+    "id": "mico-663be1d0f866eab0",
+    "type": "color",
+    "label": "color accent 3xlight",
+    "cssVariableName": "--mico-color-accent-3xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-accent-3xlight"
+  },
+  {
+    "id": "mico-35d92b105621a8d9",
+    "type": "color",
+    "label": "color accent 4xlight",
+    "cssVariableName": "--mico-color-accent-4xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-accent-4xlight"
+  },
+  {
+    "id": "mico-56039d15cfa9ef64",
+    "type": "color",
+    "label": "color accent 5xlight",
+    "cssVariableName": "--mico-color-accent-5xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-accent-5xlight"
+  },
+  {
+    "id": "mico-385a79ec63f1f0c9",
+    "type": "color",
+    "label": "color accent 6xlight",
+    "cssVariableName": "--mico-color-accent-6xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-accent-6xlight"
+  },
+  {
+    "id": "mico-cd8fc473cc767fd6",
+    "type": "color",
+    "label": "color accent 7xlight",
+    "cssVariableName": "--mico-color-accent-7xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-accent-7xlight"
+  },
+  {
+    "id": "mico-fb3a2b8c745bb3a4",
+    "type": "color",
+    "label": "color accent 8xlight",
+    "cssVariableName": "--mico-color-accent-8xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-accent-8xlight"
+  },
+  {
+    "id": "mico-9c4cddf2ad45479f",
+    "type": "color",
+    "label": "color accent dark",
+    "cssVariableName": "--mico-color-accent-dark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-accent-dark"
+  },
+  {
+    "id": "mico-dc64c2ed89d69f98",
+    "type": "color",
+    "label": "color accent 2xdark",
+    "cssVariableName": "--mico-color-accent-2xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-accent-2xdark"
+  },
+  {
+    "id": "mico-539a938dfa8d3442",
+    "type": "color",
+    "label": "color accent 3xdark",
+    "cssVariableName": "--mico-color-accent-3xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-accent-3xdark"
+  },
+  {
+    "id": "mico-b0a6f3dfb46d4bc6",
+    "type": "color",
+    "label": "color accent 4xdark",
+    "cssVariableName": "--mico-color-accent-4xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-accent-4xdark"
+  },
+  {
+    "id": "mico-ef01499872db4145",
+    "type": "color",
+    "label": "color accent 5xdark",
+    "cssVariableName": "--mico-color-accent-5xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-accent-5xdark"
+  },
+  {
+    "id": "mico-5599820fe228ffb5",
+    "type": "color",
+    "label": "color accent 6xdark",
+    "cssVariableName": "--mico-color-accent-6xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-accent-6xdark"
+  },
+  {
+    "id": "mico-e75dc295aecf96aa",
+    "type": "color",
+    "label": "color accent 7xdark",
+    "cssVariableName": "--mico-color-accent-7xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-accent-7xdark"
+  },
+  {
+    "id": "mico-5fb3fdcc2b20e8e9",
+    "type": "color",
+    "label": "color accent 8xdark",
+    "cssVariableName": "--mico-color-accent-8xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-accent-8xdark"
+  },
+  {
+    "id": "mico-bb14a205462c3d47",
+    "type": "color",
+    "label": "color success",
+    "cssVariableName": "--mico-color-success",
+    "collection": "Colors Collection",
+    "value": "--mico-color-success"
+  },
+  {
+    "id": "mico-3b4bd835ca616d34",
+    "type": "color",
+    "label": "color success light",
+    "cssVariableName": "--mico-color-success-light",
+    "collection": "Colors Collection",
+    "value": "--mico-color-success-light"
+  },
+  {
+    "id": "mico-69ad0286468eb4c1",
+    "type": "color",
+    "label": "color success 2xlight",
+    "cssVariableName": "--mico-color-success-2xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-success-2xlight"
+  },
+  {
+    "id": "mico-add3b7eb86f19bf1",
+    "type": "color",
+    "label": "color success 3xlight",
+    "cssVariableName": "--mico-color-success-3xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-success-3xlight"
+  },
+  {
+    "id": "mico-e8e55f40733bf2c7",
+    "type": "color",
+    "label": "color success 4xlight",
+    "cssVariableName": "--mico-color-success-4xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-success-4xlight"
+  },
+  {
+    "id": "mico-57622313e8bf4d88",
+    "type": "color",
+    "label": "color success 5xlight",
+    "cssVariableName": "--mico-color-success-5xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-success-5xlight"
+  },
+  {
+    "id": "mico-0040b2de2d7f9d07",
+    "type": "color",
+    "label": "color success 6xlight",
+    "cssVariableName": "--mico-color-success-6xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-success-6xlight"
+  },
+  {
+    "id": "mico-ee5dd047058684aa",
+    "type": "color",
+    "label": "color success 7xlight",
+    "cssVariableName": "--mico-color-success-7xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-success-7xlight"
+  },
+  {
+    "id": "mico-e3eb6ac4d95e288e",
+    "type": "color",
+    "label": "color success 8xlight",
+    "cssVariableName": "--mico-color-success-8xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-success-8xlight"
+  },
+  {
+    "id": "mico-6714695d627d8e29",
+    "type": "color",
+    "label": "color success dark",
+    "cssVariableName": "--mico-color-success-dark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-success-dark"
+  },
+  {
+    "id": "mico-81f21e06d4d57f94",
+    "type": "color",
+    "label": "color success 2xdark",
+    "cssVariableName": "--mico-color-success-2xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-success-2xdark"
+  },
+  {
+    "id": "mico-142038a68042ff68",
+    "type": "color",
+    "label": "color success 3xdark",
+    "cssVariableName": "--mico-color-success-3xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-success-3xdark"
+  },
+  {
+    "id": "mico-11beee04d15e5cec",
+    "type": "color",
+    "label": "color success 4xdark",
+    "cssVariableName": "--mico-color-success-4xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-success-4xdark"
+  },
+  {
+    "id": "mico-1aa3922fdfc19f1c",
+    "type": "color",
+    "label": "color success 5xdark",
+    "cssVariableName": "--mico-color-success-5xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-success-5xdark"
+  },
+  {
+    "id": "mico-59fd060084066fd8",
+    "type": "color",
+    "label": "color success 6xdark",
+    "cssVariableName": "--mico-color-success-6xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-success-6xdark"
+  },
+  {
+    "id": "mico-074b4c4b3544c906",
+    "type": "color",
+    "label": "color success 7xdark",
+    "cssVariableName": "--mico-color-success-7xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-success-7xdark"
+  },
+  {
+    "id": "mico-452d2a5cd58d2df3",
+    "type": "color",
+    "label": "color success 8xdark",
+    "cssVariableName": "--mico-color-success-8xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-success-8xdark"
+  },
+  {
+    "id": "mico-5d330618371bf3ef",
+    "type": "color",
+    "label": "color warning",
+    "cssVariableName": "--mico-color-warning",
+    "collection": "Colors Collection",
+    "value": "--mico-color-warning"
+  },
+  {
+    "id": "mico-737913dedb8a5560",
+    "type": "color",
+    "label": "color warning light",
+    "cssVariableName": "--mico-color-warning-light",
+    "collection": "Colors Collection",
+    "value": "--mico-color-warning-light"
+  },
+  {
+    "id": "mico-4a976367171bd27f",
+    "type": "color",
+    "label": "color warning 2xlight",
+    "cssVariableName": "--mico-color-warning-2xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-warning-2xlight"
+  },
+  {
+    "id": "mico-6dd9062779151cb4",
+    "type": "color",
+    "label": "color warning 3xlight",
+    "cssVariableName": "--mico-color-warning-3xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-warning-3xlight"
+  },
+  {
+    "id": "mico-de0d3c7f4b117b49",
+    "type": "color",
+    "label": "color warning 4xlight",
+    "cssVariableName": "--mico-color-warning-4xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-warning-4xlight"
+  },
+  {
+    "id": "mico-f245d6a9de2d79f8",
+    "type": "color",
+    "label": "color warning 5xlight",
+    "cssVariableName": "--mico-color-warning-5xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-warning-5xlight"
+  },
+  {
+    "id": "mico-7a940b432dfacdc4",
+    "type": "color",
+    "label": "color warning 6xlight",
+    "cssVariableName": "--mico-color-warning-6xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-warning-6xlight"
+  },
+  {
+    "id": "mico-d703678c91efc1ab",
+    "type": "color",
+    "label": "color warning 7xlight",
+    "cssVariableName": "--mico-color-warning-7xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-warning-7xlight"
+  },
+  {
+    "id": "mico-7e500e670a8df243",
+    "type": "color",
+    "label": "color warning 8xlight",
+    "cssVariableName": "--mico-color-warning-8xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-warning-8xlight"
+  },
+  {
+    "id": "mico-01b9261f90c4d200",
+    "type": "color",
+    "label": "color warning dark",
+    "cssVariableName": "--mico-color-warning-dark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-warning-dark"
+  },
+  {
+    "id": "mico-e84060fd81e4ec7c",
+    "type": "color",
+    "label": "color warning 2xdark",
+    "cssVariableName": "--mico-color-warning-2xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-warning-2xdark"
+  },
+  {
+    "id": "mico-bc74ea4eae6651ce",
+    "type": "color",
+    "label": "color warning 3xdark",
+    "cssVariableName": "--mico-color-warning-3xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-warning-3xdark"
+  },
+  {
+    "id": "mico-412338ef67a22a16",
+    "type": "color",
+    "label": "color warning 4xdark",
+    "cssVariableName": "--mico-color-warning-4xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-warning-4xdark"
+  },
+  {
+    "id": "mico-bc829d8ab91e0cba",
+    "type": "color",
+    "label": "color warning 5xdark",
+    "cssVariableName": "--mico-color-warning-5xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-warning-5xdark"
+  },
+  {
+    "id": "mico-865532f306f7fddc",
+    "type": "color",
+    "label": "color warning 6xdark",
+    "cssVariableName": "--mico-color-warning-6xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-warning-6xdark"
+  },
+  {
+    "id": "mico-84f985f51c47a31c",
+    "type": "color",
+    "label": "color warning 7xdark",
+    "cssVariableName": "--mico-color-warning-7xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-warning-7xdark"
+  },
+  {
+    "id": "mico-010c6d8dc3ffcdfd",
+    "type": "color",
+    "label": "color warning 8xdark",
+    "cssVariableName": "--mico-color-warning-8xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-warning-8xdark"
+  },
+  {
+    "id": "mico-6f7cbc7b790c9d91",
+    "type": "color",
+    "label": "color error",
+    "cssVariableName": "--mico-color-error",
+    "collection": "Colors Collection",
+    "value": "--mico-color-error"
+  },
+  {
+    "id": "mico-abb43ece2a5c27e1",
+    "type": "color",
+    "label": "color error light",
+    "cssVariableName": "--mico-color-error-light",
+    "collection": "Colors Collection",
+    "value": "--mico-color-error-light"
+  },
+  {
+    "id": "mico-e9026890fc40053e",
+    "type": "color",
+    "label": "color error 2xlight",
+    "cssVariableName": "--mico-color-error-2xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-error-2xlight"
+  },
+  {
+    "id": "mico-0940027e6c09fd18",
+    "type": "color",
+    "label": "color error 3xlight",
+    "cssVariableName": "--mico-color-error-3xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-error-3xlight"
+  },
+  {
+    "id": "mico-ea70f5fb070a0e70",
+    "type": "color",
+    "label": "color error 4xlight",
+    "cssVariableName": "--mico-color-error-4xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-error-4xlight"
+  },
+  {
+    "id": "mico-e0f8960696b295be",
+    "type": "color",
+    "label": "color error 5xlight",
+    "cssVariableName": "--mico-color-error-5xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-error-5xlight"
+  },
+  {
+    "id": "mico-d971cdb63952eb39",
+    "type": "color",
+    "label": "color error 6xlight",
+    "cssVariableName": "--mico-color-error-6xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-error-6xlight"
+  },
+  {
+    "id": "mico-0de8e9a16863a10a",
+    "type": "color",
+    "label": "color error 7xlight",
+    "cssVariableName": "--mico-color-error-7xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-error-7xlight"
+  },
+  {
+    "id": "mico-28394ea7d138cd1f",
+    "type": "color",
+    "label": "color error 8xlight",
+    "cssVariableName": "--mico-color-error-8xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-error-8xlight"
+  },
+  {
+    "id": "mico-3e4deda6f2a32c6d",
+    "type": "color",
+    "label": "color error dark",
+    "cssVariableName": "--mico-color-error-dark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-error-dark"
+  },
+  {
+    "id": "mico-fd8d58eb02ec9569",
+    "type": "color",
+    "label": "color error 2xdark",
+    "cssVariableName": "--mico-color-error-2xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-error-2xdark"
+  },
+  {
+    "id": "mico-8fa8b0452a18f728",
+    "type": "color",
+    "label": "color error 3xdark",
+    "cssVariableName": "--mico-color-error-3xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-error-3xdark"
+  },
+  {
+    "id": "mico-f3ae938e37526b38",
+    "type": "color",
+    "label": "color error 4xdark",
+    "cssVariableName": "--mico-color-error-4xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-error-4xdark"
+  },
+  {
+    "id": "mico-83361cca55143fe0",
+    "type": "color",
+    "label": "color error 5xdark",
+    "cssVariableName": "--mico-color-error-5xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-error-5xdark"
+  },
+  {
+    "id": "mico-c1aeca947bbc6772",
+    "type": "color",
+    "label": "color error 6xdark",
+    "cssVariableName": "--mico-color-error-6xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-error-6xdark"
+  },
+  {
+    "id": "mico-fb7265d271a8c0a5",
+    "type": "color",
+    "label": "color error 7xdark",
+    "cssVariableName": "--mico-color-error-7xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-error-7xdark"
+  },
+  {
+    "id": "mico-17bb2ff6dbd1589c",
+    "type": "color",
+    "label": "color error 8xdark",
+    "cssVariableName": "--mico-color-error-8xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-error-8xdark"
+  },
+  {
+    "id": "mico-bbdda53714a21045",
+    "type": "color",
+    "label": "color info",
+    "cssVariableName": "--mico-color-info",
+    "collection": "Colors Collection",
+    "value": "--mico-color-info"
+  },
+  {
+    "id": "mico-7970c31fd36f237f",
+    "type": "color",
+    "label": "color info light",
+    "cssVariableName": "--mico-color-info-light",
+    "collection": "Colors Collection",
+    "value": "--mico-color-info-light"
+  },
+  {
+    "id": "mico-2863df30d1c09381",
+    "type": "color",
+    "label": "color info 2xlight",
+    "cssVariableName": "--mico-color-info-2xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-info-2xlight"
+  },
+  {
+    "id": "mico-017cbcb2853a8b42",
+    "type": "color",
+    "label": "color info 3xlight",
+    "cssVariableName": "--mico-color-info-3xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-info-3xlight"
+  },
+  {
+    "id": "mico-9bd44fc6bdb1dfb2",
+    "type": "color",
+    "label": "color info 4xlight",
+    "cssVariableName": "--mico-color-info-4xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-info-4xlight"
+  },
+  {
+    "id": "mico-750b13d19e0d38b2",
+    "type": "color",
+    "label": "color info 5xlight",
+    "cssVariableName": "--mico-color-info-5xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-info-5xlight"
+  },
+  {
+    "id": "mico-5971872d7cac1ca7",
+    "type": "color",
+    "label": "color info 6xlight",
+    "cssVariableName": "--mico-color-info-6xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-info-6xlight"
+  },
+  {
+    "id": "mico-ee09bf7f96827ed9",
+    "type": "color",
+    "label": "color info 7xlight",
+    "cssVariableName": "--mico-color-info-7xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-info-7xlight"
+  },
+  {
+    "id": "mico-06c7ae98dfba7c8e",
+    "type": "color",
+    "label": "color info 8xlight",
+    "cssVariableName": "--mico-color-info-8xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-info-8xlight"
+  },
+  {
+    "id": "mico-cb76fb2e977890ff",
+    "type": "color",
+    "label": "color info dark",
+    "cssVariableName": "--mico-color-info-dark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-info-dark"
+  },
+  {
+    "id": "mico-5096e9ffb783125b",
+    "type": "color",
+    "label": "color info 2xdark",
+    "cssVariableName": "--mico-color-info-2xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-info-2xdark"
+  },
+  {
+    "id": "mico-ccd5a246c806a385",
+    "type": "color",
+    "label": "color info 3xdark",
+    "cssVariableName": "--mico-color-info-3xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-info-3xdark"
+  },
+  {
+    "id": "mico-7a23e0c942225ca7",
+    "type": "color",
+    "label": "color info 4xdark",
+    "cssVariableName": "--mico-color-info-4xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-info-4xdark"
+  },
+  {
+    "id": "mico-a4bd8a252f45c96a",
+    "type": "color",
+    "label": "color info 5xdark",
+    "cssVariableName": "--mico-color-info-5xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-info-5xdark"
+  },
+  {
+    "id": "mico-f6cac1790682e66b",
+    "type": "color",
+    "label": "color info 6xdark",
+    "cssVariableName": "--mico-color-info-6xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-info-6xdark"
+  },
+  {
+    "id": "mico-eaf492aa8c93cd2a",
+    "type": "color",
+    "label": "color info 7xdark",
+    "cssVariableName": "--mico-color-info-7xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-info-7xdark"
+  },
+  {
+    "id": "mico-99a98526e3cf40e2",
+    "type": "color",
+    "label": "color info 8xdark",
+    "cssVariableName": "--mico-color-info-8xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-info-8xdark"
+  },
+  {
+    "id": "mico-bb38dd1253ae882c",
+    "type": "color",
+    "label": "color visited",
+    "cssVariableName": "--mico-color-visited",
+    "collection": "Colors Collection",
+    "value": "--mico-color-visited"
+  },
+  {
+    "id": "mico-45280cd688dde6e0",
+    "type": "color",
+    "label": "color visited light",
+    "cssVariableName": "--mico-color-visited-light",
+    "collection": "Colors Collection",
+    "value": "--mico-color-visited-light"
+  },
+  {
+    "id": "mico-8fcda2b32a8864cf",
+    "type": "color",
+    "label": "color visited 2xlight",
+    "cssVariableName": "--mico-color-visited-2xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-visited-2xlight"
+  },
+  {
+    "id": "mico-bdc33f2d23bcd4c7",
+    "type": "color",
+    "label": "color visited 3xlight",
+    "cssVariableName": "--mico-color-visited-3xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-visited-3xlight"
+  },
+  {
+    "id": "mico-8d067888e4ccbc8d",
+    "type": "color",
+    "label": "color visited 4xlight",
+    "cssVariableName": "--mico-color-visited-4xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-visited-4xlight"
+  },
+  {
+    "id": "mico-a929cd8a78185897",
+    "type": "color",
+    "label": "color visited 5xlight",
+    "cssVariableName": "--mico-color-visited-5xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-visited-5xlight"
+  },
+  {
+    "id": "mico-768a9d8f52837fb5",
+    "type": "color",
+    "label": "color visited 6xlight",
+    "cssVariableName": "--mico-color-visited-6xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-visited-6xlight"
+  },
+  {
+    "id": "mico-3e74fa5dbebbd8ad",
+    "type": "color",
+    "label": "color visited 7xlight",
+    "cssVariableName": "--mico-color-visited-7xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-visited-7xlight"
+  },
+  {
+    "id": "mico-1515d87fccbd50ab",
+    "type": "color",
+    "label": "color visited 8xlight",
+    "cssVariableName": "--mico-color-visited-8xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-visited-8xlight"
+  },
+  {
+    "id": "mico-a6f0770a3cca4424",
+    "type": "color",
+    "label": "color visited dark",
+    "cssVariableName": "--mico-color-visited-dark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-visited-dark"
+  },
+  {
+    "id": "mico-c2de100f9d06a838",
+    "type": "color",
+    "label": "color visited 2xdark",
+    "cssVariableName": "--mico-color-visited-2xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-visited-2xdark"
+  },
+  {
+    "id": "mico-1d09772617c07297",
+    "type": "color",
+    "label": "color visited 3xdark",
+    "cssVariableName": "--mico-color-visited-3xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-visited-3xdark"
+  },
+  {
+    "id": "mico-1c26b9da6569b2f8",
+    "type": "color",
+    "label": "color visited 4xdark",
+    "cssVariableName": "--mico-color-visited-4xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-visited-4xdark"
+  },
+  {
+    "id": "mico-54b0d159b08d8659",
+    "type": "color",
+    "label": "color visited 5xdark",
+    "cssVariableName": "--mico-color-visited-5xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-visited-5xdark"
+  },
+  {
+    "id": "mico-76653d8d55988b64",
+    "type": "color",
+    "label": "color visited 6xdark",
+    "cssVariableName": "--mico-color-visited-6xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-visited-6xdark"
+  },
+  {
+    "id": "mico-eef80ee00e0527e7",
+    "type": "color",
+    "label": "color visited 7xdark",
+    "cssVariableName": "--mico-color-visited-7xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-visited-7xdark"
+  },
+  {
+    "id": "mico-80d1ec6777de02ed",
+    "type": "color",
+    "label": "color visited 8xdark",
+    "cssVariableName": "--mico-color-visited-8xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-visited-8xdark"
+  },
+  {
+    "id": "mico-964b335288ab80a0",
+    "type": "color",
+    "label": "color black",
+    "cssVariableName": "--mico-color-black",
+    "collection": "Colors Collection",
+    "value": "--mico-color-black"
+  },
+  {
+    "id": "mico-3bcbe7c6fe4bc51c",
+    "type": "color",
+    "label": "color black light",
+    "cssVariableName": "--mico-color-black-light",
+    "collection": "Colors Collection",
+    "value": "--mico-color-black-light"
+  },
+  {
+    "id": "mico-298b5be4545d46c9",
+    "type": "color",
+    "label": "color black 2xlight",
+    "cssVariableName": "--mico-color-black-2xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-black-2xlight"
+  },
+  {
+    "id": "mico-f411a8394efdefd5",
+    "type": "color",
+    "label": "color black 3xlight",
+    "cssVariableName": "--mico-color-black-3xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-black-3xlight"
+  },
+  {
+    "id": "mico-81eed301cf9cb705",
+    "type": "color",
+    "label": "color black 4xlight",
+    "cssVariableName": "--mico-color-black-4xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-black-4xlight"
+  },
+  {
+    "id": "mico-cc895ffb76c3ab94",
+    "type": "color",
+    "label": "color black 5xlight",
+    "cssVariableName": "--mico-color-black-5xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-black-5xlight"
+  },
+  {
+    "id": "mico-5929d660b55c92b5",
+    "type": "color",
+    "label": "color black 6xlight",
+    "cssVariableName": "--mico-color-black-6xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-black-6xlight"
+  },
+  {
+    "id": "mico-314a1c72304ed106",
+    "type": "color",
+    "label": "color black 7xlight",
+    "cssVariableName": "--mico-color-black-7xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-black-7xlight"
+  },
+  {
+    "id": "mico-4d688597202c39a2",
+    "type": "color",
+    "label": "color black 8xlight",
+    "cssVariableName": "--mico-color-black-8xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-black-8xlight"
+  },
+  {
+    "id": "mico-d1b409ab888b4ac1",
+    "type": "color",
+    "label": "color black dark",
+    "cssVariableName": "--mico-color-black-dark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-black-dark"
+  },
+  {
+    "id": "mico-81f8fdc7692c4ce7",
+    "type": "color",
+    "label": "color black 2xdark",
+    "cssVariableName": "--mico-color-black-2xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-black-2xdark"
+  },
+  {
+    "id": "mico-66745df1cdb3dfdb",
+    "type": "color",
+    "label": "color black 3xdark",
+    "cssVariableName": "--mico-color-black-3xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-black-3xdark"
+  },
+  {
+    "id": "mico-04dadc8bfc79b754",
+    "type": "color",
+    "label": "color black 4xdark",
+    "cssVariableName": "--mico-color-black-4xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-black-4xdark"
+  },
+  {
+    "id": "mico-0cfbba72a615d9a9",
+    "type": "color",
+    "label": "color black 5xdark",
+    "cssVariableName": "--mico-color-black-5xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-black-5xdark"
+  },
+  {
+    "id": "mico-1ac66d2436397fff",
+    "type": "color",
+    "label": "color black 6xdark",
+    "cssVariableName": "--mico-color-black-6xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-black-6xdark"
+  },
+  {
+    "id": "mico-3a7506b088b5c404",
+    "type": "color",
+    "label": "color black 7xdark",
+    "cssVariableName": "--mico-color-black-7xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-black-7xdark"
+  },
+  {
+    "id": "mico-1736919bb3123d0e",
+    "type": "color",
+    "label": "color black 8xdark",
+    "cssVariableName": "--mico-color-black-8xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-black-8xdark"
+  },
+  {
+    "id": "mico-d5a1787f510332fa",
+    "type": "color",
+    "label": "color gray",
+    "cssVariableName": "--mico-color-gray",
+    "collection": "Colors Collection",
+    "value": "--mico-color-gray"
+  },
+  {
+    "id": "mico-d09c2efa59b87cdf",
+    "type": "color",
+    "label": "color gray light",
+    "cssVariableName": "--mico-color-gray-light",
+    "collection": "Colors Collection",
+    "value": "--mico-color-gray-light"
+  },
+  {
+    "id": "mico-8049f4f55072bf4e",
+    "type": "color",
+    "label": "color gray 2xlight",
+    "cssVariableName": "--mico-color-gray-2xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-gray-2xlight"
+  },
+  {
+    "id": "mico-01673afa3a563cff",
+    "type": "color",
+    "label": "color gray 3xlight",
+    "cssVariableName": "--mico-color-gray-3xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-gray-3xlight"
+  },
+  {
+    "id": "mico-a72036e866ee8699",
+    "type": "color",
+    "label": "color gray 4xlight",
+    "cssVariableName": "--mico-color-gray-4xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-gray-4xlight"
+  },
+  {
+    "id": "mico-51ac4ae8a98bd635",
+    "type": "color",
+    "label": "color gray 5xlight",
+    "cssVariableName": "--mico-color-gray-5xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-gray-5xlight"
+  },
+  {
+    "id": "mico-3f9090828b2b2361",
+    "type": "color",
+    "label": "color gray 6xlight",
+    "cssVariableName": "--mico-color-gray-6xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-gray-6xlight"
+  },
+  {
+    "id": "mico-f0ead1be67bf2a83",
+    "type": "color",
+    "label": "color gray 7xlight",
+    "cssVariableName": "--mico-color-gray-7xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-gray-7xlight"
+  },
+  {
+    "id": "mico-9aef6d152176d5eb",
+    "type": "color",
+    "label": "color gray 8xlight",
+    "cssVariableName": "--mico-color-gray-8xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-gray-8xlight"
+  },
+  {
+    "id": "mico-9ad80235e4437424",
+    "type": "color",
+    "label": "color gray dark",
+    "cssVariableName": "--mico-color-gray-dark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-gray-dark"
+  },
+  {
+    "id": "mico-f349db73d3eb588f",
+    "type": "color",
+    "label": "color gray 2xdark",
+    "cssVariableName": "--mico-color-gray-2xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-gray-2xdark"
+  },
+  {
+    "id": "mico-6019002d5a914c46",
+    "type": "color",
+    "label": "color gray 3xdark",
+    "cssVariableName": "--mico-color-gray-3xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-gray-3xdark"
+  },
+  {
+    "id": "mico-5fff45333463ba62",
+    "type": "color",
+    "label": "color gray 4xdark",
+    "cssVariableName": "--mico-color-gray-4xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-gray-4xdark"
+  },
+  {
+    "id": "mico-76a941c153d5b91f",
+    "type": "color",
+    "label": "color gray 5xdark",
+    "cssVariableName": "--mico-color-gray-5xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-gray-5xdark"
+  },
+  {
+    "id": "mico-fe07fb12ee416b52",
+    "type": "color",
+    "label": "color gray 6xdark",
+    "cssVariableName": "--mico-color-gray-6xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-gray-6xdark"
+  },
+  {
+    "id": "mico-9d4f49d5591b4c88",
+    "type": "color",
+    "label": "color gray 7xdark",
+    "cssVariableName": "--mico-color-gray-7xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-gray-7xdark"
+  },
+  {
+    "id": "mico-837f8b784059bf76",
+    "type": "color",
+    "label": "color gray 8xdark",
+    "cssVariableName": "--mico-color-gray-8xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-gray-8xdark"
+  },
+  {
+    "id": "mico-f5f23173b2113b93",
+    "type": "color",
+    "label": "color white",
+    "cssVariableName": "--mico-color-white",
+    "collection": "Colors Collection",
+    "value": "--mico-color-white"
+  },
+  {
+    "id": "mico-2485afc84a3f9c79",
+    "type": "color",
+    "label": "color white light",
+    "cssVariableName": "--mico-color-white-light",
+    "collection": "Colors Collection",
+    "value": "--mico-color-white-light"
+  },
+  {
+    "id": "mico-d49445b1d1be8f40",
+    "type": "color",
+    "label": "color white 2xlight",
+    "cssVariableName": "--mico-color-white-2xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-white-2xlight"
+  },
+  {
+    "id": "mico-ad7542607c80a437",
+    "type": "color",
+    "label": "color white 3xlight",
+    "cssVariableName": "--mico-color-white-3xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-white-3xlight"
+  },
+  {
+    "id": "mico-22bcd751b83b2c8c",
+    "type": "color",
+    "label": "color white 4xlight",
+    "cssVariableName": "--mico-color-white-4xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-white-4xlight"
+  },
+  {
+    "id": "mico-ea480e521957fda7",
+    "type": "color",
+    "label": "color white 5xlight",
+    "cssVariableName": "--mico-color-white-5xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-white-5xlight"
+  },
+  {
+    "id": "mico-d39b943acc68819e",
+    "type": "color",
+    "label": "color white 6xlight",
+    "cssVariableName": "--mico-color-white-6xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-white-6xlight"
+  },
+  {
+    "id": "mico-97724b8d9b76d40b",
+    "type": "color",
+    "label": "color white 7xlight",
+    "cssVariableName": "--mico-color-white-7xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-white-7xlight"
+  },
+  {
+    "id": "mico-048fb3b736a60888",
+    "type": "color",
+    "label": "color white 8xlight",
+    "cssVariableName": "--mico-color-white-8xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-white-8xlight"
+  },
+  {
+    "id": "mico-7de4bbc8828c38dc",
+    "type": "color",
+    "label": "color white dark",
+    "cssVariableName": "--mico-color-white-dark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-white-dark"
+  },
+  {
+    "id": "mico-ae6de27a60d2801f",
+    "type": "color",
+    "label": "color white 2xdark",
+    "cssVariableName": "--mico-color-white-2xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-white-2xdark"
+  },
+  {
+    "id": "mico-d36e30528c37a00c",
+    "type": "color",
+    "label": "color white 3xdark",
+    "cssVariableName": "--mico-color-white-3xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-white-3xdark"
+  },
+  {
+    "id": "mico-309dbe613b48760e",
+    "type": "color",
+    "label": "color white 4xdark",
+    "cssVariableName": "--mico-color-white-4xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-white-4xdark"
+  },
+  {
+    "id": "mico-27e59d709ad5620c",
+    "type": "color",
+    "label": "color white 5xdark",
+    "cssVariableName": "--mico-color-white-5xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-white-5xdark"
+  },
+  {
+    "id": "mico-487af3eac41b0dcc",
+    "type": "color",
+    "label": "color white 6xdark",
+    "cssVariableName": "--mico-color-white-6xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-white-6xdark"
+  },
+  {
+    "id": "mico-2ae717a3bf8d13e8",
+    "type": "color",
+    "label": "color white 7xdark",
+    "cssVariableName": "--mico-color-white-7xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-white-7xdark"
+  },
+  {
+    "id": "mico-0042523479520da1",
+    "type": "color",
+    "label": "color white 8xdark",
+    "cssVariableName": "--mico-color-white-8xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-white-8xdark"
+  },
+  {
+    "id": "mico-c0b98ce21c9ed19e",
+    "type": "color",
+    "label": "color black whisper",
+    "cssVariableName": "--mico-color-black-whisper",
+    "collection": "Colors Collection",
+    "value": "--mico-color-black-whisper"
+  },
+  {
+    "id": "mico-337b03b999561b79",
+    "type": "color",
+    "label": "color black breath",
+    "cssVariableName": "--mico-color-black-breath",
+    "collection": "Colors Collection",
+    "value": "--mico-color-black-breath"
+  },
+  {
+    "id": "mico-a779828e8d7ffc24",
+    "type": "color",
+    "label": "color black mist",
+    "cssVariableName": "--mico-color-black-mist",
+    "collection": "Colors Collection",
+    "value": "--mico-color-black-mist"
+  },
+  {
+    "id": "mico-7a8634cff2709e1e",
+    "type": "color",
+    "label": "color black veil",
+    "cssVariableName": "--mico-color-black-veil",
+    "collection": "Colors Collection",
+    "value": "--mico-color-black-veil"
+  },
+  {
+    "id": "mico-9f8513cff3bc7986",
+    "type": "color",
+    "label": "color black shadow",
+    "cssVariableName": "--mico-color-black-shadow",
+    "collection": "Colors Collection",
+    "value": "--mico-color-black-shadow"
+  },
+  {
+    "id": "mico-65b10ded72674d8b",
+    "type": "color",
+    "label": "color black shroud",
+    "cssVariableName": "--mico-color-black-shroud",
+    "collection": "Colors Collection",
+    "value": "--mico-color-black-shroud"
+  },
+  {
+    "id": "mico-0645c73ddbe4f08e",
+    "type": "color",
+    "label": "color black cloak",
+    "cssVariableName": "--mico-color-black-cloak",
+    "collection": "Colors Collection",
+    "value": "--mico-color-black-cloak"
+  },
+  {
+    "id": "mico-24c492846195dcc2",
+    "type": "color",
+    "label": "color black eclipse",
+    "cssVariableName": "--mico-color-black-eclipse",
+    "collection": "Colors Collection",
+    "value": "--mico-color-black-eclipse"
+  },
+  {
+    "id": "mico-b0a527b3f5f96666",
+    "type": "color",
+    "label": "color black void",
+    "cssVariableName": "--mico-color-black-void",
+    "collection": "Colors Collection",
+    "value": "--mico-color-black-void"
+  },
+  {
+    "id": "mico-9809ceaf83765d9d",
+    "type": "color",
+    "label": "color gray whisper",
+    "cssVariableName": "--mico-color-gray-whisper",
+    "collection": "Colors Collection",
+    "value": "--mico-color-gray-whisper"
+  },
+  {
+    "id": "mico-4c9eb9a6094a8408",
+    "type": "color",
+    "label": "color gray breath",
+    "cssVariableName": "--mico-color-gray-breath",
+    "collection": "Colors Collection",
+    "value": "--mico-color-gray-breath"
+  },
+  {
+    "id": "mico-148673d973cf9b43",
+    "type": "color",
+    "label": "color gray mist",
+    "cssVariableName": "--mico-color-gray-mist",
+    "collection": "Colors Collection",
+    "value": "--mico-color-gray-mist"
+  },
+  {
+    "id": "mico-d09263bdc98dd878",
+    "type": "color",
+    "label": "color gray veil",
+    "cssVariableName": "--mico-color-gray-veil",
+    "collection": "Colors Collection",
+    "value": "--mico-color-gray-veil"
+  },
+  {
+    "id": "mico-bbd0a8be3c1349b0",
+    "type": "color",
+    "label": "color gray shadow",
+    "cssVariableName": "--mico-color-gray-shadow",
+    "collection": "Colors Collection",
+    "value": "--mico-color-gray-shadow"
+  },
+  {
+    "id": "mico-84fc4d0dfe392e2c",
+    "type": "color",
+    "label": "color gray shroud",
+    "cssVariableName": "--mico-color-gray-shroud",
+    "collection": "Colors Collection",
+    "value": "--mico-color-gray-shroud"
+  },
+  {
+    "id": "mico-e6cf3d817a5b8900",
+    "type": "color",
+    "label": "color gray cloak",
+    "cssVariableName": "--mico-color-gray-cloak",
+    "collection": "Colors Collection",
+    "value": "--mico-color-gray-cloak"
+  },
+  {
+    "id": "mico-96def24877ed6888",
+    "type": "color",
+    "label": "color gray eclipse",
+    "cssVariableName": "--mico-color-gray-eclipse",
+    "collection": "Colors Collection",
+    "value": "--mico-color-gray-eclipse"
+  },
+  {
+    "id": "mico-6490c191e65f968e",
+    "type": "color",
+    "label": "color gray void",
+    "cssVariableName": "--mico-color-gray-void",
+    "collection": "Colors Collection",
+    "value": "--mico-color-gray-void"
+  },
+  {
+    "id": "mico-14df716de4dd082d",
+    "type": "color",
+    "label": "color white whisper",
+    "cssVariableName": "--mico-color-white-whisper",
+    "collection": "Colors Collection",
+    "value": "--mico-color-white-whisper"
+  },
+  {
+    "id": "mico-6189dfc7d00f45b3",
+    "type": "color",
+    "label": "color white breath",
+    "cssVariableName": "--mico-color-white-breath",
+    "collection": "Colors Collection",
+    "value": "--mico-color-white-breath"
+  },
+  {
+    "id": "mico-639501eecd5d95b4",
+    "type": "color",
+    "label": "color white mist",
+    "cssVariableName": "--mico-color-white-mist",
+    "collection": "Colors Collection",
+    "value": "--mico-color-white-mist"
+  },
+  {
+    "id": "mico-03982eb73b3ec236",
+    "type": "color",
+    "label": "color white veil",
+    "cssVariableName": "--mico-color-white-veil",
+    "collection": "Colors Collection",
+    "value": "--mico-color-white-veil"
+  },
+  {
+    "id": "mico-2d6ace8852cd434e",
+    "type": "color",
+    "label": "color white shadow",
+    "cssVariableName": "--mico-color-white-shadow",
+    "collection": "Colors Collection",
+    "value": "--mico-color-white-shadow"
+  },
+  {
+    "id": "mico-634f20523bc54a85",
+    "type": "color",
+    "label": "color white shroud",
+    "cssVariableName": "--mico-color-white-shroud",
+    "collection": "Colors Collection",
+    "value": "--mico-color-white-shroud"
+  },
+  {
+    "id": "mico-094983aa84677bbf",
+    "type": "color",
+    "label": "color white cloak",
+    "cssVariableName": "--mico-color-white-cloak",
+    "collection": "Colors Collection",
+    "value": "--mico-color-white-cloak"
+  },
+  {
+    "id": "mico-46744aebf98b1da1",
+    "type": "color",
+    "label": "color white eclipse",
+    "cssVariableName": "--mico-color-white-eclipse",
+    "collection": "Colors Collection",
+    "value": "--mico-color-white-eclipse"
+  },
+  {
+    "id": "mico-ad88465e57d63958",
+    "type": "color",
+    "label": "color white void",
+    "cssVariableName": "--mico-color-white-void",
+    "collection": "Colors Collection",
+    "value": "--mico-color-white-void"
+  },
+  {
+    "id": "mico-2be68d4dbdb4c20d",
+    "type": "color",
+    "label": "color primary whisper",
+    "cssVariableName": "--mico-color-primary-whisper",
+    "collection": "Colors Collection",
+    "value": "--mico-color-primary-whisper"
+  },
+  {
+    "id": "mico-f219533d2ea80fe5",
+    "type": "color",
+    "label": "color primary breath",
+    "cssVariableName": "--mico-color-primary-breath",
+    "collection": "Colors Collection",
+    "value": "--mico-color-primary-breath"
+  },
+  {
+    "id": "mico-af713de3405a1276",
+    "type": "color",
+    "label": "color primary mist",
+    "cssVariableName": "--mico-color-primary-mist",
+    "collection": "Colors Collection",
+    "value": "--mico-color-primary-mist"
+  },
+  {
+    "id": "mico-5bedeac2bd78e39b",
+    "type": "color",
+    "label": "color primary veil",
+    "cssVariableName": "--mico-color-primary-veil",
+    "collection": "Colors Collection",
+    "value": "--mico-color-primary-veil"
+  },
+  {
+    "id": "mico-fc04b88ef81b5e84",
+    "type": "color",
+    "label": "color primary shadow",
+    "cssVariableName": "--mico-color-primary-shadow",
+    "collection": "Colors Collection",
+    "value": "--mico-color-primary-shadow"
+  },
+  {
+    "id": "mico-e9990e273698b948",
+    "type": "color",
+    "label": "color secondary whisper",
+    "cssVariableName": "--mico-color-secondary-whisper",
+    "collection": "Colors Collection",
+    "value": "--mico-color-secondary-whisper"
+  },
+  {
+    "id": "mico-7ee4710a29766f72",
+    "type": "color",
+    "label": "color secondary breath",
+    "cssVariableName": "--mico-color-secondary-breath",
+    "collection": "Colors Collection",
+    "value": "--mico-color-secondary-breath"
+  },
+  {
+    "id": "mico-4d427b100b078b05",
+    "type": "color",
+    "label": "color secondary mist",
+    "cssVariableName": "--mico-color-secondary-mist",
+    "collection": "Colors Collection",
+    "value": "--mico-color-secondary-mist"
+  },
+  {
+    "id": "mico-fc18262264d20ed8",
+    "type": "color",
+    "label": "color secondary veil",
+    "cssVariableName": "--mico-color-secondary-veil",
+    "collection": "Colors Collection",
+    "value": "--mico-color-secondary-veil"
+  },
+  {
+    "id": "mico-d62bffbf5a4207f1",
+    "type": "color",
+    "label": "color secondary shadow",
+    "cssVariableName": "--mico-color-secondary-shadow",
+    "collection": "Colors Collection",
+    "value": "--mico-color-secondary-shadow"
+  },
+  {
+    "id": "mico-d5764eaf20d9b4ac",
+    "type": "color",
+    "label": "color accent whisper",
+    "cssVariableName": "--mico-color-accent-whisper",
+    "collection": "Colors Collection",
+    "value": "--mico-color-accent-whisper"
+  },
+  {
+    "id": "mico-58d67261c62e2075",
+    "type": "color",
+    "label": "color accent breath",
+    "cssVariableName": "--mico-color-accent-breath",
+    "collection": "Colors Collection",
+    "value": "--mico-color-accent-breath"
+  },
+  {
+    "id": "mico-2c04fb71b82d790b",
+    "type": "color",
+    "label": "color accent mist",
+    "cssVariableName": "--mico-color-accent-mist",
+    "collection": "Colors Collection",
+    "value": "--mico-color-accent-mist"
+  },
+  {
+    "id": "mico-2c8076990f01bc7b",
+    "type": "color",
+    "label": "color accent veil",
+    "cssVariableName": "--mico-color-accent-veil",
+    "collection": "Colors Collection",
+    "value": "--mico-color-accent-veil"
+  },
+  {
+    "id": "mico-e26c99789edf69ed",
+    "type": "color",
+    "label": "color accent shadow",
+    "cssVariableName": "--mico-color-accent-shadow",
+    "collection": "Colors Collection",
+    "value": "--mico-color-accent-shadow"
+  },
+  {
+    "id": "mico-386b434d8bb61b75",
+    "type": "color",
+    "label": "color red",
+    "cssVariableName": "--mico-color-red",
+    "collection": "Colors Collection",
+    "value": "--mico-color-red"
+  },
+  {
+    "id": "mico-92b82941640d942f",
+    "type": "color",
+    "label": "color red light",
+    "cssVariableName": "--mico-color-red-light",
+    "collection": "Colors Collection",
+    "value": "--mico-color-red-light"
+  },
+  {
+    "id": "mico-df739099dcd0a4a2",
+    "type": "color",
+    "label": "color red 2xlight",
+    "cssVariableName": "--mico-color-red-2xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-red-2xlight"
+  },
+  {
+    "id": "mico-6345a3a4b2f9530b",
+    "type": "color",
+    "label": "color red 3xlight",
+    "cssVariableName": "--mico-color-red-3xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-red-3xlight"
+  },
+  {
+    "id": "mico-8c2b44dbb20183ec",
+    "type": "color",
+    "label": "color red 4xlight",
+    "cssVariableName": "--mico-color-red-4xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-red-4xlight"
+  },
+  {
+    "id": "mico-fa57db7016e435fa",
+    "type": "color",
+    "label": "color red 5xlight",
+    "cssVariableName": "--mico-color-red-5xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-red-5xlight"
+  },
+  {
+    "id": "mico-a6ba84dc55eca744",
+    "type": "color",
+    "label": "color red 6xlight",
+    "cssVariableName": "--mico-color-red-6xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-red-6xlight"
+  },
+  {
+    "id": "mico-5449ce26d0c34acb",
+    "type": "color",
+    "label": "color red 7xlight",
+    "cssVariableName": "--mico-color-red-7xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-red-7xlight"
+  },
+  {
+    "id": "mico-fce3e0fa129f5c37",
+    "type": "color",
+    "label": "color red 8xlight",
+    "cssVariableName": "--mico-color-red-8xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-red-8xlight"
+  },
+  {
+    "id": "mico-590bdeaa053bd29e",
+    "type": "color",
+    "label": "color red dark",
+    "cssVariableName": "--mico-color-red-dark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-red-dark"
+  },
+  {
+    "id": "mico-0ca05e2dea5dcbe8",
+    "type": "color",
+    "label": "color red 2xdark",
+    "cssVariableName": "--mico-color-red-2xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-red-2xdark"
+  },
+  {
+    "id": "mico-d6ffcc32c505a0d6",
+    "type": "color",
+    "label": "color red 3xdark",
+    "cssVariableName": "--mico-color-red-3xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-red-3xdark"
+  },
+  {
+    "id": "mico-77e8baaffe67b9cc",
+    "type": "color",
+    "label": "color red 4xdark",
+    "cssVariableName": "--mico-color-red-4xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-red-4xdark"
+  },
+  {
+    "id": "mico-c7e6ba702d22650e",
+    "type": "color",
+    "label": "color red 5xdark",
+    "cssVariableName": "--mico-color-red-5xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-red-5xdark"
+  },
+  {
+    "id": "mico-a53bb9ed2a55b0a4",
+    "type": "color",
+    "label": "color red 6xdark",
+    "cssVariableName": "--mico-color-red-6xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-red-6xdark"
+  },
+  {
+    "id": "mico-d05ad23ad7f6c2f4",
+    "type": "color",
+    "label": "color red 7xdark",
+    "cssVariableName": "--mico-color-red-7xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-red-7xdark"
+  },
+  {
+    "id": "mico-bdcddb129b5dd3d3",
+    "type": "color",
+    "label": "color red 8xdark",
+    "cssVariableName": "--mico-color-red-8xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-red-8xdark"
+  },
+  {
+    "id": "mico-a4763768d5da1710",
+    "type": "color",
+    "label": "color yellow",
+    "cssVariableName": "--mico-color-yellow",
+    "collection": "Colors Collection",
+    "value": "--mico-color-yellow"
+  },
+  {
+    "id": "mico-1a65498e2d84fc57",
+    "type": "color",
+    "label": "color yellow light",
+    "cssVariableName": "--mico-color-yellow-light",
+    "collection": "Colors Collection",
+    "value": "--mico-color-yellow-light"
+  },
+  {
+    "id": "mico-ed0969ea5408241e",
+    "type": "color",
+    "label": "color yellow 2xlight",
+    "cssVariableName": "--mico-color-yellow-2xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-yellow-2xlight"
+  },
+  {
+    "id": "mico-eacc6141d9db70bb",
+    "type": "color",
+    "label": "color yellow 3xlight",
+    "cssVariableName": "--mico-color-yellow-3xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-yellow-3xlight"
+  },
+  {
+    "id": "mico-255ec1edb8ddb168",
+    "type": "color",
+    "label": "color yellow 4xlight",
+    "cssVariableName": "--mico-color-yellow-4xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-yellow-4xlight"
+  },
+  {
+    "id": "mico-c823302eaf2c3eac",
+    "type": "color",
+    "label": "color yellow 5xlight",
+    "cssVariableName": "--mico-color-yellow-5xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-yellow-5xlight"
+  },
+  {
+    "id": "mico-003eae3addef715e",
+    "type": "color",
+    "label": "color yellow 6xlight",
+    "cssVariableName": "--mico-color-yellow-6xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-yellow-6xlight"
+  },
+  {
+    "id": "mico-f76a747ca6321a20",
+    "type": "color",
+    "label": "color yellow 7xlight",
+    "cssVariableName": "--mico-color-yellow-7xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-yellow-7xlight"
+  },
+  {
+    "id": "mico-e0bb523368ecbd2c",
+    "type": "color",
+    "label": "color yellow 8xlight",
+    "cssVariableName": "--mico-color-yellow-8xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-yellow-8xlight"
+  },
+  {
+    "id": "mico-2ad395e9f19eaa09",
+    "type": "color",
+    "label": "color yellow dark",
+    "cssVariableName": "--mico-color-yellow-dark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-yellow-dark"
+  },
+  {
+    "id": "mico-0b0a61cecf7e2400",
+    "type": "color",
+    "label": "color yellow 2xdark",
+    "cssVariableName": "--mico-color-yellow-2xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-yellow-2xdark"
+  },
+  {
+    "id": "mico-5ffad043a6b789c3",
+    "type": "color",
+    "label": "color yellow 3xdark",
+    "cssVariableName": "--mico-color-yellow-3xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-yellow-3xdark"
+  },
+  {
+    "id": "mico-95a2527913c20c90",
+    "type": "color",
+    "label": "color yellow 4xdark",
+    "cssVariableName": "--mico-color-yellow-4xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-yellow-4xdark"
+  },
+  {
+    "id": "mico-60602a03b7b5360d",
+    "type": "color",
+    "label": "color yellow 5xdark",
+    "cssVariableName": "--mico-color-yellow-5xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-yellow-5xdark"
+  },
+  {
+    "id": "mico-442721125453c019",
+    "type": "color",
+    "label": "color yellow 6xdark",
+    "cssVariableName": "--mico-color-yellow-6xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-yellow-6xdark"
+  },
+  {
+    "id": "mico-bbb45a74d5f59f2e",
+    "type": "color",
+    "label": "color yellow 7xdark",
+    "cssVariableName": "--mico-color-yellow-7xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-yellow-7xdark"
+  },
+  {
+    "id": "mico-4d3afb6142350c04",
+    "type": "color",
+    "label": "color yellow 8xdark",
+    "cssVariableName": "--mico-color-yellow-8xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-yellow-8xdark"
+  },
+  {
+    "id": "mico-08a8d761cafe757f",
+    "type": "color",
+    "label": "color green",
+    "cssVariableName": "--mico-color-green",
+    "collection": "Colors Collection",
+    "value": "--mico-color-green"
+  },
+  {
+    "id": "mico-5267a9282dfca516",
+    "type": "color",
+    "label": "color green light",
+    "cssVariableName": "--mico-color-green-light",
+    "collection": "Colors Collection",
+    "value": "--mico-color-green-light"
+  },
+  {
+    "id": "mico-468e0bf173220330",
+    "type": "color",
+    "label": "color green 2xlight",
+    "cssVariableName": "--mico-color-green-2xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-green-2xlight"
+  },
+  {
+    "id": "mico-7d9140d16e555f57",
+    "type": "color",
+    "label": "color green 3xlight",
+    "cssVariableName": "--mico-color-green-3xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-green-3xlight"
+  },
+  {
+    "id": "mico-152daa130309b053",
+    "type": "color",
+    "label": "color green 4xlight",
+    "cssVariableName": "--mico-color-green-4xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-green-4xlight"
+  },
+  {
+    "id": "mico-76f820af3f0e0918",
+    "type": "color",
+    "label": "color green 5xlight",
+    "cssVariableName": "--mico-color-green-5xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-green-5xlight"
+  },
+  {
+    "id": "mico-09fc7e10c5cff945",
+    "type": "color",
+    "label": "color green 6xlight",
+    "cssVariableName": "--mico-color-green-6xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-green-6xlight"
+  },
+  {
+    "id": "mico-088c3de170c148e5",
+    "type": "color",
+    "label": "color green 7xlight",
+    "cssVariableName": "--mico-color-green-7xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-green-7xlight"
+  },
+  {
+    "id": "mico-49f950ac3dd16bd1",
+    "type": "color",
+    "label": "color green 8xlight",
+    "cssVariableName": "--mico-color-green-8xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-green-8xlight"
+  },
+  {
+    "id": "mico-1611a95b0b9ca59e",
+    "type": "color",
+    "label": "color green dark",
+    "cssVariableName": "--mico-color-green-dark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-green-dark"
+  },
+  {
+    "id": "mico-731a014b2926701e",
+    "type": "color",
+    "label": "color green 2xdark",
+    "cssVariableName": "--mico-color-green-2xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-green-2xdark"
+  },
+  {
+    "id": "mico-73630c4fb4a1ef92",
+    "type": "color",
+    "label": "color green 3xdark",
+    "cssVariableName": "--mico-color-green-3xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-green-3xdark"
+  },
+  {
+    "id": "mico-7a29fd08827e627a",
+    "type": "color",
+    "label": "color green 4xdark",
+    "cssVariableName": "--mico-color-green-4xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-green-4xdark"
+  },
+  {
+    "id": "mico-daeb64690a556c94",
+    "type": "color",
+    "label": "color green 5xdark",
+    "cssVariableName": "--mico-color-green-5xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-green-5xdark"
+  },
+  {
+    "id": "mico-88b2623e4fe5f8d7",
+    "type": "color",
+    "label": "color green 6xdark",
+    "cssVariableName": "--mico-color-green-6xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-green-6xdark"
+  },
+  {
+    "id": "mico-47fc29cb0ad5f01d",
+    "type": "color",
+    "label": "color green 7xdark",
+    "cssVariableName": "--mico-color-green-7xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-green-7xdark"
+  },
+  {
+    "id": "mico-a3cb12781efaa701",
+    "type": "color",
+    "label": "color green 8xdark",
+    "cssVariableName": "--mico-color-green-8xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-green-8xdark"
+  },
+  {
+    "id": "mico-c1b34e1505178b12",
+    "type": "color",
+    "label": "color blue",
+    "cssVariableName": "--mico-color-blue",
+    "collection": "Colors Collection",
+    "value": "--mico-color-blue"
+  },
+  {
+    "id": "mico-2df7c75a66084386",
+    "type": "color",
+    "label": "color blue light",
+    "cssVariableName": "--mico-color-blue-light",
+    "collection": "Colors Collection",
+    "value": "--mico-color-blue-light"
+  },
+  {
+    "id": "mico-3ca5167e8875c08f",
+    "type": "color",
+    "label": "color blue 2xlight",
+    "cssVariableName": "--mico-color-blue-2xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-blue-2xlight"
+  },
+  {
+    "id": "mico-7b8d78c931609bf5",
+    "type": "color",
+    "label": "color blue 3xlight",
+    "cssVariableName": "--mico-color-blue-3xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-blue-3xlight"
+  },
+  {
+    "id": "mico-97c8afb7fe26d5eb",
+    "type": "color",
+    "label": "color blue 4xlight",
+    "cssVariableName": "--mico-color-blue-4xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-blue-4xlight"
+  },
+  {
+    "id": "mico-946b8c5249041fa6",
+    "type": "color",
+    "label": "color blue 5xlight",
+    "cssVariableName": "--mico-color-blue-5xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-blue-5xlight"
+  },
+  {
+    "id": "mico-3c49058af77488e1",
+    "type": "color",
+    "label": "color blue 6xlight",
+    "cssVariableName": "--mico-color-blue-6xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-blue-6xlight"
+  },
+  {
+    "id": "mico-77ac906ae33e8e88",
+    "type": "color",
+    "label": "color blue 7xlight",
+    "cssVariableName": "--mico-color-blue-7xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-blue-7xlight"
+  },
+  {
+    "id": "mico-3b0f844db8b60b28",
+    "type": "color",
+    "label": "color blue 8xlight",
+    "cssVariableName": "--mico-color-blue-8xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-blue-8xlight"
+  },
+  {
+    "id": "mico-4a0bd64b6763bb3e",
+    "type": "color",
+    "label": "color blue dark",
+    "cssVariableName": "--mico-color-blue-dark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-blue-dark"
+  },
+  {
+    "id": "mico-b32f92b0fad6337c",
+    "type": "color",
+    "label": "color blue 2xdark",
+    "cssVariableName": "--mico-color-blue-2xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-blue-2xdark"
+  },
+  {
+    "id": "mico-c0b7d0ee23e488a4",
+    "type": "color",
+    "label": "color blue 3xdark",
+    "cssVariableName": "--mico-color-blue-3xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-blue-3xdark"
+  },
+  {
+    "id": "mico-eff48f9de2728915",
+    "type": "color",
+    "label": "color blue 4xdark",
+    "cssVariableName": "--mico-color-blue-4xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-blue-4xdark"
+  },
+  {
+    "id": "mico-8ad7cb57f6bd52f0",
+    "type": "color",
+    "label": "color blue 5xdark",
+    "cssVariableName": "--mico-color-blue-5xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-blue-5xdark"
+  },
+  {
+    "id": "mico-3df77a0b94523a5d",
+    "type": "color",
+    "label": "color blue 6xdark",
+    "cssVariableName": "--mico-color-blue-6xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-blue-6xdark"
+  },
+  {
+    "id": "mico-b512c068ec4cafd7",
+    "type": "color",
+    "label": "color blue 7xdark",
+    "cssVariableName": "--mico-color-blue-7xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-blue-7xdark"
+  },
+  {
+    "id": "mico-e792e1fc66750f08",
+    "type": "color",
+    "label": "color blue 8xdark",
+    "cssVariableName": "--mico-color-blue-8xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-blue-8xdark"
+  },
+  {
+    "id": "mico-cfab643d56bc3e06",
+    "type": "color",
+    "label": "color indigo",
+    "cssVariableName": "--mico-color-indigo",
+    "collection": "Colors Collection",
+    "value": "--mico-color-indigo"
+  },
+  {
+    "id": "mico-a539cac3538af748",
+    "type": "color",
+    "label": "color indigo light",
+    "cssVariableName": "--mico-color-indigo-light",
+    "collection": "Colors Collection",
+    "value": "--mico-color-indigo-light"
+  },
+  {
+    "id": "mico-3d0adef204ac034f",
+    "type": "color",
+    "label": "color indigo 2xlight",
+    "cssVariableName": "--mico-color-indigo-2xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-indigo-2xlight"
+  },
+  {
+    "id": "mico-0ea628437dbd4270",
+    "type": "color",
+    "label": "color indigo 3xlight",
+    "cssVariableName": "--mico-color-indigo-3xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-indigo-3xlight"
+  },
+  {
+    "id": "mico-91435500029913fe",
+    "type": "color",
+    "label": "color indigo 4xlight",
+    "cssVariableName": "--mico-color-indigo-4xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-indigo-4xlight"
+  },
+  {
+    "id": "mico-481b6135585acb6f",
+    "type": "color",
+    "label": "color indigo 5xlight",
+    "cssVariableName": "--mico-color-indigo-5xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-indigo-5xlight"
+  },
+  {
+    "id": "mico-ce475a74d7107847",
+    "type": "color",
+    "label": "color indigo 6xlight",
+    "cssVariableName": "--mico-color-indigo-6xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-indigo-6xlight"
+  },
+  {
+    "id": "mico-58455f6c4a75b77b",
+    "type": "color",
+    "label": "color indigo 7xlight",
+    "cssVariableName": "--mico-color-indigo-7xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-indigo-7xlight"
+  },
+  {
+    "id": "mico-899cbc88878989b8",
+    "type": "color",
+    "label": "color indigo 8xlight",
+    "cssVariableName": "--mico-color-indigo-8xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-indigo-8xlight"
+  },
+  {
+    "id": "mico-21ed769d89fe4cab",
+    "type": "color",
+    "label": "color indigo dark",
+    "cssVariableName": "--mico-color-indigo-dark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-indigo-dark"
+  },
+  {
+    "id": "mico-2f5d6c211db40173",
+    "type": "color",
+    "label": "color indigo 2xdark",
+    "cssVariableName": "--mico-color-indigo-2xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-indigo-2xdark"
+  },
+  {
+    "id": "mico-532c29caf109698a",
+    "type": "color",
+    "label": "color indigo 3xdark",
+    "cssVariableName": "--mico-color-indigo-3xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-indigo-3xdark"
+  },
+  {
+    "id": "mico-9744af5cced85cbb",
+    "type": "color",
+    "label": "color indigo 4xdark",
+    "cssVariableName": "--mico-color-indigo-4xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-indigo-4xdark"
+  },
+  {
+    "id": "mico-50999c8ef1cfed05",
+    "type": "color",
+    "label": "color indigo 5xdark",
+    "cssVariableName": "--mico-color-indigo-5xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-indigo-5xdark"
+  },
+  {
+    "id": "mico-9eb2e326e3f80767",
+    "type": "color",
+    "label": "color indigo 6xdark",
+    "cssVariableName": "--mico-color-indigo-6xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-indigo-6xdark"
+  },
+  {
+    "id": "mico-8c6f023eef982bd7",
+    "type": "color",
+    "label": "color indigo 7xdark",
+    "cssVariableName": "--mico-color-indigo-7xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-indigo-7xdark"
+  },
+  {
+    "id": "mico-29cae58cb79d3174",
+    "type": "color",
+    "label": "color indigo 8xdark",
+    "cssVariableName": "--mico-color-indigo-8xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-indigo-8xdark"
+  },
+  {
+    "id": "mico-8720b42bc886f5ff",
+    "type": "color",
+    "label": "color purple",
+    "cssVariableName": "--mico-color-purple",
+    "collection": "Colors Collection",
+    "value": "--mico-color-purple"
+  },
+  {
+    "id": "mico-fc98c0881c49eacf",
+    "type": "color",
+    "label": "color purple light",
+    "cssVariableName": "--mico-color-purple-light",
+    "collection": "Colors Collection",
+    "value": "--mico-color-purple-light"
+  },
+  {
+    "id": "mico-a57bafada411f291",
+    "type": "color",
+    "label": "color purple 2xlight",
+    "cssVariableName": "--mico-color-purple-2xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-purple-2xlight"
+  },
+  {
+    "id": "mico-f2fc45ede74d1044",
+    "type": "color",
+    "label": "color purple 3xlight",
+    "cssVariableName": "--mico-color-purple-3xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-purple-3xlight"
+  },
+  {
+    "id": "mico-a44ff2b90bf18772",
+    "type": "color",
+    "label": "color purple 4xlight",
+    "cssVariableName": "--mico-color-purple-4xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-purple-4xlight"
+  },
+  {
+    "id": "mico-c0c7c1579ee74710",
+    "type": "color",
+    "label": "color purple 5xlight",
+    "cssVariableName": "--mico-color-purple-5xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-purple-5xlight"
+  },
+  {
+    "id": "mico-537583b3687d17ff",
+    "type": "color",
+    "label": "color purple 6xlight",
+    "cssVariableName": "--mico-color-purple-6xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-purple-6xlight"
+  },
+  {
+    "id": "mico-bf018a86732b5205",
+    "type": "color",
+    "label": "color purple 7xlight",
+    "cssVariableName": "--mico-color-purple-7xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-purple-7xlight"
+  },
+  {
+    "id": "mico-2c843a88d7937c10",
+    "type": "color",
+    "label": "color purple 8xlight",
+    "cssVariableName": "--mico-color-purple-8xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-purple-8xlight"
+  },
+  {
+    "id": "mico-bc739d1e2d9f895b",
+    "type": "color",
+    "label": "color purple dark",
+    "cssVariableName": "--mico-color-purple-dark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-purple-dark"
+  },
+  {
+    "id": "mico-1bf27db6200e3539",
+    "type": "color",
+    "label": "color purple 2xdark",
+    "cssVariableName": "--mico-color-purple-2xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-purple-2xdark"
+  },
+  {
+    "id": "mico-7e035b2c584b6eb2",
+    "type": "color",
+    "label": "color purple 3xdark",
+    "cssVariableName": "--mico-color-purple-3xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-purple-3xdark"
+  },
+  {
+    "id": "mico-b7c0fa0b85a61add",
+    "type": "color",
+    "label": "color purple 4xdark",
+    "cssVariableName": "--mico-color-purple-4xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-purple-4xdark"
+  },
+  {
+    "id": "mico-d9efe1a4eecb4209",
+    "type": "color",
+    "label": "color purple 5xdark",
+    "cssVariableName": "--mico-color-purple-5xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-purple-5xdark"
+  },
+  {
+    "id": "mico-c12df5d9e46f2fc7",
+    "type": "color",
+    "label": "color purple 6xdark",
+    "cssVariableName": "--mico-color-purple-6xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-purple-6xdark"
+  },
+  {
+    "id": "mico-c09797561b23fafa",
+    "type": "color",
+    "label": "color purple 7xdark",
+    "cssVariableName": "--mico-color-purple-7xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-purple-7xdark"
+  },
+  {
+    "id": "mico-3c95a45afc2a7824",
+    "type": "color",
+    "label": "color purple 8xdark",
+    "cssVariableName": "--mico-color-purple-8xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-purple-8xdark"
+  },
+  {
+    "id": "mico-27d8588dd14df9cd",
+    "type": "color",
+    "label": "color pink",
+    "cssVariableName": "--mico-color-pink",
+    "collection": "Colors Collection",
+    "value": "--mico-color-pink"
+  },
+  {
+    "id": "mico-69b59c8216f2f93c",
+    "type": "color",
+    "label": "color pink light",
+    "cssVariableName": "--mico-color-pink-light",
+    "collection": "Colors Collection",
+    "value": "--mico-color-pink-light"
+  },
+  {
+    "id": "mico-f8ac1f742252944a",
+    "type": "color",
+    "label": "color pink 2xlight",
+    "cssVariableName": "--mico-color-pink-2xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-pink-2xlight"
+  },
+  {
+    "id": "mico-ee89d54d262ffa58",
+    "type": "color",
+    "label": "color pink 3xlight",
+    "cssVariableName": "--mico-color-pink-3xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-pink-3xlight"
+  },
+  {
+    "id": "mico-8ffc49bc485cc708",
+    "type": "color",
+    "label": "color pink 4xlight",
+    "cssVariableName": "--mico-color-pink-4xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-pink-4xlight"
+  },
+  {
+    "id": "mico-8c838fb88371455b",
+    "type": "color",
+    "label": "color pink 5xlight",
+    "cssVariableName": "--mico-color-pink-5xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-pink-5xlight"
+  },
+  {
+    "id": "mico-6b23fcdb13643dd9",
+    "type": "color",
+    "label": "color pink 6xlight",
+    "cssVariableName": "--mico-color-pink-6xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-pink-6xlight"
+  },
+  {
+    "id": "mico-fbce035b995f9692",
+    "type": "color",
+    "label": "color pink 7xlight",
+    "cssVariableName": "--mico-color-pink-7xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-pink-7xlight"
+  },
+  {
+    "id": "mico-e7ec180fc5f10860",
+    "type": "color",
+    "label": "color pink 8xlight",
+    "cssVariableName": "--mico-color-pink-8xlight",
+    "collection": "Colors Collection",
+    "value": "--mico-color-pink-8xlight"
+  },
+  {
+    "id": "mico-21d2069242645242",
+    "type": "color",
+    "label": "color pink dark",
+    "cssVariableName": "--mico-color-pink-dark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-pink-dark"
+  },
+  {
+    "id": "mico-a6fc3acc7587c3be",
+    "type": "color",
+    "label": "color pink 2xdark",
+    "cssVariableName": "--mico-color-pink-2xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-pink-2xdark"
+  },
+  {
+    "id": "mico-dbee316b14f57f10",
+    "type": "color",
+    "label": "color pink 3xdark",
+    "cssVariableName": "--mico-color-pink-3xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-pink-3xdark"
+  },
+  {
+    "id": "mico-e07b2d2ce21a79d7",
+    "type": "color",
+    "label": "color pink 4xdark",
+    "cssVariableName": "--mico-color-pink-4xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-pink-4xdark"
+  },
+  {
+    "id": "mico-cf57272e8d95476c",
+    "type": "color",
+    "label": "color pink 5xdark",
+    "cssVariableName": "--mico-color-pink-5xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-pink-5xdark"
+  },
+  {
+    "id": "mico-5f1473e5c37ccd9b",
+    "type": "color",
+    "label": "color pink 6xdark",
+    "cssVariableName": "--mico-color-pink-6xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-pink-6xdark"
+  },
+  {
+    "id": "mico-86b6ce5571ea61d0",
+    "type": "color",
+    "label": "color pink 7xdark",
+    "cssVariableName": "--mico-color-pink-7xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-pink-7xdark"
+  },
+  {
+    "id": "mico-c3e1f352c870fb3c",
+    "type": "color",
+    "label": "color pink 8xdark",
+    "cssVariableName": "--mico-color-pink-8xdark",
+    "collection": "Colors Collection",
+    "value": "--mico-color-pink-8xdark"
+  }
+]

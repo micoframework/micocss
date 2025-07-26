@@ -1,3 +1,4 @@
+
 /**
  * Mico CSS Framework - Core Variables
  *
@@ -21,13 +22,14 @@
    *
    * Usage: @media (min-width: var(--mico-breakpoint-md)) { ... }
    */
-  --mico-breakpoint-xs: 320px;   /* Extra small devices (phones) */
-  --mico-breakpoint-sm: 576px;   /* Small devices (large phones, portrait tablets) */
-  --mico-breakpoint-md: 768px;   /* Medium devices (tablets) */
-  --mico-breakpoint-lg: 992px;   /* Large devices (desktops) */
-  --mico-breakpoint-xl: 1280px;  /* Extra large devices (large desktops) */
-  --mico-breakpoint-2xl: 1440px; /* Ultra large devices (wide screens) */
-  --mico-breakpoint-3xl: 1600px;  /* Super large devices (wider screens) */
+  --mico-xxs-breakpoint: 1600px;  /* Super large devices (wider screens) */
+  --mico-xs-breakpoint: 320px;   /* Extra small devices (phones) */
+  --mico-sm-breakpoint: 576px;   /* Small devices (large phones, portrait tablets) */
+  --mico-md-breakpoint: 768px;   /* Medium devices (tablets) */
+  --mico-lg-breakpoint: 992px;   /* Large devices (desktops) */
+  --mico-xl-breakpoint: 1280px;  /* Extra large devices (large desktops) */
+  --mico-xxl-breakpoint: 1440px; /* Ultra large devices (wide screens) */
+  --mico-xxxl-breakpoint: 1600px;  /* Super large devices (wider screens) */
 
 
   /* ====================================================================== */
@@ -55,34 +57,40 @@
   /* ====================================================================== */
 
   /**
-   * Font Families
+   * ======================================================================
+   * FLUID TYPOGRAPHY SYSTEM (Based on a Major Third scale)
+   * ======================================================================
+   * Base Font Size: 1rem (16px)
+   * Typographic Ratio: 1.250
    *
-   * Standard font stacks for different text purposes.
-   * These provide fallbacks for consistent typography across platforms.
+   * This system uses clamp() to create font sizes that scale smoothly
+   * with the viewport, while maintaining accessible minimum and maximum sizes.
    */
 
-  /**
-   * Font Sizes using clamp() for responsive scaling
-   *
-   * The clamp() function takes three values: minimum, preferred, and maximum
-   * This creates text that scales smoothly between viewport sizes while
-   * maintaining readable minimum and maximum sizes.
-   *
-   * Format: clamp(min-size, viewport-based-size, max-size)
-   */
-  --mico-fs-xs: clamp(0.995rem, 1.5vw, 0.975rem); /* Extra small text, captions */
-  --mico-fs-sm: clamp(0.980rem, 2vw, 1.2rem);    /* Small text */
-  --mico-fs-md: clamp(1.051rem, 2.5vw, 1.30rem);  /* Standard body text */
-  --mico-fs-lg: clamp(1.25rem, 3vw, 1.675rem); /* Small headings (h4) */
-  --mico-fs-xl: clamp(1.5rem, 4vw, 2rem);   /* Medium headings (h3) */
-  --mico-fs-2xl: clamp(1.875rem, 5vw, 3rem);   /* Large headings (h2) */
-  --mico-fs-3xl: clamp(2.25rem, 5.5vw, 3.5rem); /* Large headings (h1) */
-  --mico-fs-4xl: clamp(2.5rem, 6vw, 4rem);     /* Large headings */
-  --mico-fs-5xl: clamp(3rem, 6.5vw, 4.5rem);   /* Large headings */
-  --mico-fs-6xl: clamp(3.5rem, 7vw, 5rem);     /* Large headings */
-  --mico-fs-7xl: clamp(3.75rem, 7.5vw, 5.5rem); /* Very large headings */
-  --mico-fs-8xl: clamp(4rem, 8vw, 6rem);       /* Extra massive headings */
-  --mico-fs-9xl: clamp(4.5rem, 9vw, 7rem);     /* Massive headings */
+  /* Captions & tiny text. Min: 12.8px, Max: 14px. */
+  --mico-fs-xxs: clamp(0.8rem, calc(0.7rem + 0.5vw), 0.875rem);
+
+  /* Small text. Min: 14px, Max: 16px. */
+  --mico-fs-xs: clamp(0.875rem, calc(0.775rem + 0.5vw), 1rem);
+  
+  /* Slightly smaller body text. Min: 15px, Max: 17.6px. */
+  --mico-fs-sm: clamp(0.9375rem, calc(0.8125rem + 0.625vw), 1.1rem);
+
+  /* Standard body text. Min: 16px, Max: 18.4px. */
+  --mico-fs-md: clamp(1rem, calc(0.85rem + 0.75vw), 1.15rem);
+
+  /* Small headings (h4, h5). Min: 20px, Max: 23.2px. */
+  --mico-fs-lg: clamp(1.25rem, calc(1.0rem + 1.25vw), 1.45rem);
+
+  /* Medium headings (h3). Min: 25px, Max: 29.6px. */
+  --mico-fs-xl: clamp(1.563rem, calc(1.208rem + 1.77vw), 1.85rem);
+
+  /* Large headings (h2). Min: 31.25px, Max: 38.4px. */
+  --mico-fs-xxl: clamp(1.953rem, calc(1.453rem + 2.5vw), 2.4rem);
+
+  /* Extra-large headings (h1). Min: 39px, Max: 49.6px. */
+  --mico-fs-xxxl: clamp(2.441rem, calc(1.716rem + 3.63vw), 3.1rem);
+  
 
   /**
    * Font Weights
@@ -174,20 +182,14 @@
    * - Values 1.5-1.7 are ideal for body text for readability
    * - Larger values create more spacing for easier reading
    */
+  --mico-lh-xxs: 0.55;       /* Compact (headings) */
   --mico-lh-xs: 1;       /* Compact (headings) */
   --mico-lh-sm: 1.25;    /* Slightly compact */
   --mico-lh-md: 1.5;     /* Standard body text */
   --mico-lh-lg: 1.625;   /* Slightly relaxed */
   --mico-lh-xl: 2;       /* Loose (easy reading) */
-  --mico-lh-2xl: 0.75rem; /* Fixed line height for small text */
-  --mico-lh-3xl: 1rem;    /* Fixed line height */
-  --mico-lh-4xl: 1.25rem; /* Fixed line height */
-  --mico-lh-5xl: 1.5rem;  /* Fixed line height */
-  --mico-lh-6xl: 1.75rem; /* Fixed line height */
-  --mico-lh-7xl: 2rem;    /* Fixed line height */
-  --mico-lh-8xl: 2.25rem; /* Fixed line height */
-  --mico-lh-9xl: 2.5rem;  /* Fixed line height */
-
+  --mico-lh-xxl: 0.75rem; /* Fixed line height for small text */
+  --mico-lh-xxxl: 1rem;    /* Fixed line height */
 
   /**
    * Letter Spacing
@@ -197,12 +199,14 @@
    * - Positive values spread letters apart
    * - 'em' units scale with the font size
    */
-  --mico-ls-xs: -0.05em;   /* Tighter spacing */
+  --mico-ls-xxs: -0.05em;   /* Tighter spacing */
+  --mico-ls-xs: -0.10em;   /* Tighter spacing */
   --mico-ls-sm: -0.025em;  /* Slightly tighter */
   --mico-ls-md: 0em;       /* Normal spacing */
   --mico-ls-lg: 0.025em;   /* Slightly wider */
   --mico-ls-xl: 0.05em;    /* Wider spacing */
-  --mico-ls-2xl: 0.1em;    /* Widest spacing */
+  --mico-ls-xxl: 0.1em;    /* Widest spacing */
+  --mico-ls-xxxl: 0.2em;    /* Widest spacing */
 
   /**
    * Text Decoration Properties
@@ -211,11 +215,14 @@
    */
   --mico-underline-offset-auto: var(--mico-value-auto);
   --mico-underline-offset-0: var(--mico-value-0);
-  --mico-underline-offset-1: 1px;
-  --mico-underline-offset-2: 2px;
-  --mico-underline-offset-4: 4px;
-  --mico-underline-offset-8: 8px;
-  --mico-underline-offset: 0.15em;  /* Default distance between text and underline */
+  --mico-underline-offset-xxs: 0.5px;
+  --mico-underline-offset-xs: 1px;
+  --mico-underline-offset-sm: 2px;
+  --mico-underline-offset-md: 0.15em;
+  --mico-underline-offset-lg: 8px;
+  --mico-underline-offset-xl: 10px;  /* Default distance between text and underline */
+  --mico-underline-offset-xxl: 12px;  /* Default distance between text and underline */
+  --mico-underline-offset-xxxl: 14px;  /* Default distance between text and underline */
 
   --mico-decoration-thickness-auto: var(--mico-value-auto);
   --mico-decoration-thickness-from-font: from-font;
@@ -287,11 +294,14 @@
    * Controls the indentation of the first line of text
    */
   --mico-indent-0: var(--mico-value-0);
-  --mico-indent-xs: 1px;
+  --mico-indent-xxs: 0.0325rem;
+  --mico-indent-xs: 0.0625rem;
   --mico-indent-sm: 0.25rem;
   --mico-indent-md: 0.5rem;
   --mico-indent-lg: 1rem;
   --mico-indent-xl: 2rem;
+  --mico-indent-xxl: 2.5rem;
+  --mico-indent-xxxl: 3rem;
 
   /**
    * Text Shadow Properties
@@ -299,19 +309,28 @@
    * Controls text shadow effects
    */
   --mico-text-shadow-none: var(--mico-value-none);
+  --mico-text-shadow-xxs: 1px 1px 2px rgba(0, 0, 0, 0.1);
   --mico-text-shadow-xs: 1px 1px 2px rgba(0, 0, 0, 0.1);
   --mico-text-shadow-sm: 2px 2px 4px rgba(0, 0, 0, 0.1);
   --mico-text-shadow-md: 4px 4px 6px rgba(0, 0, 0, 0.1);
   --mico-text-shadow-lg: 6px 6px 8px rgba(0, 0, 0, 0.15);
+  --mico-text-shadow-xl: 8px 8px 10px rgba(0, 0, 0, 0.15);
+  --mico-text-shadow-xxl: 10px 10px 12px rgba(0, 0, 0, 0.15);
+  --mico-text-shadow-xxl: 12px 12px 14px rgba(0, 0, 0, 0.15);
 
   /**
    * Text Stroke Properties
    *
    * Controls text stroke (outline) effects
    */
+  --mico-text-stroke-xxs: 0.5px;
   --mico-text-stroke-xs: 1px;
   --mico-text-stroke-sm: 2px;
   --mico-text-stroke-md: 4px;
+  --mico-text-stroke-lg: 6px;
+  --mico-text-stroke-xl: 8px;
+  --mico-text-stroke-xxl: 10px;
+  --mico-text-stroke-xxxl: 12px;
 
   /**
    * List Style Properties
@@ -445,56 +464,90 @@
   --mico-size-56: calc(var(--mico-size-unit) * 14);  /* 56px - Huge spacing */
   --mico-size-60: calc(var(--mico-size-unit) * 15);  /* 60px - Huge spacing */
   --mico-size-64: calc(var(--mico-size-unit) * 16);  /* 64px - Huge spacing */
+  --mico-size-68: calc(var(--mico-size-unit) * 17);  /* 68px - Huge spacing */
   --mico-size-72: calc(var(--mico-size-unit) * 18);  /* 72px - Huge spacing */
+  --mico-size-76: calc(var(--mico-size-unit) * 19);  /* 76px - Huge spacing */
   --mico-size-80: calc(var(--mico-size-unit) * 20);  /* 80px - Huge spacing */
+  --mico-size-84: calc(var(--mico-size-unit) * 21);  /* 84px - Huge spacing */
+  --mico-size-88: calc(var(--mico-size-unit) * 22);  /* 88px - Giant spacing */
+  --mico-size-92: calc(var(--mico-size-unit) * 23);  /* 92px - Giant spacing */
   --mico-size-96: calc(var(--mico-size-unit) * 24);  /* 96px - Giant spacing */
   --mico-size-100: calc(var(--mico-size-unit) * 25); /* 100px - Giant spacing */
+  --mico-size-104: calc(var(--mico-size-unit) * 26); /* 104px - Giant spacing */
+  --mico-size-108: calc(var(--mico-size-unit) * 27); /* 108px - Giant spacing */
   --mico-size-112: calc(var(--mico-size-unit) * 28); /* 112px - Section spacing */
+  --mico-size-116: calc(var(--mico-size-unit) * 29); /* 116px - Section spacing */
+  --mico-size-120: calc(var(--mico-size-unit) * 30); /* 120px - Section spacing */
+  --mico-size-124: calc(var(--mico-size-unit) * 31); /* 124px - Section spacing */
   --mico-size-128: calc(var(--mico-size-unit) * 32); /* 128px - Section spacing */
+  --mico-size-132: calc(var(--mico-size-unit) * 33); /* 132px - Large section spacing */
+  --mico-size-136: calc(var(--mico-size-unit) * 34); /* 136px - Large section spacing */
+  --mico-size-140: calc(var(--mico-size-unit) * 35); /* 140px - Large section spacing */
   --mico-size-144: calc(var(--mico-size-unit) * 36); /* 144px - Large section spacing */
+  --mico-size-148: calc(var(--mico-size-unit) * 37); /* 148px - Large section spacing */
+  --mico-size-152: calc(var(--mico-size-unit) * 38); /* 152px - Large section spacing */
+  --mico-size-156: calc(var(--mico-size-unit) * 39); /* 156px - Large section spacing */
   --mico-size-160: calc(var(--mico-size-unit) * 40); /* 160px - Large section spacing */
+  --mico-size-164: calc(var(--mico-size-unit) * 41); /* 164px - Large section spacing */
+  --mico-size-168: calc(var(--mico-size-unit) * 42); /* 168px - Large section spacing */
+  --mico-size-172: calc(var(--mico-size-unit) * 43); /* 172px - Large section spacing */
   --mico-size-176: calc(var(--mico-size-unit) * 44); /* 176px - Extra large section spacing */
+  --mico-size-180: calc(var(--mico-size-unit) * 45); /* 180px - Extra large section spacing */
+  --mico-size-184: calc(var(--mico-size-unit) * 46); /* 184px - Extra large section spacing */
+  --mico-size-188: calc(var(--mico-size-unit) * 47); /* 188px - Extra large section spacing */
   --mico-size-192: calc(var(--mico-size-unit) * 48); /* 192px - Extra large section spacing */
+  --mico-size-196: calc(var(--mico-size-unit) * 49); /* 196px - Extra large section spacing */
+  --mico-size-200: calc(var(--mico-size-unit) * 50); /* 200px - Extra large section spacing */
+  --mico-size-204: calc(var(--mico-size-unit) * 51); /* 204px - Extra large section spacing */
   --mico-size-208: calc(var(--mico-size-unit) * 52); /* 208px - Huge section spacing */
+  --mico-size-212: calc(var(--mico-size-unit) * 53); /* 212px - Huge section spacing */
+  --mico-size-216: calc(var(--mico-size-unit) * 54); /* 216px - Huge section spacing */
+  --mico-size-220: calc(var(--mico-size-unit) * 55); /* 220px - Huge section spacing */
   --mico-size-224: calc(var(--mico-size-unit) * 56); /* 224px - Huge section spacing */
+  --mico-size-228: calc(var(--mico-size-unit) * 57); /* 228px - Huge section spacing */
+  --mico-size-232: calc(var(--mico-size-unit) * 58); /* 232px - Huge section spacing */
+  --mico-size-236: calc(var(--mico-size-unit) * 59); /* 236px - Huge section spacing */
   --mico-size-240: calc(var(--mico-size-unit) * 60); /* 240px - Maximum spacing */
+  --mico-size-244: calc(var(--mico-size-unit) * 61); /* 244px - Maximum spacing */
+  --mico-size-248: calc(var(--mico-size-unit) * 62); /* 248px - Maximum spacing */
+  --mico-size-252: calc(var(--mico-size-unit) * 63); /* 252px - Maximum spacing */
   --mico-size-256: calc(var(--mico-size-unit) * 64); /* 256px - Maximum spacing */
-  --mico-size-260: calc(var(--mico-size-unit) * 68); /* 260px - */
-  --mico-size-264: calc(var(--mico-size-unit) * 72); /* 264px - */
-  --mico-size-268: calc(var(--mico-size-unit) * 76); /* 268px - */
-  --mico-size-272: calc(var(--mico-size-unit) * 80); /* 272px - */
-  --mico-size-276: calc(var(--mico-size-unit) * 84); /* 276px - */
-  --mico-size-280: calc(var(--mico-size-unit) * 88); /* 280px - */
-  --mico-size-284: calc(var(--mico-size-unit) * 92); /* 284px - */
-  --mico-size-288: calc(var(--mico-size-unit) * 96); /* 288px - */
-  --mico-size-292: calc(var(--mico-size-unit) * 100); /* 292px - */
-  --mico-size-296: calc(var(--mico-size-unit) * 104); /* 296px - */
-  --mico-size-300: calc(var(--mico-size-unit) * 108); /* 300px - */
-  --mico-size-304: calc(var(--mico-size-unit) * 112); /* 304px - */
-  --mico-size-308: calc(var(--mico-size-unit) * 116); /* 308px - */
-  --mico-size-312: calc(var(--mico-size-unit) * 120); /* 312px - */
-  --mico-size-316: calc(var(--mico-size-unit) * 124); /* 316px - */
-  --mico-size-320: calc(var(--mico-size-unit) * 128); /* 320px - */
-  --mico-size-324: calc(var(--mico-size-unit) * 132); /* 324px - */
-  --mico-size-328: calc(var(--mico-size-unit) * 136); /* 328px - */
-  --mico-size-332: calc(var(--mico-size-unit) * 140); /* 332px - */
-  --mico-size-336: calc(var(--mico-size-unit) * 144); /* 336px - */
-  --mico-size-340: calc(var(--mico-size-unit) * 148); /* 340px - */
-  --mico-size-344: calc(var(--mico-size-unit) * 152); /* 344px - */
-  --mico-size-348: calc(var(--mico-size-unit) * 156); /* 348px - */
-  --mico-size-352: calc(var(--mico-size-unit) * 160); /* 352px - */
-  --mico-size-356: calc(var(--mico-size-unit) * 164); /* 356px - */
-  --mico-size-360: calc(var(--mico-size-unit) * 168); /* 360px - */
-  --mico-size-364: calc(var(--mico-size-unit) * 172); /* 364px - */
-  --mico-size-368: calc(var(--mico-size-unit) * 176); /* 368px - */
-  --mico-size-372: calc(var(--mico-size-unit) * 180); /* 372px - */
-  --mico-size-376: calc(var(--mico-size-unit) * 184); /* 376px - */
-  --mico-size-380: calc(var(--mico-size-unit) * 188); /* 380px - */
-  --mico-size-384: calc(var(--mico-size-unit) * 192); /* 384px - */
-  --mico-size-388: calc(var(--mico-size-unit) * 196); /* 388px - */
-  --mico-size-392: calc(var(--mico-size-unit) * 200); /* 392px - */
-  --mico-size-396: calc(var(--mico-size-unit) * 204); /* 396px - */
-  --mico-size-400: calc(var(--mico-size-unit) * 208); /* 400px - */
+  --mico-size-260: calc(var(--mico-size-unit) * 65); /* 260px - Maximum spacing */
+  --mico-size-264: calc(var(--mico-size-unit) * 66); /* 264px - Maximum spacing */
+  --mico-size-268: calc(var(--mico-size-unit) * 67); /* 268px - Maximum spacing */
+  --mico-size-272: calc(var(--mico-size-unit) * 68); /* 272px - Maximum spacing */
+  --mico-size-276: calc(var(--mico-size-unit) * 69);  /* 276px - Large spacing */
+  --mico-size-280: calc(var(--mico-size-unit) * 70);  /* 280px - Large spacing */
+  --mico-size-284: calc(var(--mico-size-unit) * 71);  /* 284px - Large spacing */
+  --mico-size-288: calc(var(--mico-size-unit) * 72);  /* 288px - Large spacing */
+  --mico-size-292: calc(var(--mico-size-unit) * 73);  /* 292px - Large spacing */
+  --mico-size-296: calc(var(--mico-size-unit) * 74);  /* 296px - Large spacing */
+  --mico-size-300: calc(var(--mico-size-unit) * 75);  /* 300px - Large spacing */
+  --mico-size-304: calc(var(--mico-size-unit) * 76);  /* 304px - Large spacing */
+  --mico-size-308: calc(var(--mico-size-unit) * 77);  /* 308px - Large spacing */
+  --mico-size-312: calc(var(--mico-size-unit) * 78);  /* 312px - Large spacing */
+  --mico-size-316: calc(var(--mico-size-unit) * 79);  /* 316px - Large spacing */
+  --mico-size-320: calc(var(--mico-size-unit) * 80);  /* 320px - Large spacing */
+  --mico-size-324: calc(var(--mico-size-unit) * 81);  /* 324px - Large spacing */
+  --mico-size-328: calc(var(--mico-size-unit) * 82);  /* 328px - Large spacing */
+  --mico-size-332: calc(var(--mico-size-unit) * 83);  /* 332px - Large spacing */
+  --mico-size-336: calc(var(--mico-size-unit) * 84);  /* 336px - Large spacing */
+  --mico-size-340: calc(var(--mico-size-unit) * 85);  /* 340px - Large spacing */
+  --mico-size-344: calc(var(--mico-size-unit) * 86);  /* 344px - Large spacing */
+  --mico-size-348: calc(var(--mico-size-unit) * 87);  /* 348px - Large spacing */
+  --mico-size-352: calc(var(--mico-size-unit) * 88);  /* 352px - Large spacing */
+  --mico-size-356: calc(var(--mico-size-unit) * 89);  /* 356px - Large spacing */
+  --mico-size-360: calc(var(--mico-size-unit) * 90);  /* 360px - Large spacing */
+  --mico-size-364: calc(var(--mico-size-unit) * 91);  /* 364px - Large spacing */
+  --mico-size-368: calc(var(--mico-size-unit) * 92);  /* 368px - Large spacing */
+  --mico-size-372: calc(var(--mico-size-unit) * 93);  /* 372px - Large spacing */
+  --mico-size-376: calc(var(--mico-size-unit) * 94);  /* 376px - Large spacing */
+  --mico-size-380: calc(var(--mico-size-unit) * 95);  /* 380px - Large spacing */
+  --mico-size-384: calc(var(--mico-size-unit) * 96);  /* 384px - Large spacing */
+  --mico-size-388: calc(var(--mico-size-unit) * 97);  /* 388px - Large spacing */
+  --mico-size-392: calc(var(--mico-size-unit) * 98);  /* 392px - Large spacing */
+  --mico-size-396: calc(var(--mico-size-unit) * 99);  /* 396px - Large spacing */
+  --mico-size-400: calc(var(--mico-size-unit) * 100); /* 400px - Large spacing */
 
 
 
@@ -506,12 +559,14 @@
    *
    * Format: clamp(min-size, viewport-based-size, max-size)
    */
+  --mico-size-fluid-xxs: clamp(var(--mico-size-8), 3vw, var(--mico-size-24));
   --mico-size-fluid-xs: clamp(var(--mico-size-16), 3vw, var(--mico-size-32));
   --mico-size-fluid-sm: clamp(var(--mico-size-16), 4vw, var(--mico-size-56));
   --mico-size-fluid-md: clamp(var(--mico-size-16), 6vw, var(--mico-size-80));
   --mico-size-fluid-lg: clamp(var(--mico-size-16), 8vw, var(--mico-size-100));
   --mico-size-fluid-xl: clamp(var(--mico-size-16), 10vw, var(--mico-size-128));
-  --mico-size-fluid-2xl: clamp(var(--mico-size-16), 12vw, var(--mico-size-192));
+  --mico-size-fluid-xxl: clamp(var(--mico-size-16), 12vw, var(--mico-size-192));
+  --mico-size-fluid-xxl: clamp(var(--mico-size-16), 12vw, var(--mico-size-224));
 
 
   /* ====================================================================== */
@@ -524,14 +579,15 @@
    * Controls the roundness of element corners.
    * Consistent border radius values create a cohesive design language.
    */
-  --mico-radius-none: 0;            /* No rounding */
-  --mico-radius-xs: 1px;            /* Barely visible rounding */
-  --mico-radius-sm: 2px;            /* Subtle rounding */
-  --mico-radius-md: 4px;            /* Standard rounding */
-  --mico-radius-lg: 8px;            /* Prominent rounding */
-  --mico-radius-xl: 12px;           /* Very rounded corners */
-  --mico-radius-2xl: 16px;          /* Extra rounded corners */
-  --mico-radius-full: 9999px;       /* Fully rounded (circles/pills) */
+  --mico-rounded-none: 0;            /* No rounding */
+  --mico-rounded-xxs: 0.5px;            /* Barely visible rounding */
+  --mico-rounded-xs: 1px;            /* Barely visible rounding */
+  --mico-rounded-sm: 2px;            /* Subtle rounding */
+  --mico-rounded-md: 4px;            /* Standard rounding */
+  --mico-rounded-lg: 8px;            /* Prominent rounding */
+  --mico-rounded-xl: 12px;           /* Very rounded corners */
+  --mico-rounded-xxl: 16px;          /* Extra rounded corners */
+  --mico-rounded-full: 9999px;       /* Fully rounded (circles/pills) */
 
   /**
    * Border Styles
@@ -557,10 +613,14 @@
    * These follow the same scale pattern as other properties.
    */
   --mico-border-width-0: 0px;       /* No border */
-  --mico-border-width-1: 1px;       /* Thin border (standard) */
-  --mico-border-width-2: 2px;       /* Medium border */
-  --mico-border-width-4: 4px;       /* Thick border */
-  --mico-border-width-8: 8px;       /* Very thick border */
+  --mico-border-width-xxs: 0.5px;       /* Thin border (standard) */
+  --mico-border-width-xs: 1px;       /* Thin border (standard) */
+  --mico-border-width-sm: 2px;       /* Medium border */
+  --mico-border-width-md: 4px;       /* Thick border */
+  --mico-border-width-lg: 8px;       /* Very thick border */
+  --mico-border-width-xl: 10px;       /* Very thick border */
+  --mico-border-width-xxl: 12px;       /* Very thick border */
+  --mico-border-width-xxxl: 14px;       /* Very thick border */
   
 
   /**
@@ -569,10 +629,14 @@
    * These variables define outline styles for accessibility and focus states.
    */
   --mico-outline-width-0: 0px;      /* No outline */
-  --mico-outline-width-1: 1px;      /* Thin outline */
-  --mico-outline-width-2: 2px;      /* Medium outline */
-  --mico-outline-width-4: 4px;      /* Thick outline */
-  --mico-outline-width-8: 8px;      /* Very thick outline */
+  --mico-outline-width-xxs: 1px;      /* Thin outline */
+  --mico-outline-width-xs: 1px;      /* Thin outline */
+  --mico-outline-width-sm: 2px;      /* Medium outline */
+  --mico-outline-width-md: 4px;      /* Thick outline */
+  --mico-outline-width-lg: 8px;      /* Very thick outline */
+  --mico-outline-width-xl: 10px;      /* Very thick outline */
+  --mico-outline-width-xxl: 12px;      /* Very thick outline */
+  --mico-outline-width-xxxl: 14px;      /* Very thick outline */
 
   --mico-outline-style-none: none;  /* No outline */
   --mico-outline-style-solid: solid; /* Solid outline */
@@ -581,10 +645,14 @@
   --mico-outline-style-double: double; /* Double outline */
 
   --mico-outline-offset-0: 0px;     /* No offset */
-  --mico-outline-offset-1: 1px;     /* Small offset */
-  --mico-outline-offset-2: 2px;     /* Medium offset */
-  --mico-outline-offset-4: 4px;     /* Large offset */
-  --mico-outline-offset-8: 8px;     /* Extra large offset */
+  --mico-outline-offset-xxs: 0.5px;     /* Small offset */
+  --mico-outline-offset-xs: 1px;     /* Small offset */
+  --mico-outline-offset-sm: 2px;     /* Medium offset */
+  --mico-outline-offset-md: 4px;     /* Large offset */
+  --mico-outline-offset-lg: 8px;     /* Extra large offset */
+  --mico-outline-offset-xl: 10px;     /* Extra large offset */
+  --mico-outline-offset-xxl: 12px;     /* Extra large offset */
+  --mico-outline-offset-xxxl: 14px;     /* Extra large offset */
 
   /**
    * Divide Properties
@@ -610,48 +678,57 @@
    * Light mode shadows use black with opacity for a subtle effect.
    * Dark mode shadows use white with opacity for a subtle effect.
    */
---mico-shadow-primary: 0px 4.5px 4px -2.8px hsl(from var(--mico-color-primary) h calc(s * 0.55) l);
---mico-shadow-secondary: 0px 4.5px 4px -2.8px hsl(from var(--mico-color-secondary) h calc(s * 0.55) l);
---mico-shadow-accent: 0px 4.5px 4px -2.8px hsl(from var(--mico-color-accent) h calc(s * 0.55) l);
---mico-shadow-success: 0px 4.5px 4px -2.8px hsl(from var(--mico-color-success) h calc(s * 0.55) l);
---mico-shadow-error: 0px 4.5px 4px -2.8px hsl(from var(--mico-color-error) h calc(s * 0.55) l);
---mico-shadow-warning: 0px 4.5px 4px -2.8px hsl(from var(--mico-color-warning) h calc(s * 0.55) l);
---mico-shadow-info: 0px 4.5px 4px -2.8px hsl(from var(--mico-color-info) h calc(s * 0.55) l);
+--mico-shadow-primary: 0px 4.5px 4px -2.8px hsl(from var(--mico-color-primary-3xlight) h calc(s * 0.55) l);
+--mico-shadow-secondary: 0px 4.5px 4px -2.8px hsl(from var(--mico-color-secondary-3xlight) h calc(s * 0.55) l);
+--mico-shadow-accent: 0px 4.5px 4px -2.8px hsl(from var(--mico-color-accent-3xlight) h calc(s * 0.55) l);
+--mico-shadow-success: 0px 4.5px 4px -2.8px hsl(from var(--mico-color-success-3xlight) h calc(s * 0.55) l);
+--mico-shadow-error: 0px 4.5px 4px -2.8px hsl(from var(--mico-color-error-3xlight) h calc(s * 0.55) l);
+--mico-shadow-warning: 0px 4.5px 4px -2.8px hsl(from var(--mico-color-warning-3xlight) h calc(s * 0.55) l);
+--mico-shadow-info: 0px 4.5px 4px -2.8px hsl(from var(--mico-color-info-3xlight) h calc(s * 0.55) l);
 
 --mico-shadow-hover-primary: 0px 4.5px 4px -3.8px hsl(from var(--mico-color-primary) h calc(s * 0.9) l) !important; 
 --mico-shadow-hover-secondary: 0px 4.5px 4px -3.8px hsl(from var(--mico-color-secondary) h calc(s * 0.9) l) !important; 
 --mico-shadow-hover-accent: 0px 4.5px 4px -3.8px hsl(from var(--mico-color-accent) h calc(s * 0.9) l) !important; 
+--mico-shadow-hover-success: 0px 4.5px 4px -3.8px hsl(from var(--mico-color-success) h calc(s * 0.9) l) !important;
+--mico-shadow-hover-error: 0px 4.5px 4px -3.8px hsl(from var(--mico-color-error) h calc(s * 0.9) l) !important;
+--mico-shadow-hover-warning: 0px 4.5px 4px -3.8px hsl(from var(--mico-color-warning) h calc(s * 0.9) l) !important;
   
 --mico-shadow-focus-primary: 0px 4.6px 4px -3.8px hsl(from var(--mico-color-primary) h calc(s * 0.8) l) !important; 
 --mico-shadow-focus-secondary: 0px 4.6px 4px -3.8px hsl(from var(--mico-color-secondary) h calc(s * 0.8) l) !important; 
 --mico-shadow-focus-accent: 0px 4.6px 4px -3.8px hsl(from var(--mico-color-accent) h calc(s * 0.8) l) !important; 
+--mico-shadow-focus-success: 0px 4.6px 4px -3.8px hsl(from var(--mico-color-success) h calc(s * 0.8) l) !important;
+--mico-shadow-focus-error: 0px 4.6px 4px -3.8px hsl(from var(--mico-color-error) h calc(s * 0.8) l) !important;
+--mico-shadow-focus-warning: 0px 4.6px 4px -3.8px hsl(from var(--mico-color-warning) h calc(s * 0.8) l) !important;
   
 --mico-shadow-active-primary: 0px 4.8px 4px -2.8px hsl(from var(--mico-color-primary) h calc(s * 0.7) l) !important; 
 --mico-shadow-active-secondary: 0px 4.8px 4px -2.8px hsl(from var(--mico-color-secondary) h calc(s * 0.7) l) !important; 
 --mico-shadow-active-accent: 0px 4.8px 4px -2.8px hsl(from var(--mico-color-accent) h calc(s * 0.7) l) !important; 
+--mico-shadow-active-success: 0px 4.8px 4px -2.8px hsl(from var(--mico-color-success) h calc(s * 0.7) l) !important;
+--mico-shadow-active-error: 0px 4.8px 4px -2.8px hsl(from var(--mico-color-error) h calc(s * 0.7) l) !important;
+--mico-shadow-active-warning: 0px 4.8px 4px -2.8px hsl(from var(--mico-color-warning) h calc(s * 0.7) l) !important;
 
   
-   /* Light Mode Shadows */
-  --mico-shadow-none-light: var(--mico-value-none);
-  --mico-shadow-xs-light: 0 2px 2px rgba(0, 0, 0, 0.05);  /* Subtle shadow */
-  --mico-shadow-sm-light: 0 2px 2px rgba(0, 0, 0, 0.05);  /* Subtle shadow */
-  --mico-shadow-md-light: 0 4px 6px rgba(0, 0, 0, 0.1);   /* Medium shadow */
-  --mico-shadow-lg-light: 0 10px 15px rgba(0, 0, 0, 0.1); /* Large shadow */
-  --mico-shadow-xl-light: 0 20px 25px rgba(0, 0, 0, 0.15); /* Extra large shadow */
-  --mico-shadow-2xl-light: ;
-  --mico-shadow-3xl-light: ;
-
-
+/* Light Mode Shadows */
+  --mico-shadow-none: var(--mico-value-none);
+  --mico-shadow-dark: 0 2px 2px rgba(0, 0, 0, 0.05);  /* Subtle shadow */
+  --mico-shadow-2xdark: 0 2px 4px rgba(0, 0, 0, 0.07);  /* Slightly stronger shadow */
+  --mico-shadow-3xdark: 0 4px 6px rgba(0, 0, 0, 0.10);   /* Medium shadow */
+  --mico-shadow-4xdark: 0 10px 15px rgba(0, 0, 0, 0.12); /* Large shadow */
+  --mico-shadow-5xdark: 0 20px 25px rgba(0, 0, 0, 0.15); /* Extra large shadow */
+  --mico-shadow-6xdark: 0 24px 32px rgba(0, 0, 0, 0.18); /* Extra extra large shadow */
+  --mico-shadow-7xdark: 0 32px 40px rgba(0, 0, 0, 0.22); /* Ultra large shadow */
+  --mico-shadow-8xdark: 0 40px 56px rgba(0, 0, 0, 0.28); /* Maximum shadow */
 
   /* Inset Shadows (for pressed/inset effects) */
-  --mico-shadow-inset-none-light: inset var(--mico-value-none);
-  --mico-shadow-inset-xs-light: inset 0 2px 2px rgba(0, 0, 0, 0.05);  /* Subtle shadow */
-  --mico-shadow-inset-sm-light: inset 0 1px 2px rgba(0, 0, 0, 0.05);
-  --mico-shadow-inset-md-light: inset 0 4px 6px rgba(0, 0, 0, 0.1);
-  --mico-shadow-inset-lg-light: inset 0 20px 25px rgba(0, 0, 0, 0.15); /* Extra large shadow */
-  --mico-shadow-inset-xl-light: inset 0 20px 25px rgba(0, 0, 0, 0.20); /* Extra large shadow */
-  --mico-shadow-inset-2xl-light: inset ;
-  --mico-shadow-inset-3xl-light: inset ;
+  --mico-shadow-inset-none: inset var(--mico-value-none);
+  --mico-shadow-inset-dark: inset 0 2px 2px rgba(0, 0, 0, 0.05);  /* Subtle shadow */
+  --mico-shadow-inset-2xdark: inset 0 2px 4px rgba(0, 0, 0, 0.07); /* Slightly stronger shadow */
+  --mico-shadow-inset-3xdark: inset 0 4px 6px rgba(0, 0, 0, 0.10); /* Medium shadow */
+  --mico-shadow-inset-4xdark: inset 0 10px 15px rgba(0, 0, 0, 0.12); /* Large shadow */
+  --mico-shadow-inset-5xdark: inset 0 20px 25px rgba(0, 0, 0, 0.15); /* Extra large shadow */
+  --mico-shadow-inset-6xdark: inset 0 24px 32px rgba(0, 0, 0, 0.18); /* Extra extra large shadow */
+  --mico-shadow-inset-7xdark: inset 0 32px 40px rgba(0, 0, 0, 0.22); /* Ultra large shadow */
+  --mico-shadow-inset-8xdark: inset 0 40px 56px rgba(0, 0, 0, 0.28); /* Maximum shadow */
 
   /* Focus Shadow for accessibility */
   --mico-shadow-focus: 0 0 0 3px rgba(66, 153, 225, 0.5);
@@ -663,34 +740,34 @@
    * - Dark mode: Uses lighter shadows on dark backgrounds
    * - High contrast mode: Uses more visible focus indicators
    */
-  @media (prefers-color-scheme: dark) {
   /* Dark Mode Shadows */
-  --mico-shadow-none-dark: var(--mico-value-none);
-  --mico-shadow-xs-dark: 0 1px 2px rgba(255, 255, 255, 0.05);
-  --mico-shadow-sm-dark: 0 1px 2px rgba(255, 255, 255, 0.05);
-  --mico-shadow-md-dark: 0 4px 6px rgba(255, 255, 255, 0.1);
-  --mico-shadow-lg-dark: 0 10px 15px rgba(255, 255, 255, 0.1);
-  --mico-shadow-xl-dark: 0 20px 25px rgba(255, 255, 255, 0.15);
-  --mico-shadow-2xl-light: ;
-  --mico-shadow-3xl-light: ;
+  --mico-shadow-light: 0 1px 2px rgba(255, 255, 255, 0.05); /* Subtle light shadow */
+  --mico-shadow-2xlight: 0 2px 4px rgba(255, 255, 255, 0.07); /* Slightly stronger light shadow */
+  --mico-shadow-3xlight: 0 4px 6px rgba(255, 255, 255, 0.10); /* Medium light shadow */
+  --mico-shadow-4xlight: 0 10px 15px rgba(255, 255, 255, 0.12); /* Large light shadow */
+  --mico-shadow-5xlight: 0 20px 25px rgba(255, 255, 255, 0.15); /* Extra large light shadow */
+  --mico-shadow-6xlight: 0 24px 32px rgba(255, 255, 255, 0.18); /* Extra extra large light shadow */
+  --mico-shadow-7xlight: 0 32px 40px rgba(255, 255, 255, 0.22); /* Ultra large light shadow */
+  --mico-shadow-8xlight: 0 40px 56px rgba(255, 255, 255, 0.28); /* Maximum light shadow */
 
-  --mico-shadow-inset-none-dark: inset var(--mico-value-none);
-  --mico-shadow-inset-xs-dark: inset 0 1px 2px rgba(255, 255, 255, 0.05);
-  --mico-shadow-inset-sm-dark: inset 0 1px 2px rgba(255, 255, 255, 0.05);
-  --mico-shadow-inset-md-dark: inset 0 4px 6px rgba(255, 255, 255, 0.1);
-  --mico-shadow-inset-lg-light: inset 0 20px 25px rgba(0, 0, 0, 0.15); /* Still shadow for light mode, change them to match dark mode */
-  --mico-shadow-inset-xl-light: inset 0 20px 25px rgba(0, 0, 0, 0.20); /* Extra large shadow */
-  --mico-shadow-inset-2xl-light: inset ;
-  --mico-shadow-inset-3xl-light: inset ;
+  --mico-shadow-inset-light: inset 0 1px 2px rgba(255, 255, 255, 0.05);
+  --mico-shadow-inset-2xlight: inset 0 2px 4px rgba(255, 255, 255, 0.07);
+  --mico-shadow-inset-3xlight: inset 0 4px 6px rgba(255, 255, 255, 0.10);
+  --mico-shadow-inset-4xlight: inset 0 10px 15px rgba(255, 255, 255, 0.12);
+  --mico-shadow-inset-5xlight: inset 0 20px 25px rgba(255, 255, 255, 0.15);
+  --mico-shadow-inset-6xlight: inset 0 24px 32px rgba(255, 255, 255, 0.18);
+  --mico-shadow-inset-7xlight: inset 0 32px 40px rgba(255, 255, 255, 0.22);
+  --mico-shadow-inset-8xlight: inset 0 40px 56px rgba(255, 255, 255, 0.28);
+
   --mico-shadow-focus: 0 0 0 3px rgba(191, 219, 254, 0.6);
-  }
 
+  /* High Contrast Mode Shadows */
   @media (prefers-contrast: high) {
     --mico-shadow-focus: 0 0 0 4px rgba(0, 0, 0, 1);
-    --mico-shadow-sm-contrast: 0 0 0 1px currentColor;
-    --mico-shadow-md-contrast: 0 0 0 2px currentColor;
-    --mico-shadow-lg-contrast: 0 0 0 3px currentColor;
-    --mico-shadow-xl-contrast: 0 0 0 4px currentColor;
+    --mico-shadow-contrast-sm: 0 0 0 1px currentColor;
+    --mico-shadow-contrast-md: 0 0 0 2px currentColor;
+    --mico-shadow-contrast-lg: 0 0 0 3px currentColor;
+    --mico-shadow-contrast-xl: 0 0 0 4px currentColor;
   }
 
   /* ====================================================================== */
@@ -855,8 +932,9 @@
    * These variables define how grid items are automatically placed and sized.
    * Auto-fit and auto-fill create responsive layouts without media queries.
    */
-  --mico-grid-auto-fit: auto-fit;    /* Expands items to fill available space */
-  --mico-grid-auto-fill: auto-fill;  /* Creates as many tracks as possible */
+  --mico-grid-auto-columns: auto;      /* Automatically sized columns */
+  --mico-grid-auto-fit: repeat(auto-fit, minmax(min(var(--mico-grid-min-column-width), 100%), 1fr));    /* Expands items to fill available space */
+  --mico-grid-auto-fill: repeat(auto-fill, minmax(min(var(--mico-grid-min-column-width), 100%), 1fr));  /* Creates as many tracks as possible */
 
   /**
    * Grid Placement Properties
@@ -877,6 +955,18 @@
   --mico-place-content-between: space-between; /* Content evenly distributed with space between */
   --mico-place-content-evenly: space-evenly;   /* Content evenly distributed with equal space */
 
+/* Grid Item Alignment (for individual items) */
+--mico-align-self-start: start;         /* Item aligned at start of grid area */
+--mico-align-self-end: end;             /* Item aligned at end of grid area */
+--mico-align-self-center: center;       /* Item aligned at center of grid area */
+--mico-align-self-stretch: stretch;     /* Item stretched to fill grid area */
+
+/* Grid Item Justification (for individual items) */
+--mico-justify-self-start: start;       /* Item justified at start of grid area */
+--mico-justify-self-end: end;           /* Item justified at end of grid area */
+--mico-justify-self-center: center;     /* Item justified at center of grid area */
+--mico-justify-self-stretch: stretch;   /* Item stretched to fill grid area */
+
   /**
    * Grid Properties
    *
@@ -886,7 +976,7 @@
 
   /* Grid Configuration */
   --mico-grid-column-count: 12;       /* Default number of columns */
-  --mico-grid-min-column-width: 200px; /* Minimum column width for responsive grids */
+  --mico-grid-min-column-width: 250px; /* Minimum column width for responsive grids */
   --mico-grid-row-count: 1;           /* Default number of rows */
   --mico-grid-min-row-height: 100px;  /* Minimum row height for responsive grids */
 
@@ -1185,24 +1275,14 @@
   --mico-max-content: max-content;    /* Largest size needed for content */
 
   /* Percentage-based Sizing */
-  --mico-width-full: 100%;            /* Full width of container */
-  --mico-height-full: 100%;           /* Full height of container */
-  --mico-width-half: 50%;             /* Half width of container */
-  --mico-height-half: 50%;            /* Half height of container */
-  --mico-width-quarter: 25%;           /* Quarter width of container */
-  --mico-height-quarter: 25%;         /* Quarter height of container */
-  --mico-width-third: 33.33%;         /* Third width of container */
-  --mico-height-third: 33.33%;       /* Third height of container */
+  --mico-full: 100%;            /* Full width of container */
+  --mico-half: 50%;             /* Half width of container */
+  --mico-quarter: 25%;           /* Quarter width of container */
+  --mico-third: 33.33%;         /* Third width of container */
 
   /* Viewport-based Sizing */
   --mico-width-screen: 100vw;         /* Full viewport width */
   --mico-height-screen: 100vh;        /* Full viewport height */
-
-  /* Min/Max Constraints */
-  --mico-min-width-0: 0;              /* No minimum width */
-  --mico-min-height-0: 0;             /* No minimum height */
-  --mico-max-width-full: 100%;        /* Maximum width of container */
-  --mico-max-height-full: 100%;       /* Maximum height of container */
 
   /* ====================================================================== */
   /* ALIGNMENT SYSTEM                                                       */
@@ -1646,16 +1726,24 @@
   --mico-color-visited: oklch(0.55 0.15 300); /* Base visited color - distinct from primary */
 
   /* Visited Tints (lighter variations) */
-  --mico-color-visited-2xlight: oklch(from var(--mico-color-visited) calc(l + (1 - l) * 0.3) calc(c * 0.8) h); /* Soft visited tint */
-  --mico-color-visited-3xlight: oklch(from var(--mico-color-visited) calc(l + (1 - l) * 0.5) calc(c * 0.6) h); /* Medium visited tint */
-  --mico-color-visited-4xlight: oklch(from var(--mico-color-visited) calc(l + (1 - l) * 0.7) calc(c * 0.4) h); /* Light visited tint */
-  --mico-color-visited-5xlight: oklch(from var(--mico-color-visited) calc(l + (1 - l) * 0.85) calc(c * 0.2) h); /* Pale visited tint */
+  --mico-color-visited-light: oklch(from var(--mico-color-visited) var(--mico-color-light-tint) var(--mico-color-chrome-tint) var(--mico-color-hue-tint));
+  --mico-color-visited-2xlight: oklch(from var(--mico-color-visited) var(--mico-color-light-2xtint) var(--mico-color-chrome-2xtint) var(--mico-color-hue-2xtint));
+  --mico-color-visited-3xlight: oklch(from var(--mico-color-visited) var(--mico-color-light-3xtint) var(--mico-color-chrome-3xtint) var(--mico-color-hue-3xtint));
+  --mico-color-visited-4xlight: oklch(from var(--mico-color-visited) var(--mico-color-light-4xtint) var(--mico-color-chrome-4xtint) var(--mico-color-hue-4xtint));
+  --mico-color-visited-5xlight: oklch(from var(--mico-color-visited) var(--mico-color-light-5xtint) var(--mico-color-chrome-5xtint) var(--mico-color-hue-5xtint));
+  --mico-color-visited-6xlight: oklch(from var(--mico-color-visited) var(--mico-color-light-6xtint) var(--mico-color-chrome-6xtint) var(--mico-color-hue-6xtint));
+  --mico-color-visited-7xlight: oklch(from var(--mico-color-visited) var(--mico-color-light-7xtint) var(--mico-color-chrome-7xtint) var(--mico-color-hue-7xtint));
+  --mico-color-visited-8xlight: oklch(from var(--mico-color-visited) var(--mico-color-light-8xtint) var(--mico-color-chrome-8xtint) var(--mico-color-hue-8xtint));
 
   /* Visited Shades (darker variations) */
-  --mico-color-visited-2xdark: oklch(from var(--mico-color-visited) calc(l * 0.8) calc(c * 1.1) h); /* Soft visited shade */
-  --mico-color-visited-3xdark: oklch(from var(--mico-color-visited) calc(l * 0.6) calc(c * 1.2) h); /* Medium visited shade */
-  --mico-color-visited-4xdark: oklch(from var(--mico-color-visited) calc(l * 0.4) calc(c * 1.3) h); /* Dark visited shade */
-  --mico-color-visited-5xdark: oklch(from var(--mico-color-visited) calc(l * 0.25) calc(c * 1.4) h); /* Deep visited shade */
+  --mico-color-visited-dark: oklch(from var(--mico-color-visited) var(--mico-color-light-shade) var(--mico-color-chrome-shade) var(--mico-color-hue-shade));
+  --mico-color-visited-2xdark: oklch(from var(--mico-color-visited) var(--mico-color-light-2xshade) var(--mico-color-chrome-2xshade) var(--mico-color-hue-2xshade));
+  --mico-color-visited-3xdark: oklch(from var(--mico-color-visited) var(--mico-color-light-3xshade) var(--mico-color-chrome-3xshade) var(--mico-color-hue-3xshade));
+  --mico-color-visited-4xdark: oklch(from var(--mico-color-visited) var(--mico-color-light-4xshade) var(--mico-color-chrome-4xshade) var(--mico-color-hue-4xshade));
+  --mico-color-visited-5xdark: oklch(from var(--mico-color-visited) var(--mico-color-light-5xshade) var(--mico-color-chrome-5xshade) var(--mico-color-hue-5xshade));
+  --mico-color-visited-6xdark: oklch(from var(--mico-color-visited) var(--mico-color-light-6xshade) var(--mico-color-chrome-6xshade) var(--mico-color-hue-6xshade));
+  --mico-color-visited-7xdark: oklch(from var(--mico-color-visited) var(--mico-color-light-7xshade) var(--mico-color-chrome-7xshade) var(--mico-color-hue-7xshade));
+  --mico-color-visited-8xdark: oklch(from var(--mico-color-visited) var(--mico-color-light-8xshade) var(--mico-color-chrome-8xshade) var(--mico-color-hue-8xshade));
 
   /**
    * Neutral Colors - Black System (OKLCH)
@@ -1666,16 +1754,24 @@
   --mico-color-black: oklch(0.1 0.005 270); /* Base black color */
 
   /* Black Tints (lighter variations) */
-  --mico-color-black-2xlight: oklch(from var(--mico-color-black) calc(l + (1 - l) * 0.3) calc(c * 0.8) h); /* Soft black tint */
-  --mico-color-black-3xlight: oklch(from var(--mico-color-black) calc(l + (1 - l) * 0.5) calc(c * 0.6) h); /* Medium black tint */
-  --mico-color-black-4xlight: oklch(from var(--mico-color-black) calc(l + (1 - l) * 0.7) calc(c * 0.4) h); /* Light black tint */
-  --mico-color-black-5xlight: oklch(from var(--mico-color-black) calc(l + (1 - l) * 0.85) calc(c * 0.2) h); /* Pale black tint */
+  --mico-color-black-light: oklch(from var(--mico-color-black) var(--mico-color-light-tint) var(--mico-color-chrome-tint) var(--mico-color-hue-tint));
+  --mico-color-black-2xlight: oklch(from var(--mico-color-black) var(--mico-color-light-2xtint) var(--mico-color-chrome-2xtint) var(--mico-color-hue-2xtint));
+  --mico-color-black-3xlight: oklch(from var(--mico-color-black) var(--mico-color-light-3xtint) var(--mico-color-chrome-3xtint) var(--mico-color-hue-3xtint));
+  --mico-color-black-4xlight: oklch(from var(--mico-color-black) var(--mico-color-light-4xtint) var(--mico-color-chrome-4xtint) var(--mico-color-hue-4xtint));
+  --mico-color-black-5xlight: oklch(from var(--mico-color-black) var(--mico-color-light-5xtint) var(--mico-color-chrome-5xtint) var(--mico-color-hue-5xtint));
+  --mico-color-black-6xlight: oklch(from var(--mico-color-black) var(--mico-color-light-6xtint) var(--mico-color-chrome-6xtint) var(--mico-color-hue-6xtint));
+  --mico-color-black-7xlight: oklch(from var(--mico-color-black) var(--mico-color-light-7xtint) var(--mico-color-chrome-7xtint) var(--mico-color-hue-7xtint));
+  --mico-color-black-8xlight: oklch(from var(--mico-color-black) var(--mico-color-light-8xtint) var(--mico-color-chrome-8xtint) var(--mico-color-hue-8xtint));
 
   /* Black Shades (darker variations) */
-  --mico-color-black-2xdark: oklch(from var(--mico-color-black) calc(l * 0.8) calc(c * 1.1) h); /* Soft black shade */
-  --mico-color-black-3xdark: oklch(from var(--mico-color-black) calc(l * 0.6) calc(c * 1.2) h); /* Medium black shade */
-  --mico-color-black-4xdark: oklch(from var(--mico-color-black) calc(l * 0.4) calc(c * 1.3) h); /* Dark black shade */
-  --mico-color-black-5xdark: oklch(from var(--mico-color-black) calc(l * 0.25) calc(c * 1.4) h); /* Deep black shade */
+  --mico-color-black-dark: oklch(from var(--mico-color-black) var(--mico-color-light-shade) var(--mico-color-chrome-shade) var(--mico-color-hue-shade));
+  --mico-color-black-2xdark: oklch(from var(--mico-color-black) var(--mico-color-light-2xshade) var(--mico-color-chrome-2xshade) var(--mico-color-hue-2xshade));
+  --mico-color-black-3xdark: oklch(from var(--mico-color-black) var(--mico-color-light-3xshade) var(--mico-color-chrome-3xshade) var(--mico-color-hue-3xshade));
+  --mico-color-black-4xdark: oklch(from var(--mico-color-black) var(--mico-color-light-4xshade) var(--mico-color-chrome-4xshade) var(--mico-color-hue-4xshade));
+  --mico-color-black-5xdark: oklch(from var(--mico-color-black) var(--mico-color-light-5xshade) var(--mico-color-chrome-5xshade) var(--mico-color-hue-5xshade));
+  --mico-color-black-6xdark: oklch(from var(--mico-color-black) var(--mico-color-light-6xshade) var(--mico-color-chrome-6xshade) var(--mico-color-hue-6xshade));
+  --mico-color-black-7xdark: oklch(from var(--mico-color-black) var(--mico-color-light-7xshade) var(--mico-color-chrome-7xshade) var(--mico-color-hue-7xshade));
+  --mico-color-black-8xdark: oklch(from var(--mico-color-black) var(--mico-color-light-8xshade) var(--mico-color-chrome-8xshade) var(--mico-color-hue-8xshade));
 
   /**
    * Neutral Colors - Gray System (OKLCH)
@@ -1686,16 +1782,24 @@
   --mico-color-gray: oklch(0.5 0.01 270); /* Base gray color - true neutral */
 
   /* Gray Tints (lighter variations) */
-  --mico-color-gray-2xlight: oklch(from var(--mico-color-gray) calc(l + (1 - l) * 0.3) calc(c * 0.8) h); /* Soft gray tint */
-  --mico-color-gray-3xlight: oklch(from var(--mico-color-gray) calc(l + (1 - l) * 0.5) calc(c * 0.6) h); /* Medium gray tint */
-  --mico-color-gray-4xlight: oklch(from var(--mico-color-gray) calc(l + (1 - l) * 0.7) calc(c * 0.4) h); /* Light gray tint */
-  --mico-color-gray-5xlight: oklch(from var(--mico-color-gray) calc(l + (1 - l) * 0.85) calc(c * 0.2) h); /* Pale gray tint */
+  --mico-color-gray-light: oklch(from var(--mico-color-gray) var(--mico-color-light-tint) var(--mico-color-chrome-tint) var(--mico-color-hue-tint));
+  --mico-color-gray-2xlight: oklch(from var(--mico-color-gray) var(--mico-color-light-2xtint) var(--mico-color-chrome-2xtint) var(--mico-color-hue-2xtint));
+  --mico-color-gray-3xlight: oklch(from var(--mico-color-gray) var(--mico-color-light-3xtint) var(--mico-color-chrome-3xtint) var(--mico-color-hue-3xtint));
+  --mico-color-gray-4xlight: oklch(from var(--mico-color-gray) var(--mico-color-light-4xtint) var(--mico-color-chrome-4xtint) var(--mico-color-hue-4xtint));
+  --mico-color-gray-5xlight: oklch(from var(--mico-color-gray) var(--mico-color-light-5xtint) var(--mico-color-chrome-5xtint) var(--mico-color-hue-5xtint));
+  --mico-color-gray-6xlight: oklch(from var(--mico-color-gray) var(--mico-color-light-6xtint) var(--mico-color-chrome-6xtint) var(--mico-color-hue-6xtint));
+  --mico-color-gray-7xlight: oklch(from var(--mico-color-gray) var(--mico-color-light-7xtint) var(--mico-color-chrome-7xtint) var(--mico-color-hue-7xtint));
+  --mico-color-gray-8xlight: oklch(from var(--mico-color-gray) var(--mico-color-light-8xtint) var(--mico-color-chrome-8xtint) var(--mico-color-hue-8xtint));
 
   /* Gray Shades (darker variations) */
-  --mico-color-gray-2xdark: oklch(from var(--mico-color-gray) calc(l * 0.8) calc(c * 1.1) h); /* Soft gray shade */
-  --mico-color-gray-3xdark: oklch(from var(--mico-color-gray) calc(l * 0.6) calc(c * 1.2) h); /* Medium gray shade */
-  --mico-color-gray-4xdark: oklch(from var(--mico-color-gray) calc(l * 0.4) calc(c * 1.3) h); /* Dark gray shade */
-  --mico-color-gray-5xdark: oklch(from var(--mico-color-gray) calc(l * 0.25) calc(c * 1.4) h); /* Deep gray shade */
+  --mico-color-gray-dark: oklch(from var(--mico-color-gray) var(--mico-color-light-shade) var(--mico-color-chrome-shade) var(--mico-color-hue-shade));
+  --mico-color-gray-2xdark: oklch(from var(--mico-color-gray) var(--mico-color-light-2xshade) var(--mico-color-chrome-2xshade) var(--mico-color-hue-2xshade));
+  --mico-color-gray-3xdark: oklch(from var(--mico-color-gray) var(--mico-color-light-3xshade) var(--mico-color-chrome-3xshade) var(--mico-color-hue-3xshade));
+  --mico-color-gray-4xdark: oklch(from var(--mico-color-gray) var(--mico-color-light-4xshade) var(--mico-color-chrome-4xshade) var(--mico-color-hue-4xshade));
+  --mico-color-gray-5xdark: oklch(from var(--mico-color-gray) var(--mico-color-light-5xshade) var(--mico-color-chrome-5xshade) var(--mico-color-hue-5xshade));
+  --mico-color-gray-6xdark: oklch(from var(--mico-color-gray) var(--mico-color-light-6xshade) var(--mico-color-chrome-6xshade) var(--mico-color-hue-6xshade));
+  --mico-color-gray-7xdark: oklch(from var(--mico-color-gray) var(--mico-color-light-7xshade) var(--mico-color-chrome-7xshade) var(--mico-color-hue-7xshade));
+  --mico-color-gray-8xdark: oklch(from var(--mico-color-gray) var(--mico-color-light-8xshade) var(--mico-color-chrome-8xshade) var(--mico-color-hue-8xshade));
 
   /**
    * Neutral Colors - White System (OKLCH)
@@ -1703,19 +1807,27 @@
    * White color variations with 5 tints and 5 shades for subtle backgrounds and overlays.
    * These provide clean, minimal aesthetics in light themes with superior color precision.
    */
-  --mico-color-white: oklch(0.95 0.005 270); /* Base white color */
+  --mico-color-white: oklch(100% 0.00011 271.152); /* Base white color */
 
   /* White Tints (lighter variations) */
-  --mico-color-white-2xlight: oklch(from var(--mico-color-white) calc(l + (1 - l) * 0.3) calc(c * 0.8) h); /* Soft white tint */
-  --mico-color-white-3xlight: oklch(from var(--mico-color-white) calc(l + (1 - l) * 0.5) calc(c * 0.6) h); /* Medium white tint */
-  --mico-color-white-4xlight: oklch(from var(--mico-color-white) calc(l + (1 - l) * 0.7) calc(c * 0.4) h); /* Light white tint */
-  --mico-color-white-5xlight: oklch(from var(--mico-color-white) calc(l + (1 - l) * 0.85) calc(c * 0.2) h); /* Pale white tint */
+  --mico-color-white-light: oklch(from var(--mico-color-white) var(--mico-color-light-tint) var(--mico-color-chrome-tint) var(--mico-color-hue-tint));
+  --mico-color-white-2xlight: oklch(from var(--mico-color-white) var(--mico-color-light-2xtint) var(--mico-color-chrome-2xtint) var(--mico-color-hue-2xtint));
+  --mico-color-white-3xlight: oklch(from var(--mico-color-white) var(--mico-color-light-3xtint) var(--mico-color-chrome-3xtint) var(--mico-color-hue-3xtint));
+  --mico-color-white-4xlight: oklch(from var(--mico-color-white) var(--mico-color-light-4xtint) var(--mico-color-chrome-4xtint) var(--mico-color-hue-4xtint));
+  --mico-color-white-5xlight: oklch(from var(--mico-color-white) var(--mico-color-light-5xtint) var(--mico-color-chrome-5xtint) var(--mico-color-hue-5xtint));
+  --mico-color-white-6xlight: oklch(from var(--mico-color-white) var(--mico-color-light-6xtint) var(--mico-color-chrome-6xtint) var(--mico-color-hue-6xtint));
+  --mico-color-white-7xlight: oklch(from var(--mico-color-white) var(--mico-color-light-7xtint) var(--mico-color-chrome-7xtint) var(--mico-color-hue-7xtint));
+  --mico-color-white-8xlight: oklch(from var(--mico-color-white) var(--mico-color-light-8xtint) var(--mico-color-chrome-8xtint) var(--mico-color-hue-8xtint));
 
   /* White Shades (darker variations) */
-  --mico-color-white-2xdark: oklch(from var(--mico-color-white) calc(l * 0.8) calc(c * 1.1) h); /* Soft white shade */
-  --mico-color-white-3xdark: oklch(from var(--mico-color-white) calc(l * 0.6) calc(c * 1.2) h); /* Medium white shade */
-  --mico-color-white-4xdark: oklch(from var(--mico-color-white) calc(l * 0.4) calc(c * 1.3) h); /* Dark white shade */
-  --mico-color-white-5xdark: oklch(from var(--mico-color-white) calc(l * 0.25) calc(c * 1.4) h); /* Deep white shade */
+  --mico-color-white-dark: oklch(from var(--mico-color-white) var(--mico-color-light-shade) var(--mico-color-chrome-shade) var(--mico-color-hue-shade));
+  --mico-color-white-2xdark: oklch(from var(--mico-color-white) var(--mico-color-light-2xshade) var(--mico-color-chrome-2xshade) var(--mico-color-hue-2xshade));
+  --mico-color-white-3xdark: oklch(from var(--mico-color-white) var(--mico-color-light-3xshade) var(--mico-color-chrome-3xshade) var(--mico-color-hue-3xshade));
+  --mico-color-white-4xdark: oklch(from var(--mico-color-white) var(--mico-color-light-4xshade) var(--mico-color-chrome-4xshade) var(--mico-color-hue-4xshade));
+  --mico-color-white-5xdark: oklch(from var(--mico-color-white) var(--mico-color-light-5xshade) var(--mico-color-chrome-5xshade) var(--mico-color-hue-5xshade));
+  --mico-color-white-6xdark: oklch(from var(--mico-color-white) var(--mico-color-light-6xshade) var(--mico-color-chrome-6xshade) var(--mico-color-hue-6xshade));
+  --mico-color-white-7xdark: oklch(from var(--mico-color-white) var(--mico-color-light-7xshade) var(--mico-color-chrome-7xshade) var(--mico-color-hue-7xshade));
+  --mico-color-white-8xdark: oklch(from var(--mico-color-white) var(--mico-color-light-8xshade) var(--mico-color-chrome-8xshade) var(--mico-color-hue-8xshade));
 
   /**
    * Transparency Colors - OKLCH Alpha System
@@ -1924,7 +2036,7 @@
   --mico-color-purple-8xdark: oklch(from var(--mico-color-purple) var(--mico-color-light-8xshade) var(--mico-color-chrome-8xshade) var(--mico-color-hue-8xshade));
 
   /* Pink Color System - Warm themes, highlights */
-  --mico-color-pink: oklch(0.68 0.16 5); /* Base pink color - warm rose, approachable */
+  --mico-color-pink: oklch(70.383% 0.19028 6.147); /* Base pink color - warm rose, approachable */
 
   /* Pink Tints (lighter variations) */
   --mico-color-pink-light: oklch(from var(--mico-color-pink) var(--mico-color-light-tint) var(--mico-color-chrome-tint) var(--mico-color-hue-tint));

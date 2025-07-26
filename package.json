@@ -14,6 +14,7 @@
     "build:variables": "node scripts/build-variables.js",
     "ensure-dirs": "node -e \"const fs = require('fs'); const path = require('path'); const dirs = ['dist/css', 'dist/js']; dirs.forEach(dir => { if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true }); });\"",
     "build:custom": "node scripts/build-custom.js",
+    "build:jit": "node jit-generator/generator.js",
     "clean": "node -e \"const fs = require('fs'); const path = require('path'); function rmdir(dir) { try { if (fs.existsSync(dir)) { fs.rmSync(dir, { recursive: true, force: true }); } } catch (e) { console.warn('Warning: Could not clean', dir, e.message); } } rmdir('dist/css'); rmdir('dist/js');\"",
     "clean:rimraf": "rimraf dist/css dist/js",
     "watch:css": "postcss css/mico.css -o dist/css/mico.css --watch",
@@ -36,20 +37,24 @@
     "autoprefixer": "^10.4.14",
     "cssnano": "^6.0.1",
     "http-server": "^14.1.1",
-    "serve": "^14.2.1",
-    "postcss": "^8.4.24",
+    "postcss": "^8.5.6",
     "postcss-cli": "^10.1.0",
     "postcss-import": "^15.1.0",
+    "postcss-merge-rules": "^7.0.5",
     "postcss-preset-env": "^8.4.2",
     "rimraf": "^5.0.1",
+    "serve": "^14.2.1",
     "stylelint": "^15.7.0",
     "stylelint-config-standard": "^33.0.0",
-    "terser": "^5.19.2"
+    "terser": "^5.43.1"
   },
   "browserslist": [
     "> 1%",
     "last 2 versions",
     "not dead",
     "not IE 11"
-  ]
+  ],
+  "dependencies": {
+    "postcss-safe-parser": "^7.0.1"
+  }
 }

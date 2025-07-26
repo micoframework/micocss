@@ -418,3 +418,122 @@ if (typeof module === 'undefined') {
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = MicoFramework;
 }
+
+
+
+/* ====================================================================== */
+/* CHAMELEON LAYOUT UI SYSTEM - START                                       */
+/* ====================================================================== */
+
+document.addEventListener('DOMContentLoaded', () => {
+  const layoutContainer = document.querySelector('.chameleon-layout-container');
+  // RENAMED: stickyContentItems -> stickyContentCards
+  const stickyContentCards = document.querySelectorAll('.sticky-content-card');
+  // RENAMED: gallerySections -> scrollingContentElements
+  const scrollingContentElements = document.querySelectorAll('.scrolling-content');
+
+  if (!layoutContainer || stickyContentCards.length === 0 || scrollingContentElements.length === 0) {
+    console.warn('Chameleon layout elements not found. Aborting initialization.');
+    return;
+  }
+
+  // RENAMED: currentActiveSyncId -> currentActiveContentId
+  let currentActiveContentId = null;
+
+  // RENAMED: newSyncId -> targetContentId
+  function setActiveStickyContent(targetContentId) {
+    if (targetContentId === currentActiveContentId) {
+      const currentItem = layoutContainer.querySelector(`.sticky-content-card[data-content-id="${targetContentId}"]`);
+      if (currentItem && !currentItem.classList.contains('is-active')) { // Ensure it is indeed active
+          currentItem.classList.remove('is-exiting');
+          currentItem.classList.add('is-active');
+      }
+      return;
+    }
+
+    if (currentActiveContentId !== null) {
+      const previousActiveItem = layoutContainer.querySelector(`.sticky-content-card[data-content-id="${currentActiveContentId}"]`);
+      if (previousActiveItem) {
+        previousActiveItem.classList.remove('is-active');
+        previousActiveItem.classList.add('is-exiting');
+        setTimeout(() => {
+          // FIXED: Use data-content-id for comparison
+          if (previousActiveItem.dataset.contentId !== targetContentId) {
+            previousActiveItem.classList.remove('is-exiting');
+          }
+        }, 1000 * 0.7);
+      }
+    }
+
+    const newActiveItem = layoutContainer.querySelector(`.sticky-content-card[data-content-id="${targetContentId}"]`);
+    if (newActiveItem) {
+      newActiveItem.classList.remove('is-exiting');
+      newActiveItem.classList.add('is-active');
+    }
+
+    currentActiveContentId = targetContentId;
+    // RENAMED: layoutContainer.dataset.activeSection -> layoutContainer.dataset.activeContent
+    layoutContainer.dataset.activeContent = targetContentId;
+  }
+
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px 0px -30% 0px', // Trigger when ~top 70% of section is visible
+    threshold: 0.1 // A small part needs to be visible within the adjusted root
+  };
+
+  const observerCallback = (entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const targetContentIdFromScroll = entry.target.dataset.contentTarget; // Reads from .scrolling-content
+        if (targetContentIdFromScroll) {
+          setActiveStickyContent(targetContentIdFromScroll);
+        }
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
+  scrollingContentElements.forEach(scrollingEl => observer.observe(scrollingEl));
+
+  function setInitialActiveSection() {
+    let bestCandidate = null;
+    let maxVisibilityScore = -Infinity;
+
+    scrollingContentElements.forEach(scrollingEl => {
+      const rect = scrollingEl.getBoundingClientRect();
+      const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+      const isTopVisible = rect.top < viewportHeight && rect.bottom > 0;
+
+      if (isTopVisible) {
+        let score = 0;
+        const elementCenterY = rect.top + rect.height / 2;
+        const idealActivationZoneTop = viewportHeight * 0.35; // Adjust for earlier trigger
+        const idealActivationZoneBottom = viewportHeight * 0.55;
+
+        if (elementCenterY >= idealActivationZoneTop && elementCenterY <= idealActivationZoneBottom) {
+          score = 1000;
+        } else {
+          score = viewportHeight - Math.abs(elementCenterY - (idealActivationZoneTop + idealActivationZoneBottom) / 2);
+        }
+
+        if (score > maxVisibilityScore) {
+          maxVisibilityScore = score;
+          bestCandidate = scrollingEl;
+        }
+      }
+    });
+
+    if (bestCandidate) {
+      setActiveStickyContent(bestCandidate.dataset.contentTarget);
+    } else if (scrollingContentElements.length > 0) {
+      setActiveStickyContent(scrollingContentElements[0].dataset.contentTarget);
+    }
+  }
+
+  setInitialActiveSection();
+});
+
+/* ====================================================================== */
+/* CHAMELEON LAYOUT UI SYSTEM - END                                       */
+/* ====================================================================== */

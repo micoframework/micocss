@@ -1,0 +1,10 @@
+[
+	{"id":"8a34d72d-3081-43c9-8015-356ff921de51","name":"container-fluid-md","children":[],"locked":false,"collection":"All","type":"class"},
+	{"id":"892ee914-2282-4c27-9ed1-45a91c100c7c","name":"d-flex","children":[],"locked":false,"collection":"All","type":"class"},
+	{"id":"c0b7969d-b2a8-4f56-b77c-1a79777bb5e3","name":"btn","children":[],"locked":false,"collection":"All","type":"class"},
+	{"id":"b9bbc0a0-2841-4540-8864-ff8a165aafac","name":"w-50p","children":[],"locked":false,"collection":"All","type":"class"},
+	{"id":"9c0543a2-0a63-40af-a05a-f23a64de7439","name":"gap-20","children":[],"locked":false,"collection":"All","type":"class"},
+	{"id":"3729a415-188a-449d-9c07-e228e929ac2f","name":"my-auto","children":[],"locked":false,"collection":"All","type":"class"},
+	{"id":"3ab86916-ceb0-4547-beca-8a32133fe739","name":"h-100p","children":[],"locked":false,"collection":"All","type":"class"},
+	{"id":"5dff3308-01b8-4fa4-839b-cf8b23478bfe","name":"btn-accent","children":[],"locked":false,"collection":"All","type":"class"}]
+

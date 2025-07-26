@@ -1,0 +1,302 @@
+[
+  {
+    "id": "mico-20619a322da61453",
+    "type": "unit",
+    "label": "filter blur",
+    "cssVariableName": "--mico-filter-blur",
+    "collection": "Effects Collection",
+    "value": {
+      "number": "--mico-filter-blur",
+      "unit": "custom",
+      "style": "--mico-filter-blur"
+    }
+  },
+  {
+    "id": "mico-756f41a8cdb4c7bc",
+    "type": "unit",
+    "label": "filter brightness",
+    "cssVariableName": "--mico-filter-brightness",
+    "collection": "Effects Collection",
+    "value": {
+      "number": "--mico-filter-brightness",
+      "unit": "custom",
+      "style": "--mico-filter-brightness"
+    }
+  },
+  {
+    "id": "mico-f2bb78dbf6c5126f",
+    "type": "unit",
+    "label": "filter contrast",
+    "cssVariableName": "--mico-filter-contrast",
+    "collection": "Effects Collection",
+    "value": {
+      "number": "--mico-filter-contrast",
+      "unit": "custom",
+      "style": "--mico-filter-contrast"
+    }
+  },
+  {
+    "id": "mico-c1bdf171f783f15e",
+    "type": "unit",
+    "label": "filter grayscale",
+    "cssVariableName": "--mico-filter-grayscale",
+    "collection": "Effects Collection",
+    "value": {
+      "number": "--mico-filter-grayscale",
+      "unit": "custom",
+      "style": "--mico-filter-grayscale"
+    }
+  },
+  {
+    "id": "mico-deaff9f8634b8503",
+    "type": "unit",
+    "label": "filter hue rotate",
+    "cssVariableName": "--mico-filter-hue-rotate",
+    "collection": "Effects Collection",
+    "value": {
+      "number": "--mico-filter-hue-rotate",
+      "unit": "custom",
+      "style": "--mico-filter-hue-rotate"
+    }
+  },
+  {
+    "id": "mico-8c82abf7be00e1f4",
+    "type": "unit",
+    "label": "filter invert",
+    "cssVariableName": "--mico-filter-invert",
+    "collection": "Effects Collection",
+    "value": {
+      "number": "--mico-filter-invert",
+      "unit": "custom",
+      "style": "--mico-filter-invert"
+    }
+  },
+  {
+    "id": "mico-a93750dd740f6560",
+    "type": "unit",
+    "label": "filter saturate",
+    "cssVariableName": "--mico-filter-saturate",
+    "collection": "Effects Collection",
+    "value": {
+      "number": "--mico-filter-saturate",
+      "unit": "custom",
+      "style": "--mico-filter-saturate"
+    }
+  },
+  {
+    "id": "mico-27a1099dc18316ee",
+    "type": "unit",
+    "label": "filter sepia",
+    "cssVariableName": "--mico-filter-sepia",
+    "collection": "Effects Collection",
+    "value": {
+      "number": "--mico-filter-sepia",
+      "unit": "custom",
+      "style": "--mico-filter-sepia"
+    }
+  },
+  {
+    "id": "mico-3f61cfc2e3b4d9ef",
+    "type": "unit",
+    "label": "opacity 0p",
+    "cssVariableName": "--mico-opacity-0p",
+    "collection": "Effects Collection",
+    "value": {
+      "number": "--mico-opacity-0p",
+      "unit": "custom",
+      "style": "--mico-opacity-0p"
+    }
+  },
+  {
+    "id": "mico-a5bbb2d56f1bf854",
+    "type": "unit",
+    "label": "opacity 10p",
+    "cssVariableName": "--mico-opacity-10p",
+    "collection": "Effects Collection",
+    "value": {
+      "number": "--mico-opacity-10p",
+      "unit": "custom",
+      "style": "--mico-opacity-10p"
+    }
+  },
+  {
+    "id": "mico-923eedb95e4318ae",
+    "type": "unit",
+    "label": "opacity 20p",
+    "cssVariableName": "--mico-opacity-20p",
+    "collection": "Effects Collection",
+    "value": {
+      "number": "--mico-opacity-20p",
+      "unit": "custom",
+      "style": "--mico-opacity-20p"
+    }
+  },
+  {
+    "id": "mico-c42dc0b74caa4ea1",
+    "type": "unit",
+    "label": "opacity 30p",
+    "cssVariableName": "--mico-opacity-30p",
+    "collection": "Effects Collection",
+    "value": {
+      "number": "--mico-opacity-30p",
+      "unit": "custom",
+      "style": "--mico-opacity-30p"
+    }
+  },
+  {
+    "id": "mico-7ee7c78160557eaa",
+    "type": "unit",
+    "label": "opacity 40p",
+    "cssVariableName": "--mico-opacity-40p",
+    "collection": "Effects Collection",
+    "value": {
+      "number": "--mico-opacity-40p",
+      "unit": "custom",
+      "style": "--mico-opacity-40p"
+    }
+  },
+  {
+    "id": "mico-7672ed45c92d64f6",
+    "type": "unit",
+    "label": "opacity 50p",
+    "cssVariableName": "--mico-opacity-50p",
+    "collection": "Effects Collection",
+    "value": {
+      "number": "--mico-opacity-50p",
+      "unit": "custom",
+      "style": "--mico-opacity-50p"
+    }
+  },
+  {
+    "id": "mico-96f1cd0ff7172a87",
+    "type": "unit",
+    "label": "opacity 60p",
+    "cssVariableName": "--mico-opacity-60p",
+    "collection": "Effects Collection",
+    "value": {
+      "number": "--mico-opacity-60p",
+      "unit": "custom",
+      "style": "--mico-opacity-60p"
+    }
+  },
+  {
+    "id": "mico-0f299bce052b8a1f",
+    "type": "unit",
+    "label": "opacity 70p",
+    "cssVariableName": "--mico-opacity-70p",
+    "collection": "Effects Collection",
+    "value": {
+      "number": "--mico-opacity-70p",
+      "unit": "custom",
+      "style": "--mico-opacity-70p"
+    }
+  },
+  {
+    "id": "mico-14d7b6350588fc4f",
+    "type": "unit",
+    "label": "opacity 80p",
+    "cssVariableName": "--mico-opacity-80p",
+    "collection": "Effects Collection",
+    "value": {
+      "number": "--mico-opacity-80p",
+      "unit": "custom",
+      "style": "--mico-opacity-80p"
+    }
+  },
+  {
+    "id": "mico-7e8a8cb860a65a2a",
+    "type": "unit",
+    "label": "opacity 90p",
+    "cssVariableName": "--mico-opacity-90p",
+    "collection": "Effects Collection",
+    "value": {
+      "number": "--mico-opacity-90p",
+      "unit": "custom",
+      "style": "--mico-opacity-90p"
+    }
+  },
+  {
+    "id": "mico-48a127c088722330",
+    "type": "unit",
+    "label": "opacity 100p",
+    "cssVariableName": "--mico-opacity-100p",
+    "collection": "Effects Collection",
+    "value": {
+      "number": "--mico-opacity-100p",
+      "unit": "custom",
+      "style": "--mico-opacity-100p"
+    }
+  },
+  {
+    "id": "mico-fc52cb7426a986a4",
+    "type": "unit",
+    "label": "mask fade to top",
+    "cssVariableName": "--mico-mask-fade-to-top",
+    "collection": "Effects Collection",
+    "value": {
+      "number": "--mico-mask-fade-to-top",
+      "unit": "custom",
+      "style": "--mico-mask-fade-to-top"
+    }
+  },
+  {
+    "id": "mico-206f2887f103b9ad",
+    "type": "unit",
+    "label": "mask fade to bottom",
+    "cssVariableName": "--mico-mask-fade-to-bottom",
+    "collection": "Effects Collection",
+    "value": {
+      "number": "--mico-mask-fade-to-bottom",
+      "unit": "custom",
+      "style": "--mico-mask-fade-to-bottom"
+    }
+  },
+  {
+    "id": "mico-c1766c43439b3b1e",
+    "type": "unit",
+    "label": "mask fade to left",
+    "cssVariableName": "--mico-mask-fade-to-left",
+    "collection": "Effects Collection",
+    "value": {
+      "number": "--mico-mask-fade-to-left",
+      "unit": "custom",
+      "style": "--mico-mask-fade-to-left"
+    }
+  },
+  {
+    "id": "mico-022dabefb232d4c1",
+    "type": "unit",
+    "label": "mask fade to right",
+    "cssVariableName": "--mico-mask-fade-to-right",
+    "collection": "Effects Collection",
+    "value": {
+      "number": "--mico-mask-fade-to-right",
+      "unit": "custom",
+      "style": "--mico-mask-fade-to-right"
+    }
+  },
+  {
+    "id": "mico-b6da002658e9a9c7",
+    "type": "unit",
+    "label": "mask fade short",
+    "cssVariableName": "--mico-mask-fade-short",
+    "collection": "Effects Collection",
+    "value": {
+      "number": "--mico-mask-fade-short",
+      "unit": "custom",
+      "style": "--mico-mask-fade-short"
+    }
+  },
+  {
+    "id": "mico-c83889ca77bb85ba",
+    "type": "unit",
+    "label": "mask fade long",
+    "cssVariableName": "--mico-mask-fade-long",
+    "collection": "Effects Collection",
+    "value": {
+      "number": "--mico-mask-fade-long",
+      "unit": "custom",
+      "style": "--mico-mask-fade-long"
+    }
+  }
+]

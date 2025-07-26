@@ -1,0 +1,566 @@
+[
+  {
+    "id": "mico-1fda23c950489758",
+    "type": "unit",
+    "label": "position static",
+    "cssVariableName": "--mico-position-static",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-position-static",
+      "unit": "custom",
+      "style": "--mico-position-static"
+    }
+  },
+  {
+    "id": "mico-e4bc39c059091548",
+    "type": "unit",
+    "label": "position relative",
+    "cssVariableName": "--mico-position-relative",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-position-relative",
+      "unit": "custom",
+      "style": "--mico-position-relative"
+    }
+  },
+  {
+    "id": "mico-2ee33a9f668be042",
+    "type": "unit",
+    "label": "position absolute",
+    "cssVariableName": "--mico-position-absolute",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-position-absolute",
+      "unit": "custom",
+      "style": "--mico-position-absolute"
+    }
+  },
+  {
+    "id": "mico-b47ea187ae5da2c5",
+    "type": "unit",
+    "label": "position fixed",
+    "cssVariableName": "--mico-position-fixed",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-position-fixed",
+      "unit": "custom",
+      "style": "--mico-position-fixed"
+    }
+  },
+  {
+    "id": "mico-afbc393eccc3ec40",
+    "type": "unit",
+    "label": "position sticky",
+    "cssVariableName": "--mico-position-sticky",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-position-sticky",
+      "unit": "custom",
+      "style": "--mico-position-sticky"
+    }
+  },
+  {
+    "id": "mico-9339e3f1ed7f5c11",
+    "type": "unit",
+    "label": "display block",
+    "cssVariableName": "--mico-display-block",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-display-block",
+      "unit": "custom",
+      "style": "--mico-display-block"
+    }
+  },
+  {
+    "id": "mico-0e203297dd398af7",
+    "type": "unit",
+    "label": "display inline",
+    "cssVariableName": "--mico-display-inline",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-display-inline",
+      "unit": "custom",
+      "style": "--mico-display-inline"
+    }
+  },
+  {
+    "id": "mico-1ebbdfd5847dbe79",
+    "type": "unit",
+    "label": "display inline block",
+    "cssVariableName": "--mico-display-inline-block",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-display-inline-block",
+      "unit": "custom",
+      "style": "--mico-display-inline-block"
+    }
+  },
+  {
+    "id": "mico-eb270a76a420aa8e",
+    "type": "unit",
+    "label": "display flex",
+    "cssVariableName": "--mico-display-flex",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-display-flex",
+      "unit": "custom",
+      "style": "--mico-display-flex"
+    }
+  },
+  {
+    "id": "mico-b037307cda27b8d4",
+    "type": "unit",
+    "label": "display inline flex",
+    "cssVariableName": "--mico-display-inline-flex",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-display-inline-flex",
+      "unit": "custom",
+      "style": "--mico-display-inline-flex"
+    }
+  },
+  {
+    "id": "mico-ebb8c9f78a51c817",
+    "type": "unit",
+    "label": "display grid",
+    "cssVariableName": "--mico-display-grid",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-display-grid",
+      "unit": "custom",
+      "style": "--mico-display-grid"
+    }
+  },
+  {
+    "id": "mico-00479a257a5610f1",
+    "type": "unit",
+    "label": "display none",
+    "cssVariableName": "--mico-display-none",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-display-none",
+      "unit": "custom",
+      "style": "--mico-display-none"
+    }
+  },
+  {
+    "id": "mico-701241b1d211e1c2",
+    "type": "unit",
+    "label": "box sizing border",
+    "cssVariableName": "--mico-box-sizing-border",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-box-sizing-border",
+      "unit": "custom",
+      "style": "--mico-box-sizing-border"
+    }
+  },
+  {
+    "id": "mico-5daaf67e2e346759",
+    "type": "unit",
+    "label": "box sizing content",
+    "cssVariableName": "--mico-box-sizing-content",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-box-sizing-content",
+      "unit": "custom",
+      "style": "--mico-box-sizing-content"
+    }
+  },
+  {
+    "id": "mico-28d6da579fadbc05",
+    "type": "unit",
+    "label": "box decoration slice",
+    "cssVariableName": "--mico-box-decoration-slice",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-box-decoration-slice",
+      "unit": "custom",
+      "style": "--mico-box-decoration-slice"
+    }
+  },
+  {
+    "id": "mico-3e0c6f4264b79320",
+    "type": "unit",
+    "label": "box decoration clone",
+    "cssVariableName": "--mico-box-decoration-clone",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-box-decoration-clone",
+      "unit": "custom",
+      "style": "--mico-box-decoration-clone"
+    }
+  },
+  {
+    "id": "mico-9bcaf23cb83f729d",
+    "type": "unit",
+    "label": "overflow auto",
+    "cssVariableName": "--mico-overflow-auto",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-overflow-auto",
+      "unit": "custom",
+      "style": "--mico-overflow-auto"
+    }
+  },
+  {
+    "id": "mico-1f84e8dd6e05d7e2",
+    "type": "unit",
+    "label": "overflow hidden",
+    "cssVariableName": "--mico-overflow-hidden",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-overflow-hidden",
+      "unit": "custom",
+      "style": "--mico-overflow-hidden"
+    }
+  },
+  {
+    "id": "mico-7b2c95b6ae9ffcc4",
+    "type": "unit",
+    "label": "overflow visible",
+    "cssVariableName": "--mico-overflow-visible",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-overflow-visible",
+      "unit": "custom",
+      "style": "--mico-overflow-visible"
+    }
+  },
+  {
+    "id": "mico-3c7a9789eb9927a5",
+    "type": "unit",
+    "label": "overflow scroll",
+    "cssVariableName": "--mico-overflow-scroll",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-overflow-scroll",
+      "unit": "custom",
+      "style": "--mico-overflow-scroll"
+    }
+  },
+  {
+    "id": "mico-80c32be99d947cf9",
+    "type": "unit",
+    "label": "overscroll auto",
+    "cssVariableName": "--mico-overscroll-auto",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-overscroll-auto",
+      "unit": "custom",
+      "style": "--mico-overscroll-auto"
+    }
+  },
+  {
+    "id": "mico-6992089b17564195",
+    "type": "unit",
+    "label": "overscroll contain",
+    "cssVariableName": "--mico-overscroll-contain",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-overscroll-contain",
+      "unit": "custom",
+      "style": "--mico-overscroll-contain"
+    }
+  },
+  {
+    "id": "mico-188191ae12744e38",
+    "type": "unit",
+    "label": "overscroll none",
+    "cssVariableName": "--mico-overscroll-none",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-overscroll-none",
+      "unit": "custom",
+      "style": "--mico-overscroll-none"
+    }
+  },
+  {
+    "id": "mico-e1528031989fd58a",
+    "type": "unit",
+    "label": "aspect ratio square",
+    "cssVariableName": "--mico-aspect-ratio-square",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-aspect-ratio-square",
+      "unit": "custom",
+      "style": "--mico-aspect-ratio-square"
+    }
+  },
+  {
+    "id": "mico-cae8f5c9294e82ee",
+    "type": "unit",
+    "label": "aspect ratio video",
+    "cssVariableName": "--mico-aspect-ratio-video",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-aspect-ratio-video",
+      "unit": "custom",
+      "style": "--mico-aspect-ratio-video"
+    }
+  },
+  {
+    "id": "mico-4ac0bb1321f2c0c1",
+    "type": "unit",
+    "label": "aspect ratio portrait",
+    "cssVariableName": "--mico-aspect-ratio-portrait",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-aspect-ratio-portrait",
+      "unit": "custom",
+      "style": "--mico-aspect-ratio-portrait"
+    }
+  },
+  {
+    "id": "mico-40a5d8c102ccf70c",
+    "type": "unit",
+    "label": "aspect ratio landscape",
+    "cssVariableName": "--mico-aspect-ratio-landscape",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-aspect-ratio-landscape",
+      "unit": "custom",
+      "style": "--mico-aspect-ratio-landscape"
+    }
+  },
+  {
+    "id": "mico-54c18371191dbcac",
+    "type": "unit",
+    "label": "aspect ratio widescreen",
+    "cssVariableName": "--mico-aspect-ratio-widescreen",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-aspect-ratio-widescreen",
+      "unit": "custom",
+      "style": "--mico-aspect-ratio-widescreen"
+    }
+  },
+  {
+    "id": "mico-50f2871995bdc998",
+    "type": "unit",
+    "label": "aspect ratio golden",
+    "cssVariableName": "--mico-aspect-ratio-golden",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-aspect-ratio-golden",
+      "unit": "custom",
+      "style": "--mico-aspect-ratio-golden"
+    }
+  },
+  {
+    "id": "mico-0c9c3a186e8bea77",
+    "type": "unit",
+    "label": "float left",
+    "cssVariableName": "--mico-float-left",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-float-left",
+      "unit": "custom",
+      "style": "--mico-float-left"
+    }
+  },
+  {
+    "id": "mico-0050b80d38aa9ced",
+    "type": "unit",
+    "label": "float right",
+    "cssVariableName": "--mico-float-right",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-float-right",
+      "unit": "custom",
+      "style": "--mico-float-right"
+    }
+  },
+  {
+    "id": "mico-52daa21f7ca53138",
+    "type": "unit",
+    "label": "float none",
+    "cssVariableName": "--mico-float-none",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-float-none",
+      "unit": "custom",
+      "style": "--mico-float-none"
+    }
+  },
+  {
+    "id": "mico-eaef0a1ed57cdb86",
+    "type": "unit",
+    "label": "clear left",
+    "cssVariableName": "--mico-clear-left",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-clear-left",
+      "unit": "custom",
+      "style": "--mico-clear-left"
+    }
+  },
+  {
+    "id": "mico-5956ff9ec9822e0f",
+    "type": "unit",
+    "label": "clear right",
+    "cssVariableName": "--mico-clear-right",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-clear-right",
+      "unit": "custom",
+      "style": "--mico-clear-right"
+    }
+  },
+  {
+    "id": "mico-315eb00b2e642bb2",
+    "type": "unit",
+    "label": "clear both",
+    "cssVariableName": "--mico-clear-both",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-clear-both",
+      "unit": "custom",
+      "style": "--mico-clear-both"
+    }
+  },
+  {
+    "id": "mico-1a7875a730031ac1",
+    "type": "unit",
+    "label": "object fit contain",
+    "cssVariableName": "--mico-object-fit-contain",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-object-fit-contain",
+      "unit": "custom",
+      "style": "--mico-object-fit-contain"
+    }
+  },
+  {
+    "id": "mico-78eda7a14a0749b8",
+    "type": "unit",
+    "label": "object fit cover",
+    "cssVariableName": "--mico-object-fit-cover",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-object-fit-cover",
+      "unit": "custom",
+      "style": "--mico-object-fit-cover"
+    }
+  },
+  {
+    "id": "mico-a844a363d996813d",
+    "type": "unit",
+    "label": "object fit fill",
+    "cssVariableName": "--mico-object-fit-fill",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-object-fit-fill",
+      "unit": "custom",
+      "style": "--mico-object-fit-fill"
+    }
+  },
+  {
+    "id": "mico-6a73009fa08dba3f",
+    "type": "unit",
+    "label": "object fit scale down",
+    "cssVariableName": "--mico-object-fit-scale-down",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-object-fit-scale-down",
+      "unit": "custom",
+      "style": "--mico-object-fit-scale-down"
+    }
+  },
+  {
+    "id": "mico-2f6375e7d2e72783",
+    "type": "unit",
+    "label": "object position center",
+    "cssVariableName": "--mico-object-position-center",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-object-position-center",
+      "unit": "custom",
+      "style": "--mico-object-position-center"
+    }
+  },
+  {
+    "id": "mico-4e93b3872d79c2ad",
+    "type": "unit",
+    "label": "visibility visible",
+    "cssVariableName": "--mico-visibility-visible",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-visibility-visible",
+      "unit": "custom",
+      "style": "--mico-visibility-visible"
+    }
+  },
+  {
+    "id": "mico-b7f2339e7e73b0c9",
+    "type": "unit",
+    "label": "visibility hidden",
+    "cssVariableName": "--mico-visibility-hidden",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-visibility-hidden",
+      "unit": "custom",
+      "style": "--mico-visibility-hidden"
+    }
+  },
+  {
+    "id": "mico-a9ebb4496671c281",
+    "type": "unit",
+    "label": "visibility collapse",
+    "cssVariableName": "--mico-visibility-collapse",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-visibility-collapse",
+      "unit": "custom",
+      "style": "--mico-visibility-collapse"
+    }
+  },
+  {
+    "id": "mico-3359c6427ae63de4",
+    "type": "unit",
+    "label": "isolation isolate",
+    "cssVariableName": "--mico-isolation-isolate",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-isolation-isolate",
+      "unit": "custom",
+      "style": "--mico-isolation-isolate"
+    }
+  },
+  {
+    "id": "mico-64bbd39d0214a304",
+    "type": "unit",
+    "label": "isolation auto",
+    "cssVariableName": "--mico-isolation-auto",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-isolation-auto",
+      "unit": "custom",
+      "style": "--mico-isolation-auto"
+    }
+  },
+  {
+    "id": "mico-7b3dcbd9fbf7185f",
+    "type": "unit",
+    "label": "inset 0",
+    "cssVariableName": "--mico-inset-0",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-inset-0",
+      "unit": "custom",
+      "style": "--mico-inset-0"
+    }
+  },
+  {
+    "id": "mico-0052193030aaad3c",
+    "type": "unit",
+    "label": "inset auto",
+    "cssVariableName": "--mico-inset-auto",
+    "collection": "Layout Collection",
+    "value": {
+      "number": "--mico-inset-auto",
+      "unit": "custom",
+      "style": "--mico-inset-auto"
+    }
+  }
+]

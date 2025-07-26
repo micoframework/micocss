@@ -1,0 +1,110 @@
+[
+  {
+    "id": "mico-2732b19f3c606181",
+    "type": "unit",
+    "label": "fit content",
+    "cssVariableName": "--mico-fit-content",
+    "collection": "Sizing Collection",
+    "value": {
+      "number": "--mico-fit-content",
+      "unit": "custom",
+      "style": "--mico-fit-content"
+    }
+  },
+  {
+    "id": "mico-f9f8606f11fe150e",
+    "type": "unit",
+    "label": "min content",
+    "cssVariableName": "--mico-min-content",
+    "collection": "Sizing Collection",
+    "value": {
+      "number": "--mico-min-content",
+      "unit": "custom",
+      "style": "--mico-min-content"
+    }
+  },
+  {
+    "id": "mico-52d42efc63eb4ce5",
+    "type": "unit",
+    "label": "max content",
+    "cssVariableName": "--mico-max-content",
+    "collection": "Sizing Collection",
+    "value": {
+      "number": "--mico-max-content",
+      "unit": "custom",
+      "style": "--mico-max-content"
+    }
+  },
+  {
+    "id": "mico-11d232ba62e00d75",
+    "type": "unit",
+    "label": "full",
+    "cssVariableName": "--mico-full",
+    "collection": "Sizing Collection",
+    "value": {
+      "number": "--mico-full",
+      "unit": "custom",
+      "style": "--mico-full"
+    }
+  },
+  {
+    "id": "mico-dd16e9b1023dcc5e",
+    "type": "unit",
+    "label": "half",
+    "cssVariableName": "--mico-half",
+    "collection": "Sizing Collection",
+    "value": {
+      "number": "--mico-half",
+      "unit": "custom",
+      "style": "--mico-half"
+    }
+  },
+  {
+    "id": "mico-49cc199261d0fca6",
+    "type": "unit",
+    "label": "quarter",
+    "cssVariableName": "--mico-quarter",
+    "collection": "Sizing Collection",
+    "value": {
+      "number": "--mico-quarter",
+      "unit": "custom",
+      "style": "--mico-quarter"
+    }
+  },
+  {
+    "id": "mico-6d66d802985ed2d5",
+    "type": "unit",
+    "label": "third",
+    "cssVariableName": "--mico-third",
+    "collection": "Sizing Collection",
+    "value": {
+      "number": "--mico-third",
+      "unit": "custom",
+      "style": "--mico-third"
+    }
+  },
+  {
+    "id": "mico-1a82d779832c903d",
+    "type": "unit",
+    "label": "width screen",
+    "cssVariableName": "--mico-width-screen",
+    "collection": "Sizing Collection",
+    "value": {
+      "number": "--mico-width-screen",
+      "unit": "custom",
+      "style": "--mico-width-screen"
+    }
+  },
+  {
+    "id": "mico-347bf4f00c2224b1",
+    "type": "unit",
+    "label": "height screen",
+    "cssVariableName": "--mico-height-screen",
+    "collection": "Sizing Collection",
+    "value": {
+      "number": "--mico-height-screen",
+      "unit": "custom",
+      "style": "--mico-height-screen"
+    }
+  }
+]

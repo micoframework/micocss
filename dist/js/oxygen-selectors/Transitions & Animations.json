@@ -1,0 +1,674 @@
+[
+  {
+    "id": "mico-523277afc42fd3f7",
+    "name": "anim-delay-lg",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-b29b873962f345da",
+    "name": "anim-delay-md",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-052b95383117f425",
+    "name": "anim-delay-sm",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-8f67e95200ba13f5",
+    "name": "anim-delay-xl",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-cad1ccb81748a6cf",
+    "name": "anim-delay-xs",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-0986c0c04bb83913",
+    "name": "anim-direction-alternate",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-8561faa96add6225",
+    "name": "anim-direction-alternate-reverse",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-5041c620a1e68f26",
+    "name": "anim-direction-normal",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-372074e9cf095ebe",
+    "name": "anim-direction-reverse",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-8abb352925176c48",
+    "name": "anim-duration-lg",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-4e207a6e6417ef15",
+    "name": "anim-duration-md",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-7d6611dae02a821e",
+    "name": "anim-duration-sm",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-fa846cb3e17ee6e7",
+    "name": "anim-duration-xl",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-cf74d858239f01c5",
+    "name": "anim-duration-xs",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-9d294017b0edeb8b",
+    "name": "anim-ease-in",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-e620b3245ace9f1d",
+    "name": "anim-ease-in-out",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-caab0df0f77dc247",
+    "name": "anim-ease-linear",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-d85977dbbe7b1a94",
+    "name": "anim-ease-out",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-a10550087f2a07a6",
+    "name": "anim-fade-in",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-20a34349a51d11c5",
+    "name": "anim-fade-in-down",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-1c4ffb38697598c4",
+    "name": "anim-fade-in-left",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-48acaf10b0664e58",
+    "name": "anim-fade-in-right",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-f5e3b57cd603453e",
+    "name": "anim-fade-in-up",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-bf00f97b100fe8eb",
+    "name": "anim-fade-out",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-6abfc88c8a33948a",
+    "name": "anim-fade-out-down",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-d98df61d6c110919",
+    "name": "anim-fade-out-left",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-1137015a43575733",
+    "name": "anim-fade-out-right",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-3cfb7eb8a5410639",
+    "name": "anim-fade-out-up",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-0189912237840d87",
+    "name": "anim-fill-backwards",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-7fc548d08df6a4e2",
+    "name": "anim-fill-both",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-d47d436be87afc46",
+    "name": "anim-fill-forwards",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-d781486a6d1a3b83",
+    "name": "anim-fill-none",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-266e4084c2087c8c",
+    "name": "anim-infinite",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-d5b4c4c46d64eae6",
+    "name": "anim-iter-1",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-f49344a1526cdb53",
+    "name": "anim-iter-2",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-901b1c7e8ae9f238",
+    "name": "anim-iter-3",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-95987f58965ff9c0",
+    "name": "anim-paused",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-5212a56051ca18c5",
+    "name": "anim-pulse",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-4e712b0e0f02cadb",
+    "name": "anim-rotate-in",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-3988080ffcdc98d0",
+    "name": "anim-rotate-out",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-e516e6eda1fe17d4",
+    "name": "anim-running",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-a68997c7024eb524",
+    "name": "anim-scale-in",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-b6c4970b7e21b3b9",
+    "name": "anim-scale-out",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-e30e6f5b40e7f8f5",
+    "name": "anim-slide-in-down",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-434962a9abe72b00",
+    "name": "anim-slide-in-left",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-a1e4a901011e3f49",
+    "name": "anim-slide-in-right",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-6d67a48c919c4de2",
+    "name": "anim-slide-in-up",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-18245e46bdffaca4",
+    "name": "anim-slide-out-down",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-833f7f8b77b7ee23",
+    "name": "anim-slide-out-left",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-5c6314018bfd9fab",
+    "name": "anim-slide-out-right",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-33082606c9ccac62",
+    "name": "anim-slide-out-up",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-e8225fe6cab6288d",
+    "name": "anim-subtle-bounce",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-6f4dee2ecee70519",
+    "name": "anim-subtle-float",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-9b4a15432c35ed47",
+    "name": "anim-typewriter",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-3201496d0b308abf",
+    "name": "delay-0",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-432987b47be7e577",
+    "name": "delay-100",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-fb1707bd78dfe240",
+    "name": "delay-1000",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-6b5122479a06bc82",
+    "name": "delay-150",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-03a82c854cd9464c",
+    "name": "delay-200",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-c9d4fa528cf6ea5c",
+    "name": "delay-300",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-1507564cc4a4e3eb",
+    "name": "delay-500",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-4b369b5c7f8629bc",
+    "name": "delay-700",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-a6a06b3b20bcceeb",
+    "name": "delay-75",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-136e1703b3faf1af",
+    "name": "duration-0",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-aa96ad346e974037",
+    "name": "duration-100",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-9af9d554c39bb4fb",
+    "name": "duration-1000",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-3d53df2cf77db214",
+    "name": "duration-150",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-10e9f177b8fc3864",
+    "name": "duration-200",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-f07df86364db4bcf",
+    "name": "duration-300",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-cd4b2249e52bc52a",
+    "name": "duration-500",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-9d31b1991aea5198",
+    "name": "duration-700",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-93d2185189ac669e",
+    "name": "duration-75",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-326f09bfe77d85a5",
+    "name": "ease-in",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-16c2539d96224e3c",
+    "name": "ease-in-out",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-8a17d6f1d8304df3",
+    "name": "ease-linear",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-791c2d09976d44b3",
+    "name": "ease-out",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-9952ed32207c9a5a",
+    "name": "transition-all",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-3e094934dab353da",
+    "name": "transition-background",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-78346c0045a27fb1",
+    "name": "transition-border",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-eae178841c682553",
+    "name": "transition-colors",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-b4b2fd95f32471d6",
+    "name": "transition-none",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-2cdd01663c769255",
+    "name": "transition-opacity",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-2b48746f43147df4",
+    "name": "transition-shadow",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  },
+  {
+    "id": "mico-48a1d34f1a08d8cb",
+    "name": "transition-transform",
+    "children": [],
+    "locked": false,
+    "collection": "Transitions & Animations",
+    "type": "class"
+  }
+]

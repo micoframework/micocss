@@ -1,0 +1,86 @@
+[
+  {
+    "id": "mico-1c3ba6b0dd9e999d",
+    "type": "unit",
+    "label": "scale 100",
+    "cssVariableName": "--mico-scale-100",
+    "collection": "Transforms Collection",
+    "value": {
+      "number": "--mico-scale-100",
+      "unit": "custom",
+      "style": "--mico-scale-100"
+    }
+  },
+  {
+    "id": "mico-c28742814d6f94aa",
+    "type": "unit",
+    "label": "scale 75",
+    "cssVariableName": "--mico-scale-75",
+    "collection": "Transforms Collection",
+    "value": {
+      "number": "--mico-scale-75",
+      "unit": "custom",
+      "style": "--mico-scale-75"
+    }
+  },
+  {
+    "id": "mico-6b42f6682c6aa420",
+    "type": "unit",
+    "label": "scale 50",
+    "cssVariableName": "--mico-scale-50",
+    "collection": "Transforms Collection",
+    "value": {
+      "number": "--mico-scale-50",
+      "unit": "custom",
+      "style": "--mico-scale-50"
+    }
+  },
+  {
+    "id": "mico-9242ca252e47adad",
+    "type": "unit",
+    "label": "rotate 45",
+    "cssVariableName": "--mico-rotate-45",
+    "collection": "Transforms Collection",
+    "value": {
+      "number": "--mico-rotate-45",
+      "unit": "custom",
+      "style": "--mico-rotate-45"
+    }
+  },
+  {
+    "id": "mico-53e96ed9c268eac9",
+    "type": "unit",
+    "label": "rotate 90",
+    "cssVariableName": "--mico-rotate-90",
+    "collection": "Transforms Collection",
+    "value": {
+      "number": "--mico-rotate-90",
+      "unit": "custom",
+      "style": "--mico-rotate-90"
+    }
+  },
+  {
+    "id": "mico-524a98f11930e954",
+    "type": "unit",
+    "label": "translate x full",
+    "cssVariableName": "--mico-translate-x-full",
+    "collection": "Transforms Collection",
+    "value": {
+      "number": "--mico-translate-x-full",
+      "unit": "custom",
+      "style": "--mico-translate-x-full"
+    }
+  },
+  {
+    "id": "mico-1667b6b88ac35a51",
+    "type": "unit",
+    "label": "translate y full",
+    "cssVariableName": "--mico-translate-y-full",
+    "collection": "Transforms Collection",
+    "value": {
+      "number": "--mico-translate-y-full",
+      "unit": "custom",
+      "style": "--mico-translate-y-full"
+    }
+  }
+]

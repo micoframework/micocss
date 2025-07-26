@@ -1,0 +1,506 @@
+[
+  {
+    "id": "mico-882f56bda8f53345",
+    "type": "unit",
+    "label": "radius none",
+    "cssVariableName": "--mico-radius-none",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-radius-none",
+      "unit": "custom",
+      "style": "--mico-radius-none"
+    }
+  },
+  {
+    "id": "mico-10322ea0a601247b",
+    "type": "unit",
+    "label": "radius xs",
+    "cssVariableName": "--mico-radius-xs",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-radius-xs",
+      "unit": "custom",
+      "style": "--mico-radius-xs"
+    }
+  },
+  {
+    "id": "mico-e7101290f98e6ee5",
+    "type": "unit",
+    "label": "radius sm",
+    "cssVariableName": "--mico-radius-sm",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-radius-sm",
+      "unit": "custom",
+      "style": "--mico-radius-sm"
+    }
+  },
+  {
+    "id": "mico-14552a65fa88e1c4",
+    "type": "unit",
+    "label": "radius md",
+    "cssVariableName": "--mico-radius-md",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-radius-md",
+      "unit": "custom",
+      "style": "--mico-radius-md"
+    }
+  },
+  {
+    "id": "mico-a31d3992ed62be85",
+    "type": "unit",
+    "label": "radius lg",
+    "cssVariableName": "--mico-radius-lg",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-radius-lg",
+      "unit": "custom",
+      "style": "--mico-radius-lg"
+    }
+  },
+  {
+    "id": "mico-9ee37323426f9ddd",
+    "type": "unit",
+    "label": "radius xl",
+    "cssVariableName": "--mico-radius-xl",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-radius-xl",
+      "unit": "custom",
+      "style": "--mico-radius-xl"
+    }
+  },
+  {
+    "id": "mico-5049c7d7cf7a0345",
+    "type": "unit",
+    "label": "radius 2xl",
+    "cssVariableName": "--mico-radius-2xl",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-radius-2xl",
+      "unit": "custom",
+      "style": "--mico-radius-2xl"
+    }
+  },
+  {
+    "id": "mico-e619456c9f5d08db",
+    "type": "unit",
+    "label": "radius full",
+    "cssVariableName": "--mico-radius-full",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-radius-full",
+      "unit": "custom",
+      "style": "--mico-radius-full"
+    }
+  },
+  {
+    "id": "mico-87c276c0309d1ea8",
+    "type": "unit",
+    "label": "border none",
+    "cssVariableName": "--mico-border-none",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-border-none",
+      "unit": "custom",
+      "style": "--mico-border-none"
+    }
+  },
+  {
+    "id": "mico-d0f926a65471f386",
+    "type": "unit",
+    "label": "border solid",
+    "cssVariableName": "--mico-border-solid",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-border-solid",
+      "unit": "custom",
+      "style": "--mico-border-solid"
+    }
+  },
+  {
+    "id": "mico-ba29a2a5cc0b8cc2",
+    "type": "unit",
+    "label": "border dashed",
+    "cssVariableName": "--mico-border-dashed",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-border-dashed",
+      "unit": "custom",
+      "style": "--mico-border-dashed"
+    }
+  },
+  {
+    "id": "mico-f0b2e1a8f672851b",
+    "type": "unit",
+    "label": "border dotted",
+    "cssVariableName": "--mico-border-dotted",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-border-dotted",
+      "unit": "custom",
+      "style": "--mico-border-dotted"
+    }
+  },
+  {
+    "id": "mico-1790d1f829c19d53",
+    "type": "unit",
+    "label": "border double",
+    "cssVariableName": "--mico-border-double",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-border-double",
+      "unit": "custom",
+      "style": "--mico-border-double"
+    }
+  },
+  {
+    "id": "mico-b815003df39de561",
+    "type": "unit",
+    "label": "border groove",
+    "cssVariableName": "--mico-border-groove",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-border-groove",
+      "unit": "custom",
+      "style": "--mico-border-groove"
+    }
+  },
+  {
+    "id": "mico-65d5ef46ff6fc075",
+    "type": "unit",
+    "label": "border ridge",
+    "cssVariableName": "--mico-border-ridge",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-border-ridge",
+      "unit": "custom",
+      "style": "--mico-border-ridge"
+    }
+  },
+  {
+    "id": "mico-2f1f88fefcf33899",
+    "type": "unit",
+    "label": "border inset",
+    "cssVariableName": "--mico-border-inset",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-border-inset",
+      "unit": "custom",
+      "style": "--mico-border-inset"
+    }
+  },
+  {
+    "id": "mico-16b1017f2675f908",
+    "type": "unit",
+    "label": "border outset",
+    "cssVariableName": "--mico-border-outset",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-border-outset",
+      "unit": "custom",
+      "style": "--mico-border-outset"
+    }
+  },
+  {
+    "id": "mico-334b9be417580384",
+    "type": "unit",
+    "label": "border width 0",
+    "cssVariableName": "--mico-border-width-0",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-border-width-0",
+      "unit": "custom",
+      "style": "--mico-border-width-0"
+    }
+  },
+  {
+    "id": "mico-02a8f3d7732a5e0c",
+    "type": "unit",
+    "label": "border width 1",
+    "cssVariableName": "--mico-border-width-1",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-border-width-1",
+      "unit": "custom",
+      "style": "--mico-border-width-1"
+    }
+  },
+  {
+    "id": "mico-d6b8ad072129f4d0",
+    "type": "unit",
+    "label": "border width 2",
+    "cssVariableName": "--mico-border-width-2",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-border-width-2",
+      "unit": "custom",
+      "style": "--mico-border-width-2"
+    }
+  },
+  {
+    "id": "mico-d70058a8bbcaf217",
+    "type": "unit",
+    "label": "border width 4",
+    "cssVariableName": "--mico-border-width-4",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-border-width-4",
+      "unit": "custom",
+      "style": "--mico-border-width-4"
+    }
+  },
+  {
+    "id": "mico-cc1025a85bc37f8a",
+    "type": "unit",
+    "label": "border width 8",
+    "cssVariableName": "--mico-border-width-8",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-border-width-8",
+      "unit": "custom",
+      "style": "--mico-border-width-8"
+    }
+  },
+  {
+    "id": "mico-8358833b73e97235",
+    "type": "unit",
+    "label": "outline width 0",
+    "cssVariableName": "--mico-outline-width-0",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-outline-width-0",
+      "unit": "custom",
+      "style": "--mico-outline-width-0"
+    }
+  },
+  {
+    "id": "mico-ed4dc09da029d75e",
+    "type": "unit",
+    "label": "outline width 1",
+    "cssVariableName": "--mico-outline-width-1",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-outline-width-1",
+      "unit": "custom",
+      "style": "--mico-outline-width-1"
+    }
+  },
+  {
+    "id": "mico-80b4842889677b5b",
+    "type": "unit",
+    "label": "outline width 2",
+    "cssVariableName": "--mico-outline-width-2",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-outline-width-2",
+      "unit": "custom",
+      "style": "--mico-outline-width-2"
+    }
+  },
+  {
+    "id": "mico-1d9a0aa3ffd5f10d",
+    "type": "unit",
+    "label": "outline width 4",
+    "cssVariableName": "--mico-outline-width-4",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-outline-width-4",
+      "unit": "custom",
+      "style": "--mico-outline-width-4"
+    }
+  },
+  {
+    "id": "mico-340ce81993f66590",
+    "type": "unit",
+    "label": "outline width 8",
+    "cssVariableName": "--mico-outline-width-8",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-outline-width-8",
+      "unit": "custom",
+      "style": "--mico-outline-width-8"
+    }
+  },
+  {
+    "id": "mico-b6e67839c143a89d",
+    "type": "unit",
+    "label": "outline style none",
+    "cssVariableName": "--mico-outline-style-none",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-outline-style-none",
+      "unit": "custom",
+      "style": "--mico-outline-style-none"
+    }
+  },
+  {
+    "id": "mico-bddc49dd1332f5a4",
+    "type": "unit",
+    "label": "outline style solid",
+    "cssVariableName": "--mico-outline-style-solid",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-outline-style-solid",
+      "unit": "custom",
+      "style": "--mico-outline-style-solid"
+    }
+  },
+  {
+    "id": "mico-8e62b9fed3b0d4ac",
+    "type": "unit",
+    "label": "outline style dashed",
+    "cssVariableName": "--mico-outline-style-dashed",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-outline-style-dashed",
+      "unit": "custom",
+      "style": "--mico-outline-style-dashed"
+    }
+  },
+  {
+    "id": "mico-b54109133e3790e8",
+    "type": "unit",
+    "label": "outline style dotted",
+    "cssVariableName": "--mico-outline-style-dotted",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-outline-style-dotted",
+      "unit": "custom",
+      "style": "--mico-outline-style-dotted"
+    }
+  },
+  {
+    "id": "mico-76f6d2e57c4e375c",
+    "type": "unit",
+    "label": "outline style double",
+    "cssVariableName": "--mico-outline-style-double",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-outline-style-double",
+      "unit": "custom",
+      "style": "--mico-outline-style-double"
+    }
+  },
+  {
+    "id": "mico-e3bb1dda598ceb53",
+    "type": "unit",
+    "label": "outline offset 0",
+    "cssVariableName": "--mico-outline-offset-0",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-outline-offset-0",
+      "unit": "custom",
+      "style": "--mico-outline-offset-0"
+    }
+  },
+  {
+    "id": "mico-625b01b1b0e54ada",
+    "type": "unit",
+    "label": "outline offset 1",
+    "cssVariableName": "--mico-outline-offset-1",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-outline-offset-1",
+      "unit": "custom",
+      "style": "--mico-outline-offset-1"
+    }
+  },
+  {
+    "id": "mico-a6a337e35e52956a",
+    "type": "unit",
+    "label": "outline offset 2",
+    "cssVariableName": "--mico-outline-offset-2",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-outline-offset-2",
+      "unit": "custom",
+      "style": "--mico-outline-offset-2"
+    }
+  },
+  {
+    "id": "mico-7cd926daabd05282",
+    "type": "unit",
+    "label": "outline offset 4",
+    "cssVariableName": "--mico-outline-offset-4",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-outline-offset-4",
+      "unit": "custom",
+      "style": "--mico-outline-offset-4"
+    }
+  },
+  {
+    "id": "mico-3ffc5aa376de89a4",
+    "type": "unit",
+    "label": "outline offset 8",
+    "cssVariableName": "--mico-outline-offset-8",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-outline-offset-8",
+      "unit": "custom",
+      "style": "--mico-outline-offset-8"
+    }
+  },
+  {
+    "id": "mico-e1f61936036cfd4e",
+    "type": "unit",
+    "label": "divide width 0",
+    "cssVariableName": "--mico-divide-width-0",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-divide-width-0",
+      "unit": "custom",
+      "style": "--mico-divide-width-0"
+    }
+  },
+  {
+    "id": "mico-10c441912010d40e",
+    "type": "unit",
+    "label": "divide width 1",
+    "cssVariableName": "--mico-divide-width-1",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-divide-width-1",
+      "unit": "custom",
+      "style": "--mico-divide-width-1"
+    }
+  },
+  {
+    "id": "mico-1c6ff9a4f0af63e4",
+    "type": "unit",
+    "label": "divide width 2",
+    "cssVariableName": "--mico-divide-width-2",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-divide-width-2",
+      "unit": "custom",
+      "style": "--mico-divide-width-2"
+    }
+  },
+  {
+    "id": "mico-7e9b54a60c71d1ba",
+    "type": "unit",
+    "label": "divide width 4",
+    "cssVariableName": "--mico-divide-width-4",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-divide-width-4",
+      "unit": "custom",
+      "style": "--mico-divide-width-4"
+    }
+  },
+  {
+    "id": "mico-85e348bc74ceb4f2",
+    "type": "unit",
+    "label": "divide width 8",
+    "cssVariableName": "--mico-divide-width-8",
+    "collection": "Border Collection",
+    "value": {
+      "number": "--mico-divide-width-8",
+      "unit": "custom",
+      "style": "--mico-divide-width-8"
+    }
+  }
+]

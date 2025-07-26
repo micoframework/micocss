@@ -47,15 +47,16 @@ if (config.core) {
 
 // Add utility files
 const utilityFileMap = {
-  typography: 'utils/typography/typography.css',
-  color: 'utils/colors/colors.css',
+  misc: 'utils/miscellaneous/misc.css',
   layout: 'utils/layout/layout.css',
+  button: 'utils/buttons/buttons.css',
   border: 'utils/borders/borders.css',
   spacing: 'utils/layout/spacing.css',
+  typography: 'utils/typography/typography.css',
   states: 'utils/states/states.css',
-  button: 'utils/buttons/buttons.css',
+  color: 'utils/colors/colors.css',
   animation: 'utils/animation/animation.css',
-  navigation: 'utils/navigation/navigation.css'
+  responsive: 'utils/responsive/responsive.css'
 };
 
 Object.entries(config.utilities).forEach(([name, enabled]) => {

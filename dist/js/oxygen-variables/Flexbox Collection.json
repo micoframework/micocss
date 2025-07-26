@@ -1,0 +1,218 @@
+[
+  {
+    "id": "mico-9a76c033ea322432",
+    "type": "unit",
+    "label": "flex row",
+    "cssVariableName": "--mico-flex-row",
+    "collection": "Flexbox Collection",
+    "value": {
+      "number": "--mico-flex-row",
+      "unit": "custom",
+      "style": "--mico-flex-row"
+    }
+  },
+  {
+    "id": "mico-bf4f8f97eefdc06b",
+    "type": "unit",
+    "label": "flex row reverse",
+    "cssVariableName": "--mico-flex-row-reverse",
+    "collection": "Flexbox Collection",
+    "value": {
+      "number": "--mico-flex-row-reverse",
+      "unit": "custom",
+      "style": "--mico-flex-row-reverse"
+    }
+  },
+  {
+    "id": "mico-0243e63553c497d0",
+    "type": "unit",
+    "label": "flex col",
+    "cssVariableName": "--mico-flex-col",
+    "collection": "Flexbox Collection",
+    "value": {
+      "number": "--mico-flex-col",
+      "unit": "custom",
+      "style": "--mico-flex-col"
+    }
+  },
+  {
+    "id": "mico-ac727dbb6701528f",
+    "type": "unit",
+    "label": "flex col reverse",
+    "cssVariableName": "--mico-flex-col-reverse",
+    "collection": "Flexbox Collection",
+    "value": {
+      "number": "--mico-flex-col-reverse",
+      "unit": "custom",
+      "style": "--mico-flex-col-reverse"
+    }
+  },
+  {
+    "id": "mico-33bbd331080b4cf3",
+    "type": "unit",
+    "label": "flex wrap",
+    "cssVariableName": "--mico-flex-wrap",
+    "collection": "Flexbox Collection",
+    "value": {
+      "number": "--mico-flex-wrap",
+      "unit": "custom",
+      "style": "--mico-flex-wrap"
+    }
+  },
+  {
+    "id": "mico-4738063777306e8d",
+    "type": "unit",
+    "label": "flex nowrap",
+    "cssVariableName": "--mico-flex-nowrap",
+    "collection": "Flexbox Collection",
+    "value": {
+      "number": "--mico-flex-nowrap",
+      "unit": "custom",
+      "style": "--mico-flex-nowrap"
+    }
+  },
+  {
+    "id": "mico-bf0b9f2ea333a316",
+    "type": "unit",
+    "label": "flex wrap reverse",
+    "cssVariableName": "--mico-flex-wrap-reverse",
+    "collection": "Flexbox Collection",
+    "value": {
+      "number": "--mico-flex-wrap-reverse",
+      "unit": "custom",
+      "style": "--mico-flex-wrap-reverse"
+    }
+  },
+  {
+    "id": "mico-ce2f434ec373db1f",
+    "type": "unit",
+    "label": "justify start",
+    "cssVariableName": "--mico-justify-start",
+    "collection": "Flexbox Collection",
+    "value": {
+      "number": "--mico-justify-start",
+      "unit": "custom",
+      "style": "--mico-justify-start"
+    }
+  },
+  {
+    "id": "mico-51bb7df594038903",
+    "type": "unit",
+    "label": "justify end",
+    "cssVariableName": "--mico-justify-end",
+    "collection": "Flexbox Collection",
+    "value": {
+      "number": "--mico-justify-end",
+      "unit": "custom",
+      "style": "--mico-justify-end"
+    }
+  },
+  {
+    "id": "mico-5392b8ef2b402446",
+    "type": "unit",
+    "label": "justify center",
+    "cssVariableName": "--mico-justify-center",
+    "collection": "Flexbox Collection",
+    "value": {
+      "number": "--mico-justify-center",
+      "unit": "custom",
+      "style": "--mico-justify-center"
+    }
+  },
+  {
+    "id": "mico-d14e71f7130eab9f",
+    "type": "unit",
+    "label": "justify between",
+    "cssVariableName": "--mico-justify-between",
+    "collection": "Flexbox Collection",
+    "value": {
+      "number": "--mico-justify-between",
+      "unit": "custom",
+      "style": "--mico-justify-between"
+    }
+  },
+  {
+    "id": "mico-7ae1be5f56b0e75a",
+    "type": "unit",
+    "label": "justify around",
+    "cssVariableName": "--mico-justify-around",
+    "collection": "Flexbox Collection",
+    "value": {
+      "number": "--mico-justify-around",
+      "unit": "custom",
+      "style": "--mico-justify-around"
+    }
+  },
+  {
+    "id": "mico-d60ebf32a738a1ee",
+    "type": "unit",
+    "label": "justify evenly",
+    "cssVariableName": "--mico-justify-evenly",
+    "collection": "Flexbox Collection",
+    "value": {
+      "number": "--mico-justify-evenly",
+      "unit": "custom",
+      "style": "--mico-justify-evenly"
+    }
+  },
+  {
+    "id": "mico-72ce319f69a227bd",
+    "type": "unit",
+    "label": "items start",
+    "cssVariableName": "--mico-items-start",
+    "collection": "Flexbox Collection",
+    "value": {
+      "number": "--mico-items-start",
+      "unit": "custom",
+      "style": "--mico-items-start"
+    }
+  },
+  {
+    "id": "mico-5296ec486150f85e",
+    "type": "unit",
+    "label": "items end",
+    "cssVariableName": "--mico-items-end",
+    "collection": "Flexbox Collection",
+    "value": {
+      "number": "--mico-items-end",
+      "unit": "custom",
+      "style": "--mico-items-end"
+    }
+  },
+  {
+    "id": "mico-bd6ffd4bf673e032",
+    "type": "unit",
+    "label": "items center",
+    "cssVariableName": "--mico-items-center",
+    "collection": "Flexbox Collection",
+    "value": {
+      "number": "--mico-items-center",
+      "unit": "custom",
+      "style": "--mico-items-center"
+    }
+  },
+  {
+    "id": "mico-b101405cc50d44fc",
+    "type": "unit",
+    "label": "items baseline",
+    "cssVariableName": "--mico-items-baseline",
+    "collection": "Flexbox Collection",
+    "value": {
+      "number": "--mico-items-baseline",
+      "unit": "custom",
+      "style": "--mico-items-baseline"
+    }
+  },
+  {
+    "id": "mico-b77ca930d4b51b60",
+    "type": "unit",
+    "label": "items stretch",
+    "cssVariableName": "--mico-items-stretch",
+    "collection": "Flexbox Collection",
+    "value": {
+      "number": "--mico-items-stretch",
+      "unit": "custom",
+      "style": "--mico-items-stretch"
+    }
+  }
+]

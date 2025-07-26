@@ -1,0 +1,134 @@
+[
+  {
+    "id": "mico-0818574cbc6fb81d",
+    "type": "unit",
+    "label": "bg none",
+    "cssVariableName": "--mico-bg-none",
+    "collection": "Background Collection",
+    "value": {
+      "number": "--mico-bg-none",
+      "unit": "custom",
+      "style": "--mico-bg-none"
+    }
+  },
+  {
+    "id": "mico-76cdca5a3e1f9680",
+    "type": "unit",
+    "label": "bg repeat",
+    "cssVariableName": "--mico-bg-repeat",
+    "collection": "Background Collection",
+    "value": {
+      "number": "--mico-bg-repeat",
+      "unit": "custom",
+      "style": "--mico-bg-repeat"
+    }
+  },
+  {
+    "id": "mico-bf29bb52098f670a",
+    "type": "unit",
+    "label": "bg no repeat",
+    "cssVariableName": "--mico-bg-no-repeat",
+    "collection": "Background Collection",
+    "value": {
+      "number": "--mico-bg-no-repeat",
+      "unit": "custom",
+      "style": "--mico-bg-no-repeat"
+    }
+  },
+  {
+    "id": "mico-8bd06508d69945d1",
+    "type": "unit",
+    "label": "bg repeat x",
+    "cssVariableName": "--mico-bg-repeat-x",
+    "collection": "Background Collection",
+    "value": {
+      "number": "--mico-bg-repeat-x",
+      "unit": "custom",
+      "style": "--mico-bg-repeat-x"
+    }
+  },
+  {
+    "id": "mico-732f7fd9bb731775",
+    "type": "unit",
+    "label": "bg repeat y",
+    "cssVariableName": "--mico-bg-repeat-y",
+    "collection": "Background Collection",
+    "value": {
+      "number": "--mico-bg-repeat-y",
+      "unit": "custom",
+      "style": "--mico-bg-repeat-y"
+    }
+  },
+  {
+    "id": "mico-00631273a8d88286",
+    "type": "unit",
+    "label": "bg fixed",
+    "cssVariableName": "--mico-bg-fixed",
+    "collection": "Background Collection",
+    "value": {
+      "number": "--mico-bg-fixed",
+      "unit": "custom",
+      "style": "--mico-bg-fixed"
+    }
+  },
+  {
+    "id": "mico-e37f595ae519360b",
+    "type": "unit",
+    "label": "bg local",
+    "cssVariableName": "--mico-bg-local",
+    "collection": "Background Collection",
+    "value": {
+      "number": "--mico-bg-local",
+      "unit": "custom",
+      "style": "--mico-bg-local"
+    }
+  },
+  {
+    "id": "mico-8b5613ac2f10e11c",
+    "type": "unit",
+    "label": "bg scroll",
+    "cssVariableName": "--mico-bg-scroll",
+    "collection": "Background Collection",
+    "value": {
+      "number": "--mico-bg-scroll",
+      "unit": "custom",
+      "style": "--mico-bg-scroll"
+    }
+  },
+  {
+    "id": "mico-df533ef817f3fa2a",
+    "type": "unit",
+    "label": "bg clip border",
+    "cssVariableName": "--mico-bg-clip-border",
+    "collection": "Background Collection",
+    "value": {
+      "number": "--mico-bg-clip-border",
+      "unit": "custom",
+      "style": "--mico-bg-clip-border"
+    }
+  },
+  {
+    "id": "mico-fcd5c313d6d19f58",
+    "type": "unit",
+    "label": "bg clip padding",
+    "cssVariableName": "--mico-bg-clip-padding",
+    "collection": "Background Collection",
+    "value": {
+      "number": "--mico-bg-clip-padding",
+      "unit": "custom",
+      "style": "--mico-bg-clip-padding"
+    }
+  },
+  {
+    "id": "mico-1ed0317ccd882c8d",
+    "type": "unit",
+    "label": "bg clip content",
+    "cssVariableName": "--mico-bg-clip-content",
+    "collection": "Background Collection",
+    "value": {
+      "number": "--mico-bg-clip-content",
+      "unit": "custom",
+      "style": "--mico-bg-clip-content"
+    }
+  }
+]

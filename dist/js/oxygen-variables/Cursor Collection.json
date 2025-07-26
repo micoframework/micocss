@@ -1,0 +1,122 @@
+[
+  {
+    "id": "mico-b406722960f5833e",
+    "type": "unit",
+    "label": "cursor auto",
+    "cssVariableName": "--mico-cursor-auto",
+    "collection": "Cursor Collection",
+    "value": {
+      "number": "--mico-cursor-auto",
+      "unit": "custom",
+      "style": "--mico-cursor-auto"
+    }
+  },
+  {
+    "id": "mico-0fcef9982f0cf5b8",
+    "type": "unit",
+    "label": "cursor default",
+    "cssVariableName": "--mico-cursor-default",
+    "collection": "Cursor Collection",
+    "value": {
+      "number": "--mico-cursor-default",
+      "unit": "custom",
+      "style": "--mico-cursor-default"
+    }
+  },
+  {
+    "id": "mico-2527609349a64d5d",
+    "type": "unit",
+    "label": "cursor pointer",
+    "cssVariableName": "--mico-cursor-pointer",
+    "collection": "Cursor Collection",
+    "value": {
+      "number": "--mico-cursor-pointer",
+      "unit": "custom",
+      "style": "--mico-cursor-pointer"
+    }
+  },
+  {
+    "id": "mico-9597a0f813dbaa99",
+    "type": "unit",
+    "label": "cursor wait",
+    "cssVariableName": "--mico-cursor-wait",
+    "collection": "Cursor Collection",
+    "value": {
+      "number": "--mico-cursor-wait",
+      "unit": "custom",
+      "style": "--mico-cursor-wait"
+    }
+  },
+  {
+    "id": "mico-4b5b691022eafd32",
+    "type": "unit",
+    "label": "cursor text",
+    "cssVariableName": "--mico-cursor-text",
+    "collection": "Cursor Collection",
+    "value": {
+      "number": "--mico-cursor-text",
+      "unit": "custom",
+      "style": "--mico-cursor-text"
+    }
+  },
+  {
+    "id": "mico-635d954d02660651",
+    "type": "unit",
+    "label": "cursor move",
+    "cssVariableName": "--mico-cursor-move",
+    "collection": "Cursor Collection",
+    "value": {
+      "number": "--mico-cursor-move",
+      "unit": "custom",
+      "style": "--mico-cursor-move"
+    }
+  },
+  {
+    "id": "mico-005b5ff9d3169c2d",
+    "type": "unit",
+    "label": "cursor not allowed",
+    "cssVariableName": "--mico-cursor-not-allowed",
+    "collection": "Cursor Collection",
+    "value": {
+      "number": "--mico-cursor-not-allowed",
+      "unit": "custom",
+      "style": "--mico-cursor-not-allowed"
+    }
+  },
+  {
+    "id": "mico-72f8393714d80342",
+    "type": "unit",
+    "label": "cursor grab",
+    "cssVariableName": "--mico-cursor-grab",
+    "collection": "Cursor Collection",
+    "value": {
+      "number": "--mico-cursor-grab",
+      "unit": "custom",
+      "style": "--mico-cursor-grab"
+    }
+  },
+  {
+    "id": "mico-897ecda09d11d50e",
+    "type": "unit",
+    "label": "cursor grabbing",
+    "cssVariableName": "--mico-cursor-grabbing",
+    "collection": "Cursor Collection",
+    "value": {
+      "number": "--mico-cursor-grabbing",
+      "unit": "custom",
+      "style": "--mico-cursor-grabbing"
+    }
+  },
+  {
+    "id": "mico-67f57bb5f0fe05e3",
+    "type": "unit",
+    "label": "cursor help",
+    "cssVariableName": "--mico-cursor-help",
+    "collection": "Cursor Collection",
+    "value": {
+      "number": "--mico-cursor-help",
+      "unit": "custom",
+      "style": "--mico-cursor-help"
+    }
+  }
+]

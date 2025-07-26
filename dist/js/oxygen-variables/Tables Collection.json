@@ -1,0 +1,26 @@
+[
+  {
+    "id": "mico-8cbdda16ba9dac68",
+    "type": "unit",
+    "label": "table auto",
+    "cssVariableName": "--mico-table-auto",
+    "collection": "Tables Collection",
+    "value": {
+      "number": "--mico-table-auto",
+      "unit": "custom",
+      "style": "--mico-table-auto"
+    }
+  },
+  {
+    "id": "mico-27797cffbe77e4cb",
+    "type": "unit",
+    "label": "table fixed",
+    "cssVariableName": "--mico-table-fixed",
+    "collection": "Tables Collection",
+    "value": {
+      "number": "--mico-table-fixed",
+      "unit": "custom",
+      "style": "--mico-table-fixed"
+    }
+  }
+]

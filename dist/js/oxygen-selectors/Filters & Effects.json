@@ -1,0 +1,154 @@
+[
+  {
+    "id": "mico-71e77e6b2bdca065",
+    "name": "mask-fade-bottom",
+    "children": [],
+    "locked": false,
+    "collection": "Filters & Effects",
+    "type": "class"
+  },
+  {
+    "id": "mico-702881fbf6e923a8",
+    "name": "mask-fade-left",
+    "children": [],
+    "locked": false,
+    "collection": "Filters & Effects",
+    "type": "class"
+  },
+  {
+    "id": "mico-ec5b542660866f6f",
+    "name": "mask-fade-long",
+    "children": [],
+    "locked": false,
+    "collection": "Filters & Effects",
+    "type": "class"
+  },
+  {
+    "id": "mico-ebdc21ed1bcb23e4",
+    "name": "mask-fade-right",
+    "children": [],
+    "locked": false,
+    "collection": "Filters & Effects",
+    "type": "class"
+  },
+  {
+    "id": "mico-4fed0ea9cb13c226",
+    "name": "mask-fade-short",
+    "children": [],
+    "locked": false,
+    "collection": "Filters & Effects",
+    "type": "class"
+  },
+  {
+    "id": "mico-bf6614a7efcef688",
+    "name": "mask-fade-top",
+    "children": [],
+    "locked": false,
+    "collection": "Filters & Effects",
+    "type": "class"
+  },
+  {
+    "id": "mico-27c9f1743c4e78c5",
+    "name": "mask-none",
+    "children": [],
+    "locked": false,
+    "collection": "Filters & Effects",
+    "type": "class"
+  },
+  {
+    "id": "mico-5383e1f219c8d7a7",
+    "name": "opacity-0p",
+    "children": [],
+    "locked": false,
+    "collection": "Filters & Effects",
+    "type": "class"
+  },
+  {
+    "id": "mico-fce98230ceabc3f6",
+    "name": "opacity-100p",
+    "children": [],
+    "locked": false,
+    "collection": "Filters & Effects",
+    "type": "class"
+  },
+  {
+    "id": "mico-ae808f5677fdf0f1",
+    "name": "opacity-10p",
+    "children": [],
+    "locked": false,
+    "collection": "Filters & Effects",
+    "type": "class"
+  },
+  {
+    "id": "mico-58df5df410aa5176",
+    "name": "opacity-20p",
+    "children": [],
+    "locked": false,
+    "collection": "Filters & Effects",
+    "type": "class"
+  },
+  {
+    "id": "mico-b02fa858757535ee",
+    "name": "opacity-30p",
+    "children": [],
+    "locked": false,
+    "collection": "Filters & Effects",
+    "type": "class"
+  },
+  {
+    "id": "mico-d06a05d673668662",
+    "name": "opacity-40p",
+    "children": [],
+    "locked": false,
+    "collection": "Filters & Effects",
+    "type": "class"
+  },
+  {
+    "id": "mico-552778812467c753",
+    "name": "opacity-50p",
+    "children": [],
+    "locked": false,
+    "collection": "Filters & Effects",
+    "type": "class"
+  },
+  {
+    "id": "mico-3e3637265aafe0fa",
+    "name": "opacity-60p",
+    "children": [],
+    "locked": false,
+    "collection": "Filters & Effects",
+    "type": "class"
+  },
+  {
+    "id": "mico-6a865efbaa8d8a9d",
+    "name": "opacity-70p",
+    "children": [],
+    "locked": false,
+    "collection": "Filters & Effects",
+    "type": "class"
+  },
+  {
+    "id": "mico-7d2a7fedfca1d310",
+    "name": "opacity-80p",
+    "children": [],
+    "locked": false,
+    "collection": "Filters & Effects",
+    "type": "class"
+  },
+  {
+    "id": "mico-f3c2072ad39d4915",
+    "name": "opacity-90p",
+    "children": [],
+    "locked": false,
+    "collection": "Filters & Effects",
+    "type": "class"
+  },
+  {
+    "id": "mico-b2549b2c2a09c98a",
+    "name": "opacity-none",
+    "children": [],
+    "locked": false,
+    "collection": "Filters & Effects",
+    "type": "class"
+  }
+]

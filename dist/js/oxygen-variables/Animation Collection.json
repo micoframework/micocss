@@ -1,0 +1,494 @@
+[
+  {
+    "id": "mico-b621cca07635e5b4",
+    "type": "unit",
+    "label": "duration xs",
+    "cssVariableName": "--mico-duration-xs",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-duration-xs",
+      "unit": "custom",
+      "style": "--mico-duration-xs"
+    }
+  },
+  {
+    "id": "mico-4becd36cc8613ce9",
+    "type": "unit",
+    "label": "duration sm",
+    "cssVariableName": "--mico-duration-sm",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-duration-sm",
+      "unit": "custom",
+      "style": "--mico-duration-sm"
+    }
+  },
+  {
+    "id": "mico-b333b21a8481a8da",
+    "type": "unit",
+    "label": "duration md",
+    "cssVariableName": "--mico-duration-md",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-duration-md",
+      "unit": "custom",
+      "style": "--mico-duration-md"
+    }
+  },
+  {
+    "id": "mico-7987cd0713b22548",
+    "type": "unit",
+    "label": "duration lg",
+    "cssVariableName": "--mico-duration-lg",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-duration-lg",
+      "unit": "custom",
+      "style": "--mico-duration-lg"
+    }
+  },
+  {
+    "id": "mico-ba4052e1bfe056f4",
+    "type": "unit",
+    "label": "duration xl",
+    "cssVariableName": "--mico-duration-xl",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-duration-xl",
+      "unit": "custom",
+      "style": "--mico-duration-xl"
+    }
+  },
+  {
+    "id": "mico-f490ec8f12443565",
+    "type": "unit",
+    "label": "delay xs",
+    "cssVariableName": "--mico-delay-xs",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-delay-xs",
+      "unit": "custom",
+      "style": "--mico-delay-xs"
+    }
+  },
+  {
+    "id": "mico-b0a9ee4c61e40d70",
+    "type": "unit",
+    "label": "delay sm",
+    "cssVariableName": "--mico-delay-sm",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-delay-sm",
+      "unit": "custom",
+      "style": "--mico-delay-sm"
+    }
+  },
+  {
+    "id": "mico-c75879b73a14b273",
+    "type": "unit",
+    "label": "delay md",
+    "cssVariableName": "--mico-delay-md",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-delay-md",
+      "unit": "custom",
+      "style": "--mico-delay-md"
+    }
+  },
+  {
+    "id": "mico-15aab75bf297b1ab",
+    "type": "unit",
+    "label": "delay lg",
+    "cssVariableName": "--mico-delay-lg",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-delay-lg",
+      "unit": "custom",
+      "style": "--mico-delay-lg"
+    }
+  },
+  {
+    "id": "mico-237327e853f3adb2",
+    "type": "unit",
+    "label": "delay xl",
+    "cssVariableName": "--mico-delay-xl",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-delay-xl",
+      "unit": "custom",
+      "style": "--mico-delay-xl"
+    }
+  },
+  {
+    "id": "mico-c1e55d3e6e7b8a4c",
+    "type": "unit",
+    "label": "anim default duration",
+    "cssVariableName": "--mico-anim-default-duration",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-anim-default-duration",
+      "unit": "custom",
+      "style": "--mico-anim-default-duration"
+    }
+  },
+  {
+    "id": "mico-21019f3deab8e328",
+    "type": "unit",
+    "label": "anim default timing",
+    "cssVariableName": "--mico-anim-default-timing",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-anim-default-timing",
+      "unit": "custom",
+      "style": "--mico-anim-default-timing"
+    }
+  },
+  {
+    "id": "mico-b3b7aa629d1387f0",
+    "type": "unit",
+    "label": "anim default fill mode",
+    "cssVariableName": "--mico-anim-default-fill-mode",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-anim-default-fill-mode",
+      "unit": "custom",
+      "style": "--mico-anim-default-fill-mode"
+    }
+  },
+  {
+    "id": "mico-8db9bb8deabbff9b",
+    "type": "unit",
+    "label": "ripple bg default",
+    "cssVariableName": "--mico-ripple-bg-default",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-ripple-bg-default",
+      "unit": "custom",
+      "style": "--mico-ripple-bg-default"
+    }
+  },
+  {
+    "id": "mico-0644fc5460ccc75c",
+    "type": "unit",
+    "label": "ripple bg dark",
+    "cssVariableName": "--mico-ripple-bg-dark",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-ripple-bg-dark",
+      "unit": "custom",
+      "style": "--mico-ripple-bg-dark"
+    }
+  },
+  {
+    "id": "mico-54df20d07be731b8",
+    "type": "unit",
+    "label": "typewriter cursor color",
+    "cssVariableName": "--mico-typewriter-cursor-color",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-typewriter-cursor-color",
+      "unit": "custom",
+      "style": "--mico-typewriter-cursor-color"
+    }
+  },
+  {
+    "id": "mico-eb60090ce07dc0a5",
+    "type": "unit",
+    "label": "animation none",
+    "cssVariableName": "--mico-animation-none",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-animation-none",
+      "unit": "custom",
+      "style": "--mico-animation-none"
+    }
+  },
+  {
+    "id": "mico-f57ead9d53a2b4f9",
+    "type": "unit",
+    "label": "animation spin",
+    "cssVariableName": "--mico-animation-spin",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-animation-spin",
+      "unit": "custom",
+      "style": "--mico-animation-spin"
+    }
+  },
+  {
+    "id": "mico-467f204bda9bcd36",
+    "type": "unit",
+    "label": "animation ping",
+    "cssVariableName": "--mico-animation-ping",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-animation-ping",
+      "unit": "custom",
+      "style": "--mico-animation-ping"
+    }
+  },
+  {
+    "id": "mico-5e2a464daf3b4b66",
+    "type": "unit",
+    "label": "animation pulse",
+    "cssVariableName": "--mico-animation-pulse",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-animation-pulse",
+      "unit": "custom",
+      "style": "--mico-animation-pulse"
+    }
+  },
+  {
+    "id": "mico-fad426f8576e8faa",
+    "type": "unit",
+    "label": "animation bounce",
+    "cssVariableName": "--mico-animation-bounce",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-animation-bounce",
+      "unit": "custom",
+      "style": "--mico-animation-bounce"
+    }
+  },
+  {
+    "id": "mico-e418448faa16c763",
+    "type": "unit",
+    "label": "ease",
+    "cssVariableName": "--mico-ease",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-ease",
+      "unit": "custom",
+      "style": "--mico-ease"
+    }
+  },
+  {
+    "id": "mico-68e83e04baf810d5",
+    "type": "unit",
+    "label": "ease in",
+    "cssVariableName": "--mico-ease-in",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-ease-in",
+      "unit": "custom",
+      "style": "--mico-ease-in"
+    }
+  },
+  {
+    "id": "mico-6de4251300048d10",
+    "type": "unit",
+    "label": "ease out",
+    "cssVariableName": "--mico-ease-out",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-ease-out",
+      "unit": "custom",
+      "style": "--mico-ease-out"
+    }
+  },
+  {
+    "id": "mico-44aa229bd3e0c4b4",
+    "type": "unit",
+    "label": "ease in out",
+    "cssVariableName": "--mico-ease-in-out",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-ease-in-out",
+      "unit": "custom",
+      "style": "--mico-ease-in-out"
+    }
+  },
+  {
+    "id": "mico-0b34b93dd705118e",
+    "type": "unit",
+    "label": "ease elastic",
+    "cssVariableName": "--mico-ease-elastic",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-ease-elastic",
+      "unit": "custom",
+      "style": "--mico-ease-elastic"
+    }
+  },
+  {
+    "id": "mico-dbdde75834710d3f",
+    "type": "unit",
+    "label": "ease bounce",
+    "cssVariableName": "--mico-ease-bounce",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-ease-bounce",
+      "unit": "custom",
+      "style": "--mico-ease-bounce"
+    }
+  },
+  {
+    "id": "mico-a8a019eab2de8067",
+    "type": "unit",
+    "label": "ease back",
+    "cssVariableName": "--mico-ease-back",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-ease-back",
+      "unit": "custom",
+      "style": "--mico-ease-back"
+    }
+  },
+  {
+    "id": "mico-23a0511e6015ddb5",
+    "type": "unit",
+    "label": "ease spring",
+    "cssVariableName": "--mico-ease-spring",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-ease-spring",
+      "unit": "custom",
+      "style": "--mico-ease-spring"
+    }
+  },
+  {
+    "id": "mico-28cda23502c1d76b",
+    "type": "unit",
+    "label": "ease gravity",
+    "cssVariableName": "--mico-ease-gravity",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-ease-gravity",
+      "unit": "custom",
+      "style": "--mico-ease-gravity"
+    }
+  },
+  {
+    "id": "mico-8664e2b2ba9fa8a4",
+    "type": "unit",
+    "label": "ease snappy",
+    "cssVariableName": "--mico-ease-snappy",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-ease-snappy",
+      "unit": "custom",
+      "style": "--mico-ease-snappy"
+    }
+  },
+  {
+    "id": "mico-415e99b3c6211dc2",
+    "type": "unit",
+    "label": "transition duration fast",
+    "cssVariableName": "--mico-transition-duration-fast",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-transition-duration-fast",
+      "unit": "custom",
+      "style": "--mico-transition-duration-fast"
+    }
+  },
+  {
+    "id": "mico-734900ad869d9236",
+    "type": "unit",
+    "label": "transition duration normal",
+    "cssVariableName": "--mico-transition-duration-normal",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-transition-duration-normal",
+      "unit": "custom",
+      "style": "--mico-transition-duration-normal"
+    }
+  },
+  {
+    "id": "mico-b838e75af9b6d869",
+    "type": "unit",
+    "label": "transition duration slow",
+    "cssVariableName": "--mico-transition-duration-slow",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-transition-duration-slow",
+      "unit": "custom",
+      "style": "--mico-transition-duration-slow"
+    }
+  },
+  {
+    "id": "mico-96631110dffd1c75",
+    "type": "unit",
+    "label": "transition all",
+    "cssVariableName": "--mico-transition-all",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-transition-all",
+      "unit": "custom",
+      "style": "--mico-transition-all"
+    }
+  },
+  {
+    "id": "mico-b168405996bde73e",
+    "type": "unit",
+    "label": "transition color",
+    "cssVariableName": "--mico-transition-color",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-transition-color",
+      "unit": "custom",
+      "style": "--mico-transition-color"
+    }
+  },
+  {
+    "id": "mico-6900de1fa99e94ed",
+    "type": "unit",
+    "label": "transition background",
+    "cssVariableName": "--mico-transition-background",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-transition-background",
+      "unit": "custom",
+      "style": "--mico-transition-background"
+    }
+  },
+  {
+    "id": "mico-ba98911e3e7c47e0",
+    "type": "unit",
+    "label": "transition border",
+    "cssVariableName": "--mico-transition-border",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-transition-border",
+      "unit": "custom",
+      "style": "--mico-transition-border"
+    }
+  },
+  {
+    "id": "mico-59b220fe91e8e589",
+    "type": "unit",
+    "label": "transition opacity",
+    "cssVariableName": "--mico-transition-opacity",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-transition-opacity",
+      "unit": "custom",
+      "style": "--mico-transition-opacity"
+    }
+  },
+  {
+    "id": "mico-8d607d6f71d14b0c",
+    "type": "unit",
+    "label": "transition transform",
+    "cssVariableName": "--mico-transition-transform",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-transition-transform",
+      "unit": "custom",
+      "style": "--mico-transition-transform"
+    }
+  },
+  {
+    "id": "mico-8293d478538dc2fb",
+    "type": "unit",
+    "label": "transition box shadow",
+    "cssVariableName": "--mico-transition-box-shadow",
+    "collection": "Animation Collection",
+    "value": {
+      "number": "--mico-transition-box-shadow",
+      "unit": "custom",
+      "style": "--mico-transition-box-shadow"
+    }
+  }
+]

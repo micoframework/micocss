@@ -1,0 +1,26 @@
+[
+  {
+    "id": "mico-bf1b6cd83183b609",
+    "type": "unit",
+    "label": "fill current",
+    "cssVariableName": "--mico-fill-current",
+    "collection": "SVG Collection",
+    "value": {
+      "number": "--mico-fill-current",
+      "unit": "custom",
+      "style": "--mico-fill-current"
+    }
+  },
+  {
+    "id": "mico-44ce062b4af88959",
+    "type": "unit",
+    "label": "stroke current",
+    "cssVariableName": "--mico-stroke-current",
+    "collection": "SVG Collection",
+    "value": {
+      "number": "--mico-stroke-current",
+      "unit": "custom",
+      "style": "--mico-stroke-current"
+    }
+  }
+]

@@ -21,6 +21,162 @@
  * Effects: .mask-fade-bottom, .mask-fade-top
  */
 
+ /* ====================================================================== */
+/* Presets and Semantics                                                       */
+/* ====================================================================== */
+/**
+ * Box Sizing Reset
+ * Ensures consistent box model behavior across all elements
+ */
+
+
+html, *::before, *::after {
+  box-sizing: border-box;
+  max-width: 1600px;
+  margin-left: var(--mico-value-auto);
+  margin-right: var(--mico-value-auto);
+}
+
+/**
+ * CSS Reset and Normalization
+ * Removes default browser styling for consistent cross-browser appearance
+ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Heading Styles
+ * Responsive typography scale using CSS custom properties
+ */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--mico-font-primary);
+  user-select: text;
+  cursor: text;
+  font-weight: var(--mico-fw-400);
+  line-height: var(--mico-lh-xs);
+  text-wrap-style: balance;
+}
+
+h1 { font-size: var(--mico-fs-5xl) !important; }
+h2 { font-size: var(--mico-fs-3xl); }
+h3 { font-size: var(--mico-fs-xl); }
+h4 { font-size: var(--mico-fs-lg); }
+h5 { font-size: var(--mico-fs-md); }
+h6 { font-size: var(--mico-fs-sm); }
+
+/**
+ * Paragraph Styles
+ * Consistent spacing and typography for body text
+ */
+p {
+  font-size: var(--mico-fs-md);
+  font-weight: var(--mico-fw-300);
+  line-height: var(--mico-lh-md);
+  cursor: text;
+}
+
+/**
+ * Content Spacing
+ * Consistent spacing between content elements
+ */
+h1 ~ div, h2 ~ div, h3 ~ div, h4 ~ div, h5 ~ div, h6 ~ div {
+  margin-top: var(--mico-size-16);
+}
+
+h1 ~ p, h2 ~ p, h3 ~ p, h4 ~ p, h5 ~ p, h6 ~ p {
+  margin-top: var(--mico-size-16);
+}
+
+div ~ h1, div ~ h2, div ~ h3, div ~ h4, div ~ h5, div ~ h6 {
+  margin-top: var(--mico-size-32);
+}
+
+/**
+ * Interactive Element Spacing
+ * Ensures proper spacing between text and interactive elements
+ */
+p ~ button, p ~ a, span ~ button, span ~ a {
+  margin-top: var(--mico-size-24);
+}
+
+div ~ p {
+  margin-bottom: var(--mico-size-40);
+}
+
+/**
+ * Link Styles
+ * Accessible and consistent hyperlink styling
+ */
+a {
+  color: var(--mico-color-gray-6xdark);
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  /* text-decoration: underline; */
+  text-underline-offset: 0.2em;
+  outline: var(--mico-value-none);
+}
+
+/**
+ * List Styles
+ * Clean list presentation
+ */
+li {
+  display: flex;
+  list-style-type: none;
+  font-family: inherit;
+  font-size: var(--mico-fs-xs);
+}
+
+
+/**
+ * Text Emphasis
+ * Semantic styling for emphasized text
+ */
+em, i {
+  font-style: italic;
+}
+
+strong, b {
+  font-weight: var(--mico-fw-700);
+}
+
+/**
+ * Blockquotes
+ * Distinctive styling for quoted content
+ */
+blockquote {
+  margin: var(--mico-size-16, 16px) 0;
+  padding-left: var(--mico-size-16, 16px);
+  border-left: 4px solid var(--mico-value-current);
+  font-style: italic;
+  color: inherit;
+}
+
+/**
+ * Code Elements
+ * Monospace styling for code and preformatted text
+ */
+code, pre {
+  font-family: var(--mico-font-mono, 'SFMono-Regular', Menlo, Monaco, Consolas, monospace);
+  border-radius: var(--mico-radius-sm, 2px);
+}
+
+code {
+  padding: 0.2em 0.4em;
+  font-size: 0.875em;
+}
+
+pre {
+  padding: var(--mico-size-16, 16px);
+  overflow-x: auto;
+  line-height: 1.4;
+}
+
 /* ========================================================================== */
 /* ACCESSIBILITY UTILITIES                                                   */
 /* ========================================================================== */
@@ -45,11 +201,6 @@
   transition: var(--mico-transition-all) !important;
 }
 
-.skip-link:focus {
-  top: var(--mico-size-6) !important;
-  outline: var(--mico-border-width-2) solid var(--mico-color-primary) !important;
-  outline-offset: var(--mico-size-2) !important;
-}
 
 /**
  * Screen Reader Only
@@ -84,6 +235,7 @@
   clip: var(--mico-value-auto) !important;
   white-space: normal !important;
 }
+
 
 /* ========================================================================== */
 /* APPEARANCE CONTROL                                                        */
@@ -198,10 +350,28 @@
   margin-right: calc(50% - 50vw);
 }
 
+.bleed-full-left {
+  width: 100vw !important;
+  margin-left: calc(50% - 50vw);
+}
+
+.bleed-full-right {
+  width: 100vw !important;
+  margin-right: calc(50% - 50vw);
+}
+
 /* Column bleed with configurable offsets */
 .bleed-column {
   margin-left: calc(var(--mico-bleed-offset-md) * -1);
   margin-right: calc(var(--mico-bleed-offset-md) * -1);
+}
+
+.bleed-column-left {
+  margin-left: calc(var(--mico-bleed-offset-sm) * -1);
+}
+
+.bleed-column-right {
+  margin-right: calc(var(--mico-bleed-offset-sm) * -1);
 }
 
 .bleed-column-sm {
@@ -318,7 +488,7 @@
   border-radius: var(--mico-radius-md);
 }
 
-.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+.scrollbar-custom::-webkit-scrollbar-thumb {
   background: var(--mico-color-gray);
 }
 
@@ -420,6 +590,280 @@
   }
 }
 
+
+/* ====================================================================== */
+/* MEDIA AND CONTENT ELEMENTS                                            */
+/* ====================================================================== */
+
+/**
+ * Tables
+ * Consistent and accessible table styling
+ */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: var(--mico-size-16);
+  border-radius: var(--mico-radius-md);
+  overflow: hidden;
+}
+
+th, td {
+  border: 1px solid var(--mico-value-current);
+  padding: var(--mico-size-12, 12px);
+  text-align: left;
+}
+
+th {
+  background-color: var(--mico-value-current);
+  font-weight: var(--mico-fw-600);
+  color: var(--mico-value-current);
+}
+
+/**
+ * Horizontal Rules
+ * Semantic section dividers
+ */
+hr {
+  border: none;
+  border-top: 1px solid var(--mico-value-current);
+  margin: var(--mico-size-32, 32px) 0;
+}
+
+/**
+ * Media Elements
+ * Responsive images and media
+ */
+img, picture, svg, video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-style: italic;
+}
+
+.img-bg{
+position: relative;
+isolation: isolate;
+
+&img:first-of-type{
+position:absolute;
+inset: 0;
+z-index: -1;
+width: 100%;
+height: 100%;
+}
+}
+
+/**
+ * Form Elements
+ * Basic form styling
+ */
+input, textarea, select {
+  font-size: 1rem;
+  margin-bottom: var(--mico-size-16);
+  font-family: inherit;
+}
+
+/**
+ * Figures and Captions
+ * Semantic content grouping
+ */
+figure {
+  margin: var(--mico-size-24, 24px) 0;
+}
+
+figcaption {
+  font-style: italic;
+  text-align: center;
+  color: var(--mico-value-current);
+  font-size: var(--mico-fs-xs, 0.875rem);
+  margin-top: var(--mico-size-8, 8px);
+}
+
+
+/* ========================================================================== */
+/* TRANSFORM STATE UTILITIES                                                 */
+/* ========================================================================== */
+
+/**
+ * Transform States
+ *
+ * These utilities apply transforms on hover, focus, and active states.
+ */
+
+/* Hover Effects */
+.translate-up-xs { transform: translateY(-1.8px); }
+.translate-up-sm { transform: translateY(-2.5px); }
+.translate-up-md { transform: translateY(-3.8px); }
+.translate-up-lg { transform: translateY(-4.8px); }
+.translate-up-xl { transform: translateY(-5.8px); }
+
+.translate-down-xs { transform: translateY(1.8px); }
+.translate-down-sm { transform: translateY(2.5px); }
+.translate-down-md { transform: translateY(3.8px); }
+.translate-down-lg { transform: translateY(4.8px); }
+.translate-down-xl { transform: translateY(5.8px); }
+
+.scale-up-xs { transform: scale(0.0990); }
+.scale-up-sm { transform: scale(1.05); }
+.scale-up-md { transform: scale(2.05); }
+.scale-up-lg { transform: scale(3.05); }
+.scale-up-xl { transform: scale(4.05); }
+
+.scale-down-xs { transform: scale(-0.05); }
+.scale-down-sm { transform: scale(-1.05); }
+.scale-down-md { transform: scale(-2.05); }
+.scale-down-lg { transform: scale(-3.05); }
+.scale-down-xl { transform: scale(-4.05); }
+
+.rotate-l-xs { transform: rotate(-1deg); }
+.rotate-l-sm { transform: rotate(-3deg); }
+.rotate-l-md { transform: rotate(-6deg); }
+.rotate-l-lg { transform: rotate(-9deg); }
+.rotate-l-xl { transform: rotate(-12deg); }
+
+.rotate-r-xs { transform: rotate(1deg); }
+.rotate-r-sm { transform: rotate(3deg); }
+.rotate-r-md { transform: rotate(6deg); }
+.rotate-r-lg { transform: rotate(9deg); }
+.rotate-r-xl { transform: rotate(12deg); }
+
+.rotate-l-25 { transform: rotate(-25deg); }
+.rotate-l-45 { transform: rotate(-45deg); }
+.rotate-l-90 { transform: rotate(-90deg); }
+.rotate-l-180 { transform: rotate(-180deg); }
+.rotate-l-360 { transform: rotate(-360deg); }
+
+.rotate-r-25 { transform: rotate(25deg); }
+.rotate-r-45 { transform: rotate(45deg); }
+.rotate-r-90 { transform: rotate(90deg); }
+.rotate-r-180 { transform: rotate(180deg); }
+.rotate-r-360 { transform: rotate(360deg); }
+
+
+/* Focus Effects */
+.translate-up-xs { transform: translateY(-1.8px); }
+.translate-up-sm { transform: translateY(-2.5px); }
+.translate-up-md { transform: translateY(-3.8px); }
+.translate-up-lg { transform: translateY(-4.8px); }
+.translate-up-xl { transform: translateY(-5.8px); }
+
+.translate-down-xs { transform: translateY(1.8px); }
+.translate-down-sm { transform: translateY(2.5px); }
+.translate-down-md { transform: translateY(3.8px); }
+.translate-down-lg { transform: translateY(4.8px); }
+.translate-down-xl { transform: translateY(5.8px); }
+
+.scale-up-xs { transform: scale(0.05); }
+.scale-up-sm { transform: scale(1.05); }
+.scale-up-md { transform: scale(2.05); }
+.scale-up-lg { transform: scale(3.05); }
+.scale-up-xl { transform: scale(4.05); }
+
+.scale-down-xs { transform: scale(-0.05); }
+.scale-down-sm { transform: scale(-1.05); }
+.scale-down-md { transform: scale(-2.05); }
+.scale-down-lg { transform: scale(-3.05); }
+.scale-down-xl { transform: scale(-4.05); }
+
+.rotate-l-xs { transform: rotate(-1deg); }
+.rotate-l-sm { transform: rotate(-3deg); }
+.rotate-l-md { transform: rotate(-6deg); }
+.rotate-l-lg { transform: rotate(-9deg); }
+.rotate-l-xl { transform: rotate(-12deg); }
+
+.rotate-r-xs { transform: rotate(1deg); }
+.rotate-r-sm { transform: rotate(3deg); }
+.rotate-r-md { transform: rotate(6deg); }
+.rotate-r-lg { transform: rotate(9deg); }
+.rotate-r-xl { transform: rotate(12deg); }
+
+.rotate-l-25 { transform: rotate(-25deg); }
+.rotate-l-45 { transform: rotate(-45deg); }
+.rotate-l-90 { transform: rotate(-90deg); }
+.rotate-l-180 { transform: rotate(-180deg); }
+.rotate-l-360 { transform: rotate(-360deg); }
+
+.rotate-r-25 { transform: rotate(25deg); }
+.rotate-r-45 { transform: rotate(45deg); }
+.rotate-r-90 { transform: rotate(90deg); }
+.rotate-r-180 { transform: rotate(180deg); }
+.rotate-r-360 { transform: rotate(360deg); }
+
+/* Active Effects */
+.translate-up-xs { transform: translateY(-1.8px); }
+.translate-up-sm { transform: translateY(-2.5px); }
+.translate-up-md { transform: translateY(-3.8px); }
+.translate-up-lg { transform: translateY(-4.8px); }
+.translate-up-xl { transform: translateY(-5.8px); }
+
+.translate-down-xs { transform: translateY(1.8px); }
+.translate-down-sm { transform: translateY(2.5px); }
+.translate-down-md { transform: translateY(3.8px); }
+.translate-down-lg { transform: translateY(4.8px); }
+.translate-down-xl { transform: translateY(5.8px); }
+
+.scale-up-xs { transform: scale(0.05); }
+.scale-up-sm { transform: scale(1.05); }
+.scale-up-md { transform: scale(2.05); }
+.scale-up-lg { transform: scale(3.05); }
+.scale-up-xl { transform: scale(4.05); }
+
+.scale-down-xs { transform: scale(-0.05); }
+.scale-down-sm { transform: scale(-1.05); }
+.scale-down-md { transform: scale(-2.05); }
+.scale-down-lg { transform: scale(-3.05); }
+.scale-down-xl { transform: scale(-4.05); }
+
+.rotate-l-xs { transform: rotate(-1deg); }
+.rotate-l-sm { transform: rotate(-3deg); }
+.rotate-l-md { transform: rotate(-6deg); }
+.rotate-l-lg { transform: rotate(-9deg); }
+.rotate-l-xl { transform: rotate(-12deg); }
+
+.rotate-r-xs { transform: rotate(1deg); }
+.rotate-r-sm { transform: rotate(3deg); }
+.rotate-r-md { transform: rotate(6deg); }
+.rotate-r-lg { transform: rotate(9deg); }
+.rotate-r-xl { transform: rotate(12deg); }
+
+.rotate-l-25 { transform: rotate(-25deg); }
+.rotate-l-45 { transform: rotate(-45deg); }
+.rotate-l-90 { transform: rotate(-90deg); }
+.rotate-l-180 { transform: rotate(-180deg); }
+.rotate-l-360 { transform: rotate(-360deg); }
+
+.rotate-r-25 { transform: rotate(25deg); }
+.rotate-r-45 { transform: rotate(45deg); }
+.rotate-r-90 { transform: rotate(90deg); }
+.rotate-r-180 { transform: rotate(180deg); }
+.rotate-r-360 { transform: rotate(360deg); }
+
+/* ========================================================================== */
+/* OPACITY STATE UTILITIES                                                   */
+/* ========================================================================== */
+
+/**
+ * Opacity States
+ *
+ * These utilities change opacity on hover, focus, and active states.
+ */
+
+/* Hover Opacity */
+.opacity-0p,.opacity-none { opacity: 0 !important; }
+.opacity-10p { opacity: 0.10 !important; }
+.opacity-20p { opacity: 0.20 !important; }
+.opacity-30p { opacity: 0.30 !important; }
+.opacity-40p { opacity: 0.40 !important; }
+.opacity-50p { opacity: 0.50 !important; }
+.opacity-60p { opacity: 0.60 !important; }
+.opacity-70p { opacity: 0.70 !important; }
+.opacity-80p { opacity: 0.80 !important; }
+.opacity-90p { opacity: 0.90 !important; }
+.opacity-100p { opacity: 1 !important; }
+
 /* ========================================================================== */
 /* USAGE EXAMPLES AND DOCUMENTATION                                          */
 /* ========================================================================== */
@@ -457,4 +901,3 @@
  * - Test with high contrast mode and reduced motion preferences
  * - Ensure touch targets are appropriately sized for mobile
  */
-

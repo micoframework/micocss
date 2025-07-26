@@ -1,0 +1,2066 @@
+[
+  {
+    "id": "mico-ab8e224cef122d34",
+    "type": "unit",
+    "label": "fs xs",
+    "cssVariableName": "--mico-fs-xs",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-fs-xs",
+      "unit": "custom",
+      "style": "--mico-fs-xs"
+    }
+  },
+  {
+    "id": "mico-3d99dd0b2985d5f0",
+    "type": "unit",
+    "label": "fs sm",
+    "cssVariableName": "--mico-fs-sm",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-fs-sm",
+      "unit": "custom",
+      "style": "--mico-fs-sm"
+    }
+  },
+  {
+    "id": "mico-44b4e1e92143ceed",
+    "type": "unit",
+    "label": "fs md",
+    "cssVariableName": "--mico-fs-md",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-fs-md",
+      "unit": "custom",
+      "style": "--mico-fs-md"
+    }
+  },
+  {
+    "id": "mico-533e9f336e786590",
+    "type": "unit",
+    "label": "fs lg",
+    "cssVariableName": "--mico-fs-lg",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-fs-lg",
+      "unit": "custom",
+      "style": "--mico-fs-lg"
+    }
+  },
+  {
+    "id": "mico-838f8f82ff22f053",
+    "type": "unit",
+    "label": "fs xl",
+    "cssVariableName": "--mico-fs-xl",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-fs-xl",
+      "unit": "custom",
+      "style": "--mico-fs-xl"
+    }
+  },
+  {
+    "id": "mico-a65e2facb5d7774f",
+    "type": "unit",
+    "label": "fs 2xl",
+    "cssVariableName": "--mico-fs-2xl",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-fs-2xl",
+      "unit": "custom",
+      "style": "--mico-fs-2xl"
+    }
+  },
+  {
+    "id": "mico-70be5906e95cd1f0",
+    "type": "unit",
+    "label": "fs 3xl",
+    "cssVariableName": "--mico-fs-3xl",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-fs-3xl",
+      "unit": "custom",
+      "style": "--mico-fs-3xl"
+    }
+  },
+  {
+    "id": "mico-a82abb437f090ce4",
+    "type": "unit",
+    "label": "fs 4xl",
+    "cssVariableName": "--mico-fs-4xl",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-fs-4xl",
+      "unit": "custom",
+      "style": "--mico-fs-4xl"
+    }
+  },
+  {
+    "id": "mico-2c72ac97f34e58cf",
+    "type": "unit",
+    "label": "fs 5xl",
+    "cssVariableName": "--mico-fs-5xl",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-fs-5xl",
+      "unit": "custom",
+      "style": "--mico-fs-5xl"
+    }
+  },
+  {
+    "id": "mico-45bd17e5331c1ccf",
+    "type": "unit",
+    "label": "fs 6xl",
+    "cssVariableName": "--mico-fs-6xl",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-fs-6xl",
+      "unit": "custom",
+      "style": "--mico-fs-6xl"
+    }
+  },
+  {
+    "id": "mico-1d0cc97b8de9cf32",
+    "type": "unit",
+    "label": "fs 7xl",
+    "cssVariableName": "--mico-fs-7xl",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-fs-7xl",
+      "unit": "custom",
+      "style": "--mico-fs-7xl"
+    }
+  },
+  {
+    "id": "mico-e990d9204237de35",
+    "type": "unit",
+    "label": "fs 8xl",
+    "cssVariableName": "--mico-fs-8xl",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-fs-8xl",
+      "unit": "custom",
+      "style": "--mico-fs-8xl"
+    }
+  },
+  {
+    "id": "mico-17a4362dc10cf118",
+    "type": "unit",
+    "label": "fs 9xl",
+    "cssVariableName": "--mico-fs-9xl",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-fs-9xl",
+      "unit": "custom",
+      "style": "--mico-fs-9xl"
+    }
+  },
+  {
+    "id": "mico-f17bb9eee7789f8c",
+    "type": "unit",
+    "label": "fw 100",
+    "cssVariableName": "--mico-fw-100",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-fw-100",
+      "unit": "custom",
+      "style": "--mico-fw-100"
+    }
+  },
+  {
+    "id": "mico-978eba2daa0b3e06",
+    "type": "unit",
+    "label": "fw 200",
+    "cssVariableName": "--mico-fw-200",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-fw-200",
+      "unit": "custom",
+      "style": "--mico-fw-200"
+    }
+  },
+  {
+    "id": "mico-74c95cc4bd817303",
+    "type": "unit",
+    "label": "fw 300",
+    "cssVariableName": "--mico-fw-300",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-fw-300",
+      "unit": "custom",
+      "style": "--mico-fw-300"
+    }
+  },
+  {
+    "id": "mico-5157d15aae7a182c",
+    "type": "unit",
+    "label": "fw 400",
+    "cssVariableName": "--mico-fw-400",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-fw-400",
+      "unit": "custom",
+      "style": "--mico-fw-400"
+    }
+  },
+  {
+    "id": "mico-a78abbc7eb9ce48c",
+    "type": "unit",
+    "label": "fw 500",
+    "cssVariableName": "--mico-fw-500",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-fw-500",
+      "unit": "custom",
+      "style": "--mico-fw-500"
+    }
+  },
+  {
+    "id": "mico-6e51c77069f97334",
+    "type": "unit",
+    "label": "fw 600",
+    "cssVariableName": "--mico-fw-600",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-fw-600",
+      "unit": "custom",
+      "style": "--mico-fw-600"
+    }
+  },
+  {
+    "id": "mico-630d45469d910101",
+    "type": "unit",
+    "label": "fw 700",
+    "cssVariableName": "--mico-fw-700",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-fw-700",
+      "unit": "custom",
+      "style": "--mico-fw-700"
+    }
+  },
+  {
+    "id": "mico-c3d5943aa9c6e378",
+    "type": "unit",
+    "label": "fw 800",
+    "cssVariableName": "--mico-fw-800",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-fw-800",
+      "unit": "custom",
+      "style": "--mico-fw-800"
+    }
+  },
+  {
+    "id": "mico-f26841a779321fff",
+    "type": "unit",
+    "label": "fw 900",
+    "cssVariableName": "--mico-fw-900",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-fw-900",
+      "unit": "custom",
+      "style": "--mico-fw-900"
+    }
+  },
+  {
+    "id": "mico-5caa742cbd7ae556",
+    "type": "unit",
+    "label": "font stretch ultra condensed",
+    "cssVariableName": "--mico-font-stretch-ultra-condensed",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-font-stretch-ultra-condensed",
+      "unit": "custom",
+      "style": "--mico-font-stretch-ultra-condensed"
+    }
+  },
+  {
+    "id": "mico-b5f16be9be65b236",
+    "type": "unit",
+    "label": "font stretch extra condensed",
+    "cssVariableName": "--mico-font-stretch-extra-condensed",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-font-stretch-extra-condensed",
+      "unit": "custom",
+      "style": "--mico-font-stretch-extra-condensed"
+    }
+  },
+  {
+    "id": "mico-389a2f3130afe50b",
+    "type": "unit",
+    "label": "font stretch condensed",
+    "cssVariableName": "--mico-font-stretch-condensed",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-font-stretch-condensed",
+      "unit": "custom",
+      "style": "--mico-font-stretch-condensed"
+    }
+  },
+  {
+    "id": "mico-371ab5c0e1a82d4a",
+    "type": "unit",
+    "label": "font stretch semi condensed",
+    "cssVariableName": "--mico-font-stretch-semi-condensed",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-font-stretch-semi-condensed",
+      "unit": "custom",
+      "style": "--mico-font-stretch-semi-condensed"
+    }
+  },
+  {
+    "id": "mico-4bacca723955a4f9",
+    "type": "unit",
+    "label": "font stretch normal",
+    "cssVariableName": "--mico-font-stretch-normal",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-font-stretch-normal",
+      "unit": "custom",
+      "style": "--mico-font-stretch-normal"
+    }
+  },
+  {
+    "id": "mico-ed23a7f30bf2cf32",
+    "type": "unit",
+    "label": "font stretch semi expanded",
+    "cssVariableName": "--mico-font-stretch-semi-expanded",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-font-stretch-semi-expanded",
+      "unit": "custom",
+      "style": "--mico-font-stretch-semi-expanded"
+    }
+  },
+  {
+    "id": "mico-62d39413953cd77d",
+    "type": "unit",
+    "label": "font stretch expanded",
+    "cssVariableName": "--mico-font-stretch-expanded",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-font-stretch-expanded",
+      "unit": "custom",
+      "style": "--mico-font-stretch-expanded"
+    }
+  },
+  {
+    "id": "mico-b8579041b799bf28",
+    "type": "unit",
+    "label": "font stretch extra expanded",
+    "cssVariableName": "--mico-font-stretch-extra-expanded",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-font-stretch-extra-expanded",
+      "unit": "custom",
+      "style": "--mico-font-stretch-extra-expanded"
+    }
+  },
+  {
+    "id": "mico-0ccd709609bf8f4b",
+    "type": "unit",
+    "label": "font stretch ultra expanded",
+    "cssVariableName": "--mico-font-stretch-ultra-expanded",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-font-stretch-ultra-expanded",
+      "unit": "custom",
+      "style": "--mico-font-stretch-ultra-expanded"
+    }
+  },
+  {
+    "id": "mico-f7ec1d6c2d0642f8",
+    "type": "unit",
+    "label": "font style normal",
+    "cssVariableName": "--mico-font-style-normal",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-font-style-normal",
+      "unit": "custom",
+      "style": "--mico-font-style-normal"
+    }
+  },
+  {
+    "id": "mico-c9249b6a06ae488e",
+    "type": "unit",
+    "label": "font style italic",
+    "cssVariableName": "--mico-font-style-italic",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-font-style-italic",
+      "unit": "custom",
+      "style": "--mico-font-style-italic"
+    }
+  },
+  {
+    "id": "mico-7a5305151fdc38af",
+    "type": "unit",
+    "label": "font variant numeric normal",
+    "cssVariableName": "--mico-font-variant-numeric-normal",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-font-variant-numeric-normal",
+      "unit": "custom",
+      "style": "--mico-font-variant-numeric-normal"
+    }
+  },
+  {
+    "id": "mico-f18b74417d908588",
+    "type": "unit",
+    "label": "font variant numeric ordinal",
+    "cssVariableName": "--mico-font-variant-numeric-ordinal",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-font-variant-numeric-ordinal",
+      "unit": "custom",
+      "style": "--mico-font-variant-numeric-ordinal"
+    }
+  },
+  {
+    "id": "mico-62481a4b3d66ce6b",
+    "type": "unit",
+    "label": "font variant numeric slashed zero",
+    "cssVariableName": "--mico-font-variant-numeric-slashed-zero",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-font-variant-numeric-slashed-zero",
+      "unit": "custom",
+      "style": "--mico-font-variant-numeric-slashed-zero"
+    }
+  },
+  {
+    "id": "mico-458238205c30dd52",
+    "type": "unit",
+    "label": "font variant numeric lining nums",
+    "cssVariableName": "--mico-font-variant-numeric-lining-nums",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-font-variant-numeric-lining-nums",
+      "unit": "custom",
+      "style": "--mico-font-variant-numeric-lining-nums"
+    }
+  },
+  {
+    "id": "mico-e09627aeac51cab7",
+    "type": "unit",
+    "label": "font variant numeric oldstyle nums",
+    "cssVariableName": "--mico-font-variant-numeric-oldstyle-nums",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-font-variant-numeric-oldstyle-nums",
+      "unit": "custom",
+      "style": "--mico-font-variant-numeric-oldstyle-nums"
+    }
+  },
+  {
+    "id": "mico-3489901c3b7b7513",
+    "type": "unit",
+    "label": "font variant numeric proportional nums",
+    "cssVariableName": "--mico-font-variant-numeric-proportional-nums",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-font-variant-numeric-proportional-nums",
+      "unit": "custom",
+      "style": "--mico-font-variant-numeric-proportional-nums"
+    }
+  },
+  {
+    "id": "mico-d6067322d12fd7b9",
+    "type": "unit",
+    "label": "font variant numeric tabular nums",
+    "cssVariableName": "--mico-font-variant-numeric-tabular-nums",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-font-variant-numeric-tabular-nums",
+      "unit": "custom",
+      "style": "--mico-font-variant-numeric-tabular-nums"
+    }
+  },
+  {
+    "id": "mico-8408f1e73a6bea8a",
+    "type": "unit",
+    "label": "font variant numeric diagonal fractions",
+    "cssVariableName": "--mico-font-variant-numeric-diagonal-fractions",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-font-variant-numeric-diagonal-fractions",
+      "unit": "custom",
+      "style": "--mico-font-variant-numeric-diagonal-fractions"
+    }
+  },
+  {
+    "id": "mico-453f6bb2ea8f2021",
+    "type": "unit",
+    "label": "font variant numeric stacked fractions",
+    "cssVariableName": "--mico-font-variant-numeric-stacked-fractions",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-font-variant-numeric-stacked-fractions",
+      "unit": "custom",
+      "style": "--mico-font-variant-numeric-stacked-fractions"
+    }
+  },
+  {
+    "id": "mico-5b8ea767adf2319e",
+    "type": "unit",
+    "label": "font variant ligatures common",
+    "cssVariableName": "--mico-font-variant-ligatures-common",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-font-variant-ligatures-common",
+      "unit": "custom",
+      "style": "--mico-font-variant-ligatures-common"
+    }
+  },
+  {
+    "id": "mico-30df12b24b504e03",
+    "type": "unit",
+    "label": "font variant ligatures no common",
+    "cssVariableName": "--mico-font-variant-ligatures-no-common",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-font-variant-ligatures-no-common",
+      "unit": "custom",
+      "style": "--mico-font-variant-ligatures-no-common"
+    }
+  },
+  {
+    "id": "mico-955f9d1234413d8a",
+    "type": "unit",
+    "label": "font variant ligatures discretionary",
+    "cssVariableName": "--mico-font-variant-ligatures-discretionary",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-font-variant-ligatures-discretionary",
+      "unit": "custom",
+      "style": "--mico-font-variant-ligatures-discretionary"
+    }
+  },
+  {
+    "id": "mico-8e1a65eb3e06b26d",
+    "type": "unit",
+    "label": "font variant ligatures no discretionary",
+    "cssVariableName": "--mico-font-variant-ligatures-no-discretionary",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-font-variant-ligatures-no-discretionary",
+      "unit": "custom",
+      "style": "--mico-font-variant-ligatures-no-discretionary"
+    }
+  },
+  {
+    "id": "mico-50eb1cecaeea9de4",
+    "type": "unit",
+    "label": "font variant ligatures historical",
+    "cssVariableName": "--mico-font-variant-ligatures-historical",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-font-variant-ligatures-historical",
+      "unit": "custom",
+      "style": "--mico-font-variant-ligatures-historical"
+    }
+  },
+  {
+    "id": "mico-d35a39d0643f4c72",
+    "type": "unit",
+    "label": "font variant ligatures no historical",
+    "cssVariableName": "--mico-font-variant-ligatures-no-historical",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-font-variant-ligatures-no-historical",
+      "unit": "custom",
+      "style": "--mico-font-variant-ligatures-no-historical"
+    }
+  },
+  {
+    "id": "mico-45c64999a0919cc5",
+    "type": "unit",
+    "label": "font variant ligatures contextual",
+    "cssVariableName": "--mico-font-variant-ligatures-contextual",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-font-variant-ligatures-contextual",
+      "unit": "custom",
+      "style": "--mico-font-variant-ligatures-contextual"
+    }
+  },
+  {
+    "id": "mico-48341fbcd36c2aff",
+    "type": "unit",
+    "label": "font variant ligatures no contextual",
+    "cssVariableName": "--mico-font-variant-ligatures-no-contextual",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-font-variant-ligatures-no-contextual",
+      "unit": "custom",
+      "style": "--mico-font-variant-ligatures-no-contextual"
+    }
+  },
+  {
+    "id": "mico-e29b61cb4ba7e38b",
+    "type": "unit",
+    "label": "font variant caps normal",
+    "cssVariableName": "--mico-font-variant-caps-normal",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-font-variant-caps-normal",
+      "unit": "custom",
+      "style": "--mico-font-variant-caps-normal"
+    }
+  },
+  {
+    "id": "mico-aeed4f276ce5c4a0",
+    "type": "unit",
+    "label": "font variant caps small caps",
+    "cssVariableName": "--mico-font-variant-caps-small-caps",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-font-variant-caps-small-caps",
+      "unit": "custom",
+      "style": "--mico-font-variant-caps-small-caps"
+    }
+  },
+  {
+    "id": "mico-e558d0ce024456f0",
+    "type": "unit",
+    "label": "font variant caps all small caps",
+    "cssVariableName": "--mico-font-variant-caps-all-small-caps",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-font-variant-caps-all-small-caps",
+      "unit": "custom",
+      "style": "--mico-font-variant-caps-all-small-caps"
+    }
+  },
+  {
+    "id": "mico-c4081c1939941925",
+    "type": "unit",
+    "label": "font variant caps petite caps",
+    "cssVariableName": "--mico-font-variant-caps-petite-caps",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-font-variant-caps-petite-caps",
+      "unit": "custom",
+      "style": "--mico-font-variant-caps-petite-caps"
+    }
+  },
+  {
+    "id": "mico-c2fea816aacd88f5",
+    "type": "unit",
+    "label": "font variant caps all petite caps",
+    "cssVariableName": "--mico-font-variant-caps-all-petite-caps",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-font-variant-caps-all-petite-caps",
+      "unit": "custom",
+      "style": "--mico-font-variant-caps-all-petite-caps"
+    }
+  },
+  {
+    "id": "mico-fc6d43a5d7a28ce9",
+    "type": "unit",
+    "label": "font variant caps unicase",
+    "cssVariableName": "--mico-font-variant-caps-unicase",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-font-variant-caps-unicase",
+      "unit": "custom",
+      "style": "--mico-font-variant-caps-unicase"
+    }
+  },
+  {
+    "id": "mico-0fe547ff10df8e28",
+    "type": "unit",
+    "label": "font variant caps titling caps",
+    "cssVariableName": "--mico-font-variant-caps-titling-caps",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-font-variant-caps-titling-caps",
+      "unit": "custom",
+      "style": "--mico-font-variant-caps-titling-caps"
+    }
+  },
+  {
+    "id": "mico-50f566091cc49b47",
+    "type": "unit",
+    "label": "lh xs",
+    "cssVariableName": "--mico-lh-xs",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-lh-xs",
+      "unit": "custom",
+      "style": "--mico-lh-xs"
+    }
+  },
+  {
+    "id": "mico-06930ba36451b4f9",
+    "type": "unit",
+    "label": "lh sm",
+    "cssVariableName": "--mico-lh-sm",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-lh-sm",
+      "unit": "custom",
+      "style": "--mico-lh-sm"
+    }
+  },
+  {
+    "id": "mico-143ca84cbbde3544",
+    "type": "unit",
+    "label": "lh md",
+    "cssVariableName": "--mico-lh-md",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-lh-md",
+      "unit": "custom",
+      "style": "--mico-lh-md"
+    }
+  },
+  {
+    "id": "mico-4970abcf57622f7a",
+    "type": "unit",
+    "label": "lh lg",
+    "cssVariableName": "--mico-lh-lg",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-lh-lg",
+      "unit": "custom",
+      "style": "--mico-lh-lg"
+    }
+  },
+  {
+    "id": "mico-302ab52be90d1aab",
+    "type": "unit",
+    "label": "lh xl",
+    "cssVariableName": "--mico-lh-xl",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-lh-xl",
+      "unit": "custom",
+      "style": "--mico-lh-xl"
+    }
+  },
+  {
+    "id": "mico-442efc42d2dc6ecb",
+    "type": "unit",
+    "label": "lh 2xl",
+    "cssVariableName": "--mico-lh-2xl",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-lh-2xl",
+      "unit": "custom",
+      "style": "--mico-lh-2xl"
+    }
+  },
+  {
+    "id": "mico-0bd6af869a5d62c5",
+    "type": "unit",
+    "label": "lh 3xl",
+    "cssVariableName": "--mico-lh-3xl",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-lh-3xl",
+      "unit": "custom",
+      "style": "--mico-lh-3xl"
+    }
+  },
+  {
+    "id": "mico-1d0bbe60a010c903",
+    "type": "unit",
+    "label": "lh 4xl",
+    "cssVariableName": "--mico-lh-4xl",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-lh-4xl",
+      "unit": "custom",
+      "style": "--mico-lh-4xl"
+    }
+  },
+  {
+    "id": "mico-82d702f6ed40ed36",
+    "type": "unit",
+    "label": "lh 5xl",
+    "cssVariableName": "--mico-lh-5xl",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-lh-5xl",
+      "unit": "custom",
+      "style": "--mico-lh-5xl"
+    }
+  },
+  {
+    "id": "mico-5ba1df7987506290",
+    "type": "unit",
+    "label": "lh 6xl",
+    "cssVariableName": "--mico-lh-6xl",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-lh-6xl",
+      "unit": "custom",
+      "style": "--mico-lh-6xl"
+    }
+  },
+  {
+    "id": "mico-6683f45f82fd1f02",
+    "type": "unit",
+    "label": "lh 7xl",
+    "cssVariableName": "--mico-lh-7xl",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-lh-7xl",
+      "unit": "custom",
+      "style": "--mico-lh-7xl"
+    }
+  },
+  {
+    "id": "mico-a4bf5a2b32ccbe76",
+    "type": "unit",
+    "label": "lh 8xl",
+    "cssVariableName": "--mico-lh-8xl",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-lh-8xl",
+      "unit": "custom",
+      "style": "--mico-lh-8xl"
+    }
+  },
+  {
+    "id": "mico-a3e852928b5e7a78",
+    "type": "unit",
+    "label": "lh 9xl",
+    "cssVariableName": "--mico-lh-9xl",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-lh-9xl",
+      "unit": "custom",
+      "style": "--mico-lh-9xl"
+    }
+  },
+  {
+    "id": "mico-287ec1dc5f620fec",
+    "type": "unit",
+    "label": "ls xs",
+    "cssVariableName": "--mico-ls-xs",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-ls-xs",
+      "unit": "custom",
+      "style": "--mico-ls-xs"
+    }
+  },
+  {
+    "id": "mico-33fc41ac35cb0414",
+    "type": "unit",
+    "label": "ls sm",
+    "cssVariableName": "--mico-ls-sm",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-ls-sm",
+      "unit": "custom",
+      "style": "--mico-ls-sm"
+    }
+  },
+  {
+    "id": "mico-17d8d56f6639c2cd",
+    "type": "unit",
+    "label": "ls md",
+    "cssVariableName": "--mico-ls-md",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-ls-md",
+      "unit": "custom",
+      "style": "--mico-ls-md"
+    }
+  },
+  {
+    "id": "mico-740eda83af5bfca7",
+    "type": "unit",
+    "label": "ls lg",
+    "cssVariableName": "--mico-ls-lg",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-ls-lg",
+      "unit": "custom",
+      "style": "--mico-ls-lg"
+    }
+  },
+  {
+    "id": "mico-54f45965ba615221",
+    "type": "unit",
+    "label": "ls xl",
+    "cssVariableName": "--mico-ls-xl",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-ls-xl",
+      "unit": "custom",
+      "style": "--mico-ls-xl"
+    }
+  },
+  {
+    "id": "mico-22eaad9a885cca68",
+    "type": "unit",
+    "label": "ls 2xl",
+    "cssVariableName": "--mico-ls-2xl",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-ls-2xl",
+      "unit": "custom",
+      "style": "--mico-ls-2xl"
+    }
+  },
+  {
+    "id": "mico-f80426c8a9a4e4d5",
+    "type": "unit",
+    "label": "underline offset auto",
+    "cssVariableName": "--mico-underline-offset-auto",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-underline-offset-auto",
+      "unit": "custom",
+      "style": "--mico-underline-offset-auto"
+    }
+  },
+  {
+    "id": "mico-4e653929645acdd1",
+    "type": "unit",
+    "label": "underline offset 0",
+    "cssVariableName": "--mico-underline-offset-0",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-underline-offset-0",
+      "unit": "custom",
+      "style": "--mico-underline-offset-0"
+    }
+  },
+  {
+    "id": "mico-41c8d41fa2436575",
+    "type": "unit",
+    "label": "underline offset 1",
+    "cssVariableName": "--mico-underline-offset-1",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-underline-offset-1",
+      "unit": "custom",
+      "style": "--mico-underline-offset-1"
+    }
+  },
+  {
+    "id": "mico-a171beb07dde0524",
+    "type": "unit",
+    "label": "underline offset 2",
+    "cssVariableName": "--mico-underline-offset-2",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-underline-offset-2",
+      "unit": "custom",
+      "style": "--mico-underline-offset-2"
+    }
+  },
+  {
+    "id": "mico-fdf745dd1e36d071",
+    "type": "unit",
+    "label": "underline offset 4",
+    "cssVariableName": "--mico-underline-offset-4",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-underline-offset-4",
+      "unit": "custom",
+      "style": "--mico-underline-offset-4"
+    }
+  },
+  {
+    "id": "mico-4a699563a860539b",
+    "type": "unit",
+    "label": "underline offset 8",
+    "cssVariableName": "--mico-underline-offset-8",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-underline-offset-8",
+      "unit": "custom",
+      "style": "--mico-underline-offset-8"
+    }
+  },
+  {
+    "id": "mico-77c30024f44ec466",
+    "type": "unit",
+    "label": "underline offset",
+    "cssVariableName": "--mico-underline-offset",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-underline-offset",
+      "unit": "custom",
+      "style": "--mico-underline-offset"
+    }
+  },
+  {
+    "id": "mico-a9316d032c4ccda8",
+    "type": "unit",
+    "label": "decoration thickness auto",
+    "cssVariableName": "--mico-decoration-thickness-auto",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-decoration-thickness-auto",
+      "unit": "custom",
+      "style": "--mico-decoration-thickness-auto"
+    }
+  },
+  {
+    "id": "mico-3c7c6b7a1bf86e83",
+    "type": "unit",
+    "label": "decoration thickness from font",
+    "cssVariableName": "--mico-decoration-thickness-from-font",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-decoration-thickness-from-font",
+      "unit": "custom",
+      "style": "--mico-decoration-thickness-from-font"
+    }
+  },
+  {
+    "id": "mico-dc27b24ea4d78295",
+    "type": "unit",
+    "label": "decoration thickness 0",
+    "cssVariableName": "--mico-decoration-thickness-0",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-decoration-thickness-0",
+      "unit": "custom",
+      "style": "--mico-decoration-thickness-0"
+    }
+  },
+  {
+    "id": "mico-6065953db486701d",
+    "type": "unit",
+    "label": "decoration thickness 1",
+    "cssVariableName": "--mico-decoration-thickness-1",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-decoration-thickness-1",
+      "unit": "custom",
+      "style": "--mico-decoration-thickness-1"
+    }
+  },
+  {
+    "id": "mico-d1efeb24a212b509",
+    "type": "unit",
+    "label": "decoration thickness 2",
+    "cssVariableName": "--mico-decoration-thickness-2",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-decoration-thickness-2",
+      "unit": "custom",
+      "style": "--mico-decoration-thickness-2"
+    }
+  },
+  {
+    "id": "mico-6741aabd72a6d0d6",
+    "type": "unit",
+    "label": "decoration thickness 4",
+    "cssVariableName": "--mico-decoration-thickness-4",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-decoration-thickness-4",
+      "unit": "custom",
+      "style": "--mico-decoration-thickness-4"
+    }
+  },
+  {
+    "id": "mico-d815e5ad6384e687",
+    "type": "unit",
+    "label": "decoration thickness 8",
+    "cssVariableName": "--mico-decoration-thickness-8",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-decoration-thickness-8",
+      "unit": "custom",
+      "style": "--mico-decoration-thickness-8"
+    }
+  },
+  {
+    "id": "mico-40064e1a0a71e25c",
+    "type": "unit",
+    "label": "decoration style solid",
+    "cssVariableName": "--mico-decoration-style-solid",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-decoration-style-solid",
+      "unit": "custom",
+      "style": "--mico-decoration-style-solid"
+    }
+  },
+  {
+    "id": "mico-9114ba02aa752a1d",
+    "type": "unit",
+    "label": "decoration style double",
+    "cssVariableName": "--mico-decoration-style-double",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-decoration-style-double",
+      "unit": "custom",
+      "style": "--mico-decoration-style-double"
+    }
+  },
+  {
+    "id": "mico-904415a88fd4b302",
+    "type": "unit",
+    "label": "decoration style dotted",
+    "cssVariableName": "--mico-decoration-style-dotted",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-decoration-style-dotted",
+      "unit": "custom",
+      "style": "--mico-decoration-style-dotted"
+    }
+  },
+  {
+    "id": "mico-8f5ee25870a7e50d",
+    "type": "unit",
+    "label": "decoration style dashed",
+    "cssVariableName": "--mico-decoration-style-dashed",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-decoration-style-dashed",
+      "unit": "custom",
+      "style": "--mico-decoration-style-dashed"
+    }
+  },
+  {
+    "id": "mico-e5785adadcecdc04",
+    "type": "unit",
+    "label": "decoration style wavy",
+    "cssVariableName": "--mico-decoration-style-wavy",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-decoration-style-wavy",
+      "unit": "custom",
+      "style": "--mico-decoration-style-wavy"
+    }
+  },
+  {
+    "id": "mico-736850c0a9e7d8bd",
+    "type": "unit",
+    "label": "underline position auto",
+    "cssVariableName": "--mico-underline-position-auto",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-underline-position-auto",
+      "unit": "custom",
+      "style": "--mico-underline-position-auto"
+    }
+  },
+  {
+    "id": "mico-2c58ec3d8a6c9de9",
+    "type": "unit",
+    "label": "underline position under",
+    "cssVariableName": "--mico-underline-position-under",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-underline-position-under",
+      "unit": "custom",
+      "style": "--mico-underline-position-under"
+    }
+  },
+  {
+    "id": "mico-9c55255b5c3c8fc7",
+    "type": "unit",
+    "label": "underline position left",
+    "cssVariableName": "--mico-underline-position-left",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-underline-position-left",
+      "unit": "custom",
+      "style": "--mico-underline-position-left"
+    }
+  },
+  {
+    "id": "mico-5cb19b27e2553b95",
+    "type": "unit",
+    "label": "underline position right",
+    "cssVariableName": "--mico-underline-position-right",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-underline-position-right",
+      "unit": "custom",
+      "style": "--mico-underline-position-right"
+    }
+  },
+  {
+    "id": "mico-d21a05d40c3465bc",
+    "type": "unit",
+    "label": "text transform uppercase",
+    "cssVariableName": "--mico-text-transform-uppercase",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-text-transform-uppercase",
+      "unit": "custom",
+      "style": "--mico-text-transform-uppercase"
+    }
+  },
+  {
+    "id": "mico-70848328f774c276",
+    "type": "unit",
+    "label": "text transform lowercase",
+    "cssVariableName": "--mico-text-transform-lowercase",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-text-transform-lowercase",
+      "unit": "custom",
+      "style": "--mico-text-transform-lowercase"
+    }
+  },
+  {
+    "id": "mico-4939339aa6a442fa",
+    "type": "unit",
+    "label": "text transform capitalize",
+    "cssVariableName": "--mico-text-transform-capitalize",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-text-transform-capitalize",
+      "unit": "custom",
+      "style": "--mico-text-transform-capitalize"
+    }
+  },
+  {
+    "id": "mico-f67a6ac2b97d41e8",
+    "type": "unit",
+    "label": "text transform none",
+    "cssVariableName": "--mico-text-transform-none",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-text-transform-none",
+      "unit": "custom",
+      "style": "--mico-text-transform-none"
+    }
+  },
+  {
+    "id": "mico-4afa39c0c0f577c4",
+    "type": "unit",
+    "label": "text align left",
+    "cssVariableName": "--mico-text-align-left",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-text-align-left",
+      "unit": "custom",
+      "style": "--mico-text-align-left"
+    }
+  },
+  {
+    "id": "mico-9c0197d5b6fb3c9d",
+    "type": "unit",
+    "label": "text align center",
+    "cssVariableName": "--mico-text-align-center",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-text-align-center",
+      "unit": "custom",
+      "style": "--mico-text-align-center"
+    }
+  },
+  {
+    "id": "mico-ea07d0d576219ac3",
+    "type": "unit",
+    "label": "text align right",
+    "cssVariableName": "--mico-text-align-right",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-text-align-right",
+      "unit": "custom",
+      "style": "--mico-text-align-right"
+    }
+  },
+  {
+    "id": "mico-effebdb996ca165e",
+    "type": "unit",
+    "label": "text align justify",
+    "cssVariableName": "--mico-text-align-justify",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-text-align-justify",
+      "unit": "custom",
+      "style": "--mico-text-align-justify"
+    }
+  },
+  {
+    "id": "mico-b1bfff4196eb1ef3",
+    "type": "unit",
+    "label": "text align start",
+    "cssVariableName": "--mico-text-align-start",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-text-align-start",
+      "unit": "custom",
+      "style": "--mico-text-align-start"
+    }
+  },
+  {
+    "id": "mico-624232ab19dcc38d",
+    "type": "unit",
+    "label": "text align end",
+    "cssVariableName": "--mico-text-align-end",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-text-align-end",
+      "unit": "custom",
+      "style": "--mico-text-align-end"
+    }
+  },
+  {
+    "id": "mico-2fdfe5bdd0dcb65a",
+    "type": "unit",
+    "label": "text overflow ellipsis",
+    "cssVariableName": "--mico-text-overflow-ellipsis",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-text-overflow-ellipsis",
+      "unit": "custom",
+      "style": "--mico-text-overflow-ellipsis"
+    }
+  },
+  {
+    "id": "mico-d78e264be188637d",
+    "type": "unit",
+    "label": "text overflow clip",
+    "cssVariableName": "--mico-text-overflow-clip",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-text-overflow-clip",
+      "unit": "custom",
+      "style": "--mico-text-overflow-clip"
+    }
+  },
+  {
+    "id": "mico-3d79972cf8c17928",
+    "type": "unit",
+    "label": "whitespace normal",
+    "cssVariableName": "--mico-whitespace-normal",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-whitespace-normal",
+      "unit": "custom",
+      "style": "--mico-whitespace-normal"
+    }
+  },
+  {
+    "id": "mico-8399ac6f53c8824a",
+    "type": "unit",
+    "label": "whitespace nowrap",
+    "cssVariableName": "--mico-whitespace-nowrap",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-whitespace-nowrap",
+      "unit": "custom",
+      "style": "--mico-whitespace-nowrap"
+    }
+  },
+  {
+    "id": "mico-88d817295fd1f0b1",
+    "type": "unit",
+    "label": "whitespace pre",
+    "cssVariableName": "--mico-whitespace-pre",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-whitespace-pre",
+      "unit": "custom",
+      "style": "--mico-whitespace-pre"
+    }
+  },
+  {
+    "id": "mico-402d498f1c30bc89",
+    "type": "unit",
+    "label": "whitespace pre line",
+    "cssVariableName": "--mico-whitespace-pre-line",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-whitespace-pre-line",
+      "unit": "custom",
+      "style": "--mico-whitespace-pre-line"
+    }
+  },
+  {
+    "id": "mico-439478debb4adcff",
+    "type": "unit",
+    "label": "whitespace pre wrap",
+    "cssVariableName": "--mico-whitespace-pre-wrap",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-whitespace-pre-wrap",
+      "unit": "custom",
+      "style": "--mico-whitespace-pre-wrap"
+    }
+  },
+  {
+    "id": "mico-4ec4f4116631ef6f",
+    "type": "unit",
+    "label": "whitespace break spaces",
+    "cssVariableName": "--mico-whitespace-break-spaces",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-whitespace-break-spaces",
+      "unit": "custom",
+      "style": "--mico-whitespace-break-spaces"
+    }
+  },
+  {
+    "id": "mico-debdc2485cbb208a",
+    "type": "unit",
+    "label": "indent 0",
+    "cssVariableName": "--mico-indent-0",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-indent-0",
+      "unit": "custom",
+      "style": "--mico-indent-0"
+    }
+  },
+  {
+    "id": "mico-f672f248753e5c0a",
+    "type": "unit",
+    "label": "indent xs",
+    "cssVariableName": "--mico-indent-xs",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-indent-xs",
+      "unit": "custom",
+      "style": "--mico-indent-xs"
+    }
+  },
+  {
+    "id": "mico-337537a07ba32f79",
+    "type": "unit",
+    "label": "indent sm",
+    "cssVariableName": "--mico-indent-sm",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-indent-sm",
+      "unit": "custom",
+      "style": "--mico-indent-sm"
+    }
+  },
+  {
+    "id": "mico-c6d16503169a2ca4",
+    "type": "unit",
+    "label": "indent md",
+    "cssVariableName": "--mico-indent-md",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-indent-md",
+      "unit": "custom",
+      "style": "--mico-indent-md"
+    }
+  },
+  {
+    "id": "mico-ab02c6c69957569f",
+    "type": "unit",
+    "label": "indent lg",
+    "cssVariableName": "--mico-indent-lg",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-indent-lg",
+      "unit": "custom",
+      "style": "--mico-indent-lg"
+    }
+  },
+  {
+    "id": "mico-eae22cf9faa95b77",
+    "type": "unit",
+    "label": "indent xl",
+    "cssVariableName": "--mico-indent-xl",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-indent-xl",
+      "unit": "custom",
+      "style": "--mico-indent-xl"
+    }
+  },
+  {
+    "id": "mico-6678393ecdd26a75",
+    "type": "unit",
+    "label": "text shadow none",
+    "cssVariableName": "--mico-text-shadow-none",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-text-shadow-none",
+      "unit": "custom",
+      "style": "--mico-text-shadow-none"
+    }
+  },
+  {
+    "id": "mico-83f022ff26452d2e",
+    "type": "unit",
+    "label": "text shadow xs",
+    "cssVariableName": "--mico-text-shadow-xs",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-text-shadow-xs",
+      "unit": "custom",
+      "style": "--mico-text-shadow-xs"
+    }
+  },
+  {
+    "id": "mico-aebbf04cf5645e1b",
+    "type": "unit",
+    "label": "text shadow sm",
+    "cssVariableName": "--mico-text-shadow-sm",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-text-shadow-sm",
+      "unit": "custom",
+      "style": "--mico-text-shadow-sm"
+    }
+  },
+  {
+    "id": "mico-f5f7bdfe7d29c169",
+    "type": "unit",
+    "label": "text shadow md",
+    "cssVariableName": "--mico-text-shadow-md",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-text-shadow-md",
+      "unit": "custom",
+      "style": "--mico-text-shadow-md"
+    }
+  },
+  {
+    "id": "mico-a116c2453a128a99",
+    "type": "unit",
+    "label": "text shadow lg",
+    "cssVariableName": "--mico-text-shadow-lg",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-text-shadow-lg",
+      "unit": "custom",
+      "style": "--mico-text-shadow-lg"
+    }
+  },
+  {
+    "id": "mico-0eb5780a9a2fae96",
+    "type": "unit",
+    "label": "text stroke xs",
+    "cssVariableName": "--mico-text-stroke-xs",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-text-stroke-xs",
+      "unit": "custom",
+      "style": "--mico-text-stroke-xs"
+    }
+  },
+  {
+    "id": "mico-6e5e6017303cad87",
+    "type": "unit",
+    "label": "text stroke sm",
+    "cssVariableName": "--mico-text-stroke-sm",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-text-stroke-sm",
+      "unit": "custom",
+      "style": "--mico-text-stroke-sm"
+    }
+  },
+  {
+    "id": "mico-4770e473aaf98d4c",
+    "type": "unit",
+    "label": "text stroke md",
+    "cssVariableName": "--mico-text-stroke-md",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-text-stroke-md",
+      "unit": "custom",
+      "style": "--mico-text-stroke-md"
+    }
+  },
+  {
+    "id": "mico-4af1d02e769930e2",
+    "type": "unit",
+    "label": "list style type none",
+    "cssVariableName": "--mico-list-style-type-none",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-list-style-type-none",
+      "unit": "custom",
+      "style": "--mico-list-style-type-none"
+    }
+  },
+  {
+    "id": "mico-264f321882e4da25",
+    "type": "unit",
+    "label": "list style type disc",
+    "cssVariableName": "--mico-list-style-type-disc",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-list-style-type-disc",
+      "unit": "custom",
+      "style": "--mico-list-style-type-disc"
+    }
+  },
+  {
+    "id": "mico-f3b0479404d22623",
+    "type": "unit",
+    "label": "list style type decimal",
+    "cssVariableName": "--mico-list-style-type-decimal",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-list-style-type-decimal",
+      "unit": "custom",
+      "style": "--mico-list-style-type-decimal"
+    }
+  },
+  {
+    "id": "mico-f3f0eb6bb1fe0fc3",
+    "type": "unit",
+    "label": "list style type square",
+    "cssVariableName": "--mico-list-style-type-square",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-list-style-type-square",
+      "unit": "custom",
+      "style": "--mico-list-style-type-square"
+    }
+  },
+  {
+    "id": "mico-6dc53382a3c9678d",
+    "type": "unit",
+    "label": "list style type upper roman",
+    "cssVariableName": "--mico-list-style-type-upper-roman",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-list-style-type-upper-roman",
+      "unit": "custom",
+      "style": "--mico-list-style-type-upper-roman"
+    }
+  },
+  {
+    "id": "mico-fbc01d582208cf89",
+    "type": "unit",
+    "label": "list style type lower roman",
+    "cssVariableName": "--mico-list-style-type-lower-roman",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-list-style-type-lower-roman",
+      "unit": "custom",
+      "style": "--mico-list-style-type-lower-roman"
+    }
+  },
+  {
+    "id": "mico-644f9f291ad6cd02",
+    "type": "unit",
+    "label": "list style type upper alpha",
+    "cssVariableName": "--mico-list-style-type-upper-alpha",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-list-style-type-upper-alpha",
+      "unit": "custom",
+      "style": "--mico-list-style-type-upper-alpha"
+    }
+  },
+  {
+    "id": "mico-9be2ce5875ab401b",
+    "type": "unit",
+    "label": "list style type lower alpha",
+    "cssVariableName": "--mico-list-style-type-lower-alpha",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-list-style-type-lower-alpha",
+      "unit": "custom",
+      "style": "--mico-list-style-type-lower-alpha"
+    }
+  },
+  {
+    "id": "mico-d6596872be4708ba",
+    "type": "unit",
+    "label": "list style position inside",
+    "cssVariableName": "--mico-list-style-position-inside",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-list-style-position-inside",
+      "unit": "custom",
+      "style": "--mico-list-style-position-inside"
+    }
+  },
+  {
+    "id": "mico-ea6f8ffd6b7b3d7a",
+    "type": "unit",
+    "label": "list style position outside",
+    "cssVariableName": "--mico-list-style-position-outside",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-list-style-position-outside",
+      "unit": "custom",
+      "style": "--mico-list-style-position-outside"
+    }
+  },
+  {
+    "id": "mico-01457ef2fe31efa8",
+    "type": "unit",
+    "label": "text direction ltr",
+    "cssVariableName": "--mico-text-direction-ltr",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-text-direction-ltr",
+      "unit": "custom",
+      "style": "--mico-text-direction-ltr"
+    }
+  },
+  {
+    "id": "mico-adabfcca757ebe17",
+    "type": "unit",
+    "label": "text direction rtl",
+    "cssVariableName": "--mico-text-direction-rtl",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-text-direction-rtl",
+      "unit": "custom",
+      "style": "--mico-text-direction-rtl"
+    }
+  },
+  {
+    "id": "mico-c9b087335bf13d72",
+    "type": "unit",
+    "label": "writing mode horizontal tb",
+    "cssVariableName": "--mico-writing-mode-horizontal-tb",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-writing-mode-horizontal-tb",
+      "unit": "custom",
+      "style": "--mico-writing-mode-horizontal-tb"
+    }
+  },
+  {
+    "id": "mico-7ac655bc520e85ce",
+    "type": "unit",
+    "label": "writing mode vertical rl",
+    "cssVariableName": "--mico-writing-mode-vertical-rl",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-writing-mode-vertical-rl",
+      "unit": "custom",
+      "style": "--mico-writing-mode-vertical-rl"
+    }
+  },
+  {
+    "id": "mico-289843a5737418a1",
+    "type": "unit",
+    "label": "writing mode vertical lr",
+    "cssVariableName": "--mico-writing-mode-vertical-lr",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-writing-mode-vertical-lr",
+      "unit": "custom",
+      "style": "--mico-writing-mode-vertical-lr"
+    }
+  },
+  {
+    "id": "mico-1329a83f243a7b0c",
+    "type": "unit",
+    "label": "text orientation mixed",
+    "cssVariableName": "--mico-text-orientation-mixed",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-text-orientation-mixed",
+      "unit": "custom",
+      "style": "--mico-text-orientation-mixed"
+    }
+  },
+  {
+    "id": "mico-e6285611f22f08ea",
+    "type": "unit",
+    "label": "text orientation upright",
+    "cssVariableName": "--mico-text-orientation-upright",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-text-orientation-upright",
+      "unit": "custom",
+      "style": "--mico-text-orientation-upright"
+    }
+  },
+  {
+    "id": "mico-034734e126029b5d",
+    "type": "unit",
+    "label": "text orientation sideways",
+    "cssVariableName": "--mico-text-orientation-sideways",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-text-orientation-sideways",
+      "unit": "custom",
+      "style": "--mico-text-orientation-sideways"
+    }
+  },
+  {
+    "id": "mico-b61aed62ce49340c",
+    "type": "unit",
+    "label": "hyphens none",
+    "cssVariableName": "--mico-hyphens-none",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-hyphens-none",
+      "unit": "custom",
+      "style": "--mico-hyphens-none"
+    }
+  },
+  {
+    "id": "mico-b884c434cd6d051b",
+    "type": "unit",
+    "label": "hyphens manual",
+    "cssVariableName": "--mico-hyphens-manual",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-hyphens-manual",
+      "unit": "custom",
+      "style": "--mico-hyphens-manual"
+    }
+  },
+  {
+    "id": "mico-740ea1eaff13162a",
+    "type": "unit",
+    "label": "hyphens auto",
+    "cssVariableName": "--mico-hyphens-auto",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-hyphens-auto",
+      "unit": "custom",
+      "style": "--mico-hyphens-auto"
+    }
+  },
+  {
+    "id": "mico-eb4a4b16a93ea849",
+    "type": "unit",
+    "label": "text align last auto",
+    "cssVariableName": "--mico-text-align-last-auto",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-text-align-last-auto",
+      "unit": "custom",
+      "style": "--mico-text-align-last-auto"
+    }
+  },
+  {
+    "id": "mico-7b72c076c1eb2a8b",
+    "type": "unit",
+    "label": "text align last start",
+    "cssVariableName": "--mico-text-align-last-start",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-text-align-last-start",
+      "unit": "custom",
+      "style": "--mico-text-align-last-start"
+    }
+  },
+  {
+    "id": "mico-28beb394ee62064f",
+    "type": "unit",
+    "label": "text align last end",
+    "cssVariableName": "--mico-text-align-last-end",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-text-align-last-end",
+      "unit": "custom",
+      "style": "--mico-text-align-last-end"
+    }
+  },
+  {
+    "id": "mico-38774349d7b68ef7",
+    "type": "unit",
+    "label": "text align last left",
+    "cssVariableName": "--mico-text-align-last-left",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-text-align-last-left",
+      "unit": "custom",
+      "style": "--mico-text-align-last-left"
+    }
+  },
+  {
+    "id": "mico-2655228c246ba47b",
+    "type": "unit",
+    "label": "text align last right",
+    "cssVariableName": "--mico-text-align-last-right",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-text-align-last-right",
+      "unit": "custom",
+      "style": "--mico-text-align-last-right"
+    }
+  },
+  {
+    "id": "mico-907add175fc36d88",
+    "type": "unit",
+    "label": "text align last center",
+    "cssVariableName": "--mico-text-align-last-center",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-text-align-last-center",
+      "unit": "custom",
+      "style": "--mico-text-align-last-center"
+    }
+  },
+  {
+    "id": "mico-a46c4b191639f236",
+    "type": "unit",
+    "label": "text align last justify",
+    "cssVariableName": "--mico-text-align-last-justify",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-text-align-last-justify",
+      "unit": "custom",
+      "style": "--mico-text-align-last-justify"
+    }
+  },
+  {
+    "id": "mico-37cccaa488a01efb",
+    "type": "unit",
+    "label": "text justify auto",
+    "cssVariableName": "--mico-text-justify-auto",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-text-justify-auto",
+      "unit": "custom",
+      "style": "--mico-text-justify-auto"
+    }
+  },
+  {
+    "id": "mico-88bf96b72efa5e86",
+    "type": "unit",
+    "label": "text justify inter word",
+    "cssVariableName": "--mico-text-justify-inter-word",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-text-justify-inter-word",
+      "unit": "custom",
+      "style": "--mico-text-justify-inter-word"
+    }
+  },
+  {
+    "id": "mico-3ee52f9ca44259bc",
+    "type": "unit",
+    "label": "text justify inter character",
+    "cssVariableName": "--mico-text-justify-inter-character",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-text-justify-inter-character",
+      "unit": "custom",
+      "style": "--mico-text-justify-inter-character"
+    }
+  },
+  {
+    "id": "mico-1be6e6fbc644a97c",
+    "type": "unit",
+    "label": "text justify none",
+    "cssVariableName": "--mico-text-justify-none",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-text-justify-none",
+      "unit": "custom",
+      "style": "--mico-text-justify-none"
+    }
+  },
+  {
+    "id": "mico-bcb62d71d740b987",
+    "type": "unit",
+    "label": "user select none",
+    "cssVariableName": "--mico-user-select-none",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-user-select-none",
+      "unit": "custom",
+      "style": "--mico-user-select-none"
+    }
+  },
+  {
+    "id": "mico-622078e18731271b",
+    "type": "unit",
+    "label": "user select text",
+    "cssVariableName": "--mico-user-select-text",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-user-select-text",
+      "unit": "custom",
+      "style": "--mico-user-select-text"
+    }
+  },
+  {
+    "id": "mico-24bae0c01eca062a",
+    "type": "unit",
+    "label": "user select all",
+    "cssVariableName": "--mico-user-select-all",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-user-select-all",
+      "unit": "custom",
+      "style": "--mico-user-select-all"
+    }
+  },
+  {
+    "id": "mico-3e10b2e6c5c131bf",
+    "type": "unit",
+    "label": "user select auto",
+    "cssVariableName": "--mico-user-select-auto",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-user-select-auto",
+      "unit": "custom",
+      "style": "--mico-user-select-auto"
+    }
+  },
+  {
+    "id": "mico-23b794970f9889cf",
+    "type": "unit",
+    "label": "word break normal",
+    "cssVariableName": "--mico-word-break-normal",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-word-break-normal",
+      "unit": "custom",
+      "style": "--mico-word-break-normal"
+    }
+  },
+  {
+    "id": "mico-c3da6e0e402ad621",
+    "type": "unit",
+    "label": "word break break all",
+    "cssVariableName": "--mico-word-break-break-all",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-word-break-break-all",
+      "unit": "custom",
+      "style": "--mico-word-break-break-all"
+    }
+  },
+  {
+    "id": "mico-bd0d2ddcf6ebca20",
+    "type": "unit",
+    "label": "word break keep all",
+    "cssVariableName": "--mico-word-break-keep-all",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-word-break-keep-all",
+      "unit": "custom",
+      "style": "--mico-word-break-keep-all"
+    }
+  },
+  {
+    "id": "mico-67e4394db607323f",
+    "type": "unit",
+    "label": "overflow wrap normal",
+    "cssVariableName": "--mico-overflow-wrap-normal",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-overflow-wrap-normal",
+      "unit": "custom",
+      "style": "--mico-overflow-wrap-normal"
+    }
+  },
+  {
+    "id": "mico-a65fd58fa6e45e20",
+    "type": "unit",
+    "label": "overflow wrap break word",
+    "cssVariableName": "--mico-overflow-wrap-break-word",
+    "collection": "Typography Collection",
+    "value": {
+      "number": "--mico-overflow-wrap-break-word",
+      "unit": "custom",
+      "style": "--mico-overflow-wrap-break-word"
+    }
+  }
+]

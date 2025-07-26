@@ -1,0 +1,5498 @@
+[
+  {
+    "id": "mico-dcbce170a76605e4",
+    "name": "active-bg-accent-2xdark:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-1142014be6244105",
+    "name": "active-bg-accent-2xlight:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-93925174b9c2f338",
+    "name": "active-bg-accent-3xdark:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-4cf06d27081a8b89",
+    "name": "active-bg-accent-3xlight:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-f671642d4f0e8c79",
+    "name": "active-bg-accent-4xdark:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-bb68d13361ced8e6",
+    "name": "active-bg-accent-4xlight:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-e9d5059b599a0b21",
+    "name": "active-bg-accent-5xdark:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-0fa80f2404173ae5",
+    "name": "active-bg-accent-5xlight:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-d7a2966a11670d66",
+    "name": "active-bg-accent-6xdark:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-b86e06454f5afe48",
+    "name": "active-bg-accent-6xlight:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-41fd9652937840b1",
+    "name": "active-bg-accent-7xdark:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-3a135114db7c95f5",
+    "name": "active-bg-accent-7xlight:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-7d8ee90d0d3e7bdf",
+    "name": "active-bg-accent-8xdark:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-1fd3466f98c02e2e",
+    "name": "active-bg-accent-8xlight:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-6c1282f3cdfcc149",
+    "name": "active-bg-accent-dark:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-96858181ebab5ae4",
+    "name": "active-bg-accent-light:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-ed961a592c089afd",
+    "name": "active-bg-accent:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-87f7e05f69fdaae3",
+    "name": "active-bg-error:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-d94af3a85a7197c1",
+    "name": "active-bg-info:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-04f75eb890af563c",
+    "name": "active-bg-primary-2xdark:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-b792c62bdf3c2c9b",
+    "name": "active-bg-primary-2xlight:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-c901f15f0c9fe1b5",
+    "name": "active-bg-primary-3xdark:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-754a65ea4c506561",
+    "name": "active-bg-primary-3xlight:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-47cfadfbc793fcd2",
+    "name": "active-bg-primary-4xdark:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-aadc118009fa11ee",
+    "name": "active-bg-primary-4xlight:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-992b2b79b49f8f58",
+    "name": "active-bg-primary-5xdark:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-6b51fb04093cdf34",
+    "name": "active-bg-primary-5xlight:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-0771bf5a94f8c4c6",
+    "name": "active-bg-primary-6xdark:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-336ebd5b89f92777",
+    "name": "active-bg-primary-6xlight:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-83c5038ce2d3deb2",
+    "name": "active-bg-primary-7xdark:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-0ffa9abe4eeaccfd",
+    "name": "active-bg-primary-7xlight:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-691ea8ffb3ce34ff",
+    "name": "active-bg-primary-8xdark:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-9e728e0ff3d2043d",
+    "name": "active-bg-primary-8xlight:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-5893f94151bdb9da",
+    "name": "active-bg-primary-dark:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-7c1d6aa860fc423c",
+    "name": "active-bg-primary-light:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-09237b4fd827e190",
+    "name": "active-bg-primary:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-9cb205bc6f04b235",
+    "name": "active-bg-secondary-2xdark:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-f8b3f3fd8e29cd16",
+    "name": "active-bg-secondary-2xlight:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-0c30571e2e294242",
+    "name": "active-bg-secondary-3xdark:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-5f454168510d58e9",
+    "name": "active-bg-secondary-3xlight:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-f3e795880ab13321",
+    "name": "active-bg-secondary-4xdark:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-aa5b8fcee2ed8cf5",
+    "name": "active-bg-secondary-4xlight:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-e70aa8f625d3211e",
+    "name": "active-bg-secondary-5xdark:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-1f9a0f188bfc96cf",
+    "name": "active-bg-secondary-5xlight:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-02813b773c1b69f7",
+    "name": "active-bg-secondary-6xdark:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-8eb89034cbf06c37",
+    "name": "active-bg-secondary-6xlight:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-915d9a56ed509c4d",
+    "name": "active-bg-secondary-7xdark:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-ea17a8f2368cecc9",
+    "name": "active-bg-secondary-7xlight:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-1f5f3b24e1eb2481",
+    "name": "active-bg-secondary-8xdark:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-f80814851cbd6955",
+    "name": "active-bg-secondary-8xlight:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-dd688df450f114ae",
+    "name": "active-bg-secondary-dark:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-62f79ef79a145aa5",
+    "name": "active-bg-secondary-light:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-aa47d795c0146779",
+    "name": "active-bg-secondary:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-6445ad530029520d",
+    "name": "active-bg-success:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-f22872239ce0aa00",
+    "name": "active-bg-warning:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-6e7a640b65dc1e55",
+    "name": "active-border-accent:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-314efb1bb9dc41c6",
+    "name": "active-border-primary:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-64438f3928f38443",
+    "name": "active-border-secondary:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-970157e3811c6e37",
+    "name": "active-opacity-0p",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-9866442c8fffa11b",
+    "name": "active-opacity-100p:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-b0953e3994656262",
+    "name": "active-opacity-10p:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-6723566d12e56be1",
+    "name": "active-opacity-20p:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-30c0db70027534fd",
+    "name": "active-opacity-30p:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-88e8790faebc8352",
+    "name": "active-opacity-40p:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-2f7b894c3a40bcd2",
+    "name": "active-opacity-50p:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-9eac3ba0452e872b",
+    "name": "active-opacity-60p:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-7dc820983efbf091",
+    "name": "active-opacity-70p:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-5e88a2954e7d0196",
+    "name": "active-opacity-80p:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-8b3ec66955a75c44",
+    "name": "active-opacity-90p:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-2ff7fff360c224dc",
+    "name": "active-opacity-none:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-fc9136ae4393ae8b",
+    "name": "active-rotate-l-180:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-f655e0d06deb0a76",
+    "name": "active-rotate-l-25:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-f87389a08f392fa0",
+    "name": "active-rotate-l-360:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-0f57f95ad71506d0",
+    "name": "active-rotate-l-45:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-10f49033214ae126",
+    "name": "active-rotate-l-90:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-9ead07b5847cbc5a",
+    "name": "active-rotate-l-lg:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-c6c067a37363a85b",
+    "name": "active-rotate-l-md:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-9fb70850e30bafcb",
+    "name": "active-rotate-l-sm:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-94dfb851450a9b14",
+    "name": "active-rotate-l-xl:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-ca8655197eebc5bb",
+    "name": "active-rotate-l-xs:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-784aea7c9ec7b49e",
+    "name": "active-rotate-r-180:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-6fd2ab5315e25fdc",
+    "name": "active-rotate-r-25:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-9958b092ca1dbd9c",
+    "name": "active-rotate-r-360:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-c466d943ea62e5f3",
+    "name": "active-rotate-r-45:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-3361c32b0b7eab6a",
+    "name": "active-rotate-r-90:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-fb62caf824184a90",
+    "name": "active-rotate-r-lg:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-1f6dd5404beb9c9a",
+    "name": "active-rotate-r-md:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-32c4cc4399e43422",
+    "name": "active-rotate-r-sm:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-bd8933d4a400eb2e",
+    "name": "active-rotate-r-xl:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-9b96764cc87e5c03",
+    "name": "active-rotate-r-xs:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-dbfc14cf2eb34e1e",
+    "name": "active-scale-down-lg:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-faa4e8a372c5228b",
+    "name": "active-scale-down-md:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-b66d43c622af8374",
+    "name": "active-scale-down-sm:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-1477580c20271634",
+    "name": "active-scale-down-xl:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-96a0896ec1e29491",
+    "name": "active-scale-down-xs:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-aa255eb73b81a01b",
+    "name": "active-scale-up-lg:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-ce6be3242e83a251",
+    "name": "active-scale-up-md:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-acb75b9949d62813",
+    "name": "active-scale-up-sm:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-4b63dd251974dc48",
+    "name": "active-scale-up-xl:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-445a8dcc0fe44c18",
+    "name": "active-scale-up-xs:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-21351c1790aa7661",
+    "name": "active-text-accent:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-f2a140b4f0ceab55",
+    "name": "active-text-primary:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-56c2761e3e933c63",
+    "name": "active-text-secondary:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-18cc82c75fb1c261",
+    "name": "active-translate-down-lg:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-8a6f3726ed2aa058",
+    "name": "active-translate-down-md:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-c21b09e3bfebaf79",
+    "name": "active-translate-down-sm:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-965613488fb21f6a",
+    "name": "active-translate-down-xl:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-5a066d30f23a48b0",
+    "name": "active-translate-down-xs:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-88fa24dbf0be8a1c",
+    "name": "active-translate-up-lg:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-45a594646af9842c",
+    "name": "active-translate-up-md:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-3c7bb2b6536e8b6e",
+    "name": "active-translate-up-sm:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-9f68464fee2edbed",
+    "name": "active-translate-up-xl:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-50e466de066f7183",
+    "name": "active-translate-up-xs:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-a0eff7f33c7f4416",
+    "name": "btn-loading:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-95fcefade239656a",
+    "name": "btn:active",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-aef94ed6cd2d881e",
+    "name": "btn:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-76aa526a564e56c8",
+    "name": "btn:focus-visible",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-8b9cf7fd527ac2ba",
+    "name": "btn:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-2019e87dd33a4864",
+    "name": "focus-bg-accent-2xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-f555640f435c6059",
+    "name": "focus-bg-accent-2xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-1247bff2d569cff2",
+    "name": "focus-bg-accent-3xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-0cbbe75704b1b3ed",
+    "name": "focus-bg-accent-3xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-6798d458df9dd19c",
+    "name": "focus-bg-accent-4xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-28dd96f903b9c334",
+    "name": "focus-bg-accent-4xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-2d9924ace2565790",
+    "name": "focus-bg-accent-5xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-51c17fb6aa9766b3",
+    "name": "focus-bg-accent-5xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-9860406efd15a9db",
+    "name": "focus-bg-accent-6xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-4244961ff07fdc62",
+    "name": "focus-bg-accent-6xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-973e872536873c65",
+    "name": "focus-bg-accent-7xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-dfc04222cd607cff",
+    "name": "focus-bg-accent-7xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-f4302efa0d674eb0",
+    "name": "focus-bg-accent-8xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-bbc5d975242f8813",
+    "name": "focus-bg-accent-8xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-57a8ee541e39fbeb",
+    "name": "focus-bg-accent-dark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-13c7e64d0f8683a3",
+    "name": "focus-bg-accent-light:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-489aa240f90a9e4a",
+    "name": "focus-bg-accent:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-aa73e34383a887b2",
+    "name": "focus-bg-black-100p:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-94d9147f09b199d9",
+    "name": "focus-bg-black-10p:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-2264dfe64e6a4e32",
+    "name": "focus-bg-black-20p:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-199e88219ed452ec",
+    "name": "focus-bg-black-2xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-824f6fa2143562f9",
+    "name": "focus-bg-black-2xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-e3c61422fac94f90",
+    "name": "focus-bg-black-30p:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-fb574aa986ec927d",
+    "name": "focus-bg-black-3xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-1127c57d75c47bd5",
+    "name": "focus-bg-black-3xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-f7036fd787cdb000",
+    "name": "focus-bg-black-40p:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-51acb73bbc733f20",
+    "name": "focus-bg-black-4xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-65fced4c898f5c33",
+    "name": "focus-bg-black-4xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-19a84d9e7d2671be",
+    "name": "focus-bg-black-50p:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-e5e5dd32a4a99dd5",
+    "name": "focus-bg-black-5xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-f85068c9d9b9b016",
+    "name": "focus-bg-black-5xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-3584a4a5b92cdfec",
+    "name": "focus-bg-black-60p:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-febe1c206f0fbc46",
+    "name": "focus-bg-black-6xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-a4791654830b7016",
+    "name": "focus-bg-black-6xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-7449f8d02eef3ca9",
+    "name": "focus-bg-black-70p:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-56b2d5b8898fa24f",
+    "name": "focus-bg-black-7xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-2ac00ff435804173",
+    "name": "focus-bg-black-7xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-b67263274f8ce0ac",
+    "name": "focus-bg-black-80p:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-39b1c44c0ca0b26b",
+    "name": "focus-bg-black-8xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-f103bcf3d236f855",
+    "name": "focus-bg-black-8xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-6313a78cf37a2af8",
+    "name": "focus-bg-black-90p:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-c31c261cdd94c839",
+    "name": "focus-bg-black-dark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-a3c2f3bf40d6a1b2",
+    "name": "focus-bg-black-light:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-fb69173770536e5e",
+    "name": "focus-bg-black:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-2e876f4bcfd30ef6",
+    "name": "focus-bg-error:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-b7260fdb1da11b44",
+    "name": "focus-bg-gray-2xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-74727c22e1c54b81",
+    "name": "focus-bg-gray-2xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-2ebcf16f75566b09",
+    "name": "focus-bg-gray-3xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-34961f56e0d2b418",
+    "name": "focus-bg-gray-3xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-93014ca004711ec8",
+    "name": "focus-bg-gray-4xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-17d71c7df5ef61b4",
+    "name": "focus-bg-gray-4xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-7633fb7056bb958a",
+    "name": "focus-bg-gray-5xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-7c054d123a05f4d9",
+    "name": "focus-bg-gray-5xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-4348a47d3c5bb720",
+    "name": "focus-bg-gray-6xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-12a3e8a30001224c",
+    "name": "focus-bg-gray-6xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-36ed793868aebb2c",
+    "name": "focus-bg-gray-7xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-c5bb57b90684fc0b",
+    "name": "focus-bg-gray-7xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-34ae9f758f1fa25d",
+    "name": "focus-bg-gray-8xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-d275e95d90765e66",
+    "name": "focus-bg-gray-8xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-767c16eb6ed66b2e",
+    "name": "focus-bg-gray-dark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-27d8bbddcb9264e1",
+    "name": "focus-bg-gray:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-c6cf4a6732770140",
+    "name": "focus-bg-info:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-10d2919b7bc118d8",
+    "name": "focus-bg-primary-2xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-d69847327e1d14bd",
+    "name": "focus-bg-primary-2xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-4edfa9ecf7fc6503",
+    "name": "focus-bg-primary-3xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-a58e09dd18b1385f",
+    "name": "focus-bg-primary-3xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-42e4c9bf36eb6b31",
+    "name": "focus-bg-primary-4xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-14045b26c25e6064",
+    "name": "focus-bg-primary-4xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-735e125d673276a1",
+    "name": "focus-bg-primary-5xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-1f50ac5020c559fd",
+    "name": "focus-bg-primary-5xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-4e7fbf36f3e38277",
+    "name": "focus-bg-primary-6xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-98b6cc0508ff973e",
+    "name": "focus-bg-primary-6xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-bfa5af37b8cdc225",
+    "name": "focus-bg-primary-7xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-83b91bbf7224fc71",
+    "name": "focus-bg-primary-7xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-4ad702603de6bb48",
+    "name": "focus-bg-primary-8xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-38db4ab77581f162",
+    "name": "focus-bg-primary-8xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-8290b2153a284183",
+    "name": "focus-bg-primary-dark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-4b75ee20966c6efd",
+    "name": "focus-bg-primary-light:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-215741a46b934b6e",
+    "name": "focus-bg-primary:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-1fb09a9d7300bf88",
+    "name": "focus-bg-secondary-2xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-66acc14c38534b4f",
+    "name": "focus-bg-secondary-2xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-a8ea29bd82de5d40",
+    "name": "focus-bg-secondary-3xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-36d7ee3d5301f653",
+    "name": "focus-bg-secondary-3xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-6ef1ca35ce367b7c",
+    "name": "focus-bg-secondary-4xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-7b7d698afc2f27a6",
+    "name": "focus-bg-secondary-4xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-cb2241aa1015e88b",
+    "name": "focus-bg-secondary-5xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-47c4a4a01413475f",
+    "name": "focus-bg-secondary-5xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-792305939246f5f3",
+    "name": "focus-bg-secondary-6xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-04908bdd5d36efe3",
+    "name": "focus-bg-secondary-6xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-ef9e5b4d8328676a",
+    "name": "focus-bg-secondary-7xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-e9b80204b2305ecd",
+    "name": "focus-bg-secondary-7xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-c89ed910fd2a3cb4",
+    "name": "focus-bg-secondary-8xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-0d0a54f3156fad7e",
+    "name": "focus-bg-secondary-8xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-15210204da74f59f",
+    "name": "focus-bg-secondary-dark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-19456cfc383e4d3a",
+    "name": "focus-bg-secondary-light:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-df828f57fdfd0a2d",
+    "name": "focus-bg-secondary:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-a31fe14acae704f7",
+    "name": "focus-bg-success:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-6061c7f8be0c418d",
+    "name": "focus-bg-warning:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-733e611edeb75080",
+    "name": "focus-bg-white-100p:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-aec18d0f0b2ddc60",
+    "name": "focus-bg-white-10p:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-3490e57cda2027f1",
+    "name": "focus-bg-white-20p:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-c2b9248075c67109",
+    "name": "focus-bg-white-2xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-bf07a64bda4fb04e",
+    "name": "focus-bg-white-2xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-5e81d3043b25673b",
+    "name": "focus-bg-white-30p:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-bcae86b394b9ec49",
+    "name": "focus-bg-white-3xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-308a37433aec707b",
+    "name": "focus-bg-white-3xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-87708418ab67d0e5",
+    "name": "focus-bg-white-40p:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-f8c2b2d63c465e04",
+    "name": "focus-bg-white-4xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-320d8b5265077702",
+    "name": "focus-bg-white-4xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-b0655ddbcef0f1ea",
+    "name": "focus-bg-white-50p:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-628a103776164a74",
+    "name": "focus-bg-white-5xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-6459eb07bd14d280",
+    "name": "focus-bg-white-5xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-1697d129b2fc00ab",
+    "name": "focus-bg-white-60p:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-08e61b054614db25",
+    "name": "focus-bg-white-6xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-58f05a1a6481fafa",
+    "name": "focus-bg-white-6xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-33d26074885aa34a",
+    "name": "focus-bg-white-70p:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-0a544111f4513937",
+    "name": "focus-bg-white-7xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-0ae38e7661ba257d",
+    "name": "focus-bg-white-7xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-63e9bf0205ed1299",
+    "name": "focus-bg-white-80p:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-0ced43598f73c46a",
+    "name": "focus-bg-white-8xdark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-d2ffab23f057e940",
+    "name": "focus-bg-white-8xlight:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-5f7e1c88d80dedd2",
+    "name": "focus-bg-white-90p:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-7d93ddd1e9e1c4cf",
+    "name": "focus-bg-white-dark:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-7c851fdeef5f8a18",
+    "name": "focus-bg-white-light:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-ddc379f53440e926",
+    "name": "focus-bg-white:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-79063dc0285c296b",
+    "name": "focus-border-accent:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-ead4d5bf2a35eb0b",
+    "name": "focus-border-error:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-bf43aed7a15cddf1",
+    "name": "focus-border-info:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-563156b706c1f4ce",
+    "name": "focus-border-primary:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-bb207a243a28a9c8",
+    "name": "focus-border-secondary:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-1ad80eed3cbb6d9f",
+    "name": "focus-border-success:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-278be46eb741057c",
+    "name": "focus-border-warning:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-5f3a6ed2af240727",
+    "name": "focus-opacity-0p",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-e58f2cc9a89fa172",
+    "name": "focus-opacity-100p:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-78174041588199f9",
+    "name": "focus-opacity-10p:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-b3d3d0f7fa024fc7",
+    "name": "focus-opacity-20p:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-7ccd50f634bb35ff",
+    "name": "focus-opacity-30p:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-d8ef8877b79bb9be",
+    "name": "focus-opacity-40p:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-32c251183d885c77",
+    "name": "focus-opacity-50p:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-74fa41fc6de2dab6",
+    "name": "focus-opacity-60p:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-877e52ebb3b8fcbb",
+    "name": "focus-opacity-70p:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-d50b7ee3081d61c0",
+    "name": "focus-opacity-80p:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-88328c2ac1e209e8",
+    "name": "focus-opacity-90p:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-171a97f89f3bf92a",
+    "name": "focus-opacity-none:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-ef3e0d13eb73847a",
+    "name": "focus-rotate-l-180:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-bbda1f667145447b",
+    "name": "focus-rotate-l-25:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-0330cfb4814e74f6",
+    "name": "focus-rotate-l-360:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-95c0236b30c4ed88",
+    "name": "focus-rotate-l-45:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-b4da8d40c153c3a7",
+    "name": "focus-rotate-l-90:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-9e1adb7bcf517da9",
+    "name": "focus-rotate-l-lg:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-ba4effdcde7027d4",
+    "name": "focus-rotate-l-md:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-974d7e5f4c235049",
+    "name": "focus-rotate-l-sm:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-ec912e18b70297d8",
+    "name": "focus-rotate-l-xl:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-a970fa346053848f",
+    "name": "focus-rotate-l-xs:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-5335ec75a58e41fc",
+    "name": "focus-rotate-r-180:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-40d824e75758d50a",
+    "name": "focus-rotate-r-25:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-9cd1865676d9aabc",
+    "name": "focus-rotate-r-360:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-a710ccdb3a74ca06",
+    "name": "focus-rotate-r-45:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-c772adad075f1d4f",
+    "name": "focus-rotate-r-90:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-37e0f606e139fa14",
+    "name": "focus-rotate-r-lg:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-f612366f6c55bf78",
+    "name": "focus-rotate-r-md:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-6a0f9120a13a7911",
+    "name": "focus-rotate-r-sm:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-1f228e929969bf93",
+    "name": "focus-rotate-r-xl:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-d292f99d9d665fb0",
+    "name": "focus-rotate-r-xs:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-8587823f5d7a150d",
+    "name": "focus-scale-down-lg:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-236552fa7662eac0",
+    "name": "focus-scale-down-md:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-3486d76dbbebdb9b",
+    "name": "focus-scale-down-sm:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-2c865ce494505957",
+    "name": "focus-scale-down-xl:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-c738dd614b346f2f",
+    "name": "focus-scale-down-xs:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-eca01eae8fbf1e62",
+    "name": "focus-scale-up-lg:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-2de653371a5ee15e",
+    "name": "focus-scale-up-md:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-a687260beca368de",
+    "name": "focus-scale-up-sm:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-18e2edfb121682b3",
+    "name": "focus-scale-up-xl:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-7f4f7554f0e7d0e4",
+    "name": "focus-scale-up-xs:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-f8b468dfb0af087e",
+    "name": "focus-text-accent:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-ce0ea13dc2c181d4",
+    "name": "focus-text-primary:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-07224138280ac346",
+    "name": "focus-text-secondary:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-63e4836b381fe8e0",
+    "name": "focus-translate-down-lg:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-efc1990d343719b3",
+    "name": "focus-translate-down-md:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-50b74699a08ee30f",
+    "name": "focus-translate-down-sm:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-109da22f73481a01",
+    "name": "focus-translate-down-xl:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-fb3710979a119118",
+    "name": "focus-translate-down-xs:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-cd26b280cec2ae12",
+    "name": "focus-translate-up-lg:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-bb000c768406861e",
+    "name": "focus-translate-up-md:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-1d993597ee2b4102",
+    "name": "focus-translate-up-sm:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-b9b7d4f21072a1f6",
+    "name": "focus-translate-up-xl:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-5673d9dbf54c4af0",
+    "name": "focus-translate-up-xs:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-9cb0560175907cbb",
+    "name": "focus-visible",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-6c938166b6dc0e20",
+    "name": "focusable:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-175400a34e942aa8",
+    "name": "hover-bg-accent-2xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-21db0e97e83a83b6",
+    "name": "hover-bg-accent-2xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-508246555d9159e8",
+    "name": "hover-bg-accent-3xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-78a4547c7a21359d",
+    "name": "hover-bg-accent-3xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-e90c6994cc4bc323",
+    "name": "hover-bg-accent-4xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-434275a37036be0d",
+    "name": "hover-bg-accent-4xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-717683982c4d101a",
+    "name": "hover-bg-accent-5xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-b4d2ba92d9faa733",
+    "name": "hover-bg-accent-5xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-79272ac3ae07609b",
+    "name": "hover-bg-accent-6xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-96cf2fbd435b150d",
+    "name": "hover-bg-accent-6xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-97e0173371d91adb",
+    "name": "hover-bg-accent-7xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-feb61d00ccddb229",
+    "name": "hover-bg-accent-7xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-cdaa24f8e5f285af",
+    "name": "hover-bg-accent-8xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-91cc4277ca75c975",
+    "name": "hover-bg-accent-8xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-cd557368ba1a1519",
+    "name": "hover-bg-accent-dark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-a58c8156008054de",
+    "name": "hover-bg-accent-light:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-001c712f11578e33",
+    "name": "hover-bg-accent:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-6aee61d844e486e3",
+    "name": "hover-bg-black-10p:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-a3370fc0403253ed",
+    "name": "hover-bg-black-20p:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-d32526fdfdf645d0",
+    "name": "hover-bg-black-2xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-e30cbcb0cfbf7265",
+    "name": "hover-bg-black-2xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-cace46f80b608394",
+    "name": "hover-bg-black-30p:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-eb0ca1e4c625e9ef",
+    "name": "hover-bg-black-3xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-c804fcbf6c1d1382",
+    "name": "hover-bg-black-3xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-c5af66a60bfe5acd",
+    "name": "hover-bg-black-40p:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-308a4898bd21290e",
+    "name": "hover-bg-black-4xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-bf6a64083276ae78",
+    "name": "hover-bg-black-4xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-fbaade0d2f7ba82d",
+    "name": "hover-bg-black-50p:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-d072c598faa298c5",
+    "name": "hover-bg-black-5xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-dce39112f912dd8f",
+    "name": "hover-bg-black-5xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-72ab52cff2e102e3",
+    "name": "hover-bg-black-60p:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-b1bea883e9f980d7",
+    "name": "hover-bg-black-6xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-f59f314659309587",
+    "name": "hover-bg-black-6xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-6aa5668ea562aca6",
+    "name": "hover-bg-black-70p:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-e2e74e0e21bda8e8",
+    "name": "hover-bg-black-7xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-f3631e162c47d7a1",
+    "name": "hover-bg-black-7xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-761c4b755a411c14",
+    "name": "hover-bg-black-80p:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-56e21172257fc66d",
+    "name": "hover-bg-black-8xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-37af37e9c1c4ac5e",
+    "name": "hover-bg-black-8xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-1378471f2f1cc223",
+    "name": "hover-bg-black-90p:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-6efba2c8678a3081",
+    "name": "hover-bg-black-dark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-3c173ee8bf837918",
+    "name": "hover-bg-black-light:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-0bd411b32cd21a10",
+    "name": "hover-bg-black:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-cd0476e556ce78dc",
+    "name": "hover-bg-error:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-9265f4df2e375974",
+    "name": "hover-bg-gray-2xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-96303dacf492dc5a",
+    "name": "hover-bg-gray-2xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-93f96cace302f3f0",
+    "name": "hover-bg-gray-3xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-7c95bad5659a0650",
+    "name": "hover-bg-gray-3xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-4205b9ee9708cd63",
+    "name": "hover-bg-gray-4xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-8fcdacad60a0152a",
+    "name": "hover-bg-gray-4xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-4e532540aee308af",
+    "name": "hover-bg-gray-5xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-8e96ce962c5edd4b",
+    "name": "hover-bg-gray-5xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-6c38b9e1816c3891",
+    "name": "hover-bg-gray-6xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-8a48b0cd892ae4e7",
+    "name": "hover-bg-gray-6xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-57f15b131d1626e4",
+    "name": "hover-bg-gray-7xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-642841d2c8d3e539",
+    "name": "hover-bg-gray-7xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-830699d71a1415b3",
+    "name": "hover-bg-gray-8xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-77612e9ba9d69859",
+    "name": "hover-bg-gray-8xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-70ff4232c67b9bf9",
+    "name": "hover-bg-gray-dark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-a5913d5b644b3d24",
+    "name": "hover-bg-gray-light:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-a273120c3f4ca19c",
+    "name": "hover-bg-gray:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-59124378a532a376",
+    "name": "hover-bg-info:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-e3cb95fe2d28ca14",
+    "name": "hover-bg-primary-2xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-f7dc503dd36029cb",
+    "name": "hover-bg-primary-2xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-fbad736c0f370339",
+    "name": "hover-bg-primary-3xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-f624aebbbc2e5a80",
+    "name": "hover-bg-primary-3xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-38df28fee53321c4",
+    "name": "hover-bg-primary-4xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-2af9f1dfbc5e33f8",
+    "name": "hover-bg-primary-4xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-831258e44c66b085",
+    "name": "hover-bg-primary-5xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-1325c3a9eed36474",
+    "name": "hover-bg-primary-5xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-7783347a08546aeb",
+    "name": "hover-bg-primary-6xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-1f9c5e766ca085d9",
+    "name": "hover-bg-primary-6xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-70717dad53c072a7",
+    "name": "hover-bg-primary-7xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-2dbc312553f34d04",
+    "name": "hover-bg-primary-7xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-6694c7f92a85a200",
+    "name": "hover-bg-primary-8xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-147db793e154eef3",
+    "name": "hover-bg-primary-8xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-47392d2dc8e8f9b7",
+    "name": "hover-bg-primary-dark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-527698e1969e93f5",
+    "name": "hover-bg-primary-light:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-61e7636d987e0ba5",
+    "name": "hover-bg-primary:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-28851869af9cb21a",
+    "name": "hover-bg-secondary-2xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-529d401f2997af81",
+    "name": "hover-bg-secondary-2xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-3f77a1ec74f3d28e",
+    "name": "hover-bg-secondary-3xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-59844961d30be8ae",
+    "name": "hover-bg-secondary-3xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-eba7c6ea14b9bc68",
+    "name": "hover-bg-secondary-4xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-69d3808ce0ee11c2",
+    "name": "hover-bg-secondary-4xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-0785441443a43b4d",
+    "name": "hover-bg-secondary-5xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-311666a2f813351c",
+    "name": "hover-bg-secondary-5xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-97ec8f80e8a61bd9",
+    "name": "hover-bg-secondary-6xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-654c2684e75941fd",
+    "name": "hover-bg-secondary-6xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-c685f8555b1de9ff",
+    "name": "hover-bg-secondary-7xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-35ba7ac5a01a5cff",
+    "name": "hover-bg-secondary-7xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-053b55f30ba524d7",
+    "name": "hover-bg-secondary-8xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-6eeff7bbfc0ce048",
+    "name": "hover-bg-secondary-8xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-45508d4241b8f601",
+    "name": "hover-bg-secondary-dark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-10bf8b51b95b33a3",
+    "name": "hover-bg-secondary-light:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-ab1b13e774e56784",
+    "name": "hover-bg-secondary:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-da20b86e9b5566ea",
+    "name": "hover-bg-success:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-dc0e64a26a96666f",
+    "name": "hover-bg-warning:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-98414ae26724a87c",
+    "name": "hover-bg-white-100p:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-d7eec4aceb855e93",
+    "name": "hover-bg-white-10p:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-cc641caccfe44448",
+    "name": "hover-bg-white-20p:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-4a8233a5b73e1ff6",
+    "name": "hover-bg-white-2xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-01418e77a2786fed",
+    "name": "hover-bg-white-2xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-d7c239d0b0ad78cc",
+    "name": "hover-bg-white-30p:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-a7c41471c89f9744",
+    "name": "hover-bg-white-3xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-76a435a961e717ef",
+    "name": "hover-bg-white-3xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-cc8f967d48c8d63a",
+    "name": "hover-bg-white-40p:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-598571e1158374fa",
+    "name": "hover-bg-white-4xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-16caf93edd2c1953",
+    "name": "hover-bg-white-4xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-e02508ebedad83f5",
+    "name": "hover-bg-white-50p:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-214442045aa17b0b",
+    "name": "hover-bg-white-5xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-d43afb6d4e9b5f83",
+    "name": "hover-bg-white-5xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-4e763e4d9859e740",
+    "name": "hover-bg-white-60p:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-5d1fa7eeb3551290",
+    "name": "hover-bg-white-6xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-9b1a3d74202e3cfb",
+    "name": "hover-bg-white-6xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-5aaa6a822710005f",
+    "name": "hover-bg-white-70p:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-620c51dcb4156372",
+    "name": "hover-bg-white-7xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-79470969ddeff555",
+    "name": "hover-bg-white-7xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-7aa2fdd0ddc2ae1b",
+    "name": "hover-bg-white-80p:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-697fdf17851fd8ed",
+    "name": "hover-bg-white-8xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-bbdd0ef0f242ba97",
+    "name": "hover-bg-white-8xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-e5c0e6a8dce373cf",
+    "name": "hover-bg-white-90p:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-cb89fe749aafab5e",
+    "name": "hover-bg-white-dark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-cf00283b2e79db40",
+    "name": "hover-bg-white-light:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-86f4ed4df09086bb",
+    "name": "hover-bg-white:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-08cf56fd00a6ba62",
+    "name": "hover-blur:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-284c86d1f8744896",
+    "name": "hover-border-0p:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-ac3275195fe315aa",
+    "name": "hover-border-accent-2xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-0676f6a8d67836d2",
+    "name": "hover-border-accent-2xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-c2c373e04472af08",
+    "name": "hover-border-accent-3xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-735f5ebb3487f5dc",
+    "name": "hover-border-accent-3xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-3e569c63dcf044c0",
+    "name": "hover-border-accent-4xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-413b3554bf41895e",
+    "name": "hover-border-accent-4xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-8d6546f7a6175d5d",
+    "name": "hover-border-accent-5xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-21031386f9250a56",
+    "name": "hover-border-accent-5xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-49f33b14b3e404d4",
+    "name": "hover-border-accent-6xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-dd0f1ff9c1f67bfb",
+    "name": "hover-border-accent-6xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-70e52c50dd82d3b3",
+    "name": "hover-border-accent-7xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-78f1596090c07c5b",
+    "name": "hover-border-accent-7xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-a70c8268cfb19cba",
+    "name": "hover-border-accent-8xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-a42b1341e7ba2d5d",
+    "name": "hover-border-accent-8xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-43d3381140e970d0",
+    "name": "hover-border-accent-dark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-192edf35474c1361",
+    "name": "hover-border-accent-light:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-35db8364824016a8",
+    "name": "hover-border-accent:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-53ff933e9d644cd2",
+    "name": "hover-border-error:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-8a8f9a2597ee79f2",
+    "name": "hover-border-gray-2xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-8e76ba140b64c805",
+    "name": "hover-border-gray-2xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-95d871efd3565647",
+    "name": "hover-border-gray-3xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-93c549ceca68e5c0",
+    "name": "hover-border-gray-3xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-9fc04906348342f0",
+    "name": "hover-border-gray-4xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-f6da1991075380e8",
+    "name": "hover-border-gray-4xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-3c01b1b026222cf1",
+    "name": "hover-border-gray-5xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-07db7d7d29d4b744",
+    "name": "hover-border-gray-5xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-b76ec9d30c8f187a",
+    "name": "hover-border-gray-6xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-b6194961e7f82566",
+    "name": "hover-border-gray-6xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-31cadc48e27d961a",
+    "name": "hover-border-gray-7xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-8325082562b0826b",
+    "name": "hover-border-gray-7xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-68b19e527d7deaab",
+    "name": "hover-border-gray-8xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-84a865043633773d",
+    "name": "hover-border-gray-8xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-4a010c9baebb3c84",
+    "name": "hover-border-gray-dark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-574accdf4aef9f18",
+    "name": "hover-border-gray-light:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-09ef44ac1dd0fa93",
+    "name": "hover-border-gray:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-96cae73d23a093c0",
+    "name": "hover-border-info:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-a7aca6ec0c0a2afd",
+    "name": "hover-border-none:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-f0f16cd18bb341a9",
+    "name": "hover-border-primary-2xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-5c5d50621b95c4a4",
+    "name": "hover-border-primary-2xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-c89b1fc33addd592",
+    "name": "hover-border-primary-3xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-f4ec2f926a77b6df",
+    "name": "hover-border-primary-3xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-c5bcf30a183dc7f9",
+    "name": "hover-border-primary-4xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-e83a1908773bf1fb",
+    "name": "hover-border-primary-4xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-ee68333740613698",
+    "name": "hover-border-primary-5xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-794068cd13e2dd7b",
+    "name": "hover-border-primary-5xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-1256d20fecefdb0d",
+    "name": "hover-border-primary-6xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-b2aee7a08d3ce103",
+    "name": "hover-border-primary-6xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-d1054141757db99f",
+    "name": "hover-border-primary-7xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-fee19764e28b8674",
+    "name": "hover-border-primary-7xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-08fe54c57428c3d0",
+    "name": "hover-border-primary-8xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-9ce72424497c2834",
+    "name": "hover-border-primary-8xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-a223ce9cb6b91ae6",
+    "name": "hover-border-primary-dark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-85dbf8f229e8dc37",
+    "name": "hover-border-primary-light:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-c2f34a26ea8c8147",
+    "name": "hover-border-primary:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-d461845583306e72",
+    "name": "hover-border-secondary-2xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-eaab9e674746944d",
+    "name": "hover-border-secondary-2xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-ac83d4b957c1a169",
+    "name": "hover-border-secondary-3xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-474086e2a3c418bf",
+    "name": "hover-border-secondary-3xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-150e7bec7f4d6850",
+    "name": "hover-border-secondary-4xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-b491637e090b72d9",
+    "name": "hover-border-secondary-4xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-f033a5559a0d628a",
+    "name": "hover-border-secondary-5xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-6ae32acec3538b8c",
+    "name": "hover-border-secondary-5xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-2b91c0aadc3ef5b7",
+    "name": "hover-border-secondary-6xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-03d3bbf78b8cfd64",
+    "name": "hover-border-secondary-6xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-d703504a57f67ba3",
+    "name": "hover-border-secondary-7xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-bf5a7987dddbe54e",
+    "name": "hover-border-secondary-7xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-e9904aad840d8b5c",
+    "name": "hover-border-secondary-8xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-a7bea613dd69054e",
+    "name": "hover-border-secondary-8xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-bdf76ad1c39520c8",
+    "name": "hover-border-secondary-dark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-304e4e3b79080864",
+    "name": "hover-border-secondary-light:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-6673806fbb601451",
+    "name": "hover-border-secondary:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-8807392967b05a69",
+    "name": "hover-border-success:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-37a4cf2ab37963e5",
+    "name": "hover-border-warning:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-c095cf81fa4c5432",
+    "name": "hover-brightness-110:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-53f2b6379e04f72d",
+    "name": "hover-brightness-125:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-021b14a08939f392",
+    "name": "hover-grayscale:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-6039921561955ab7",
+    "name": "hover-opacity-0p",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-caa3995194ab6295",
+    "name": "hover-opacity-100p:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-554518ae8fdba003",
+    "name": "hover-opacity-10p:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-5b1e11e4ac12b74d",
+    "name": "hover-opacity-20p:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-9df24325fd6e8de7",
+    "name": "hover-opacity-30p:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-5c48250140a97c82",
+    "name": "hover-opacity-40p:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-9fa4e3d30dae55c8",
+    "name": "hover-opacity-50p:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-8aa02d01761df9ea",
+    "name": "hover-opacity-60p:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-ef85fc2a8713e90c",
+    "name": "hover-opacity-70p:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-2d5a510702c7eea7",
+    "name": "hover-opacity-80p:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-448d4bbf7c7d4b54",
+    "name": "hover-opacity-90p:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-cdb8845755c274ab",
+    "name": "hover-opacity-none:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-490b1d0420d7f6dd",
+    "name": "hover-rotate-l-180:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-bb9d574bed568b4b",
+    "name": "hover-rotate-l-25:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-b4ff475e180eaca9",
+    "name": "hover-rotate-l-360:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-8f05dc26b64e2bc7",
+    "name": "hover-rotate-l-45:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-4cffaa05ac6db310",
+    "name": "hover-rotate-l-90:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-487cd2978b217327",
+    "name": "hover-rotate-l-lg:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-daeed5a4405bd22e",
+    "name": "hover-rotate-l-md:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-8ff26e453a21d351",
+    "name": "hover-rotate-l-sm:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-c3a217bb5f915df5",
+    "name": "hover-rotate-l-xl:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-ed9c6e370d2b7764",
+    "name": "hover-rotate-l-xs:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-99e29944db112086",
+    "name": "hover-rotate-r-180:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-fea984626c834bcf",
+    "name": "hover-rotate-r-25:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-e38508b923cacc43",
+    "name": "hover-rotate-r-360:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-c124999abad67df7",
+    "name": "hover-rotate-r-45:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-c7dbe8500657a88d",
+    "name": "hover-rotate-r-90:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-b2e34a19b8d729fe",
+    "name": "hover-rotate-r-lg:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-fcaa9c7921531303",
+    "name": "hover-rotate-r-md:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-aab876d8b5724501",
+    "name": "hover-rotate-r-sm:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-f7089ac69d9ec399",
+    "name": "hover-rotate-r-xl:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-b5e37fd038dad3e6",
+    "name": "hover-rotate-r-xs:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-8ceb0b572110f3b3",
+    "name": "hover-scale-down-lg:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-8a26ac7566b05396",
+    "name": "hover-scale-down-md:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-5b0c3cd3ad89ba46",
+    "name": "hover-scale-down-sm:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-1ce136bcd8ddc352",
+    "name": "hover-scale-down-xl:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-b875ed384d787455",
+    "name": "hover-scale-down-xs:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-e8ca169963b1c68c",
+    "name": "hover-scale-up-lg:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-c6cf2112137f00ba",
+    "name": "hover-scale-up-md:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-3c577ba03392cc6a",
+    "name": "hover-scale-up-sm:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-25e9e98732364f86",
+    "name": "hover-scale-up-xl:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-e25104d8ecacaf82",
+    "name": "hover-scale-up-xs:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-d090c00412e8b100",
+    "name": "hover-sepia:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-1d4a73597e8adae2",
+    "name": "hover-shadow-2xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-b5ae1b155ffc7cc4",
+    "name": "hover-shadow-2xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-7870cbdf9820bd45",
+    "name": "hover-shadow-3xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-d1023a140bbaa3c9",
+    "name": "hover-shadow-3xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-5919ee2086dd42c4",
+    "name": "hover-shadow-4xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-8c33bc605cf19a82",
+    "name": "hover-shadow-4xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-0f702ef834eb451d",
+    "name": "hover-shadow-5xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-a166e284da7a38c9",
+    "name": "hover-shadow-5xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-32a34879b827bf28",
+    "name": "hover-shadow-6xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-64f9fc07282c4b71",
+    "name": "hover-shadow-6xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-e401d6a4e49d3acb",
+    "name": "hover-shadow-7xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-08132ecbcfb2ba2b",
+    "name": "hover-shadow-7xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-91f54091ab7ce25c",
+    "name": "hover-shadow-8xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-4de7e890633c692b",
+    "name": "hover-shadow-8xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-47e46d6d57ae9e90",
+    "name": "hover-shadow-accent-2xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-7bda30ed72a11ea5",
+    "name": "hover-shadow-accent-2xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-a324c7fc35b52980",
+    "name": "hover-shadow-accent-3xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-02f1dd118e3248b2",
+    "name": "hover-shadow-accent-3xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-ed20543b735aad7e",
+    "name": "hover-shadow-accent-4xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-cd2e8e0e0677220f",
+    "name": "hover-shadow-accent-4xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-e557da9fb0831ee3",
+    "name": "hover-shadow-accent-5xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-748384275e49ecb2",
+    "name": "hover-shadow-accent-5xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-e24583efe203ad6b",
+    "name": "hover-shadow-accent-6xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-f94e88bce1b678d8",
+    "name": "hover-shadow-accent-6xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-cb103d779f3a15af",
+    "name": "hover-shadow-accent-7xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-65b7d77d3520e3c8",
+    "name": "hover-shadow-accent-7xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-2c26fd8e05a9c437",
+    "name": "hover-shadow-accent-8xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-3604eebfa66a7fba",
+    "name": "hover-shadow-accent-8xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-c2d28a2d64523f84",
+    "name": "hover-shadow-accent-dark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-7c041eb5df63e5ac",
+    "name": "hover-shadow-accent-light:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-fc3e81fa0ff92b99",
+    "name": "hover-shadow-accent:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-9e64f69657d3e8ee",
+    "name": "hover-shadow-dark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-ae22fcf6fbe186ac",
+    "name": "hover-shadow-light:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-9819115e02851cab",
+    "name": "hover-shadow-none:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-b7a8980429790de4",
+    "name": "hover-shadow-primary-2xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-1b8aa37e17d3c251",
+    "name": "hover-shadow-primary-2xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-dad7bb00a9e77a6c",
+    "name": "hover-shadow-primary-3xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-efc485da1ff26e47",
+    "name": "hover-shadow-primary-3xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-e70f3bb3de3b97e3",
+    "name": "hover-shadow-primary-4xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-bfab2861f88a3c69",
+    "name": "hover-shadow-primary-4xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-8ec75156cb1f0e96",
+    "name": "hover-shadow-primary-5xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-8dac67dd5b728e48",
+    "name": "hover-shadow-primary-5xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-d66683500278dca2",
+    "name": "hover-shadow-primary-6xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-6dc87c7a15ab8daf",
+    "name": "hover-shadow-primary-6xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-1b428b2631a95ac2",
+    "name": "hover-shadow-primary-7xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-a5bf671648d94fa8",
+    "name": "hover-shadow-primary-7xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-0bc06b76604133b0",
+    "name": "hover-shadow-primary-8xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-c60bc3e2c22f4390",
+    "name": "hover-shadow-primary-8xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-69f8db482c4ed5d3",
+    "name": "hover-shadow-primary-dark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-c8ef1f8728d70c57",
+    "name": "hover-shadow-primary-light:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-2ab35da200160819",
+    "name": "hover-shadow-primary:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-50626bc22a55bad2",
+    "name": "hover-shadow-secondary-2xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-8b06589b23229b55",
+    "name": "hover-shadow-secondary-2xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-527743e8ff9c235e",
+    "name": "hover-shadow-secondary-3xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-9a67017e1f2ed50a",
+    "name": "hover-shadow-secondary-3xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-f73ceb3b888463db",
+    "name": "hover-shadow-secondary-4xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-b4d5a2097bcf8135",
+    "name": "hover-shadow-secondary-4xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-20b19456dc3792a0",
+    "name": "hover-shadow-secondary-5xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-aae5f464659ddb35",
+    "name": "hover-shadow-secondary-5xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-7037ccb18750fab4",
+    "name": "hover-shadow-secondary-6xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-23772a3234219f6f",
+    "name": "hover-shadow-secondary-6xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-8a05234e6d262e38",
+    "name": "hover-shadow-secondary-7xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-3a9098e277c1866c",
+    "name": "hover-shadow-secondary-7xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-9e5ff0774bb16f76",
+    "name": "hover-shadow-secondary-8xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-34686bc47cebba55",
+    "name": "hover-shadow-secondary-8xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-48a5fbbd43b2b051",
+    "name": "hover-shadow-secondary-dark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-c40eecf1beef80ad",
+    "name": "hover-shadow-secondary-light:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-0759d40aa3aa31fd",
+    "name": "hover-shadow-secondary:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-669f62e5809d3cbf",
+    "name": "hover-text-accent-2xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-93267a7d496cd797",
+    "name": "hover-text-accent-2xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-b86829fbc161871b",
+    "name": "hover-text-accent-3xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-37cbbed9db25242d",
+    "name": "hover-text-accent-3xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-df7420eb68d2a9dd",
+    "name": "hover-text-accent-4xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-753136c952913da9",
+    "name": "hover-text-accent-4xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-96ce567bff244dff",
+    "name": "hover-text-accent-5xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-53940adcfd449335",
+    "name": "hover-text-accent-5xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-c9158df952707033",
+    "name": "hover-text-accent-6xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-49b18e5745f654ef",
+    "name": "hover-text-accent-6xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-399121d287cc38d4",
+    "name": "hover-text-accent-7xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-b26aa12dcc821074",
+    "name": "hover-text-accent-7xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-87f6aaabf4078529",
+    "name": "hover-text-accent-8xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-4eb48d8fbd32d6b8",
+    "name": "hover-text-accent-8xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-100a32d26a08e818",
+    "name": "hover-text-accent-dark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-d7289eaa2df816e2",
+    "name": "hover-text-accent-light:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-424c5306d4bdc073",
+    "name": "hover-text-accent:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-b884b252a2197b36",
+    "name": "hover-text-primary-2xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-015ddb155fa0e2cb",
+    "name": "hover-text-primary-2xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-6e79eeb2678445ee",
+    "name": "hover-text-primary-3xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-b32d1fcd38b2dbe1",
+    "name": "hover-text-primary-3xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-5c081ad58b36c3e6",
+    "name": "hover-text-primary-4xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-cb2f0b8ce3e570df",
+    "name": "hover-text-primary-4xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-88a66f75bb0e3cc1",
+    "name": "hover-text-primary-5xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-669055e350ba743a",
+    "name": "hover-text-primary-5xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-94fee98aad444a3e",
+    "name": "hover-text-primary-6xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-cacc4ec81aeaff7c",
+    "name": "hover-text-primary-6xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-19c0e353e875ed10",
+    "name": "hover-text-primary-7xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-ea178b0d6f369bac",
+    "name": "hover-text-primary-7xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-a9c21c85b0d15d78",
+    "name": "hover-text-primary-8xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-263844fab49d79f3",
+    "name": "hover-text-primary-8xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-c753295449499450",
+    "name": "hover-text-primary-dark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-9be3b4d5ae179988",
+    "name": "hover-text-primary-light:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-d41de040b6735ec9",
+    "name": "hover-text-primary:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-81c6c75bdf21cc54",
+    "name": "hover-text-secondary-2xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-1ea5b018ee43ead7",
+    "name": "hover-text-secondary-2xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-2b3263be3bddeffa",
+    "name": "hover-text-secondary-3xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-1f7be4be293d5399",
+    "name": "hover-text-secondary-3xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-c08f3047001ec40e",
+    "name": "hover-text-secondary-4xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-d2aa49a0b649479a",
+    "name": "hover-text-secondary-4xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-e0507de07b75e26e",
+    "name": "hover-text-secondary-5xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-1c3af5f479f6b94d",
+    "name": "hover-text-secondary-5xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-e5992f9db23d98bb",
+    "name": "hover-text-secondary-6xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-93172c686e9d0050",
+    "name": "hover-text-secondary-6xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-84b6d63d6f5e6e3e",
+    "name": "hover-text-secondary-7xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-addec417a3bd104b",
+    "name": "hover-text-secondary-7xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-11680e4a7ec11e7b",
+    "name": "hover-text-secondary-8xdark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-1606e6d04477524e",
+    "name": "hover-text-secondary-8xlight:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-e681b79989b7aed4",
+    "name": "hover-text-secondary-dark:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-4187c9c6343ac547",
+    "name": "hover-text-secondary-light:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-57b53c3bf201ae31",
+    "name": "hover-text-secondary:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-b7814931bdf3e228",
+    "name": "hover-translate-down-lg:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-e75b7b8a41dc4941",
+    "name": "hover-translate-down-md:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-2c362c1522325ce4",
+    "name": "hover-translate-down-sm:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-eea07dab3297b078",
+    "name": "hover-translate-down-xl:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-c8e0129f3229bfbe",
+    "name": "hover-translate-down-xs:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-81f169f279b3136a",
+    "name": "hover-translate-up-lg:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-83495dfdbbc1130a",
+    "name": "hover-translate-up-md:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-0a4e01bcbe6ca749",
+    "name": "hover-translate-up-sm:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-70eb3956504d88ee",
+    "name": "hover-translate-up-xl:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-24a25b1a8b7a1c37",
+    "name": "hover-translate-up-xs:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-4acf0759627c462f",
+    "name": "link-hover-opacity-100:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-30ba1bbd1d6a7183",
+    "name": "link-hover-opacity-75:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-80e73638a5cd8804",
+    "name": "link-no-underline-hover:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-74cfce5c8937707e",
+    "name": "link-underline-hover:hover",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  },
+  {
+    "id": "mico-e7d104e78920817b",
+    "name": "skip-link:focus",
+    "children": [],
+    "locked": false,
+    "collection": "States",
+    "type": "class"
+  }
+]

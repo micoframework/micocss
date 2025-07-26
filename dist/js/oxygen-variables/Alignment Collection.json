@@ -1,0 +1,98 @@
+[
+  {
+    "id": "mico-c229a674632c8b8f",
+    "type": "unit",
+    "label": "align baseline",
+    "cssVariableName": "--mico-align-baseline",
+    "collection": "Alignment Collection",
+    "value": {
+      "number": "--mico-align-baseline",
+      "unit": "custom",
+      "style": "--mico-align-baseline"
+    }
+  },
+  {
+    "id": "mico-37296ffd11b65e88",
+    "type": "unit",
+    "label": "align top",
+    "cssVariableName": "--mico-align-top",
+    "collection": "Alignment Collection",
+    "value": {
+      "number": "--mico-align-top",
+      "unit": "custom",
+      "style": "--mico-align-top"
+    }
+  },
+  {
+    "id": "mico-f70777bab11efdc1",
+    "type": "unit",
+    "label": "align middle",
+    "cssVariableName": "--mico-align-middle",
+    "collection": "Alignment Collection",
+    "value": {
+      "number": "--mico-align-middle",
+      "unit": "custom",
+      "style": "--mico-align-middle"
+    }
+  },
+  {
+    "id": "mico-baa98ed392ad5930",
+    "type": "unit",
+    "label": "align bottom",
+    "cssVariableName": "--mico-align-bottom",
+    "collection": "Alignment Collection",
+    "value": {
+      "number": "--mico-align-bottom",
+      "unit": "custom",
+      "style": "--mico-align-bottom"
+    }
+  },
+  {
+    "id": "mico-ad6fc8e78d9e1e75",
+    "type": "unit",
+    "label": "align text top",
+    "cssVariableName": "--mico-align-text-top",
+    "collection": "Alignment Collection",
+    "value": {
+      "number": "--mico-align-text-top",
+      "unit": "custom",
+      "style": "--mico-align-text-top"
+    }
+  },
+  {
+    "id": "mico-14535cbbe3c67fac",
+    "type": "unit",
+    "label": "align text bottom",
+    "cssVariableName": "--mico-align-text-bottom",
+    "collection": "Alignment Collection",
+    "value": {
+      "number": "--mico-align-text-bottom",
+      "unit": "custom",
+      "style": "--mico-align-text-bottom"
+    }
+  },
+  {
+    "id": "mico-65f5cc3652a40414",
+    "type": "unit",
+    "label": "vertical align sub",
+    "cssVariableName": "--mico-vertical-align-sub",
+    "collection": "Alignment Collection",
+    "value": {
+      "number": "--mico-vertical-align-sub",
+      "unit": "custom",
+      "style": "--mico-vertical-align-sub"
+    }
+  },
+  {
+    "id": "mico-28b16579a04f4c1d",
+    "type": "unit",
+    "label": "vertical align super",
+    "cssVariableName": "--mico-vertical-align-super",
+    "collection": "Alignment Collection",
+    "value": {
+      "number": "--mico-vertical-align-super",
+      "unit": "custom",
+      "style": "--mico-vertical-align-super"
+    }
+  }
+]

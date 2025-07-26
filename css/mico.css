@@ -9,16 +9,18 @@
 @import "base/variables.css";
 
 /* Core Utilities */
+@import "utils/miscellaneous/misc.css";
+@import "utils/buttons/buttons.css";
+@import "utils/borders/borders.css";
+@import "utils/layout/spacing.css";
+@import "utils/layout/layout.css";
 @import "utils/typography/typography.css";
 @import "utils/colors/colors.css";
-@import "utils/layout/layout.css";
-@import "utils/layout/spacing.css";
-@import "utils/borders/borders.css";
-@import "utils/buttons/buttons.css";
 @import "utils/states/states.css";
 @import "utils/animation/animation.css";
-@import "utils/miscellaneous/misc.css";
 @import "utils/responsive/responsive.css";
+
+
 
 /* Presets */
 @import "presets/oxygenbuilder.pre.css";

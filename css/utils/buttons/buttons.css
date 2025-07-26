@@ -32,6 +32,8 @@
  * The foundational class for all button styling. Provides consistent
  * base styles that work across all button variants.
  */
+
+
 .btn,button {
   /* Layout and positioning */
   position: relative;
@@ -64,6 +66,11 @@
   /* Prevent text selection and improve touch targets */
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
+
+  transition-property: all !important;
+  transition-duration: var(--mico-transition-duration-normal);
+  transition-timing-function: var(--mico-ease-in-out);
+  transition-delay: var(--mico-value-0);
 }
 
 /* ========================================================================== */
@@ -81,19 +88,19 @@
 .btn-primary {
   background-color: var(--mico-color-primary) ;
   border-color: var(--mico-color-primary-light) ;
-  color: var(--mico-color-white) ;
+  color: var(--mico-color-white) !important;
 }
 
 .btn-secondary {
   background-color: var(--mico-color-secondary) ;
   border-color: var(--mico-color-secondary-light) ;
-  color: var(--mico-color-white) ;
+  color: var(--mico-color-white) !important;
 }
 
 .btn-accent {
   background-color: var(--mico-color-accent) ;
   border-color: var(--mico-color-accent-light) ;
-  color: var(--mico-color-white) ;
+  color: var(--mico-color-white) !important;
 }
 
 /* State Colors - OKLCH System */
@@ -119,15 +126,15 @@
 
 /* Neutral Colors - OKLCH System */
 .btn-light {
-  background-color: var(--mico-color-gray-5xlight) !important;
-  color: var(--mico-color-gray-5xdark) !important;
-  border-color: var(--mico-color-gray-5xlight) !important;
+  background-color: var(--mico-color-white-5xlight) !important;
+  color: var(--mico-color-white-5xdark) !important;
+  border-color: var(--mico-color-white-2xlight) !important;
 }
 
 .btn-dark {
-  background-color: var(--mico-color-gray-5xdark) !important;
+  background-color: var(--mico-color-gray-6xdark) !important;
   color: var(--mico-color-white) !important;
-  border-color: var(--mico-color-gray-5xdark) !important;
+  border-color: var(--mico-color-gray-6xdark) !important;
 }
 
 .btn-transparent {
@@ -154,49 +161,49 @@
   border-width: var(--mico-border-width-1);
 }
 
-.btn-outline.btn-primary {
-  color: var(--mico-color-primary-2xdark);
-  border-color: var(--mico-color-primary-2xdark);
+.btn-outline-primary {
+  color: var(--mico-color-primary-dark);
+  border-color: var(--mico-color-primary-dark);
 }
 
-.btn-outline.btn-secondary {
-  color: var(--mico-color-secondary-2xdark);
-  border-color: var(--mico-color-secondary-2xdark);
+.btn-outline-secondary {
+  color: var(--mico-color-secondary-dark);
+  border-color: var(--mico-color-secondary-dark);
 }
 
-.btn-outline.btn-accent {
-  color: var(--mico-color-accent-2xdark);
-  border-color: var(--mico-color-accent-2xdark);
+.btn-outline-accent {
+  color: var(--mico-color-accent-dark);
+  border-color: var(--mico-color-accent-dark);
 }
 
-.btn-outline.btn-success {
-  color: var(--mico-color-success-2xdark);
-  border-color: var(--mico-color-success-2xdark);
+.btn-outline-success {
+  color: var(--mico-color-success-dark);
+  border-color: var(--mico-color-success-dark);
 }
 
-.btn-outline.btn-danger {
-  color: var(--mico-color-error-2xdark);
-  border-color: var(--mico-color-error-2xdark);
+.btn-outline-danger {
+  color: var(--mico-color-error-dark);
+  border-color: var(--mico-color-error-dark);
 }
 
-.btn-outline.btn-warning {
-  color: var(--mico-color-warning-2xdark);
-  border-color: var(--mico-color-warning-2xdark);
+.btn-outline-warning {
+  color: var(--mico-color-warning-dark);
+  border-color: var(--mico-color-warning-dark);
 }
 
-.btn-outline.btn-info {
-  color: var(--mico-color-info-2xdark);
-  border-color: var(--mico-color-info-2xdark);
+.btn-outline-info {
+  color: var(--mico-color-info-dark);
+  border-color: var(--mico-color-info-dark);
 }
 
-.btn-outline.btn-light {
-  color: var(--mico-color-gray-3xdark) !important;
-  border-color: var(--mico-color-gray-3xlight) !important;
+.btn-outline-light {
+  color: var(--mico-color-white-3xlight) !important;
+  border-color: var(--mico-color-white-3xlight) !important;
 }
 
-.btn-outline.btn-dark {
-  color: var(--mico-color-gray-4xdark) !important;
-  border-color: var(--mico-color-gray-4xdark) !important;
+.btn-outline-dark {
+  color: var(--mico-color-accent-5xdark) !important;
+  border-color: var(--mico-color-gray-5xdark) !important;
 }
 
 /* Text Style - No background or border, only colored text */
@@ -306,21 +313,20 @@
  */
 
 /* Active State */
-.is-active,
+
 .btn-active {
   transform: translateY(1px) !important;
   box-shadow: var(--mico-shadow-sm) !important;
 }
 
 /* Loading State */
-.is-loading:active,
 .btn-loading:active {
   color: var(--mico-value-transparent) !important;
   pointer-events: var(--mico-pointer-events-none) !important;
   position: relative !important;
 }
 
-.is-loading::after,
+
 .btn-loading::after {
   content: "";
   position: absolute;
@@ -343,8 +349,8 @@
 
 /* Disabled State */
 .btn:disabled,
-.btn-disabled,
-.is-disabled {
+.btn-disabled
+ {
   opacity: var(--mico-opacity-50);
   cursor: var(--mico-cursor-not-allowed);
   pointer-events: var(--mico-pointer-events-none);
@@ -363,7 +369,7 @@
 /* Block Button */
 .btn-block {
   display: var(--mico-display-block);
-  width: var(--mico-width-full);
+  width: var(--mico-full);
 }
 
 /* Icon Buttons */
@@ -444,7 +450,7 @@
 }
 
 .btn-group-vertical > .btn {
-  width: var(--mico-width-full);
+  width: var(--mico-full);
   margin: var(--mico-value-0);
 }
 

@@ -1,3 +1,4 @@
+
 /**
  * Mico CSS Framework - Animation & Motion Utilities
  *
@@ -134,7 +135,7 @@
 .animate-on-scroll {
   opacity: 0;
   transition: opacity var(--mico-duration-md) var(--mico-anim-default-timing),
-              transform var(--mico-duration-md) var(--mico-anim-default-timing);
+  transform var(--mico-duration-md) var(--mico-anim-default-timing);
   will-change: opacity, transform;
 }
 
@@ -283,6 +284,43 @@
   animation-timing-function: var(--mico-anim-default-timing);
   animation-fill-mode: var(--mico-anim-default-fill-mode);
 }
+
+/* VVVVVVVVVVVVV Needs to be Updated VVVVVVVVVVVVVVVVVVVVVVVVVV */
+/* Fade Entrance Animations */
+.anim-fade-in.is-visible { animation-name: fadeIn; }
+.anim-fade-in-up.is-visible { animation-name: fadeInUp; }
+.anim-fade-in-down.is-visible { animation-name: fadeInDown; }
+.anim-fade-in-left.is-visible { animation-name: fadeInLeft; }
+.anim-fade-in-right.is-visible { animation-name: fadeInRight; }
+
+/* Slide Entrance Animations */
+.anim-slide-in-up.is-visible { animation-name: slideInUp; }
+.anim-slide-in-down.is-visible { animation-name: slideInDown; }
+.anim-slide-in-left.is-visible { animation-name: slideInLeft; }
+.anim-slide-in-right.is-visible { animation-name: slideInRight; }
+
+/* Scale and Rotate Entrance Animations */
+.anim-scale-in.is-visible { animation-name: scaleIn; }
+.anim-rotate-in.is-visible { animation-name: rotateIn; }
+
+
+
+/* Fade Entrance Animations */
+.anim-fade-out.is-visible { animation-name: fadeOut; }
+.anim-fade-out-up.is-visible { animation-name: fadeOutUp; }
+.anim-fade-out-down.is-visible { animation-name: fadeOutDown; }
+.anim-fade-out-left.is-visible { animation-name: fadeOutLeft; }
+.anim-fade-out-right.is-visible { animation-name: fadeOutRight; }
+
+/* Slide Entrance Animations */
+.anim-slide-out-up.is-visible { animation-name: slideOutUp; }
+.anim-slide-out-down.is-visible { animation-name: slideOutDown; }
+.anim-slide-out-left.is-visible { animation-name: slideOutLeft; }
+.anim-slide-out-right.is-visible { animation-name: slideOutRight; }
+
+/* Scale and Rotate Entrance Animations */
+.anim-scale-out.is-visible { animation-name: scaleOut; }
+.anim-rotate-out.is-visible { animation-name: rotateOut; }
 
 /* ========================================================================== */
 /* CONTINUOUS ANIMATION UTILITIES                                            */
@@ -556,3 +594,4 @@
  * - Event handlers for ripple effects
  * - Text animation logic for typewriter effects
  */
+

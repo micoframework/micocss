@@ -9,16 +9,17 @@ module.exports = {
 
   // Utility modules
   utilities: {
-    typography: true,
-    color: true,
+    misc: true,
     layout: true,
+    button: true,
     border: true,
     spacing: true,
+    typography: true,
     states: true,
-    button: true,
+    color: true,
     animation: true,
-    navigation: true
-  },
+    responsive: true
+  }, 
 
   // Component modules (all disabled)
   components: {

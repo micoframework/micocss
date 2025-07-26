@@ -1,0 +1,178 @@
+[
+  {
+    "id": "mico-fd8cbb2ad049c915",
+    "name": "d-block",
+    "children": [],
+    "locked": false,
+    "collection": "Display",
+    "type": "class"
+  },
+  {
+    "id": "mico-eb0d0355813808ef",
+    "name": "d-contents",
+    "children": [],
+    "locked": false,
+    "collection": "Display",
+    "type": "class"
+  },
+  {
+    "id": "mico-3bb1969fe53aba1c",
+    "name": "d-flex",
+    "children": [],
+    "locked": false,
+    "collection": "Display",
+    "type": "class"
+  },
+  {
+    "id": "mico-7b254ab40feb60ec",
+    "name": "d-flow-root",
+    "children": [],
+    "locked": false,
+    "collection": "Display",
+    "type": "class"
+  },
+  {
+    "id": "mico-82eeaaacb12aa32d",
+    "name": "d-grid",
+    "children": [],
+    "locked": false,
+    "collection": "Display",
+    "type": "class"
+  },
+  {
+    "id": "mico-c127a172be8c680e",
+    "name": "d-inline",
+    "children": [],
+    "locked": false,
+    "collection": "Display",
+    "type": "class"
+  },
+  {
+    "id": "mico-3c880ac57b0f8c5e",
+    "name": "d-inline-block",
+    "children": [],
+    "locked": false,
+    "collection": "Display",
+    "type": "class"
+  },
+  {
+    "id": "mico-915ae5d5f7e4afd6",
+    "name": "d-inline-flex",
+    "children": [],
+    "locked": false,
+    "collection": "Display",
+    "type": "class"
+  },
+  {
+    "id": "mico-68f2144689d391e0",
+    "name": "d-list-item",
+    "children": [],
+    "locked": false,
+    "collection": "Display",
+    "type": "class"
+  },
+  {
+    "id": "mico-1c036b78409e653b",
+    "name": "d-none",
+    "children": [],
+    "locked": false,
+    "collection": "Display",
+    "type": "class"
+  },
+  {
+    "id": "mico-095d4a4d0ac39dc1",
+    "name": "d-ruby",
+    "children": [],
+    "locked": false,
+    "collection": "Display",
+    "type": "class"
+  },
+  {
+    "id": "mico-338b33975383e9c7",
+    "name": "d-ruby-base",
+    "children": [],
+    "locked": false,
+    "collection": "Display",
+    "type": "class"
+  },
+  {
+    "id": "mico-bb226389a50b18b6",
+    "name": "d-ruby-base-container",
+    "children": [],
+    "locked": false,
+    "collection": "Display",
+    "type": "class"
+  },
+  {
+    "id": "mico-5fe6a49d84ca5576",
+    "name": "d-ruby-text",
+    "children": [],
+    "locked": false,
+    "collection": "Display",
+    "type": "class"
+  },
+  {
+    "id": "mico-016695592479a780",
+    "name": "d-table",
+    "children": [],
+    "locked": false,
+    "collection": "Display",
+    "type": "class"
+  },
+  {
+    "id": "mico-713b51233a54723b",
+    "name": "d-table-cell",
+    "children": [],
+    "locked": false,
+    "collection": "Display",
+    "type": "class"
+  },
+  {
+    "id": "mico-705104aba1533ce6",
+    "name": "d-table-column",
+    "children": [],
+    "locked": false,
+    "collection": "Display",
+    "type": "class"
+  },
+  {
+    "id": "mico-f84d2541da249230",
+    "name": "d-table-column-group",
+    "children": [],
+    "locked": false,
+    "collection": "Display",
+    "type": "class"
+  },
+  {
+    "id": "mico-2fd00ebb0f0f49e9",
+    "name": "d-table-footer-group",
+    "children": [],
+    "locked": false,
+    "collection": "Display",
+    "type": "class"
+  },
+  {
+    "id": "mico-45a27fc3959cf5d2",
+    "name": "d-table-header-group",
+    "children": [],
+    "locked": false,
+    "collection": "Display",
+    "type": "class"
+  },
+  {
+    "id": "mico-49e6314c6816a2de",
+    "name": "d-table-row",
+    "children": [],
+    "locked": false,
+    "collection": "Display",
+    "type": "class"
+  },
+  {
+    "id": "mico-f20b7cc23e57c548",
+    "name": "d-table-row-group",
+    "children": [],
+    "locked": false,
+    "collection": "Display",
+    "type": "class"
+  }
+]
