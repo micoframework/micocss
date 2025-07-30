@@ -1,0 +1,677 @@
+/**
+ * Mico CSS Framework - Button & Link Utilities
+ *
+ * This file provides comprehensive button and link styling utilities following
+ * the guidelines for modern, accessible, and flexible button design.
+ *
+ * FEATURES:
+ * - Base button class with consistent styling
+ * - Color variants (primary, secondary, success, etc.)
+ * - Style modifiers (outline, text, ghost)
+ * - Size modifiers (xs, sm, md, lg, xl)
+ * - Shape modifiers (pill, square, circle)
+ * - Shadow modifiers for depth
+ * - State modifiers (active, loading, disabled)
+ * - Layout modifiers (block, icon support)
+ * - Link utilities with advanced underline control
+ *
+ * USAGE:
+ * Basic: .btn .btn-primary
+ * Variants: .btn .btn-secondary .btn-outline
+ * Sizes: .btn .btn-primary .btn-lg
+ * Links: .link-primary .link-underline-thick
+ */
+
+/* ========================================================================== */
+/* BASE BUTTON CLASS                                                         */
+/* ========================================================================== */
+
+/**
+ * Base Button Class
+ *
+ * The foundational class for all button styling. Provides consistent
+ * base styles that work across all button variants.
+ */
+
+
+.btn,button {
+  /* Layout and positioning */
+  position: relative;
+  display: var(--mico-display-inline-block);
+
+  /* Typography */
+  font-size: var(--mico-fs-sm);
+  font-family: var(--mico-value-inherit);
+  font-weight: var(--mico-fw-400);
+  line-height: var(--mico-lh-sm);
+  text-align: center;
+  text-decoration: var(--mico-value-none) !important;
+  white-space: nowrap;
+
+  /* Spacing */
+  padding: var(--mico-size-16) var(--mico-size-32);
+  margin: var(--mico-value-0);
+
+  /* Borders and appearance */
+  border: var(--mico-border-width-xxs) solid transparent;
+  border-radius: var(--mico-btn-radius-md);
+
+  /* Interaction */
+  cursor: var(--mico-cursor-pointer);
+  user-select: var(--mico-user-select-none);
+
+  /* Accessibility */
+  vertical-align: middle;
+
+  /* Prevent text selection and improve touch targets */
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+
+  transition-property: all !important;
+  transition-duration: var(--mico-transition-duration-normal);
+  transition-timing-function: var(--mico-ease-in-out);
+  transition-delay: var(--mico-value-0);
+}
+
+/* ========================================================================== */
+/* BUTTON COLOR VARIANTS                                                     */
+/* ========================================================================== */
+
+/**
+ * Button Color Variants
+ *
+ * These classes control the background color, text color, and border color
+ * for different button purposes and emphasis levels.
+ */
+
+/* Brand Colors - OKLCH System */
+.btn-primary {
+  background-color: var(--mico-color-primary) ;
+  border-color: var(--mico-color-primary-light) ;
+  color: var(--mico-color-white) !important;
+}
+
+.btn-secondary {
+  background-color: var(--mico-color-secondary) ;
+  border-color: var(--mico-color-secondary-light) ;
+  color: var(--mico-color-white) !important;
+}
+
+.btn-accent {
+  background-color: var(--mico-color-accent) ;
+  border-color: var(--mico-color-accent-light) ;
+  color: var(--mico-color-white) !important;
+}
+
+/* State Colors - OKLCH System */
+.btn-success {
+  background-color: var(--mico-color-success) ;
+  border-color: var(--mico-color-success) ;
+}
+
+.btn-danger {
+  background-color: var(--mico-color-error) ;
+  border-color: var(--mico-color-error) ;
+}
+
+.btn-warning {
+  background-color: var(--mico-color-warning) ;
+  border-color: var(--mico-color-warning) ;
+}
+
+.btn-info {
+  background-color: var(--mico-color-info) ;
+  border-color: var(--mico-color-info) ;
+}
+
+/* Neutral Colors - OKLCH System */
+.btn-light {
+  background-color: var(--mico-color-white-5xlight) !important;
+  color: var(--mico-color-white-5xdark) !important;
+  border-color: var(--mico-color-white-2xlight) !important;
+}
+
+.btn-dark {
+  background-color: var(--mico-color-gray-6xdark) !important;
+  color: var(--mico-color-white) !important;
+  border-color: var(--mico-color-gray-6xdark) !important;
+}
+
+.btn-transparent {
+  background-color: var(--mico-value-transparent) !important;
+  color: var(--mico-value-inherit) !important;
+  border-color: var(--mico-value-transparent) !important;
+}
+
+/* ========================================================================== */
+/* BUTTON STYLE MODIFIERS                                                    */
+/* ========================================================================== */
+
+/**
+ * Button Style Modifiers
+ *
+ * These classes modify the visual style of button variants.
+ * They should be combined with color variant classes.
+ */
+
+/* Outline Style - Transparent background with colored border and text */
+.btn-outline {
+  background-color: var(--mico-value-transparent) !important;
+  border-style: var(--mico-border-solid);
+  border-width: var(--mico-border-width-xxs);
+}
+
+.btn-outline-primary {
+  color: var(--color-text-primary,var(--mico-color-primary-dark));
+  border-color: var(--color-border,var(--mico-color-primary-dark));
+}
+
+.btn-outline-secondary {
+  color: var(--color-text-primary,var(--mico-color-secondary-dark));
+  border-color: var(--color-border,var(--mico-color-secondary-dark));
+}
+
+.btn-outline-accent {
+  color: var(--color-text-primary,var(--mico-color-accent-dark));
+  border-color: var(--color-border,var(--mico-color-accent-dark));
+}
+
+.btn-outline-success {
+  color: var(--mico-color-success-dark);
+  border-color: var(--mico-color-success-dark);
+}
+
+.btn-outline-danger {
+  color: var(--mico-color-error-dark);
+  border-color: var(--mico-color-error-dark);
+}
+
+.btn-outline-warning {
+  color: var(--mico-color-warning-dark);
+  border-color: var(--mico-color-warning-dark);
+}
+
+.btn-outline-info {
+  color: var(--mico-color-info-dark);
+  border-color: var(--mico-color-info-dark);
+}
+
+.btn-outline-light {
+  color: var(--mico-color-white-3xlight) !important;
+  border-color: var(--mico-color-white-3xlight) !important;
+}
+
+.btn-outline-dark {
+  color: var(--mico-color-accent-5xdark) !important;
+  border-color: var(--mico-color-gray-5xdark) !important;
+}
+
+/* Text Style - No background or border, only colored text */
+.btn-text {
+  background-color: var(--mico-value-transparent) !important;
+  border-color: var(--mico-value-transparent);
+}
+
+/* Ghost Style - Minimal styling with subtle hover effects */
+.btn-ghost {
+  background-color: var(--mico-value-transparent) !important;
+  border-color: var(--mico-value-transparent);
+  color: var(--mico-color-gray-3xdark);
+
+  &:hover{
+    background-color: var(--mico-color-accent-whisper);
+  }
+}
+
+
+
+/* ========================================================================== */
+/* BUTTON SIZE MODIFIERS                                                     */
+/* ========================================================================== */
+
+/**
+ * Button Size Modifiers
+ *
+ * These classes control the padding and font size of buttons.
+ * The .btn class provides the default/medium size.
+ */
+.btn-xs {
+  padding: var(--mico-btn-padding-xs) !important;
+  font-size: var(--mico-btn-font-size-xs) !important;
+}
+
+.btn-sm {
+  padding: var(--mico-btn-padding-sm) !important;
+  font-size: var(--mico-btn-font-size-sm) !important;
+}
+
+.btn-lg {
+  padding: var(--mico-btn-padding-lg) !important;
+  font-size: var(--mico-btn-font-size-lg) !important;
+}
+
+.btn-xl {
+  padding: var(--mico-btn-padding-xl) !important;
+  font-size: var(--mico-btn-font-size-xl) !important;
+}
+
+/* ========================================================================== */
+/* BUTTON SHAPE MODIFIERS                                                    */
+/* ========================================================================== */
+
+/**
+ * Button Shape Modifiers
+ *
+ * These classes control the border-radius of buttons.
+ */
+.btn-pill {
+  border-radius: var(--mico-btn-radius-pill) !important;
+}
+
+.btn-square {
+  border-radius: var(--mico-btn-radius-square) !important;
+}
+
+.btn-circle {
+  border-radius: var(--mico-btn-radius-circle) !important;
+  width: var(--mico-btn-icon-only-size) !important;
+  height: var(--mico-btn-icon-only-size) !important;
+  padding: var(--mico-value-0) !important;
+  display: var(--mico-display-inline-flex) !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* ========================================================================== */
+/* BUTTON SHADOW MODIFIERS                                                   */
+/* ========================================================================== */
+
+/**
+ * Button Shadow Modifiers
+ *
+ * These classes apply box-shadow for depth and elevation.
+ */
+.btn-shadow {
+  box-shadow: var(--mico-btn-shadow-md) !important;
+}
+
+.btn-shadow-sm {
+  box-shadow: var(--mico-btn-shadow-sm) !important;
+}
+
+.btn-shadow-lg {
+  box-shadow: var(--mico-btn-shadow-lg) !important;
+}
+
+.btn-shadow-none {
+  box-shadow: var(--mico-btn-shadow-none) !important;
+}
+
+/* ========================================================================== */
+/* BUTTON STATE MODIFIERS                                                    */
+/* ========================================================================== */
+
+/**
+ * Button State Modifiers
+ *
+ * These classes provide visual feedback for different button states.
+ */
+
+/* Active State */
+
+.btn-active {
+  transform: translateY(1px) !important;
+  box-shadow: var(--mico-shadow-sm) !important;
+}
+
+/* Loading State */
+.btn-loading:active {
+  color: var(--mico-value-transparent) !important;
+  pointer-events: var(--mico-pointer-events-none) !important;
+  position: relative !important;
+}
+
+
+.btn-loading::after {
+  content: "";
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  top: 50%;
+  left: 50%;
+  margin-top: -0.5em;
+  margin-left: -0.5em;
+  border: var(--mico-border-width-2) solid rgba(255, 255, 255, 0.3);
+  border-top-color: currentColor;
+  border-radius: var(--mico-radius-full);
+  animation: btn-loading-spinner 1s linear infinite;
+}
+
+@keyframes btn-loading-spinner {
+  from { transform: rotate(0turn); }
+  to { transform: rotate(1turn); }
+}
+
+/* Disabled State */
+.btn:disabled,
+.btn-disabled
+ {
+  opacity: var(--mico-opacity-50);
+  cursor: var(--mico-cursor-not-allowed);
+  pointer-events: var(--mico-pointer-events-none);
+}
+
+/* ========================================================================== */
+/* BUTTON LAYOUT MODIFIERS                                                   */
+/* ========================================================================== */
+
+/**
+ * Button Layout Modifiers
+ *
+ * These classes control button layout and icon integration.
+ */
+
+/* Block Button */
+.btn-block {
+  display: var(--mico-display-block);
+  width: var(--mico-full);
+}
+
+/* Icon Buttons */
+.btn-icon {
+  display: var(--mico-display-inline-flex);
+  align-items: center;
+  justify-content: center;
+  gap: var(--mico-btn-icon-gap);
+}
+
+.btn-icon-left {
+  display: var(--mico-display-inline-flex);
+  align-items: center;
+  gap: var(--mico-btn-icon-gap);
+}
+
+.btn-icon-right {
+  display: var(--mico-display-inline-flex);
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: var(--mico-btn-icon-gap);
+}
+
+.btn-icon-only {
+  padding: var(--mico-size-12);
+  width: var(--mico-btn-icon-only-size);
+  height: var(--mico-btn-icon-only-size);
+  display: var(--mico-display-inline-flex);
+  align-items: center;
+  justify-content: center;
+}
+
+/* ========================================================================== */
+/* BUTTON GROUPING UTILITIES                                                 */
+/* ========================================================================== */
+
+/**
+ * Button Grouping Utilities
+ *
+ * These classes create grouped button layouts.
+ */
+
+/* Horizontal Button Group */
+.btn-group {
+  display: var(--mico-display-inline-flex);
+  vertical-align: middle;
+}
+
+.btn-group > .btn {
+  position: relative;
+  flex: 1 1 auto;
+  margin: var(--mico-value-0);
+}
+
+.btn-group > .btn:not(:first-child) {
+  margin-left: calc(var(--mico-border-width-1) * -1);
+  border-top-left-radius: var(--mico-value-0);
+  border-bottom-left-radius: var(--mico-value-0);
+}
+
+.btn-group > .btn:not(:last-child) {
+  border-top-right-radius: var(--mico-value-0);
+  border-bottom-right-radius: var(--mico-value-0);
+}
+
+.btn-group > .btn:hover,
+.btn-group > .btn:focus,
+.btn-group > .btn:active {
+  z-index: 1;
+}
+
+/* Vertical Button Group */
+.btn-group-vertical {
+  display: var(--mico-display-inline-flex);
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.btn-group-vertical > .btn {
+  width: var(--mico-full);
+  margin: var(--mico-value-0);
+}
+
+.btn-group-vertical > .btn:not(:first-child) {
+  margin-top: calc(var(--mico-border-width-1) * -1);
+  border-top-left-radius: var(--mico-value-0);
+  border-top-right-radius: var(--mico-value-0);
+}
+
+.btn-group-vertical > .btn:not(:last-child) {
+  border-bottom-left-radius: var(--mico-value-0);
+  border-bottom-right-radius: var(--mico-value-0);
+}
+
+/* Button Toolbar */
+.btn-toolbar {
+  display: var(--mico-display-flex);
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: var(--mico-size-8);
+}
+
+/* ========================================================================== */
+/* LINK UTILITIES                                                            */
+/* ========================================================================== */
+
+
+/**
+ * Link Color Modifiers
+ *
+ * These classes control the color of links for different purposes.
+ */
+
+/* Brand Link Colors */
+.link-primary { color: var(--mico-color-primary); }
+.link-secondary { color: var(--mico-color-secondary); }
+.link-accent { color: var(--mico-color-accent); }
+
+/* State Link Colors */
+.link-success { color: var(--mico-color-success); }
+.link-danger { color: var(--mico-color-error); }
+.link-warning { color: var(--mico-color-warning); }
+.link-info { color: var(--mico-color-info); }
+
+/* Neutral Link Colors */
+.link-light { color: var(--mico-color-gray-3xlight); }
+.link-dark { color: var(--mico-color-gray-5xdark); }
+.link-muted { color: var(--mico-color-gray-3xdark); }
+.link-body { color: var(--mico-value-inherit); }
+
+/**
+ * Link Underline Control
+ *
+ * These classes control the presence and behavior of link underlines.
+ */
+
+/* Basic Underline Control */
+.link-underline { text-decoration: underline; }
+.link-no-underline { text-decoration: var(--mico-value-none); }
+.link-underline-hover:hover { text-decoration: underline; }
+.link-no-underline-hover:hover { text-decoration: var(--mico-value-none); }
+
+/* Underline Thickness */
+.link-underline-auto { text-decoration-thickness: var(--mico-decoration-thickness-auto); }
+.link-underline-from-font { text-decoration-thickness: var(--mico-decoration-thickness-from-font); }
+.link-underline-thin { text-decoration-thickness: var(--mico-decoration-thickness-1); }
+.link-underline-normal { text-decoration-thickness: var(--mico-decoration-thickness-2); }
+.link-underline-thick { text-decoration-thickness: var(--mico-decoration-thickness-4); }
+
+/* Underline Offset */
+.link-underline-offset-auto { text-underline-offset: var(--mico-underline-offset-auto); }
+.link-underline-offset-sm { text-underline-offset: var(--mico-underline-offset-1); }
+.link-underline-offset-md { text-underline-offset: var(--mico-underline-offset-2); }
+.link-underline-offset-lg { text-underline-offset: var(--mico-underline-offset-4); }
+
+/* Underline Style */
+.link-underline-solid { text-decoration-style: var(--mico-decoration-style-solid); }
+.link-underline-dotted { text-decoration-style: var(--mico-decoration-style-dotted); }
+.link-underline-dashed { text-decoration-style: var(--mico-decoration-style-dashed); }
+.link-underline-wavy { text-decoration-style: var(--mico-decoration-style-wavy); }
+.link-underline-double { text-decoration-style: var(--mico-decoration-style-double); }
+
+/* Underline Color */
+.link-underline-color-current { text-decoration-color: currentColor; }
+.link-underline-color-transparent { text-decoration-color: var(--mico-value-transparent); }
+.link-underline-color-primary { text-decoration-color: var(--mico-color-primary); }
+.link-underline-color-secondary { text-decoration-color: var(--mico-color-secondary); }
+
+/**
+ * Link Opacity Control
+ *
+ * These classes control link opacity for visual hierarchy.
+ */
+.link-opacity-100 { opacity: var(--mico-opacity-100); }
+.link-opacity-75 { opacity: var(--mico-opacity-75); }
+.link-opacity-50 { opacity: var(--mico-opacity-50); }
+.link-opacity-25 { opacity: var(--mico-opacity-25); }
+
+.link-hover-opacity-100:hover { opacity: var(--mico-opacity-100); }
+.link-hover-opacity-75:hover { opacity: var(--mico-opacity-75); }
+
+/**
+ * Link Layout Control
+ *
+ * These classes control link display and layout behavior.
+ */
+.link-reset {
+  color: var(--mico-value-inherit);
+  text-decoration: var(--mico-value-none);
+}
+
+.link-block { display: var(--mico-display-block); }
+.link-inline-block { display: var(--mico-display-inline-block); }
+
+/* ========================================================================== */
+/* ACCESSIBILITY & BROWSER SUPPORT                                           */
+/* ========================================================================== */
+
+/**
+ * Focus Styles
+ *
+ * Accessible focus indicators for keyboard navigation.
+ */
+.btn:focus-visible {
+  outline: var(--mico-border-width-2) solid var(--mico-color-primary);
+  outline-offset: var(--mico-size-2);
+}
+
+/**
+ * High Contrast Mode Support
+ *
+ * Enhanced visibility for high contrast environments.
+ */
+@media (prefers-contrast: high) {
+  .btn {
+    border: var(--mico-border-width-2) solid currentColor;
+  }
+
+  .btn-outline {
+    border-width: var(--mico-border-width-4);
+  }
+
+  .link-underline {
+    text-decoration-thickness: var(--mico-decoration-thickness-2);
+  }
+}
+
+/**
+ * Reduced Motion Support
+ *
+ * Respects user preferences for reduced motion.
+ */
+@media (prefers-reduced-motion: reduce) {
+  .btn,
+  .btn::after,
+  .btn::before {
+    transition: var(--mico-value-none);
+    animation: var(--mico-value-none);
+  }
+
+  .btn-loading::after {
+    animation: var(--mico-value-none);
+    border: var(--mico-border-width-2) solid currentColor;
+    border-right-color: var(--mico-value-transparent);
+  }
+
+}
+
+/**
+ * Print Media Support
+ *
+ * Optimized styles for print media.
+ */
+@media print {
+  .btn {
+    background: var(--mico-value-transparent) !important;
+    color: var(--mico-color-black) !important;
+    border: var(--mico-border-width-1) solid var(--mico-color-black) !important;
+    box-shadow: var(--mico-value-none) !important;
+  }
+
+  .link-underline {
+    text-decoration: underline !important;
+  }
+}
+
+/* ========================================================================== */
+/* USAGE EXAMPLES AND DOCUMENTATION                                          */
+/* ========================================================================== */
+
+/**
+ * USAGE EXAMPLES:
+ *
+ * 1. Primary button with shadow:
+ *    <button class="btn btn-primary btn-shadow">Save Changes</button>
+ *
+ * 2. Outline button with hover lift:
+ *    <button class="btn btn-secondary btn-outline hover-btn-lift">Cancel</button>
+ *
+ * 3. Icon button:
+ *    <button class="btn btn-primary btn-icon">
+ *      <svg>...</svg> Download
+ *    </button>
+ *
+ * 4. Button group:
+ *    <div class="btn-group">
+ *      <button class="btn btn-primary">Left</button>
+ *      <button class="btn btn-primary">Middle</button>
+ *      <button class="btn btn-primary">Right</button>
+ *    </div>
+ *
+ * 5. Advanced link styling:
+ *    <a href="#" class="link-primary link-underline-thick link-underline-offset-sm link-underline-wavy">
+ *      Styled Link
+ *    </a>
+ *
+ * 6. Loading button:
+ *    <button class="btn btn-primary btn-loading">Processing...</button>
+ */

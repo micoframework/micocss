@@ -1,0 +1,43 @@
+/**
+ * Mico CSS Framework
+ * A lightweight and versatile CSS framework focused on utility classes
+ * Version: 1.0.0
+ * Author: Michael Katiba
+ */
+
+/* ========================================================================== */
+/* CORE FRAMEWORK FILES                                                       */
+/* ========================================================================== */
+
+/* Base Variables and Core Styles */
+@import "core/variables.css";
+@import "core/accessibility.css";
+
+/* ========================================================================== */
+/* UTILITY CLASSES                                                           */
+/* ========================================================================== */
+
+/* Core Utilities */
+@import "utilities/miscellaneous.css";
+@import "utilities/borders.css";
+@import "utilities/spacing.css";
+@import "utilities/layout.css";
+@import "utilities/typography.css";
+@import "utilities/colors.css";
+@import "utilities/states.css";
+@import "utilities/animation.css";
+@import "utilities/responsive.css";
+
+/* ========================================================================== */
+/* COMPONENT STYLES                                                          */
+/* ========================================================================== */
+
+/* Component-like Utilities */
+@import "components/buttons.css";
+
+/* ========================================================================== */
+/* PRESETS & INTEGRATIONS                                                    */
+/* ========================================================================== */
+
+/* Framework Presets */
+@import "presets/oxygenbuilder.pre.css";

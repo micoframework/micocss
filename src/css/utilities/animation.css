@@ -1,0 +1,597 @@
+
+/**
+ * Mico CSS Framework - Animation & Motion Utilities
+ *
+ * This file provides a comprehensive animation engine with:
+ * - Transition utilities for smooth property changes
+ * - Scroll-triggered entrance animations
+ * - Continuous animations for ongoing effects
+ * - Interactive animations (ripple, typewriter)
+ * - Animation control utilities
+ *
+ * USAGE:
+ * Basic transitions: .transition-all, .transition-colors
+ * Scroll animations: .animate-on-scroll .anim-fade-in
+ * Continuous: .anim-pulse, .anim-subtle-bounce
+ * Interactive: .btn-ripple, .anim-typewriter
+ */
+
+/* ========================================================================== */
+/* TRANSITION UTILITIES                                                       */
+/* ========================================================================== */
+
+/**
+ * Transition Property Utilities
+ *
+ * These utilities control which CSS properties are animated during transitions.
+ * They provide smooth animations for interactive states like hover and focus.
+ */
+
+/* Property-specific transitions */
+.transition-none {
+  transition-property: var(--mico-value-none) !important;
+}
+
+.transition-all {
+  transition-property: all !important;
+  transition-duration: var(--mico-transition-duration-normal);
+  transition-timing-function: var(--mico-ease-in-out);
+  transition-delay: var(--mico-value-0);
+}
+
+.transition-colors {
+  transition-property: background-color, border-color, color, fill, stroke, text-decoration-color !important;
+  transition-duration: var(--mico-transition-duration-normal);
+  transition-timing-function: var(--mico-ease-in-out);
+  transition-delay: var(--mico-value-0);
+}
+
+.transition-opacity {
+  transition-property: opacity !important;
+  transition-duration: var(--mico-transition-duration-normal);
+  transition-timing-function: var(--mico-ease-in-out);
+  transition-delay: var(--mico-value-0);
+}
+
+.transition-transform {
+  transition-property: transform !important;
+  transition-duration: var(--mico-transition-duration-normal);
+  transition-timing-function: var(--mico-ease-in-out);
+  transition-delay: var(--mico-value-0);
+}
+
+.transition-shadow {
+  transition-property: box-shadow, filter !important;
+  transition-duration: var(--mico-transition-duration-normal);
+  transition-timing-function: var(--mico-ease-in-out);
+  transition-delay: var(--mico-value-0);
+}
+
+.transition-background {
+  transition-property: background-color, background-image, background-position, background-size !important;
+  transition-duration: var(--mico-transition-duration-normal);
+  transition-timing-function: var(--mico-ease-in-out);
+  transition-delay: var(--mico-value-0);
+}
+
+.transition-border {
+  transition-property: border-color, border-width, border-style !important;
+  transition-duration: var(--mico-transition-duration-normal);
+  transition-timing-function: var(--mico-ease-in-out);
+  transition-delay: var(--mico-value-0);
+}
+
+/**
+ * Transition Duration Utilities
+ *
+ * These utilities override the default transition duration.
+ */
+.duration-0    { transition-duration: 0ms !important; }
+.duration-75   { transition-duration: 75ms !important; }
+.duration-100  { transition-duration: 100ms !important; }
+.duration-150  { transition-duration: var(--mico-transition-duration-fast) !important; }
+.duration-200  { transition-duration: 200ms !important; }
+.duration-300  { transition-duration: var(--mico-transition-duration-normal) !important; }
+.duration-500  { transition-duration: var(--mico-transition-duration-slow) !important; }
+.duration-700  { transition-duration: 700ms !important; }
+.duration-1000 { transition-duration: 1000ms !important; }
+
+/**
+ * Transition Timing Function Utilities
+ *
+ * These utilities control the acceleration curve of transitions.
+ */
+.ease-linear  { transition-timing-function: linear !important; }
+.ease-in      { transition-timing-function: var(--mico-ease-in) !important; }
+.ease-out     { transition-timing-function: var(--mico-ease-out) !important; }
+.ease-in-out  { transition-timing-function: var(--mico-ease-in-out) !important; }
+
+/**
+ * Transition Delay Utilities
+ *
+ * These utilities add delays before transitions start.
+ */
+.delay-0    { transition-delay: 0ms !important; }
+.delay-75   { transition-delay: 75ms !important; }
+.delay-100  { transition-delay: 100ms !important; }
+.delay-150  { transition-delay: 150ms !important; }
+.delay-200  { transition-delay: 200ms !important; }
+.delay-300  { transition-delay: 300ms !important; }
+.delay-500  { transition-delay: 500ms !important; }
+.delay-700  { transition-delay: 700ms !important; }
+.delay-1000 { transition-delay: 1000ms !important; }
+
+/* ========================================================================== */
+/* ANIMATION ENGINE BASE & KEYFRAMES                                         */
+/* ========================================================================== */
+
+/**
+ * Animation Engine Base Classes
+ *
+ * These classes provide the foundation for scroll-triggered animations.
+ * Elements with .animate-on-scroll will be hidden initially and animated
+ * when they come into view via JavaScript intersection observer.
+ */
+.animate-on-scroll {
+  opacity: 0;
+  transition: opacity var(--mico-duration-md) var(--mico-anim-default-timing),
+  transform var(--mico-duration-md) var(--mico-anim-default-timing);
+  will-change: opacity, transform;
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: var(--mico-value-none); /* Reset initial transforms */
+}
+
+/* No-JS Fallback - Show all animations if JavaScript is disabled */
+.no-js .animate-on-scroll {
+  opacity: 1;
+  transform: var(--mico-value-none);
+}
+
+/**
+ * Animation Keyframes
+ *
+ * These keyframes define the actual animation movements.
+ * They are applied to elements when the .is-visible class is added.
+ */
+
+/* Fade Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translate3d(0, 40px, 0); }
+  to { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translate3d(0, -40px, 0); }
+  to { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translate3d(-40px, 0, 0); }
+  to { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translate3d(40px, 0, 0); }
+  to { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+/* Slide Animations */
+@keyframes slideInUp {
+  from { transform: translate3d(0, 100%, 0); opacity: 0; visibility: visible; }
+  to { transform: translate3d(0, 0, 0); opacity: 1; }
+}
+
+@keyframes slideInDown {
+  from { transform: translate3d(0, -100%, 0); opacity: 0; visibility: visible; }
+  to { transform: translate3d(0, 0, 0); opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from { transform: translate3d(-100%, 0, 0); opacity: 0; visibility: visible; }
+  to { transform: translate3d(0, 0, 0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+  from { transform: translate3d(100%, 0, 0); opacity: 0; visibility: visible; }
+  to { transform: translate3d(0, 0, 0); opacity: 1; }
+}
+
+/* Scale and Rotate Animations */
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale3d(0.3, 0.3, 0.3); }
+  to { opacity: 1; transform: scale3d(1, 1, 1); }
+}
+
+@keyframes rotateIn {
+  from { opacity: 0; transform: rotate3d(0, 0, 1, -180deg); }
+  to { opacity: 1; transform: rotate3d(0, 0, 1, 0deg); }
+}
+
+/* Continuous Animation Keyframes */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+@keyframes subtleBounce {
+  0%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-8px); }
+  60% { transform: translateY(-4px); }
+}
+
+@keyframes subtleFloat {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Interactive Animation Keyframes */
+@keyframes ripple-effect {
+  to { transform: scale(4); opacity: 0; }
+}
+
+@keyframes blink-caret {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* ========================================================================== */
+/* SCROLL-TRIGGERED ANIMATION UTILITIES                                      */
+/* ========================================================================== */
+
+/**
+ * Entrance Animation Classes
+ *
+ * These classes apply specific animations when the .is-visible class is added
+ * by the JavaScript intersection observer. They must be combined with .animate-on-scroll.
+ */
+
+/* Fade Entrance Animations */
+.anim-fade-in.is-visible { animation-name: fadeIn; }
+.anim-fade-in-up.is-visible { animation-name: fadeInUp; }
+.anim-fade-in-down.is-visible { animation-name: fadeInDown; }
+.anim-fade-in-left.is-visible { animation-name: fadeInLeft; }
+.anim-fade-in-right.is-visible { animation-name: fadeInRight; }
+
+/* Slide Entrance Animations */
+.anim-slide-in-up.is-visible { animation-name: slideInUp; }
+.anim-slide-in-down.is-visible { animation-name: slideInDown; }
+.anim-slide-in-left.is-visible { animation-name: slideInLeft; }
+.anim-slide-in-right.is-visible { animation-name: slideInRight; }
+
+/* Scale and Rotate Entrance Animations */
+.anim-scale-in.is-visible { animation-name: scaleIn; }
+.anim-rotate-in.is-visible { animation-name: rotateIn; }
+
+/**
+ * Common Properties for Entrance Animations
+ *
+ * These properties are applied to all entrance animations when they become visible.
+ */
+.animate-on-scroll[class*="anim-fade-in"].is-visible,
+.animate-on-scroll[class*="anim-slide-in"].is-visible,
+.animate-on-scroll.anim-scale-in.is-visible,
+.animate-on-scroll.anim-rotate-in.is-visible {
+  animation-duration: var(--mico-anim-default-duration);
+  animation-timing-function: var(--mico-anim-default-timing);
+  animation-fill-mode: var(--mico-anim-default-fill-mode);
+}
+
+/* VVVVVVVVVVVVV Needs to be Updated VVVVVVVVVVVVVVVVVVVVVVVVVV */
+/* Fade Entrance Animations */
+.anim-fade-in.is-visible { animation-name: fadeIn; }
+.anim-fade-in-up.is-visible { animation-name: fadeInUp; }
+.anim-fade-in-down.is-visible { animation-name: fadeInDown; }
+.anim-fade-in-left.is-visible { animation-name: fadeInLeft; }
+.anim-fade-in-right.is-visible { animation-name: fadeInRight; }
+
+/* Slide Entrance Animations */
+.anim-slide-in-up.is-visible { animation-name: slideInUp; }
+.anim-slide-in-down.is-visible { animation-name: slideInDown; }
+.anim-slide-in-left.is-visible { animation-name: slideInLeft; }
+.anim-slide-in-right.is-visible { animation-name: slideInRight; }
+
+/* Scale and Rotate Entrance Animations */
+.anim-scale-in.is-visible { animation-name: scaleIn; }
+.anim-rotate-in.is-visible { animation-name: rotateIn; }
+
+
+
+/* Fade Entrance Animations */
+.anim-fade-out.is-visible { animation-name: fadeOut; }
+.anim-fade-out-up.is-visible { animation-name: fadeOutUp; }
+.anim-fade-out-down.is-visible { animation-name: fadeOutDown; }
+.anim-fade-out-left.is-visible { animation-name: fadeOutLeft; }
+.anim-fade-out-right.is-visible { animation-name: fadeOutRight; }
+
+/* Slide Entrance Animations */
+.anim-slide-out-up.is-visible { animation-name: slideOutUp; }
+.anim-slide-out-down.is-visible { animation-name: slideOutDown; }
+.anim-slide-out-left.is-visible { animation-name: slideOutLeft; }
+.anim-slide-out-right.is-visible { animation-name: slideOutRight; }
+
+/* Scale and Rotate Entrance Animations */
+.anim-scale-out.is-visible { animation-name: scaleOut; }
+.anim-rotate-out.is-visible { animation-name: rotateOut; }
+
+/* ========================================================================== */
+/* CONTINUOUS ANIMATION UTILITIES                                            */
+/* ========================================================================== */
+
+/**
+ * Continuous Animation Classes
+ *
+ * These animations run continuously and don't require JavaScript.
+ * They can be applied directly to elements.
+ */
+
+/* Continuous Animations */
+.anim-pulse {
+  animation: pulse 2s infinite ease-in-out;
+}
+
+.anim-subtle-bounce {
+  animation: subtleBounce 2.5s infinite ease-in-out;
+}
+
+.anim-subtle-float {
+  animation: subtleFloat 5 s infinite ease-in-out;
+}
+
+/* Apply default duration to continuous animations if not overridden */
+.anim-pulse,
+.anim-subtle-bounce,
+.anim-subtle-float {
+  animation-duration: var(--mico-anim-default-duration);
+}
+
+/* ========================================================================== */
+/* ANIMATION CONTROL UTILITIES                                               */
+/* ========================================================================== */
+
+/**
+ * Animation Duration Controls
+ *
+ * These utilities override the default animation duration.
+ */
+.anim-duration-xs   { animation-duration: var(--mico-duration-xs) !important; }
+.anim-duration-sm   { animation-duration: var(--mico-duration-sm) !important; }
+.anim-duration-md   { animation-duration: var(--mico-duration-md) !important; }
+.anim-duration-lg   { animation-duration: var(--mico-duration-lg) !important; }
+.anim-duration-xl   { animation-duration: var(--mico-duration-xl) !important; }
+
+/**
+ * Animation Delay Controls
+ *
+ * These utilities add delays before animations start.
+ */
+.anim-delay-xs   { animation-delay: var(--mico-delay-xs) !important; }
+.anim-delay-sm   { animation-delay: var(--mico-delay-sm) !important; }
+.anim-delay-md   { animation-delay: var(--mico-delay-md) !important; }
+.anim-delay-lg   { animation-delay: var(--mico-delay-lg) !important; }
+.anim-delay-xl   { animation-delay: var(--mico-delay-xl) !important; }
+
+/**
+ * Animation Timing Function Controls
+ *
+ * These utilities control the acceleration curve of animations.
+ */
+.anim-ease-linear  { animation-timing-function: linear !important; }
+.anim-ease-in      { animation-timing-function: ease-in !important; }
+.anim-ease-out     { animation-timing-function: ease-out !important; }
+.anim-ease-in-out  { animation-timing-function: ease-in-out !important; }
+
+/**
+ * Animation Iteration Controls
+ *
+ * These utilities control how many times animations repeat.
+ */
+.anim-infinite   { animation-iteration-count: infinite !important; }
+.anim-iter-1     { animation-iteration-count: 1 !important; }
+.anim-iter-2     { animation-iteration-count: 2 !important; }
+.anim-iter-3     { animation-iteration-count: 3 !important; }
+
+/**
+ * Animation Direction Controls
+ *
+ * These utilities control the direction of animation playback.
+ */
+.anim-direction-normal           { animation-direction: normal !important; }
+.anim-direction-reverse          { animation-direction: reverse !important; }
+.anim-direction-alternate        { animation-direction: alternate !important; }
+.anim-direction-alternate-reverse{ animation-direction: alternate-reverse !important; }
+
+/**
+ * Animation Fill Mode Controls
+ *
+ * These utilities control how animations apply styles before and after execution.
+ */
+.anim-fill-none     { animation-fill-mode: none !important; }
+.anim-fill-forwards { animation-fill-mode: forwards !important; }
+.anim-fill-backwards{ animation-fill-mode: backwards !important; }
+.anim-fill-both     { animation-fill-mode: both !important; }
+
+/**
+ * Animation Play State Controls
+ *
+ * These utilities control whether animations are running or paused.
+ */
+.anim-paused  { animation-play-state: paused !important; }
+.anim-running { animation-play-state: running !important; }
+
+/* ========================================================================== */
+/* INTERACTIVE ANIMATION UTILITIES                                           */
+/* ========================================================================== */
+
+/**
+ * Ripple Effect for Buttons
+ *
+ * Creates a ripple animation effect on button interactions.
+ * JavaScript is required to position and trigger the ripple.
+ */
+.btn-ripple {
+  position: relative;
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.ripple-element {
+  position: absolute;
+  border-radius: var(--mico-radius-full);
+  background: var(--mico-ripple-bg-default);
+  transform: scale(0);
+  animation: ripple-effect 0.6s linear;
+  pointer-events: var(--mico-pointer-events-none);
+}
+
+/* Dark mode ripple */
+@media (prefers-color-scheme: dark) {
+  .ripple-element {
+    background: var(--mico-ripple-bg-dark);
+  }
+}
+
+/**
+ * Typewriter Effect
+ *
+ * Creates a typewriter animation effect for text.
+ * JavaScript is required to control the typing animation.
+ */
+.typewriter-container {
+  display: inline-block;
+}
+
+.anim-typewriter {
+  display: inline;
+}
+
+.typewriter-cursor::after {
+  content: '|';
+  display: inline-block;
+  animation: blink-caret 0.75s step-end infinite;
+  margin-left: 0.05em;
+  color: var(--mico-typewriter-cursor-color);
+}
+
+/* JavaScript-managed cursor for more control */
+.typewriter-cursor-managed {
+  display: inline-block;
+  margin-left: 0.05em;
+  color: var(--mico-typewriter-cursor-color);
+}
+
+.typewriter-cursor-paused::after,
+.typewriter-cursor-managed.is-paused {
+  animation-play-state: paused !important;
+  opacity: 1 !important;
+}
+
+/* ========================================================================== */
+/* ACCESSIBILITY & PERFORMANCE                                               */
+/* ========================================================================== */
+
+/**
+ * Reduced Motion Support
+ *
+ * Respects user preferences for reduced motion by disabling or simplifying animations.
+ * This is crucial for accessibility and user comfort.
+ */
+@media (prefers-reduced-motion: reduce) {
+  /* Disable all animations and transitions for users who prefer reduced motion */
+  .animate-on-scroll,
+  .animate-on-scroll.is-visible,
+  [class*="anim-"] {
+    animation-name: var(--mico-value-none) !important;
+    animation-duration: 0s !important;
+    animation-play-state: paused !important;
+    opacity: 1 !important;
+    transform: var(--mico-value-none) !important;
+  }
+
+  /* Disable interactive animations */
+  .typewriter-cursor::after,
+  .typewriter-cursor-managed {
+    animation: var(--mico-value-none) !important;
+    opacity: 1 !important;
+  }
+
+  .ripple-element {
+    animation-name: var(--mico-value-none) !important;
+  }
+
+  /* Reduce transition durations to minimal values */
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/**
+ * High Contrast Mode Support
+ *
+ * Ensures animations work well in high contrast mode.
+ */
+@media (prefers-contrast: high) {
+  .ripple-element {
+    background: currentColor;
+    opacity: 0.3;
+  }
+}
+
+/**
+ * Print Media Support
+ *
+ * Disables animations in print media to avoid issues.
+ */
+@media print {
+  .animate-on-scroll,
+  [class*="anim-"] {
+    animation: var(--mico-value-none) !important;
+    opacity: 1 !important;
+    transform: var(--mico-value-none) !important;
+  }
+}
+
+/* ========================================================================== */
+/* USAGE EXAMPLES AND DOCUMENTATION                                          */
+/* ========================================================================== */
+
+/**
+ * USAGE EXAMPLES:
+ *
+ * 1. Basic scroll-triggered fade in:
+ *    <div class="animate-on-scroll anim-fade-in">Content</div>
+ *
+ * 2. Slide in from left with delay:
+ *    <div class="animate-on-scroll anim-slide-in-left anim-delay-sm">Content</div>
+ *
+ * 3. Continuous pulse animation:
+ *    <div class="anim-pulse">Pulsing content</div>
+ *
+ * 4. Button with ripple effect:
+ *    <button class="btn btn-ripple">Click me</button>
+ *
+ * 5. Typewriter effect:
+ *    <span class="anim-typewriter typewriter-cursor" data-type-text="Hello World!">
+ *
+ * 6. Custom animation timing:
+ *    <div class="animate-on-scroll anim-fade-in anim-duration-lg anim-ease-out">
+ *
+ * JAVASCRIPT REQUIREMENTS:
+ * - Intersection Observer for scroll-triggered animations
+ * - Event handlers for ripple effects
+ * - Text animation logic for typewriter effects
+ */
+

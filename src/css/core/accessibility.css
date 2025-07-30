@@ -1,0 +1,200 @@
+/* Mico Accessibility Styles */
+/* These styles ensure that the framework meets WCAG 2.1 AA standards */
+
+/* Screen reader only text - hides content visually but keeps it accessible to screen readers */
+.sr-only,
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Make the element visible when it's focused */
+.sr-only-focusable:not(:focus),
+.visually-hidden-focusable:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Skip link - allows keyboard users to skip to main content */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--mico-color-accent);
+  color: var(--mico-color-white);
+  padding: 8px;
+  z-index: 100;
+  transition: all .11s ease;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Focus styles */
+:focus {
+  outline: 1px solid var(--mico-color-accent);
+  outline-offset: 2px;
+  transition: all .11s ease;
+}
+
+.focusable:focus {
+  outline: 1px solid var(--mico-color-accent);
+  outline-offset: 2px;
+  transition: all .11s ease;
+}
+
+/* Remove focus outline for mouse users, but keep for keyboard navigation */
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+/* High contrast mode adjustments */
+@media (prefers-contrast: high) {
+  :root {
+    --mico-color-primary: oklch(0.2 0.01 270);
+    --mico-color-secondary: oklch(0.2 0.01 270);
+    --mico-color-accent: oklch(0.2 0.01 270);
+    --mico-color-background: oklch(0.98 0.005 270);
+    --mico-color-text: oklch(0.2 0.01 270);
+  }
+
+  /* Ensure all text has sufficient contrast */
+  body {
+    color: var(--mico-color-black);
+    background-color: var(--mico-color-white);
+  }
+
+  /* Enhance borders for better visibility */
+  button,
+  input,
+  select,
+  textarea,
+  .btn,
+  .card,
+  .alert {
+    border: 1px solid var(--mico-color-black) !important;
+  }
+
+  /* Ensure links are underlined */
+  a {
+    text-decoration: underline !important;
+  }
+
+  /* Enhance focus states */
+  :focus {
+    outline: 3px solid var(--mico-color-black) !important;
+    outline-offset: 3px !important;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate,
+  .animate-fade-in,
+  .animate-slide-in,
+  .animate-pulse,
+  [class*="animate-"] {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Ensure proper color contrast for form elements */
+input,
+select,
+textarea {
+  background-color: var(--mico-color-white);
+  color: var(--mico-color-black);
+  border: 1px solid var(--mico-color-gray-3xdark); /* WCAG AA compliant */
+}
+
+/* Ensure form labels are visible */
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+/* Ensure error messages are properly styled for accessibility */
+.error,
+[aria-invalid="true"] {
+  border-color: var(--mico-color-error) !important;
+}
+
+.error-message {
+  color: var(--mico-color-error);
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+}
+
+/* Ensure proper focus for interactive elements */
+button:focus,
+input:focus,
+select:focus,
+textarea:focus,
+[role="button"]:focus,
+[role="checkbox"]:focus,
+[role="radio"]:focus,
+[role="tab"]:focus,
+[role="menuitem"]:focus {
+  outline: 1px solid var(--mico-color-accent);
+  outline-offset: 2px;
+  z-index: 1;
+}
+
+/* Ensure proper styling for disabled elements */
+button:disabled,
+input:disabled,
+select:disabled,
+textarea:disabled,
+[aria-disabled="true"] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Ensure proper ARIA states are visually represented */
+[aria-expanded="true"] .icon-expand {
+  transform: rotate(180deg);
+}
+
+[aria-selected="true"] {
+  background-color: var(--mico-color-primary-2xlight);
+  color: var(--mico-color-primary-5xdark);
+}
+
+[aria-current="page"] {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Ensure proper keyboard focus indication for custom controls */
+[role="button"],
+[role="checkbox"],
+[role="radio"],
+[role="tab"],
+[role="menuitem"] {
+  cursor: pointer;
+}
