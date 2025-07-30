@@ -1,51 +1,160 @@
-/* Mico Accessibility Styles */
-/* These styles ensure that the framework meets WCAG 2.1 AA standards */
+/**
+ * ==========================================================================
+ * Mico CSS Framework - Core Accessibility Styles
+ * ==========================================================================
+ *
+ * This file provides core accessibility features that ensure the framework
+ * meets WCAG 2.1 AA standards and provides excellent user experience for
+ * users with disabilities.
+ */
 
-/* Screen reader only text - hides content visually but keeps it accessible to screen readers */
+/* ========================================================================== */
+/* 1. SCREEN READER UTILITIES                                                */
+/* ========================================================================== */
+
+/**
+ * Screen Reader Only
+ * Hides content visually but keeps it available to screen readers.
+ */
 .sr-only,
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: var(--mico-value-0) !important;
+  margin: calc(var(--mico-size-1) * -1) !important;
+  overflow: var(--mico-overflow-hidden) !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: var(--mico-value-0) !important;
 }
 
-/* Make the element visible when it's focused */
+/**
+ * Not Screen Reader Only
+ * Reverses .sr-only for responsive or conditional visibility.
+ */
+.not-sr-only {
+  position: static !important;
+  width: var(--mico-value-auto) !important;
+  height: var(--mico-value-auto) !important;
+  padding: var(--mico-value-0) !important;
+  margin: var(--mico-value-0) !important;
+  overflow: var(--mico-overflow-visible) !important;
+  clip: var(--mico-value-auto) !important;
+  white-space: normal !important;
+}
+
+/**
+ * Make the element visible when it's focused
+ */
 .sr-only-focusable:not(:focus),
 .visually-hidden-focusable:not(:focus) {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: var(--mico-value-0) !important;
+  margin: calc(var(--mico-size-1) * -1) !important;
+  overflow: var(--mico-overflow-hidden) !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: var(--mico-value-0) !important;
 }
 
-/* Skip link - allows keyboard users to skip to main content */
+/* ========================================================================== */
+/* 2. SKIP LINKS                                                             */
+/* ========================================================================== */
+
+/**
+ * Skip Link
+ * Provides keyboard users a way to skip to main content.
+ */
 .skip-link {
-  position: absolute;
-  top: -40px;
-  left: 0;
-  background: var(--mico-color-accent);
-  color: var(--mico-color-white);
-  padding: 8px;
-  z-index: 100;
-  transition: all .11s ease;
+  position: absolute !important;
+  top: calc(var(--mico-size-40) * -1) !important;
+  left: var(--mico-size-6) !important;
+  background: var(--mico-color-black) !important;
+  color: var(--mico-color-white) !important;
+  padding: var(--mico-size-8) !important;
+  text-decoration: var(--mico-value-none) !important;
+  z-index: var(--mico-z-50) !important;
+  border-radius: var(--mico-radius-sm) !important;
+  font-weight: var(--mico-fw-500) !important;
+  transition: var(--mico-transition-all) !important;
 }
 
 .skip-link:focus {
-  top: 0;
+  top: var(--mico-size-6) !important;
 }
 
-/* Focus styles */
+/* ========================================================================== */
+/* 3. APPEARANCE CONTROL                                                     */
+/* ========================================================================== */
+
+/**
+ * Appearance Utilities
+ * Controls the appearance property to remove or restore browser default styling.
+ */
+.appearance-none {
+  -webkit-appearance: var(--mico-appearance-none) !important;
+  -moz-appearance: var(--mico-appearance-none) !important;
+  appearance: var(--mico-appearance-none) !important;
+}
+
+.appearance-auto {
+  -webkit-appearance: var(--mico-appearance-auto) !important;
+  -moz-appearance: var(--mico-appearance-auto) !important;
+  appearance: var(--mico-appearance-auto) !important;
+}
+
+/* ========================================================================== */
+/* 4. USER INTERACTION CONTROL                                               */
+/* ========================================================================== */
+
+/**
+ * Pointer Events Control
+ */
+.pointer-events-none {
+  pointer-events: var(--mico-pointer-events-none) !important;
+}
+
+.pointer-events-auto {
+  pointer-events: var(--mico-pointer-events-auto) !important;
+}
+
+/**
+ * User Select Control
+ */
+.user-select-none {
+  -webkit-user-select: var(--mico-user-select-none) !important;
+  -moz-user-select: var(--mico-user-select-none) !important;
+  user-select: var(--mico-user-select-none) !important;
+}
+
+.user-select-text {
+  -webkit-user-select: var(--mico-user-select-text) !important;
+  -moz-user-select: var(--mico-user-select-text) !important;
+  user-select: var(--mico-user-select-text) !important;
+}
+
+.user-select-all {
+  -webkit-user-select: var(--mico-user-select-all) !important;
+  -moz-user-select: var(--mico-user-select-all) !important;
+  user-select: var(--mico-user-select-all) !important;
+}
+
+.user-select-auto {
+  -webkit-user-select: var(--mico-user-select-auto) !important;
+  -moz-user-select: var(--mico-user-select-auto) !important;
+  user-select: var(--mico-user-select-auto) !important;
+}
+
+/* ========================================================================== */
+/* 5. FOCUS MANAGEMENT                                                       */
+/* ========================================================================== */
+
+/**
+ * Focus Utilities
+ */
 :focus {
   outline: 1px solid var(--mico-color-accent);
   outline-offset: 2px;

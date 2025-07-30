@@ -1,0 +1,366 @@
+/**
+ * ==========================================================================
+ * Mico CSS Framework - Semantic HTML Elements
+ * ==========================================================================
+ * 
+ * Semantic styling for HTML elements that provides sensible defaults
+ * while respecting the theme system and maintaining accessibility.
+ */
+
+/* ========================================================================== */
+/* 1. DOCUMENT STRUCTURE                                                     */
+/* ========================================================================== */
+
+html {
+  background-color: var(--mico-bg-primary);
+  color: var(--mico-text-primary);
+}
+
+body {
+  background-color: var(--mico-bg-primary);
+  color: var(--mico-text-secondary);
+  font-family: var(--mico-font-body);
+  font-size: var(--mico-fs-base);
+  line-height: var(--mico-lh-base);
+  font-weight: var(--mico-fw-400);
+}
+
+/* ========================================================================== */
+/* 2. TYPOGRAPHY ELEMENTS                                                    */
+/* ========================================================================== */
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--mico-text-heading);
+  font-family: var(--mico-font-display);
+  font-weight: var(--mico-fw-600);
+  line-height: var(--mico-lh-tight);
+  margin-bottom: var(--mico-space-sm);
+}
+
+h1 { font-size: var(--mico-fs-4xl); }
+h2 { font-size: var(--mico-fs-3xl); }
+h3 { font-size: var(--mico-fs-2xl); }
+h4 { font-size: var(--mico-fs-xl); }
+h5 { font-size: var(--mico-fs-lg); }
+h6 { font-size: var(--mico-fs-base); }
+
+/* Paragraphs */
+p {
+  margin-bottom: var(--mico-space-md);
+  color: var(--mico-text-secondary);
+  line-height: var(--mico-lh-relaxed);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* Links */
+a {
+  color: var(--mico-accent-primary);
+  text-decoration: none;
+  transition: color var(--mico-transition-duration-fast) var(--mico-ease-out);
+}
+
+a:hover,
+a:focus {
+  color: var(--mico-color-accent-dark);
+  text-decoration: underline;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--mico-accent-primary);
+  outline-offset: 2px;
+  border-radius: var(--mico-radius-sm);
+}
+
+/* ========================================================================== */
+/* 3. TEXT FORMATTING                                                        */
+/* ========================================================================== */
+
+/* Emphasis */
+strong, b {
+  font-weight: var(--mico-fw-600);
+  color: var(--mico-text-primary);
+}
+
+em, i {
+  font-style: italic;
+}
+
+/* Code */
+code {
+  font-family: var(--mico-font-mono);
+  font-size: 0.875em;
+  background-color: var(--mico-bg-tertiary);
+  color: var(--mico-text-primary);
+  padding: var(--mico-space-2xs) var(--mico-space-xs);
+  border-radius: var(--mico-radius-sm);
+  border: 1px solid var(--mico-border-primary);
+}
+
+pre {
+  font-family: var(--mico-font-mono);
+  background-color: var(--mico-bg-tertiary);
+  color: var(--mico-text-primary);
+  padding: var(--mico-space-md);
+  border-radius: var(--mico-radius-md);
+  border: 1px solid var(--mico-border-primary);
+  overflow-x: auto;
+  margin-bottom: var(--mico-space-md);
+}
+
+pre code {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+/* Quotes */
+blockquote {
+  border-left: 4px solid var(--mico-accent-primary);
+  padding-left: var(--mico-space-md);
+  margin: var(--mico-space-lg) 0;
+  font-style: italic;
+  color: var(--mico-text-tertiary);
+}
+
+/* ========================================================================== */
+/* 4. LISTS                                                                  */
+/* ========================================================================== */
+
+ul, ol {
+  margin-bottom: var(--mico-space-md);
+  padding-left: var(--mico-space-lg);
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+li {
+  margin-bottom: var(--mico-space-xs);
+  color: var(--mico-text-secondary);
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+/* Nested lists */
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: var(--mico-space-xs);
+  margin-bottom: 0;
+}
+
+/* Definition lists */
+dl {
+  margin-bottom: var(--mico-space-md);
+}
+
+dt {
+  font-weight: var(--mico-fw-600);
+  color: var(--mico-text-primary);
+  margin-bottom: var(--mico-space-2xs);
+}
+
+dd {
+  margin-left: var(--mico-space-md);
+  margin-bottom: var(--mico-space-sm);
+  color: var(--mico-text-secondary);
+}
+
+/* ========================================================================== */
+/* 5. FORM ELEMENTS                                                          */
+/* ========================================================================== */
+
+/* Form containers */
+form {
+  margin-bottom: var(--mico-space-lg);
+}
+
+fieldset {
+  border: 1px solid var(--mico-border-primary);
+  border-radius: var(--mico-radius-md);
+  padding: var(--mico-space-md);
+  margin-bottom: var(--mico-space-md);
+}
+
+legend {
+  font-weight: var(--mico-fw-600);
+  color: var(--mico-text-primary);
+  padding: 0 var(--mico-space-xs);
+}
+
+/* Labels */
+label {
+  display: block;
+  font-weight: var(--mico-fw-500);
+  color: var(--mico-text-primary);
+  margin-bottom: var(--mico-space-xs);
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="url"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+textarea,
+select {
+  width: 100%;
+  padding: var(--mico-space-sm);
+  border: 1px solid var(--mico-border-primary);
+  border-radius: var(--mico-radius-md);
+  background-color: var(--mico-bg-primary);
+  color: var(--mico-text-primary);
+  font-family: inherit;
+  font-size: var(--mico-fs-base);
+  transition: border-color var(--mico-transition-duration-fast) var(--mico-ease-out);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--mico-accent-primary);
+  box-shadow: 0 0 0 3px rgba(var(--mico-accent-primary), 0.1);
+}
+
+/* Buttons */
+button {
+  background-color: var(--mico-accent-primary);
+  color: var(--mico-accent-text);
+  border: none;
+  padding: var(--mico-space-sm) var(--mico-space-md);
+  border-radius: var(--mico-radius-md);
+  font-family: inherit;
+  font-size: var(--mico-fs-base);
+  font-weight: var(--mico-fw-500);
+  cursor: pointer;
+  transition: all var(--mico-transition-duration-fast) var(--mico-ease-out);
+}
+
+button:hover {
+  background-color: var(--mico-color-accent-dark);
+  transform: translateY(-1px);
+}
+
+button:focus-visible {
+  outline: 2px solid var(--mico-accent-primary);
+  outline-offset: 2px;
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* ========================================================================== */
+/* 6. TABLES                                                                 */
+/* ========================================================================== */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: var(--mico-space-lg);
+  background-color: var(--mico-bg-primary);
+  border-radius: var(--mico-radius-md);
+  overflow: hidden;
+  box-shadow: 0 1px 3px var(--mico-shadow-color);
+}
+
+th, td {
+  padding: var(--mico-space-sm);
+  text-align: left;
+  border-bottom: 1px solid var(--mico-border-primary);
+}
+
+th {
+  background-color: var(--mico-bg-secondary);
+  font-weight: var(--mico-fw-600);
+  color: var(--mico-text-primary);
+}
+
+td {
+  color: var(--mico-text-secondary);
+}
+
+tr:hover {
+  background-color: var(--mico-bg-tertiary);
+}
+
+/* ========================================================================== */
+/* 7. MEDIA ELEMENTS                                                         */
+/* ========================================================================== */
+
+img {
+  border-radius: var(--mico-radius-md);
+}
+
+figure {
+  margin: var(--mico-space-lg) 0;
+}
+
+figcaption {
+  margin-top: var(--mico-space-sm);
+  font-size: var(--mico-fs-sm);
+  color: var(--mico-text-tertiary);
+  text-align: center;
+  font-style: italic;
+}
+
+/* ========================================================================== */
+/* 8. SECTIONING ELEMENTS                                                    */
+/* ========================================================================== */
+
+header, footer {
+  background-color: var(--mico-bg-secondary);
+  border-bottom: 1px solid var(--mico-border-primary);
+  padding: var(--mico-space-lg);
+}
+
+footer {
+  border-top: 1px solid var(--mico-border-primary);
+  border-bottom: none;
+  margin-top: var(--mico-space-2xl);
+}
+
+section {
+  margin-bottom: var(--mico-space-xl);
+}
+
+article {
+  background-color: var(--mico-bg-primary);
+  padding: var(--mico-space-lg);
+  border-radius: var(--mico-radius-lg);
+  border: 1px solid var(--mico-border-primary);
+  margin-bottom: var(--mico-space-lg);
+}
+
+aside {
+  background-color: var(--mico-bg-tertiary);
+  padding: var(--mico-space-md);
+  border-radius: var(--mico-radius-md);
+  border-left: 4px solid var(--mico-accent-primary);
+}
+
+/* ========================================================================== */
+/* 9. HORIZONTAL RULE                                                        */
+/* ========================================================================== */
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: var(--mico-border-primary);
+  margin: var(--mico-space-xl) 0;
+}

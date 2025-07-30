@@ -1,0 +1,213 @@
+/**
+ * ==========================================================================
+ * Mico CSS Framework - Transform Utilities
+ * ==========================================================================
+ * 
+ * This file provides transform utilities for creating interactive effects
+ * and animations. These utilities cover:
+ * 
+ * - Translation (move elements)
+ * - Scaling (resize elements)
+ * - Rotation (rotate elements)
+ * - Opacity changes
+ */
+
+/* ========================================================================== */
+/* 1. TRANSLATION UTILITIES                                                  */
+/* ========================================================================== */
+
+/**
+ * Translate Up
+ * Moves elements upward along the Y-axis
+ */
+.translate-up-xs { transform: translateY(-1.8px) !important; }
+.translate-up-sm { transform: translateY(-2.5px) !important; }
+.translate-up-md { transform: translateY(-3.8px) !important; }
+.translate-up-lg { transform: translateY(-4.8px) !important; }
+.translate-up-xl { transform: translateY(-5.8px) !important; }
+
+/**
+ * Translate Down
+ * Moves elements downward along the Y-axis
+ */
+.translate-down-xs { transform: translateY(1.8px) !important; }
+.translate-down-sm { transform: translateY(2.5px) !important; }
+.translate-down-md { transform: translateY(3.8px) !important; }
+.translate-down-lg { transform: translateY(4.8px) !important; }
+.translate-down-xl { transform: translateY(5.8px) !important; }
+
+/**
+ * Translate Left
+ * Moves elements leftward along the X-axis
+ */
+.translate-left-xs { transform: translateX(-1.8px) !important; }
+.translate-left-sm { transform: translateX(-2.5px) !important; }
+.translate-left-md { transform: translateX(-3.8px) !important; }
+.translate-left-lg { transform: translateX(-4.8px) !important; }
+.translate-left-xl { transform: translateX(-5.8px) !important; }
+
+/**
+ * Translate Right
+ * Moves elements rightward along the X-axis
+ */
+.translate-right-xs { transform: translateX(1.8px) !important; }
+.translate-right-sm { transform: translateX(2.5px) !important; }
+.translate-right-md { transform: translateX(3.8px) !important; }
+.translate-right-lg { transform: translateX(4.8px) !important; }
+.translate-right-xl { transform: translateX(5.8px) !important; }
+
+/* ========================================================================== */
+/* 2. SCALE UTILITIES                                                        */
+/* ========================================================================== */
+
+/**
+ * Scale Up
+ * Makes elements larger
+ */
+.scale-up-xs { transform: scale(1.02) !important; }
+.scale-up-sm { transform: scale(1.05) !important; }
+.scale-up-md { transform: scale(1.1) !important; }
+.scale-up-lg { transform: scale(1.15) !important; }
+.scale-up-xl { transform: scale(1.2) !important; }
+
+/**
+ * Scale Down
+ * Makes elements smaller
+ */
+.scale-down-xs { transform: scale(0.98) !important; }
+.scale-down-sm { transform: scale(0.95) !important; }
+.scale-down-md { transform: scale(0.9) !important; }
+.scale-down-lg { transform: scale(0.85) !important; }
+.scale-down-xl { transform: scale(0.8) !important; }
+
+/* ========================================================================== */
+/* 3. ROTATION UTILITIES                                                     */
+/* ========================================================================== */
+
+/**
+ * Rotate Left (Counter-clockwise)
+ * Small rotations for subtle effects
+ */
+.rotate-l-xs { transform: rotate(-1deg) !important; }
+.rotate-l-sm { transform: rotate(-3deg) !important; }
+.rotate-l-md { transform: rotate(-6deg) !important; }
+.rotate-l-lg { transform: rotate(-9deg) !important; }
+.rotate-l-xl { transform: rotate(-12deg) !important; }
+
+/**
+ * Rotate Right (Clockwise)
+ * Small rotations for subtle effects
+ */
+.rotate-r-xs { transform: rotate(1deg) !important; }
+.rotate-r-sm { transform: rotate(3deg) !important; }
+.rotate-r-md { transform: rotate(6deg) !important; }
+.rotate-r-lg { transform: rotate(9deg) !important; }
+.rotate-r-xl { transform: rotate(12deg) !important; }
+
+/**
+ * Standard Rotations
+ * Common rotation angles
+ */
+.rotate-l-25 { transform: rotate(-25deg) !important; }
+.rotate-l-45 { transform: rotate(-45deg) !important; }
+.rotate-l-90 { transform: rotate(-90deg) !important; }
+.rotate-l-180 { transform: rotate(-180deg) !important; }
+.rotate-l-360 { transform: rotate(-360deg) !important; }
+
+.rotate-r-25 { transform: rotate(25deg) !important; }
+.rotate-r-45 { transform: rotate(45deg) !important; }
+.rotate-r-90 { transform: rotate(90deg) !important; }
+.rotate-r-180 { transform: rotate(180deg) !important; }
+.rotate-r-360 { transform: rotate(360deg) !important; }
+
+/* ========================================================================== */
+/* 4. OPACITY UTILITIES                                                      */
+/* ========================================================================== */
+
+/**
+ * Opacity Levels
+ * Control element transparency
+ */
+.opacity-0p, .opacity-none { opacity: 0 !important; }
+.opacity-10p { opacity: 0.10 !important; }
+.opacity-20p { opacity: 0.20 !important; }
+.opacity-30p { opacity: 0.30 !important; }
+.opacity-40p { opacity: 0.40 !important; }
+.opacity-50p { opacity: 0.50 !important; }
+.opacity-60p { opacity: 0.60 !important; }
+.opacity-70p { opacity: 0.70 !important; }
+.opacity-80p { opacity: 0.80 !important; }
+.opacity-90p { opacity: 0.90 !important; }
+.opacity-100p { opacity: 1 !important; }
+
+/* ========================================================================== */
+/* 5. TRANSFORM ORIGIN UTILITIES                                             */
+/* ========================================================================== */
+
+/**
+ * Transform Origin
+ * Control the point around which transforms are applied
+ */
+.origin-center { transform-origin: center !important; }
+.origin-top { transform-origin: top !important; }
+.origin-top-right { transform-origin: top right !important; }
+.origin-right { transform-origin: right !important; }
+.origin-bottom-right { transform-origin: bottom right !important; }
+.origin-bottom { transform-origin: bottom !important; }
+.origin-bottom-left { transform-origin: bottom left !important; }
+.origin-left { transform-origin: left !important; }
+.origin-top-left { transform-origin: top left !important; }
+
+/* ========================================================================== */
+/* 6. COMBINED TRANSFORMS                                                    */
+/* ========================================================================== */
+
+/**
+ * Common Transform Combinations
+ * Pre-defined combinations for common effects
+ */
+.lift-xs { transform: translateY(-1px) scale(1.02) !important; }
+.lift-sm { transform: translateY(-2px) scale(1.05) !important; }
+.lift-md { transform: translateY(-4px) scale(1.1) !important; }
+.lift-lg { transform: translateY(-6px) scale(1.15) !important; }
+.lift-xl { transform: translateY(-8px) scale(1.2) !important; }
+
+.press-xs { transform: translateY(1px) scale(0.98) !important; }
+.press-sm { transform: translateY(2px) scale(0.95) !important; }
+.press-md { transform: translateY(3px) scale(0.9) !important; }
+
+/* ========================================================================== */
+/* 7. RESET UTILITIES                                                        */
+/* ========================================================================== */
+
+/**
+ * Transform Reset
+ * Remove all transforms
+ */
+.transform-none { transform: none !important; }
+.transform-reset { transform: translateX(0) translateY(0) scale(1) rotate(0deg) !important; }
+
+/* ========================================================================== */
+/* 8. ACCESSIBILITY CONSIDERATIONS                                           */
+/* ========================================================================== */
+
+/**
+ * Reduced Motion Support
+ * Respect user preferences for reduced motion
+ */
+@media (prefers-reduced-motion: reduce) {
+  .translate-up-xs, .translate-up-sm, .translate-up-md, .translate-up-lg, .translate-up-xl,
+  .translate-down-xs, .translate-down-sm, .translate-down-md, .translate-down-lg, .translate-down-xl,
+  .translate-left-xs, .translate-left-sm, .translate-left-md, .translate-left-lg, .translate-left-xl,
+  .translate-right-xs, .translate-right-sm, .translate-right-md, .translate-right-lg, .translate-right-xl,
+  .scale-up-xs, .scale-up-sm, .scale-up-md, .scale-up-lg, .scale-up-xl,
+  .scale-down-xs, .scale-down-sm, .scale-down-md, .scale-down-lg, .scale-down-xl,
+  .rotate-l-xs, .rotate-l-sm, .rotate-l-md, .rotate-l-lg, .rotate-l-xl,
+  .rotate-r-xs, .rotate-r-sm, .rotate-r-md, .rotate-r-lg, .rotate-r-xl,
+  .rotate-l-25, .rotate-l-45, .rotate-l-90, .rotate-l-180, .rotate-l-360,
+  .rotate-r-25, .rotate-r-45, .rotate-r-90, .rotate-r-180, .rotate-r-360,
+  .lift-xs, .lift-sm, .lift-md, .lift-lg, .lift-xl,
+  .press-xs, .press-sm, .press-md {
+    transform: none !important;
+  }
+}

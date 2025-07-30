@@ -1,0 +1,285 @@
+/**
+ * ==========================================================================
+ * Mico CSS Framework - Visual Effects Utilities
+ * ==========================================================================
+ * 
+ * This file provides visual effect utilities for creating modern
+ * web interfaces. These utilities cover:
+ * 
+ * - CSS masking and fade effects
+ * - Layout bleeding effects
+ * - Performance optimization hints
+ * - Browser compatibility helpers
+ */
+
+/* ========================================================================== */
+/* 1. CSS MASKING & FADE EFFECTS                                             */
+/* ========================================================================== */
+
+/**
+ * Mask Utilities
+ *
+ * Applies CSS masks for fade effects and visual transitions.
+ * Useful for creating smooth visual boundaries and focus effects.
+ */
+
+/* Directional fade masks */
+.mask-fade-top {
+  -webkit-mask-image: var(--mico-mask-fade-to-top) !important;
+  mask-image: var(--mico-mask-fade-to-top) !important;
+}
+
+.mask-fade-bottom {
+  -webkit-mask-image: var(--mico-mask-fade-to-bottom) !important;
+  mask-image: var(--mico-mask-fade-to-bottom) !important;
+}
+
+.mask-fade-left {
+  -webkit-mask-image: var(--mico-mask-fade-to-left) !important;
+  mask-image: var(--mico-mask-fade-to-left) !important;
+}
+
+.mask-fade-right {
+  -webkit-mask-image: var(--mico-mask-fade-to-right) !important;
+  mask-image: var(--mico-mask-fade-to-right) !important;
+}
+
+/* Fade intensity variations */
+.mask-fade-short {
+  -webkit-mask-image: var(--mico-mask-fade-short) !important;
+  mask-image: var(--mico-mask-fade-short) !important;
+}
+
+.mask-fade-long {
+  -webkit-mask-image: var(--mico-mask-fade-long) !important;
+  mask-image: var(--mico-mask-fade-long) !important;
+}
+
+/* Remove mask */
+.mask-none {
+  -webkit-mask-image: var(--mico-value-none) !important;
+  mask-image: var(--mico-value-none) !important;
+}
+
+/* ========================================================================== */
+/* 2. LAYOUT BLEEDING EFFECTS                                                */
+/* ========================================================================== */
+
+/**
+ * Bleed Utilities
+ *
+ * Creates full-bleed and column-bleed effects that extend beyond container bounds.
+ * Useful for hero sections, backgrounds, and visual emphasis.
+ */
+
+/* Full viewport bleed */
+.bleed-full {
+  width: 100vw !important;
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
+}
+
+.bleed-full-left {
+  width: 100vw !important;
+  margin-left: calc(50% - 50vw) !important;
+}
+
+.bleed-full-right {
+  width: 100vw !important;
+  margin-right: calc(50% - 50vw) !important;
+}
+
+/* Column bleed with configurable offsets */
+.bleed-column {
+  margin-left: calc(var(--mico-bleed-offset-md) * -1) !important;
+  margin-right: calc(var(--mico-bleed-offset-md) * -1) !important;
+}
+
+.bleed-column-left {
+  margin-left: calc(var(--mico-bleed-offset-sm) * -1) !important;
+}
+
+.bleed-column-right {
+  margin-right: calc(var(--mico-bleed-offset-sm) * -1) !important;
+}
+
+.bleed-column-sm {
+  margin-left: calc(var(--mico-bleed-offset-sm) * -1) !important;
+  margin-right: calc(var(--mico-bleed-offset-sm) * -1) !important;
+}
+
+.bleed-column-lg {
+  margin-left: calc(var(--mico-bleed-offset-lg) * -1) !important;
+  margin-right: calc(var(--mico-bleed-offset-lg) * -1) !important;
+}
+
+/* Horizontal only bleed */
+.bleed-x {
+  margin-left: calc(var(--mico-bleed-offset-md) * -1) !important;
+  margin-right: calc(var(--mico-bleed-offset-md) * -1) !important;
+}
+
+/* Vertical only bleed */
+.bleed-y {
+  margin-top: calc(var(--mico-bleed-offset-md) * -1) !important;
+  margin-bottom: calc(var(--mico-bleed-offset-md) * -1) !important;
+}
+
+/* ========================================================================== */
+/* 3. PERFORMANCE OPTIMIZATION                                               */
+/* ========================================================================== */
+
+/**
+ * Will Change Utilities
+ *
+ * Provides performance hints to the browser about what properties will change.
+ * Use sparingly as they can consume more resources if overused.
+ */
+.will-change-auto {
+  will-change: var(--mico-will-change-auto) !important;
+}
+
+.will-change-transform {
+  will-change: var(--mico-will-change-transform) !important;
+}
+
+.will-change-opacity {
+  will-change: var(--mico-will-change-opacity) !important;
+}
+
+.will-change-scroll {
+  will-change: var(--mico-will-change-scroll) !important;
+}
+
+/* ========================================================================== */
+/* 4. BROWSER COMPATIBILITY HELPERS                                          */
+/* ========================================================================== */
+
+/**
+ * Scrollbar Styling
+ *
+ * Provides consistent scrollbar styling across browsers.
+ * Note: Limited support in Firefox.
+ */
+.scrollbar-thin {
+  scrollbar-width: thin !important;
+}
+
+.scrollbar-none {
+  scrollbar-width: var(--mico-value-none) !important;
+  -ms-overflow-style: var(--mico-value-none) !important;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: var(--mico-value-none) !important;
+}
+
+/**
+ * Webkit Scrollbar Styling
+ *
+ * Detailed scrollbar customization for Webkit browsers.
+ */
+.scrollbar-custom::-webkit-scrollbar {
+  width: var(--mico-size-12) !important;
+  height: var(--mico-size-12) !important;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: var(--mico-color-gray-5xlight) !important;
+  border-radius: var(--mico-radius-md) !important;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background: var(--mico-color-gray-2xlight) !important;
+  border-radius: var(--mico-radius-md) !important;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background: var(--mico-color-gray) !important;
+}
+
+/**
+ * Touch Action Control
+ *
+ * Controls touch behavior for better mobile experience.
+ */
+.touch-auto {
+  touch-action: auto !important;
+}
+
+.touch-none {
+  touch-action: var(--mico-value-none) !important;
+}
+
+.touch-pan-x {
+  touch-action: pan-x !important;
+}
+
+.touch-pan-y {
+  touch-action: pan-y !important;
+}
+
+.touch-manipulation {
+  touch-action: manipulation !important;
+}
+
+/* ========================================================================== */
+/* 5. ACCESSIBILITY & MEDIA QUERIES                                          */
+/* ========================================================================== */
+
+/**
+ * High Contrast Mode Support
+ *
+ * Enhanced visibility for high contrast environments.
+ */
+@media (prefers-contrast: high) {
+  .mask-fade-top,
+  .mask-fade-bottom,
+  .mask-fade-left,
+  .mask-fade-right,
+  .mask-fade-short,
+  .mask-fade-long {
+    -webkit-mask-image: var(--mico-value-none) !important;
+    mask-image: var(--mico-value-none) !important;
+  }
+}
+
+/**
+ * Reduced Motion Support
+ *
+ * Respects user preferences for reduced motion.
+ */
+@media (prefers-reduced-motion: reduce) {
+  .will-change-transform,
+  .will-change-opacity,
+  .will-change-scroll {
+    will-change: var(--mico-will-change-auto) !important;
+  }
+}
+
+/**
+ * Print Media Support
+ *
+ * Optimized styles for print media.
+ */
+@media print {
+  .mask-fade-top,
+  .mask-fade-bottom,
+  .mask-fade-left,
+  .mask-fade-right,
+  .mask-fade-short,
+  .mask-fade-long {
+    -webkit-mask-image: var(--mico-value-none) !important;
+    mask-image: var(--mico-value-none) !important;
+  }
+
+  .bleed-full,
+  .bleed-column,
+  .bleed-column-sm,
+  .bleed-column-lg,
+  .bleed-x,
+  .bleed-y {
+    margin: var(--mico-value-0) !important;
+    width: var(--mico-value-auto) !important;
+  }
+}

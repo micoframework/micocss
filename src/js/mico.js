@@ -8,6 +8,9 @@
  * @author Michael Katiba
  */
 
+// Import theme toggle functionality
+// import './theme-toggle.js';
+
 // Import animation engine (if using modules)
 // import MicoAnimationEngine from './animation/animation-engine.js';
 // import { MicoEasing, MicoDuration, MicoAnimationUtils } from './animation/animation-helpers.js';

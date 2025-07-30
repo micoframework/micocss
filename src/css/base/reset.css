@@ -1,0 +1,257 @@
+/**
+ * ==========================================================================
+ * Mico CSS Framework - Reset & Normalize
+ * ==========================================================================
+ * 
+ * Modern CSS reset with sensible defaults for consistent cross-browser rendering.
+ * Based on modern reset principles with accessibility and performance in mind.
+ */
+
+/* ========================================================================== */
+/* 1. UNIVERSAL RESET                                                        */
+/* ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ========================================================================== */
+/* 2. ROOT & HTML                                                            */
+/* ========================================================================== */
+
+:root {
+  /* Prevent horizontal scrolling */
+  overflow-x: hidden;
+  
+  /* Smooth scrolling for anchor links */
+  scroll-behavior: smooth;
+  
+  /* Better text rendering */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  /* Set base font size for rem calculations */
+  font-size: 100%; /* 16px default */
+  
+  /* Prevent iOS text size adjust after orientation change */
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  
+  /* Better tap highlighting */
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ========================================================================== */
+/* 3. BODY                                                                   */
+/* ========================================================================== */
+
+body {
+  /* Typography defaults */
+  font-family: var(--mico-font-body, system-ui, -apple-system, sans-serif);
+  font-size: var(--mico-fs-base, 1rem);
+  line-height: var(--mico-lh-base, 1.6);
+  font-weight: var(--mico-fw-400, 400);
+  
+  /* Color defaults */
+  color: var(--mico-text-primary, #1a1a1a);
+  background-color: var(--mico-bg-primary, #ffffff);
+  
+  /* Remove default margins */
+  margin: 0;
+  
+  /* Prevent horizontal overflow */
+  overflow-x: hidden;
+  
+  /* Better text wrapping */
+  text-wrap: pretty;
+  
+  /* Smooth transitions for theme changes */
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+/* ========================================================================== */
+/* 4. TYPOGRAPHY ELEMENTS                                                    */
+/* ========================================================================== */
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--mico-font-display, inherit);
+  font-weight: var(--mico-fw-600, 600);
+  line-height: var(--mico-lh-tight, 1.2);
+  color: var(--mico-text-heading, inherit);
+  margin: 0;
+  text-wrap: balance;
+}
+
+/* Paragraphs */
+p {
+  margin: 0;
+  text-wrap: pretty;
+}
+
+/* Lists */
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Links */
+a {
+  color: var(--mico-color-accent, #0066cc);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover,
+a:focus {
+  color: var(--mico-color-accent-dark, #0052a3);
+}
+
+/* ========================================================================== */
+/* 5. MEDIA ELEMENTS                                                         */
+/* ========================================================================== */
+
+img, 
+picture, 
+video, 
+canvas, 
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  /* Prevent layout shift */
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 0.75rem;
+}
+
+/* ========================================================================== */
+/* 6. FORM ELEMENTS                                                          */
+/* ========================================================================== */
+
+input, 
+button, 
+textarea, 
+select {
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="url"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* ========================================================================== */
+/* 7. TABLE ELEMENTS                                                         */
+/* ========================================================================== */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0;
+}
+
+/* ========================================================================== */
+/* 8. ACCESSIBILITY                                                          */
+/* ========================================================================== */
+
+/* Screen reader only content */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid var(--mico-color-accent, #0066cc);
+  outline-offset: 2px;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  :root {
+    scroll-behavior: auto;
+  }
+}
+
+/* ========================================================================== */
+/* 9. PRINT STYLES                                                           */
+/* ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  
+  img {
+    page-break-inside: avoid;
+  }
+  
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+}

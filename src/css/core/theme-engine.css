@@ -1,0 +1,238 @@
+/**
+ * ==========================================================================
+ * Mico CSS Framework - Theme Engine
+ * ==========================================================================
+ * 
+ * Pure CSS theme system with automatic OS preference detection and manual
+ * toggle support. Uses CSS custom properties for seamless theming.
+ * 
+ * Features:
+ * - Automatic light/dark mode based on OS preference
+ * - Manual theme toggle override
+ * - Smooth transitions between themes
+ * - CSS-only implementation (no JavaScript required)
+ */
+
+/* ========================================================================== */
+/* 1. THEME PALETTE DEFINITIONS                                              */
+/* ========================================================================== */
+
+:root {
+  /* Light Theme Colors */
+  --light-page-bg: var(--mico-color-white);
+  --light-content-bg: var(--mico-color-white-2xlight);
+  --light-text-primary: var(--mico-color-gray-5xdark);
+  --light-text-secondary: var(--mico-color-gray-4xdark);
+  --light-border: var(--mico-color-gray-7xlight);
+  --light-accent: var(--mico-color-accent);
+  --light-accent-text: var(--mico-color-white);
+  --light-shadow: rgba(0, 0, 0, 0.1);
+
+  /* Dark Theme Colors */
+  --dark-page-bg: var(--mico-color-gray-6xdark);
+  --dark-content-bg: var(--mico-color-gray-5xdark);
+  --dark-text-primary: var(--mico-color-white-2xlight);
+  --dark-text-secondary: var(--mico-color-white-3xlight);
+  --dark-border: var(--mico-color-gray-4xdark);
+  --dark-accent: var(--mico-color-accent-light);
+  --dark-accent-text: var(--mico-color-gray-6xdark);
+  --dark-shadow: rgba(0, 0, 0, 0.3);
+}
+
+/* ========================================================================== */
+/* 2. DEFAULT THEME (LIGHT MODE)                                             */
+/* ========================================================================== */
+
+:root {
+  color-scheme: light;
+  
+  /* Apply light theme by default */
+  --page-bg: var(--light-page-bg);
+  --content-bg: var(--light-content-bg);
+  --color-text-primary: var(--light-text-primary);
+  --color-text-secondary: var(--light-text-secondary);
+  --color-border: var(--light-border);
+  --color-accent: var(--light-accent);
+  --color-accent-text: var(--light-accent-text);
+  --color-shadow: var(--light-shadow);
+}
+
+/* ========================================================================== */
+/* 3. AUTOMATIC DARK MODE (OS PREFERENCE)                                    */
+/* ========================================================================== */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    
+    /* Apply dark theme when OS prefers dark mode */
+    --page-bg: var(--dark-page-bg);
+    --content-bg: var(--dark-content-bg);
+    --color-text-primary: var(--dark-text-primary);
+    --color-text-secondary: var(--dark-text-secondary);
+    --color-border: var(--dark-border);
+    --color-accent: var(--dark-accent);
+    --color-accent-text: var(--dark-accent-text);
+    --color-shadow: var(--dark-shadow);
+  }
+}
+
+/* ========================================================================== */
+/* 4. MANUAL THEME TOGGLE (CSS-ONLY)                                         */
+/* ========================================================================== */
+
+/**
+ * Theme Toggle Logic:
+ * - Unchecked = Light mode (sun icon visible)
+ * - Checked = Dark mode (moon icon visible)
+ * 
+ * This overrides OS preferences when user manually toggles
+ */
+
+/* When toggle is UNCHECKED - Force Light Mode */
+body:has(.theme-toggle__input:not(:checked)) {
+  --page-bg: var(--light-page-bg) !important;
+  --content-bg: var(--light-content-bg) !important;
+  --color-text-primary: var(--light-text-primary) !important;
+  --color-text-secondary: var(--light-text-secondary) !important;
+  --color-border: var(--light-border) !important;
+  --color-accent: var(--light-accent) !important;
+  --color-accent-text: var(--light-accent-text) !important;
+  --color-shadow: var(--light-shadow) !important;
+  color-scheme: light;
+}
+
+/* When toggle is CHECKED - Force Dark Mode */
+body:has(.theme-toggle__input:checked) {
+  --page-bg: var(--dark-page-bg) !important;
+  --content-bg: var(--dark-content-bg) !important;
+  --color-text-primary: var(--dark-text-primary) !important;
+  --color-text-secondary: var(--dark-text-secondary) !important;
+  --color-border: var(--dark-border) !important;
+  --color-accent: var(--dark-accent) !important;
+  --color-accent-text: var(--dark-accent-text) !important;
+  --color-shadow: var(--dark-shadow) !important;
+  color-scheme: dark;
+}
+
+/* ========================================================================== */
+/* 5. THEME TRANSITIONS                                                      */
+/* ========================================================================== */
+
+/**
+ * Smooth transitions for theme changes
+ * Applied to all elements that use theme variables
+ */
+*,
+*::before,
+*::after {
+  transition-property: background-color, border-color, color, fill, stroke, box-shadow;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+/* Disable transitions during page load to prevent flash */
+.theme-loading * {
+  transition: none !important;
+}
+
+/* ========================================================================== */
+/* 6. THEME-AWARE SEMANTIC VARIABLES                                         */
+/* ========================================================================== */
+
+/**
+ * Map theme variables to semantic framework variables
+ * This allows the rest of the framework to use consistent naming
+ */
+:root {
+  /* Background mappings */
+  --mico-bg-primary: var(--page-bg);
+  --mico-bg-secondary: var(--content-bg);
+  
+  /* Text mappings */
+  --mico-text-primary: var(--color-text-primary);
+  --mico-text-secondary: var(--color-text-secondary);
+  
+  /* Border mappings */
+  --mico-border-primary: var(--color-border);
+  
+  /* Accent mappings */
+  --mico-accent-primary: var(--color-accent);
+  --mico-accent-text: var(--color-accent-text);
+  
+  /* Shadow mappings */
+  --mico-shadow-color: var(--color-shadow);
+}
+
+/* ========================================================================== */
+/* 7. ACCESSIBILITY CONSIDERATIONS                                           */
+/* ========================================================================== */
+
+/**
+ * Respect user motion preferences
+ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/**
+ * High contrast mode support
+ */
+@media (prefers-contrast: high) {
+  :root {
+    --light-border: var(--mico-color-black);
+    --dark-border: var(--mico-color-white);
+  }
+}
+
+/**
+ * Print media - always use light theme
+ */
+@media print {
+  :root {
+    --page-bg: var(--mico-color-white) !important;
+    --content-bg: var(--mico-color-white) !important;
+    --color-text-primary: var(--mico-color-black) !important;
+    --color-text-secondary: var(--mico-color-gray-3xdark) !important;
+    --color-border: var(--mico-color-gray-5xlight) !important;
+    color-scheme: light;
+  }
+}
+
+/* ========================================================================== */
+/* 8. FALLBACK SUPPORT                                                       */
+/* ========================================================================== */
+
+/**
+ * Fallback for browsers that don't support :has() selector
+ * Uses class-based approach as backup
+ */
+@supports not selector(:has(*)) {
+  /* Light theme fallback */
+  body.theme-light {
+    --page-bg: var(--light-page-bg) !important;
+    --content-bg: var(--light-content-bg) !important;
+    --color-text-primary: var(--light-text-primary) !important;
+    --color-text-secondary: var(--light-text-secondary) !important;
+    --color-border: var(--light-border) !important;
+    --color-accent: var(--light-accent) !important;
+    --color-accent-text: var(--light-accent-text) !important;
+    color-scheme: light;
+  }
+  
+  /* Dark theme fallback */
+  body.theme-dark {
+    --page-bg: var(--dark-page-bg) !important;
+    --content-bg: var(--dark-content-bg) !important;
+    --color-text-primary: var(--dark-text-primary) !important;
+    --color-text-secondary: var(--dark-text-secondary) !important;
+    --color-border: var(--dark-border) !important;
+    --color-accent: var(--dark-accent) !important;
+    --color-accent-text: var(--dark-accent-text) !important;
+    color-scheme: dark;
+  }
+}

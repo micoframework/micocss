@@ -1,43 +1,67 @@
 /**
- * Mico CSS Framework
- * A lightweight and versatile CSS framework focused on utility classes
+ * ==========================================================================
+ * Mico CSS Framework - Main Entry Point
+ * ==========================================================================
+ *
+ * This file imports all CSS modules in the correct cascading order:
+ * 1. Base - Reset, normalize, and foundational styles
+ * 2. Core - Variables and accessibility features
+ * 3. Themes - Theme system and color schemes
+ * 4. Semantic - HTML element styling
+ * 5. Utilities - Utility classes for layout, spacing, etc.
+ * 6. Components - Reusable component styles
+ * 7. Presets - Framework presets and configurations
+ *
  * Version: 1.0.0
  * Author: Michael Katiba
  */
 
 /* ========================================================================== */
-/* CORE FRAMEWORK FILES                                                       */
+/* 1. BASE LAYER - Foundation                                                */
 /* ========================================================================== */
+@import "base/reset.css";
 
-/* Base Variables and Core Styles */
+/* ========================================================================== */
+/* 2. CORE LAYER - Variables & Accessibility                                 */
+/* ========================================================================== */
 @import "core/variables.css";
 @import "core/accessibility.css";
 
 /* ========================================================================== */
-/* UTILITY CLASSES                                                           */
+/* 3. THEME LAYER - Theme System                                             */
 /* ========================================================================== */
+@import "core/theme-engine.css";
 
-/* Core Utilities */
-@import "utilities/miscellaneous.css";
-@import "utilities/borders.css";
-@import "utilities/spacing.css";
+/* ========================================================================== */
+/* 4. SEMANTIC LAYER - HTML Elements                                         */
+/* ========================================================================== */
+@import "semantic/elements.css";
+
+/* ========================================================================== */
+/* 5. UTILITIES LAYER - Utility Classes                                      */
+/* ========================================================================== */
 @import "utilities/layout.css";
+@import "utilities/spacing.css";
 @import "utilities/typography.css";
 @import "utilities/colors.css";
-@import "utilities/states.css";
+@import "utilities/borders.css";
 @import "utilities/animation.css";
 @import "utilities/responsive.css";
+@import "utilities/states.css";
+@import "utilities/semantic.css";
+@import "utilities/transforms.css";
+@import "utilities/effects.css";
+@import "utilities/miscellaneous.css";
 
 /* ========================================================================== */
-/* COMPONENT STYLES                                                          */
+/* 6. COMPONENTS LAYER - Component Styles                                    */
 /* ========================================================================== */
-
-/* Component-like Utilities */
 @import "components/buttons.css";
+@import "components/theme-toggle.css";
 
 /* ========================================================================== */
-/* PRESETS & INTEGRATIONS                                                    */
+/* 7. PRESETS LAYER - Framework Presets                                      */
 /* ========================================================================== */
-
-/* Framework Presets */
+@import "presets/styleguide.css";
 @import "presets/oxygenbuilder.pre.css";
+@import "presets/article.pre.css";
