@@ -1,9 +1,10 @@
 /**
- * MicoCSS JIT Runtime
- * This script handles the dynamic application of CSS styles based on DOM content
+ * MicoCSS JIT Runtime v2.0
+ * Handles initial DOM scan, dynamically added elements,
+ * and dynamic attribute changes (e.g., class toggling).
  */
 (function () {
-  // Initialize when DOM is ready
+  // Wait for the DOM to be ready before initializing
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
   } else {
@@ -11,97 +12,119 @@
   }
 
   function init() {
+    // Retrieve the pre-generated CSS map and global styles
     const map = window.JIT_CSS_MAP || {};
-    const global = window.JIT_GLOBAL_CSS || "";
-    const used = new Set();
-    const style = document.createElement("style");
-    style.setAttribute("data-micocss-jit", "true");
-    document.head.appendChild(style);
+    const globalCSS = window.JIT_GLOBAL_CSS || "";
     
-    // Debug: Log the map to see what classes are available
-    console.log('JIT CSS Map:', map);
-    console.log('Map keys:', Object.keys(map));
+    // A Set to keep track of which CSS rules have already been injected
+    const injectedRules = new Set();
     
-    // Apply global styles immediately
-    if (global) {
-      style.textContent += global + "\n";
-      console.log('Applied global CSS');
+    // Create a single <style> tag to hold all our generated styles
+    const styleSheet = document.createElement("style");
+    styleSheet.setAttribute("data-micocss-jit", "true");
+    document.head.appendChild(styleSheet);
+    
+    // Apply global styles (:root variables, semantic tag selectors, etc.) immediately
+    // These styles are always included regardless of what classes are used in the HTML
+    if (globalCSS && !injectedRules.has('__global__')) {
+      styleSheet.textContent += globalCSS + "\n";
+      injectedRules.add('__global__');
+      console.log('✅ Applied global CSS including semantic tag selectors');
     }
 
+    /**
+     * The core engine. Takes an array of class names, checks if they
+     * exist in the map and haven't been injected yet, and then injects
+     * the corresponding CSS rules into our stylesheet.
+     * @param {string[]} classList - An array of class names to process.
+     */
     function applyStyles(classList) {
-      console.log('Applying styles for classes:', classList);
-      for (const cls of classList) {
-        const direct = map[cls];
-        const hover = map[`${cls}:hover`];
-        const focus = map[`${cls}:focus`];
-        const active = map[`${cls}:active`];
-  
-        if (direct && !used.has(cls)) {
-          console.log(`Applying direct style for .${cls}:`, direct);
-          used.add(cls);
-          style.textContent += `.${cls}{${direct}}\n`;
-        }
-        if (hover && !used.has(`${cls}:hover`)) {
-          console.log(`Applying hover style for .${cls}:hover:`, hover);
-          used.add(`${cls}:hover`);
-          style.textContent += `.${cls}:hover{${hover}}\n`;
-        }
-        if (focus && !used.has(`${cls}:focus`)) {
-          console.log(`Applying focus style for .${cls}:focus:`, focus);
-          used.add(`${cls}:focus`);
-          style.textContent += `.${cls}:focus{${focus}}\n`;
-        }
-        if (active && !used.has(`${cls}:active`)) {
-          console.log(`Applying active style for .${cls}:active:`, active);
-          used.add(`${cls}:active`);
-          style.textContent += `.${cls}:active{${active}}\n`;
-        }
-      }
-    }
-    function scanElement(element) {
-      if (element.classList && element.classList.length) {
-        console.log('Scanning element:', element, 'with classes:', Array.from(element.classList));
-        applyStyles(Array.from(element.classList));
-      }
-    }
-  
-    function scanDOM(root = document.body) {
-      console.log('Starting DOM scan from:', root);
-      // Handle the root element itself
-      scanElement(root);
-      
-      // Handle all descendants
-      const elements = root.getElementsByTagName('*');
-      for (const element of elements) {
-        scanElement(element);
-      }
-    }
-  
-    // Set up MutationObserver to handle dynamically added elements
-    const observer = new MutationObserver((mutations) => {
-      mutations.forEach((mutation) => {
-        // Handle added nodes
-        mutation.addedNodes.forEach((node) => {
-          if (node.nodeType === 1) { // ELEMENT_NODE
-            scanElement(node);
-            // Scan descendants of added node
-            const elements = node.getElementsByTagName('*');
-            for (const element of elements) {
-              scanElement(element);
-            }
+      let cssToInject = '';
+      for (const className of classList) {
+        // We check for the base class and its common pseudo-states
+        const states = {
+          base: className,
+          hover: `${className}:hover`,
+          focus: `${className}:focus`,
+          active: `${className}:active`,
+        };
+
+        for (const state in states) {
+          const mapKey = states[state];
+          if (map[mapKey] && !injectedRules.has(mapKey)) {
+            // Found a valid rule that we haven't used yet.
+            injectedRules.add(mapKey); // Mark it as used
+            
+            // Reconstruct the full CSS rule
+            const selector = mapKey.includes(':') ? `.${mapKey.replace(':', '\\:')}` : `.${mapKey}`;
+            cssToInject += `${selector} { ${map[mapKey]} }\n`;
           }
+        }
+      }
+      
+      // Append the new rules in a single batch for better performance
+      if (cssToInject) {
+        styleSheet.textContent += cssToInject;
+      }
+    }
+  
+    /**
+     * Scans a given element and all of its descendants for classes to apply.
+     * @param {HTMLElement} rootElement - The element to start scanning from.
+     */
+    function scanAndApply(rootElement) {
+        if (!rootElement || rootElement.nodeType !== 1) return;
+
+        const elementsToProcess = new Set([rootElement]);
+        rootElement.querySelectorAll('[class]').forEach(el => elementsToProcess.add(el));
+
+        const allClasses = new Set();
+        elementsToProcess.forEach(el => {
+            el.classList.forEach(cls => allClasses.add(cls));
         });
-      });
+
+        applyStyles(Array.from(allClasses));
+    }
+  
+    // --- THE FIX IS HERE: A MORE POWERFUL MUTATION OBSERVER ---
+
+    const observer = new MutationObserver((mutationsList) => {
+      const classesToProcess = new Set();
+
+      for (const mutation of mutationsList) {
+        // Type 1: A class attribute was added/changed on an existing element
+        if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+          mutation.target.classList.forEach(cls => classesToProcess.add(cls));
+        }
+        // Type 2: New elements were added to the DOM
+        else if (mutation.type === 'childList') {
+          mutation.addedNodes.forEach(node => {
+            if (node.nodeType === 1) { // Ensure it's an element
+              // Add the new element's own classes
+              node.classList.forEach(cls => classesToProcess.add(cls));
+              // Add classes from all descendants of the new element
+              node.querySelectorAll('[class]').forEach(el => {
+                el.classList.forEach(cls => classesToProcess.add(cls));
+              });
+            }
+          });
+        }
+      }
+      
+      if (classesToProcess.size > 0) {
+        applyStyles(Array.from(classesToProcess));
+      }
     });
   
-    // Start observing the document with configured parameters
+    // Configure and start the observer
     observer.observe(document.body, { 
-      childList: true,
-      subtree: true 
+      attributes: true,       // *** THIS IS THE KEY: Watch for attribute changes ***
+      attributeFilter: ['class'], // Only care about the 'class' attribute for performance
+      childList: true,        // Watch for added/removed nodes
+      subtree: true           // Watch all descendants
     });
   
-    // Perform initial scan
-    console.log('Performing initial DOM scan');
-    scanDOM();
+    // Perform the initial full-body scan on page load
+    scanAndApply(document.body);
   }
 })();

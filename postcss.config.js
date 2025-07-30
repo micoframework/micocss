@@ -1,16 +1,6 @@
 module.exports = (ctx) => ({
   plugins: [
     require('postcss-import'),
-    require('postcss-preset-env')({
-      stage: 2,
-      features: {
-        'nesting-rules': true,
-        'custom-media-queries': true,
-        'media-query-ranges': true
-      },
-      // Important: Don't preserve original declarations to avoid duplicates
-      preserve: false
-    }),
     ctx.env === 'production' ? require('cssnano')({
       preset: ['default', {
         discardComments: {
@@ -20,16 +10,19 @@ module.exports = (ctx) => ({
         normalizeWhitespace: true,
         // Disable calc optimization to avoid errors
         calc: false,
-        // IMPORTANT: Disable mergeRules to prevent splitting multi-property classes
+        // IMPORTANT: Disable all rule manipulation to preserve utility class structure
         mergeRules: false,
-        // Remove duplicate properties
-        discardDuplicates: true,
-        // Disable mergeLonghand to preserve multi-property utility classes
         mergeLonghand: false,
-        // Disable minifySelectors to preserve exact class names
-        minifySelectors: false
+        minifySelectors: false,
+        // Disable duplicate removal to prevent splitting multi-property classes
+        discardDuplicates: false,
+        // Disable other optimizations that might split rules
+        reduceIdents: false,
+        zindex: false,
+        discardOverridden: false
       }]
-    }) : false,
-    require('autoprefixer')
+    }) : false
+    // Disable autoprefixer completely to prevent CSS custom property processing
+    // require('autoprefixer')
   ]
 });

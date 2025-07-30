@@ -53,7 +53,7 @@
   margin: var(--mico-value-0);
 
   /* Borders and appearance */
-  border: var(--mico-border-width-1) solid transparent;
+  border: var(--mico-border-width-xxs) solid transparent;
   border-radius: var(--mico-btn-radius-md);
 
   /* Interaction */
@@ -157,23 +157,23 @@
 /* Outline Style - Transparent background with colored border and text */
 .btn-outline {
   background-color: var(--mico-value-transparent) !important;
-  border-style: solid;
-  border-width: var(--mico-border-width-1);
+  border-style: var(--mico-border-solid);
+  border-width: var(--mico-border-width-xxs);
 }
 
 .btn-outline-primary {
-  color: var(--mico-color-primary-dark);
-  border-color: var(--mico-color-primary-dark);
+  color: var(--color-text-primary,var(--mico-color-primary-dark));
+  border-color: var(--color-border,var(--mico-color-primary-dark));
 }
 
 .btn-outline-secondary {
-  color: var(--mico-color-secondary-dark);
-  border-color: var(--mico-color-secondary-dark);
+  color: var(--color-text-primary,var(--mico-color-secondary-dark));
+  border-color: var(--color-border,var(--mico-color-secondary-dark));
 }
 
 .btn-outline-accent {
-  color: var(--mico-color-accent-dark);
-  border-color: var(--mico-color-accent-dark);
+  color: var(--color-text-primary,var(--mico-color-accent-dark));
+  border-color: var(--color-border,var(--mico-color-accent-dark));
 }
 
 .btn-outline-success {
@@ -217,7 +217,12 @@
   background-color: var(--mico-value-transparent) !important;
   border-color: var(--mico-value-transparent);
   color: var(--mico-color-gray-3xdark);
+
+  &:hover{
+    background-color: var(--mico-color-accent-whisper);
+  }
 }
+
 
 
 /* ========================================================================== */

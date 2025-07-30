@@ -58,8 +58,17 @@ function processSelector(selector, styles, map) {
 
 // Helper function to determine if a selector should be in global CSS
 function isGlobalSelector(selector) {
-  // Only include :root and @-rules in global CSS
-  return selector.trim().startsWith(':root') || selector.trim().startsWith('@');
+  const trimmedSelector = selector.trim();
+
+  // Always include :root and @-rules in global CSS
+  if (trimmedSelector.startsWith(':root') || trimmedSelector.startsWith('@')) {
+    return true;
+  }
+
+  // Note: Semantic HTML tag selectors are excluded from JIT global CSS
+  // as per user requirements to keep JIT focused on utility classes only
+
+  return false;
 }
 
 // Main CSS parsing and map generation function
@@ -159,11 +168,13 @@ try {
   }
   
   // Read and process CSS, then generate JIT bundle
-  generateJITBundle();
+  const success = generateJITBundle();
 
-  console.log(`✅ Generated MicoCSS JIT bundle with ${Object.keys(map).length} entries + global styles`);
-  console.log(`📦 Distribution file: ${CONFIG.outputDistPath}`);
-  console.log(`🧪 Sandbox test file: ${CONFIG.outputSandboxPath}`);
+  if (success) {
+    console.log(`✅ Generated MicoCSS JIT bundle successfully`);
+    console.log(`📦 Distribution file: ${CONFIG.outputDistPath}`);
+    console.log(`🧪 Sandbox test file: ${CONFIG.outputSandboxPath}`);
+  }
 
 } catch (error) {
   console.error("❌ Error generating bundle:", error.message);

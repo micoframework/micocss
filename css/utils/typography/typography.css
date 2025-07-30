@@ -3,11 +3,11 @@
 /* MICO CSS FRAMEWORK - TYPOGRAPHY UTILITIES                                 */
 /* ========================================================================== */
 
-.font-sans { font-family: var(--mico-font-sans) !important; }
-.font-serif { font-family: var(--mico-font-serif) !important; }
-.font-mono { font-family: var(--mico-font-mono) !important; }
+
 .font-display { font-family: var(--mico-font-display) !important; }
 .font-body { font-family: var(--mico-font-body) !important; }
+.font-mono { font-family: var(--mico-font-mono) !important; }
+.font-num { font-family: var(--mico-font-num) !important; }
 
 .fs-xxs { font-size: var(--mico-fs-xxs) !important; }
 .fs-xs { font-size: var(--mico-fs-xs) !important; }

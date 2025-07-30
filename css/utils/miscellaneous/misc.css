@@ -52,7 +52,8 @@ html, *::before, *::after {
  * Responsive typography scale using CSS custom properties
  */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--mico-font-primary);
+  font-family: var(--mico-font-display);
+  color: var(--color-text-primary);
   user-select: text;
   cursor: text;
   font-weight: var(--mico-fw-400);
@@ -60,8 +61,8 @@ h1, h2, h3, h4, h5, h6 {
   text-wrap-style: balance;
 }
 
-h1 { font-size: var(--mico-fs-5xl) !important; }
-h2 { font-size: var(--mico-fs-3xl); }
+h1 { font-size: var(--mico-fs-xxxl) !important; }
+h2 { font-size: var(--mico-fs-xxl); }
 h3 { font-size: var(--mico-fs-xl); }
 h4 { font-size: var(--mico-fs-lg); }
 h5 { font-size: var(--mico-fs-md); }
@@ -72,6 +73,7 @@ h6 { font-size: var(--mico-fs-sm); }
  * Consistent spacing and typography for body text
  */
 p {
+  color: var(--color-text-secondary);
   font-size: var(--mico-fs-md);
   font-weight: var(--mico-fw-300);
   line-height: var(--mico-lh-md);

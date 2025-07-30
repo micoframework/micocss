@@ -19,96 +19,19 @@
  * - Child element dividers with consistent styling
  *
  * USAGE:
- * Borders: .border, .border-2, .border-primary
+ * Borders: .border, .border-xs, .border-primary
  * Radius: .rounded, .rounded-lg, .rounded-full
- * Outlines: .outline, .outline-2, .outline-primary
+ * Outlines: .outline, .outline-xs, .outline-primary
  * Shadows: .shadow, .shadow-lg, .shadow-none
- * Rings: .ring, .ring-2, .ring-primary
+ * Rings: .ring, .ring-xs, .ring-primary
  * Dividers: .divide-y, .divide-x, .divide-gray-200
  */
 
-/* ========================================================================== */
-/* BORDER WIDTH UTILITIES                                                    */
-/* ========================================================================== */
-
-/**
- * Border Width Control
- *
- * These utilities control the thickness of borders on all sides or specific sides.
- * Use .border-0 to remove borders completely.
- */
-
-/* All sides */
-.border-0 { border-width: var(--mico-border-width-0) !important; }
-.border-1  { border-width: var(--mico-border-width-1) !important; }
-.border-2 { border-width: var(--mico-border-width-2) !important; }
-.border-4 { border-width: var(--mico-border-width-4) !important; }
-.border-8 { border-width: var(--mico-border-width-8) !important; }
-
-.border-solid-0 { border-width: var(--mico-border-width-0) !important; border-style: var(--mico-border-solid) !important; }
-.border-solid-1  { border-width: var(--mico-border-width-1) !important; border-style: var(--mico-border-solid) !important; }
-.border-solid-2 { border-width: var(--mico-border-width-2) !important; border-style: var(--mico-border-solid) !important; }
-.border-solid-4 { border-width: var(--mico-border-width-4) !important; border-style: var(--mico-border-solid) !important; }
-.border-solid-8 { border-width: var(--mico-border-width-8) !important; border-style: var(--mico-border-solid) !important; }
-
-.border-dashed-0 { border-width: var(--mico-border-width-0) !important; border-style: var(--mico-border-dashed) !important; }
-.border-dashed-1  { border-width: var(--mico-border-width-1) !important; border-style: var(--mico-border-dashed) !important; }
-.border-dashed-2 { border-width: var(--mico-border-width-2) !important; border-style: var(--mico-border-dashed) !important; }
-.border-dashed-4 { border-width: var(--mico-border-width-4) !important; border-style: var(--mico-border-dashed) !important; }
-.border-dashed-8 { border-width: var(--mico-border-width-8) !important; border-style: var(--mico-border-dashed) !important; }
-
-.border-dotted-0 { border-width: var(--mico-border-width-0) !important; border-style: var(--mico-border-dotted) !important; }
-.border-dotted-1  { border-width: var(--mico-border-width-1) !important; border-style: var(--mico-border-dotted) !important; }
-.border-dotted-2 { border-width: var(--mico-border-width-2) !important; border-style: var(--mico-border-dotted) !important; }
-.border-dotted-4 { border-width: var(--mico-border-width-4) !important; border-style: var(--mico-border-dotted) !important; }
-.border-dotted-8 { border-width: var(--mico-border-width-8) !important; border-style: var(--mico-border-dotted) !important; }
-
-/* ========================================================================== */
-/* BORDER WIDTH UTILITIES - INDIVIDUAL SIDES                                 */
-
-/* Individual sides */
-.border-solid-t-0 { border-top-width: var(--mico-border-width-0) !important; border-top-style: var(--mico-border-solid) !important; }
-.border-solid-t-1 { border-top-width: var(--mico-border-width-1) !important; border-top-style: var(--mico-border-solid) !important; }
-.border-solid-t-2 { border-top-width: var(--mico-border-width-2) !important; border-top-style: var(--mico-border-solid) !important; }
-.border-solid-t-4 { border-top-width: var(--mico-border-width-4) !important; border-top-style: var(--mico-border-solid) !important; }
-.border-solid-t-8 { border-top-width: var(--mico-border-width-8) !important; border-top-style: var(--mico-border-solid) !important; }
-
-.border-solid-r-0 { border-right-width: var(--mico-border-width-0) !important; border-right-style: var(--mico-border-solid) !important; }
-.border-solid-r-1 { border-right-width: var(--mico-border-width-1) !important; border-right-style: var(--mico-border-solid) !important; }
-.border-solid-r-2 { border-right-width: var(--mico-border-width-2) !important; border-right-style: var(--mico-border-solid) !important; }
-.border-solid-r-4 { border-right-width: var(--mico-border-width-4) !important; border-right-style: var(--mico-border-solid) !important; }
-.border-solid-r-8 { border-right-width: var(--mico-border-width-8) !important; border-right-style: var(--mico-border-solid) !important; }
-
-.border-solid-b-0 { border-bottom-width: var(--mico-border-width-0) !important; border-bottom-style: var(--mico-border-solid) !important; }
-.border-solid-b-1 { border-bottom-width: var(--mico-border-width-1) !important; border-bottom-style: var(--mico-border-solid) !important; }
-.border-solid-b-2 { border-bottom-width: var(--mico-border-width-2) !important; border-bottom-style: var(--mico-border-solid) !important; }
-.border-solid-b-4 { border-bottom-width: var(--mico-border-width-4) !important; border-bottom-style: var(--mico-border-solid) !important; }
-.border-solid-b-8 { border-bottom-width: var(--mico-border-width-8) !important; border-bottom-style: var(--mico-border-solid) !important; }
-
-.border-solid-l-0 { border-left-width: var(--mico-border-width-0) !important; border-left-style: var(--mico-border-solid) !important; }
-.border-solid-l-1 { border-left-width: var(--mico-border-width-1) !important; border-left-style: var(--mico-border-solid) !important; }
-.border-solid-l-2 { border-left-width: var(--mico-border-width-2) !important; border-left-style: var(--mico-border-solid) !important; }
-.border-solid-l-4 { border-left-width: var(--mico-border-width-4) !important; border-left-style: var(--mico-border-solid) !important; }
-.border-solid-l-8 { border-left-width: var(--mico-border-width-8) !important; border-left-style: var(--mico-border-solid) !important; }
-
-/* Horizontal and vertical */
-.border-x-0 { border-left-width: var(--mico-border-width-0) !important; border-right-width: var(--mico-border-width-0) !important; }
-.border-x-1 { border-left-width: var(--mico-border-width-1) !important; border-right-width: var(--mico-border-width-1) !important; }
-.border-x-2 { border-left-width: var(--mico-border-width-2) !important; border-right-width: var(--mico-border-width-2) !important; }
-.border-x-4 { border-left-width: var(--mico-border-width-4) !important; border-right-width: var(--mico-border-width-4) !important; }
-.border-x-8 { border-left-width: var(--mico-border-width-8) !important; border-right-width: var(--mico-border-width-8) !important; }
-
-.border-y-0 { border-top-width: var(--mico-border-width-0) !important; border-bottom-width: var(--mico-border-width-0) !important; }
-.border-y-1 { border-top-width: var(--mico-border-width-1) !important; border-bottom-width: var(--mico-border-width-1) !important; }
-.border-y-2 { border-top-width: var(--mico-border-width-2) !important; border-bottom-width: var(--mico-border-width-2) !important; }
-.border-y-4 { border-top-width: var(--mico-border-width-4) !important; border-bottom-width: var(--mico-border-width-4) !important; }
-.border-y-8 { border-top-width: var(--mico-border-width-8) !important; border-bottom-width: var(--mico-border-width-8) !important; }
-
-/* ========================================================================== */
+ /* ========================================================================== */
 /* BORDER STYLE UTILITIES                                                    */
 /* ========================================================================== */
 
-/**
+/*
  * Border Style Control
  *
  * These utilities control the style of borders (solid, dashed, dotted, etc.).
@@ -118,6 +41,86 @@
 .border-dotted { border-style: var(--mico-border-dotted) !important; }
 .border-double { border-style: var(--mico-border-double) !important; }
 .border-none   { border-style: var(--mico-border-none) !important; }
+
+/* ========================================================================== */
+/* BORDER WIDTH UTILITIES                                                    */
+/* ========================================================================== */
+
+/*
+ * Border Width Control
+ *
+ * These utilities control the thickness of borders on all sides or specific sides.
+ * Use .border-none to remove borders completely.
+ */
+
+/* All sides */
+.border-0 { border-width: var(--mico-border-width-0) !important; }
+.border-none { border-width: var(--mico-border-width-none) !important; }
+.border-xxs  { border-width: var(--mico-border-width-xxs) !important; }
+.border-xs { border-width: var(--mico-border-width-xs) !important; }
+.border-sm { border-width: var(--mico-border-width-xs) !important; }
+.border-md { border-width: var(--mico-border-width-md) !important; }
+
+.border-solid-none { border-width: var(--mico-border-width-none) !important; border-style: var(--mico-border-solid) !important; }
+.border-solid-xxs  { border-width: var(--mico-border-xxs) !important; border-style: var(--mico-border-solid) !important; }
+.border-solid-xs { border-width: var(--mico-border-xs) !important; border-style: var(--mico-border-solid) !important; }
+.border-solid-sm { border-width: var(--mico-border-sm) !important; border-style: var(--mico-border-solid) !important; }
+.border-solid-md { border-width: var(--mico-border-md) !important; border-style: var(--mico-border-solid) !important; }
+
+.border-dashed-none { border-width: var(--mico-border-width-none) !important; border-style: var(--mico-border-dashed) !important; }
+.border-dashed-xxs  { border-width: var(--mico-border-xxs) !important; border-style: var(--mico-border-dashed) !important; }
+.border-dashed-xs { border-width: var(--mico-border-xs) !important; border-style: var(--mico-border-dashed) !important; }
+.border-dashed-sm { border-width: var(--mico-border-sm) !important; border-style: var(--mico-border-dashed) !important; }
+.border-dashed-md { border-width: var(--mico-border-md) !important; border-style: var(--mico-border-dashed) !important; }
+
+.border-dotted-none { border-width: var(--mico-border-width-none) !important; border-style: var(--mico-border-dotted) !important; }
+.border-dotted-xxs  { border-width: var(--mico-border-xxs) !important; border-style: var(--mico-border-dotted) !important; }
+.border-dotted-xs { border-width: var(--mico-border-xs) !important; border-style: var(--mico-border-dotted) !important; }
+.border-dotted-sm { border-width: var(--mico-border-sm) !important; border-style: var(--mico-border-dotted) !important; }
+.border-dotted-md { border-width: var(--mico-border-md) !important; border-style: var(--mico-border-dotted) !important; }
+
+/* ========================================================================== */
+/* BORDER WIDTH UTILITIES - INDIVIDUAL SIDES                                 */
+
+/* Individual sides */
+.border-solid-t-none { border-top-width: var(--mico-border-width-none) !important; border-top-style: var(--mico-border-solid) !important; }
+.border-solid-t-xxs { border-top-width: var(--mico-border-xxs) !important; border-top-style: var(--mico-border-solid) !important; }
+.border-solid-t-xs { border-top-width: var(--mico-border-xs) !important; border-top-style: var(--mico-border-solid) !important; }
+.border-solid-t-sm { border-top-width: var(--mico-border-sm) !important; border-top-style: var(--mico-border-solid) !important; }
+.border-solid-t-md { border-top-width: var(--mico-border-md) !important; border-top-style: var(--mico-border-solid) !important; }
+
+.border-solid-r-none { border-right-width: var(--mico-border-width-none) !important; border-right-style: var(--mico-border-solid) !important; }
+.border-solid-r-xxs { border-right-width: var(--mico-border-xxs) !important; border-right-style: var(--mico-border-solid) !important; }
+.border-solid-r-xs { border-right-width: var(--mico-border-xs) !important; border-right-style: var(--mico-border-solid) !important; }
+.border-solid-r-sm { border-right-width: var(--mico-border-sm) !important; border-right-style: var(--mico-border-solid) !important; }
+.border-solid-r-md { border-right-width: var(--mico-border-md) !important; border-right-style: var(--mico-border-solid) !important; }
+
+.border-solid-b-none { border-bottom-width: var(--mico-border-width-none) !important; border-bottom-style: var(--mico-border-solid) !important; }
+.border-solid-b-xxs { border-bottom-width: var(--mico-border-xxs) !important; border-bottom-style: var(--mico-border-solid) !important; }
+.border-solid-b-xs { border-bottom-width: var(--mico-border-xs) !important; border-bottom-style: var(--mico-border-solid) !important; }
+.border-solid-b-sm { border-bottom-width: var(--mico-border-sm) !important; border-bottom-style: var(--mico-border-solid) !important; }
+.border-solid-b-md { border-bottom-width: var(--mico-border-md) !important; border-bottom-style: var(--mico-border-solid) !important; }
+
+.border-solid-l-none { border-left-width: var(--mico-border-width-none) !important; border-left-style: var(--mico-border-solid) !important; }
+.border-solid-l-xxs { border-left-width: var(--mico-border-xxs) !important; border-left-style: var(--mico-border-solid) !important; }
+.border-solid-l-xs { border-left-width: var(--mico-border-xs) !important; border-left-style: var(--mico-border-solid) !important; }
+.border-solid-l-sm { border-left-width: var(--mico-border-sm) !important; border-left-style: var(--mico-border-solid) !important; }
+.border-solid-l-md { border-left-width: var(--mico-border-md) !important; border-left-style: var(--mico-border-solid) !important; }
+
+/* Horizontal and vertical */
+.border-x-none { border-left-width: var(--mico-border-width-none) !important; border-right-width: var(--mico-border-width-none) !important; }
+.border-x-xxs { border-left-width: var(--mico-border-xxs) !important; border-right-width: var(--mico-border-xxs) !important; }
+.border-x-xs { border-left-width: var(--mico-border-xs) !important; border-right-width: var(--mico-border-xs) !important; }
+.border-x-sm { border-left-width: var(--mico-border-sm) !important; border-right-width: var(--mico-border-sm) !important; }
+.border-x-md { border-left-width: var(--mico-border-md) !important; border-right-width: var(--mico-border-md) !important; }
+
+.border-y-none { border-top-width: var(--mico-border-width-none) !important; border-bottom-width: var(--mico-border-width-none) !important; }
+.border-y-xxs { border-top-width: var(--mico-border-xxs) !important; border-bottom-width: var(--mico-border-xxs) !important; }
+.border-y-xs { border-top-width: var(--mico-border-xs) !important; border-bottom-width: var(--mico-border-xs) !important; }
+.border-y-sm { border-top-width: var(--mico-border-sm) !important; border-bottom-width: var(--mico-border-sm) !important; }
+.border-y-md { border-top-width: var(--mico-border-md) !important; border-bottom-width: var(--mico-border-md) !important; }
+
+
 
 /* ========================================================================== */
 /* BORDER COLOR UTILITIES                                                    */
@@ -251,8 +254,8 @@
 .rounded-md   { border-radius: var(--mico-radius-md); }
 .rounded-lg   { border-radius: var(--mico-radius-lg); }
 .rounded-xl   { border-radius: var(--mico-radius-xl); }
-.rounded-2xl  { border-radius: var(--mico-radius-2xl); }
-.rounded-3xl  { border-radius: var(--mico-radius-3xl); }
+.rounded-xxl  { border-radius: var(--mico-radius-xxl); }
+.rounded-xxxl  { border-radius: var(--mico-radius-xxxl); }
 .rounded-full { border-radius: var(--mico-radius-full); }
 
 /* Individual corners */
@@ -261,8 +264,8 @@
 .rounded-t-md   { border-top-left-radius: var(--mico-radius-md); border-top-right-radius: var(--mico-radius-md); }
 .rounded-t-lg   { border-top-left-radius: var(--mico-radius-lg); border-top-right-radius: var(--mico-radius-lg); }
 .rounded-t-xl   { border-top-left-radius: var(--mico-radius-xl); border-top-right-radius: var(--mico-radius-xl); }
-.rounded-t-2xl  { border-top-left-radius: var(--mico-radius-2xl); border-top-right-radius: var(--mico-radius-2xl); }
-.rounded-t-3xl  { border-top-left-radius: var(--mico-radius-3xl); border-top-right-radius: var(--mico-radius-3xl); }
+.rounded-t-xxl  { border-top-left-radius: var(--mico-radius-xxl); border-top-right-radius: var(--mico-radius-xxl); }
+.rounded-t-xxxl  { border-top-left-radius: var(--mico-radius-xxxl); border-top-right-radius: var(--mico-radius-xxxl); }
 .rounded-t-full { border-top-left-radius: var(--mico-radius-full); border-top-right-radius: var(--mico-radius-full); }
 
 .rounded-r-none { border-top-right-radius: var(--mico-radius-none); border-bottom-right-radius: var(--mico-radius-none); }
@@ -270,8 +273,8 @@
 .rounded-r-md   { border-top-right-radius: var(--mico-radius-md); border-bottom-right-radius: var(--mico-radius-md); }
 .rounded-r-lg   { border-top-right-radius: var(--mico-radius-lg); border-bottom-right-radius: var(--mico-radius-lg); }
 .rounded-r-xl   { border-top-right-radius: var(--mico-radius-xl); border-bottom-right-radius: var(--mico-radius-xl); }
-.rounded-r-2xl  { border-top-right-radius: var(--mico-radius-2xl); border-bottom-right-radius: var(--mico-radius-2xl); }
-.rounded-r-3xl  { border-top-right-radius: var(--mico-radius-3xl); border-bottom-right-radius: var(--mico-radius-3xl); }
+.rounded-r-xxl  { border-top-right-radius: var(--mico-radius-xxl); border-bottom-right-radius: var(--mico-radius-xxl); }
+.rounded-r-xxxl  { border-top-right-radius: var(--mico-radius-xxxl); border-bottom-right-radius: var(--mico-radius-xxxl); }
 .rounded-r-full { border-top-right-radius: var(--mico-radius-full); border-bottom-right-radius: var(--mico-radius-full); }
 
 .rounded-b-none { border-bottom-left-radius: var(--mico-radius-none); border-bottom-right-radius: var(--mico-radius-none); }
@@ -279,8 +282,8 @@
 .rounded-b-md   { border-bottom-left-radius: var(--mico-radius-md); border-bottom-right-radius: var(--mico-radius-md); }
 .rounded-b-lg   { border-bottom-left-radius: var(--mico-radius-lg); border-bottom-right-radius: var(--mico-radius-lg); }
 .rounded-b-xl   { border-bottom-left-radius: var(--mico-radius-xl); border-bottom-right-radius: var(--mico-radius-xl); }
-.rounded-b-2xl  { border-bottom-left-radius: var(--mico-radius-2xl); border-bottom-right-radius: var(--mico-radius-2xl); }
-.rounded-b-3xl  { border-bottom-left-radius: var(--mico-radius-3xl); border-bottom-right-radius: var(--mico-radius-3xl); }
+.rounded-b-xxl  { border-bottom-left-radius: var(--mico-radius-xxl); border-bottom-right-radius: var(--mico-radius-xxl); }
+.rounded-b-xxxl  { border-bottom-left-radius: var(--mico-radius-xxxl); border-bottom-right-radius: var(--mico-radius-xxxl); }
 .rounded-b-full { border-bottom-left-radius: var(--mico-radius-full); border-bottom-right-radius: var(--mico-radius-full); }
 
 .rounded-l-none { border-top-left-radius: var(--mico-radius-none); border-bottom-left-radius: var(--mico-radius-none); }
@@ -288,8 +291,8 @@
 .rounded-l-md   { border-top-left-radius: var(--mico-radius-md); border-bottom-left-radius: var(--mico-radius-md); }
 .rounded-l-lg   { border-top-left-radius: var(--mico-radius-lg); border-bottom-left-radius: var(--mico-radius-lg); }
 .rounded-l-xl   { border-top-left-radius: var(--mico-radius-xl); border-bottom-left-radius: var(--mico-radius-xl); }
-.rounded-l-2xl  { border-top-left-radius: var(--mico-radius-2xl); border-bottom-left-radius: var(--mico-radius-2xl); }
-.rounded-l-3xl  { border-top-left-radius: var(--mico-radius-3xl); border-bottom-left-radius: var(--mico-radius-3xl); }
+.rounded-l-xxl  { border-top-left-radius: var(--mico-radius-xxl); border-bottom-left-radius: var(--mico-radius-xxl); }
+.rounded-l-xxxl  { border-top-left-radius: var(--mico-radius-xxxl); border-bottom-left-radius: var(--mico-radius-xxxl); }
 .rounded-l-full { border-top-left-radius: var(--mico-radius-full); border-bottom-left-radius: var(--mico-radius-full); }
 
 /* ========================================================================== */
@@ -305,19 +308,19 @@
 
 /* Outline Width */
 .outline-0 { outline-width: var(--mico-outline-width-0); }
-.outline-1 { outline-width: var(--mico-outline-width-1); }
-.outline-2 { outline-width: var(--mico-outline-width-2); }
-.outline-4 { outline-width: var(--mico-outline-width-4); }
-.outline-8 { outline-width: var(--mico-outline-width-8); }
+.outline-none { outline-width: var(--mico-outline-width-none); }
+.outline-xxs { outline-width: var(--mico-outline-width-xxs); }
+.outline-xs { outline-width: var(--mico-outline-width-xs); }
+.outline-sm { outline-width: var(--mico-outline-width-sm); }
+.outline-md { outline-width: var(--mico-outline-width-md); }
 
-.outline-s-0 { outline-width: var(--mico-outline-width-0); outline-style: var(--mico-outline-style-solid); }
-.outline-s-1 { outline-width: var(--mico-outline-width-1); outline-style: var(--mico-outline-style-solid); }
-.outline-s-2 { outline-width: var(--mico-outline-width-2); outline-style: var(--mico-outline-style-solid); }
-.outline-s-4 { outline-width: var(--mico-outline-width-4); outline-style: var(--mico-outline-style-solid); }
-.outline-s-8 { outline-width: var(--mico-outline-width-8); outline-style: var(--mico-outline-style-solid); }
+.outline-s-none { outline-width: var(--mico-outline-width-none); outline-style: var(--mico-outline-style-solid); }
+.outline-s-xxs { outline-width: var(--mico-outline-width-xxs); outline-style: var(--mico-outline-style-solid); }
+.outline-s-xs { outline-width: var(--mico-outline-width-xs); outline-style: var(--mico-outline-style-solid); }
+.outline-s-sm { outline-width: var(--mico-outline-width-sm); outline-style: var(--mico-outline-style-solid); }
+.outline-s-md { outline-width: var(--mico-outline-width-md); outline-style: var(--mico-outline-style-solid); }
 
 /* Outline Style */
-.outline-none   { outline-style: var(--mico-outline-style-none); }
 .outline-solid  { outline-style: var(--mico-outline-style-solid); }
 .outline-dashed { outline-style: var(--mico-outline-style-dashed); }
 .outline-dotted { outline-style: var(--mico-outline-style-dotted); }
@@ -338,11 +341,11 @@
 .outline-gray-3xdark  { outline-color: var(--mico-color-gray-3xdark); }
 
 /* Outline Offset */
-.outline-offset-0 { outline-offset: var(--mico-outline-offset-0); }
-.outline-offset-1 { outline-offset: var(--mico-outline-offset-1); }
-.outline-offset-2 { outline-offset: var(--mico-outline-offset-2); }
-.outline-offset-4 { outline-offset: var(--mico-outline-offset-4); }
-.outline-offset-8 { outline-offset: var(--mico-outline-offset-8); }
+.outline-offset-none { outline-offset: var(--mico-outline-offset-none); }
+.outline-offset-xxs { outline-offset: var(--mico-outline-offset-xxs); }
+.outline-offset-xs { outline-offset: var(--mico-outline-offset-xs); }
+.outline-offset-sm { outline-offset: var(--mico-outline-offset-sm); }
+.outline-offset-md { outline-offset: var(--mico-outline-offset-md); }
 
 
 /* ========================================================================== */
@@ -451,18 +454,18 @@
  */
 
 /* Divide Y (Horizontal borders between children) */
-.divide-y-0 > * + * { border-top-width: var(--mico-divide-width-0); }
-.divide-y-1  > * + * { border-top-width: var(--mico-divide-width-1); }
-.divide-y-2 > * + * { border-top-width: var(--mico-divide-width-2); }
-.divide-y-4 > * + * { border-top-width: var(--mico-divide-width-4); }
-.divide-y-8 > * + * { border-top-width: var(--mico-divide-width-8); }
+.divide-y-none > * + * { border-top-width: var(--mico-divide-width-none); }
+.divide-y-xxs  > * + * { border-top-width: var(--mico-divide-width-xxs); }
+.divide-y-xs > * + * { border-top-width: var(--mico-divide-width-xs); }
+.divide-y-sm > * + * { border-top-width: var(--mico-divide-width-sm); }
+.divide-y-md > * + * { border-top-width: var(--mico-divide-width-md); }
 
 /* Divide X (Vertical borders between children) */
-.divide-x-0 > * + * { border-left-width: var(--mico-divide-width-0); }
-.divide-x-1  > * + * { border-left-width: var(--mico-divide-width-1); }
-.divide-x-2 > * + * { border-left-width: var(--mico-divide-width-2); }
-.divide-x-4 > * + * { border-left-width: var(--mico-divide-width-4); }
-.divide-x-8 > * + * { border-left-width: var(--mico-divide-width-8); }
+.divide-x-none > * + * { border-left-width: var(--mico-divide-width-none); }
+.divide-x-xxs  > * + * { border-left-width: var(--mico-divide-width-xxs); }
+.divide-x-xs > * + * { border-left-width: var(--mico-divide-width-xs); }
+.divide-x-sm > * + * { border-left-width: var(--mico-divide-width-sm); }
+.divide-x-md > * + * { border-left-width: var(--mico-divide-width-md); }
 
 /* Divide Colors - OKLCH System */
 .divide-primary   > * + * { border-color: var(--mico-color-primary); }
@@ -488,17 +491,17 @@
  * Enhanced visibility for high contrast environments.
  */
 @media (prefers-contrast: high) {
-  .border-1,
-  .border-2,
-  .border-4,
-  .border-8 {
+  .border-xxs,
+  .border-xs,
+  .border-sm,
+  .border-md {
     border-color: currentColor;
   }
 
-  .outline-1,
-  .outline-2,
-  .outline-4,
-  .outline-8 {
+  .outline-xxs,
+  .outline-xs,
+  .outline-sm,
+  .outline-md {
     outline-color: currentColor;
   }
 
@@ -515,8 +518,8 @@
   .shadow-md,
   .shadow-lg,
   .shadow-xl,
-  .shadow-2xl,
-  .shadow-3xl {
+  .shadow-xxl,
+  .shadow-xxxl {
     transition: var(--mico-value-none);
   }
 }
@@ -532,8 +535,8 @@
   .shadow-md,
   .shadow-lg,
   .shadow-xl,
-  .shadow-2xl,
-  .shadow-3xl {
+  .shadow-xxl,
+  .shadow-xxxl {
     box-shadow: var(--mico-value-none) !important;
   }
 
@@ -550,7 +553,7 @@
  *    <div class="border border-gray-300 rounded">Content</div>
  *
  * 2. Focus ring:
- *    <button class="ring ring-primary ring-offset-2">Button</button>
+ *    <button class="ring ring-primary ring-offset-xs">Button</button>
  *
  * 3. Card with shadow:
  *    <div class="border border-gray-200 rounded-lg shadow-md">Card</div>
@@ -562,10 +565,10 @@
  *    </ul>
  *
  * 5. Accessible outline:
- *    <input class="outline outline-2 outline-primary outline-offset-2">
+ *    <input class="outline outline-xs outline-primary outline-offset-xs">
  *
  * 6. Complex border styling:
- *    <div class="border-2 border-dashed border-primary rounded-xl">
+ *    <div class="border-xs border-dashed border-primary rounded-xl">
  *
  * ACCESSIBILITY NOTES:
  * - Always provide sufficient contrast for borders and outlines

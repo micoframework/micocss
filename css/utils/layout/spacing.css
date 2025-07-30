@@ -1,41 +1,48 @@
 
 /* ************************************************************************************************ */
 /* Fluid Padding Spacing - Useful for section paddings e.g, <section class="container-fluid-md"> */
-.container-fluid-xs {
-    padding-block: var(--mico-size-fluid-xs) !important;
-    padding-inline: var(--mico-size-fluid-lg) !important;
-    margin-inline: auto !important;
+  .container-fluid-xxs {
+    padding-block: var(--mico-size-fluid-xxs) !important;
+    padding-inline: var(--mico-size-fluid-xxs) !important;
+  }
+
+  .container-fluid-xs {
+    padding-block: var(--mico-size-fluid-xxs) !important;
+    padding-inline: var(--mico-size-fluid-xs) !important;
   }
   
   .container-fluid-sm {
     padding-block: var(--mico-size-fluid-sm) !important;
     padding-inline: var(--mico-size-fluid-lg) !important;
-    margin-inline: auto !important;
   }
   
   .container-fluid-md {
-    padding-block: var(--mico-size-fluid-md) !important;
-    padding-inline: var(--mico-size-fluid-lg) !important;
-    margin-inline: auto !important;
+    padding-block: var(--mico-size-fluid-sm) !important;
+    padding-inline: var(--mico-size-fluid-md) !important;
   }
   .container-fluid-lg {
-    padding-block: var(--mico-size-fluid-lg) !important;
+    padding-block: var(--mico-size-fluid-md) !important;
     padding-inline: var(--mico-size-fluid-lg) !important;
-    margin-inline: auto !important;
   }
   
   .container-fluid-xl {
-    padding-block: var(--mico-size-fluid-xl) !important;
+    padding-block: var(--mico-size-fluid-lg) !important;
     padding-inline: var(--mico-size-fluid-xl) !important;
-    margin-inline: auto !important;
   }
-  .container-fluid-2xl {
-    padding-block: var(--mico-size-fluid-2xl) !important;
-    padding-inline: var(--mico-size-fluid-2xl) !important;
-    margin-inline: auto !important;
+  .container-fluid-xxl {
+    padding-block: var(--mico-size-fluid-xl) !important;
+    padding-inline: var(--mico-size-fluid-xxl) !important;
+  }  
+  
+  .container-fluid-xxxl {
+    padding-block: var(--mico-size-fluid-xxl) !important;
+    padding-inline: var(--mico-size-fluid-xxxl) !important;
   }
 
 /* Fluid Padding Spacing - Useful for individual sides, x-axis or y-axis paddings e.g, <div class="container-fluid-md"> */
+.px-fluid-xs { padding-inline: var(--mico-size-fluid-xxs) !important; }
+.py-fluid-xs { padding-block: var(--mico-size-fluid-xxs) !important; }
+
 .px-fluid-xs { padding-inline: var(--mico-size-fluid-xs) !important; }
 .py-fluid-xs { padding-block: var(--mico-size-fluid-xs) !important; }
 
@@ -51,38 +58,56 @@
 .px-fluid-xl { padding-inline: var(--mico-size-fluid-xl) !important; }
 .py-fluid-xl { padding-block: var(--mico-size-fluid-xl) !important; }
 
-.px-fluid-2xl { padding-inline: var(--mico-size-fluid-2xl) !important; }
-.py-fluid-2xl { padding-block: var(--mico-size-fluid-2xl) !important; }
+.px-fluid-xxl { padding-inline: var(--mico-size-fluid-xxl) !important; }
+.py-fluid-xxl { padding-block: var(--mico-size-fluid-xxl) !important; }
 
+.px-fluid-xxxl { padding-inline: var(--mico-size-fluid-xxxl) !important; }
+.py-fluid-xxxl { padding-block: var(--mico-size-fluid-xxxl) !important; }
+
+.p-fluid-xxs { padding: var(--mico-size-fluid-xxs) !important; }
+.p-fluid-xs { padding: var(--mico-size-fluid-xs) !important; }
 .p-fluid-sm { padding: var(--mico-size-fluid-sm) !important; }
 .p-fluid-md { padding: var(--mico-size-fluid-md) !important; }
 .p-fluid-lg { padding: var(--mico-size-fluid-lg) !important; }
 .p-fluid-xl { padding: var(--mico-size-fluid-xl) !important; }
-.p-fluid-2xl { padding: var(--mico-size-fluid-2xl) !important; }
+.p-fluid-xxl { padding: var(--mico-size-fluid-xxl) !important; }
+.p-fluid-xxxl { padding: var(--mico-size-fluid-xxxl) !important; }
 
+.pt-fluid-xxs{ padding-top: var(--mico-size-fluid-xxs) !important; }
+.pt-fluid-xs{ padding-top: var(--mico-size-fluid-xs) !important; }
 .pt-fluid-sm{ padding-top: var(--mico-size-fluid-sm) !important; }
 .pt-fluid-md{ padding-top: var(--mico-size-fluid-md) !important; }
 .pt-fluid-lg{ padding-top: var(--mico-size-fluid-lg) !important; }
 .pt-fluid-xl{ padding-top: var(--mico-size-fluid-xl) !important; }
-.pt-fluid-2xl{ padding-top: var(--mico-size-fluid-2xl) !important; }
+.pt-fluid-xxl{ padding-top: var(--mico-size-fluid-xxl) !important; }
+.pt-fluid-xxxl{ padding-top: var(--mico-size-fluid-xxxl) !important; }
 
+.pl-fluid-xxs{ padding-left: var(--mico-size-fluid-xxs) !important; }
+.pl-fluid-xs{ padding-left: var(--mico-size-fluid-xs) !important; }
 .pl-fluid-sm{ padding-left: var(--mico-size-fluid-sm) !important; }
 .pl-fluid-md{ padding-left: var(--mico-size-fluid-md) !important; }
 .pl-fluid-lg{ padding-left: var(--mico-size-fluid-lg) !important; }
 .pl-fluid-xl{ padding-left: var(--mico-size-fluid-xl) !important; }
-.pl-fluid-2xl{ padding-left: var(--mico-size-fluid-2xl) !important; }
+.pl-fluid-xxl{ padding-left: var(--mico-size-fluid-xxl) !important; }
+.pl-fluid-xxxl{ padding-left: var(--mico-size-fluid-xxxl) !important; }
 
+.pb-fluid-xxs{ padding-bottom: var(--mico-size-fluid-xxs) !important; }
+.pb-fluid-xs{ padding-bottom: var(--mico-size-fluid-xs) !important; }
 .pb-fluid-sm{ padding-bottom: var(--mico-size-fluid-sm) !important; }
 .pb-fluid-md{ padding-bottom: var(--mico-size-fluid-md) !important; }
 .pb-fluid-lg{ padding-bottom: var(--mico-size-fluid-lg) !important; }
 .pb-fluid-xl{ padding-bottom: var(--mico-size-fluid-xl) !important; }
-.pb-fluid-2xl{ padding-bottom: var(--mico-size-fluid-2xl) !important; }
+.pb-fluid-xxl{ padding-bottom: var(--mico-size-fluid-xxl) !important; }
+.pb-fluid-xxxl{ padding-bottom: var(--mico-size-fluid-xxxl) !important; }
 
+.pr-fluid-xxs{ padding-right: var(--mico-size-fluid-xxs) !important; }
+.pr-fluid-xs{ padding-right: var(--mico-size-fluid-xs) !important; }
 .pr-fluid-sm{ padding-right: var(--mico-size-fluid-sm) !important; }
 .pr-fluid-md{ padding-right: var(--mico-size-fluid-md) !important; }
 .pr-fluid-lg{ padding-right: var(--mico-size-fluid-lg) !important; }
 .pr-fluid-xl{ padding-right: var(--mico-size-fluid-xl) !important; }
-.pr-fluid-2xl{ padding-right: var(--mico-size-fluid-2xl) !important; }
+.pr-fluid-xxl{ padding-right: var(--mico-size-fluid-xxl) !important; }
+.pr-fluid-xxxl{ padding-right: var(--mico-size-fluid-xxxl) !important; }
 
 
 /* Margin */

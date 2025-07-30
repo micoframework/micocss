@@ -164,28 +164,28 @@
 .inset-y-auto { top: auto; bottom: auto; }
 
 /* Display */
-.d-none { display: none !important; }
-.d-inline { display: inline !important; }
-.d-inline-block { display: inline-block !important; }
-.d-block { display: block !important; }
-.d-flex { display: flex !important; }
-.d-inline-flex { display: inline-flex !important; }
-.d-grid { display: grid !important; }
-.d-table { display: table !important; }
-.d-table-row { display: table-row !important; }
-.d-table-cell { display: table-cell !important; }
-.d-table-column { display: table-column !important; }
-.d-table-column-group { display: table-column-group !important; }
-.d-table-header-group { display: table-header-group !important; }
-.d-table-footer-group { display: table-footer-group !important; }
-.d-table-row-group { display: table-row-group !important; }
-.d-flow-root { display: flow-root !important; }
-.d-contents { display: contents !important; }
-.d-list-item { display: list-item !important; }
-.d-ruby { display: ruby !important; }
-.d-ruby-base { display: ruby-base !important; }
-.d-ruby-text { display: ruby-text !important; }
-.d-ruby-base-container { display: ruby-base-container !important; }
+.none { display: none !important; }
+.inline { display: inline !important; }
+.inline-block { display: inline-block !important; }
+.block { display: block !important; }
+.flex { display: flex !important; }
+.inline-flex { display: inline-flex !important; }
+.grid { display: grid !important; }
+.table { display: table !important; }
+.table-row { display: table-row !important; }
+.table-cell { display: table-cell !important; }
+.table-column { display: table-column !important; }
+.table-column-group { display: table-column-group !important; }
+.table-header-group { display: table-header-group !important; }
+.table-footer-group { display: table-footer-group !important; }
+.table-row-group { display: table-row-group !important; }
+.flow-root { display: flow-root !important; }
+.contents { display: contents !important; }
+.list-item { display: list-item !important; }
+.ruby { display: ruby !important; }
+.ruby-base { display: ruby-base !important; }
+.ruby-text { display: ruby-text !important; }
+.ruby-base-container { display: ruby-base-container !important; }
 
 /* Flexbox */
 .flex-row { flex-direction: row !important; }
