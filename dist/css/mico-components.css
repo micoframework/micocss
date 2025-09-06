@@ -525,58 +525,6 @@
   --mico-size-96: calc(var(--mico-size-unit) * 48);  /* 96px */
   --mico-size-98: calc(var(--mico-size-unit) * 49);  /* 98px */
   --mico-size-100: calc(var(--mico-size-unit) * 50); /* 100px */
-  --mico-size-102: calc(var(--mico-size-unit) * 51);  /* 102px */
-  --mico-size-104: calc(var(--mico-size-unit) * 52);  /* 104px */
-  --mico-size-106: calc(var(--mico-size-unit) * 53);  /* 106px */
-  --mico-size-108: calc(var(--mico-size-unit) * 54);  /* 108px */
-  --mico-size-110: calc(var(--mico-size-unit) * 55);  /* 110px */
-  --mico-size-112: calc(var(--mico-size-unit) * 56);  /* 112px */
-  --mico-size-114: calc(var(--mico-size-unit) * 57);  /* 114px */
-  --mico-size-116: calc(var(--mico-size-unit) * 58);  /* 116px */
-  --mico-size-118: calc(var(--mico-size-unit) * 59);  /* 118px */
-  --mico-size-120: calc(var(--mico-size-unit) * 60);  /* 120px */
-  --mico-size-122: calc(var(--mico-size-unit) * 61);  /* 122px */
-  --mico-size-124: calc(var(--mico-size-unit) * 62);  /* 124px */
-  --mico-size-126: calc(var(--mico-size-unit) * 63);  /* 126px */
-  --mico-size-128: calc(var(--mico-size-unit) * 64);  /* 128px */
-  --mico-size-130: calc(var(--mico-size-unit) * 65);  /* 130px */
-  --mico-size-132: calc(var(--mico-size-unit) * 66);  /* 132px */
-  --mico-size-134: calc(var(--mico-size-unit) * 67);  /* 134px */
-  --mico-size-136: calc(var(--mico-size-unit) * 68);  /* 136px */
-  --mico-size-138: calc(var(--mico-size-unit) * 69);  /* 138px */
-  --mico-size-140: calc(var(--mico-size-unit) * 70);  /* 140px */
-  --mico-size-142: calc(var(--mico-size-unit) * 71);  /* 142px */
-  --mico-size-144: calc(var(--mico-size-unit) * 72);  /* 144px */
-  --mico-size-146: calc(var(--mico-size-unit) * 73);  /* 146px */
-  --mico-size-148: calc(var(--mico-size-unit) * 74);  /* 148px */
-  --mico-size-150: calc(var(--mico-size-unit) * 75);  /* 150px */
-  --mico-size-152: calc(var(--mico-size-unit) * 76);  /* 152px */
-  --mico-size-154: calc(var(--mico-size-unit) * 77);  /* 154px */
-  --mico-size-156: calc(var(--mico-size-unit) * 78);  /* 156px */
-  --mico-size-158: calc(var(--mico-size-unit) * 79);  /* 158px */
-  --mico-size-160: calc(var(--mico-size-unit) * 80);  /* 160px */
-  --mico-size-162: calc(var(--mico-size-unit) * 81);  /* 162px */
-  --mico-size-164: calc(var(--mico-size-unit) * 82);  /* 164px */
-  --mico-size-166: calc(var(--mico-size-unit) * 83); /* 166px */
-  --mico-size-168: calc(var(--mico-size-unit) * 84); /* 168px */
-  --mico-size-170: calc(var(--mico-size-unit) * 85); /* 170px */
-  --mico-size-172: calc(var(--mico-size-unit) * 86); /* 172px */
-  --mico-size-174: calc(var(--mico-size-unit) * 87); /* 174px */
-  --mico-size-176: calc(var(--mico-size-unit) * 88); /* 176px */
-  --mico-size-178: calc(var(--mico-size-unit) * 89); /* 178px */
-  --mico-size-180: calc(var(--mico-size-unit) * 90); /* 180px */
-  --mico-size-182: calc(var(--mico-size-unit) * 91); /* 182px */
-  --mico-size-184: calc(var(--mico-size-unit) * 92); /* 184px */
-  --mico-size-186: calc(var(--mico-size-unit) * 93); /* 186px */
-  --mico-size-188: calc(var(--mico-size-unit) * 94); /* 188px */
-  --mico-size-190: calc(var(--mico-size-unit) * 95); /* 190px */
-  --mico-size-192: calc(var(--mico-size-unit) * 96); /* 192px */
-  --mico-size-194: calc(var(--mico-size-unit) * 97); /* 194px */
-  --mico-size-196: calc(var(--mico-size-unit) * 98); /* 196px */
-  --mico-size-198: calc(var(--mico-size-unit) * 99); /* 198px */
-  --mico-size-200: calc(var(--mico-size-unit) * 100); /* 200px */
-
-
 
 
   /* 
@@ -644,56 +592,7 @@
   --mico-size-n-96: calc(var(--mico-size-n-unit) * 48);  /* -96px */
   --mico-size-n-98: calc(var(--mico-size-n-unit) * 49);  /* -98px */
   --mico-size-n-100: calc(var(--mico-size-n-unit) * 50); /* -100px */
-  --mico-size-n-102: calc(var(--mico-size-n-unit) * 51);  /* -102px */
-  --mico-size-n-104: calc(var(--mico-size-n-unit) * 52);  /* -104px */
-  --mico-size-n-106: calc(var(--mico-size-n-unit) * 53);  /* -106px */
-  --mico-size-n-108: calc(var(--mico-size-n-unit) * 54);  /* -108px */
-  --mico-size-n-110: calc(var(--mico-size-n-unit) * 55);  /* -110px */
-  --mico-size-n-112: calc(var(--mico-size-n-unit) * 56);  /* -112px */
-  --mico-size-n-114: calc(var(--mico-size-n-unit) * 57);  /* -114px */
-  --mico-size-n-116: calc(var(--mico-size-n-unit) * 58);  /* -116px */
-  --mico-size-n-118: calc(var(--mico-size-n-unit) * 59);  /* -118px */
-  --mico-size-n-120: calc(var(--mico-size-n-unit) * 60);  /* -120px */
-  --mico-size-n-122: calc(var(--mico-size-n-unit) * 61);  /* -122px */
-  --mico-size-n-124: calc(var(--mico-size-n-unit) * 62);  /* -124px */
-  --mico-size-n-126: calc(var(--mico-size-n-unit) * 63);  /* -126px */
-  --mico-size-n-128: calc(var(--mico-size-n-unit) * 64);  /* -128px */
-  --mico-size-n-130: calc(var(--mico-size-n-unit) * 65);  /* -130px */
-  --mico-size-n-132: calc(var(--mico-size-n-unit) * 66);  /* -132px */
-  --mico-size-n-134: calc(var(--mico-size-n-unit) * 67);  /* -134px */
-  --mico-size-n-136: calc(var(--mico-size-n-unit) * 68);  /* -136px */
-  --mico-size-n-138: calc(var(--mico-size-n-unit) * 69);  /* -138px */
-  --mico-size-n-140: calc(var(--mico-size-n-unit) * 70);  /* -140px */
-  --mico-size-n-142: calc(var(--mico-size-n-unit) * 71);  /* -142px */
-  --mico-size-n-144: calc(var(--mico-size-n-unit) * 72);  /* -144px */
-  --mico-size-n-146: calc(var(--mico-size-n-unit) * 73);  /* -146px */
-  --mico-size-n-148: calc(var(--mico-size-n-unit) * 74);  /* -148px */
-  --mico-size-n-150: calc(var(--mico-size-n-unit) * 75);  /* -150px */
-  --mico-size-n-152: calc(var(--mico-size-n-unit) * 76);  /* -152px */
-  --mico-size-n-154: calc(var(--mico-size-n-unit) * 77);  /* -154px */
-  --mico-size-n-156: calc(var(--mico-size-n-unit) * 78);  /* -156px */
-  --mico-size-n-158: calc(var(--mico-size-n-unit) * 79);  /* -158px */
-  --mico-size-n-160: calc(var(--mico-size-n-unit) * 80);  /* -160px */
-  --mico-size-n-162: calc(var(--mico-size-n-unit) * 81);  /* -162px */
-  --mico-size-n-164: calc(var(--mico-size-n-unit) * 82);  /* -164px */
-  --mico-size-n-166: calc(var(--mico-size-n-unit) * 83); /* -166px */
-  --mico-size-n-168: calc(var(--mico-size-n-unit) * 84); /* -168px */
-  --mico-size-n-170: calc(var(--mico-size-n-unit) * 85); /* -170px */
-  --mico-size-n-172: calc(var(--mico-size-n-unit) * 86); /* -172px */
-  --mico-size-n-174: calc(var(--mico-size-n-unit) * 87); /* -174px */
-  --mico-size-n-176: calc(var(--mico-size-n-unit) * 88); /* -176px */
-  --mico-size-n-178: calc(var(--mico-size-n-unit) * 89); /* -178px */
-  --mico-size-n-180: calc(var(--mico-size-n-unit) * 90); /* -180px */
-  --mico-size-n-182: calc(var(--mico-size-n-unit) * 91); /* -182px */
-  --mico-size-n-184: calc(var(--mico-size-n-unit) * 92); /* -184px */
-  --mico-size-n-186: calc(var(--mico-size-n-unit) * 93); /* -186px */
-  --mico-size-n-188: calc(var(--mico-size-n-unit) * 94); /* -188px */
-  --mico-size-n-190: calc(var(--mico-size-n-unit) * 95); /* -190px */
-  --mico-size-n-192: calc(var(--mico-size-n-unit) * 96); /* -192px */
-  --mico-size-n-194: calc(var(--mico-size-n-unit) * 97); /* -194px */
-  --mico-size-n-196: calc(var(--mico-size-n-unit) * 98); /* -196px */
-  --mico-size-n-198: calc(var(--mico-size-n-unit) * 99); /* -198px */
-  --mico-size-n-200: calc(var(--mico-size-n-unit) * 100); /* -200px */
+
 
 
   /* ====================================================================== */
@@ -1054,9 +953,10 @@
   --mico-layout-grid:
     [full-start] minmax(var(--mico-layout-gutter), 1fr)
     [wide-start] minmax(0, var(--mico-layout-wide-offset))
-    [main-start] minmax(0, var(--mico-layout-page-width)) [main-end]
-    minmax(0, var(--mico-layout-wide-offset)) [wide-end]
-    minmax(var(--mico-layout-gutter), 1fr) [full-end];
+    [main-start] minmax(0, var(--mico-layout-page-width)) 
+    [main-end] minmax(0, var(--mico-layout-wide-offset)) 
+    [wide-end] minmax(var(--mico-layout-gutter), 1fr) 
+    [full-end];
 
 /* END OF THE PAGE GRID LAYOUT ENGINE                                         */
 
@@ -1531,6 +1431,8 @@
    * - Color preservation: Original hue and feel maintained throughout variations
    * - UI suitability: Perfect for backgrounds, text, borders, and interactive states
    */
+
+   /* --mico-color-mode: oklch; */
 
   /* ====================================================================== */
   /* TINT GENERATION CONTROLS (Lighter Variations)                         */

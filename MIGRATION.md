@@ -177,11 +177,14 @@ git commit -am "Backup before Mico CSS v1.0.0 migration"
 
 ### **2. Update CDN Link**
 ```html
-<!-- Old v0.2.5 -->
+<!-- Old v0.2.5 (GitHub CDN) -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelkatiba/mico@v0.2.5/dist/css/mico.min.css">
 
-<!-- New v1.0.0 -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/micoframework/mico@v1.0.0/dist/css/mico.min.css">
+<!-- New v1.0.0 (NPM CDN - Recommended) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mico-css@1.0.0/dist/css/mico.min.css">
+
+<!-- Alternative: Latest version -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mico-css@latest/dist/css/mico.min.css">
 ```
 
 ### **3. Run Find & Replace**

@@ -23,7 +23,29 @@ Mico is a lightweight and versatile CSS framework designed to make building resp
 Add the following link tag to your HTML file:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/micoframework/mico@latest/dist/css/mico.min.css">
+<!-- Latest version (recommended) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mico-css@latest/dist/css/mico.min.css">
+
+<!-- Specific version (for production) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mico-css@1.0.0/dist/css/mico.min.css">
+```
+
+### Via NPM
+
+```bash
+npm install mico-css
+```
+
+Then import in your project:
+
+```css
+@import 'mico-css/dist/css/mico.min.css';
+```
+
+Or in JavaScript:
+
+```javascript
+import 'mico-css/dist/css/mico.min.css';
 ```
 
 For JavaScript functionality (theme switching, etc.):
