@@ -91,17 +91,17 @@ Is this a direct CSS value name?
 .min-h--none, .max-h--full
 ```
 
-### **📦 Spacing (Double-Dash)**
+### **📦 Spacing (Mixed Patterns)**
 ```css
-/* Margin */
+/* Basic Margin/Padding (Double-Dash) */
 .m--0, .m--2, .m--4, .m--8, .m--auto
 .mt--4, .mb--8, .ml--2, .mr--6
-.mx--auto, .my--4
-
-/* Padding */
 .p--0, .p--2, .p--4, .p--8
 .pt--4, .pb--8, .pl--2, .pr--6
-.px--4, .py--8
+
+/* Logical Properties (Single-dash + Double-dash) */
+.m-x--4, .m-y--8    /* margin-inline, margin-block */
+.p-x--4, .p-y--8    /* padding-inline, padding-block */
 ```
 
 ### **🎭 Display & Layout (Single-Dash)**
@@ -115,17 +115,25 @@ Is this a direct CSS value name?
 .static, .relative, .absolute, .fixed, .sticky
 ```
 
-### **🔧 Flexbox & Grid (Single-Dash)**
+### **🔧 Flexbox & Grid (Property + Double-dash + Value)**
 ```css
-/* Flexbox */
-.justify-start, .justify-center, .justify-between
-.items-start, .items-center, .items-end
-.flex-row, .flex-col, .flex-wrap
+/* Flexbox Properties (Full Property Names) */
+.justify-content--center, .justify-content--between
+.align-items--start, .align-items--center, .align-items--end
+.align-content--start, .align-content--center
+.justify-items--start, .justify-items--center    /* Grid-specific */
 
-/* Grid */
-.grid-cols-1, .grid-cols-12
-.col-span-2, .row-span-3
-.gap-4 /* Exception: gap uses single dash for consistency */
+/* Flex Direction & Wrap (Property + Double-dash) */
+.flex--row, .flex--column, .flex--wrap, .flex--nowrap
+
+/* Grid Template (Property + Double-dash) */
+.grid-cols--1, .grid-cols--12
+.grid-rows--1, .grid-rows--6
+
+/* Grid Positioning (Property + Double-dash) */
+.col--1, .col--12, .row--1, .row--6
+.col-start--1, .col-end--12
+.row-start--1, .row-end--6
 ```
 
 ### **🎨 Typography (Mixed)**

@@ -122,7 +122,7 @@ src/css/
 1. **Is this a direct CSS value?** → No double-dash
 2. **Is this property + custom value?** → Use double-dash
 3. **Is this a compound CSS value?** → No double-dash
-4. **When in doubt:** Check if it's a real CSS value name
+4. **When in doubt:** Check if it's a real CSS value name, if it is then don't the double dash and vice-versa.
 
 ### **📝 EXAMPLES BY CATEGORY:**
 
@@ -352,7 +352,7 @@ Do NOT commit:
 - **Vanilla Approach**: No JavaScript dependencies, pure CSS
 
 ### **Target Audience:**
-- Frontend developers building modern web applications
+- Frontend developers and Wordpress users building modern web applications
 - Teams prioritizing performance and maintainability
 - Projects requiring semantic, readable CSS class names
 - Developers who appreciate BEM-inspired naming conventions
@@ -441,7 +441,7 @@ Implement testing strategy for:
 
 **Last Updated:** $(date)
 **Next Review:** Weekly
-**Maintained By:** AI-Human Collaboration Team
+**Maintained By:** Mico Framework Team
 
 ## Continuous Integration
 

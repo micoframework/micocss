@@ -23,7 +23,7 @@ Mico is a lightweight and versatile CSS framework designed to make building resp
 Add the following link tag to your HTML file:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelkatiba/mico@latest/dist/css/mico.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/micoframework/mico@latest/dist/css/mico.min.css">
 ```
 
 For JavaScript functionality (theme switching, etc.):
@@ -204,61 +204,64 @@ Mico supports all modern browsers:
 
 Your feedback and bug reports are valuable to us as we work towards improving Mico. Feel free to open issues on GitHub.
 
+## 📁 Project Structure
+
+```
+mico/
+├── src/                          # Source files (development)
+│   ├── css/                      # CSS source files
+│   │   ├── core/                 # Core framework files
+│   │   │   ├── variables.css     # CSS custom properties
+│   │   │   └── reset.css         # CSS reset/normalize
+│   │   ├── utilities/            # Utility classes
+│   │   │   ├── spacing.css       # Margin, padding utilities
+│   │   │   ├── typography.css    # Font, text utilities
+│   │   │   ├── colors.css        # Background, text colors
+│   │   │   ├── borders.css       # Border, radius utilities
+│   │   │   ├── layout.css        # Display, grid, flex utilities
+│   │   │   └── states.css        # Hover, focus, active states
+│   │   └── mico.css              # Main entry point
+│   ├── js/                       # JavaScript source files
+│   └── jit/                      # Just-in-time compilation
+├── dist/                         # Built files (production)
+│   ├── css/
+│   │   ├── mico.css              # Full framework (unminified)
+│   │   ├── mico.min.css          # Full framework (minified)
+│   │   ├── variables.css         # Variables only
+│   │   └── variables.min.css     # Variables only (minified)
+│   └── js/
+│       ├── mico.js               # Framework JS (unminified)
+│       └── mico.min.js           # Framework JS (minified)
+├── docs/                         # Documentation
+│   └── guidelines/               # Development guidelines
+├── build/                        # Build scripts
+├── tests/                        # Test files
+└── sandbox/                      # Development playground
+```
+
+## 🎨 Framework Philosophy
+
+**Mico CSS** follows a **utility-first approach** with **semantic naming conventions**:
+
+### **Double-Dash Convention**
+Mico uses a unique **BEM-inspired naming convention** that provides semantic clarity:
+
+- **Property + Value = Double-dash**: `.w--100`, `.m--4`, `.bg--primary`
+- **Direct CSS Values = Single-dash**: `.flex`, `.inline-block`, `.space-between`
+
+This creates **self-documenting** utility classes that are easy to understand and maintain.
+
+### **Modern CSS Standards**
+- **OKLCH Color System**: Perceptually uniform colors
+- **Logical Properties**: `margin-inline`, `margin-block` for internationalization
+- **CSS Custom Properties**: Dynamic theming and customization
+- **Rem-Based Scaling**: Consistent typography and spacing
+
+## 🚀 Version History
+
+- **v0.2.5**: Previous release with single-dash convention
+- **v1.0.0**: (Upcoming) Major release with double-dash convention and modern CSS standards
+
 ---
-For more information and documentation, visit our GitHub repository.
 
-```
-mico
-├─ .idea
-│  ├─ mico.iml
-│  ├─ modules.xml
-│  ├─ vcs.xml
-│  └─ workspace.xml
-├─ css
-│  ├─ components
-│  │  ├─ accordion.comp.css
-│  │  ├─ alert.comp.css
-│  │  ├─ article.comp.css
-│  │  ├─ avatar.comp.css
-│  │  ├─ badge.comp.css
-│  │  ├─ button.comp.css
-│  │  ├─ calender.comp.css
-│  │  ├─ card.comp.css
-│  │  ├─ form.comp.css
-│  │  ├─ modal.comp.css
-│  │  ├─ navigation.comp.css
-│  │  ├─ pagination.comp.css
-│  │  ├─ select.comp.css
-│  │  ├─ skeleton.comp.css
-│  │  ├─ slider.comp.css
-│  │  ├─ table.comp.css
-│  │  ├─ tabs.comp.css
-│  │  └─ tooltip.comp.css
-│  ├─ mico.accessibility.css
-│  ├─ mico.css
-│  ├─ mico.variables.css
-│  ├─ motion
-│  │  └─ mico.motion.css
-│  ├─ presets
-│  │  ├─ default.pre.css
-│  │  └─ oxygenbuilder.pre.css
-│  └─ utils
-│     ├─ animation.utils.css
-│     ├─ border.utils.css
-│     ├─ button.utils.css
-│     ├─ color.utils.css
-│     ├─ layout.utils.css
-│     ├─ navigation.utils.css
-│     ├─ spacing.utils.css
-│     ├─ states.utils.css
-│     └─ typography.utils.css
-├─ img
-│  └─ Lighthouse Pixels Web Design Brand Colors.png
-├─ js
-│  ├─ mico.motion.js
-│  ├─ mico.script.js
-│  └─ mico.skeletonloader.js
-├─ LICENSE
-└─ README.md
-
-```
+For more information and documentation, visit our [GitHub repository](https://github.com/MichaelKatiba/mico).
