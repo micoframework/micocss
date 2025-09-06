@@ -33,6 +33,19 @@ html, *::before, *::after {
   padding: 0;
 }
 
+body{
+  font-family: var(--mico-font-body);
+  font-feature-settings: "kern" 1;
+  text-rendering: optimizeLegibility;
+  line-height: var(--mico-lh-xs);
+  overflow-x: hidden;
+  text-wrap-style: pretty;
+  transition-property: all !important;
+  transition-duration: var(--mico-transition-duration-normal);
+  transition-timing-function: var(--mico-ease-in-out);
+  transition-delay: var(--mico-value-0);
+}
+
 /* ========================================================================== */
 /* 2. TYPOGRAPHY ELEMENTS                                                    */
 /* ========================================================================== */
@@ -43,45 +56,65 @@ html, *::before, *::after {
  */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--mico-font-display);
-  color: var(--color-text-primary);
+  color: var(--mico-color-black-light) !important;
   user-select: text;
   cursor: text;
-  font-weight: var(--mico-fw-400);
   line-height: var(--mico-lh-xs);
   text-wrap-style: balance;
 }
 
-h1 { font-size: var(--mico-fs-xxxl) !important; }
+h1 { 
+  font-size: var(--mico-fs-xxxl) !important;
+  font-weight: var(--mico-fw-600);
+}
 h2 { font-size: var(--mico-fs-xxl); }
 h3 { font-size: var(--mico-fs-xl); }
 h4 { font-size: var(--mico-fs-lg); }
 h5 { font-size: var(--mico-fs-md); }
 h6 { font-size: var(--mico-fs-sm); }
 
+h2, h3, h4, h5, h6 {
+  font-weight: var(--mico-fw-500);
+
+}
 /**
  * Paragraph Styles
  * Consistent spacing and typography for body text
  */
-p {
-  color: var(--color-text-secondary);
-  font-size: var(--mico-fs-md);
-  font-weight: var(--mico-fw-300);
+p,span:not(h1>span,h2>span,h3>span,h4>span,h5>span,h6>span),li>a {
+  font-size: var(--mico-fs-sm);
+  font-weight: var(--mico-fw-400);
   line-height: var(--mico-lh-md);
+  color: var(--mico-color-black-2xlight) !important;
   cursor: text;
+  text-decoration: none;
 }
+
 
 /**
  * Link Styles
  * Accessible and consistent hyperlink styling
  */
-a {
-  color: var(--mico-color-gray-6xdark);
+li>a{cursor: pointer;}
+
+a:not(.btn,button,li>a) {
+  color: var(--mico-color-info);
+  text-decoration-style: solid;
+  text-decoration-line: underline;
+  text-decoration-color: var(--mico-color-info);
+  text-decoration-thickness: var(mico-size-2);
+  text-underline-offset: var(--mico-size-4);
+  text-underline-position: below;
+}
+
+a:visited:not(.btn,button,li>a) {
+  color: var(--mico-color-visited);
   text-decoration: none;
 }
 
 a:hover, a:focus {
   text-underline-offset: 0.2em;
-  outline: var(--mico-value-none);
+  outline: var(--mico-value-none); /*Progress*/
 }
 
 /**
@@ -112,7 +145,7 @@ li {
  * Distinctive styling for quoted content
  */
 blockquote {
-  margin: var(--mico-size-16, 16px) 0;
+  margin: var(--mico-size-16) 0;
   padding-left: var(--mico-size-16, 16px);
   border-left: 4px solid var(--mico-value-current);
   font-style: italic;
@@ -123,20 +156,35 @@ blockquote {
  * Code Elements
  * Monospace styling for code and preformatted text
  */
-code, pre {
+code, pre, samp, kbd {
   font-family: var(--mico-font-mono, 'SFMono-Regular', Menlo, Monaco, Consolas, monospace);
-  border-radius: var(--mico-radius-sm, 2px);
+  font-size: var(--mico-fs-xs);
+  padding: var(--mico-size-4);
+  align-self: baseline;
 }
 
-code {
-  padding: 0.2em 0.4em;
-  font-size: 0.875em;
+kbd:not(:has(kbd,samp)){
+  font-family: var(--mico-font-mono, 'SFMono-Regular', Menlo, Monaco, monospace, Consolas);
+  line-height: var(--mico-lh-xl);
+  background-color: hsl(from var(--mico-value-current) h s l /0.1);
+  border: var(--mico-border-none) !important;
+  border-radius: var(--mico-size-4);
+  box-shadow: 2px 2px 0px hsl(from var(--mico-value-current) h s l /0.5);
+
+
+}
+
+samp{
+  border: var(--mico-size-1) var(--mico-border-solid) var(--mico-color-gray-light);
+  border-radius: var(--mico-size-1);
+  padding: var(--mico-size-6);
+
+
 }
 
 pre {
-  padding: var(--mico-size-16, 16px);
   overflow-x: auto;
-  line-height: 1.4;
+  line-height: var(--mico-lh-xs);
 }
 
 /* ========================================================================== */
@@ -244,6 +292,7 @@ input, textarea, select {
   font-size: 1rem;
   margin-bottom: var(--mico-size-16);
   font-family: inherit;
+  border-radius: var(--mico-size-xs);
 }
 
 /**
@@ -251,13 +300,13 @@ input, textarea, select {
  * Semantic content grouping
  */
 figure {
-  margin: var(--mico-size-24, 24px) 0;
+  margin: var(--mico-size-24) 0;
 }
 
 figcaption {
   font-style: italic;
   text-align: center;
   color: var(--mico-value-current);
-  font-size: var(--mico-fs-xs, 0.875rem);
-  margin-top: var(--mico-size-8, 8px);
+  font-size: var(--mico-fs-xs);
+  margin-top: var(--mico-size-8);
 }

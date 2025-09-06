@@ -269,7 +269,7 @@ textarea:focus,
 [role="radio"]:focus,
 [role="tab"]:focus,
 [role="menuitem"]:focus {
-  outline: 1px solid var(--mico-color-accent);
+  outline: 1px solid var(--mico-btn-filled);
   outline-offset: 2px;
   z-index: 1;
 }

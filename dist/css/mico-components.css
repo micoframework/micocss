@@ -6,7 +6,7 @@
 
 /* Core Variables */
 
-/**
+/*
  * Mico CSS Framework - Core Variables
  *
  * This file defines the foundational CSS variables that power the Mico CSS framework.
@@ -24,18 +24,18 @@
 /* ========================================================================== */
 
 :root {
-  /**
+  /*
    * Breakpoints define the viewport width thresholds for responsive design.
    * These values align with common device sizes and provide a consistent
    * foundation for responsive layouts.
    *
    * Usage: @media (min-width: var(--mico-breakpoint-md)) { ... }
    */
-  --mico-xxs-breakpoint: 1600px;  /* Super large devices (wider screens) */
-  --mico-xs-breakpoint: 320px;   /* Extra small devices (phones) */
-  --mico-sm-breakpoint: 576px;   /* Small devices (large phones, portrait tablets) */
-  --mico-md-breakpoint: 768px;   /* Medium devices (tablets) */
-  --mico-lg-breakpoint: 992px;   /* Large devices (desktops) */
+  --mico-xxs-breakpoint: 320px;  /* Extra smaller devices (smaller screens) */
+  --mico-xs-breakpoint: 576px;   /* Extra small devices (phones) */
+  --mico-sm-breakpoint: 768px;   /* Small devices (large phones, portrait tablets) */
+  --mico-md-breakpoint: 992px;   /* Medium devices (tablets) */
+  --mico-lg-breakpoint: 1024px;   /* Large devices (desktops) */
   --mico-xl-breakpoint: 1280px;  /* Extra large devices (large desktops) */
   --mico-xxl-breakpoint: 1440px; /* Ultra large devices (wide screens) */
   --mico-xxxl-breakpoint: 1600px;  /* Super large devices (wider screens) */
@@ -45,7 +45,7 @@
   /* COMMON VALUES SYSTEM                                                   */
   /* ====================================================================== */
 
-  /**
+  /*
    * Common Values
    *
    * These variables define frequently used values to ensure consistency
@@ -65,43 +65,54 @@
   /* TYPOGRAPHY SYSTEM                                                      */
   /* ====================================================================== */
 
-  /**
+  /*
    * ======================================================================
-   * FLUID TYPOGRAPHY SYSTEM (Based on a Major Third scale)
+   * FLUID SYSTEM ENGINE (Based on a Major Third scale)
    * ======================================================================
-   * Base Font Size: 1rem (16px)
-   * Typographic Ratio: 1.250
-   *
-   * This system uses clamp() to create font sizes that scale smoothly
-   * with the viewport, while maintaining accessible minimum and maximum sizes.
+ * DO NOT EDIT THIS SECTION.
+ * This engine holds the global configuration and the master calculation
+ * for creating all fluid values (typography, spacing, etc.).
+  /* --- Global Configuration --- */
+  /* Set the viewport widths where fluid scaling should start and stop. */
+  --fluid-min-vw: 320;  /* in pixels */
+  --fluid-max-vw: 1600; /* in pixels */
+
+  /* --- Engine Internals (Do Not Modify) --- */
+  /* These variables are used by the master formula. */
+  --fluid-screen-range: calc(var(--fluid-max-vw) - var(--fluid-min-vw));
+  --fluid-rem-factor: calc((100vw - var(--fluid-min-vw) * 1px) / var(--fluid-screen-range));
+
+  /*
+   * FLUID TYPOGRAPHY SYSTEM (Mathematically Corrected)
+   * This system now scales in a perfect linear fashion.
    */
 
-  /* Captions & tiny text. Min: 12.8px, Max: 14px. */
-  --mico-fs-xxs: clamp(0.8rem, calc(0.7rem + 0.5vw), 0.875rem);
+  /* Min: 0.8rem (12.8px) | Max: 0.875rem (14px) */
+  --mico-fs-xxs: clamp(0.8rem, calc(0.8rem + (14 - 12.8) * var(--fluid-rem-factor)), 0.875rem);
 
-  /* Small text. Min: 14px, Max: 16px. */
-  --mico-fs-xs: clamp(0.875rem, calc(0.775rem + 0.5vw), 1rem);
+  /* Min: 0.875rem (14px) | Max: 1rem (16px) */
+  --mico-fs-xs: clamp(0.875rem, calc(0.875rem + (16 - 14) * var(--fluid-rem-factor)), 1rem);
   
-  /* Slightly smaller body text. Min: 15px, Max: 17.6px. */
-  --mico-fs-sm: clamp(0.9375rem, calc(0.8125rem + 0.625vw), 1.1rem);
+  /* Min: 1rem (16px) | Max: 1.1rem (17.6px) */
+  --mico-fs-sm: clamp(1rem, calc(1rem + (17.6 - 16) * var(--fluid-rem-factor)), 1.1rem);
 
-  /* Standard body text. Min: 16px, Max: 18px. */
-  --mico-fs-md: clamp(1rem, calc(0.85rem + 0.75vw), 1.125rem);
+  /* Min: 1rem (16px) | Max: 1.5rem (24px) */
+  --mico-fs-md: clamp(1rem, calc(1rem + (24 - 16) * var(--fluid-rem-factor)), 1.5rem);
 
-  /* Small headings (h4, h5). Min: 20px, Max: 24px. */
-  --mico-fs-lg: clamp(1.25rem, calc(1.0rem + 1.25vw), 1.45rem);
+  /* Min: 1.5rem (24px) | Max: 2.375rem (38px) */
+  --mico-fs-lg: clamp(1.5rem, calc(1.5rem + (38 - 24) * var(--fluid-rem-factor)), 2.375rem);
 
-  /* Medium headings (h3). Min: 24px, Max: 32px. */
-  --mico-fs-xl: clamp(1.563rem, calc(1.208rem + 1.77vw), 1.85rem);
+  /* Min: 2.375rem (38px) | Max: 3.125rem (50px) */
+  --mico-fs-xl: clamp(2.375rem, calc(2.375rem + (50 - 38) * var(--fluid-rem-factor)), 3.125rem);
 
-  /* Large headings (h2). Min: 32px, Max: 48px. */
-  --mico-fs-xxl: clamp(1.953rem, calc(1.453rem + 2.5vw), 3rem);
+  /* Min: 3.125rem (50px) | Max: 4rem (64px) */
+  --mico-fs-xxl: clamp(3.125rem, calc(3.125rem + (64 - 50) * var(--fluid-rem-factor)), 4rem);
 
-  /* Extra-large headings (h1). Min: 48px, Max: 80px. */
-  --mico-fs-xxxl: clamp(3rem, calc(1.875rem + 3.63vw), 5rem);
+  /* Min: 4rem (64px) | Max: 5rem (80px) */
+  --mico-fs-xxxl: clamp(4rem, calc(4rem + (80 - 64) * var(--fluid-rem-factor)), 5rem);
   
 
-  /**
+  /*
    * Font Weights
    *
    * Standard font weight values from 100 (thinnest) to 900 (boldest)
@@ -117,7 +128,7 @@
   --mico-fw-800: 800;  /* Extra bold */
   --mico-fw-900: 900;  /* Black/Heaviest */
 
-  /**
+  /*
    * Font Stretch Properties
    *
    * Controls the width of glyphs if the font family has variable widths.
@@ -133,7 +144,7 @@
   --mico-font-stretch-extra-expanded: extra-expanded;   /* 150% */
   --mico-font-stretch-ultra-expanded: ultra-expanded;   /* 200% */
 
-  /**
+  /*
    * Font Style Properties
    *
    * Standard font style values for consistent usage.
@@ -141,7 +152,7 @@
   --mico-font-style-normal: var(--mico-value-normal);
   --mico-font-style-italic: italic;
 
-  /**
+  /*
    * Font Variant Numeric Properties
    *
    * Controls numeric font features for enhanced typography.
@@ -156,7 +167,7 @@
   --mico-font-variant-numeric-diagonal-fractions: diagonal-fractions;
   --mico-font-variant-numeric-stacked-fractions: stacked-fractions;
 
-  /**
+  /*
    * Font Variant Ligatures Properties
    *
    * Controls ligature rendering for enhanced typography.
@@ -170,7 +181,7 @@
   --mico-font-variant-ligatures-contextual: contextual;
   --mico-font-variant-ligatures-no-contextual: no-contextual;
 
-  /**
+  /*
    * Font Variant Caps Properties
    *
    * Controls capitalization rendering for enhanced typography.
@@ -183,7 +194,7 @@
   --mico-font-variant-caps-unicase: unicase;
   --mico-font-variant-caps-titling-caps: titling-caps;
 
-  /**
+  /*
    * Line Heights
    *
    * Line height controls the vertical spacing between lines of text.
@@ -200,7 +211,7 @@
   --mico-lh-xxl: 0.75rem; /* Fixed line height for small text */
   --mico-lh-xxxl: 1rem;    /* Fixed line height */
 
-  /**
+  /*
    * Letter Spacing
    *
    * Controls the horizontal spacing between characters.
@@ -217,7 +228,7 @@
   --mico-ls-xxl: 0.1em;    /* Widest spacing */
   --mico-ls-xxxl: 0.2em;    /* Widest spacing */
 
-  /**
+  /*
    * Text Decoration Properties
    *
    * Controls the appearance of underlines and other text decorations
@@ -253,7 +264,7 @@
   --mico-underline-position-left: left;
   --mico-underline-position-right: right;
 
-  /**
+  /*
    * Text Transform Properties
    *
    * Controls text case transformation
@@ -263,7 +274,7 @@
   --mico-text-transform-capitalize: capitalize;
   --mico-text-transform-none: var(--mico-value-none);
 
-  /**
+  /*
    * Text Alignment Properties
    *
    * These variables define text alignment values for consistent usage.
@@ -275,7 +286,7 @@
   --mico-text-align-start: start;
   --mico-text-align-end: end;
 
-  /**
+  /*
    * Text Overflow Properties
    *
    * Controls how overflowing text is handled
@@ -283,7 +294,7 @@
   --mico-text-overflow-ellipsis: ellipsis;
   --mico-text-overflow-clip: clip;
 
-  /**
+  /*
    * White Space Properties
    *
    * Controls how whitespace is handled
@@ -297,7 +308,7 @@
 
 
 
-  /**
+  /*
    * Text Indent Properties
    *
    * Controls the indentation of the first line of text
@@ -312,7 +323,7 @@
   --mico-indent-xxl: 2.5rem;
   --mico-indent-xxxl: 3rem;
 
-  /**
+  /*
    * Text Shadow Properties
    *
    * Controls text shadow effects
@@ -327,7 +338,7 @@
   --mico-text-shadow-xxl: 10px 10px 12px rgba(0, 0, 0, 0.15);
   --mico-text-shadow-xxl: 12px 12px 14px rgba(0, 0, 0, 0.15);
 
-  /**
+  /*
    * Text Stroke Properties
    *
    * Controls text stroke (outline) effects
@@ -341,7 +352,7 @@
   --mico-text-stroke-xxl: 10px;
   --mico-text-stroke-xxxl: 12px;
 
-  /**
+  /*
    * List Style Properties
    *
    * Controls list styling
@@ -358,7 +369,7 @@
   --mico-list-style-position-inside: inside;
   --mico-list-style-position-outside: outside;
 
-  /**
+  /*
    * Text Direction Properties
    *
    * Controls text direction for internationalization
@@ -366,7 +377,7 @@
   --mico-text-direction-ltr: ltr;
   --mico-text-direction-rtl: rtl;
 
-  /**
+  /*
    * Writing Mode Properties
    *
    * Controls text writing direction
@@ -375,7 +386,7 @@
   --mico-writing-mode-vertical-rl: vertical-rl;
   --mico-writing-mode-vertical-lr: vertical-lr;
 
-  /**
+  /*
    * Text Orientation Properties
    *
    * Controls text orientation in vertical writing modes
@@ -384,7 +395,7 @@
   --mico-text-orientation-upright: upright;
   --mico-text-orientation-sideways: sideways;
 
-  /**
+  /*
    * Hyphens Properties
    *
    * Controls automatic hyphenation
@@ -393,7 +404,7 @@
   --mico-hyphens-manual: manual;
   --mico-hyphens-auto: var(--mico-value-auto);
 
-  /**
+  /*
    * Text Align Last Properties
    *
    * Controls alignment of the last line in a block
@@ -406,7 +417,7 @@
   --mico-text-align-last-center: center;
   --mico-text-align-last-justify: justify;
 
-  /**
+  /*
    * Text Justify Properties
    *
    * Controls how justified text is spaced
@@ -416,7 +427,7 @@
   --mico-text-justify-inter-character: inter-character;
   --mico-text-justify-none: var(--mico-value-none);
 
-  /**
+  /*
    * User Select Properties
    *
    * Controls whether text can be selected
@@ -426,7 +437,7 @@
   --mico-user-select-all: all;
   --mico-user-select-auto: var(--mico-value-auto);
 
-  /**
+  /*
    * Word Break Properties
    *
    * Controls how words break at line endings
@@ -441,7 +452,7 @@
 /* SPACING SYSTEM (2px Granular Scale)                                    */
 /* ====================================================================== */
 
-/**
+/*
  * Spacing Scale
  *
  * A comprehensive and granular spacing system based on a 2px unit.
@@ -451,8 +462,17 @@
   --mico-size-unit: 2px;            /* Base unit for spacing system */
 
   /* Core spacing values */
-  --mico-size-0: 0;                 /* No spacing */
-  --mico-size-1: 1px;               /* Pixel-perfect adjustments */
+  --mico-size-xxs: 0.05px;
+  --mico-size-xs: 1px; 
+  --mico-size-sm: 2px; 
+  --mico-size-md: 4px; 
+  --mico-size-lg: 6px; 
+  --mico-size-xl: 8px; 
+  --mico-size-xxl: 10px; 
+  --mico-size-xxxl: 12px; 
+  --mico-size-none: none; 
+  --mico-size-0: var(--mico-value-0);
+  --mico-size-1: 1px;
 
   /* --- Granular 2px Scale --- */
   --mico-size-2: calc(var(--mico-size-unit) * 1);    /* 2px */
@@ -505,7 +525,6 @@
   --mico-size-96: calc(var(--mico-size-unit) * 48);  /* 96px */
   --mico-size-98: calc(var(--mico-size-unit) * 49);  /* 98px */
   --mico-size-100: calc(var(--mico-size-unit) * 50); /* 100px */
-  /* ... this pattern continues ... */
   --mico-size-102: calc(var(--mico-size-unit) * 51);  /* 102px */
   --mico-size-104: calc(var(--mico-size-unit) * 52);  /* 104px */
   --mico-size-106: calc(var(--mico-size-unit) * 53);  /* 106px */
@@ -525,114 +544,163 @@
   --mico-size-134: calc(var(--mico-size-unit) * 67);  /* 134px */
   --mico-size-136: calc(var(--mico-size-unit) * 68);  /* 136px */
   --mico-size-138: calc(var(--mico-size-unit) * 69);  /* 138px */
-  
+  --mico-size-140: calc(var(--mico-size-unit) * 70);  /* 140px */
+  --mico-size-142: calc(var(--mico-size-unit) * 71);  /* 142px */
+  --mico-size-144: calc(var(--mico-size-unit) * 72);  /* 144px */
+  --mico-size-146: calc(var(--mico-size-unit) * 73);  /* 146px */
+  --mico-size-148: calc(var(--mico-size-unit) * 74);  /* 148px */
+  --mico-size-150: calc(var(--mico-size-unit) * 75);  /* 150px */
+  --mico-size-152: calc(var(--mico-size-unit) * 76);  /* 152px */
+  --mico-size-154: calc(var(--mico-size-unit) * 77);  /* 154px */
+  --mico-size-156: calc(var(--mico-size-unit) * 78);  /* 156px */
+  --mico-size-158: calc(var(--mico-size-unit) * 79);  /* 158px */
+  --mico-size-160: calc(var(--mico-size-unit) * 80);  /* 160px */
+  --mico-size-162: calc(var(--mico-size-unit) * 81);  /* 162px */
+  --mico-size-164: calc(var(--mico-size-unit) * 82);  /* 164px */
+  --mico-size-166: calc(var(--mico-size-unit) * 83); /* 166px */
+  --mico-size-168: calc(var(--mico-size-unit) * 84); /* 168px */
+  --mico-size-170: calc(var(--mico-size-unit) * 85); /* 170px */
+  --mico-size-172: calc(var(--mico-size-unit) * 86); /* 172px */
+  --mico-size-174: calc(var(--mico-size-unit) * 87); /* 174px */
+  --mico-size-176: calc(var(--mico-size-unit) * 88); /* 176px */
+  --mico-size-178: calc(var(--mico-size-unit) * 89); /* 178px */
+  --mico-size-180: calc(var(--mico-size-unit) * 90); /* 180px */
+  --mico-size-182: calc(var(--mico-size-unit) * 91); /* 182px */
+  --mico-size-184: calc(var(--mico-size-unit) * 92); /* 184px */
+  --mico-size-186: calc(var(--mico-size-unit) * 93); /* 186px */
+  --mico-size-188: calc(var(--mico-size-unit) * 94); /* 188px */
+  --mico-size-190: calc(var(--mico-size-unit) * 95); /* 190px */
+  --mico-size-192: calc(var(--mico-size-unit) * 96); /* 192px */
+  --mico-size-194: calc(var(--mico-size-unit) * 97); /* 194px */
+  --mico-size-196: calc(var(--mico-size-unit) * 98); /* 196px */
+  --mico-size-198: calc(var(--mico-size-unit) * 99); /* 198px */
+  --mico-size-200: calc(var(--mico-size-unit) * 100); /* 200px */
 
 
 
 
+  /* 
+  * Negative Numbers
+  *
+  *
+  */
+    --mico-size-n-unit: -2px; /* Base unit for spacing system */
 
+  /* Core spacing values */
+  --mico-size-n-0: -var(--mico-value-0); 
+  --mico-size-n-xxs: -0.05px;
+  --mico-size-n-xs: -0.5px; 
+  --mico-size-n-sm: -0.8px; 
+  --mico-size-n-1: -1px;
 
-  /* ... pattern continues up to 400 ... */
-  --mico-size-380: calc(var(--mico-size-unit) * 190); /* 380px */
-  --mico-size-382: calc(var(--mico-size-unit) * 191); /* 382px */
-  --mico-size-384: calc(var(--mico-size-unit) * 192); /* 384px */
-  --mico-size-386: calc(var(--mico-size-unit) * 193); /* 386px */
-  --mico-size-388: calc(var(--mico-size-unit) * 194); /* 388px */
-  --mico-size-390: calc(var(--mico-size-unit) * 195); /* 390px */
-  --mico-size-392: calc(var(--mico-size-unit) * 196); /* 392px */
-  --mico-size-394: calc(var(--mico-size-unit) * 197); /* 394px */
-  --mico-size-396: calc(var(--mico-size-unit) * 198); /* 396px */
-  --mico-size-398: calc(var(--mico-size-unit) * 199); /* 398px */
-  --mico-size-400: calc(var(--mico-size-unit) * 200); /* 400px */
-
-  /**
-   * Main & Section Fluid Spacing Gutter
-   *
-   * Responsive spacing that adapts to viewport size.
-   * Uses clamp() to create spacing that scales between a minimum and maximum value.
-   *
-   * Format: clamp(min-size, viewport-based-size, max-size)
-   */
-  /* --mico-size-fluid-xxs: clamp(var(--mico-size-8), 3vw, var(--mico-size-24));
-  --mico-size-fluid-xs: clamp(var(--mico-size-16), 3vw, var(--mico-size-32));
-  --mico-size-fluid-sm: clamp(var(--mico-size-16), 4vw, var(--mico-size-56));
-  --mico-size-fluid-md: clamp(var(--mico-size-16), 6vw, var(--mico-size-80));
-  --mico-size-fluid-lg: clamp(var(--mico-size-16), 8vw, var(--mico-size-100));
-  --mico-size-fluid-xl: clamp(var(--mico-size-16), 10vw, var(--mico-size-128));
-  --mico-size-fluid-xxl: clamp(var(--mico-size-16), 12vw, var(--mico-size-192));
-  --mico-size-fluid-xxxl: clamp(var(--mico-size-16), 12vw, var(--mico-size-224)); */
-
-/* ========================================================================== */
-/* FLUID SYSTEM ENGINE                                                        */
-/* ========================================================================== */
-/*
- * DO NOT EDIT THIS SECTION.
- * This engine holds the global configuration and the master calculation
- * for creating all fluid values (typography, spacing, etc.).
-*/
-  /* --- Global Configuration --- */
-  /* Set the viewport widths where fluid scaling should start and stop. */
-  --fluid-min-vw: 320;  /* in pixels */
-  --fluid-max-vw: 1600; /* in pixels */
-
-  /* --- Engine Internals (Do Not Modify) --- */
-  /* These variables are used by the master formula. */
-  --fluid-screen-range: calc(var(--fluid-max-vw) - var(--fluid-min-vw));
-  --fluid-rem-factor: calc((100vw - var(--fluid-min-vw) * 1px) / var(--fluid-screen-range));
-
-
-
-/* ========================================================================== */
-/* USER-EDITABLE FLUID VALUES                                                 */
-/* ========================================================================== */
-/*
- * This is the ONLY section to edit for fluid values.
- * For each variable, simply choose your min and max values and plug them
- * into the master clamp() formula.
-*/
-/**
-   * Main & Section Fluid Spacing Gutter
-   * Each variable defines a min/max value and uses the central engine to calculate the fluid behavior.
-   */
-
-  /* Min: 8px | Max: 16px */
-  --mico-size-fluid-xxs: clamp(0.5rem, calc(0.5rem + (1 - 0.5) * var(--fluid-rem-factor)), 1rem);
-
-  /* Min: 16px | Max: 24px */
-  --mico-size-fluid-xs: clamp(1rem, calc(1rem + (1.5 - 1) * var(--fluid-rem-factor)), 1.5rem);
-
-  /* Min: 24px | Max: 44px */
-  --mico-size-fluid-sm: clamp(1.5rem, calc(1.5rem + (2.75 - 1.5) * var(--fluid-rem-factor)), 2.75rem);
-  
-  /* Min: 44px | Max: 68px */
-  --mico-size-fluid-md: clamp(2.75rem, calc(2.75rem + (4.25 - 2.75) * var(--fluid-rem-factor)), 4.25rem);
-
-  /* Min: 68px | Max: 96px */
-  --mico-size-fluid-lg: clamp(4.25rem, calc(4.25rem + (6 - 4.25) * var(--fluid-rem-factor)), 6rem);
-
-  /* Min: 96px | Max: 128px */
-  --mico-size-fluid-xl: clamp(6rem, calc(6rem + (8 - 6) * var(--fluid-rem-factor)), 8rem);
-
-  /* Min: 128px | Max: 164px */
-  --mico-size-fluid-xxl: clamp(8rem, calc(8rem + (10.25 - 8) * var(--fluid-rem-factor)), 10.25rem);
-  
-  /* Min: 164px | Max: 204px */
-  --mico-size-fluid-xxxl: clamp(10.25rem, calc(10.25rem + (12.75 - 10.25) * var(--fluid-rem-factor)), 12.75rem);
-
-
-
-
-
-
-
-
+  /* --- Granular 2px Scale --- */
+  --mico-size-n-2: calc(var(--mico-size-n-unit) * 1);    /* -2px */
+  --mico-size-n-4: calc(var(--mico-size-n-unit) * 2);    /* -4px */
+  --mico-size-n-6: calc(var(--mico-size-n-unit) * 3);    /* -6px */
+  --mico-size-n-8: calc(var(--mico-size-n-unit) * 4);    /* -8px */
+  --mico-size-n-10: calc(var(--mico-size-n-unit) * 5);   /* -10px */
+  --mico-size-n-12: calc(var(--mico-size-n-unit) * 6);   /* -12px */
+  --mico-size-n-14: calc(var(--mico-size-n-unit) * 7);   /* -14px */
+  --mico-size-n-16: calc(var(--mico-size-n-unit) * 8);   /* -16px */
+  --mico-size-n-18: calc(var(--mico-size-n-unit) * 9);   /* -18px */
+  --mico-size-n-20: calc(var(--mico-size-n-unit) * 10);  /* -20px */
+  --mico-size-n-22: calc(var(--mico-size-n-unit) * 11);  /* -22px */
+  --mico-size-n-24: calc(var(--mico-size-n-unit) * 12);  /* -24px */
+  --mico-size-n-26: calc(var(--mico-size-n-unit) * 13);  /* -26px */
+  --mico-size-n-28: calc(var(--mico-size-n-unit) * 14);  /* -28px */
+  --mico-size-n-30: calc(var(--mico-size-n-unit) * 15);  /* -30px */
+  --mico-size-n-32: calc(var(--mico-size-n-unit) * 16);  /* -32px */
+  --mico-size-n-34: calc(var(--mico-size-n-unit) * 17);  /* -34px */
+  --mico-size-n-36: calc(var(--mico-size-n-unit) * 18);  /* -36px */
+  --mico-size-n-38: calc(var(--mico-size-n-unit) * 19);  /* -38px */
+  --mico-size-n-40: calc(var(--mico-size-n-unit) * 20);  /* -40px */
+  --mico-size-n-42: calc(var(--mico-size-n-unit) * 21);  /* -42px */
+  --mico-size-n-44: calc(var(--mico-size-n-unit) * 22);  /* -44px */
+  --mico-size-n-46: calc(var(--mico-size-n-unit) * 23);  /* -46px */
+  --mico-size-n-48: calc(var(--mico-size-n-unit) * 24);  /* -48px */
+  --mico-size-n-50: calc(var(--mico-size-n-unit) * 25);  /* -50px */
+  --mico-size-n-52: calc(var(--mico-size-n-unit) * 26);  /* -52px */
+  --mico-size-n-54: calc(var(--mico-size-n-unit) * 27);  /* -54px */
+  --mico-size-n-56: calc(var(--mico-size-n-unit) * 28);  /* -56px */
+  --mico-size-n-58: calc(var(--mico-size-n-unit) * 29);  /* -58px */
+  --mico-size-n-60: calc(var(--mico-size-n-unit) * 30);  /* -60px */
+  --mico-size-n-62: calc(var(--mico-size-n-unit) * 31);  /* -62px */
+  --mico-size-n-64: calc(var(--mico-size-n-unit) * 32);  /* -64px */
+  --mico-size-n-66: calc(var(--mico-size-n-unit) * 33);  /* -66px */
+  --mico-size-n-68: calc(var(--mico-size-n-unit) * 34);  /* -68px */
+  --mico-size-n-70: calc(var(--mico-size-n-unit) * 35);  /* -70px */
+  --mico-size-n-72: calc(var(--mico-size-n-unit) * 36);  /* -72px */
+  --mico-size-n-74: calc(var(--mico-size-n-unit) * 37);  /* -74px */
+  --mico-size-n-76: calc(var(--mico-size-n-unit) * 38);  /* -76px */
+  --mico-size-n-78: calc(var(--mico-size-n-unit) * 39);  /* -78px */
+  --mico-size-n-80: calc(var(--mico-size-n-unit) * 40);  /* -80px */
+  --mico-size-n-82: calc(var(--mico-size-n-unit) * 41);  /* -82px */
+  --mico-size-n-84: calc(var(--mico-size-n-unit) * 42);  /* -84px */
+  --mico-size-n-86: calc(var(--mico-size-n-unit) * 43);  /* -86px */
+  --mico-size-n-88: calc(var(--mico-size-n-unit) * 44);  /* -88px */
+  --mico-size-n-90: calc(var(--mico-size-n-unit) * 45);  /* -90px */
+  --mico-size-n-92: calc(var(--mico-size-n-unit) * 46);  /* -92px */
+  --mico-size-n-94: calc(var(--mico-size-n-unit) * 47);  /* -94px */
+  --mico-size-n-96: calc(var(--mico-size-n-unit) * 48);  /* -96px */
+  --mico-size-n-98: calc(var(--mico-size-n-unit) * 49);  /* -98px */
+  --mico-size-n-100: calc(var(--mico-size-n-unit) * 50); /* -100px */
+  --mico-size-n-102: calc(var(--mico-size-n-unit) * 51);  /* -102px */
+  --mico-size-n-104: calc(var(--mico-size-n-unit) * 52);  /* -104px */
+  --mico-size-n-106: calc(var(--mico-size-n-unit) * 53);  /* -106px */
+  --mico-size-n-108: calc(var(--mico-size-n-unit) * 54);  /* -108px */
+  --mico-size-n-110: calc(var(--mico-size-n-unit) * 55);  /* -110px */
+  --mico-size-n-112: calc(var(--mico-size-n-unit) * 56);  /* -112px */
+  --mico-size-n-114: calc(var(--mico-size-n-unit) * 57);  /* -114px */
+  --mico-size-n-116: calc(var(--mico-size-n-unit) * 58);  /* -116px */
+  --mico-size-n-118: calc(var(--mico-size-n-unit) * 59);  /* -118px */
+  --mico-size-n-120: calc(var(--mico-size-n-unit) * 60);  /* -120px */
+  --mico-size-n-122: calc(var(--mico-size-n-unit) * 61);  /* -122px */
+  --mico-size-n-124: calc(var(--mico-size-n-unit) * 62);  /* -124px */
+  --mico-size-n-126: calc(var(--mico-size-n-unit) * 63);  /* -126px */
+  --mico-size-n-128: calc(var(--mico-size-n-unit) * 64);  /* -128px */
+  --mico-size-n-130: calc(var(--mico-size-n-unit) * 65);  /* -130px */
+  --mico-size-n-132: calc(var(--mico-size-n-unit) * 66);  /* -132px */
+  --mico-size-n-134: calc(var(--mico-size-n-unit) * 67);  /* -134px */
+  --mico-size-n-136: calc(var(--mico-size-n-unit) * 68);  /* -136px */
+  --mico-size-n-138: calc(var(--mico-size-n-unit) * 69);  /* -138px */
+  --mico-size-n-140: calc(var(--mico-size-n-unit) * 70);  /* -140px */
+  --mico-size-n-142: calc(var(--mico-size-n-unit) * 71);  /* -142px */
+  --mico-size-n-144: calc(var(--mico-size-n-unit) * 72);  /* -144px */
+  --mico-size-n-146: calc(var(--mico-size-n-unit) * 73);  /* -146px */
+  --mico-size-n-148: calc(var(--mico-size-n-unit) * 74);  /* -148px */
+  --mico-size-n-150: calc(var(--mico-size-n-unit) * 75);  /* -150px */
+  --mico-size-n-152: calc(var(--mico-size-n-unit) * 76);  /* -152px */
+  --mico-size-n-154: calc(var(--mico-size-n-unit) * 77);  /* -154px */
+  --mico-size-n-156: calc(var(--mico-size-n-unit) * 78);  /* -156px */
+  --mico-size-n-158: calc(var(--mico-size-n-unit) * 79);  /* -158px */
+  --mico-size-n-160: calc(var(--mico-size-n-unit) * 80);  /* -160px */
+  --mico-size-n-162: calc(var(--mico-size-n-unit) * 81);  /* -162px */
+  --mico-size-n-164: calc(var(--mico-size-n-unit) * 82);  /* -164px */
+  --mico-size-n-166: calc(var(--mico-size-n-unit) * 83); /* -166px */
+  --mico-size-n-168: calc(var(--mico-size-n-unit) * 84); /* -168px */
+  --mico-size-n-170: calc(var(--mico-size-n-unit) * 85); /* -170px */
+  --mico-size-n-172: calc(var(--mico-size-n-unit) * 86); /* -172px */
+  --mico-size-n-174: calc(var(--mico-size-n-unit) * 87); /* -174px */
+  --mico-size-n-176: calc(var(--mico-size-n-unit) * 88); /* -176px */
+  --mico-size-n-178: calc(var(--mico-size-n-unit) * 89); /* -178px */
+  --mico-size-n-180: calc(var(--mico-size-n-unit) * 90); /* -180px */
+  --mico-size-n-182: calc(var(--mico-size-n-unit) * 91); /* -182px */
+  --mico-size-n-184: calc(var(--mico-size-n-unit) * 92); /* -184px */
+  --mico-size-n-186: calc(var(--mico-size-n-unit) * 93); /* -186px */
+  --mico-size-n-188: calc(var(--mico-size-n-unit) * 94); /* -188px */
+  --mico-size-n-190: calc(var(--mico-size-n-unit) * 95); /* -190px */
+  --mico-size-n-192: calc(var(--mico-size-n-unit) * 96); /* -192px */
+  --mico-size-n-194: calc(var(--mico-size-n-unit) * 97); /* -194px */
+  --mico-size-n-196: calc(var(--mico-size-n-unit) * 98); /* -196px */
+  --mico-size-n-198: calc(var(--mico-size-n-unit) * 99); /* -198px */
+  --mico-size-n-200: calc(var(--mico-size-n-unit) * 100); /* -200px */
 
 
   /* ====================================================================== */
   /* BORDER SYSTEM                                                          */
   /* ====================================================================== */
 
-  /**
+  /*
    * Border Radius
    *
    * Controls the roundness of element corners.
@@ -649,15 +717,13 @@
   --mico-rounded-xxxl: 24px;          /* Extra rounded corners */
   --mico-rounded-full: 9999px;       /* Fully rounded (circles/pills) */
 
-  /**
+  /*
    * Border Styles
    *
    * Standard CSS border styles for consistent usage.
    * These variables make it easier to maintain consistent border styles.
    */
    
-  --mico-border-0: 0;
-  --mico-border-none: none;
   --mico-border-solid: solid;
   --mico-border-dashed: dashed;
   --mico-border-dotted: dotted;
@@ -667,38 +733,13 @@
   --mico-border-inset: inset;
   --mico-border-outset: outset;
 
-  /**
-   * Border Widths
-   *
-   * Standard border thickness values.
-   * These follow the same scale pattern as other properties.
-   */
-  --mico-border-width-0: 0px;       /* No border */
-  --mico-border-width-xxs: 1px;       /* Thin border (standard) */
-  --mico-border-width-xs: 2px;       /* Thin border (standard) */
-  --mico-border-width-sm: 4px;       /* Medium border */
-  --mico-border-width-md: 8px;       /* Thick border */
-  --mico-border-width-lg: 12px;       /* Very thick border */
-  --mico-border-width-xl: 16px;       /* Very thick border */
-  --mico-border-width-xxl: 20px;       /* Very thick border */
-  --mico-border-width-xxxl: 24px;       /* Very thick border */
   
 
-  /**
+  /*
    * Outline Properties
    *
    * These variables define outline styles for accessibility and focus states.
    */
-  --mico-outline-width-none: none;      /* No outline */
-  --mico-outline-width-0: none;      /* No outline */
-  --mico-outline-width-xxs: 1px;      /* Thin outline */
-  --mico-outline-width-xs: 2px;      /* Thin outline */
-  --mico-outline-width-sm: 4px;      /* Medium outline */
-  --mico-outline-width-md: 8px;      /* Thick outline */
-  --mico-outline-width-lg: 12px;      /* Very thick outline */
-  --mico-outline-width-xl: 16px;      /* Very thick outline */
-  --mico-outline-width-xxl: 20px;      /* Very thick outline */
-  --mico-outline-width-xxxl: 24px;      /* Very thick outline */
 
   --mico-outline-style-none: none;  /* No outline */
   --mico-outline-style-solid: solid; /* Solid outline */
@@ -706,17 +747,7 @@
   --mico-outline-style-dotted: dotted; /* Dotted outline */
   --mico-outline-style-double: double; /* Double outline */
 
-  --mico-outline-offset-0: 0px;     /* No offset */
-  --mico-outline-offset-xxs: 1;     /* Small offset */
-  --mico-outline-offset-xs: 2px;     /* Small offset */
-  --mico-outline-offset-sm: 4px;     /* Medium offset */
-  --mico-outline-offset-md: 8px;     /* Large offset */
-  --mico-outline-offset-lg: 12px;     /* Extra large offset */
-  --mico-outline-offset-xl: 16px;     /* Extra large offset */
-  --mico-outline-offset-xxl: 20px;     /* Extra large offset */
-  --mico-outline-offset-xxxl: 24px;     /* Extra large offset */
-
-  /**
+  /*
    * Divide Properties
    *
    * These variables define border styles for dividing child elements.
@@ -731,7 +762,7 @@
   /* SHADOW SYSTEM                                                          */
   /* ====================================================================== */
 
-  /**
+  /*
    * Box Shadows
    *
    * Creates depth and elevation in the interface.
@@ -795,7 +826,7 @@
   /* Focus Shadow for accessibility */
   --mico-shadow-focus: 0 0 0 3px rgba(66, 153, 225, 0.5);
 
-  /**
+  /*
    * Media Queries for Adaptive Shadows
    *
    * These media queries automatically adjust shadow styles based on user preferences.
@@ -836,14 +867,14 @@
   /* LAYOUT SYSTEM                                                          */
   /* ====================================================================== */
 
-  /**
+  /*
    * Layout Properties
    *
    * These variables define common layout values for consistent usage.
    * Using variables for these properties ensures consistency across the codebase.
    */
 
-  /**
+  /*
    * Position Properties
    *
    * These variables define CSS position values for consistent usage.
@@ -855,7 +886,7 @@
   --mico-position-fixed: fixed;       /* Positioned relative to viewport */
   --mico-position-sticky: sticky;     /* Positioned based on scroll position */
 
-  /**
+  /*
    * Display Properties
    *
    * These variables define CSS display values for consistent usage.
@@ -869,7 +900,7 @@
   --mico-display-grid: grid;             /* Grid layout */
   --mico-display-none: none;             /* Element is not displayed */
 
-  /**
+  /*
    * Box Model Properties
    *
    * These variables define box model behavior for consistent usage.
@@ -879,7 +910,7 @@
   --mico-box-decoration-slice: slice;    /* Background doesn't extend across fragments */
   --mico-box-decoration-clone: clone;    /* Background extends across fragments */
 
-  /**
+  /*
    * Overflow Properties
    *
    * These variables define how content that overflows the element's box is handled.
@@ -892,7 +923,7 @@
   --mico-overscroll-contain: contain;   /* Prevent scroll chaining */
   --mico-overscroll-none: none;         /* Prevent overscroll effects */
 
-  /**
+  /*
    * Aspect Ratio Properties
    *
    * These variables define common aspect ratios for responsive elements.
@@ -905,7 +936,7 @@
   --mico-aspect-ratio-widescreen: 21 / 9;   /* 21:9 ratio (ultrawide) */
   --mico-aspect-ratio-golden: 1.618 / 1;    /* Golden ratio (aesthetically pleasing) */
 
-  /**
+  /*
    * Float and Clear Properties
    *
    * These variables define float and clear values for consistent usage.
@@ -918,7 +949,7 @@
   --mico-clear-right: right;            /* Clear right floats */
   --mico-clear-both: both;              /* Clear both left and right floats */
 
-  /**
+  /*
    * Object Fit Properties
    *
    * These variables define how replaced elements (like images) should be resized.
@@ -929,7 +960,7 @@
   --mico-object-fit-scale-down: scale-down; /* Smaller of contain or none */
   --mico-object-position-center: center; /* Center the object within its box */
 
-  /**
+  /*
    * Visibility and Isolation Properties
    *
    * These variables define visibility and stacking context behavior.
@@ -940,7 +971,7 @@
   --mico-isolation-isolate: isolate;     /* Create new stacking context */
   --mico-isolation-auto: auto;           /* Default stacking context behavior */
 
-  /**
+  /*
    * Positioning Properties
    *
    * These variables define common inset values for positioned elements.
@@ -952,7 +983,7 @@
   /* FLEXBOX SYSTEM                                                          */
   /* ====================================================================== */
 
-  /**
+  /*
    * Flexbox Properties
    *
    * These variables define common flexbox values for consistent usage.
@@ -979,16 +1010,58 @@
   --mico-justify-evenly: space-evenly; /* Items evenly distributed with equal space */
 
   /* Align Items (cross axis) */
-  --mico-items-start: flex-start;     /* Items aligned at start of cross axis */
-  --mico-items-end: flex-end;         /* Items aligned at end of cross axis */
-  --mico-items-center: center;        /* Items centered on cross axis */
-  --mico-items-baseline: baseline;    /* Items aligned by text baseline */
-  --mico-items-stretch: stretch;      /* Items stretched to fill container */
+  --mico-align-start: flex-start;     /* Items aligned at start of cross axis */
+  --mico-align-end: flex-end;         /* Items aligned at end of cross axis */
+  --mico-align-center: center;        /* Items centered on cross axis */
+  --mico-align-baseline: baseline;    /* Items aligned by text baseline */
+  --mico-align-stretch: stretch;      /* Items stretched to fill container */
 
-  /* ====================================================================== */
-  /* GRID SYSTEM                                                            */
-  /* ====================================================================== */
-  /**
+/* ====================================================================== */
+/* GRID SYSTEM                                                            */
+/* ====================================================================== */
+/* START OF THE PAGE GRID LAYOUT ENGINE                                   
+ * This system uses CSS Grid to create a powerful page layout system
+ * that natively supports full-bleed and breakout content. It replaces
+ * traditional padding-based containers.
+*/
+
+  /* --- User-Editable Layout Configuration --- */
+
+  /*
+   * Sets the maximum width of the primary readable content layout.
+   * Use 'ch' for readability, or a fixed unit like 'rem' or 'px' for design precision.
+   * Example: 70ch (ideal for articles), 80rem (for a 1280px container).
+   */
+  --mico-layout-page-width: 100ch;
+
+  /*
+   * Sets how much a '.layout-wide' element should extend beyond the main content.
+   * This is the size of the "breakout" on each side.
+   */
+  --mico-layout-wide-offset: 4rem;
+
+  /*
+   * Defines the minimum gutter space on the left and right sides of the page.
+   * This also acts as the default padding on mobile devices.
+   */
+  --mico-layout-gutter: 1.5rem;
+
+  /* --- Grid Definition (Framework Internals - Do Not Edit) --- */
+  /*
+   * This variable uses the settings above to create the named grid columns
+   * that power the entire layout system.
+   */
+  --mico-layout-grid:
+    [full-start] minmax(var(--mico-layout-gutter), 1fr)
+    [wide-start] minmax(0, var(--mico-layout-wide-offset))
+    [main-start] minmax(0, var(--mico-layout-page-width)) [main-end]
+    minmax(0, var(--mico-layout-wide-offset)) [wide-end]
+    minmax(var(--mico-layout-gutter), 1fr) [full-end];
+
+/* END OF THE PAGE GRID LAYOUT ENGINE                                         */
+
+  
+  /*
    * Grid Auto Properties
    *
    * These variables define how grid items are automatically placed and sized.
@@ -998,7 +1071,7 @@
   --mico-grid-auto-fit: repeat(auto-fit, minmax(min(var(--mico-grid-min-column-width), 100%), 1fr));    /* Expands items to fill available space */
   --mico-grid-auto-fill: repeat(auto-fill, minmax(min(var(--mico-grid-min-column-width), 100%), 1fr));  /* Creates as many tracks as possible */
 
-  /**
+  /*
    * Grid Placement Properties
    *
    * These variables define how grid items are placed within the grid container.
@@ -1029,7 +1102,7 @@
 --mico-justify-self-center: center;     /* Item justified at center of grid area */
 --mico-justify-self-stretch: stretch;   /* Item stretched to fill grid area */
 
-  /**
+  /*
    * Grid Properties
    *
    * These variables define common grid layout values for consistent usage.
@@ -1068,18 +1141,11 @@
   --mico-auto-cols: minmax(var(--mico-min-column-width, 0), var(--mico-max-column-width, 1fr));
   --mico-auto-rows: minmax(var(--mico-min-row-height, 0), var(--mico-max-row-height, 1fr));
 
-  /* Grid Gap */
-  --mico-gap-xs: var(--mico-size-4);  /* Extra small gap */
-  --mico-gap-sm: var(--mico-size-8);  /* Small gap */
-  --mico-gap-md: var(--mico-size-16); /* Medium gap (default) */
-  --mico-gap-lg: var(--mico-size-24); /* Large gap */
-  --mico-gap-xl: var(--mico-size-32); /* Extra large gap */
-
   /* ====================================================================== */
   /* BACKGROUND SYSTEM                                                       */
   /* ====================================================================== */
 
-  /**
+  /*
    * Background Properties
    *
    * These variables define common background property values for consistent usage.
@@ -1107,7 +1173,7 @@
   /* FILTER SYSTEM                                                          */
   /* ====================================================================== */
 
-  /**
+  /*
    * Filter Properties
    *
    * These variables define CSS filter effects for visual manipulation.
@@ -1126,21 +1192,31 @@
   /* OPACITY SYSTEM                                                          */
   /* ====================================================================== */
 
-  /**
+  /*
    * Opacity Properties
    *
    * These variables define standard opacity values for consistent usage.
    * Opacity controls the transparency of elements.
    */
   --mico-opacity-0p: 0;    
+  --mico-opacity-5p: 0.5;    
   --mico-opacity-10p: 0.10;               
+  --mico-opacity-15p: 0.15;               
   --mico-opacity-20p: 0.20; 
+  --mico-opacity-25p: 0.25; 
   --mico-opacity-30p: 0.30; 
+  --mico-opacity-35p: 0.35; 
   --mico-opacity-40p: 0.40; 
-  --mico-opacity-50p: 0.5;    
+  --mico-opacity-45p: 0.45;    
+  --mico-opacity-50p: 0.50;    
+  --mico-opacity-55p: 0.55;    
   --mico-opacity-60p: 0.60;    
+  --mico-opacity-65p: 0.65;    
   --mico-opacity-70p: 0.70;  
+  --mico-opacity-75p: 0.75;  
   --mico-opacity-80p: 0.80;  
+  --mico-opacity-85p: 0.85;  
+  --mico-opacity-95p: 0.95;  
   --mico-opacity-90p: 0.90;  
   --mico-opacity-100p: 1;      
 
@@ -1148,7 +1224,7 @@
   /* TRANSFORM SYSTEM                                                       */
   /* ====================================================================== */
 
-  /**
+  /*
    * Transform Properties
    *
    * These variables define common transform functions for consistent usage.
@@ -1172,7 +1248,7 @@
   /* TABLE SYSTEM                                                           */
   /* ====================================================================== */
 
-  /**
+  /*
    * Table Properties
    *
    * These variables define table layout algorithms for consistent usage.
@@ -1185,7 +1261,7 @@
   /* SVG SYSTEM                                                             */
   /* ====================================================================== */
 
-  /**
+  /*
    * SVG Properties
    *
    * These variables define common SVG property values for consistent usage.
@@ -1195,61 +1271,10 @@
   --mico-stroke-current: currentColor; /* Use current text color for stroke */
 
   /* ====================================================================== */
-  /* BUTTON SYSTEM                                                          */
-  /* ====================================================================== */
-
-  /**
-   * Button Size Variables
-   *
-   * These variables define consistent button sizing across the framework.
-   */
-  --mico-btn-padding-xs: var(--mico-size-8) var(--mico-size-12);       /* Extra small button padding */
-  --mico-btn-padding-sm: var(--mico-size-12) var(--mico-size-16);      /* Small button padding */
-  --mico-btn-padding-md: var(--mico-size-16) var(--mico-size-24);      /* Medium button padding (default) */
-  --mico-btn-padding-lg: var(--mico-size-20) var(--mico-size-32);      /* Large button padding */
-  --mico-btn-padding-xl: var(--mico-size-24) var(--mico-size-40);      /* Extra large button padding */
-
-  --mico-btn-font-size-xs: var(--mico-fs-xs);                          /* Extra small button font size */
-  --mico-btn-font-size-sm: var(--mico-fs-sm);                          /* Small button font size */
-  --mico-btn-font-size-md: var(--mico-fs-md);                          /* Medium button font size (default) */
-  --mico-btn-font-size-lg: var(--mico-fs-lg);                          /* Large button font size */
-  --mico-btn-font-size-xl: var(--mico-fs-xl);                          /* Extra large button font size */
-
-  /**
-   * Button Border Radius Variables
-   *
-   * These variables define button border radius options.
-   */
-  --mico-btn-radius-square: var(--mico-radius-none);                    /* Square buttons (no radius) */
-  --mico-btn-radius-sm: var(--mico-radius-sm);                         /* Small radius */
-  --mico-btn-radius-md: var(--mico-radius-md);                         /* Medium radius (default) */
-  --mico-btn-radius-lg: var(--mico-radius-lg);                         /* Large radius */
-  --mico-btn-radius-pill: var(--mico-radius-full);                     /* Pill-shaped buttons */
-  --mico-btn-radius-circle: var(--mico-radius-full);                   /* Circular buttons */
-
-  /**
-   * Button Shadow Variables
-   *
-   * These variables define button shadow options for depth and elevation.
-   */
-  --mico-btn-shadow-none: none;                                         /* No shadow */
-  --mico-btn-shadow-sm: var(--mico-shadow-sm);                         /* Small shadow */
-  --mico-btn-shadow-md: var(--mico-shadow-md);                         /* Medium shadow (default) */
-  --mico-btn-shadow-lg: var(--mico-shadow-lg);                         /* Large shadow */
-
-  /**
-   * Button Icon Variables
-   *
-   * These variables define spacing and sizing for buttons with icons.
-   */
-  --mico-btn-icon-gap: var(--mico-size-8);                             /* Gap between icon and text */
-  --mico-btn-icon-only-size: var(--mico-size-40);                      /* Size for icon-only buttons */
-
-  /* ====================================================================== */
   /* CURSOR SYSTEM                                                          */
   /* ====================================================================== */
 
-  /**
+  /*
    * Cursor Properties
    *
    * These variables define cursor styles for different interactive states.
@@ -1270,7 +1295,7 @@
   /* MISCELLANEOUS UTILITIES SYSTEM                                         */
   /* ====================================================================== */
 
-  /**
+  /*
    * Appearance Variables
    *
    * These variables control the appearance property for form elements.
@@ -1278,7 +1303,7 @@
   --mico-appearance-none: none;       /* Remove default browser styling */
   --mico-appearance-auto: auto;       /* Use default browser styling */
 
-  /**
+  /*
    * Pointer Events Variables
    *
    * These variables control pointer event behavior.
@@ -1286,7 +1311,7 @@
   --mico-pointer-events-none: none;   /* Element cannot be target of pointer events */
   --mico-pointer-events-auto: auto;   /* Element can be target of pointer events */
 
-  /**
+  /*
    * Will Change Variables
    *
    * These variables provide performance hints to the browser.
@@ -1297,16 +1322,7 @@
   --mico-will-change-opacity: opacity; /* Optimize for opacity changes */
   --mico-will-change-scroll: scroll-position; /* Optimize for scroll changes */
 
-  /**
-   * Bleed Utility Variables
-   *
-   * These variables control full-bleed and column-bleed effects.
-   */
-  --mico-bleed-offset-sm: 10vw;       /* Small bleed offset */
-  --mico-bleed-offset-md: 20vw;       /* Medium bleed offset (default) */
-  --mico-bleed-offset-lg: 30vw;       /* Large bleed offset */
-
-  /**
+  /*
    * Mask Variables
    *
    * These variables define CSS mask gradients for fade effects.
@@ -1324,7 +1340,7 @@
   /* SIZING SYSTEM                                                          */
   /* ====================================================================== */
 
-  /**
+  /*
    * Width and Height Properties
    *
    * These variables define common sizing values for consistent usage.
@@ -1337,10 +1353,10 @@
   --mico-max-content: max-content;    /* Largest size needed for content */
 
   /* Percentage-based Sizing */
-  --mico-full: 100%;            /* Full width of container */
-  --mico-half: 50%;             /* Half width of container */
-  --mico-quarter: 25%;           /* Quarter width of container */
-  --mico-third: 33.33%;         /* Third width of container */
+  --mico-size-100p: 100%;            /* Full width of container */
+  --mico-size-half: 50%;             /* Half width of container */
+  --mico-size-quarter: 25%;           /* Quarter width of container */
+  --mico-size-third: 33.33%;         /* Third width of container */
 
   /* Viewport-based Sizing */
   --mico-width-screen: 100vw;         /* Full viewport width */
@@ -1350,7 +1366,7 @@
   /* ALIGNMENT SYSTEM                                                       */
   /* ====================================================================== */
 
-  /**
+  /*
    * Vertical Alignment Properties
    *
    * These variables define vertical alignment values for consistent usage.
@@ -1373,7 +1389,7 @@
   /* ANIMATION SYSTEM                                                       */
   /* ====================================================================== */
 
-  /**
+  /*
    * Animation Duration Variables
    *
    * These variables define animation durations for consistent timing across the framework.
@@ -1385,7 +1401,7 @@
   --mico-duration-lg: 1.2s;          /* Slow animations */
   --mico-duration-xl: 2s;            /* Very slow animations */
 
-  /**
+  /*
    * Animation Delay Variables
    *
    * These variables define animation delays for staggered effects.
@@ -1396,7 +1412,7 @@
   --mico-delay-lg: 0.6s;             /* Large delay */
   --mico-delay-xl: 0.8s;             /* Extra large delay */
 
-  /**
+  /*
    * Animation Engine Variables
    *
    * These variables control the default behavior of the animation engine.
@@ -1405,7 +1421,7 @@
   --mico-anim-default-timing: ease-out;                         /* Default timing function */
   --mico-anim-default-fill-mode: both;                          /* Default fill mode */
 
-  /**
+  /*
    * Interactive Animation Variables
    *
    * These variables control interactive elements like ripples and typewriter effects.
@@ -1414,7 +1430,7 @@
   --mico-ripple-bg-dark: rgba(0, 0, 0, 0.2);                   /* Dark ripple background */
   --mico-typewriter-cursor-color: currentColor;                 /* Typewriter cursor color */
 
-  /**
+  /*
    * Animation Properties
    *
    * These variables define common animation presets for consistent usage.
@@ -1430,7 +1446,7 @@
   /* EASING SYSTEM                                                          */
   /* ====================================================================== */
 
-  /**
+  /*
    * Easing Functions
    *
    * These variables define timing functions that control animation pacing.
@@ -1457,7 +1473,7 @@
   /* TRANSITION SYSTEM                                                      */
   /* ====================================================================== */
 
-  /**
+  /*
    * Transition Properties
    *
    * These variables define common transition presets for consistent usage.
@@ -1482,7 +1498,7 @@
   /* COLOR SYSTEM - OKLCH POWERED                                          */
   /* ====================================================================== */
 
-  /**
+  /*
    * OKLCH Color System
    *
    * This advanced color system uses OKLCH (Oklab Lightness Chroma Hue) color space
@@ -1501,7 +1517,7 @@
    * Fallbacks are provided for older browsers.
    */
 
-  /**
+  /*
    * OKLCH Color System - Harmonious Tint & Shade Generation Controls
    *
    * This system creates beautiful, harmonious color variations that maintain the original
@@ -1520,7 +1536,7 @@
   /* TINT GENERATION CONTROLS (Lighter Variations)                         */
   /* ====================================================================== */
 
-  /**
+  /*
    * Lightness Controls for Tints
    * Progressive lightening that maintains color vibrancy and character
    */
@@ -1533,7 +1549,7 @@
   --mico-color-light-7xtint: calc(l + (1 - l) * 0.75);    /* Very light */
   --mico-color-light-8xtint: calc(l + (1 - l) * 0.85);    /* Extremely light */
 
-  /**
+  /*
    * Chroma Controls for Tints
    * Gradual saturation reduction to prevent harsh, oversaturated light colors
    */
@@ -1546,7 +1562,7 @@
   --mico-color-chrome-7xtint: calc(c * 0.25);             /* Very desaturated */
   --mico-color-chrome-8xtint: calc(c * 0.15);             /* Extremely desaturated */
 
-  /**
+  /*
    * Hue Controls for Tints
    * Subtle hue shifts to create warmer, more appealing light variations
    */
@@ -1563,7 +1579,7 @@
   /* SHADE GENERATION CONTROLS (Darker Variations)                         */
   /* ====================================================================== */
 
-  /**
+  /*
    * Lightness Controls for Shades
    * Progressive darkening that maintains color richness without becoming muddy
    */
@@ -1576,7 +1592,7 @@
   --mico-color-light-7xshade: calc(l * 0.28);             /* Very dark */
   --mico-color-light-8xshade: calc(l * 0.22);             /* Extremely dark */
 
-  /**
+  /*
    * Chroma Controls for Shades
    * Gradual saturation enhancement to create rich, vibrant dark colors
    */
@@ -1589,7 +1605,7 @@
   --mico-color-chrome-7xshade: calc(c * 1.24);           /* Very saturated */
   --mico-color-chrome-8xshade: calc(c * 1.28);           /* Extremely saturated */
 
-  /**
+  /*
    * Hue Controls for Shades
    * Subtle hue shifts to create deeper, more sophisticated dark variations
    */
@@ -1606,7 +1622,7 @@
   /* BRAND COLOR VARIATIONS - HARMONIOUS OKLCH SYSTEM                      */
   /* ====================================================================== */
 
-  /**
+  /*
    * Brand Colors - Primary
    * Base color defined in styleguide.css, variations auto-generated here
    * Using the harmonious tint/shade control system for perfect color progression
@@ -1632,7 +1648,7 @@
   --mico-color-primary-7xdark: oklch(from var(--mico-color-primary) var(--mico-color-light-7xshade) var(--mico-color-chrome-7xshade) var(--mico-color-hue-7xshade)); /* Very dark primary */
   --mico-color-primary-8xdark: oklch(from var(--mico-color-primary) var(--mico-color-light-8xshade) var(--mico-color-chrome-8xshade) var(--mico-color-hue-8xshade)); /* Extremely dark primary */
 
-  /**
+  /*
    * Brand Colors - Secondary
    * Base color defined in styleguide.css, variations auto-generated here
    * Using the harmonious tint/shade control system for perfect color progression
@@ -1658,7 +1674,7 @@
   --mico-color-secondary-7xdark: oklch(from var(--mico-color-secondary) var(--mico-color-light-7xshade) var(--mico-color-chrome-7xshade) var(--mico-color-hue-7xshade)); /* Very dark secondary */
   --mico-color-secondary-8xdark: oklch(from var(--mico-color-secondary) var(--mico-color-light-8xshade) var(--mico-color-chrome-8xshade) var(--mico-color-hue-8xshade)); /* Extremely dark secondary */
 
-  /**
+  /*
    * Brand Colors - Accent
    * Base color defined in styleguide.css, variations auto-generated here
    * Using the harmonious tint/shade control system for perfect color progression
@@ -1684,7 +1700,7 @@
   --mico-color-accent-7xdark: oklch(from var(--mico-color-accent) var(--mico-color-light-7xshade) var(--mico-color-chrome-7xshade) var(--mico-color-hue-7xshade)); /* Very dark accent */
   --mico-color-accent-8xdark: oklch(from var(--mico-color-accent) var(--mico-color-light-8xshade) var(--mico-color-chrome-8xshade) var(--mico-color-hue-8xshade)); /* Extremely dark accent */
 
-  /**
+  /*
    * Semantic Colors - OKLCH System
    *
    * Colors that convey meaning and state information.
@@ -1807,7 +1823,7 @@
   --mico-color-visited-7xdark: oklch(from var(--mico-color-visited) var(--mico-color-light-7xshade) var(--mico-color-chrome-7xshade) var(--mico-color-hue-7xshade));
   --mico-color-visited-8xdark: oklch(from var(--mico-color-visited) var(--mico-color-light-8xshade) var(--mico-color-chrome-8xshade) var(--mico-color-hue-8xshade));
 
-  /**
+  /*
    * Neutral Colors - Black System (OKLCH)
    *
    * Black color variations with 5 tints and 5 shades.
@@ -1835,7 +1851,7 @@
   --mico-color-black-7xdark: oklch(from var(--mico-color-black) var(--mico-color-light-7xshade) var(--mico-color-chrome-7xshade) var(--mico-color-hue-7xshade));
   --mico-color-black-8xdark: oklch(from var(--mico-color-black) var(--mico-color-light-8xshade) var(--mico-color-chrome-8xshade) var(--mico-color-hue-8xshade));
 
-  /**
+  /*
    * Neutral Colors - Gray System (OKLCH)
    *
    * Comprehensive gray palette with 5 tints and 5 shades for UI elements, text, and backgrounds.
@@ -1863,7 +1879,7 @@
   --mico-color-gray-7xdark: oklch(from var(--mico-color-gray) var(--mico-color-light-7xshade) var(--mico-color-chrome-7xshade) var(--mico-color-hue-7xshade));
   --mico-color-gray-8xdark: oklch(from var(--mico-color-gray) var(--mico-color-light-8xshade) var(--mico-color-chrome-8xshade) var(--mico-color-hue-8xshade));
 
-  /**
+  /*
    * Neutral Colors - White System (OKLCH)
    *
    * White color variations with 5 tints and 5 shades for subtle backgrounds and overlays.
@@ -1891,67 +1907,74 @@
   --mico-color-white-7xdark: oklch(from var(--mico-color-white) var(--mico-color-light-7xshade) var(--mico-color-chrome-7xshade) var(--mico-color-hue-7xshade));
   --mico-color-white-8xdark: oklch(from var(--mico-color-white) var(--mico-color-light-8xshade) var(--mico-color-chrome-8xshade) var(--mico-color-hue-8xshade));
 
-  /**
-   * Transparency Colors - OKLCH Alpha System
-   *
-   * Creative transparency variations using OKLCH with alpha channels.
-   * These provide sophisticated overlay and background effects with superior color mixing.
-   * Each transparency level has a creative name for intuitive usage.
-   */
-
-  /* Black Transparency Variations */
-  --mico-color-black-whisper: oklch(from var(--mico-color-black) l c h / 0.1);    /* Subtle black overlay */
-  --mico-color-black-breath: oklch(from var(--mico-color-black) l c h / 0.2);     /* Light black overlay */
-  --mico-color-black-mist: oklch(from var(--mico-color-black) l c h / 0.3);       /* Gentle black overlay */
-  --mico-color-black-veil: oklch(from var(--mico-color-black) l c h / 0.4);       /* Moderate black overlay */
-  --mico-color-black-shadow: oklch(from var(--mico-color-black) l c h / 0.5);     /* Balanced black overlay */
-  --mico-color-black-shroud: oklch(from var(--mico-color-black) l c h / 0.6);     /* Strong black overlay */
-  --mico-color-black-cloak: oklch(from var(--mico-color-black) l c h / 0.7);      /* Heavy black overlay */
-  --mico-color-black-eclipse: oklch(from var(--mico-color-black) l c h / 0.8);    /* Deep black overlay */
-  --mico-color-black-void: oklch(from var(--mico-color-black) l c h / 0.9);       /* Intense black overlay */
-
-  /* Gray Transparency Variations */
-  --mico-color-gray-whisper: oklch(from var(--mico-color-gray) l c h / 0.1);      /* Subtle gray overlay */
-  --mico-color-gray-breath: oklch(from var(--mico-color-gray) l c h / 0.2);       /* Light gray overlay */
-  --mico-color-gray-mist: oklch(from var(--mico-color-gray) l c h / 0.3);         /* Gentle gray overlay */
-  --mico-color-gray-veil: oklch(from var(--mico-color-gray) l c h / 0.4);         /* Moderate gray overlay */
-  --mico-color-gray-shadow: oklch(from var(--mico-color-gray) l c h / 0.5);       /* Balanced gray overlay */
-  --mico-color-gray-shroud: oklch(from var(--mico-color-gray) l c h / 0.6);       /* Strong gray overlay */
-  --mico-color-gray-cloak: oklch(from var(--mico-color-gray) l c h / 0.7);        /* Heavy gray overlay */
-  --mico-color-gray-eclipse: oklch(from var(--mico-color-gray) l c h / 0.8);      /* Deep gray overlay */
-  --mico-color-gray-void: oklch(from var(--mico-color-gray) l c h / 0.9);         /* Intense gray overlay */
-
-  /* White Transparency Variations */
-  --mico-color-white-whisper: oklch(from var(--mico-color-white) l c h / 0.1);    /* Subtle white overlay */
-  --mico-color-white-breath: oklch(from var(--mico-color-white) l c h / 0.2);     /* Light white overlay */
-  --mico-color-white-mist: oklch(from var(--mico-color-white) l c h / 0.3);       /* Gentle white overlay */
-  --mico-color-white-veil: oklch(from var(--mico-color-white) l c h / 0.4);       /* Moderate white overlay */
-  --mico-color-white-shadow: oklch(from var(--mico-color-white) l c h / 0.5);     /* Balanced white overlay */
-  --mico-color-white-shroud: oklch(from var(--mico-color-white) l c h / 0.6);     /* Strong white overlay */
-  --mico-color-white-cloak: oklch(from var(--mico-color-white) l c h / 0.7);      /* Heavy white overlay */
-  --mico-color-white-eclipse: oklch(from var(--mico-color-white) l c h / 0.8);    /* Deep white overlay */
-  --mico-color-white-void: oklch(from var(--mico-color-white) l c h / 0.9);       /* Intense white overlay */
-
   /* Brand Color Transparency Variations */
-  --mico-color-primary-whisper: oklch(from var(--mico-color-primary) l c h / 0.1);   /* Subtle primary overlay */
-  --mico-color-primary-breath: oklch(from var(--mico-color-primary) l c h / 0.2);    /* Light primary overlay */
-  --mico-color-primary-mist: oklch(from var(--mico-color-primary) l c h / 0.3);      /* Gentle primary overlay */
-  --mico-color-primary-veil: oklch(from var(--mico-color-primary) l c h / 0.4);      /* Moderate primary overlay */
-  --mico-color-primary-shadow: oklch(from var(--mico-color-primary) l c h / 0.5);    /* Balanced primary overlay */
+  /* Primary Color Percentage Variations (5% increments) */
+  --mico-color-primary-5p: oklch(from var(--mico-color-primary) l c h / 0.05);      /* 5% opacity */
+  --mico-color-primary-10p: oklch(from var(--mico-color-primary) l c h / 0.10);     /* 10% opacity */
+  --mico-color-primary-15p: oklch(from var(--mico-color-primary) l c h / 0.15);     /* 15% opacity */
+  --mico-color-primary-20p: oklch(from var(--mico-color-primary) l c h / 0.20);     /* 20% opacity */
+  --mico-color-primary-25p: oklch(from var(--mico-color-primary) l c h / 0.25);     /* 25% opacity */
+  --mico-color-primary-30p: oklch(from var(--mico-color-primary) l c h / 0.30);     /* 30% opacity */
+  --mico-color-primary-35p: oklch(from var(--mico-color-primary) l c h / 0.35);     /* 35% opacity */
+  --mico-color-primary-40p: oklch(from var(--mico-color-primary) l c h / 0.40);     /* 40% opacity */
+  --mico-color-primary-45p: oklch(from var(--mico-color-primary) l c h / 0.45);     /* 45% opacity */
+  --mico-color-primary-50p: oklch(from var(--mico-color-primary) l c h / 0.50);     /* 50% opacity */
+  --mico-color-primary-55p: oklch(from var(--mico-color-primary) l c h / 0.55);     /* 55% opacity */
+  --mico-color-primary-60p: oklch(from var(--mico-color-primary) l c h / 0.60);     /* 60% opacity */
+  --mico-color-primary-65p: oklch(from var(--mico-color-primary) l c h / 0.65);     /* 65% opacity */
+  --mico-color-primary-70p: oklch(from var(--mico-color-primary) l c h / 0.70);     /* 70% opacity */
+  --mico-color-primary-75p: oklch(from var(--mico-color-primary) l c h / 0.75);     /* 75% opacity */
+  --mico-color-primary-80p: oklch(from var(--mico-color-primary) l c h / 0.80);     /* 80% opacity */
+  --mico-color-primary-85p: oklch(from var(--mico-color-primary) l c h / 0.85);     /* 85% opacity */
+  --mico-color-primary-90p: oklch(from var(--mico-color-primary) l c h / 0.90);     /* 90% opacity */
+  --mico-color-primary-95p: oklch(from var(--mico-color-primary) l c h / 0.95);     /* 95% opacity */
+  --mico-color-primary-100p: oklch(from var(--mico-color-primary) l c h / 1.00);    /* 100% opacity */
 
-  --mico-color-secondary-whisper: oklch(from var(--mico-color-secondary) l c h / 0.1); /* Subtle secondary overlay */
-  --mico-color-secondary-breath: oklch(from var(--mico-color-secondary) l c h / 0.2);  /* Light secondary overlay */
-  --mico-color-secondary-mist: oklch(from var(--mico-color-secondary) l c h / 0.3);    /* Gentle secondary overlay */
-  --mico-color-secondary-veil: oklch(from var(--mico-color-secondary) l c h / 0.4);    /* Moderate secondary overlay */
-  --mico-color-secondary-shadow: oklch(from var(--mico-color-secondary) l c h / 0.5);  /* Balanced secondary overlay */
+  /* Secondary Color Percentage Variations (5% increments) */
+  --mico-color-secondary-5p: oklch(from var(--mico-color-secondary) l c h / 0.05);    /* 5% opacity */
+  --mico-color-secondary-10p: oklch(from var(--mico-color-secondary) l c h / 0.10);   /* 10% opacity */
+  --mico-color-secondary-15p: oklch(from var(--mico-color-secondary) l c h / 0.15);   /* 15% opacity */
+  --mico-color-secondary-20p: oklch(from var(--mico-color-secondary) l c h / 0.20);   /* 20% opacity */
+  --mico-color-secondary-25p: oklch(from var(--mico-color-secondary) l c h / 0.25);   /* 25% opacity */
+  --mico-color-secondary-30p: oklch(from var(--mico-color-secondary) l c h / 0.30);   /* 30% opacity */
+  --mico-color-secondary-35p: oklch(from var(--mico-color-secondary) l c h / 0.35);   /* 35% opacity */
+  --mico-color-secondary-40p: oklch(from var(--mico-color-secondary) l c h / 0.40);   /* 40% opacity */
+  --mico-color-secondary-45p: oklch(from var(--mico-color-secondary) l c h / 0.45);   /* 45% opacity */
+  --mico-color-secondary-50p: oklch(from var(--mico-color-secondary) l c h / 0.50);   /* 50% opacity */
+  --mico-color-secondary-55p: oklch(from var(--mico-color-secondary) l c h / 0.55);   /* 55% opacity */
+  --mico-color-secondary-60p: oklch(from var(--mico-color-secondary) l c h / 0.60);   /* 60% opacity */
+  --mico-color-secondary-65p: oklch(from var(--mico-color-secondary) l c h / 0.65);   /* 65% opacity */
+  --mico-color-secondary-70p: oklch(from var(--mico-color-secondary) l c h / 0.70);   /* 70% opacity */
+  --mico-color-secondary-75p: oklch(from var(--mico-color-secondary) l c h / 0.75);   /* 75% opacity */
+  --mico-color-secondary-80p: oklch(from var(--mico-color-secondary) l c h / 0.80);   /* 80% opacity */
+  --mico-color-secondary-85p: oklch(from var(--mico-color-secondary) l c h / 0.85);   /* 85% opacity */
+  --mico-color-secondary-90p: oklch(from var(--mico-color-secondary) l c h / 0.90);   /* 90% opacity */
+  --mico-color-secondary-95p: oklch(from var(--mico-color-secondary) l c h / 0.95);   /* 95% opacity */
+  --mico-color-secondary-100p: oklch(from var(--mico-color-secondary) l c h / 1.00);  /* 100% opacity */
 
-  --mico-color-accent-whisper: oklch(from var(--mico-color-accent) l c h / 0.1);     /* Subtle accent overlay */
-  --mico-color-accent-breath: oklch(from var(--mico-color-accent) l c h / 0.2);      /* Light accent overlay */
-  --mico-color-accent-mist: oklch(from var(--mico-color-accent) l c h / 0.3);        /* Gentle accent overlay */
-  --mico-color-accent-veil: oklch(from var(--mico-color-accent) l c h / 0.4);        /* Moderate accent overlay */
-  --mico-color-accent-shadow: oklch(from var(--mico-color-accent) l c h / 0.5);      /* Balanced accent overlay */
+  /* Accent Color Percentage Variations (5% increments) */
+  --mico-color-accent-5p: oklch(from var(--mico-color-accent) l c h / 0.05);        /* 5% opacity */
+  --mico-color-accent-10p: oklch(from var(--mico-color-accent) l c h / 0.10);       /* 10% opacity */
+  --mico-color-accent-15p: oklch(from var(--mico-color-accent) l c h / 0.15);       /* 15% opacity */
+  --mico-color-accent-20p: oklch(from var(--mico-color-accent) l c h / 0.20);       /* 20% opacity */
+  --mico-color-accent-25p: oklch(from var(--mico-color-accent) l c h / 0.25);       /* 25% opacity */
+  --mico-color-accent-30p: oklch(from var(--mico-color-accent) l c h / 0.30);       /* 30% opacity */
+  --mico-color-accent-35p: oklch(from var(--mico-color-accent) l c h / 0.35);       /* 35% opacity */
+  --mico-color-accent-40p: oklch(from var(--mico-color-accent) l c h / 0.40);       /* 40% opacity */
+  --mico-color-accent-45p: oklch(from var(--mico-color-accent) l c h / 0.45);       /* 45% opacity */
+  --mico-color-accent-50p: oklch(from var(--mico-color-accent) l c h / 0.50);       /* 50% opacity */
+  --mico-color-accent-55p: oklch(from var(--mico-color-accent) l c h / 0.55);       /* 55% opacity */
+  --mico-color-accent-60p: oklch(from var(--mico-color-accent) l c h / 0.60);       /* 60% opacity */
+  --mico-color-accent-65p: oklch(from var(--mico-color-accent) l c h / 0.65);       /* 65% opacity */
+  --mico-color-accent-70p: oklch(from var(--mico-color-accent) l c h / 0.70);       /* 70% opacity */
+  --mico-color-accent-75p: oklch(from var(--mico-color-accent) l c h / 0.75);       /* 75% opacity */
+  --mico-color-accent-80p: oklch(from var(--mico-color-accent) l c h / 0.80);       /* 80% opacity */
+  --mico-color-accent-85p: oklch(from var(--mico-color-accent) l c h / 0.85);       /* 85% opacity */
+  --mico-color-accent-90p: oklch(from var(--mico-color-accent) l c h / 0.90);       /* 90% opacity */
+  --mico-color-accent-95p: oklch(from var(--mico-color-accent) l c h / 0.95);       /* 95% opacity */
+  --mico-color-accent-100p: oklch(from var(--mico-color-accent) l c h / 1.00);      /* 100% opacity */
 
-  /**
+  /*
    * Extended Color Palette - OKLCH System
    *
    * Comprehensive color palette for diverse design needs using OKLCH color space.
@@ -2141,10 +2164,9 @@
  * - Link utilities with advanced underline control
  *
  * USAGE:
- * Basic: .btn .btn-primary
- * Variants: .btn .btn-secondary .btn-outline
- * Sizes: .btn .btn-primary .btn-lg
- * Links: .link-primary .link-underline-thick
+ * Basic: .btn .btn--primary
+ * Variants: .btn .btn--secondary .btn--border
+ * Sizes: .btn .btn--primary .btn--lg
  */
 
 /* ========================================================================== */
@@ -2179,8 +2201,9 @@
   margin: var(--mico-value-0);
 
   /* Borders and appearance */
-  border: var(--mico-border-width-xxs) solid transparent;
-  border-radius: var(--mico-btn-radius-md);
+  border: 1px solid transparent;
+  border-radius: var(--mico-size-4);
+  box-shadow: var(--mico-shadow-primary);
 
   /* Interaction */
   cursor: var(--mico-cursor-pointer);
@@ -2214,149 +2237,701 @@
 
 /* Brand Colors - OKLCH System */
 
-.btn-primary {
-  background-color: var(--mico-color-primary) ;
-  border-color: var(--mico-color-primary-light) ;
-  color: var(--mico-color-white) !important;
+.btn--solid {
+  background-color: var(--mico-color-primary);
+  border-color: var(--mico-color-primary);
+  color: var(--mico-color-white);
 }
 
-.btn-secondary {
-  background-color: var(--mico-color-secondary) ;
-  border-color: var(--mico-color-secondary-light) ;
-  color: var(--mico-color-white) !important;
-}
-
-.btn-accent {
-  background-color: var(--mico-color-accent) ;
-  border-color: var(--mico-color-accent-light) ;
-  color: var(--mico-color-white) !important;
+.btn--outline {
+  background-color: var(--mico-value-transparent) ;
+  color: var(--mico-color-primary-dark);
+  border-color: var(--mico-color-primary);
 }
 
 /* State Colors - OKLCH System */
 
-.btn-success {
+.btn--success {
   background-color: var(--mico-color-success) ;
   border-color: var(--mico-color-success) ;
 }
 
-.btn-danger {
+.btn--danger {
   background-color: var(--mico-color-error) ;
   border-color: var(--mico-color-error) ;
 }
 
-.btn-warning {
+.btn--warning {
   background-color: var(--mico-color-warning) ;
   border-color: var(--mico-color-warning) ;
 }
 
-.btn-info {
+.btn--info {
   background-color: var(--mico-color-info) ;
   border-color: var(--mico-color-info) ;
 }
 
 /* Neutral Colors - OKLCH System */
 
-.btn-light {
+.btn--light {
   background-color: var(--mico-color-white-5xlight) !important;
   color: var(--mico-color-white-5xdark) !important;
   border-color: var(--mico-color-white-2xlight) !important;
 }
 
-.btn-dark {
+.btn--dark {
   background-color: var(--mico-color-gray-6xdark) !important;
   color: var(--mico-color-white) !important;
   border-color: var(--mico-color-gray-6xdark) !important;
 }
 
-.btn-transparent {
+.btn--transparent {
   background-color: var(--mico-value-transparent) !important;
   color: var(--mico-value-inherit) !important;
   border-color: var(--mico-value-transparent) !important;
 }
 
-/* ========================================================================== */
-
-/* BUTTON STYLE MODIFIERS                                                    */
-
-/* ========================================================================== */
-
-/**
- * Button Style Modifiers
- *
- * These classes modify the visual style of button variants.
- * They should be combined with color variant classes.
- */
-
-/* Outline Style - Transparent background with colored border and text */
-
-.btn-outline {
-  background-color: var(--mico-value-transparent) !important;
-  border-style: var(--mico-border-solid);
-  border-width: var(--mico-border-width-xxs);
-}
-
-.btn-outline-primary {
-  color: var(--color-text-primary,var(--mico-color-primary-dark));
-  border-color: var(--color-border,var(--mico-color-primary-dark));
-}
-
-.btn-outline-secondary {
-  color: var(--color-text-primary,var(--mico-color-secondary-dark));
-  border-color: var(--color-border,var(--mico-color-secondary-dark));
-}
-
-.btn-outline-accent {
-  color: var(--color-text-primary,var(--mico-color-accent-dark));
-  border-color: var(--color-border,var(--mico-color-accent-dark));
-}
-
-.btn-outline-success {
-  color: var(--mico-color-success-dark);
-  border-color: var(--mico-color-success-dark);
-}
-
-.btn-outline-danger {
-  color: var(--mico-color-error-dark);
-  border-color: var(--mico-color-error-dark);
-}
-
-.btn-outline-warning {
-  color: var(--mico-color-warning-dark);
-  border-color: var(--mico-color-warning-dark);
-}
-
-.btn-outline-info {
-  color: var(--mico-color-info-dark);
-  border-color: var(--mico-color-info-dark);
-}
-
-.btn-outline-light {
-  color: var(--mico-color-white-3xlight) !important;
-  border-color: var(--mico-color-white-3xlight) !important;
-}
-
-.btn-outline-dark {
-  color: var(--mico-color-accent-5xdark) !important;
-  border-color: var(--mico-color-gray-5xdark) !important;
-}
-
 /* Text Style - No background or border, only colored text */
 
-.btn-text {
+.btn--text {
   background-color: var(--mico-value-transparent) !important;
   border-color: var(--mico-value-transparent);
 }
 
 /* Ghost Style - Minimal styling with subtle hover effects */
 
-.btn-ghost {
+.btn--ghost {
   background-color: var(--mico-value-transparent) !important;
   border-color: var(--mico-value-transparent);
   color: var(--mico-color-gray-3xdark);
 
   &:hover{
-    background-color: var(--mico-color-accent-whisper);
+    background-color: var(--mico-color-primary-50p);
   }
+}
+
+/* Solid Primary Button Variants */
+
+.btn--primary{
+  background-color: var(--mico-color-primary-dark);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-primary);
+}
+
+.btn--primary-light{
+  background-color: var(--mico-color-primary-light);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-primary-light);
+}
+
+.btn--primary-2xlight{
+  background-color: var(--mico-color-primary-2xlight);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-primary-2xlight);
+}
+
+.btn--primary-3xlight{
+  background-color: var(--mico-color-primary-3xlight);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-primary-3xlight);
+}
+
+.btn--primary-4xlight{
+  background-color: var(--mico-color-primary-4xlight);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-primary-4xlight);
+}
+
+.btn--primary-5xlight{
+  background-color: var(--mico-color-primary-5xlight);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-primary-5xlight);
+}
+
+.btn--primary-6xlight{
+  background-color: var(--mico-color-primary-5xlight);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-primary-6xlight);
+}
+
+.btn--primary-7xlight{
+  background-color: var(--mico-color-primary-7xlight);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-primary-7xlight);
+}
+
+.btn--primary-8xlight{
+  background-color: var(--mico-color-primary-8xlight);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-primary-8xlight);
+}
+
+.btn--primary-dark{
+  background-color: var(--mico-color-primary-dark);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-primary-dark);
+}
+
+.btn--primary-2xdark{
+  background-color: var(--mico-color-primary-2xdark);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-primary-2xdark);
+}
+
+.btn--primary-3xdark{
+  background-color: var(--mico-color-primary-3xdark);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-primary-3xdark);
+}
+
+.btn--primary-4xdark{
+  background-color: var(--mico-color-primary-4xdark);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-primary-4xdark);
+}
+
+.btn--primary-5xdark{
+  background-color: var(--mico-color-primary-5xdark);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-primary-5xdark);
+}
+
+.btn--primary-6xdark{
+  background-color: var(--mico-color-primary-6xdark);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-primary-6xdark);
+}
+
+.btn--primary-7xdark{
+  background-color: var(--mico-color-primary-7xdark);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-primary-7xdark);
+}
+
+.btn--primary-8xdark{
+  background-color: var(--mico-color-primary-8xdark);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-primary-8xdark);
+}
+
+/* Solid Secondary buttons Variants */
+
+.btn--secondary{
+  background-color: var(--mico-color-secondary);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-secondary);
+}
+
+.btn--secondary-light{
+  background-color: var(--mico-color-secondary-light);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-secondary-light);
+}
+
+.btn--secondary-2xlight{
+  background-color: var(--mico-color-secondary-2xlight);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-secondary-2xlight);
+}
+
+.btn--secondary-3xlight{
+  background-color: var(--mico-color-secondary-3xlight);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-secondary-3xlight);
+}
+
+.btn--secondary-4xlight{
+  background-color: var(--mico-color-secondary-4xlight);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-secondary-4xlight);
+}
+
+.btn--secondary-5xlight{
+  background-color: var(--mico-color-secondary-6xlight);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-secondary-5xlight);
+}
+
+.btn--secondary-6xlight{
+  background-color: var(--mico-color-secondary-6xlight);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-secondary-6xlight);
+}
+
+.btn--secondary-7xlight{
+  background-color: var(--mico-color-secondary-7xlight);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-secondary-7xlight);
+}
+
+.btn--secondary-8xlight{
+  background-color: var(--mico-color-secondary-8xlight);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-secondary-8xlight);
+}
+
+.btn--secondary-dark{
+  background-color: var(--mico-color-dark);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-secondary-dark);
+}
+
+.btn--secondary-2xdark{
+  background-color: var(--mico-color-secondary-2xdark);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-secondary-2xdark);
+}
+
+.btn--secondary-3xdark{
+  background-color: var(--mico-color-secondary-3xdark);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-secondary-3xdark);
+}
+
+.btn--secondary-4xdark{
+  background-color: var(--mico-color-secondary-4xdark);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-secondary-4xdark);
+}
+
+.btn--secondary-5xdark{
+  background-color: var(--mico-color-secondary-5xdark);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-secondary-5xdark);
+}
+
+.btn--secondary-6xdark{
+  background-color: var(--mico-color-secondary-6xdark);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-secondary-6xdark);
+}
+
+.btn--secondary-7xdark{
+  background-color: var(--mico-color-secondary-7xdark);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-secondary-7xdark);
+}
+
+.btn--secondary-8xdark{
+  background-color: var(--mico-color-secondary-8xdark);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-secondary-8xdark);
+}
+
+/* Solid Accent Button Variants */
+
+.btn--accent{
+  background-color: var(--mico-color-accent);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-accent);
+}
+
+.btn--accent-light{
+  background-color: var(--mico-color-accent-light);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-accent-light);
+}
+
+.btn--accent-2xlight{
+  background-color: var(--mico-color-accent-2xlight);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-accent-2xlight);
+}
+
+.btn--accent-3xlight{
+  background-color: var(--mico-color-accent-3xlight);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-accent-3xlight);
+}
+
+.btn--accent-4xlight{
+  background-color: var(--mico-color-accent-4xlight);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-accent-4xlight);
+}
+
+.btn--accent-5xlight{
+  background-color: var(--mico-color-accent-5xlight);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-accent-5xlight);
+}
+
+.btn--accent-6xlight{
+  background-color: var(--mico-color-accent-6xlight);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-accent-6xlight);
+}
+
+.btn--accent-7xlight{
+  background-color: var(--mico-color-accent-7xlight);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-accent-7xlight);
+}
+
+.btn--accent-8xlight{
+  background-color: var(--mico-color-accent-8xlight);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-accent-8xlight);
+}
+
+.btn--accent-dark{
+  background-color: var(--mico-color-accent-dark);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-accent-dark);
+}
+
+.btn--accent-2xdark{
+  background-color: var(--mico-color-accent-2xdark);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-accent-2xdark);
+}
+
+.btn--accent-3xdark{
+  background-color: var(--mico-color-accent-3xdark);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-accent-3xdark);
+}
+
+.btn--accent-4xdark{
+  background-color: var(--mico-color-accent-4xdark);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-accent-4xdark);
+}
+
+.btn--accent-5xdark{
+  background-color: var(--mico-color-accent-5xdark);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-accent-5xdark);
+}
+
+.btn--accent-6xdark{
+  background-color: var(--mico-color-accent-6xdark);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-accent-6xdark);
+}
+
+.btn--accent-7xdark{
+  background-color: var(--mico-color-accent-7xdark);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-accent-7xdark);
+}
+
+.btn--accent-8xdark{
+  background-color: var(--mico-color-accent-8xdark);
+  color: var(--mico-color-white);
+  border-color: var(--mico-color-accent-8xdark);
+}
+
+/* Outline Primary Button Variants */
+
+.btn-outline--primary{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-primary-dark);
+  border-color: var(--mico-color-primary);
+}
+
+.btn-outline--primary-light{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-primary-dark);
+  border-color: var(--mico-color-primary-light);
+}
+
+.btn-outline--primary-2xlight{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-primary-dark);
+  border-color: var(--mico-color-primary-2xlight);
+}
+
+.btn-outline--primary-3xlight{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-primary-dark);
+  border-color: var(--mico-color-primary-3xlight);
+}
+
+.btn-outline--primary-4xlight{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-primary-dark);
+  border-color: var(--mico-color-primary-4xlight);
+}
+
+.btn-outline--primary-5xlight{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-primary-dark);
+  border-color: var(--mico-color-primary-5xlight);
+}
+
+.btn-outline--primary-6xlight{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-primary-dark);
+  border-color: var(--mico-color-primary-6xlight);
+}
+
+.btn-outline--primary-7xlight{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-primary-dark);
+  border-color: var(--mico-color-primary-7xlight);
+}
+
+.btn-outline--primary-8xlight{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-primary-dark);
+  border-color: var(--mico-color-primary-8xlight);
+}
+
+.btn-outline--primary-dark{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-primary-dark);
+  border-color: var(--mico-color-primary-dark);
+}
+
+.btn-outline--primary-2xdark{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-primary-dark);
+  border-color: var(--mico-color-primary-2xdark);
+}
+
+.btn-outline--primary-3xdark{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-primary-dark);
+  border-color: var(--mico-color-primary-3xdark);
+}
+
+.btn-outline--primary-4xdark{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-primary-dark);
+  border-color: var(--mico-color-primary-4xdark);
+}
+
+.btn-outline--primary-5xdark{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-primary-dark);
+  border-color: var(--mico-color-primary-5xdark);
+}
+
+.btn-outline--primary-6xdark{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-primary-dark);
+  border-color: var(--mico-color-primary-6xdark);
+}
+
+.btn-outline--primary-7xdark{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-primary-dark);
+  border-color: var(--mico-color-primary-7xdark);
+}
+
+.btn-outline--primary-8xdark{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-primary-dark);
+  border-color: var(--mico-color-primary-8xdark);
+}
+
+/* Outline Secondary Button Variants */
+
+.btn-outline--secondary{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-secondary-dark);
+  border-color: var(--mico-color-secondary);
+}
+
+.btn-outline--secondary-light{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-secondary-dark);
+  border-color: var(--mico-color-secondary-light);
+}
+
+.btn-outline--secondary-2xlight{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-secondary-dark);
+  border-color: var(--mico-color-secondary-2xlight);
+}
+
+.btn-outline--secondary-3xlight{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-secondary-dark);
+  border-color: var(--mico-color-secondary-3xlight);
+}
+
+.btn-outline--secondary-4xlight{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-secondary-dark);
+  border-color: var(--mico-color-secondary-4xlight);
+}
+
+.btn-outline--secondary-5xlight{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-secondary-dark);
+  border-color: var(--mico-color-secondary-5xlight);
+}
+
+.btn-outline--secondary-6xlight{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-secondary-dark);
+  border-color: var(--mico-color-secondary-6xlight);
+}
+
+.btn-outline--secondary-7xlight{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-secondary-dark);
+  border-color: var(--mico-color-secondary-7xlight);
+}
+
+.btn-outline--secondary-8xlight{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-secondary-dark);
+  border-color: var(--mico-color-secondary-8xlight);
+}
+
+.btn-outline--secondary-dark{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-secondary-dark);
+  border-color: var(--mico-color-secondary-dark);
+}
+
+.btn-outline--secondary-2xdark{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-secondary-dark);
+  border-color: var(--mico-color-secondary-2xdark);
+}
+
+.btn-outline--secondary-3xdark{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-secondary-dark);
+  border-color: var(--mico-color-secondary-3xdark);
+}
+
+.btn-outline--secondary-4xdark{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-secondary-dark);
+  border-color: var(--mico-color-secondary-4xdark);
+}
+
+.btn-outline--secondary-5xdark{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-secondary-dark);
+  border-color: var(--mico-color-secondary-5xdark);
+}
+
+.btn-outline--secondary-6xdark{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-secondary-dark);
+  border-color: var(--mico-color-secondary-6xdark);
+}
+
+.btn-outline--secondary-7xdark{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-secondary-dark);
+  border-color: var(--mico-color-secondary-7xdark);
+}
+
+.btn-outline--secondary-8xdark{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-secondary-dark);
+  border-color: var(--mico-color-secondary-8xdark);
+}
+
+/* Outline Accent Button Variants */
+
+.btn-outline--accent{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-accent-dark);
+  border-color: var(--mico-color-accent);
+}
+
+.btn-outline--accent-light{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-accent-dark);
+  border-color: var(--mico-color-accent-light);
+}
+
+.btn-outline--accent-2xlight{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-accent-dark);
+  border-color: var(--mico-color-accent-2xlight);
+}
+
+.btn-outline--accent-3xlight{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-accent-dark);
+  border-color: var(--mico-color-accent-3xlight);
+}
+
+.btn-outline--accent-4xlight{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-accent-dark);
+  border-color: var(--mico-color-accent-4xlight);
+}
+
+.btn-outline--accent-5xlight{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-accent-dark);
+  border-color: var(--mico-color-accent-5xlight);
+}
+
+.btn-outline--accent-6xlight{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-accent-dark);
+  border-color: var(--mico-color-accent-6xlight);
+}
+
+.btn-outline--accent-7xlight{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-accent-dark);
+  border-color: var(--mico-color-accent-7xlight);
+}
+
+.btn-outline--accent-8xlight{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-accent-dark);
+  border-color: var(--mico-color-accent-8xlight);
+}
+
+.btn-outline--accent-dark{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-accent-dark);
+  border-color: var(--mico-color-accent-dark);
+}
+
+.btn-outline--accent-2xdark{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-accent-dark);
+  border-color: var(--mico-color-accent-2xdark);
+}
+
+.btn-outline--accent-3xdark{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-accent-dark);
+  border-color: var(--mico-color-accent-3xdark);
+}
+
+.btn-outline--accent-4xdark{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-accent-dark);
+  border-color: var(--mico-color-accent-4xdark);
+}
+
+.btn-outline--accent-5xdark{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-accent-dark);
+  border-color: var(--mico-color-accent-5xdark);
+}
+
+.btn-outline--accent-6xdark{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-accent-dark);
+  border-color: var(--mico-color-accent-6xdark);
+}
+
+.btn-outline--accent-7xdark{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-accent-dark);
+  border-color: var(--mico-color-accent-7xdark);
+}
+
+.btn-outline--accent-8xdark{
+  background-color: var(--mico-value-transparent);
+  color: var(--mico-color-accent-dark);
+  border-color: var(--mico-color-accent-8xdark);
 }
 
 /* ========================================================================== */
@@ -2372,24 +2947,34 @@
  * The .btn class provides the default/medium size.
  */
 
-.btn-xs {
-  padding: var(--mico-btn-padding-xs) !important;
-  font-size: var(--mico-btn-font-size-xs) !important;
+.btn--xs {
+  padding: var(--mico-size-4) var(--mico-size-8) !important;
+  font-size: var(--mico-fs-xs) !important;
 }
 
-.btn-sm {
-  padding: var(--mico-btn-padding-sm) !important;
-  font-size: var(--mico-btn-font-size-sm) !important;
+.btn--sm {
+  padding: var(--mico-size-6) var(--mico-size-12) !important;
+  font-size: var(--mico-fs-sm) !important;
 }
 
-.btn-lg {
-  padding: var(--mico-btn-padding-lg) !important;
-  font-size: var(--mico-btn-font-size-lg) !important;
+.btn--lg {
+  padding: var(--mico-size-12) var(--mico-size-24) !important;
+  font-size: var(--mico-fs-md) !important;
 }
 
-.btn-xl {
-  padding: var(--mico-btn-padding-xl) !important;
-  font-size: var(--mico-btn-font-size-xl) !important;
+.btn--xl {
+  padding: var(--mico-size-24) var(--mico-size-34) !important;
+  font-size: var(--mico-fs-lg) !important;
+}
+
+.btn--xxl {
+  padding: var(--mico-size-34) var(--mico-size-48) !important;
+  font-size: var(--mico-fs-lg) !important;
+}
+
+.btn--xxl {
+  padding: var(--mico-size-32) var(--mico-size-64) !important;
+  font-size: var(--mico-fs-lg) !important;
 }
 
 /* ========================================================================== */
@@ -2404,15 +2989,15 @@
  * These classes control the border-radius of buttons.
  */
 
-.btn-pill {
-  border-radius: var(--mico-btn-radius-pill) !important;
+.btn--pill {
+  border-radius: var(--mico-size-50) !important;
 }
 
-.btn-square {
-  border-radius: var(--mico-btn-radius-square) !important;
+.btn--square {
+  border-radius: var(--mico-size-4) !important;
 }
 
-.btn-circle {
+.btn--circle {
   border-radius: var(--mico-btn-radius-circle) !important;
   width: var(--mico-btn-icon-only-size) !important;
   height: var(--mico-btn-icon-only-size) !important;
@@ -2420,34 +3005,6 @@
   display: var(--mico-display-inline-flex) !important;
   align-items: center !important;
   justify-content: center !important;
-}
-
-/* ========================================================================== */
-
-/* BUTTON SHADOW MODIFIERS                                                   */
-
-/* ========================================================================== */
-
-/**
- * Button Shadow Modifiers
- *
- * These classes apply box-shadow for depth and elevation.
- */
-
-.btn-shadow {
-  box-shadow: var(--mico-btn-shadow-md) !important;
-}
-
-.btn-shadow-sm {
-  box-shadow: var(--mico-btn-shadow-sm) !important;
-}
-
-.btn-shadow-lg {
-  box-shadow: var(--mico-btn-shadow-lg) !important;
-}
-
-.btn-shadow-none {
-  box-shadow: var(--mico-btn-shadow-none) !important;
 }
 
 /* ========================================================================== */
@@ -2464,20 +3021,20 @@
 
 /* Active State */
 
-.btn-active {
+.btn--active {
   transform: translateY(1px) !important;
   box-shadow: var(--mico-shadow-sm) !important;
 }
 
 /* Loading State */
 
-.btn-loading:active {
+.btn--loading:active {
   color: var(--mico-value-transparent) !important;
   pointer-events: var(--mico-pointer-events-none) !important;
   position: relative !important;
 }
 
-.btn-loading::after {
+.btn--loading::after {
   content: "";
   position: absolute;
   width: 1em;
@@ -2500,7 +3057,7 @@
 /* Disabled State */
 
 .btn:disabled,
-.btn-disabled
+.btn--disabled
  {
   opacity: var(--mico-opacity-50);
   cursor: var(--mico-cursor-not-allowed);
@@ -2521,37 +3078,35 @@
 
 /* Block Button */
 
-.btn-block {
+.btn--block {
   display: var(--mico-display-block);
-  width: var(--mico-full);
+  width: var(--mico-size-100p);
 }
 
 /* Icon Buttons */
 
-.btn-icon {
+.btn--icon {
   display: var(--mico-display-inline-flex);
   align-items: center;
   justify-content: center;
-  gap: var(--mico-btn-icon-gap);
+  gap: var(--mico-size-4);
 }
 
-.btn-icon-left {
+.btn--icon-left {
   display: var(--mico-display-inline-flex);
   align-items: center;
-  gap: var(--mico-btn-icon-gap);
+  gap: var(--mico-size-6);
 }
 
-.btn-icon-right {
+.btn--icon-right {
   display: var(--mico-display-inline-flex);
   align-items: center;
   flex-direction: row-reverse;
-  gap: var(--mico-btn-icon-gap);
+  gap: var(--mico-size-6);
 }
 
-.btn-icon-only {
+.btn--icon-only {
   padding: var(--mico-size-12);
-  width: var(--mico-btn-icon-only-size);
-  height: var(--mico-btn-icon-only-size);
   display: var(--mico-display-inline-flex);
   align-items: center;
   justify-content: center;
@@ -2571,200 +3126,67 @@
 
 /* Horizontal Button Group */
 
-.btn-group {
+.btn--group {
   display: var(--mico-display-inline-flex);
   vertical-align: middle;
 }
 
-.btn-group > .btn {
+.btn--group > .btn {
   position: relative;
   flex: 1 1 auto;
   margin: var(--mico-value-0);
 }
 
-.btn-group > .btn:not(:first-child) {
+.btn--group > .btn:not(:first-child) {
   margin-left: calc(var(--mico-border-width-1) * -1);
   border-top-left-radius: var(--mico-value-0);
   border-bottom-left-radius: var(--mico-value-0);
 }
 
-.btn-group > .btn:not(:last-child) {
+.btn--group > .btn:not(:last-child) {
   border-top-right-radius: var(--mico-value-0);
   border-bottom-right-radius: var(--mico-value-0);
 }
 
-.btn-group > .btn:hover,
-.btn-group > .btn:focus,
-.btn-group > .btn:active {
+.btn--group > .btn:hover,
+.btn--group > .btn:focus,
+.btn--group > .btn:active {
   z-index: 1;
 }
 
 /* Vertical Button Group */
 
-.btn-group-vertical {
+.btn--group-vertical {
   display: var(--mico-display-inline-flex);
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 }
 
-.btn-group-vertical > .btn {
+.btn--group-vertical > .btn {
   width: var(--mico-full);
   margin: var(--mico-value-0);
 }
 
-.btn-group-vertical > .btn:not(:first-child) {
+.btn--group-vertical > .btn:not(:first-child) {
   margin-top: calc(var(--mico-border-width-1) * -1);
   border-top-left-radius: var(--mico-value-0);
   border-top-right-radius: var(--mico-value-0);
 }
 
-.btn-group-vertical > .btn:not(:last-child) {
+.btn--group-vertical > .btn:not(:last-child) {
   border-bottom-left-radius: var(--mico-value-0);
   border-bottom-right-radius: var(--mico-value-0);
 }
 
 /* Button Toolbar */
 
-.btn-toolbar {
+.btn--toolbar {
   display: var(--mico-display-flex);
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: var(--mico-size-8);
 }
-
-/* ========================================================================== */
-
-/* LINK UTILITIES                                                            */
-
-/* ========================================================================== */
-
-/**
- * Link Color Modifiers
- *
- * These classes control the color of links for different purposes.
- */
-
-/* Brand Link Colors */
-
-.link-primary { color: var(--mico-color-primary); }
-
-.link-secondary { color: var(--mico-color-secondary); }
-
-.link-accent { color: var(--mico-color-accent); }
-
-/* State Link Colors */
-
-.link-success { color: var(--mico-color-success); }
-
-.link-danger { color: var(--mico-color-error); }
-
-.link-warning { color: var(--mico-color-warning); }
-
-.link-info { color: var(--mico-color-info); }
-
-/* Neutral Link Colors */
-
-.link-light { color: var(--mico-color-gray-3xlight); }
-
-.link-dark { color: var(--mico-color-gray-5xdark); }
-
-.link-muted { color: var(--mico-color-gray-3xdark); }
-
-.link-body { color: var(--mico-value-inherit); }
-
-/**
- * Link Underline Control
- *
- * These classes control the presence and behavior of link underlines.
- */
-
-/* Basic Underline Control */
-
-.link-underline { text-decoration: underline; }
-
-.link-no-underline { text-decoration: var(--mico-value-none); }
-
-.link-underline-hover:hover { text-decoration: underline; }
-
-.link-no-underline-hover:hover { text-decoration: var(--mico-value-none); }
-
-/* Underline Thickness */
-
-.link-underline-auto { text-decoration-thickness: var(--mico-decoration-thickness-auto); }
-
-.link-underline-from-font { text-decoration-thickness: var(--mico-decoration-thickness-from-font); }
-
-.link-underline-thin { text-decoration-thickness: var(--mico-decoration-thickness-1); }
-
-.link-underline-normal { text-decoration-thickness: var(--mico-decoration-thickness-2); }
-
-.link-underline-thick { text-decoration-thickness: var(--mico-decoration-thickness-4); }
-
-/* Underline Offset */
-
-.link-underline-offset-auto { text-underline-offset: var(--mico-underline-offset-auto); }
-
-.link-underline-offset-sm { text-underline-offset: var(--mico-underline-offset-1); }
-
-.link-underline-offset-md { text-underline-offset: var(--mico-underline-offset-2); }
-
-.link-underline-offset-lg { text-underline-offset: var(--mico-underline-offset-4); }
-
-/* Underline Style */
-
-.link-underline-solid { text-decoration-style: var(--mico-decoration-style-solid); }
-
-.link-underline-dotted { text-decoration-style: var(--mico-decoration-style-dotted); }
-
-.link-underline-dashed { text-decoration-style: var(--mico-decoration-style-dashed); }
-
-.link-underline-wavy { text-decoration-style: var(--mico-decoration-style-wavy); }
-
-.link-underline-double { text-decoration-style: var(--mico-decoration-style-double); }
-
-/* Underline Color */
-
-.link-underline-color-current { text-decoration-color: currentColor; }
-
-.link-underline-color-transparent { text-decoration-color: var(--mico-value-transparent); }
-
-.link-underline-color-primary { text-decoration-color: var(--mico-color-primary); }
-
-.link-underline-color-secondary { text-decoration-color: var(--mico-color-secondary); }
-
-/**
- * Link Opacity Control
- *
- * These classes control link opacity for visual hierarchy.
- */
-
-.link-opacity-100 { opacity: var(--mico-opacity-100); }
-
-.link-opacity-75 { opacity: var(--mico-opacity-75); }
-
-.link-opacity-50 { opacity: var(--mico-opacity-50); }
-
-.link-opacity-25 { opacity: var(--mico-opacity-25); }
-
-.link-hover-opacity-100:hover { opacity: var(--mico-opacity-100); }
-
-.link-hover-opacity-75:hover { opacity: var(--mico-opacity-75); }
-
-/**
- * Link Layout Control
- *
- * These classes control link display and layout behavior.
- */
-
-.link-reset {
-  color: var(--mico-value-inherit);
-  text-decoration: var(--mico-value-none);
-}
-
-.link-block { display: var(--mico-display-block); }
-
-.link-inline-block { display: var(--mico-display-inline-block); }
 
 /* ========================================================================== */
 
@@ -2794,11 +3216,11 @@
     border: var(--mico-border-width-2) solid currentColor;
   }
 
-  .btn-outline {
+  .btn--border {
     border-width: var(--mico-border-width-4);
   }
 
-  .link-underline {
+  .link--underline {
     text-decoration-thickness: var(--mico-decoration-thickness-2);
   }
 }
@@ -2817,7 +3239,7 @@
     animation: var(--mico-value-none);
   }
 
-  .btn-loading::after {
+  .btn--loading::after {
     animation: var(--mico-value-none);
     border: var(--mico-border-width-2) solid currentColor;
     border-right-color: var(--mico-value-transparent);
@@ -2839,7 +3261,7 @@
     box-shadow: var(--mico-value-none) !important;
   }
 
-  .link-underline {
+  .link--underline {
     text-decoration: underline !important;
   }
 }
@@ -2857,7 +3279,7 @@
  *    <button class="btn btn-primary btn-shadow">Save Changes</button>
  *
  * 2. Outline button with hover lift:
- *    <button class="btn btn-secondary btn-outline hover-btn-lift">Cancel</button>
+ *    <button class="btn btn-secondary btn-border hover-btn-lift">Cancel</button>
  *
  * 3. Icon button:
  *    <button class="btn btn-primary btn-icon">

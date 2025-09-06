@@ -30,12 +30,12 @@
 /* ========================================================================== */
 /* 3. THEME LAYER - Theme System                                             */
 /* ========================================================================== */
-@import "core/theme-engine.css";
+/* @import "core/theme-engine.css"; */
 
 /* ========================================================================== */
 /* 4. SEMANTIC LAYER - HTML Elements                                         */
 /* ========================================================================== */
-@import "semantic/elements.css";
+/* @import "semantic/elements.css"; */
 
 /* ========================================================================== */
 /* 5. UTILITIES LAYER - Utility Classes                                      */
@@ -57,11 +57,10 @@
 /* 6. COMPONENTS LAYER - Component Styles                                    */
 /* ========================================================================== */
 @import "components/buttons.css";
-@import "components/theme-toggle.css";
+/* @import "components/theme-toggle.css"; */
 
 /* ========================================================================== */
 /* 7. PRESETS LAYER - Framework Presets                                      */
 /* ========================================================================== */
-@import "presets/styleguide.css";
 @import "presets/oxygenbuilder.pre.css";
 @import "presets/article.pre.css";

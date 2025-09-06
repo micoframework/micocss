@@ -10,8 +10,8 @@
  * - Active: .active-{property}-{value}
  *
  * USAGE EXAMPLES:
- * <button class="hover-bg-primary">Hover for primary background</button>
- * <a class="hover-text-accent focus-text-primary">Interactive link</a>
+ * <button class="hover-bg--primary">Hover for primary background</button>
+ * <a class="hover-text--accent focus-text--primary">Interactive link</a>
  */
 
 /* ========================================================================== */
@@ -39,162 +39,185 @@
  */
 
 /* ---------- Brand Colors ---------- */
-.hover-bg-primary:hover { background-color: var(--mico-color-primary) !important; }
-.hover-bg-secondary:hover { background-color: var(--mico-color-secondary) !important; }
-.hover-bg-accent:hover { background-color: var(--mico-color-accent) !important; }
+.hover-bg--primary:hover { background-color: var(--mico-color-primary) !important; }
+.hover-bg--secondary:hover { background-color: var(--mico-color-secondary) !important; }
+.hover-bg--accent:hover { background-color: var(--mico-color-accent) !important; }
 
 /* ---------- Primary Color Variations ---------- */
 /* Tints - Lighter variations */
-.hover-bg-primary-light:hover { background-color: var(--mico-color-primary-light) !important; }
-.hover-bg-primary-2xlight:hover { background-color: var(--mico-color-primary-2xlight) !important; }
-.hover-bg-primary-3xlight:hover { background-color: var(--mico-color-primary-3xlight) !important; }
-.hover-bg-primary-4xlight:hover { background-color: var(--mico-color-primary-4xlight) !important; }
-.hover-bg-primary-5xlight:hover { background-color: var(--mico-color-primary-5xlight) !important; }
-.hover-bg-primary-6xlight:hover { background-color: var(--mico-color-primary-6xlight) !important; }
-.hover-bg-primary-7xlight:hover { background-color: var(--mico-color-primary-7xlight) !important; }
-.hover-bg-primary-8xlight:hover { background-color: var(--mico-color-primary-8xlight) !important; }
+.hover-bg--primary-light:hover { background-color: var(--mico-color-primary-light) !important; }
+.hover-bg--primary-2xlight:hover { background-color: var(--mico-color-primary-2xlight) !important; }
+.hover-bg--primary-3xlight:hover { background-color: var(--mico-color-primary-3xlight) !important; }
+.hover-bg--primary-4xlight:hover { background-color: var(--mico-color-primary-4xlight) !important; }
+.hover-bg--primary-5xlight:hover { background-color: var(--mico-color-primary-5xlight) !important; }
+.hover-bg--primary-6xlight:hover { background-color: var(--mico-color-primary-6xlight) !important; }
+.hover-bg--primary-7xlight:hover { background-color: var(--mico-color-primary-7xlight) !important; }
+.hover-bg--primary-8xlight:hover { background-color: var(--mico-color-primary-8xlight) !important; }
 
 /* Shades - Darker variations */
-.hover-bg-primary-dark:hover { background-color: var(--mico-color-primary-dark) !important; }
-.hover-bg-primary-2xdark:hover { background-color: var(--mico-color-primary-2xdark) !important; }
-.hover-bg-primary-3xdark:hover { background-color: var(--mico-color-primary-3xdark) !important; }
-.hover-bg-primary-4xdark:hover { background-color: var(--mico-color-primary-4xdark) !important; }
-.hover-bg-primary-5xdark:hover { background-color: var(--mico-color-primary-5xdark) !important; }
-.hover-bg-primary-6xdark:hover { background-color: var(--mico-color-primary-6xdark) !important; }
-.hover-bg-primary-7xdark:hover { background-color: var(--mico-color-primary-7xdark) !important; }
-.hover-bg-primary-8xdark:hover { background-color: var(--mico-color-primary-8xdark) !important; }
+.hover-bg--primary-dark:hover { background-color: var(--mico-color-primary-dark) !important; }
+.hover-bg--primary-2xdark:hover { background-color: var(--mico-color-primary-2xdark) !important; }
+.hover-bg--primary-3xdark:hover { background-color: var(--mico-color-primary-3xdark) !important; }
+.hover-bg--primary-4xdark:hover { background-color: var(--mico-color-primary-4xdark) !important; }
+.hover-bg--primary-5xdark:hover { background-color: var(--mico-color-primary-5xdark) !important; }
+.hover-bg--primary-6xdark:hover { background-color: var(--mico-color-primary-6xdark) !important; }
+.hover-bg--primary-7xdark:hover { background-color: var(--mico-color-primary-7xdark) !important; }
+.hover-bg--primary-8xdark:hover { background-color: var(--mico-color-primary-8xdark) !important; }
 
 /* ---------- Secondary Color Variations ---------- */
 /* Tints - Lighter variations */
-.hover-bg-secondary-light:hover { background-color: var(--mico-color-secondary-light) !important; }
-.hover-bg-secondary-2xlight:hover { background-color: var(--mico-color-secondary-2xlight) !important; }
-.hover-bg-secondary-3xlight:hover { background-color: var(--mico-color-secondary-3xlight) !important; }
-.hover-bg-secondary-4xlight:hover { background-color: var(--mico-color-secondary-4xlight) !important; }
-.hover-bg-secondary-5xlight:hover { background-color: var(--mico-color-secondary-5xlight) !important; }
-.hover-bg-secondary-6xlight:hover { background-color: var(--mico-color-secondary-6xlight) !important; }
-.hover-bg-secondary-7xlight:hover { background-color: var(--mico-color-secondary-7xlight) !important; }
-.hover-bg-secondary-8xlight:hover { background-color: var(--mico-color-secondary-8xlight) !important; }
+.hover-bg--secondary-light:hover { background-color: var(--mico-color-secondary-light) !important; }
+.hover-bg--secondary-2xlight:hover { background-color: var(--mico-color-secondary-2xlight) !important; }
+.hover-bg--secondary-3xlight:hover { background-color: var(--mico-color-secondary-3xlight) !important; }
+.hover-bg--secondary-4xlight:hover { background-color: var(--mico-color-secondary-4xlight) !important; }
+.hover-bg--secondary-5xlight:hover { background-color: var(--mico-color-secondary-5xlight) !important; }
+.hover-bg--secondary-6xlight:hover { background-color: var(--mico-color-secondary-6xlight) !important; }
+.hover-bg--secondary-7xlight:hover { background-color: var(--mico-color-secondary-7xlight) !important; }
+.hover-bg--secondary-8xlight:hover { background-color: var(--mico-color-secondary-8xlight) !important; }
 
 /* Shades - Darker variations */
-.hover-bg-secondary-dark:hover { background-color: var(--mico-color-secondary-dark) !important; }
-.hover-bg-secondary-2xdark:hover { background-color: var(--mico-color-secondary-2xdark) !important; }
-.hover-bg-secondary-3xdark:hover { background-color: var(--mico-color-secondary-3xdark) !important; }
-.hover-bg-secondary-4xdark:hover { background-color: var(--mico-color-secondary-4xdark) !important; }
-.hover-bg-secondary-5xdark:hover { background-color: var(--mico-color-secondary-5xdark) !important; }
-.hover-bg-secondary-6xdark:hover { background-color: var(--mico-color-secondary-6xdark) !important; }
-.hover-bg-secondary-7xdark:hover { background-color: var(--mico-color-secondary-7xdark) !important; }
-.hover-bg-secondary-8xdark:hover { background-color: var(--mico-color-secondary-8xdark) !important; }
+.hover-bg--secondary-dark:hover { background-color: var(--mico-color-secondary-dark) !important; }
+.hover-bg--secondary-2xdark:hover { background-color: var(--mico-color-secondary-2xdark) !important; }
+.hover-bg--secondary-3xdark:hover { background-color: var(--mico-color-secondary-3xdark) !important; }
+.hover-bg--secondary-4xdark:hover { background-color: var(--mico-color-secondary-4xdark) !important; }
+.hover-bg--secondary-5xdark:hover { background-color: var(--mico-color-secondary-5xdark) !important; }
+.hover-bg--secondary-6xdark:hover { background-color: var(--mico-color-secondary-6xdark) !important; }
+.hover-bg--secondary-7xdark:hover { background-color: var(--mico-color-secondary-7xdark) !important; }
+.hover-bg--secondary-8xdark:hover { background-color: var(--mico-color-secondary-8xdark) !important; }
 
 /* ---------- Accent Color Variations ---------- */
 /* Tints - Lighter variations */
-.hover-bg-accent-light:hover { background-color: var(--mico-color-accent-light) !important; }
-.hover-bg-accent-2xlight:hover { background-color: var(--mico-color-accent-2xlight) !important; }
-.hover-bg-accent-3xlight:hover { background-color: var(--mico-color-accent-3xlight) !important; }
-.hover-bg-accent-4xlight:hover { background-color: var(--mico-color-accent-4xlight) !important; }
-.hover-bg-accent-5xlight:hover { background-color: var(--mico-color-accent-5xlight) !important; }
-.hover-bg-accent-6xlight:hover { background-color: var(--mico-color-accent-6xlight) !important; }
-.hover-bg-accent-7xlight:hover { background-color: var(--mico-color-accent-7xlight) !important; }
-.hover-bg-accent-8xlight:hover { background-color: var(--mico-color-accent-8xlight) !important; }
+.hover-bg--accent-light:hover { background-color: var(--mico-color-accent-light) !important; }
+.hover-bg--accent-2xlight:hover { background-color: var(--mico-color-accent-2xlight) !important; }
+.hover-bg--accent-3xlight:hover { background-color: var(--mico-color-accent-3xlight) !important; }
+.hover-bg--accent-4xlight:hover { background-color: var(--mico-color-accent-4xlight) !important; }
+.hover-bg--accent-5xlight:hover { background-color: var(--mico-color-accent-5xlight) !important; }
+.hover-bg--accent-6xlight:hover { background-color: var(--mico-color-accent-6xlight) !important; }
+.hover-bg--accent-7xlight:hover { background-color: var(--mico-color-accent-7xlight) !important; }
+.hover-bg--accent-8xlight:hover { background-color: var(--mico-color-accent-8xlight) !important; }
 
 /* Shades - Darker variations */
-.hover-bg-accent-dark:hover { background-color: var(--mico-color-accent-dark) !important; }
-.hover-bg-accent-2xdark:hover { background-color: var(--mico-color-accent-2xdark) !important; }
-.hover-bg-accent-3xdark:hover { background-color: var(--mico-color-accent-3xdark) !important; }
-.hover-bg-accent-4xdark:hover { background-color: var(--mico-color-accent-4xdark) !important; }
-.hover-bg-accent-5xdark:hover { background-color: var(--mico-color-accent-5xdark) !important; }
-.hover-bg-accent-6xdark:hover { background-color: var(--mico-color-accent-6xdark) !important; }
-.hover-bg-accent-7xdark:hover { background-color: var(--mico-color-accent-7xdark) !important; }
-.hover-bg-accent-8xdark:hover { background-color: var(--mico-color-accent-8xdark) !important; }
+.hover-bg--accent-dark:hover { background-color: var(--mico-color-accent-dark) !important; }
+.hover-bg--accent-2xdark:hover { background-color: var(--mico-color-accent-2xdark) !important; }
+.hover-bg--accent-3xdark:hover { background-color: var(--mico-color-accent-3xdark) !important; }
+.hover-bg--accent-4xdark:hover { background-color: var(--mico-color-accent-4xdark) !important; }
+.hover-bg--accent-5xdark:hover { background-color: var(--mico-color-accent-5xdark) !important; }
+.hover-bg--accent-6xdark:hover { background-color: var(--mico-color-accent-6xdark) !important; }
+.hover-bg--accent-7xdark:hover { background-color: var(--mico-color-accent-7xdark) !important; }
+.hover-bg--accent-8xdark:hover { background-color: var(--mico-color-accent-8xdark) !important; }
+
+/* ---------- Accent Color Percentage Variations ---------- */
+/* Hover Background - Percentage variations (5% increments) */
+.hover-bg--accent-5p:hover { background-color: var(--mico-color-accent-5p) !important; }
+.hover-bg--accent-10p:hover { background-color: var(--mico-color-accent-10p) !important; }
+.hover-bg--accent-15p:hover { background-color: var(--mico-color-accent-15p) !important; }
+.hover-bg--accent-20p:hover { background-color: var(--mico-color-accent-20p) !important; }
+.hover-bg--accent-25p:hover { background-color: var(--mico-color-accent-25p) !important; }
+.hover-bg--accent-30p:hover { background-color: var(--mico-color-accent-30p) !important; }
+.hover-bg--accent-35p:hover { background-color: var(--mico-color-accent-35p) !important; }
+.hover-bg--accent-40p:hover { background-color: var(--mico-color-accent-40p) !important; }
+.hover-bg--accent-45p:hover { background-color: var(--mico-color-accent-45p) !important; }
+.hover-bg--accent-50p:hover { background-color: var(--mico-color-accent-50p) !important; }
+.hover-bg--accent-55p:hover { background-color: var(--mico-color-accent-55p) !important; }
+.hover-bg--accent-60p:hover { background-color: var(--mico-color-accent-60p) !important; }
+.hover-bg--accent-65p:hover { background-color: var(--mico-color-accent-65p) !important; }
+.hover-bg--accent-70p:hover { background-color: var(--mico-color-accent-70p) !important; }
+.hover-bg--accent-75p:hover { background-color: var(--mico-color-accent-75p) !important; }
+.hover-bg--accent-80p:hover { background-color: var(--mico-color-accent-80p) !important; }
+.hover-bg--accent-85p:hover { background-color: var(--mico-color-accent-85p) !important; }
+.hover-bg--accent-90p:hover { background-color: var(--mico-color-accent-90p) !important; }
+.hover-bg--accent-95p:hover { background-color: var(--mico-color-accent-95p) !important; }
+.hover-bg--accent-100p:hover { background-color: var(--mico-color-accent-100p) !important; }
 
 /* ---------- Neutral Colors - OKLCH System ---------- */
 /* Gray Color Variations */
-.hover-bg-gray:hover { background-color: var(--mico-color-gray) !important; }
-.hover-bg-gray-light:hover { background-color: var(--mico-color-gray-light) !important; }
-.hover-bg-gray-2xlight:hover { background-color: var(--mico-color-gray-2xlight) !important; }
-.hover-bg-gray-3xlight:hover { background-color: var(--mico-color-gray-3xlight) !important; }
-.hover-bg-gray-4xlight:hover { background-color: var(--mico-color-gray-4xlight) !important; }
-.hover-bg-gray-5xlight:hover { background-color: var(--mico-color-gray-5xlight) !important; }
-.hover-bg-gray-6xlight:hover { background-color: var(--mico-color-gray-6xlight) !important; }
-.hover-bg-gray-7xlight:hover { background-color: var(--mico-color-gray-7xlight) !important; }
-.hover-bg-gray-8xlight:hover { background-color: var(--mico-color-gray-8xlight) !important; }
+.hover-bg--gray:hover { background-color: var(--mico-color-gray) !important; }
+.hover-bg--gray-light:hover { background-color: var(--mico-color-gray-light) !important; }
+.hover-bg--gray-2xlight:hover { background-color: var(--mico-color-gray-2xlight) !important; }
+.hover-bg--gray-3xlight:hover { background-color: var(--mico-color-gray-3xlight) !important; }
+.hover-bg--gray-4xlight:hover { background-color: var(--mico-color-gray-4xlight) !important; }
+.hover-bg--gray-5xlight:hover { background-color: var(--mico-color-gray-5xlight) !important; }
+.hover-bg--gray-6xlight:hover { background-color: var(--mico-color-gray-6xlight) !important; }
+.hover-bg--gray-7xlight:hover { background-color: var(--mico-color-gray-7xlight) !important; }
+.hover-bg--gray-8xlight:hover { background-color: var(--mico-color-gray-8xlight) !important; }
 
-.hover-bg-gray-dark:hover { background-color: var(--mico-color-gray-dark) !important; }
-.hover-bg-gray-2xdark:hover { background-color: var(--mico-color-gray-2xdark) !important; }
-.hover-bg-gray-3xdark:hover { background-color: var(--mico-color-gray-3xdark) !important; }
-.hover-bg-gray-4xdark:hover { background-color: var(--mico-color-gray-4xdark) !important; }
-.hover-bg-gray-5xdark:hover { background-color: var(--mico-color-gray-5xdark) !important; }
-.hover-bg-gray-6xdark:hover { background-color: var(--mico-color-gray-6xdark) !important; }
-.hover-bg-gray-7xdark:hover { background-color: var(--mico-color-gray-7xdark) !important; }
-.hover-bg-gray-8xdark:hover { background-color: var(--mico-color-gray-8xdark) !important; }
+.hover-bg--gray-dark:hover { background-color: var(--mico-color-gray-dark) !important; }
+.hover-bg--gray-2xdark:hover { background-color: var(--mico-color-gray-2xdark) !important; }
+.hover-bg--gray-3xdark:hover { background-color: var(--mico-color-gray-3xdark) !important; }
+.hover-bg--gray-4xdark:hover { background-color: var(--mico-color-gray-4xdark) !important; }
+.hover-bg--gray-5xdark:hover { background-color: var(--mico-color-gray-5xdark) !important; }
+.hover-bg--gray-6xdark:hover { background-color: var(--mico-color-gray-6xdark) !important; }
+.hover-bg--gray-7xdark:hover { background-color: var(--mico-color-gray-7xdark) !important; }
+.hover-bg--gray-8xdark:hover { background-color: var(--mico-color-gray-8xdark) !important; }
 
 /* Black Color Variations */
-.hover-bg-black:hover { background-color: var(--mico-color-black) !important; }
-.hover-bg-black-light:hover { background-color: var(--mico-color-black-light) !important; }
-.hover-bg-black-2xlight:hover { background-color: var(--mico-color-black-2xlight) !important; }
-.hover-bg-black-3xlight:hover { background-color: var(--mico-color-black-3xlight) !important; }
-.hover-bg-black-4xlight:hover { background-color: var(--mico-color-black-4xlight) !important; }
-.hover-bg-black-5xlight:hover { background-color: var(--mico-color-black-5xlight) !important; }
-.hover-bg-black-6xlight:hover { background-color: var(--mico-color-black-6xlight) !important; }
-.hover-bg-black-7xlight:hover { background-color: var(--mico-color-black-7xlight) !important; }
-.hover-bg-black-8xlight:hover { background-color: var(--mico-color-black-8xlight) !important; }
+.hover-bg--black:hover { background-color: var(--mico-color-black) !important; }
+.hover-bg--black-light:hover { background-color: var(--mico-color-black-light) !important; }
+.hover-bg--black-2xlight:hover { background-color: var(--mico-color-black-2xlight) !important; }
+.hover-bg--black-3xlight:hover { background-color: var(--mico-color-black-3xlight) !important; }
+.hover-bg--black-4xlight:hover { background-color: var(--mico-color-black-4xlight) !important; }
+.hover-bg--black-5xlight:hover { background-color: var(--mico-color-black-5xlight) !important; }
+.hover-bg--black-6xlight:hover { background-color: var(--mico-color-black-6xlight) !important; }
+.hover-bg--black-7xlight:hover { background-color: var(--mico-color-black-7xlight) !important; }
+.hover-bg--black-8xlight:hover { background-color: var(--mico-color-black-8xlight) !important; }
 
-.hover-bg-black-dark:hover { background-color: var(--mico-color-black-dark) !important; }
-.hover-bg-black-2xdark:hover { background-color: var(--mico-color-black-2xdark) !important; }
-.hover-bg-black-3xdark:hover { background-color: var(--mico-color-black-3xdark) !important; }
-.hover-bg-black-4xdark:hover { background-color: var(--mico-color-black-4xdark) !important; }
-.hover-bg-black-5xdark:hover { background-color: var(--mico-color-black-5xdark) !important; }
-.hover-bg-black-6xdark:hover { background-color: var(--mico-color-black-6xdark) !important; }
-.hover-bg-black-7xdark:hover { background-color: var(--mico-color-black-7xdark) !important; }
-.hover-bg-black-8xdark:hover { background-color: var(--mico-color-black-8xdark) !important; }
+.hover-bg--black-dark:hover { background-color: var(--mico-color-black-dark) !important; }
+.hover-bg--black-2xdark:hover { background-color: var(--mico-color-black-2xdark) !important; }
+.hover-bg--black-3xdark:hover { background-color: var(--mico-color-black-3xdark) !important; }
+.hover-bg--black-4xdark:hover { background-color: var(--mico-color-black-4xdark) !important; }
+.hover-bg--black-5xdark:hover { background-color: var(--mico-color-black-5xdark) !important; }
+.hover-bg--black-6xdark:hover { background-color: var(--mico-color-black-6xdark) !important; }
+.hover-bg--black-7xdark:hover { background-color: var(--mico-color-black-7xdark) !important; }
+.hover-bg--black-8xdark:hover { background-color: var(--mico-color-black-8xdark) !important; }
 
 /* White Color Variations */
-.hover-bg-white:hover { background-color: var(--mico-color-white) !important; }
-.hover-bg-white-light:hover { background-color: var(--mico-color-white-light) !important; }
-.hover-bg-white-2xlight:hover { background-color: var(--mico-color-white-2xlight) !important; }
-.hover-bg-white-3xlight:hover { background-color: var(--mico-color-white-3xlight) !important; }
-.hover-bg-white-4xlight:hover { background-color: var(--mico-color-white-4xlight) !important; }
-.hover-bg-white-5xlight:hover { background-color: var(--mico-color-white-5xlight) !important; }
-.hover-bg-white-6xlight:hover { background-color: var(--mico-color-white-6xlight) !important; }
-.hover-bg-white-7xlight:hover { background-color: var(--mico-color-white-7xlight) !important; }
-.hover-bg-white-8xlight:hover { background-color: var(--mico-color-white-8xlight) !important; }
+.hover-bg--white:hover { background-color: var(--mico-color-white) !important; }
+.hover-bg--white-light:hover { background-color: var(--mico-color-white-light) !important; }
+.hover-bg--white-2xlight:hover { background-color: var(--mico-color-white-2xlight) !important; }
+.hover-bg--white-3xlight:hover { background-color: var(--mico-color-white-3xlight) !important; }
+.hover-bg--white-4xlight:hover { background-color: var(--mico-color-white-4xlight) !important; }
+.hover-bg--white-5xlight:hover { background-color: var(--mico-color-white-5xlight) !important; }
+.hover-bg--white-6xlight:hover { background-color: var(--mico-color-white-6xlight) !important; }
+.hover-bg--white-7xlight:hover { background-color: var(--mico-color-white-7xlight) !important; }
+.hover-bg--white-8xlight:hover { background-color: var(--mico-color-white-8xlight) !important; }
 
-.hover-bg-white-dark:hover { background-color: var(--mico-color-white-dark) !important; }
-.hover-bg-white-2xdark:hover { background-color: var(--mico-color-white-2xdark) !important; }
-.hover-bg-white-3xdark:hover { background-color: var(--mico-color-white-3xdark) !important; }
-.hover-bg-white-4xdark:hover { background-color: var(--mico-color-white-4xdark) !important; }
-.hover-bg-white-5xdark:hover { background-color: var(--mico-color-white-5xdark) !important; }
-.hover-bg-white-6xdark:hover { background-color: var(--mico-color-white-6xdark) !important; }
-.hover-bg-white-7xdark:hover { background-color: var(--mico-color-white-7xdark) !important; }
-.hover-bg-white-8xdark:hover { background-color: var(--mico-color-white-8xdark) !important; }
+.hover-bg--white-dark:hover { background-color: var(--mico-color-white-dark) !important; }
+.hover-bg--white-2xdark:hover { background-color: var(--mico-color-white-2xdark) !important; }
+.hover-bg--white-3xdark:hover { background-color: var(--mico-color-white-3xdark) !important; }
+.hover-bg--white-4xdark:hover { background-color: var(--mico-color-white-4xdark) !important; }
+.hover-bg--white-5xdark:hover { background-color: var(--mico-color-white-5xdark) !important; }
+.hover-bg--white-6xdark:hover { background-color: var(--mico-color-white-6xdark) !important; }
+.hover-bg--white-7xdark:hover { background-color: var(--mico-color-white-7xdark) !important; }
+.hover-bg--white-8xdark:hover { background-color: var(--mico-color-white-8xdark) !important; }
 
 /* ---------- Creative Transparency Variations ---------- */
-.hover-bg-black-10p:hover { background-color: var(--mico-color-black-whisper) !important; }
-.hover-bg-black-20p:hover { background-color: var(--mico-color-black-20p) !important; }
-.hover-bg-black-30p:hover { background-color: var(--mico-color-black-30p) !important; }
-.hover-bg-black-40p:hover { background-color: var(--mico-color-black-40p) !important; }
-.hover-bg-black-50p:hover { background-color: var(--mico-color-black-50p) !important; }
-.hover-bg-black-60p:hover { background-color: var(--mico-color-black-60p) !important; }
-.hover-bg-black-70p:hover { background-color: var(--mico-color-black-70p) !important; }
-.hover-bg-black-80p:hover { background-color: var(--mico-color-black-80p) !important; }
-.hover-bg-black-90p:hover { background-color: var(--mico-color-black-90p) !important; }
-.hover-bg-black-90p:hover { background-color: var(--mico-color-black-100p) !important; }
+.hover-bg--black-10p:hover { background-color: var(--mico-color-black-whisper) !important; }
+.hover-bg--black-20p:hover { background-color: var(--mico-color-black-20p) !important; }
+.hover-bg--black-30p:hover { background-color: var(--mico-color-black-30p) !important; }
+.hover-bg--black-40p:hover { background-color: var(--mico-color-black-40p) !important; }
+.hover-bg--black-50p:hover { background-color: var(--mico-color-black-50p) !important; }
+.hover-bg--black-60p:hover { background-color: var(--mico-color-black-60p) !important; }
+.hover-bg--black-70p:hover { background-color: var(--mico-color-black-70p) !important; }
+.hover-bg--black-80p:hover { background-color: var(--mico-color-black-80p) !important; }
+.hover-bg--black-90p:hover { background-color: var(--mico-color-black-90p) !important; }
+.hover-bg--black-90p:hover { background-color: var(--mico-color-black-100p) !important; }
 
-.hover-bg-white-10p:hover { background-color: var(--mico-color-white-10) !important; }
-.hover-bg-white-20p:hover { background-color: var(--mico-color-white-20p) !important; }
-.hover-bg-white-30p:hover { background-color: var(--mico-color-white-30p) !important; }
-.hover-bg-white-40p:hover { background-color: var(--mico-color-white-40p) !important; }
-.hover-bg-white-50p:hover { background-color: var(--mico-color-white-50p) !important; }
-.hover-bg-white-60p:hover { background-color: var(--mico-color-white-60p) !important; }
-.hover-bg-white-70p:hover { background-color: var(--mico-color-white-70p) !important; }
-.hover-bg-white-80p:hover { background-color: var(--mico-color-white-80p) !important; }
-.hover-bg-white-90p:hover { background-color: var(--mico-color-white-90p) !important; }
-.hover-bg-white-100p:hover { background-color: var(--mico-color-white-100p) !important; }
+.hover-bg--white-10p:hover { background-color: var(--mico-color-white-10) !important; }
+.hover-bg--white-20p:hover { background-color: var(--mico-color-white-20p) !important; }
+.hover-bg--white-30p:hover { background-color: var(--mico-color-white-30p) !important; }
+.hover-bg--white-40p:hover { background-color: var(--mico-color-white-40p) !important; }
+.hover-bg--white-50p:hover { background-color: var(--mico-color-white-50p) !important; }
+.hover-bg--white-60p:hover { background-color: var(--mico-color-white-60p) !important; }
+.hover-bg--white-70p:hover { background-color: var(--mico-color-white-70p) !important; }
+.hover-bg--white-80p:hover { background-color: var(--mico-color-white-80p) !important; }
+.hover-bg--white-90p:hover { background-color: var(--mico-color-white-90p) !important; }
+.hover-bg--white-100p:hover { background-color: var(--mico-color-white-100p) !important; }
 
 /* ---------- State Colors ---------- */
-.hover-bg-success:hover { background-color: var(--mico-color-success) !important; }
-.hover-bg-warning:hover { background-color: var(--mico-color-warning) !important; }
-.hover-bg-error:hover { background-color: var(--mico-color-error) !important; }
-.hover-bg-info:hover { background-color: var(--mico-color-info) !important; }
+.hover-bg--success:hover { background-color: var(--mico-color-success) !important; }
+.hover-bg--warning:hover { background-color: var(--mico-color-warning) !important; }
+.hover-bg--error:hover { background-color: var(--mico-color-error) !important; }
+.hover-bg--info:hover { background-color: var(--mico-color-info) !important; }
 
 /**
  * ===================================================================
@@ -210,27 +233,27 @@
  * ================================= */
 
 /* Base Color */
-.hover-text-primary:hover { color: var(--mico-color-primary) !important; }
+.hover-text--primary:hover { color: var(--mico-color-primary) !important; }
 
 /* Tints (Lighter) */
-.hover-text-primary-light:hover { color: var(--mico-color-primary-light) !important; }
-.hover-text-primary-2xlight:hover { color: var(--mico-color-primary-2xlight) !important; }
-.hover-text-primary-3xlight:hover { color: var(--mico-color-primary-3xlight) !important; }
-.hover-text-primary-4xlight:hover { color: var(--mico-color-primary-4xlight) !important; }
-.hover-text-primary-5xlight:hover { color: var(--mico-color-primary-5xlight) !important; }
-.hover-text-primary-6xlight:hover { color: var(--mico-color-primary-6xlight) !important; }
-.hover-text-primary-7xlight:hover { color: var(--mico-color-primary-7xlight) !important; }
-.hover-text-primary-8xlight:hover { color: var(--mico-color-primary-8xlight) !important; }
+.hover-text--primary-light:hover { color: var(--mico-color-primary-light) !important; }
+.hover-text--primary-2xlight:hover { color: var(--mico-color-primary-2xlight) !important; }
+.hover-text--primary-3xlight:hover { color: var(--mico-color-primary-3xlight) !important; }
+.hover-text--primary-4xlight:hover { color: var(--mico-color-primary-4xlight) !important; }
+.hover-text--primary-5xlight:hover { color: var(--mico-color-primary-5xlight) !important; }
+.hover-text--primary-6xlight:hover { color: var(--mico-color-primary-6xlight) !important; }
+.hover-text--primary-7xlight:hover { color: var(--mico-color-primary-7xlight) !important; }
+.hover-text--primary-8xlight:hover { color: var(--mico-color-primary-8xlight) !important; }
 
 /* Shades (Darker) */
-.hover-text-primary-dark:hover { color: var(--mico-color-primary-dark) !important; }
-.hover-text-primary-2xdark:hover { color: var(--mico-color-primary-2xdark) !important; }
-.hover-text-primary-3xdark:hover { color: var(--mico-color-primary-3xdark) !important; }
-.hover-text-primary-4xdark:hover { color: var(--mico-color-primary-4xdark) !important; }
-.hover-text-primary-5xdark:hover { color: var(--mico-color-primary-5xdark) !important; }
-.hover-text-primary-6xdark:hover { color: var(--mico-color-primary-6xdark) !important; }
-.hover-text-primary-7xdark:hover { color: var(--mico-color-primary-7xdark) !important; }
-.hover-text-primary-8xdark:hover { color: var(--mico-color-primary-8xdark) !important; }
+.hover-text--primary-dark:hover { color: var(--mico-color-primary-dark) !important; }
+.hover-text--primary-2xdark:hover { color: var(--mico-color-primary-2xdark) !important; }
+.hover-text--primary-3xdark:hover { color: var(--mico-color-primary-3xdark) !important; }
+.hover-text--primary-4xdark:hover { color: var(--mico-color-primary-4xdark) !important; }
+.hover-text--primary-5xdark:hover { color: var(--mico-color-primary-5xdark) !important; }
+.hover-text--primary-6xdark:hover { color: var(--mico-color-primary-6xdark) !important; }
+.hover-text--primary-7xdark:hover { color: var(--mico-color-primary-7xdark) !important; }
+.hover-text--primary-8xdark:hover { color: var(--mico-color-primary-8xdark) !important; }
 
 
 /* =================================
@@ -238,27 +261,27 @@
  * ================================= */
 
 /* Base Color */
-.hover-text-secondary:hover { color: var(--mico-color-secondary) !important; }
+.hover-text--secondary:hover { color: var(--mico-color-secondary) !important; }
 
 /* Tints (Lighter) */
-.hover-text-secondary-light:hover { color: var(--mico-color-secondary-light) !important; }
-.hover-text-secondary-2xlight:hover { color: var(--mico-color-secondary-2xlight) !important; }
-.hover-text-secondary-3xlight:hover { color: var(--mico-color-secondary-3xlight) !important; }
-.hover-text-secondary-4xlight:hover { color: var(--mico-color-secondary-4xlight) !important; }
-.hover-text-secondary-5xlight:hover { color: var(--mico-color-secondary-5xlight) !important; }
-.hover-text-secondary-6xlight:hover { color: var(--mico-color-secondary-6xlight) !important; }
-.hover-text-secondary-7xlight:hover { color: var(--mico-color-secondary-7xlight) !important; }
-.hover-text-secondary-8xlight:hover { color: var(--mico-color-secondary-8xlight) !important; }
+.hover-text--secondary-light:hover { color: var(--mico-color-secondary-light) !important; }
+.hover-text--secondary-2xlight:hover { color: var(--mico-color-secondary-2xlight) !important; }
+.hover-text--secondary-3xlight:hover { color: var(--mico-color-secondary-3xlight) !important; }
+.hover-text--secondary-4xlight:hover { color: var(--mico-color-secondary-4xlight) !important; }
+.hover-text--secondary-5xlight:hover { color: var(--mico-color-secondary-5xlight) !important; }
+.hover-text--secondary-6xlight:hover { color: var(--mico-color-secondary-6xlight) !important; }
+.hover-text--secondary-7xlight:hover { color: var(--mico-color-secondary-7xlight) !important; }
+.hover-text--secondary-8xlight:hover { color: var(--mico-color-secondary-8xlight) !important; }
 
 /* Shades (Darker) */
-.hover-text-secondary-dark:hover { color: var(--mico-color-secondary-dark) !important; }
-.hover-text-secondary-2xdark:hover { color: var(--mico-color-secondary-2xdark) !important; }
-.hover-text-secondary-3xdark:hover { color: var(--mico-color-secondary-3xdark) !important; }
-.hover-text-secondary-4xdark:hover { color: var(--mico-color-secondary-4xdark) !important; }
-.hover-text-secondary-5xdark:hover { color: var(--mico-color-secondary-5xdark) !important; }
-.hover-text-secondary-6xdark:hover { color: var(--mico-color-secondary-6xdark) !important; }
-.hover-text-secondary-7xdark:hover { color: var(--mico-color-secondary-7xdark) !important; }
-.hover-text-secondary-8xdark:hover { color: var(--mico-color-secondary-8xdark) !important; }
+.hover-text--secondary-dark:hover { color: var(--mico-color-secondary-dark) !important; }
+.hover-text--secondary-2xdark:hover { color: var(--mico-color-secondary-2xdark) !important; }
+.hover-text--secondary-3xdark:hover { color: var(--mico-color-secondary-3xdark) !important; }
+.hover-text--secondary-4xdark:hover { color: var(--mico-color-secondary-4xdark) !important; }
+.hover-text--secondary-5xdark:hover { color: var(--mico-color-secondary-5xdark) !important; }
+.hover-text--secondary-6xdark:hover { color: var(--mico-color-secondary-6xdark) !important; }
+.hover-text--secondary-7xdark:hover { color: var(--mico-color-secondary-7xdark) !important; }
+.hover-text--secondary-8xdark:hover { color: var(--mico-color-secondary-8xdark) !important; }
 
 
 /* =================================
@@ -266,27 +289,49 @@
  * ================================= */
 
 /* Base Color */
-.hover-text-accent:hover { color: var(--mico-color-accent) !important; }
+.hover-text--accent:hover { color: var(--mico-color-accent) !important; }
 
 /* Tints (Lighter) */
-.hover-text-accent-light:hover { color: var(--mico-color-accent-light) !important; }
-.hover-text-accent-2xlight:hover { color: var(--mico-color-accent-2xlight) !important; }
-.hover-text-accent-3xlight:hover { color: var(--mico-color-accent-3xlight) !important; }
-.hover-text-accent-4xlight:hover { color: var(--mico-color-accent-4xlight) !important; }
-.hover-text-accent-5xlight:hover { color: var(--mico-color-accent-5xlight) !important; }
-.hover-text-accent-6xlight:hover { color: var(--mico-color-accent-6xlight) !important; }
-.hover-text-accent-7xlight:hover { color: var(--mico-color-accent-7xlight) !important; }
-.hover-text-accent-8xlight:hover { color: var(--mico-color-accent-8xlight) !important; }
+.hover-text--accent-light:hover { color: var(--mico-color-accent-light) !important; }
+.hover-text--accent-2xlight:hover { color: var(--mico-color-accent-2xlight) !important; }
+.hover-text--accent-3xlight:hover { color: var(--mico-color-accent-3xlight) !important; }
+.hover-text--accent-4xlight:hover { color: var(--mico-color-accent-4xlight) !important; }
+.hover-text--accent-5xlight:hover { color: var(--mico-color-accent-5xlight) !important; }
+.hover-text--accent-6xlight:hover { color: var(--mico-color-accent-6xlight) !important; }
+.hover-text--accent-7xlight:hover { color: var(--mico-color-accent-7xlight) !important; }
+.hover-text--accent-8xlight:hover { color: var(--mico-color-accent-8xlight) !important; }
 
 /* Shades (Darker) */
-.hover-text-accent-dark:hover { color: var(--mico-color-accent-dark) !important; }
-.hover-text-accent-2xdark:hover { color: var(--mico-color-accent-2xdark) !important; }
-.hover-text-accent-3xdark:hover { color: var(--mico-color-accent-3xdark) !important; }
-.hover-text-accent-4xdark:hover { color: var(--mico-color-accent-4xdark) !important; }
-.hover-text-accent-5xdark:hover { color: var(--mico-color-accent-5xdark) !important; }
-.hover-text-accent-6xdark:hover { color: var(--mico-color-accent-6xdark) !important; }
-.hover-text-accent-7xdark:hover { color: var(--mico-color-accent-7xdark) !important; }
-.hover-text-accent-8xdark:hover { color: var(--mico-color-accent-8xdark) !important; }
+.hover-text--accent-dark:hover { color: var(--mico-color-accent-dark) !important; }
+.hover-text--accent-2xdark:hover { color: var(--mico-color-accent-2xdark) !important; }
+.hover-text--accent-3xdark:hover { color: var(--mico-color-accent-3xdark) !important; }
+.hover-text--accent-4xdark:hover { color: var(--mico-color-accent-4xdark) !important; }
+.hover-text--accent-5xdark:hover { color: var(--mico-color-accent-5xdark) !important; }
+.hover-text--accent-6xdark:hover { color: var(--mico-color-accent-6xdark) !important; }
+.hover-text--accent-7xdark:hover { color: var(--mico-color-accent-7xdark) !important; }
+.hover-text--accent-8xdark:hover { color: var(--mico-color-accent-8xdark) !important; }
+
+/* Hover Text - Accent Percentage variations (5% increments) */
+.hover-text--accent-5p:hover { color: var(--mico-color-accent-5p) !important; }
+.hover-text--accent-10p:hover { color: var(--mico-color-accent-10p) !important; }
+.hover-text--accent-15p:hover { color: var(--mico-color-accent-15p) !important; }
+.hover-text--accent-20p:hover { color: var(--mico-color-accent-20p) !important; }
+.hover-text--accent-25p:hover { color: var(--mico-color-accent-25p) !important; }
+.hover-text--accent-30p:hover { color: var(--mico-color-accent-30p) !important; }
+.hover-text--accent-35p:hover { color: var(--mico-color-accent-35p) !important; }
+.hover-text--accent-40p:hover { color: var(--mico-color-accent-40p) !important; }
+.hover-text--accent-45p:hover { color: var(--mico-color-accent-45p) !important; }
+.hover-text--accent-50p:hover { color: var(--mico-color-accent-50p) !important; }
+.hover-text--accent-55p:hover { color: var(--mico-color-accent-55p) !important; }
+.hover-text--accent-60p:hover { color: var(--mico-color-accent-60p) !important; }
+.hover-text--accent-65p:hover { color: var(--mico-color-accent-65p) !important; }
+.hover-text--accent-70p:hover { color: var(--mico-color-accent-70p) !important; }
+.hover-text--accent-75p:hover { color: var(--mico-color-accent-75p) !important; }
+.hover-text--accent-80p:hover { color: var(--mico-color-accent-80p) !important; }
+.hover-text--accent-85p:hover { color: var(--mico-color-accent-85p) !important; }
+.hover-text--accent-90p:hover { color: var(--mico-color-accent-90p) !important; }
+.hover-text--accent-95p:hover { color: var(--mico-color-accent-95p) !important; }
+.hover-text--accent-100p:hover { color: var(--mico-color-accent-100p) !important; }
 /* ========================================================================== */
 /* FOCUS STATE UTILITIES                                                      */
 /* ========================================================================== */
@@ -298,171 +343,194 @@
  */
 
 /* ---------- Brand Colors ---------- */
-.focus-bg-primary:focus { background-color: var(--mico-color-primary) !important; }
-.focus-bg-secondary:focus { background-color: var(--mico-color-secondary) !important; }
-.focus-bg-accent:focus { background-color: var(--mico-color-accent) !important; }
+.focus-bg--primary:focus { background-color: var(--mico-color-primary) !important; }
+.focus-bg--secondary:focus { background-color: var(--mico-color-secondary) !important; }
+.focus-bg--accent:focus { background-color: var(--mico-color-accent) !important; }
 
 /* ---------- Primary Color Variations ---------- */
 /* Tints - Lighter variations */
-.focus-bg-primary-light:focus { background-color: var(--mico-color-primary-light) !important; }
-.focus-bg-primary-2xlight:focus { background-color: var(--mico-color-primary-2xlight) !important; }
-.focus-bg-primary-3xlight:focus { background-color: var(--mico-color-primary-3xlight) !important; }
-.focus-bg-primary-4xlight:focus { background-color: var(--mico-color-primary-4xlight) !important; }
-.focus-bg-primary-5xlight:focus { background-color: var(--mico-color-primary-5xlight) !important; }
-.focus-bg-primary-6xlight:focus { background-color: var(--mico-color-primary-6xlight) !important; }
-.focus-bg-primary-7xlight:focus { background-color: var(--mico-color-primary-7xlight) !important; }
-.focus-bg-primary-8xlight:focus { background-color: var(--mico-color-primary-8xlight) !important; }
+.focus-bg--primary-light:focus { background-color: var(--mico-color-primary-light) !important; }
+.focus-bg--primary-2xlight:focus { background-color: var(--mico-color-primary-2xlight) !important; }
+.focus-bg--primary-3xlight:focus { background-color: var(--mico-color-primary-3xlight) !important; }
+.focus-bg--primary-4xlight:focus { background-color: var(--mico-color-primary-4xlight) !important; }
+.focus-bg--primary-5xlight:focus { background-color: var(--mico-color-primary-5xlight) !important; }
+.focus-bg--primary-6xlight:focus { background-color: var(--mico-color-primary-6xlight) !important; }
+.focus-bg--primary-7xlight:focus { background-color: var(--mico-color-primary-7xlight) !important; }
+.focus-bg--primary-8xlight:focus { background-color: var(--mico-color-primary-8xlight) !important; }
 
 /* Shades - Darker variations */
-.focus-bg-primary-dark:focus { background-color: var(--mico-color-primary-dark) !important; }
-.focus-bg-primary-2xdark:focus { background-color: var(--mico-color-primary-2xdark) !important; }
-.focus-bg-primary-3xdark:focus { background-color: var(--mico-color-primary-3xdark) !important; }
-.focus-bg-primary-4xdark:focus { background-color: var(--mico-color-primary-4xdark) !important; }
-.focus-bg-primary-5xdark:focus { background-color: var(--mico-color-primary-5xdark) !important; }
-.focus-bg-primary-6xdark:focus { background-color: var(--mico-color-primary-6xdark) !important; }
-.focus-bg-primary-7xdark:focus { background-color: var(--mico-color-primary-7xdark) !important; }
-.focus-bg-primary-8xdark:focus { background-color: var(--mico-color-primary-8xdark) !important; }
+.focus-bg--primary-dark:focus { background-color: var(--mico-color-primary-dark) !important; }
+.focus-bg--primary-2xdark:focus { background-color: var(--mico-color-primary-2xdark) !important; }
+.focus-bg--primary-3xdark:focus { background-color: var(--mico-color-primary-3xdark) !important; }
+.focus-bg--primary-4xdark:focus { background-color: var(--mico-color-primary-4xdark) !important; }
+.focus-bg--primary-5xdark:focus { background-color: var(--mico-color-primary-5xdark) !important; }
+.focus-bg--primary-6xdark:focus { background-color: var(--mico-color-primary-6xdark) !important; }
+.focus-bg--primary-7xdark:focus { background-color: var(--mico-color-primary-7xdark) !important; }
+.focus-bg--primary-8xdark:focus { background-color: var(--mico-color-primary-8xdark) !important; }
 
 /* ---------- Secondary Color Variations ---------- */
 /* Tints - Lighter variations */
-.focus-bg-secondary-light:focus { background-color: var(--mico-color-secondary-light) !important; }
-.focus-bg-secondary-2xlight:focus { background-color: var(--mico-color-secondary-2xlight) !important; }
-.focus-bg-secondary-3xlight:focus { background-color: var(--mico-color-secondary-3xlight) !important; }
-.focus-bg-secondary-4xlight:focus { background-color: var(--mico-color-secondary-4xlight) !important; }
-.focus-bg-secondary-5xlight:focus { background-color: var(--mico-color-secondary-5xlight) !important; }
-.focus-bg-secondary-6xlight:focus { background-color: var(--mico-color-secondary-6xlight) !important; }
-.focus-bg-secondary-7xlight:focus { background-color: var(--mico-color-secondary-7xlight) !important; }
-.focus-bg-secondary-8xlight:focus { background-color: var(--mico-color-secondary-8xlight) !important; }
+.focus-bg--secondary-light:focus { background-color: var(--mico-color-secondary-light) !important; }
+.focus-bg--secondary-2xlight:focus { background-color: var(--mico-color-secondary-2xlight) !important; }
+.focus-bg--secondary-3xlight:focus { background-color: var(--mico-color-secondary-3xlight) !important; }
+.focus-bg--secondary-4xlight:focus { background-color: var(--mico-color-secondary-4xlight) !important; }
+.focus-bg--secondary-5xlight:focus { background-color: var(--mico-color-secondary-5xlight) !important; }
+.focus-bg--secondary-6xlight:focus { background-color: var(--mico-color-secondary-6xlight) !important; }
+.focus-bg--secondary-7xlight:focus { background-color: var(--mico-color-secondary-7xlight) !important; }
+.focus-bg--secondary-8xlight:focus { background-color: var(--mico-color-secondary-8xlight) !important; }
 
 /* Shades - Darker variations */
-.focus-bg-secondary-dark:focus { background-color: var(--mico-color-secondary-dark) !important; }
-.focus-bg-secondary-2xdark:focus { background-color: var(--mico-color-secondary-2xdark) !important; }
-.focus-bg-secondary-3xdark:focus { background-color: var(--mico-color-secondary-3xdark) !important; }
-.focus-bg-secondary-4xdark:focus { background-color: var(--mico-color-secondary-4xdark) !important; }
-.focus-bg-secondary-5xdark:focus { background-color: var(--mico-color-secondary-5xdark) !important; }
-.focus-bg-secondary-6xdark:focus { background-color: var(--mico-color-secondary-6xdark) !important; }
-.focus-bg-secondary-7xdark:focus { background-color: var(--mico-color-secondary-7xdark) !important; }
-.focus-bg-secondary-8xdark:focus { background-color: var(--mico-color-secondary-8xdark) !important; }
+.focus-bg--secondary-dark:focus { background-color: var(--mico-color-secondary-dark) !important; }
+.focus-bg--secondary-2xdark:focus { background-color: var(--mico-color-secondary-2xdark) !important; }
+.focus-bg--secondary-3xdark:focus { background-color: var(--mico-color-secondary-3xdark) !important; }
+.focus-bg--secondary-4xdark:focus { background-color: var(--mico-color-secondary-4xdark) !important; }
+.focus-bg--secondary-5xdark:focus { background-color: var(--mico-color-secondary-5xdark) !important; }
+.focus-bg--secondary-6xdark:focus { background-color: var(--mico-color-secondary-6xdark) !important; }
+.focus-bg--secondary-7xdark:focus { background-color: var(--mico-color-secondary-7xdark) !important; }
+.focus-bg--secondary-8xdark:focus { background-color: var(--mico-color-secondary-8xdark) !important; }
 
 /* ---------- Accent Color Variations ---------- */
 /* Tints - Lighter variations */
-.focus-bg-accent-light:focus { background-color: var(--mico-color-accent-light) !important; }
-.focus-bg-accent-2xlight:focus { background-color: var(--mico-color-accent-2xlight) !important; }
-.focus-bg-accent-3xlight:focus { background-color: var(--mico-color-accent-3xlight) !important; }
-.focus-bg-accent-4xlight:focus { background-color: var(--mico-color-accent-4xlight) !important; }
-.focus-bg-accent-5xlight:focus { background-color: var(--mico-color-accent-5xlight) !important; }
-.focus-bg-accent-6xlight:focus { background-color: var(--mico-color-accent-6xlight) !important; }
-.focus-bg-accent-7xlight:focus { background-color: var(--mico-color-accent-7xlight) !important; }
-.focus-bg-accent-8xlight:focus { background-color: var(--mico-color-accent-8xlight) !important; }
+.focus-bg--accent-light:focus { background-color: var(--mico-color-accent-light) !important; }
+.focus-bg--accent-2xlight:focus { background-color: var(--mico-color-accent-2xlight) !important; }
+.focus-bg--accent-3xlight:focus { background-color: var(--mico-color-accent-3xlight) !important; }
+.focus-bg--accent-4xlight:focus { background-color: var(--mico-color-accent-4xlight) !important; }
+.focus-bg--accent-5xlight:focus { background-color: var(--mico-color-accent-5xlight) !important; }
+.focus-bg--accent-6xlight:focus { background-color: var(--mico-color-accent-6xlight) !important; }
+.focus-bg--accent-7xlight:focus { background-color: var(--mico-color-accent-7xlight) !important; }
+.focus-bg--accent-8xlight:focus { background-color: var(--mico-color-accent-8xlight) !important; }
 
 /* Shades - Darker variations */
-.focus-bg-accent-dark:focus { background-color: var(--mico-color-accent-dark) !important; }
-.focus-bg-accent-2xdark:focus { background-color: var(--mico-color-accent-2xdark) !important; }
-.focus-bg-accent-3xdark:focus { background-color: var(--mico-color-accent-3xdark) !important; }
-.focus-bg-accent-4xdark:focus { background-color: var(--mico-color-accent-4xdark) !important; }
-.focus-bg-accent-5xdark:focus { background-color: var(--mico-color-accent-5xdark) !important; }
-.focus-bg-accent-6xdark:focus { background-color: var(--mico-color-accent-6xdark) !important; }
-.focus-bg-accent-7xdark:focus { background-color: var(--mico-color-accent-7xdark) !important; }
-.focus-bg-accent-8xdark:focus { background-color: var(--mico-color-accent-8xdark) !important; }
+.focus-bg--accent-dark:focus { background-color: var(--mico-color-accent-dark) !important; }
+.focus-bg--accent-2xdark:focus { background-color: var(--mico-color-accent-2xdark) !important; }
+.focus-bg--accent-3xdark:focus { background-color: var(--mico-color-accent-3xdark) !important; }
+.focus-bg--accent-4xdark:focus { background-color: var(--mico-color-accent-4xdark) !important; }
+.focus-bg--accent-5xdark:focus { background-color: var(--mico-color-accent-5xdark) !important; }
+.focus-bg--accent-6xdark:focus { background-color: var(--mico-color-accent-6xdark) !important; }
+.focus-bg--accent-7xdark:focus { background-color: var(--mico-color-accent-7xdark) !important; }
+.focus-bg--accent-8xdark:focus { background-color: var(--mico-color-accent-8xdark) !important; }
+
+/* ---------- Accent Color Percentage Variations ---------- */
+/* Focus Background - Percentage variations (5% increments) */
+.focus-bg--accent-5p:focus { background-color: var(--mico-color-accent-5p) !important; }
+.focus-bg--accent-10p:focus { background-color: var(--mico-color-accent-10p) !important; }
+.focus-bg--accent-15p:focus { background-color: var(--mico-color-accent-15p) !important; }
+.focus-bg--accent-20p:focus { background-color: var(--mico-color-accent-20p) !important; }
+.focus-bg--accent-25p:focus { background-color: var(--mico-color-accent-25p) !important; }
+.focus-bg--accent-30p:focus { background-color: var(--mico-color-accent-30p) !important; }
+.focus-bg--accent-35p:focus { background-color: var(--mico-color-accent-35p) !important; }
+.focus-bg--accent-40p:focus { background-color: var(--mico-color-accent-40p) !important; }
+.focus-bg--accent-45p:focus { background-color: var(--mico-color-accent-45p) !important; }
+.focus-bg--accent-50p:focus { background-color: var(--mico-color-accent-50p) !important; }
+.focus-bg--accent-55p:focus { background-color: var(--mico-color-accent-55p) !important; }
+.focus-bg--accent-60p:focus { background-color: var(--mico-color-accent-60p) !important; }
+.focus-bg--accent-65p:focus { background-color: var(--mico-color-accent-65p) !important; }
+.focus-bg--accent-70p:focus { background-color: var(--mico-color-accent-70p) !important; }
+.focus-bg--accent-75p:focus { background-color: var(--mico-color-accent-75p) !important; }
+.focus-bg--accent-80p:focus { background-color: var(--mico-color-accent-80p) !important; }
+.focus-bg--accent-85p:focus { background-color: var(--mico-color-accent-85p) !important; }
+.focus-bg--accent-90p:focus { background-color: var(--mico-color-accent-90p) !important; }
+.focus-bg--accent-95p:focus { background-color: var(--mico-color-accent-95p) !important; }
+.focus-bg--accent-100p:focus { background-color: var(--mico-color-accent-100p) !important; }
 
 
 /* ---------- Grayscale ---------- */
-.focus-bg-gray:focus { background-color: var(--mico-color-gray) !important; }
-.focus-bg-gray-2xlight:focus { background-color: var(--mico-color-gray-2xlight) !important; }
-.focus-bg-gray-3xlight:focus { background-color: var(--mico-color-gray-3xlight) !important; }
-.focus-bg-gray-4xlight:focus { background-color: var(--mico-color-gray-4xlight) !important; }
-.focus-bg-gray-5xlight:focus { background-color: var(--mico-color-gray-5xlight) !important; }
-.focus-bg-gray-6xlight:focus { background-color: var(--mico-color-gray-6xlight) !important; }
-.focus-bg-gray-7xlight:focus { background-color: var(--mico-color-gray-7xlight) !important; }
-.focus-bg-gray-8xlight:focus { background-color: var(--mico-color-gray-8xlight) !important; }
+.focus-bg--gray:focus { background-color: var(--mico-color-gray) !important; }
+.focus-bg--gray-2xlight:focus { background-color: var(--mico-color-gray-2xlight) !important; }
+.focus-bg--gray-3xlight:focus { background-color: var(--mico-color-gray-3xlight) !important; }
+.focus-bg--gray-4xlight:focus { background-color: var(--mico-color-gray-4xlight) !important; }
+.focus-bg--gray-5xlight:focus { background-color: var(--mico-color-gray-5xlight) !important; }
+.focus-bg--gray-6xlight:focus { background-color: var(--mico-color-gray-6xlight) !important; }
+.focus-bg--gray-7xlight:focus { background-color: var(--mico-color-gray-7xlight) !important; }
+.focus-bg--gray-8xlight:focus { background-color: var(--mico-color-gray-8xlight) !important; }
 
 /* Shades - Darker variations */
-.focus-bg-gray-dark:focus { background-color: var(--mico-color-gray-dark) !important; }
-.focus-bg-gray-2xdark:focus { background-color: var(--mico-color-gray-2xdark) !important; }
-.focus-bg-gray-3xdark:focus { background-color: var(--mico-color-gray-3xdark) !important; }
-.focus-bg-gray-4xdark:focus { background-color: var(--mico-color-gray-4xdark) !important; }
-.focus-bg-gray-5xdark:focus { background-color: var(--mico-color-gray-5xdark) !important; }
-.focus-bg-gray-6xdark:focus { background-color: var(--mico-color-gray-6xdark) !important; }
-.focus-bg-gray-7xdark:focus { background-color: var(--mico-color-gray-7xdark) !important; }
-.focus-bg-gray-8xdark:focus { background-color: var(--mico-color-gray-8xdark) !important; }
+.focus-bg--gray-dark:focus { background-color: var(--mico-color-gray-dark) !important; }
+.focus-bg--gray-2xdark:focus { background-color: var(--mico-color-gray-2xdark) !important; }
+.focus-bg--gray-3xdark:focus { background-color: var(--mico-color-gray-3xdark) !important; }
+.focus-bg--gray-4xdark:focus { background-color: var(--mico-color-gray-4xdark) !important; }
+.focus-bg--gray-5xdark:focus { background-color: var(--mico-color-gray-5xdark) !important; }
+.focus-bg--gray-6xdark:focus { background-color: var(--mico-color-gray-6xdark) !important; }
+.focus-bg--gray-7xdark:focus { background-color: var(--mico-color-gray-7xdark) !important; }
+.focus-bg--gray-8xdark:focus { background-color: var(--mico-color-gray-8xdark) !important; }
 
 /* ---------- Black Scale ---------- */
-.focus-bg-black:focus { background-color: var(--mico-color-black) !important; }
-.focus-bg-black-light:focus { background-color: var(--mico-color-black-light) !important; }
-.focus-bg-black-2xlight:focus { background-color: var(--mico-color-black-2xlight) !important; }
-.focus-bg-black-3xlight:focus { background-color: var(--mico-color-black-3xlight) !important; }
-.focus-bg-black-4xlight:focus { background-color: var(--mico-color-black-4xlight) !important; }
-.focus-bg-black-5xlight:focus { background-color: var(--mico-color-black-5xlight) !important; }
-.focus-bg-black-6xlight:focus { background-color: var(--mico-color-black-6xlight) !important; }
-.focus-bg-black-7xlight:focus { background-color: var(--mico-color-black-7xlight) !important; }
-.focus-bg-black-8xlight:focus { background-color: var(--mico-color-black-8xlight) !important; }
+.focus-bg--black:focus { background-color: var(--mico-color-black) !important; }
+.focus-bg--black-light:focus { background-color: var(--mico-color-black-light) !important; }
+.focus-bg--black-2xlight:focus { background-color: var(--mico-color-black-2xlight) !important; }
+.focus-bg--black-3xlight:focus { background-color: var(--mico-color-black-3xlight) !important; }
+.focus-bg--black-4xlight:focus { background-color: var(--mico-color-black-4xlight) !important; }
+.focus-bg--black-5xlight:focus { background-color: var(--mico-color-black-5xlight) !important; }
+.focus-bg--black-6xlight:focus { background-color: var(--mico-color-black-6xlight) !important; }
+.focus-bg--black-7xlight:focus { background-color: var(--mico-color-black-7xlight) !important; }
+.focus-bg--black-8xlight:focus { background-color: var(--mico-color-black-8xlight) !important; }
 
-.focus-bg-black-dark:focus { background-color: var(--mico-color-black-dark) !important; }
-.focus-bg-black-2xdark:focus { background-color: var(--mico-color-black-2xdark) !important; }
-.focus-bg-black-3xdark:focus { background-color: var(--mico-color-black-3xdark) !important; }
-.focus-bg-black-4xdark:focus { background-color: var(--mico-color-black-4xdark) !important; }
-.focus-bg-black-5xdark:focus { background-color: var(--mico-color-black-5xdark) !important; }
-.focus-bg-black-6xdark:focus { background-color: var(--mico-color-black-6xdark) !important; }
-.focus-bg-black-7xdark:focus { background-color: var(--mico-color-black-7xdark) !important; }
-.focus-bg-black-8xdark:focus { background-color: var(--mico-color-black-8xdark) !important; }
+.focus-bg--black-dark:focus { background-color: var(--mico-color-black-dark) !important; }
+.focus-bg--black-2xdark:focus { background-color: var(--mico-color-black-2xdark) !important; }
+.focus-bg--black-3xdark:focus { background-color: var(--mico-color-black-3xdark) !important; }
+.focus-bg--black-4xdark:focus { background-color: var(--mico-color-black-4xdark) !important; }
+.focus-bg--black-5xdark:focus { background-color: var(--mico-color-black-5xdark) !important; }
+.focus-bg--black-6xdark:focus { background-color: var(--mico-color-black-6xdark) !important; }
+.focus-bg--black-7xdark:focus { background-color: var(--mico-color-black-7xdark) !important; }
+.focus-bg--black-8xdark:focus { background-color: var(--mico-color-black-8xdark) !important; }
 
 /* White Color Variations */
-.focus-bg-white:focus { background-color: var(--mico-color-white) !important; }
-.focus-bg-white-light:focus { background-color: var(--mico-color-white-light) !important; }
-.focus-bg-white-2xlight:focus { background-color: var(--mico-color-white-2xlight) !important; }
-.focus-bg-white-3xlight:focus { background-color: var(--mico-color-white-3xlight) !important; }
-.focus-bg-white-4xlight:focus { background-color: var(--mico-color-white-4xlight) !important; }
-.focus-bg-white-5xlight:focus { background-color: var(--mico-color-white-5xlight) !important; }
-.focus-bg-white-6xlight:focus { background-color: var(--mico-color-white-6xlight) !important; }
-.focus-bg-white-7xlight:focus { background-color: var(--mico-color-white-7xlight) !important; }
-.focus-bg-white-8xlight:focus { background-color: var(--mico-color-white-8xlight) !important; }
+.focus-bg--white:focus { background-color: var(--mico-color-white) !important; }
+.focus-bg--white-light:focus { background-color: var(--mico-color-white-light) !important; }
+.focus-bg--white-2xlight:focus { background-color: var(--mico-color-white-2xlight) !important; }
+.focus-bg--white-3xlight:focus { background-color: var(--mico-color-white-3xlight) !important; }
+.focus-bg--white-4xlight:focus { background-color: var(--mico-color-white-4xlight) !important; }
+.focus-bg--white-5xlight:focus { background-color: var(--mico-color-white-5xlight) !important; }
+.focus-bg--white-6xlight:focus { background-color: var(--mico-color-white-6xlight) !important; }
+.focus-bg--white-7xlight:focus { background-color: var(--mico-color-white-7xlight) !important; }
+.focus-bg--white-8xlight:focus { background-color: var(--mico-color-white-8xlight) !important; }
 
-.focus-bg-white-dark:focus { background-color: var(--mico-color-white-dark) !important; }
-.focus-bg-white-2xdark:focus { background-color: var(--mico-color-white-2xdark) !important; }
-.focus-bg-white-3xdark:focus { background-color: var(--mico-color-white-3xdark) !important; }
-.focus-bg-white-4xdark:focus { background-color: var(--mico-color-white-4xdark) !important; }
-.focus-bg-white-5xdark:focus { background-color: var(--mico-color-white-5xdark) !important; }
-.focus-bg-white-6xdark:focus { background-color: var(--mico-color-white-6xdark) !important; }
-.focus-bg-white-7xdark:focus { background-color: var(--mico-color-white-7xdark) !important; }
-.focus-bg-white-8xdark:focus { background-color: var(--mico-color-white-8xdark) !important; }
+.focus-bg--white-dark:focus { background-color: var(--mico-color-white-dark) !important; }
+.focus-bg--white-2xdark:focus { background-color: var(--mico-color-white-2xdark) !important; }
+.focus-bg--white-3xdark:focus { background-color: var(--mico-color-white-3xdark) !important; }
+.focus-bg--white-4xdark:focus { background-color: var(--mico-color-white-4xdark) !important; }
+.focus-bg--white-5xdark:focus { background-color: var(--mico-color-white-5xdark) !important; }
+.focus-bg--white-6xdark:focus { background-color: var(--mico-color-white-6xdark) !important; }
+.focus-bg--white-7xdark:focus { background-color: var(--mico-color-white-7xdark) !important; }
+.focus-bg--white-8xdark:focus { background-color: var(--mico-color-white-8xdark) !important; }
 
 /* ---------- Transparency ---------- */
-.focus-bg-black-10p:focus { background-color: var(--mico-color-black-10p) !important; }
-.focus-bg-black-20p:focus { background-color: var(--mico-color-black-20p) !important; }
-.focus-bg-black-30p:focus { background-color: var(--mico-color-black-30p) !important; }
-.focus-bg-black-40p:focus { background-color: var(--mico-color-black-40p) !important; }
-.focus-bg-black-50p:focus { background-color: var(--mico-color-black-50p) !important; }
-.focus-bg-black-60p:focus { background-color: var(--mico-color-black-60p) !important; }
-.focus-bg-black-70p:focus { background-color: var(--mico-color-black-70p) !important; }
-.focus-bg-black-80p:focus { background-color: var(--mico-color-black-80p) !important; }
-.focus-bg-black-90p:focus { background-color: var(--mico-color-black-90p) !important; }
-.focus-bg-black-100p:focus { background-color: var(--mico-color-black-100p) !important; }
+.focus-bg--black-10p:focus { background-color: var(--mico-color-black-10p) !important; }
+.focus-bg--black-20p:focus { background-color: var(--mico-color-black-20p) !important; }
+.focus-bg--black-30p:focus { background-color: var(--mico-color-black-30p) !important; }
+.focus-bg--black-40p:focus { background-color: var(--mico-color-black-40p) !important; }
+.focus-bg--black-50p:focus { background-color: var(--mico-color-black-50p) !important; }
+.focus-bg--black-60p:focus { background-color: var(--mico-color-black-60p) !important; }
+.focus-bg--black-70p:focus { background-color: var(--mico-color-black-70p) !important; }
+.focus-bg--black-80p:focus { background-color: var(--mico-color-black-80p) !important; }
+.focus-bg--black-90p:focus { background-color: var(--mico-color-black-90p) !important; }
+.focus-bg--black-100p:focus { background-color: var(--mico-color-black-100p) !important; }
 
-.focus-bg-white-10p:focus { background-color: var(--mico-color-white-10) !important; }
-.focus-bg-white-20p:focus { background-color: var(--mico-color-white-20p) !important; }
-.focus-bg-white-30p:focus { background-color: var(--mico-color-white-30p) !important; }
-.focus-bg-white-40p:focus { background-color: var(--mico-color-white-40p) !important; }
-.focus-bg-white-50p:focus { background-color: var(--mico-color-white-50p) !important; }
-.focus-bg-white-60p:focus { background-color: var(--mico-color-white-60p) !important; }
-.focus-bg-white-70p:focus { background-color: var(--mico-color-white-70p) !important; }
-.focus-bg-white-80p:focus { background-color: var(--mico-color-white-80p) !important; }
-.focus-bg-white-90p:focus { background-color: var(--mico-color-white-90p) !important; }
-.focus-bg-white-100p:focus { background-color: var(--mico-color-white-100p) !important; }
+.focus-bg--white-10p:focus { background-color: var(--mico-color-white-10) !important; }
+.focus-bg--white-20p:focus { background-color: var(--mico-color-white-20p) !important; }
+.focus-bg--white-30p:focus { background-color: var(--mico-color-white-30p) !important; }
+.focus-bg--white-40p:focus { background-color: var(--mico-color-white-40p) !important; }
+.focus-bg--white-50p:focus { background-color: var(--mico-color-white-50p) !important; }
+.focus-bg--white-60p:focus { background-color: var(--mico-color-white-60p) !important; }
+.focus-bg--white-70p:focus { background-color: var(--mico-color-white-70p) !important; }
+.focus-bg--white-80p:focus { background-color: var(--mico-color-white-80p) !important; }
+.focus-bg--white-90p:focus { background-color: var(--mico-color-white-90p) !important; }
+.focus-bg--white-100p:focus { background-color: var(--mico-color-white-100p) !important; }
 
 /* ---------- State Colors ---------- */
-.focus-bg-success:focus { background-color: var(--mico-color-success) !important; }
-.focus-bg-warning:focus { background-color: var(--mico-color-warning) !important; }
-.focus-bg-error:focus { background-color: var(--mico-color-error) !important; }
-.focus-bg-info:focus { background-color: var(--mico-color-info) !important; }
+.focus-bg--success:focus { background-color: var(--mico-color-success) !important; }
+.focus-bg--warning:focus { background-color: var(--mico-color-warning) !important; }
+.focus-bg--error:focus { background-color: var(--mico-color-error) !important; }
+.focus-bg--info:focus { background-color: var(--mico-color-info) !important; }
 
 /**
  * TEXT COLOR FOCUS STATES
  *
  * These utilities apply text colors on focus
  */
-.focus-text-primary:focus { color: var(--mico-color-primary) !important; }
-.focus-text-secondary:focus { color: var(--mico-color-secondary) !important; }
-.focus-text-accent:focus { color: var(--mico-color-accent) !important; }
+.focus-text--primary:focus { color: var(--mico-color-primary) !important; }
+.focus-text--secondary:focus { color: var(--mico-color-secondary) !important; }
+.focus-text--accent:focus { color: var(--mico-color-accent) !important; }
 
 /* ========================================================================== */
 /* ACTIVE STATE UTILITIES                                                     */
@@ -475,75 +543,75 @@
  */
 
 /* ---------- Brand Colors ---------- */
-.active-bg-primary:active { background-color: var(--mico-color-primary) !important; }
-.active-bg-secondary:active { background-color: var(--mico-color-secondary) !important; }
-.active-bg-accent:active { background-color: var(--mico-color-accent) !important; }
+.active-bg--primary:active { background-color: var(--mico-color-primary) !important; }
+.active-bg--secondary:active { background-color: var(--mico-color-secondary) !important; }
+.active-bg--accent:active { background-color: var(--mico-color-accent) !important; }
 
 /* ---------- Primary Color Variations ---------- */
 /* Tints - Lighter variations */
-.active-bg-primary-light:active { background-color: var(--mico-color-primary-light) !important; }
-.active-bg-primary-2xlight:active { background-color: var(--mico-color-primary-2xlight) !important; }
-.active-bg-primary-3xlight:active { background-color: var(--mico-color-primary-3xlight) !important; }
-.active-bg-primary-4xlight:active { background-color: var(--mico-color-primary-4xlight) !important; }
-.active-bg-primary-5xlight:active { background-color: var(--mico-color-primary-5xlight) !important; }
-.active-bg-primary-6xlight:active { background-color: var(--mico-color-primary-6xlight) !important; }
-.active-bg-primary-7xlight:active { background-color: var(--mico-color-primary-7xlight) !important; }
-.active-bg-primary-8xlight:active { background-color: var(--mico-color-primary-8xlight) !important; }
+.active-bg--primary-light:active { background-color: var(--mico-color-primary-light) !important; }
+.active-bg--primary-2xlight:active { background-color: var(--mico-color-primary-2xlight) !important; }
+.active-bg--primary-3xlight:active { background-color: var(--mico-color-primary-3xlight) !important; }
+.active-bg--primary-4xlight:active { background-color: var(--mico-color-primary-4xlight) !important; }
+.active-bg--primary-5xlight:active { background-color: var(--mico-color-primary-5xlight) !important; }
+.active-bg--primary-6xlight:active { background-color: var(--mico-color-primary-6xlight) !important; }
+.active-bg--primary-7xlight:active { background-color: var(--mico-color-primary-7xlight) !important; }
+.active-bg--primary-8xlight:active { background-color: var(--mico-color-primary-8xlight) !important; }
 
 
 /* Shades - Darker variations */
-.active-bg-primary-dark:active { background-color: var(--mico-color-primary-dark) !important; }
-.active-bg-primary-2xdark:active { background-color: var(--mico-color-primary-2xdark) !important; }
-.active-bg-primary-3xdark:active { background-color: var(--mico-color-primary-3xdark) !important; }
-.active-bg-primary-4xdark:active { background-color: var(--mico-color-primary-4xdark) !important; }
-.active-bg-primary-5xdark:active { background-color: var(--mico-color-primary-5xdark) !important; }
-.active-bg-primary-6xdark:active { background-color: var(--mico-color-primary-6xdark) !important; }
-.active-bg-primary-7xdark:active { background-color: var(--mico-color-primary-7xdark) !important; }
-.active-bg-primary-8xdark:active { background-color: var(--mico-color-primary-8xdark) !important; }
+.active-bg--primary-dark:active { background-color: var(--mico-color-primary-dark) !important; }
+.active-bg--primary-2xdark:active { background-color: var(--mico-color-primary-2xdark) !important; }
+.active-bg--primary-3xdark:active { background-color: var(--mico-color-primary-3xdark) !important; }
+.active-bg--primary-4xdark:active { background-color: var(--mico-color-primary-4xdark) !important; }
+.active-bg--primary-5xdark:active { background-color: var(--mico-color-primary-5xdark) !important; }
+.active-bg--primary-6xdark:active { background-color: var(--mico-color-primary-6xdark) !important; }
+.active-bg--primary-7xdark:active { background-color: var(--mico-color-primary-7xdark) !important; }
+.active-bg--primary-8xdark:active { background-color: var(--mico-color-primary-8xdark) !important; }
 
 
 /* ---------- Secondary Color Variations ---------- */
 /* Tints - Lighter variations */
-.active-bg-secondary-light:active { background-color: var(--mico-color-secondary-light) !important; }
-.active-bg-secondary-2xlight:active { background-color: var(--mico-color-secondary-2xlight) !important; }
-.active-bg-secondary-3xlight:active { background-color: var(--mico-color-secondary-3xlight) !important; }
-.active-bg-secondary-4xlight:active { background-color: var(--mico-color-secondary-4xlight) !important; }
-.active-bg-secondary-5xlight:active { background-color: var(--mico-color-secondary-5xlight) !important; }
-.active-bg-secondary-6xlight:active { background-color: var(--mico-color-secondary-6xlight) !important; }
-.active-bg-secondary-7xlight:active { background-color: var(--mico-color-secondary-7xlight) !important; }
-.active-bg-secondary-8xlight:active { background-color: var(--mico-color-secondary-8xlight) !important; }
+.active-bg--secondary-light:active { background-color: var(--mico-color-secondary-light) !important; }
+.active-bg--secondary-2xlight:active { background-color: var(--mico-color-secondary-2xlight) !important; }
+.active-bg--secondary-3xlight:active { background-color: var(--mico-color-secondary-3xlight) !important; }
+.active-bg--secondary-4xlight:active { background-color: var(--mico-color-secondary-4xlight) !important; }
+.active-bg--secondary-5xlight:active { background-color: var(--mico-color-secondary-5xlight) !important; }
+.active-bg--secondary-6xlight:active { background-color: var(--mico-color-secondary-6xlight) !important; }
+.active-bg--secondary-7xlight:active { background-color: var(--mico-color-secondary-7xlight) !important; }
+.active-bg--secondary-8xlight:active { background-color: var(--mico-color-secondary-8xlight) !important; }
 
 
 /* Shades - Darker variations */
-.active-bg-secondary-dark:active { background-color: var(--mico-color-secondary-dark) !important; }
-.active-bg-secondary-2xdark:active { background-color: var(--mico-color-secondary-2xdark) !important; }
-.active-bg-secondary-3xdark:active { background-color: var(--mico-color-secondary-3xdark) !important; }
-.active-bg-secondary-4xdark:active { background-color: var(--mico-color-secondary-4xdark) !important; }
-.active-bg-secondary-5xdark:active { background-color: var(--mico-color-secondary-5xdark) !important; }
-.active-bg-secondary-6xdark:active { background-color: var(--mico-color-secondary-6xdark) !important; }
-.active-bg-secondary-7xdark:active { background-color: var(--mico-color-secondary-7xdark) !important; }
-.active-bg-secondary-8xdark:active { background-color: var(--mico-color-secondary-8xdark) !important; }
+.active-bg--secondary-dark:active { background-color: var(--mico-color-secondary-dark) !important; }
+.active-bg--secondary-2xdark:active { background-color: var(--mico-color-secondary-2xdark) !important; }
+.active-bg--secondary-3xdark:active { background-color: var(--mico-color-secondary-3xdark) !important; }
+.active-bg--secondary-4xdark:active { background-color: var(--mico-color-secondary-4xdark) !important; }
+.active-bg--secondary-5xdark:active { background-color: var(--mico-color-secondary-5xdark) !important; }
+.active-bg--secondary-6xdark:active { background-color: var(--mico-color-secondary-6xdark) !important; }
+.active-bg--secondary-7xdark:active { background-color: var(--mico-color-secondary-7xdark) !important; }
+.active-bg--secondary-8xdark:active { background-color: var(--mico-color-secondary-8xdark) !important; }
 
 /* ---------- Accent Color Variations ---------- */
 /* Tints - Lighter variations */
-.active-bg-accent-light:active { background-color: var(--mico-color-accent-light) !important; }
-.active-bg-accent-2xlight:active { background-color: var(--mico-color-accent-2xlight) !important; }
-.active-bg-accent-3xlight:active { background-color: var(--mico-color-accent-3xlight) !important; }
-.active-bg-accent-4xlight:active { background-color: var(--mico-color-accent-4xlight) !important; }
-.active-bg-accent-5xlight:active { background-color: var(--mico-color-accent-5xlight) !important; }
-.active-bg-accent-6xlight:active { background-color: var(--mico-color-accent-6xlight) !important; }
-.active-bg-accent-7xlight:active { background-color: var(--mico-color-accent-7xlight) !important; }
-.active-bg-accent-8xlight:active { background-color: var(--mico-color-accent-8xlight) !important; }
+.active-bg--accent-light:active { background-color: var(--mico-color-accent-light) !important; }
+.active-bg--accent-2xlight:active { background-color: var(--mico-color-accent-2xlight) !important; }
+.active-bg--accent-3xlight:active { background-color: var(--mico-color-accent-3xlight) !important; }
+.active-bg--accent-4xlight:active { background-color: var(--mico-color-accent-4xlight) !important; }
+.active-bg--accent-5xlight:active { background-color: var(--mico-color-accent-5xlight) !important; }
+.active-bg--accent-6xlight:active { background-color: var(--mico-color-accent-6xlight) !important; }
+.active-bg--accent-7xlight:active { background-color: var(--mico-color-accent-7xlight) !important; }
+.active-bg--accent-8xlight:active { background-color: var(--mico-color-accent-8xlight) !important; }
 
 /* Shades - Darker variations */
-.active-bg-accent-dark:active { background-color: var(--mico-color-accent-dark) !important; }
-.active-bg-accent-2xdark:active { background-color: var(--mico-color-accent-2xdark) !important; }
-.active-bg-accent-3xdark:active { background-color: var(--mico-color-accent-3xdark) !important; }
-.active-bg-accent-4xdark:active { background-color: var(--mico-color-accent-4xdark) !important; }
-.active-bg-accent-5xdark:active { background-color: var(--mico-color-accent-5xdark) !important; }
-.active-bg-accent-6xdark:active { background-color: var(--mico-color-accent-6xdark) !important; }
-.active-bg-accent-7xdark:active { background-color: var(--mico-color-accent-7xdark) !important; }
-.active-bg-accent-8xdark:active { background-color: var(--mico-color-accent-8xdark) !important; }
+.active-bg--accent-dark:active { background-color: var(--mico-color-accent-dark) !important; }
+.active-bg--accent-2xdark:active { background-color: var(--mico-color-accent-2xdark) !important; }
+.active-bg--accent-3xdark:active { background-color: var(--mico-color-accent-3xdark) !important; }
+.active-bg--accent-4xdark:active { background-color: var(--mico-color-accent-4xdark) !important; }
+.active-bg--accent-5xdark:active { background-color: var(--mico-color-accent-5xdark) !important; }
+.active-bg--accent-6xdark:active { background-color: var(--mico-color-accent-6xdark) !important; }
+.active-bg--accent-7xdark:active { background-color: var(--mico-color-accent-7xdark) !important; }
+.active-bg--accent-8xdark:active { background-color: var(--mico-color-accent-8xdark) !important; }
 /* ========================================================================== */
 /* BORDER STATE UTILITIES                                                    */
 /* ========================================================================== */
@@ -553,105 +621,127 @@
  *
  * These utilities change border colors on hover, focus, and active states.
  */
-.hover-border-none:hover { border-color: var(--mico-value-none) !important; }
-.hover-border-0p:hover { border-color: var(--mico-value-none) !important; }
+.hover-border--none:hover { border-color: var(--mico-value-none) !important; }
+.hover-border--0p:hover { border-color: var(--mico-value-none) !important; }
 
 /* Hover Border Colors */
-.hover-border-primary:hover { border-color: var(--mico-color-primary) !important; }
-.hover-border-primary-light:hover { border-color: var(--mico-color-primary-light) !important; }
-.hover-border-primary-2xlight:hover { border-color: var(--mico-color-primary-2xlight) !important; }
-.hover-border-primary-3xlight:hover { border-color: var(--mico-color-primary-3xlight) !important; }
-.hover-border-primary-4xlight:hover { border-color: var(--mico-color-primary-4xlight) !important; }
-.hover-border-primary-5xlight:hover { border-color: var(--mico-color-primary-5xlight) !important; }
-.hover-border-primary-6xlight:hover { border-color: var(--mico-color-primary-6xlight) !important; }
-.hover-border-primary-7xlight:hover { border-color: var(--mico-color-primary-7xlight) !important; }
-.hover-border-primary-8xlight:hover { border-color: var(--mico-color-primary-8xlight) !important; }
+.hover-border--primary:hover { border-color: var(--mico-color-primary) !important; }
+.hover-border--primary-light:hover { border-color: var(--mico-color-primary-light) !important; }
+.hover-border--primary-2xlight:hover { border-color: var(--mico-color-primary-2xlight) !important; }
+.hover-border--primary-3xlight:hover { border-color: var(--mico-color-primary-3xlight) !important; }
+.hover-border--primary-4xlight:hover { border-color: var(--mico-color-primary-4xlight) !important; }
+.hover-border--primary-5xlight:hover { border-color: var(--mico-color-primary-5xlight) !important; }
+.hover-border--primary-6xlight:hover { border-color: var(--mico-color-primary-6xlight) !important; }
+.hover-border--primary-7xlight:hover { border-color: var(--mico-color-primary-7xlight) !important; }
+.hover-border--primary-8xlight:hover { border-color: var(--mico-color-primary-8xlight) !important; }
 
-.hover-border-primary-dark:hover { border-color: var(--mico-color-primary-dark) !important; }
-.hover-border-primary-2xdark:hover { border-color: var(--mico-color-primary-2xdark) !important; }
-.hover-border-primary-3xdark:hover { border-color: var(--mico-color-primary-3xdark) !important; }
-.hover-border-primary-4xdark:hover { border-color: var(--mico-color-primary-4xdark) !important; }
-.hover-border-primary-5xdark:hover { border-color: var(--mico-color-primary-5xdark) !important; }
-.hover-border-primary-6xdark:hover { border-color: var(--mico-color-primary-6xdark) !important; }
-.hover-border-primary-7xdark:hover { border-color: var(--mico-color-primary-7xdark) !important; }
-.hover-border-primary-8xdark:hover { border-color: var(--mico-color-primary-8xdark) !important; }
+.hover-border--primary-dark:hover { border-color: var(--mico-color-primary-dark) !important; }
+.hover-border--primary-2xdark:hover { border-color: var(--mico-color-primary-2xdark) !important; }
+.hover-border--primary-3xdark:hover { border-color: var(--mico-color-primary-3xdark) !important; }
+.hover-border--primary-4xdark:hover { border-color: var(--mico-color-primary-4xdark) !important; }
+.hover-border--primary-5xdark:hover { border-color: var(--mico-color-primary-5xdark) !important; }
+.hover-border--primary-6xdark:hover { border-color: var(--mico-color-primary-6xdark) !important; }
+.hover-border--primary-7xdark:hover { border-color: var(--mico-color-primary-7xdark) !important; }
+.hover-border--primary-8xdark:hover { border-color: var(--mico-color-primary-8xdark) !important; }
 
-.hover-border-secondary:hover { border-color: var(--mico-color-secondary) !important; }
-.hover-border-secondary-light:hover { border-color: var(--mico-color-secondary-light) !important; }
-.hover-border-secondary-2xlight:hover { border-color: var(--mico-color-secondary-2xlight) !important; }
-.hover-border-secondary-3xlight:hover { border-color: var(--mico-color-secondary-3xlight) !important; }
-.hover-border-secondary-4xlight:hover { border-color: var(--mico-color-secondary-4xlight) !important; }
-.hover-border-secondary-5xlight:hover { border-color: var(--mico-color-secondary-5xlight) !important; }
-.hover-border-secondary-6xlight:hover { border-color: var(--mico-color-secondary-6xlight) !important; }
-.hover-border-secondary-7xlight:hover { border-color: var(--mico-color-secondary-7xlight) !important; }
-.hover-border-secondary-8xlight:hover { border-color: var(--mico-color-secondary-8xlight) !important; }
+.hover-border--secondary:hover { border-color: var(--mico-color-secondary) !important; }
+.hover-border--secondary-light:hover { border-color: var(--mico-color-secondary-light) !important; }
+.hover-border--secondary-2xlight:hover { border-color: var(--mico-color-secondary-2xlight) !important; }
+.hover-border--secondary-3xlight:hover { border-color: var(--mico-color-secondary-3xlight) !important; }
+.hover-border--secondary-4xlight:hover { border-color: var(--mico-color-secondary-4xlight) !important; }
+.hover-border--secondary-5xlight:hover { border-color: var(--mico-color-secondary-5xlight) !important; }
+.hover-border--secondary-6xlight:hover { border-color: var(--mico-color-secondary-6xlight) !important; }
+.hover-border--secondary-7xlight:hover { border-color: var(--mico-color-secondary-7xlight) !important; }
+.hover-border--secondary-8xlight:hover { border-color: var(--mico-color-secondary-8xlight) !important; }
 
-.hover-border-secondary-dark:hover { border-color: var(--mico-color-secondary-dark) !important; }
-.hover-border-secondary-2xdark:hover { border-color: var(--mico-color-secondary-2xdark) !important; }
-.hover-border-secondary-3xdark:hover { border-color: var(--mico-color-secondary-3xdark) !important; }
-.hover-border-secondary-4xdark:hover { border-color: var(--mico-color-secondary-4xdark) !important; }
-.hover-border-secondary-5xdark:hover { border-color: var(--mico-color-secondary-5xdark) !important; }
-.hover-border-secondary-6xdark:hover { border-color: var(--mico-color-secondary-6xdark) !important; }
-.hover-border-secondary-7xdark:hover { border-color: var(--mico-color-secondary-7xdark) !important; }
-.hover-border-secondary-8xdark:hover { border-color: var(--mico-color-secondary-8xdark) !important; }
+.hover-border--secondary-dark:hover { border-color: var(--mico-color-secondary-dark) !important; }
+.hover-border--secondary-2xdark:hover { border-color: var(--mico-color-secondary-2xdark) !important; }
+.hover-border--secondary-3xdark:hover { border-color: var(--mico-color-secondary-3xdark) !important; }
+.hover-border--secondary-4xdark:hover { border-color: var(--mico-color-secondary-4xdark) !important; }
+.hover-border--secondary-5xdark:hover { border-color: var(--mico-color-secondary-5xdark) !important; }
+.hover-border--secondary-6xdark:hover { border-color: var(--mico-color-secondary-6xdark) !important; }
+.hover-border--secondary-7xdark:hover { border-color: var(--mico-color-secondary-7xdark) !important; }
+.hover-border--secondary-8xdark:hover { border-color: var(--mico-color-secondary-8xdark) !important; }
 
-.hover-border-accent:hover { border-color: var(--mico-color-accent) !important; }
-.hover-border-accent-light:hover { border-color: var(--mico-color-accent-light) !important; }
-.hover-border-accent-2xlight:hover { border-color: var(--mico-color-accent-2xlight) !important; }
-.hover-border-accent-3xlight:hover { border-color: var(--mico-color-accent-3xlight) !important; }
-.hover-border-accent-4xlight:hover { border-color: var(--mico-color-accent-4xlight) !important; }
-.hover-border-accent-5xlight:hover { border-color: var(--mico-color-accent-5xlight) !important; }
-.hover-border-accent-6xlight:hover { border-color: var(--mico-color-accent-6xlight) !important; }
-.hover-border-accent-7xlight:hover { border-color: var(--mico-color-accent-7xlight) !important; }
-.hover-border-accent-8xlight:hover { border-color: var(--mico-color-accent-8xlight) !important; }
+.hover-border--accent:hover { border-color: var(--mico-color-accent) !important; }
+.hover-border--accent-light:hover { border-color: var(--mico-color-accent-light) !important; }
+.hover-border--accent-2xlight:hover { border-color: var(--mico-color-accent-2xlight) !important; }
+.hover-border--accent-3xlight:hover { border-color: var(--mico-color-accent-3xlight) !important; }
+.hover-border--accent-4xlight:hover { border-color: var(--mico-color-accent-4xlight) !important; }
+.hover-border--accent-5xlight:hover { border-color: var(--mico-color-accent-5xlight) !important; }
+.hover-border--accent-6xlight:hover { border-color: var(--mico-color-accent-6xlight) !important; }
+.hover-border--accent-7xlight:hover { border-color: var(--mico-color-accent-7xlight) !important; }
+.hover-border--accent-8xlight:hover { border-color: var(--mico-color-accent-8xlight) !important; }
 
-.hover-border-accent-dark:hover { border-color: var(--mico-color-accent-dark) !important; }
-.hover-border-accent-2xdark:hover { border-color: var(--mico-color-accent-2xdark) !important; }
-.hover-border-accent-3xdark:hover { border-color: var(--mico-color-accent-3xdark) !important; }
-.hover-border-accent-4xdark:hover { border-color: var(--mico-color-accent-4xdark) !important; }
-.hover-border-accent-5xdark:hover { border-color: var(--mico-color-accent-5xdark) !important; }
-.hover-border-accent-6xdark:hover { border-color: var(--mico-color-accent-6xdark) !important; }
-.hover-border-accent-7xdark:hover { border-color: var(--mico-color-accent-7xdark) !important; }
-.hover-border-accent-8xdark:hover { border-color: var(--mico-color-accent-8xdark) !important; }
+.hover-border--accent-dark:hover { border-color: var(--mico-color-accent-dark) !important; }
+.hover-border--accent-2xdark:hover { border-color: var(--mico-color-accent-2xdark) !important; }
+.hover-border--accent-3xdark:hover { border-color: var(--mico-color-accent-3xdark) !important; }
+.hover-border--accent-4xdark:hover { border-color: var(--mico-color-accent-4xdark) !important; }
+.hover-border--accent-5xdark:hover { border-color: var(--mico-color-accent-5xdark) !important; }
+.hover-border--accent-6xdark:hover { border-color: var(--mico-color-accent-6xdark) !important; }
+.hover-border--accent-7xdark:hover { border-color: var(--mico-color-accent-7xdark) !important; }
+.hover-border--accent-8xdark:hover { border-color: var(--mico-color-accent-8xdark) !important; }
 
-.hover-border-success:hover { border-color: var(--mico-color-success) !important; }
-.hover-border-error:hover { border-color: var(--mico-color-error) !important; }
-.hover-border-warning:hover { border-color: var(--mico-color-warning) !important; }
-.hover-border-info:hover { border-color: var(--mico-color-info) !important; }
+/* Hover Border - Accent Percentage variations (5% increments) */
+.hover-border--accent-5p:hover { border-color: var(--mico-color-accent-5p) !important; }
+.hover-border--accent-10p:hover { border-color: var(--mico-color-accent-10p) !important; }
+.hover-border--accent-15p:hover { border-color: var(--mico-color-accent-15p) !important; }
+.hover-border--accent-20p:hover { border-color: var(--mico-color-accent-20p) !important; }
+.hover-border--accent-25p:hover { border-color: var(--mico-color-accent-25p) !important; }
+.hover-border--accent-30p:hover { border-color: var(--mico-color-accent-30p) !important; }
+.hover-border--accent-35p:hover { border-color: var(--mico-color-accent-35p) !important; }
+.hover-border--accent-40p:hover { border-color: var(--mico-color-accent-40p) !important; }
+.hover-border--accent-45p:hover { border-color: var(--mico-color-accent-45p) !important; }
+.hover-border--accent-50p:hover { border-color: var(--mico-color-accent-50p) !important; }
+.hover-border--accent-55p:hover { border-color: var(--mico-color-accent-55p) !important; }
+.hover-border--accent-60p:hover { border-color: var(--mico-color-accent-60p) !important; }
+.hover-border--accent-65p:hover { border-color: var(--mico-color-accent-65p) !important; }
+.hover-border--accent-70p:hover { border-color: var(--mico-color-accent-70p) !important; }
+.hover-border--accent-75p:hover { border-color: var(--mico-color-accent-75p) !important; }
+.hover-border--accent-80p:hover { border-color: var(--mico-color-accent-80p) !important; }
+.hover-border--accent-85p:hover { border-color: var(--mico-color-accent-85p) !important; }
+.hover-border--accent-90p:hover { border-color: var(--mico-color-accent-90p) !important; }
+.hover-border--accent-95p:hover { border-color: var(--mico-color-accent-95p) !important; }
+.hover-border--accent-100p:hover { border-color: var(--mico-color-accent-100p) !important; }
+
+.hover-border--success:hover { border-color: var(--mico-color-success) !important; }
+.hover-border--error:hover { border-color: var(--mico-color-error) !important; }
+.hover-border--warning:hover { border-color: var(--mico-color-warning) !important; }
+.hover-border--info:hover { border-color: var(--mico-color-info) !important; }
 
 /* Gray Border Colors */
-.hover-border-gray:hover { border-color: var(--mico-color-gray) !important; }
-.hover-border-gray-light:hover { border-color: var(--mico-color-gray-light) !important; }
-.hover-border-gray-2xlight:hover { border-color: var(--mico-color-gray-2xlight) !important; }
-.hover-border-gray-3xlight:hover { border-color: var(--mico-color-gray-3xlight) !important; }
-.hover-border-gray-4xlight:hover { border-color: var(--mico-color-gray-4xlight) !important; }
-.hover-border-gray-5xlight:hover { border-color: var(--mico-color-gray-5xlight) !important; }
-.hover-border-gray-6xlight:hover { border-color: var(--mico-color-gray-6xlight) !important; }
-.hover-border-gray-7xlight:hover { border-color: var(--mico-color-gray-7xlight) !important; }
-.hover-border-gray-8xlight:hover { border-color: var(--mico-color-gray-8xlight) !important; }
+.hover-border--gray:hover { border-color: var(--mico-color-gray) !important; }
+.hover-border--gray-light:hover { border-color: var(--mico-color-gray-light) !important; }
+.hover-border--gray-2xlight:hover { border-color: var(--mico-color-gray-2xlight) !important; }
+.hover-border--gray-3xlight:hover { border-color: var(--mico-color-gray-3xlight) !important; }
+.hover-border--gray-4xlight:hover { border-color: var(--mico-color-gray-4xlight) !important; }
+.hover-border--gray-5xlight:hover { border-color: var(--mico-color-gray-5xlight) !important; }
+.hover-border--gray-6xlight:hover { border-color: var(--mico-color-gray-6xlight) !important; }
+.hover-border--gray-7xlight:hover { border-color: var(--mico-color-gray-7xlight) !important; }
+.hover-border--gray-8xlight:hover { border-color: var(--mico-color-gray-8xlight) !important; }
 
-.hover-border-gray-dark:hover { border-color: var(--mico-color-gray-dark) !important; }
-.hover-border-gray-2xdark:hover { border-color: var(--mico-color-gray-2xdark) !important; }
-.hover-border-gray-3xdark:hover { border-color: var(--mico-color-gray-3xdark) !important; }
-.hover-border-gray-4xdark:hover { border-color: var(--mico-color-gray-4xdark) !important; }
-.hover-border-gray-5xdark:hover { border-color: var(--mico-color-gray-5xdark) !important; }
-.hover-border-gray-6xdark:hover { border-color: var(--mico-color-gray-6xdark) !important; }
-.hover-border-gray-7xdark:hover { border-color: var(--mico-color-gray-7xdark) !important; }
-.hover-border-gray-8xdark:hover { border-color: var(--mico-color-gray-8xdark) !important; }
+.hover-border--gray-dark:hover { border-color: var(--mico-color-gray-dark) !important; }
+.hover-border--gray-2xdark:hover { border-color: var(--mico-color-gray-2xdark) !important; }
+.hover-border--gray-3xdark:hover { border-color: var(--mico-color-gray-3xdark) !important; }
+.hover-border--gray-4xdark:hover { border-color: var(--mico-color-gray-4xdark) !important; }
+.hover-border--gray-5xdark:hover { border-color: var(--mico-color-gray-5xdark) !important; }
+.hover-border--gray-6xdark:hover { border-color: var(--mico-color-gray-6xdark) !important; }
+.hover-border--gray-7xdark:hover { border-color: var(--mico-color-gray-7xdark) !important; }
+.hover-border--gray-8xdark:hover { border-color: var(--mico-color-gray-8xdark) !important; }
 
 /* Focus Border Colors */
-.focus-border-primary:focus { border-color: var(--mico-color-primary) !important; }
-.focus-border-secondary:focus { border-color: var(--mico-color-secondary) !important; }
-.focus-border-accent:focus { border-color: var(--mico-color-accent) !important; }
-.focus-border-success:focus { border-color: var(--mico-color-success) !important; }
-.focus-border-error:focus { border-color: var(--mico-color-error) !important; }
-.focus-border-warning:focus { border-color: var(--mico-color-warning) !important; }
-.focus-border-info:focus { border-color: var(--mico-color-info) !important; }
+.focus-border--primary:focus { border-color: var(--mico-color-primary) !important; }
+.focus-border--secondary:focus { border-color: var(--mico-color-secondary) !important; }
+.focus-border--accent:focus { border-color: var(--mico-color-accent) !important; }
+.focus-border--success:focus { border-color: var(--mico-color-success) !important; }
+.focus-border--error:focus { border-color: var(--mico-color-error) !important; }
+.focus-border--warning:focus { border-color: var(--mico-color-warning) !important; }
+.focus-border--info:focus { border-color: var(--mico-color-info) !important; }
 
 /* Active Border Colors */
-.active-border-primary:active { border-color: var(--mico-color-primary-2xdark) !important; }
-.active-border-secondary:active { border-color: var(--mico-color-secondary-2xdark) !important; }
-.active-border-accent:active { border-color: var(--mico-color-accent-2xdark) !important; }
+.active-border--primary:active { border-color: var(--mico-color-primary-2xdark) !important; }
+.active-border--secondary:active { border-color: var(--mico-color-secondary-2xdark) !important; }
+.active-border--accent:active { border-color: var(--mico-color-accent-2xdark) !important; }
 
 /* ========================================================================== */
 /* SHADOW STATE UTILITIES                                                    */
@@ -665,85 +755,85 @@
 
 /* Hover Shadows */
 
-.hover-shadow-primary:hover { box-shadow: var(--mico-shadow-primary) !important; }
-.hover-shadow-secondary:hover { box-shadow: var(--mico-shadow-secondary) !important; }
-.hover-shadow-accent:hover { box-shadow: var(--mico-shadow-accent) !important; }
+.hover-shadow--primary:hover { box-shadow: var(--mico-shadow-primary) !important; }
+.hover-shadow--secondary:hover { box-shadow: var(--mico-shadow-secondary) !important; }
+.hover-shadow--accent:hover { box-shadow: var(--mico-shadow-accent) !important; }
 
-.hover-shadow-primary:hover { box-shadow: var(--mico-shadow-primary) !important; }
-.hover-shadow-primary-light:hover { box-shadow: var(--mico-shadow-primary-light) !important; }
-.hover-shadow-primary-2xlight:hover { box-shadow: var(--mico-shadow-primary-2xlight) !important; }
-.hover-shadow-primary-3xlight:hover { box-shadow: var(--mico-shadow-primary-3xlight) !important; }
-.hover-shadow-primary-4xlight:hover { box-shadow: var(--mico-shadow-primary-4xlight) !important; }
-.hover-shadow-primary-5xlight:hover { box-shadow: var(--mico-shadow-primary-5xlight) !important; }
-.hover-shadow-primary-6xlight:hover { box-shadow: var(--mico-shadow-primary-6xlight) !important; }
-.hover-shadow-primary-7xlight:hover { box-shadow: var(--mico-shadow-primary-7xlight) !important; }
-.hover-shadow-primary-8xlight:hover { box-shadow: var(--mico-shadow-primary-8xlight) !important; }
+.hover-shadow--primary:hover { box-shadow: var(--mico-shadow-primary) !important; }
+.hover-shadow--primary-light:hover { box-shadow: var(--mico-shadow-primary-light) !important; }
+.hover-shadow--primary-2xlight:hover { box-shadow: var(--mico-shadow-primary-2xlight) !important; }
+.hover-shadow--primary-3xlight:hover { box-shadow: var(--mico-shadow-primary-3xlight) !important; }
+.hover-shadow--primary-4xlight:hover { box-shadow: var(--mico-shadow-primary-4xlight) !important; }
+.hover-shadow--primary-5xlight:hover { box-shadow: var(--mico-shadow-primary-5xlight) !important; }
+.hover-shadow--primary-6xlight:hover { box-shadow: var(--mico-shadow-primary-6xlight) !important; }
+.hover-shadow--primary-7xlight:hover { box-shadow: var(--mico-shadow-primary-7xlight) !important; }
+.hover-shadow--primary-8xlight:hover { box-shadow: var(--mico-shadow-primary-8xlight) !important; }
 
-.hover-shadow-primary-dark:hover { box-shadow: var(--mico-shadow-primary-dark) !important; }
-.hover-shadow-primary-2xdark:hover { box-shadow: var(--mico-shadow-primary-2xdark) !important; }
-.hover-shadow-primary-3xdark:hover { box-shadow: var(--mico-shadow-primary-3xdark) !important; }
-.hover-shadow-primary-4xdark:hover { box-shadow: var(--mico-shadow-primary-4xdark) !important; } 
-.hover-shadow-primary-5xdark:hover { box-shadow: var(--mico-shadow-primary-5xdark) !important; }
-.hover-shadow-primary-6xdark:hover { box-shadow: var(--mico-shadow-primary-6xdark) !important; }
-.hover-shadow-primary-7xdark:hover { box-shadow: var(--mico-shadow-primary-7xdark) !important; }
-.hover-shadow-primary-8xdark:hover { box-shadow: var(--mico-shadow-primary-8xdark) !important; }
+.hover-shadow--primary-dark:hover { box-shadow: var(--mico-shadow-primary-dark) !important; }
+.hover-shadow--primary-2xdark:hover { box-shadow: var(--mico-shadow-primary-2xdark) !important; }
+.hover-shadow--primary-3xdark:hover { box-shadow: var(--mico-shadow-primary-3xdark) !important; }
+.hover-shadow--primary-4xdark:hover { box-shadow: var(--mico-shadow-primary-4xdark) !important; } 
+.hover-shadow--primary-5xdark:hover { box-shadow: var(--mico-shadow-primary-5xdark) !important; }
+.hover-shadow--primary-6xdark:hover { box-shadow: var(--mico-shadow-primary-6xdark) !important; }
+.hover-shadow--primary-7xdark:hover { box-shadow: var(--mico-shadow-primary-7xdark) !important; }
+.hover-shadow--primary-8xdark:hover { box-shadow: var(--mico-shadow-primary-8xdark) !important; }
 
-.hover-shadow-secondary:hover { box-shadow: var(--mico-shadow-secondary) !important; }
-.hover-shadow-secondary-light:hover { box-shadow: var(--mico-shadow-secondary-light) !important; }
-.hover-shadow-secondary-2xlight:hover { box-shadow: var(--mico-shadow-secondary-2xlight) !important; }
-.hover-shadow-secondary-3xlight:hover { box-shadow: var(--mico-shadow-secondary-3xlight) !important; }
-.hover-shadow-secondary-4xlight:hover { box-shadow: var(--mico-shadow-secondary-4xlight) !important; }
-.hover-shadow-secondary-5xlight:hover { box-shadow: var(--mico-shadow-secondary-5xlight) !important; }
-.hover-shadow-secondary-6xlight:hover { box-shadow: var(--mico-shadow-secondary-6xlight) !important; }
-.hover-shadow-secondary-7xlight:hover { box-shadow: var(--mico-shadow-secondary-7xlight) !important; }
-.hover-shadow-secondary-8xlight:hover { box-shadow: var(--mico-shadow-secondary-8xlight) !important; }
+.hover-shadow--secondary:hover { box-shadow: var(--mico-shadow-secondary) !important; }
+.hover-shadow--secondary-light:hover { box-shadow: var(--mico-shadow-secondary-light) !important; }
+.hover-shadow--secondary-2xlight:hover { box-shadow: var(--mico-shadow-secondary-2xlight) !important; }
+.hover-shadow--secondary-3xlight:hover { box-shadow: var(--mico-shadow-secondary-3xlight) !important; }
+.hover-shadow--secondary-4xlight:hover { box-shadow: var(--mico-shadow-secondary-4xlight) !important; }
+.hover-shadow--secondary-5xlight:hover { box-shadow: var(--mico-shadow-secondary-5xlight) !important; }
+.hover-shadow--secondary-6xlight:hover { box-shadow: var(--mico-shadow-secondary-6xlight) !important; }
+.hover-shadow--secondary-7xlight:hover { box-shadow: var(--mico-shadow-secondary-7xlight) !important; }
+.hover-shadow--secondary-8xlight:hover { box-shadow: var(--mico-shadow-secondary-8xlight) !important; }
 
-.hover-shadow-secondary-dark:hover { box-shadow: var(--mico-shadow-secondary-dark) !important; }
-.hover-shadow-secondary-2xdark:hover { box-shadow: var(--mico-shadow-secondary-2xdark) !important; }
-.hover-shadow-secondary-3xdark:hover { box-shadow: var(--mico-shadow-secondary-3xdark) !important; }
-.hover-shadow-secondary-4xdark:hover { box-shadow: var(--mico-shadow-secondary-4xdark) !important; }
-.hover-shadow-secondary-5xdark:hover { box-shadow: var(--mico-shadow-secondary-5xdark) !important; }
-.hover-shadow-secondary-6xdark:hover { box-shadow: var(--mico-shadow-secondary-6xdark) !important; }
-.hover-shadow-secondary-7xdark:hover { box-shadow: var(--mico-shadow-secondary-7xdark) !important; }
-.hover-shadow-secondary-8xdark:hover { box-shadow: var(--mico-shadow-secondary-8xdark) !important; }
+.hover-shadow--secondary-dark:hover { box-shadow: var(--mico-shadow-secondary-dark) !important; }
+.hover-shadow--secondary-2xdark:hover { box-shadow: var(--mico-shadow-secondary-2xdark) !important; }
+.hover-shadow--secondary-3xdark:hover { box-shadow: var(--mico-shadow-secondary-3xdark) !important; }
+.hover-shadow--secondary-4xdark:hover { box-shadow: var(--mico-shadow-secondary-4xdark) !important; }
+.hover-shadow--secondary-5xdark:hover { box-shadow: var(--mico-shadow-secondary-5xdark) !important; }
+.hover-shadow--secondary-6xdark:hover { box-shadow: var(--mico-shadow-secondary-6xdark) !important; }
+.hover-shadow--secondary-7xdark:hover { box-shadow: var(--mico-shadow-secondary-7xdark) !important; }
+.hover-shadow--secondary-8xdark:hover { box-shadow: var(--mico-shadow-secondary-8xdark) !important; }
 
-.hover-shadow-accent:hover { box-shadow: var(--mico-shadow-accent) !important; }
-.hover-shadow-accent-light:hover { box-shadow: var(--mico-shadow-accent-light) !important; }
-.hover-shadow-accent-2xlight:hover { box-shadow: var(--mico-shadow-accent-2xlight) !important; }
-.hover-shadow-accent-3xlight:hover { box-shadow: var(--mico-shadow-accent-3xlight) !important; }
-.hover-shadow-accent-4xlight:hover { box-shadow: var(--mico-shadow-accent-4xlight) !important; }
-.hover-shadow-accent-5xlight:hover { box-shadow: var(--mico-shadow-accent-5xlight) !important; }
-.hover-shadow-accent-6xlight:hover { box-shadow: var(--mico-shadow-accent-6xlight) !important; }
-.hover-shadow-accent-7xlight:hover { box-shadow: var(--mico-shadow-accent-7xlight) !important; }
-.hover-shadow-accent-8xlight:hover { box-shadow: var(--mico-shadow-accent-8xlight) !important; }
+.hover-shadow--accent:hover { box-shadow: var(--mico-shadow-accent) !important; }
+.hover-shadow--accent-light:hover { box-shadow: var(--mico-shadow-accent-light) !important; }
+.hover-shadow--accent-2xlight:hover { box-shadow: var(--mico-shadow-accent-2xlight) !important; }
+.hover-shadow--accent-3xlight:hover { box-shadow: var(--mico-shadow-accent-3xlight) !important; }
+.hover-shadow--accent-4xlight:hover { box-shadow: var(--mico-shadow-accent-4xlight) !important; }
+.hover-shadow--accent-5xlight:hover { box-shadow: var(--mico-shadow-accent-5xlight) !important; }
+.hover-shadow--accent-6xlight:hover { box-shadow: var(--mico-shadow-accent-6xlight) !important; }
+.hover-shadow--accent-7xlight:hover { box-shadow: var(--mico-shadow-accent-7xlight) !important; }
+.hover-shadow--accent-8xlight:hover { box-shadow: var(--mico-shadow-accent-8xlight) !important; }
 
-.hover-shadow-accent-dark:hover { box-shadow: var(--mico-shadow-accent-dark) !important; }
-.hover-shadow-accent-2xdark:hover { box-shadow: var(--mico-shadow-accent-2xdark) !important; }
-.hover-shadow-accent-3xdark:hover { box-shadow: var(--mico-shadow-accent-3xdark) !important; }
-.hover-shadow-accent-4xdark:hover { box-shadow: var(--mico-shadow-accent-4xdark) !important; }
-.hover-shadow-accent-5xdark:hover { box-shadow: var(--mico-shadow-accent-5xdark) !important; }
-.hover-shadow-accent-6xdark:hover { box-shadow: var(--mico-shadow-accent-6xdark) !important; }
-.hover-shadow-accent-7xdark:hover { box-shadow: var(--mico-shadow-accent-7xdark) !important; }
-.hover-shadow-accent-8xdark:hover { box-shadow: var(--mico-shadow-accent-8xdark) !important; }
+.hover-shadow--accent-dark:hover { box-shadow: var(--mico-shadow-accent-dark) !important; }
+.hover-shadow--accent-2xdark:hover { box-shadow: var(--mico-shadow-accent-2xdark) !important; }
+.hover-shadow--accent-3xdark:hover { box-shadow: var(--mico-shadow-accent-3xdark) !important; }
+.hover-shadow--accent-4xdark:hover { box-shadow: var(--mico-shadow-accent-4xdark) !important; }
+.hover-shadow--accent-5xdark:hover { box-shadow: var(--mico-shadow-accent-5xdark) !important; }
+.hover-shadow--accent-6xdark:hover { box-shadow: var(--mico-shadow-accent-6xdark) !important; }
+.hover-shadow--accent-7xdark:hover { box-shadow: var(--mico-shadow-accent-7xdark) !important; }
+.hover-shadow--accent-8xdark:hover { box-shadow: var(--mico-shadow-accent-8xdark) !important; }
 
-.hover-shadow-none:hover { box-shadow: var(--mico-value-none) !important; }
-.hover-shadow-light:hover { box-shadow: var(--mico-shadow-light) !important; }
-.hover-shadow-2xlight:hover { box-shadow: var(--mico-shadow-2xlight) !important; }
-.hover-shadow-3xlight:hover { box-shadow: var(--mico-shadow-3xlight) !important; }
-.hover-shadow-4xlight:hover { box-shadow: var(--mico-shadow-4xlight) !important; }
-.hover-shadow-5xlight:hover { box-shadow: var(--mico-shadow-5xlight) !important; }
-.hover-shadow-6xlight:hover { box-shadow: var(--mico-shadow-6xlight) !important; }
-.hover-shadow-7xlight:hover { box-shadow: var(--mico-shadow-7xlight) !important; }
-.hover-shadow-8xlight:hover { box-shadow: var(--mico-shadow-8xlight) !important; }
+.hover-shadow--none:hover { box-shadow: var(--mico-value-none) !important; }
+.hover-shadow--light:hover { box-shadow: var(--mico-shadow-light) !important; }
+.hover-shadow--2xlight:hover { box-shadow: var(--mico-shadow-2xlight) !important; }
+.hover-shadow--3xlight:hover { box-shadow: var(--mico-shadow-3xlight) !important; }
+.hover-shadow--4xlight:hover { box-shadow: var(--mico-shadow-4xlight) !important; }
+.hover-shadow--5xlight:hover { box-shadow: var(--mico-shadow-5xlight) !important; }
+.hover-shadow--6xlight:hover { box-shadow: var(--mico-shadow-6xlight) !important; }
+.hover-shadow--7xlight:hover { box-shadow: var(--mico-shadow-7xlight) !important; }
+.hover-shadow--8xlight:hover { box-shadow: var(--mico-shadow-8xlight) !important; }
 
-.hover-shadow-dark:hover { box-shadow: var(--mico-shadow-xs-dark) !important; }
-.hover-shadow-2xdark:hover { box-shadow: var(--mico-shadow-2xdark) !important; }
-.hover-shadow-3xdark:hover { box-shadow: var(--mico-shadow-3xdark) !important; }
-.hover-shadow-4xdark:hover { box-shadow: var(--mico-shadow-4xdark) !important; }
-.hover-shadow-5xdark:hover { box-shadow: var(--mico-shadow-5xdark) !important; }
-.hover-shadow-6xdark:hover { box-shadow: var(--mico-shadow-6xdark) !important; }
-.hover-shadow-7xdark:hover { box-shadow: var(--mico-shadow-7xdark) !important; }
-.hover-shadow-8xdark:hover { box-shadow: var(--mico-shadow-8xdark) !important; }
+.hover-shadow--dark:hover { box-shadow: var(--mico-shadow-xs-dark) !important; }
+.hover-shadow--2xdark:hover { box-shadow: var(--mico-shadow-2xdark) !important; }
+.hover-shadow--3xdark:hover { box-shadow: var(--mico-shadow-3xdark) !important; }
+.hover-shadow--4xdark:hover { box-shadow: var(--mico-shadow-4xdark) !important; }
+.hover-shadow--5xdark:hover { box-shadow: var(--mico-shadow-5xdark) !important; }
+.hover-shadow--6xdark:hover { box-shadow: var(--mico-shadow-6xdark) !important; }
+.hover-shadow--7xdark:hover { box-shadow: var(--mico-shadow-7xdark) !important; }
+.hover-shadow--8xdark:hover { box-shadow: var(--mico-shadow-8xdark) !important; }
 
 
 /* ========================================================================== */
@@ -915,64 +1005,72 @@
  */
 
 /* Hover Opacity */
-.hover-opacity-0p,.hover-opacity-none:hover { opacity: 0 !important; }
-.hover-opacity-10p:hover { opacity: 0.10 !important; }
-.hover-opacity-20p:hover { opacity: 0.20 !important; }
-.hover-opacity-30p:hover { opacity: 0.30 !important; }
-.hover-opacity-40p:hover { opacity: 0.40 !important; }
-.hover-opacity-50p:hover { opacity: 0.50 !important; }
-.hover-opacity-60p:hover { opacity: 0.60 !important; }
-.hover-opacity-70p:hover { opacity: 0.70 !important; }
-.hover-opacity-80p:hover { opacity: 0.80 !important; }
-.hover-opacity-90p:hover { opacity: 0.90 !important; }
-.hover-opacity-100p:hover { opacity: 1 !important; }
+.hover-opacity--0p,.hover-opacity--none:hover { opacity: 0 !important; }
+.hover-opacity--10p:hover { opacity: 0.10 !important; }
+.hover-opacity--20p:hover { opacity: 0.20 !important; }
+.hover-opacity--30p:hover { opacity: 0.30 !important; }
+.hover-opacity--40p:hover { opacity: 0.40 !important; }
+.hover-opacity--50p:hover { opacity: 0.50 !important; }
+.hover-opacity--60p:hover { opacity: 0.60 !important; }
+.hover-opacity--70p:hover { opacity: 0.70 !important; }
+.hover-opacity--80p:hover { opacity: 0.80 !important; }
+.hover-opacity--90p:hover { opacity: 0.90 !important; }
+.hover-opacity--100p:hover { opacity: 1 !important; }
 
 /* Focus Opacity */
-.focus-opacity-0p,.focus-opacity-none:focus { opacity: 0 !important; }
-.focus-opacity-10p:focus { opacity: 0.10 !important; }
-.focus-opacity-20p:focus { opacity: 0.20 !important; }
-.focus-opacity-30p:focus { opacity: 0.30 !important; }
-.focus-opacity-40p:focus { opacity: 0.40 !important; }
-.focus-opacity-50p:focus { opacity: 0.50 !important; }
-.focus-opacity-60p:focus { opacity: 0.60 !important; }
-.focus-opacity-70p:focus { opacity: 0.70 !important; }
-.focus-opacity-80p:focus { opacity: 0.80 !important; }
-.focus-opacity-90p:focus { opacity: 0.90 !important; }
-.focus-opacity-100p:focus { opacity: 1 !important; }
+.focus-opacity--0p,.focus-opacity--none:focus { opacity: 0 !important; }
+.focus-opacity--10p:focus { opacity: 0.10 !important; }
+.focus-opacity--20p:focus { opacity: 0.20 !important; }
+.focus-opacity--30p:focus { opacity: 0.30 !important; }
+.focus-opacity--40p:focus { opacity: 0.40 !important; }
+.focus-opacity--50p:focus { opacity: 0.50 !important; }
+.focus-opacity--60p:focus { opacity: 0.60 !important; }
+.focus-opacity--70p:focus { opacity: 0.70 !important; }
+.focus-opacity--80p:focus { opacity: 0.80 !important; }
+.focus-opacity--90p:focus { opacity: 0.90 !important; }
+.focus-opacity--100p:focus { opacity: 1 !important; }
 
 /* Active Opacity */
-.active-opacity-0p,.active-opacity-none:active { opacity: 0 !important; }
-.active-opacity-10p:active { opacity: 0.10 !important; }
-.active-opacity-20p:active { opacity: 0.20 !important; }
-.active-opacity-30p:active { opacity: 0.30 !important; }
-.active-opacity-40p:active { opacity: 0.40 !important; }
-.active-opacity-50p:active { opacity: 0.50 !important; }
-.active-opacity-60p:active { opacity: 0.60 !important; }
-.active-opacity-70p:active { opacity: 0.70 !important; }
-.active-opacity-80p:active { opacity: 0.80 !important; }
-.active-opacity-90p:active { opacity: 0.90 !important; }
-.active-opacity-100p:active { opacity: 1 !important; }
+.active-opacity--0p,.active-opacity--none:active { opacity: 0 !important; }
+.active-opacity--10p:active { opacity: 0.10 !important; }
+.active-opacity--20p:active { opacity: 0.20 !important; }
+.active-opacity--30p:active { opacity: 0.30 !important; }
+.active-opacity--40p:active { opacity: 0.40 !important; }
+.active-opacity--50p:active { opacity: 0.50 !important; }
+.active-opacity--60p:active { opacity: 0.60 !important; }
+.active-opacity--70p:active { opacity: 0.70 !important; }
+.active-opacity--80p:active { opacity: 0.80 !important; }
+.active-opacity--90p:active { opacity: 0.90 !important; }
+.active-opacity--100p:active { opacity: 1 !important; }
 
 
 
 /* ---------- State Colors ---------- */
-.active-bg-success:active { background-color: var(--mico-color-success) !important; }
-.active-bg-warning:active { background-color: var(--mico-color-warning) !important; }
-.active-bg-error:active { background-color: var(--mico-color-error) !important; }
-.active-bg-info:active { background-color: var(--mico-color-info) !important; }
+.active-bg--success:active { background-color: var(--mico-color-success) !important; }
+.active-bg--warning:active { background-color: var(--mico-color-warning) !important; }
+.active-bg--error:active { background-color: var(--mico-color-error) !important; }
+.active-bg--info:active { background-color: var(--mico-color-info) !important; }
 
 /**
  * TEXT COLOR ACTIVE STATES
  *
  * These utilities apply text colors on active state
  */
-.active-text-primary:active { color: var(--mico-color-primary) !important; }
-.active-text-secondary:active { color: var(--mico-color-secondary) !important; }
-.active-text-accent:active { color: var(--mico-color-accent) !important; }
+.active-text--primary:active { color: var(--mico-color-primary) !important; }
+.active-text--secondary:active { color: var(--mico-color-secondary) !important; }
+.active-text--accent:active { color: var(--mico-color-accent) !important; }
 
 /* ========================================================================== */
 /* ADDITIONAL INTERACTIVE UTILITIES                                           */
 /* ========================================================================== */
+.btn:hover, button:hover{box-shadow: var(--mico-shadow-hover-primary);}
+.btn:focus, button:focus{box-shadow: var(--mico-shadow-focus-primary);}
+.btn:active, button:active{box-shadow: var(--mico-shadow-active-primary);}
+
+
+
+
+
 
 /**
  * OPACITY HOVER EFFECTS
@@ -1005,17 +1103,17 @@
  * Here are some common patterns:
  *
  * 1. Basic hover effect for buttons:
- *    <button class="hover-bg-primary hover-text-white">Button</button>
+ *    <button class="hover-bg--primary hover-text--white">Button</button>
  *
  * 2. Elevated card on hover:
- *    <div class="hover-elevate hover-bg-primary">Card content</div>
+ *    <div class="hover-elevate hover-bg--primary">Card content</div>
  *
  * 3. Interactive link:
- *    <a class="hover-text-primary focus-text-primary active-text-primary">Link</a>
+ *    <a class="hover-text--primary focus-text--primary active-text--primary">Link</a>
  *
  * 4. Subtle image hover effect:
  *    <img class="hover-brightness-110 hover-scale-sm" src="image.jpg" alt="Image">
  *
  * 5. Button with multiple states:
- *    <button class="hover-bg-primary focus-bg-primary active-bg-primary">Button</button>
+ *    <button class="hover-bg--primary focus-bg--primary active-bg--primary">Button</button>
  */

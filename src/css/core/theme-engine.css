@@ -1,4 +1,4 @@
-/**
+/*
  * ==========================================================================
  * Mico CSS Framework - Theme Engine
  * ==========================================================================
@@ -14,32 +14,6 @@
  */
 
 /* ========================================================================== */
-/* 1. THEME PALETTE DEFINITIONS                                              */
-/* ========================================================================== */
-
-:root {
-  /* Light Theme Colors */
-  --light-page-bg: var(--mico-color-white);
-  --light-content-bg: var(--mico-color-white-2xlight);
-  --light-text-primary: var(--mico-color-gray-5xdark);
-  --light-text-secondary: var(--mico-color-gray-4xdark);
-  --light-border: var(--mico-color-gray-7xlight);
-  --light-accent: var(--mico-color-accent);
-  --light-accent-text: var(--mico-color-white);
-  --light-shadow: rgba(0, 0, 0, 0.1);
-
-  /* Dark Theme Colors */
-  --dark-page-bg: var(--mico-color-gray-6xdark);
-  --dark-content-bg: var(--mico-color-gray-5xdark);
-  --dark-text-primary: var(--mico-color-white-2xlight);
-  --dark-text-secondary: var(--mico-color-white-3xlight);
-  --dark-border: var(--mico-color-gray-4xdark);
-  --dark-accent: var(--mico-color-accent-light);
-  --dark-accent-text: var(--mico-color-gray-6xdark);
-  --dark-shadow: rgba(0, 0, 0, 0.3);
-}
-
-/* ========================================================================== */
 /* 2. DEFAULT THEME (LIGHT MODE)                                             */
 /* ========================================================================== */
 
@@ -53,7 +27,7 @@
   --color-text-secondary: var(--light-text-secondary);
   --color-border: var(--light-border);
   --color-accent: var(--light-accent);
-  --color-accent-text: var(--light-accent-text);
+  --highlight-text-color: var(--light-highlight-text-color);
   --color-shadow: var(--light-shadow);
 }
 
@@ -72,7 +46,7 @@
     --color-text-secondary: var(--dark-text-secondary);
     --color-border: var(--dark-border);
     --color-accent: var(--dark-accent);
-    --color-accent-text: var(--dark-accent-text);
+    --highlight-text-color: var(--dark-highlight-text-color);
     --color-shadow: var(--dark-shadow);
   }
 }
@@ -97,7 +71,7 @@ body:has(.theme-toggle__input:not(:checked)) {
   --color-text-secondary: var(--light-text-secondary) !important;
   --color-border: var(--light-border) !important;
   --color-accent: var(--light-accent) !important;
-  --color-accent-text: var(--light-accent-text) !important;
+  --highlight-text-color: var(--light-highlight-text-color) !important;
   --color-shadow: var(--light-shadow) !important;
   color-scheme: light;
 }
@@ -110,7 +84,7 @@ body:has(.theme-toggle__input:checked) {
   --color-text-secondary: var(--dark-text-secondary) !important;
   --color-border: var(--dark-border) !important;
   --color-accent: var(--dark-accent) !important;
-  --color-accent-text: var(--dark-accent-text) !important;
+  --highlight-text-color: var(--dark-highlight-text-color) !important;
   --color-shadow: var(--dark-shadow) !important;
   color-scheme: dark;
 }
@@ -158,7 +132,7 @@ body:has(.theme-toggle__input:checked) {
   
   /* Accent mappings */
   --mico-accent-primary: var(--color-accent);
-  --mico-accent-text: var(--color-accent-text);
+  --mico-accent-text: var(--highlight-text-color);
   
   /* Shadow mappings */
   --mico-shadow-color: var(--color-shadow);
@@ -220,7 +194,7 @@ body:has(.theme-toggle__input:checked) {
     --color-text-secondary: var(--light-text-secondary) !important;
     --color-border: var(--light-border) !important;
     --color-accent: var(--light-accent) !important;
-    --color-accent-text: var(--light-accent-text) !important;
+    --highlight-text-color: var(--light-highlight-text-color) !important;
     color-scheme: light;
   }
   
@@ -232,7 +206,7 @@ body:has(.theme-toggle__input:checked) {
     --color-text-secondary: var(--dark-text-secondary) !important;
     --color-border: var(--dark-border) !important;
     --color-accent: var(--dark-accent) !important;
-    --color-accent-text: var(--dark-accent-text) !important;
+    --highlight-text-color: var(--dark-highlight-text-color) !important;
     color-scheme: dark;
   }
 }
