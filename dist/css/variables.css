@@ -465,57 +465,21 @@
   --mico-size-0: var(--mico-value-0);
   --mico-size-1: 1px;
 
-  /* --- Granular 2px Scale --- */
+  /* --- Optimized Practical Scale --- */
   --mico-size-2: calc(var(--mico-size-unit) * 1);    /* 2px */
   --mico-size-4: calc(var(--mico-size-unit) * 2);    /* 4px */
   --mico-size-6: calc(var(--mico-size-unit) * 3);    /* 6px */
   --mico-size-8: calc(var(--mico-size-unit) * 4);    /* 8px */
-  --mico-size-10: calc(var(--mico-size-unit) * 5);   /* 10px */
   --mico-size-12: calc(var(--mico-size-unit) * 6);   /* 12px */
-  --mico-size-14: calc(var(--mico-size-unit) * 7);   /* 14px */
   --mico-size-16: calc(var(--mico-size-unit) * 8);   /* 16px */
-  --mico-size-18: calc(var(--mico-size-unit) * 9);   /* 18px */
   --mico-size-20: calc(var(--mico-size-unit) * 10);  /* 20px */
-  --mico-size-22: calc(var(--mico-size-unit) * 11);  /* 22px */
   --mico-size-24: calc(var(--mico-size-unit) * 12);  /* 24px */
-  --mico-size-26: calc(var(--mico-size-unit) * 13);  /* 26px */
-  --mico-size-28: calc(var(--mico-size-unit) * 14);  /* 28px */
-  --mico-size-30: calc(var(--mico-size-unit) * 15);  /* 30px */
   --mico-size-32: calc(var(--mico-size-unit) * 16);  /* 32px */
-  --mico-size-34: calc(var(--mico-size-unit) * 17);  /* 34px */
-  --mico-size-36: calc(var(--mico-size-unit) * 18);  /* 36px */
-  --mico-size-38: calc(var(--mico-size-unit) * 19);  /* 38px */
   --mico-size-40: calc(var(--mico-size-unit) * 20);  /* 40px */
-  --mico-size-42: calc(var(--mico-size-unit) * 21);  /* 42px */
-  --mico-size-44: calc(var(--mico-size-unit) * 22);  /* 44px */
-  --mico-size-46: calc(var(--mico-size-unit) * 23);  /* 46px */
   --mico-size-48: calc(var(--mico-size-unit) * 24);  /* 48px */
-  --mico-size-50: calc(var(--mico-size-unit) * 25);  /* 50px */
-  --mico-size-52: calc(var(--mico-size-unit) * 26);  /* 52px */
-  --mico-size-54: calc(var(--mico-size-unit) * 27);  /* 54px */
-  --mico-size-56: calc(var(--mico-size-unit) * 28);  /* 56px */
-  --mico-size-58: calc(var(--mico-size-unit) * 29);  /* 58px */
-  --mico-size-60: calc(var(--mico-size-unit) * 30);  /* 60px */
-  --mico-size-62: calc(var(--mico-size-unit) * 31);  /* 62px */
   --mico-size-64: calc(var(--mico-size-unit) * 32);  /* 64px */
-  --mico-size-66: calc(var(--mico-size-unit) * 33);  /* 66px */
-  --mico-size-68: calc(var(--mico-size-unit) * 34);  /* 68px */
-  --mico-size-70: calc(var(--mico-size-unit) * 35);  /* 70px */
-  --mico-size-72: calc(var(--mico-size-unit) * 36);  /* 72px */
-  --mico-size-74: calc(var(--mico-size-unit) * 37);  /* 74px */
-  --mico-size-76: calc(var(--mico-size-unit) * 38);  /* 76px */
-  --mico-size-78: calc(var(--mico-size-unit) * 39);  /* 78px */
   --mico-size-80: calc(var(--mico-size-unit) * 40);  /* 80px */
-  --mico-size-82: calc(var(--mico-size-unit) * 41);  /* 82px */
-  --mico-size-84: calc(var(--mico-size-unit) * 42);  /* 84px */
-  --mico-size-86: calc(var(--mico-size-unit) * 43);  /* 86px */
-  --mico-size-88: calc(var(--mico-size-unit) * 44);  /* 88px */
-  --mico-size-90: calc(var(--mico-size-unit) * 45);  /* 90px */
-  --mico-size-92: calc(var(--mico-size-unit) * 46);  /* 92px */
-  --mico-size-94: calc(var(--mico-size-unit) * 47);  /* 94px */
   --mico-size-96: calc(var(--mico-size-unit) * 48);  /* 96px */
-  --mico-size-98: calc(var(--mico-size-unit) * 49);  /* 98px */
-  --mico-size-100: calc(var(--mico-size-unit) * 50); /* 100px */
 
 
   /* 
@@ -532,57 +496,21 @@
   --mico-size-n-sm: -0.8px; 
   --mico-size-n-1: -1px;
 
-  /* --- Granular 2px Scale --- */
+  /* --- Optimized Practical Scale (Negative) --- */
   --mico-size-n-2: calc(var(--mico-size-n-unit) * 1);    /* -2px */
   --mico-size-n-4: calc(var(--mico-size-n-unit) * 2);    /* -4px */
   --mico-size-n-6: calc(var(--mico-size-n-unit) * 3);    /* -6px */
   --mico-size-n-8: calc(var(--mico-size-n-unit) * 4);    /* -8px */
-  --mico-size-n-10: calc(var(--mico-size-n-unit) * 5);   /* -10px */
   --mico-size-n-12: calc(var(--mico-size-n-unit) * 6);   /* -12px */
-  --mico-size-n-14: calc(var(--mico-size-n-unit) * 7);   /* -14px */
   --mico-size-n-16: calc(var(--mico-size-n-unit) * 8);   /* -16px */
-  --mico-size-n-18: calc(var(--mico-size-n-unit) * 9);   /* -18px */
   --mico-size-n-20: calc(var(--mico-size-n-unit) * 10);  /* -20px */
-  --mico-size-n-22: calc(var(--mico-size-n-unit) * 11);  /* -22px */
   --mico-size-n-24: calc(var(--mico-size-n-unit) * 12);  /* -24px */
-  --mico-size-n-26: calc(var(--mico-size-n-unit) * 13);  /* -26px */
-  --mico-size-n-28: calc(var(--mico-size-n-unit) * 14);  /* -28px */
-  --mico-size-n-30: calc(var(--mico-size-n-unit) * 15);  /* -30px */
   --mico-size-n-32: calc(var(--mico-size-n-unit) * 16);  /* -32px */
-  --mico-size-n-34: calc(var(--mico-size-n-unit) * 17);  /* -34px */
-  --mico-size-n-36: calc(var(--mico-size-n-unit) * 18);  /* -36px */
-  --mico-size-n-38: calc(var(--mico-size-n-unit) * 19);  /* -38px */
   --mico-size-n-40: calc(var(--mico-size-n-unit) * 20);  /* -40px */
-  --mico-size-n-42: calc(var(--mico-size-n-unit) * 21);  /* -42px */
-  --mico-size-n-44: calc(var(--mico-size-n-unit) * 22);  /* -44px */
-  --mico-size-n-46: calc(var(--mico-size-n-unit) * 23);  /* -46px */
   --mico-size-n-48: calc(var(--mico-size-n-unit) * 24);  /* -48px */
-  --mico-size-n-50: calc(var(--mico-size-n-unit) * 25);  /* -50px */
-  --mico-size-n-52: calc(var(--mico-size-n-unit) * 26);  /* -52px */
-  --mico-size-n-54: calc(var(--mico-size-n-unit) * 27);  /* -54px */
-  --mico-size-n-56: calc(var(--mico-size-n-unit) * 28);  /* -56px */
-  --mico-size-n-58: calc(var(--mico-size-n-unit) * 29);  /* -58px */
-  --mico-size-n-60: calc(var(--mico-size-n-unit) * 30);  /* -60px */
-  --mico-size-n-62: calc(var(--mico-size-n-unit) * 31);  /* -62px */
   --mico-size-n-64: calc(var(--mico-size-n-unit) * 32);  /* -64px */
-  --mico-size-n-66: calc(var(--mico-size-n-unit) * 33);  /* -66px */
-  --mico-size-n-68: calc(var(--mico-size-n-unit) * 34);  /* -68px */
-  --mico-size-n-70: calc(var(--mico-size-n-unit) * 35);  /* -70px */
-  --mico-size-n-72: calc(var(--mico-size-n-unit) * 36);  /* -72px */
-  --mico-size-n-74: calc(var(--mico-size-n-unit) * 37);  /* -74px */
-  --mico-size-n-76: calc(var(--mico-size-n-unit) * 38);  /* -76px */
-  --mico-size-n-78: calc(var(--mico-size-n-unit) * 39);  /* -78px */
   --mico-size-n-80: calc(var(--mico-size-n-unit) * 40);  /* -80px */
-  --mico-size-n-82: calc(var(--mico-size-n-unit) * 41);  /* -82px */
-  --mico-size-n-84: calc(var(--mico-size-n-unit) * 42);  /* -84px */
-  --mico-size-n-86: calc(var(--mico-size-n-unit) * 43);  /* -86px */
-  --mico-size-n-88: calc(var(--mico-size-n-unit) * 44);  /* -88px */
-  --mico-size-n-90: calc(var(--mico-size-n-unit) * 45);  /* -90px */
-  --mico-size-n-92: calc(var(--mico-size-n-unit) * 46);  /* -92px */
-  --mico-size-n-94: calc(var(--mico-size-n-unit) * 47);  /* -94px */
   --mico-size-n-96: calc(var(--mico-size-n-unit) * 48);  /* -96px */
-  --mico-size-n-98: calc(var(--mico-size-n-unit) * 49);  /* -98px */
-  --mico-size-n-100: calc(var(--mico-size-n-unit) * 50); /* -100px */
 
 
 
