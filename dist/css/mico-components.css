@@ -1633,25 +1633,7 @@
   /* Visited Color System */
   --mico-color-visited: oklch(0.55 0.15 300); /* Base visited color - distinct from primary */
 
-  /* Visited Tints (lighter variations) */
-  --mico-color-visited-light: oklch(from var(--mico-color-visited) var(--mico-color-light-tint) var(--mico-color-chrome-tint) var(--mico-color-hue-tint));
-  --mico-color-visited-2xlight: oklch(from var(--mico-color-visited) var(--mico-color-light-2xtint) var(--mico-color-chrome-2xtint) var(--mico-color-hue-2xtint));
-  --mico-color-visited-3xlight: oklch(from var(--mico-color-visited) var(--mico-color-light-3xtint) var(--mico-color-chrome-3xtint) var(--mico-color-hue-3xtint));
-  --mico-color-visited-4xlight: oklch(from var(--mico-color-visited) var(--mico-color-light-4xtint) var(--mico-color-chrome-4xtint) var(--mico-color-hue-4xtint));
-  --mico-color-visited-5xlight: oklch(from var(--mico-color-visited) var(--mico-color-light-5xtint) var(--mico-color-chrome-5xtint) var(--mico-color-hue-5xtint));
-  --mico-color-visited-6xlight: oklch(from var(--mico-color-visited) var(--mico-color-light-6xtint) var(--mico-color-chrome-6xtint) var(--mico-color-hue-6xtint));
-  --mico-color-visited-7xlight: oklch(from var(--mico-color-visited) var(--mico-color-light-7xtint) var(--mico-color-chrome-7xtint) var(--mico-color-hue-7xtint));
-  --mico-color-visited-8xlight: oklch(from var(--mico-color-visited) var(--mico-color-light-8xtint) var(--mico-color-chrome-8xtint) var(--mico-color-hue-8xtint));
-
-  /* Visited Shades (darker variations) */
-  --mico-color-visited-dark: oklch(from var(--mico-color-visited) var(--mico-color-light-shade) var(--mico-color-chrome-shade) var(--mico-color-hue-shade));
-  --mico-color-visited-2xdark: oklch(from var(--mico-color-visited) var(--mico-color-light-2xshade) var(--mico-color-chrome-2xshade) var(--mico-color-hue-2xshade));
-  --mico-color-visited-3xdark: oklch(from var(--mico-color-visited) var(--mico-color-light-3xshade) var(--mico-color-chrome-3xshade) var(--mico-color-hue-3xshade));
-  --mico-color-visited-4xdark: oklch(from var(--mico-color-visited) var(--mico-color-light-4xshade) var(--mico-color-chrome-4xshade) var(--mico-color-hue-4xshade));
-  --mico-color-visited-5xdark: oklch(from var(--mico-color-visited) var(--mico-color-light-5xshade) var(--mico-color-chrome-5xshade) var(--mico-color-hue-5xshade));
-  --mico-color-visited-6xdark: oklch(from var(--mico-color-visited) var(--mico-color-light-6xshade) var(--mico-color-chrome-6xshade) var(--mico-color-hue-6xshade));
-  --mico-color-visited-7xdark: oklch(from var(--mico-color-visited) var(--mico-color-light-7xshade) var(--mico-color-chrome-7xshade) var(--mico-color-hue-7xshade));
-  --mico-color-visited-8xdark: oklch(from var(--mico-color-visited) var(--mico-color-light-8xshade) var(--mico-color-chrome-8xshade) var(--mico-color-hue-8xshade));
+  /* Visited - Base color only (no tints/shades to reduce framework size) */
 
   /*
    * Neutral Colors - Black System (OKLCH)
@@ -1661,25 +1643,7 @@
    */
   --mico-color-black: oklch(0.1 0.005 270); /* Base black color */
 
-  /* Black Tints (lighter variations) */
-  --mico-color-black-light: oklch(from var(--mico-color-black) var(--mico-color-light-tint) var(--mico-color-chrome-tint) var(--mico-color-hue-tint));
-  --mico-color-black-2xlight: oklch(from var(--mico-color-black) var(--mico-color-light-2xtint) var(--mico-color-chrome-2xtint) var(--mico-color-hue-2xtint));
-  --mico-color-black-3xlight: oklch(from var(--mico-color-black) var(--mico-color-light-3xtint) var(--mico-color-chrome-3xtint) var(--mico-color-hue-3xtint));
-  --mico-color-black-4xlight: oklch(from var(--mico-color-black) var(--mico-color-light-4xtint) var(--mico-color-chrome-4xtint) var(--mico-color-hue-4xtint));
-  --mico-color-black-5xlight: oklch(from var(--mico-color-black) var(--mico-color-light-5xtint) var(--mico-color-chrome-5xtint) var(--mico-color-hue-5xtint));
-  --mico-color-black-6xlight: oklch(from var(--mico-color-black) var(--mico-color-light-6xtint) var(--mico-color-chrome-6xtint) var(--mico-color-hue-6xtint));
-  --mico-color-black-7xlight: oklch(from var(--mico-color-black) var(--mico-color-light-7xtint) var(--mico-color-chrome-7xtint) var(--mico-color-hue-7xtint));
-  --mico-color-black-8xlight: oklch(from var(--mico-color-black) var(--mico-color-light-8xtint) var(--mico-color-chrome-8xtint) var(--mico-color-hue-8xtint));
-
-  /* Black Shades (darker variations) */
-  --mico-color-black-dark: oklch(from var(--mico-color-black) var(--mico-color-light-shade) var(--mico-color-chrome-shade) var(--mico-color-hue-shade));
-  --mico-color-black-2xdark: oklch(from var(--mico-color-black) var(--mico-color-light-2xshade) var(--mico-color-chrome-2xshade) var(--mico-color-hue-2xshade));
-  --mico-color-black-3xdark: oklch(from var(--mico-color-black) var(--mico-color-light-3xshade) var(--mico-color-chrome-3xshade) var(--mico-color-hue-3xshade));
-  --mico-color-black-4xdark: oklch(from var(--mico-color-black) var(--mico-color-light-4xshade) var(--mico-color-chrome-4xshade) var(--mico-color-hue-4xshade));
-  --mico-color-black-5xdark: oklch(from var(--mico-color-black) var(--mico-color-light-5xshade) var(--mico-color-chrome-5xshade) var(--mico-color-hue-5xshade));
-  --mico-color-black-6xdark: oklch(from var(--mico-color-black) var(--mico-color-light-6xshade) var(--mico-color-chrome-6xshade) var(--mico-color-hue-6xshade));
-  --mico-color-black-7xdark: oklch(from var(--mico-color-black) var(--mico-color-light-7xshade) var(--mico-color-chrome-7xshade) var(--mico-color-hue-7xshade));
-  --mico-color-black-8xdark: oklch(from var(--mico-color-black) var(--mico-color-light-8xshade) var(--mico-color-chrome-8xshade) var(--mico-color-hue-8xshade));
+  /* Black - Base color only (no tints/shades to reduce framework size) */
 
   /*
    * Neutral Colors - Gray System (OKLCH)
@@ -1689,25 +1653,7 @@
    */
   --mico-color-gray: oklch(0.5 0.01 270); /* Base gray color - true neutral */
 
-  /* Gray Tints (lighter variations) */
-  --mico-color-gray-light: oklch(from var(--mico-color-gray) var(--mico-color-light-tint) var(--mico-color-chrome-tint) var(--mico-color-hue-tint));
-  --mico-color-gray-2xlight: oklch(from var(--mico-color-gray) var(--mico-color-light-2xtint) var(--mico-color-chrome-2xtint) var(--mico-color-hue-2xtint));
-  --mico-color-gray-3xlight: oklch(from var(--mico-color-gray) var(--mico-color-light-3xtint) var(--mico-color-chrome-3xtint) var(--mico-color-hue-3xtint));
-  --mico-color-gray-4xlight: oklch(from var(--mico-color-gray) var(--mico-color-light-4xtint) var(--mico-color-chrome-4xtint) var(--mico-color-hue-4xtint));
-  --mico-color-gray-5xlight: oklch(from var(--mico-color-gray) var(--mico-color-light-5xtint) var(--mico-color-chrome-5xtint) var(--mico-color-hue-5xtint));
-  --mico-color-gray-6xlight: oklch(from var(--mico-color-gray) var(--mico-color-light-6xtint) var(--mico-color-chrome-6xtint) var(--mico-color-hue-6xtint));
-  --mico-color-gray-7xlight: oklch(from var(--mico-color-gray) var(--mico-color-light-7xtint) var(--mico-color-chrome-7xtint) var(--mico-color-hue-7xtint));
-  --mico-color-gray-8xlight: oklch(from var(--mico-color-gray) var(--mico-color-light-8xtint) var(--mico-color-chrome-8xtint) var(--mico-color-hue-8xtint));
-
-  /* Gray Shades (darker variations) */
-  --mico-color-gray-dark: oklch(from var(--mico-color-gray) var(--mico-color-light-shade) var(--mico-color-chrome-shade) var(--mico-color-hue-shade));
-  --mico-color-gray-2xdark: oklch(from var(--mico-color-gray) var(--mico-color-light-2xshade) var(--mico-color-chrome-2xshade) var(--mico-color-hue-2xshade));
-  --mico-color-gray-3xdark: oklch(from var(--mico-color-gray) var(--mico-color-light-3xshade) var(--mico-color-chrome-3xshade) var(--mico-color-hue-3xshade));
-  --mico-color-gray-4xdark: oklch(from var(--mico-color-gray) var(--mico-color-light-4xshade) var(--mico-color-chrome-4xshade) var(--mico-color-hue-4xshade));
-  --mico-color-gray-5xdark: oklch(from var(--mico-color-gray) var(--mico-color-light-5xshade) var(--mico-color-chrome-5xshade) var(--mico-color-hue-5xshade));
-  --mico-color-gray-6xdark: oklch(from var(--mico-color-gray) var(--mico-color-light-6xshade) var(--mico-color-chrome-6xshade) var(--mico-color-hue-6xshade));
-  --mico-color-gray-7xdark: oklch(from var(--mico-color-gray) var(--mico-color-light-7xshade) var(--mico-color-chrome-7xshade) var(--mico-color-hue-7xshade));
-  --mico-color-gray-8xdark: oklch(from var(--mico-color-gray) var(--mico-color-light-8xshade) var(--mico-color-chrome-8xshade) var(--mico-color-hue-8xshade));
+  /* Gray - Base color only (no tints/shades to reduce framework size) */
 
   /*
    * Neutral Colors - White System (OKLCH)
@@ -1717,25 +1663,7 @@
    */
   --mico-color-white: oklch(100% 0.00011 271.152); /* Base white color */
 
-  /* White Tints (lighter variations) */
-  --mico-color-white-light: oklch(from var(--mico-color-white) var(--mico-color-light-tint) var(--mico-color-chrome-tint) var(--mico-color-hue-tint));
-  --mico-color-white-2xlight: oklch(from var(--mico-color-white) var(--mico-color-light-2xtint) var(--mico-color-chrome-2xtint) var(--mico-color-hue-2xtint));
-  --mico-color-white-3xlight: oklch(from var(--mico-color-white) var(--mico-color-light-3xtint) var(--mico-color-chrome-3xtint) var(--mico-color-hue-3xtint));
-  --mico-color-white-4xlight: oklch(from var(--mico-color-white) var(--mico-color-light-4xtint) var(--mico-color-chrome-4xtint) var(--mico-color-hue-4xtint));
-  --mico-color-white-5xlight: oklch(from var(--mico-color-white) var(--mico-color-light-5xtint) var(--mico-color-chrome-5xtint) var(--mico-color-hue-5xtint));
-  --mico-color-white-6xlight: oklch(from var(--mico-color-white) var(--mico-color-light-6xtint) var(--mico-color-chrome-6xtint) var(--mico-color-hue-6xtint));
-  --mico-color-white-7xlight: oklch(from var(--mico-color-white) var(--mico-color-light-7xtint) var(--mico-color-chrome-7xtint) var(--mico-color-hue-7xtint));
-  --mico-color-white-8xlight: oklch(from var(--mico-color-white) var(--mico-color-light-8xtint) var(--mico-color-chrome-8xtint) var(--mico-color-hue-8xtint));
-
-  /* White Shades (darker variations) */
-  --mico-color-white-dark: oklch(from var(--mico-color-white) var(--mico-color-light-shade) var(--mico-color-chrome-shade) var(--mico-color-hue-shade));
-  --mico-color-white-2xdark: oklch(from var(--mico-color-white) var(--mico-color-light-2xshade) var(--mico-color-chrome-2xshade) var(--mico-color-hue-2xshade));
-  --mico-color-white-3xdark: oklch(from var(--mico-color-white) var(--mico-color-light-3xshade) var(--mico-color-chrome-3xshade) var(--mico-color-hue-3xshade));
-  --mico-color-white-4xdark: oklch(from var(--mico-color-white) var(--mico-color-light-4xshade) var(--mico-color-chrome-4xshade) var(--mico-color-hue-4xshade));
-  --mico-color-white-5xdark: oklch(from var(--mico-color-white) var(--mico-color-light-5xshade) var(--mico-color-chrome-5xshade) var(--mico-color-hue-5xshade));
-  --mico-color-white-6xdark: oklch(from var(--mico-color-white) var(--mico-color-light-6xshade) var(--mico-color-chrome-6xshade) var(--mico-color-hue-6xshade));
-  --mico-color-white-7xdark: oklch(from var(--mico-color-white) var(--mico-color-light-7xshade) var(--mico-color-chrome-7xshade) var(--mico-color-hue-7xshade));
-  --mico-color-white-8xdark: oklch(from var(--mico-color-white) var(--mico-color-light-8xshade) var(--mico-color-chrome-8xshade) var(--mico-color-hue-8xshade));
+  /* White - Base color only (no tints/shades to reduce framework size) */
 
   /* Brand Color Transparency Variations */
   /* Primary Color Percentage Variations (5% increments) */
@@ -1815,163 +1743,33 @@
   /* Red Color System - Error states, alerts, danger */
   --mico-color-red: oklch(0.55 0.22 27); /* Base red color - vibrant crimson, WCAG AA compliant */
 
-  /* Red Tints (lighter variations) */
-  --mico-color-red-light: oklch(from var(--mico-color-red) var(--mico-color-light-tint) var(--mico-color-chrome-tint) var(--mico-color-hue-tint));
-  --mico-color-red-2xlight: oklch(from var(--mico-color-red) var(--mico-color-light-2xtint) var(--mico-color-chrome-2xtint) var(--mico-color-hue-2xtint));
-  --mico-color-red-3xlight: oklch(from var(--mico-color-red) var(--mico-color-light-3xtint) var(--mico-color-chrome-3xtint) var(--mico-color-hue-3xtint));
-  --mico-color-red-4xlight: oklch(from var(--mico-color-red) var(--mico-color-light-4xtint) var(--mico-color-chrome-4xtint) var(--mico-color-hue-4xtint));
-  --mico-color-red-5xlight: oklch(from var(--mico-color-red) var(--mico-color-light-5xtint) var(--mico-color-chrome-5xtint) var(--mico-color-hue-5xtint));
-  --mico-color-red-6xlight: oklch(from var(--mico-color-red) var(--mico-color-light-6xtint) var(--mico-color-chrome-6xtint) var(--mico-color-hue-6xtint));
-  --mico-color-red-7xlight: oklch(from var(--mico-color-red) var(--mico-color-light-7xtint) var(--mico-color-chrome-7xtint) var(--mico-color-hue-7xtint));
-  --mico-color-red-8xlight: oklch(from var(--mico-color-red) var(--mico-color-light-8xtint) var(--mico-color-chrome-8xtint) var(--mico-color-hue-8xtint));
-
-  /* Red Shades (darker variations) */
-  --mico-color-red-dark: oklch(from var(--mico-color-red) var(--mico-color-light-shade) var(--mico-color-chrome-shade) var(--mico-color-hue-shade));
-  --mico-color-red-2xdark: oklch(from var(--mico-color-red) var(--mico-color-light-2xshade) var(--mico-color-chrome-2xshade) var(--mico-color-hue-2xshade));
-  --mico-color-red-3xdark: oklch(from var(--mico-color-red) var(--mico-color-light-3xshade) var(--mico-color-chrome-3xshade) var(--mico-color-hue-3xshade));
-  --mico-color-red-4xdark: oklch(from var(--mico-color-red) var(--mico-color-light-4xshade) var(--mico-color-chrome-4xshade) var(--mico-color-hue-4xshade));
-  --mico-color-red-5xdark: oklch(from var(--mico-color-red) var(--mico-color-light-5xshade) var(--mico-color-chrome-5xshade) var(--mico-color-hue-5xshade));
-  --mico-color-red-6xdark: oklch(from var(--mico-color-red) var(--mico-color-light-6xshade) var(--mico-color-chrome-6xshade) var(--mico-color-hue-6xshade));
-  --mico-color-red-7xdark: oklch(from var(--mico-color-red) var(--mico-color-light-7xshade) var(--mico-color-chrome-7xshade) var(--mico-color-hue-7xshade));
-  --mico-color-red-8xdark: oklch(from var(--mico-color-red) var(--mico-color-light-8xshade) var(--mico-color-chrome-8xshade) var(--mico-color-hue-8xshade));
+  /* Red - Base color only (no tints/shades to reduce framework size) */
 
   /* Yellow Color System - Warning states, highlights */
   --mico-color-yellow: oklch(96.267% 0.19961 108.728); /* Base yellow color - warm amber, not harsh */
 
-  /* Yellow Tints (lighter variations) */
-  --mico-color-yellow-light: oklch(from var(--mico-color-yellow) var(--mico-color-light-tint) var(--mico-color-chrome-tint) var(--mico-color-hue-tint));
-  --mico-color-yellow-2xlight: oklch(from var(--mico-color-yellow) var(--mico-color-light-2xtint) var(--mico-color-chrome-2xtint) var(--mico-color-hue-2xtint));
-  --mico-color-yellow-3xlight: oklch(from var(--mico-color-yellow) var(--mico-color-light-3xtint) var(--mico-color-chrome-3xtint) var(--mico-color-hue-3xtint));
-  --mico-color-yellow-4xlight: oklch(from var(--mico-color-yellow) var(--mico-color-light-4xtint) var(--mico-color-chrome-4xtint) var(--mico-color-hue-4xtint));
-  --mico-color-yellow-5xlight: oklch(from var(--mico-color-yellow) var(--mico-color-light-5xtint) var(--mico-color-chrome-5xtint) var(--mico-color-hue-5xtint));
-  --mico-color-yellow-6xlight: oklch(from var(--mico-color-yellow) var(--mico-color-light-6xtint) var(--mico-color-chrome-6xtint) var(--mico-color-hue-6xtint));
-  --mico-color-yellow-7xlight: oklch(from var(--mico-color-yellow) var(--mico-color-light-7xtint) var(--mico-color-chrome-7xtint) var(--mico-color-hue-7xtint));
-  --mico-color-yellow-8xlight: oklch(from var(--mico-color-yellow) var(--mico-color-light-8xtint) var(--mico-color-chrome-8xtint) var(--mico-color-hue-8xtint));
-
-  /* Yellow Shades (darker variations) */
-  --mico-color-yellow-dark: oklch(from var(--mico-color-yellow) var(--mico-color-light-shade) var(--mico-color-chrome-shade) var(--mico-color-hue-shade));
-  --mico-color-yellow-2xdark: oklch(from var(--mico-color-yellow) var(--mico-color-light-2xshade) var(--mico-color-chrome-2xshade) var(--mico-color-hue-2xshade));
-  --mico-color-yellow-3xdark: oklch(from var(--mico-color-yellow) var(--mico-color-light-3xshade) var(--mico-color-chrome-3xshade) var(--mico-color-hue-3xshade));
-  --mico-color-yellow-4xdark: oklch(from var(--mico-color-yellow) var(--mico-color-light-4xshade) var(--mico-color-chrome-4xshade) var(--mico-color-hue-4xshade));
-  --mico-color-yellow-5xdark: oklch(from var(--mico-color-yellow) var(--mico-color-light-5xshade) var(--mico-color-chrome-5xshade) var(--mico-color-hue-5xshade));
-  --mico-color-yellow-6xdark: oklch(from var(--mico-color-yellow) var(--mico-color-light-6xshade) var(--mico-color-chrome-6xshade) var(--mico-color-hue-6xshade));
-  --mico-color-yellow-7xdark: oklch(from var(--mico-color-yellow) var(--mico-color-light-7xshade) var(--mico-color-chrome-7xshade) var(--mico-color-hue-7xshade));
-  --mico-color-yellow-8xdark: oklch(from var(--mico-color-yellow) var(--mico-color-light-8xshade) var(--mico-color-chrome-8xshade) var(--mico-color-hue-8xshade));
+  /* Yellow - Base color only (no tints/shades to reduce framework size) */
 
   /* Green Color System - Success states, positive actions */
   --mico-color-green: oklch(67.749% 0.19955 141.94); /* Base green color - fresh emerald, nature-inspired */
 
-  /* Green Tints (lighter variations) */
-  --mico-color-green-light: oklch(from var(--mico-color-green) var(--mico-color-light-tint) var(--mico-color-chrome-tint) var(--mico-color-hue-tint));
-  --mico-color-green-2xlight: oklch(from var(--mico-color-green) var(--mico-color-light-2xtint) var(--mico-color-chrome-2xtint) var(--mico-color-hue-2xtint));
-  --mico-color-green-3xlight: oklch(from var(--mico-color-green) var(--mico-color-light-3xtint) var(--mico-color-chrome-3xtint) var(--mico-color-hue-3xtint));
-  --mico-color-green-4xlight: oklch(from var(--mico-color-green) var(--mico-color-light-4xtint) var(--mico-color-chrome-4xtint) var(--mico-color-hue-4xtint));
-  --mico-color-green-5xlight: oklch(from var(--mico-color-green) var(--mico-color-light-5xtint) var(--mico-color-chrome-5xtint) var(--mico-color-hue-5xtint));
-  --mico-color-green-6xlight: oklch(from var(--mico-color-green) var(--mico-color-light-6xtint) var(--mico-color-chrome-6xtint) var(--mico-color-hue-6xtint));
-  --mico-color-green-7xlight: oklch(from var(--mico-color-green) var(--mico-color-light-7xtint) var(--mico-color-chrome-7xtint) var(--mico-color-hue-7xtint));
-  --mico-color-green-8xlight: oklch(from var(--mico-color-green) var(--mico-color-light-8xtint) var(--mico-color-chrome-8xtint) var(--mico-color-hue-8xtint));
-
-  /* Green Shades (darker variations) */
-  --mico-color-green-dark: oklch(from var(--mico-color-green) var(--mico-color-light-shade) var(--mico-color-chrome-shade) var(--mico-color-hue-shade));
-  --mico-color-green-2xdark: oklch(from var(--mico-color-green) var(--mico-color-light-2xshade) var(--mico-color-chrome-2xshade) var(--mico-color-hue-2xshade));
-  --mico-color-green-3xdark: oklch(from var(--mico-color-green) var(--mico-color-light-3xshade) var(--mico-color-chrome-3xshade) var(--mico-color-hue-3xshade));
-  --mico-color-green-4xdark: oklch(from var(--mico-color-green) var(--mico-color-light-4xshade) var(--mico-color-chrome-4xshade) var(--mico-color-hue-4xshade));
-  --mico-color-green-5xdark: oklch(from var(--mico-color-green) var(--mico-color-light-5xshade) var(--mico-color-chrome-5xshade) var(--mico-color-hue-5xshade));
-  --mico-color-green-6xdark: oklch(from var(--mico-color-green) var(--mico-color-light-6xshade) var(--mico-color-chrome-6xshade) var(--mico-color-hue-6xshade));
-  --mico-color-green-7xdark: oklch(from var(--mico-color-green) var(--mico-color-light-7xshade) var(--mico-color-chrome-7xshade) var(--mico-color-hue-7xshade));
-  --mico-color-green-8xdark: oklch(from var(--mico-color-green) var(--mico-color-light-8xshade) var(--mico-color-chrome-8xshade) var(--mico-color-hue-8xshade));
+  /* Green - Base color only (no tints/shades to reduce framework size) */
 
   /* Blue Color System - Information, links, primary actions */
   --mico-color-blue: oklch(52% 0.20589 259.44); /* Base blue color - trustworthy azure, professional */
 
-  /* Blue Tints (lighter variations) */
-  --mico-color-blue-light: oklch(from var(--mico-color-blue) var(--mico-color-light-tint) var(--mico-color-chrome-tint) var(--mico-color-hue-tint));
-  --mico-color-blue-2xlight: oklch(from var(--mico-color-blue) var(--mico-color-light-2xtint) var(--mico-color-chrome-2xtint) var(--mico-color-hue-2xtint));
-  --mico-color-blue-3xlight: oklch(from var(--mico-color-blue) var(--mico-color-light-3xtint) var(--mico-color-chrome-3xtint) var(--mico-color-hue-3xtint));
-  --mico-color-blue-4xlight: oklch(from var(--mico-color-blue) var(--mico-color-light-4xtint) var(--mico-color-chrome-4xtint) var(--mico-color-hue-4xtint));
-  --mico-color-blue-5xlight: oklch(from var(--mico-color-blue) var(--mico-color-light-5xtint) var(--mico-color-chrome-5xtint) var(--mico-color-hue-5xtint));
-  --mico-color-blue-6xlight: oklch(from var(--mico-color-blue) var(--mico-color-light-6xtint) var(--mico-color-chrome-6xtint) var(--mico-color-hue-6xtint));
-  --mico-color-blue-7xlight: oklch(from var(--mico-color-blue) var(--mico-color-light-7xtint) var(--mico-color-chrome-7xtint) var(--mico-color-hue-7xtint));
-  --mico-color-blue-8xlight: oklch(from var(--mico-color-blue) var(--mico-color-light-8xtint) var(--mico-color-chrome-8xtint) var(--mico-color-hue-8xtint));
+  /* Extended Colors - Base colors only (no tints/shades to reduce framework size) */
 
-  /* Blue Shades (darker variations) */
-  --mico-color-blue-dark: oklch(from var(--mico-color-blue) var(--mico-color-light-shade) var(--mico-color-chrome-shade) var(--mico-color-hue-shade));
-  --mico-color-blue-2xdark: oklch(from var(--mico-color-blue) var(--mico-color-light-2xshade) var(--mico-color-chrome-2xshade) var(--mico-color-hue-2xshade));
-  --mico-color-blue-3xdark: oklch(from var(--mico-color-blue) var(--mico-color-light-3xshade) var(--mico-color-chrome-3xshade) var(--mico-color-hue-3xshade));
-  --mico-color-blue-4xdark: oklch(from var(--mico-color-blue) var(--mico-color-light-4xshade) var(--mico-color-chrome-4xshade) var(--mico-color-hue-4xshade));
-  --mico-color-blue-5xdark: oklch(from var(--mico-color-blue) var(--mico-color-light-5xshade) var(--mico-color-chrome-5xshade) var(--mico-color-hue-5xshade));
-  --mico-color-blue-6xdark: oklch(from var(--mico-color-blue) var(--mico-color-light-6xshade) var(--mico-color-chrome-6xshade) var(--mico-color-hue-6xshade));
-  --mico-color-blue-7xdark: oklch(from var(--mico-color-blue) var(--mico-color-light-7xshade) var(--mico-color-chrome-7xshade) var(--mico-color-hue-7xshade));
-  --mico-color-blue-8xdark: oklch(from var(--mico-color-blue) var(--mico-color-light-8xshade) var(--mico-color-chrome-8xshade) var(--mico-color-hue-8xshade));
+  /* Blue - Base color only */
 
-  /* Indigo Color System - Deep blues, professional themes */
+  /* Indigo - Base color only */
   --mico-color-indigo: oklch(0.52 0.17 275); /* Base indigo color - sophisticated violet-blue */
 
-  /* Indigo Tints (lighter variations) */
-  --mico-color-indigo-light: oklch(from var(--mico-color-indigo) var(--mico-color-light-tint) var(--mico-color-chrome-tint) var(--mico-color-hue-tint));
-  --mico-color-indigo-2xlight: oklch(from var(--mico-color-indigo) var(--mico-color-light-2xtint) var(--mico-color-chrome-2xtint) var(--mico-color-hue-2xtint));
-  --mico-color-indigo-3xlight: oklch(from var(--mico-color-indigo) var(--mico-color-light-3xtint) var(--mico-color-chrome-3xtint) var(--mico-color-hue-3xtint));
-  --mico-color-indigo-4xlight: oklch(from var(--mico-color-indigo) var(--mico-color-light-4xtint) var(--mico-color-chrome-4xtint) var(--mico-color-hue-4xtint));
-  --mico-color-indigo-5xlight: oklch(from var(--mico-color-indigo) var(--mico-color-light-5xtint) var(--mico-color-chrome-5xtint) var(--mico-color-hue-5xtint));
-  --mico-color-indigo-6xlight: oklch(from var(--mico-color-indigo) var(--mico-color-light-6xtint) var(--mico-color-chrome-6xtint) var(--mico-color-hue-6xtint));
-  --mico-color-indigo-7xlight: oklch(from var(--mico-color-indigo) var(--mico-color-light-7xtint) var(--mico-color-chrome-7xtint) var(--mico-color-hue-7xtint));
-  --mico-color-indigo-8xlight: oklch(from var(--mico-color-indigo) var(--mico-color-light-8xtint) var(--mico-color-chrome-8xtint) var(--mico-color-hue-8xtint));
-
-  /* Indigo Shades (darker variations) */
-  --mico-color-indigo-dark: oklch(from var(--mico-color-indigo) var(--mico-color-light-shade) var(--mico-color-chrome-shade) var(--mico-color-hue-shade));
-  --mico-color-indigo-2xdark: oklch(from var(--mico-color-indigo) var(--mico-color-light-2xshade) var(--mico-color-chrome-2xshade) var(--mico-color-hue-2xshade));
-  --mico-color-indigo-3xdark: oklch(from var(--mico-color-indigo) var(--mico-color-light-3xshade) var(--mico-color-chrome-3xshade) var(--mico-color-hue-3xshade));
-  --mico-color-indigo-4xdark: oklch(from var(--mico-color-indigo) var(--mico-color-light-4xshade) var(--mico-color-chrome-4xshade) var(--mico-color-hue-4xshade));
-  --mico-color-indigo-5xdark: oklch(from var(--mico-color-indigo) var(--mico-color-light-5xshade) var(--mico-color-chrome-5xshade) var(--mico-color-hue-5xshade));
-  --mico-color-indigo-6xdark: oklch(from var(--mico-color-indigo) var(--mico-color-light-6xshade) var(--mico-color-chrome-6xshade) var(--mico-color-hue-6xshade));
-  --mico-color-indigo-7xdark: oklch(from var(--mico-color-indigo) var(--mico-color-light-7xshade) var(--mico-color-chrome-7xshade) var(--mico-color-hue-7xshade));
-  --mico-color-indigo-8xdark: oklch(from var(--mico-color-indigo) var(--mico-color-light-8xshade) var(--mico-color-chrome-8xshade) var(--mico-color-hue-8xshade));
-
-  /* Purple Color System - Creative themes, luxury */
+  /* Purple - Base color only */
   --mico-color-purple: oklch(48.171% 0.20979 307.996); /* Base purple color - rich amethyst, creative */
 
-  /* Purple Tints (lighter variations) */
-  --mico-color-purple-light: oklch(from var(--mico-color-purple) var(--mico-color-light-tint) var(--mico-color-chrome-tint) var(--mico-color-hue-tint));
-  --mico-color-purple-2xlight: oklch(from var(--mico-color-purple) var(--mico-color-light-2xtint) var(--mico-color-chrome-2xtint) var(--mico-color-hue-2xtint));
-  --mico-color-purple-3xlight: oklch(from var(--mico-color-purple) var(--mico-color-light-3xtint) var(--mico-color-chrome-3xtint) var(--mico-color-hue-3xtint));
-  --mico-color-purple-4xlight: oklch(from var(--mico-color-purple) var(--mico-color-light-4xtint) var(--mico-color-chrome-4xtint) var(--mico-color-hue-4xtint));
-  --mico-color-purple-5xlight: oklch(from var(--mico-color-purple) var(--mico-color-light-5xtint) var(--mico-color-chrome-5xtint) var(--mico-color-hue-5xtint));
-  --mico-color-purple-6xlight: oklch(from var(--mico-color-purple) var(--mico-color-light-6xtint) var(--mico-color-chrome-6xtint) var(--mico-color-hue-6xtint));
-  --mico-color-purple-7xlight: oklch(from var(--mico-color-purple) var(--mico-color-light-7xtint) var(--mico-color-chrome-7xtint) var(--mico-color-hue-7xtint));
-  --mico-color-purple-8xlight: oklch(from var(--mico-color-purple) var(--mico-color-light-8xtint) var(--mico-color-chrome-8xtint) var(--mico-color-hue-8xtint));
-
-  /* Purple Shades (darker variations) */
-  --mico-color-purple-dark: oklch(from var(--mico-color-purple) var(--mico-color-light-shade) var(--mico-color-chrome-shade) var(--mico-color-hue-shade));
-  --mico-color-purple-2xdark: oklch(from var(--mico-color-purple) var(--mico-color-light-2xshade) var(--mico-color-chrome-2xshade) var(--mico-color-hue-2xshade));
-  --mico-color-purple-3xdark: oklch(from var(--mico-color-purple) var(--mico-color-light-3xshade) var(--mico-color-chrome-3xshade) var(--mico-color-hue-3xshade));
-  --mico-color-purple-4xdark: oklch(from var(--mico-color-purple) var(--mico-color-light-4xshade) var(--mico-color-chrome-4xshade) var(--mico-color-hue-4xshade));
-  --mico-color-purple-5xdark: oklch(from var(--mico-color-purple) var(--mico-color-light-5xshade) var(--mico-color-chrome-5xshade) var(--mico-color-hue-5xshade));
-  --mico-color-purple-6xdark: oklch(from var(--mico-color-purple) var(--mico-color-light-6xshade) var(--mico-color-chrome-6xshade) var(--mico-color-hue-6xshade));
-  --mico-color-purple-7xdark: oklch(from var(--mico-color-purple) var(--mico-color-light-7xshade) var(--mico-color-chrome-7xshade) var(--mico-color-hue-7xshade));
-  --mico-color-purple-8xdark: oklch(from var(--mico-color-purple) var(--mico-color-light-8xshade) var(--mico-color-chrome-8xshade) var(--mico-color-hue-8xshade));
-
-  /* Pink Color System - Warm themes, highlights */
+  /* Pink - Base color only */
   --mico-color-pink: oklch(70.383% 0.19028 6.147); /* Base pink color - warm rose, approachable */
-
-  /* Pink Tints (lighter variations) */
-  --mico-color-pink-light: oklch(from var(--mico-color-pink) var(--mico-color-light-tint) var(--mico-color-chrome-tint) var(--mico-color-hue-tint));
-  --mico-color-pink-2xlight: oklch(from var(--mico-color-pink) var(--mico-color-light-2xtint) var(--mico-color-chrome-2xtint) var(--mico-color-hue-2xtint));
-  --mico-color-pink-3xlight: oklch(from var(--mico-color-pink) var(--mico-color-light-3xtint) var(--mico-color-chrome-3xtint) var(--mico-color-hue-3xtint));
-  --mico-color-pink-4xlight: oklch(from var(--mico-color-pink) var(--mico-color-light-4xtint) var(--mico-color-chrome-4xtint) var(--mico-color-hue-4xtint));
-  --mico-color-pink-5xlight: oklch(from var(--mico-color-pink) var(--mico-color-light-5xtint) var(--mico-color-chrome-5xtint) var(--mico-color-hue-5xtint));
-  --mico-color-pink-6xlight: oklch(from var(--mico-color-pink) var(--mico-color-light-6xtint) var(--mico-color-chrome-6xtint) var(--mico-color-hue-6xtint));
-  --mico-color-pink-7xlight: oklch(from var(--mico-color-pink) var(--mico-color-light-7xtint) var(--mico-color-chrome-7xtint) var(--mico-color-hue-7xtint));
-  --mico-color-pink-8xlight: oklch(from var(--mico-color-pink) var(--mico-color-light-8xtint) var(--mico-color-chrome-8xtint) var(--mico-color-hue-8xtint));
-
-  /* Pink Shades (darker variations) */
-  --mico-color-pink-dark: oklch(from var(--mico-color-pink) var(--mico-color-light-shade) var(--mico-color-chrome-shade) var(--mico-color-hue-shade));
-  --mico-color-pink-2xdark: oklch(from var(--mico-color-pink) var(--mico-color-light-2xshade) var(--mico-color-chrome-2xshade) var(--mico-color-hue-2xshade));
-  --mico-color-pink-3xdark: oklch(from var(--mico-color-pink) var(--mico-color-light-3xshade) var(--mico-color-chrome-3xshade) var(--mico-color-hue-3xshade));
-  --mico-color-pink-4xdark: oklch(from var(--mico-color-pink) var(--mico-color-light-4xshade) var(--mico-color-chrome-4xshade) var(--mico-color-hue-4xshade));
-  --mico-color-pink-5xdark: oklch(from var(--mico-color-pink) var(--mico-color-light-5xshade) var(--mico-color-chrome-5xshade) var(--mico-color-hue-5xshade));
-  --mico-color-pink-6xdark: oklch(from var(--mico-color-pink) var(--mico-color-light-6xshade) var(--mico-color-chrome-6xshade) var(--mico-color-hue-6xshade));
-  --mico-color-pink-7xdark: oklch(from var(--mico-color-pink) var(--mico-color-light-7xshade) var(--mico-color-chrome-7xshade) var(--mico-color-hue-7xshade));
-  --mico-color-pink-8xdark: oklch(from var(--mico-color-pink) var(--mico-color-light-8xshade) var(--mico-color-chrome-8xshade) var(--mico-color-hue-8xshade));
 }
 
 /* Component Styles Only */

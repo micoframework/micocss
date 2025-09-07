@@ -1633,25 +1633,7 @@
   /* Visited Color System */
   --mico-color-visited: oklch(0.55 0.15 300); /* Base visited color - distinct from primary */
 
-  /* Visited Tints (lighter variations) */
-  --mico-color-visited-light: oklch(from var(--mico-color-visited) var(--mico-color-light-tint) var(--mico-color-chrome-tint) var(--mico-color-hue-tint));
-  --mico-color-visited-2xlight: oklch(from var(--mico-color-visited) var(--mico-color-light-2xtint) var(--mico-color-chrome-2xtint) var(--mico-color-hue-2xtint));
-  --mico-color-visited-3xlight: oklch(from var(--mico-color-visited) var(--mico-color-light-3xtint) var(--mico-color-chrome-3xtint) var(--mico-color-hue-3xtint));
-  --mico-color-visited-4xlight: oklch(from var(--mico-color-visited) var(--mico-color-light-4xtint) var(--mico-color-chrome-4xtint) var(--mico-color-hue-4xtint));
-  --mico-color-visited-5xlight: oklch(from var(--mico-color-visited) var(--mico-color-light-5xtint) var(--mico-color-chrome-5xtint) var(--mico-color-hue-5xtint));
-  --mico-color-visited-6xlight: oklch(from var(--mico-color-visited) var(--mico-color-light-6xtint) var(--mico-color-chrome-6xtint) var(--mico-color-hue-6xtint));
-  --mico-color-visited-7xlight: oklch(from var(--mico-color-visited) var(--mico-color-light-7xtint) var(--mico-color-chrome-7xtint) var(--mico-color-hue-7xtint));
-  --mico-color-visited-8xlight: oklch(from var(--mico-color-visited) var(--mico-color-light-8xtint) var(--mico-color-chrome-8xtint) var(--mico-color-hue-8xtint));
-
-  /* Visited Shades (darker variations) */
-  --mico-color-visited-dark: oklch(from var(--mico-color-visited) var(--mico-color-light-shade) var(--mico-color-chrome-shade) var(--mico-color-hue-shade));
-  --mico-color-visited-2xdark: oklch(from var(--mico-color-visited) var(--mico-color-light-2xshade) var(--mico-color-chrome-2xshade) var(--mico-color-hue-2xshade));
-  --mico-color-visited-3xdark: oklch(from var(--mico-color-visited) var(--mico-color-light-3xshade) var(--mico-color-chrome-3xshade) var(--mico-color-hue-3xshade));
-  --mico-color-visited-4xdark: oklch(from var(--mico-color-visited) var(--mico-color-light-4xshade) var(--mico-color-chrome-4xshade) var(--mico-color-hue-4xshade));
-  --mico-color-visited-5xdark: oklch(from var(--mico-color-visited) var(--mico-color-light-5xshade) var(--mico-color-chrome-5xshade) var(--mico-color-hue-5xshade));
-  --mico-color-visited-6xdark: oklch(from var(--mico-color-visited) var(--mico-color-light-6xshade) var(--mico-color-chrome-6xshade) var(--mico-color-hue-6xshade));
-  --mico-color-visited-7xdark: oklch(from var(--mico-color-visited) var(--mico-color-light-7xshade) var(--mico-color-chrome-7xshade) var(--mico-color-hue-7xshade));
-  --mico-color-visited-8xdark: oklch(from var(--mico-color-visited) var(--mico-color-light-8xshade) var(--mico-color-chrome-8xshade) var(--mico-color-hue-8xshade));
+  /* Visited - Base color only (no tints/shades to reduce framework size) */
 
   /*
    * Neutral Colors - Black System (OKLCH)
@@ -1661,25 +1643,7 @@
    */
   --mico-color-black: oklch(0.1 0.005 270); /* Base black color */
 
-  /* Black Tints (lighter variations) */
-  --mico-color-black-light: oklch(from var(--mico-color-black) var(--mico-color-light-tint) var(--mico-color-chrome-tint) var(--mico-color-hue-tint));
-  --mico-color-black-2xlight: oklch(from var(--mico-color-black) var(--mico-color-light-2xtint) var(--mico-color-chrome-2xtint) var(--mico-color-hue-2xtint));
-  --mico-color-black-3xlight: oklch(from var(--mico-color-black) var(--mico-color-light-3xtint) var(--mico-color-chrome-3xtint) var(--mico-color-hue-3xtint));
-  --mico-color-black-4xlight: oklch(from var(--mico-color-black) var(--mico-color-light-4xtint) var(--mico-color-chrome-4xtint) var(--mico-color-hue-4xtint));
-  --mico-color-black-5xlight: oklch(from var(--mico-color-black) var(--mico-color-light-5xtint) var(--mico-color-chrome-5xtint) var(--mico-color-hue-5xtint));
-  --mico-color-black-6xlight: oklch(from var(--mico-color-black) var(--mico-color-light-6xtint) var(--mico-color-chrome-6xtint) var(--mico-color-hue-6xtint));
-  --mico-color-black-7xlight: oklch(from var(--mico-color-black) var(--mico-color-light-7xtint) var(--mico-color-chrome-7xtint) var(--mico-color-hue-7xtint));
-  --mico-color-black-8xlight: oklch(from var(--mico-color-black) var(--mico-color-light-8xtint) var(--mico-color-chrome-8xtint) var(--mico-color-hue-8xtint));
-
-  /* Black Shades (darker variations) */
-  --mico-color-black-dark: oklch(from var(--mico-color-black) var(--mico-color-light-shade) var(--mico-color-chrome-shade) var(--mico-color-hue-shade));
-  --mico-color-black-2xdark: oklch(from var(--mico-color-black) var(--mico-color-light-2xshade) var(--mico-color-chrome-2xshade) var(--mico-color-hue-2xshade));
-  --mico-color-black-3xdark: oklch(from var(--mico-color-black) var(--mico-color-light-3xshade) var(--mico-color-chrome-3xshade) var(--mico-color-hue-3xshade));
-  --mico-color-black-4xdark: oklch(from var(--mico-color-black) var(--mico-color-light-4xshade) var(--mico-color-chrome-4xshade) var(--mico-color-hue-4xshade));
-  --mico-color-black-5xdark: oklch(from var(--mico-color-black) var(--mico-color-light-5xshade) var(--mico-color-chrome-5xshade) var(--mico-color-hue-5xshade));
-  --mico-color-black-6xdark: oklch(from var(--mico-color-black) var(--mico-color-light-6xshade) var(--mico-color-chrome-6xshade) var(--mico-color-hue-6xshade));
-  --mico-color-black-7xdark: oklch(from var(--mico-color-black) var(--mico-color-light-7xshade) var(--mico-color-chrome-7xshade) var(--mico-color-hue-7xshade));
-  --mico-color-black-8xdark: oklch(from var(--mico-color-black) var(--mico-color-light-8xshade) var(--mico-color-chrome-8xshade) var(--mico-color-hue-8xshade));
+  /* Black - Base color only (no tints/shades to reduce framework size) */
 
   /*
    * Neutral Colors - Gray System (OKLCH)
@@ -1689,25 +1653,7 @@
    */
   --mico-color-gray: oklch(0.5 0.01 270); /* Base gray color - true neutral */
 
-  /* Gray Tints (lighter variations) */
-  --mico-color-gray-light: oklch(from var(--mico-color-gray) var(--mico-color-light-tint) var(--mico-color-chrome-tint) var(--mico-color-hue-tint));
-  --mico-color-gray-2xlight: oklch(from var(--mico-color-gray) var(--mico-color-light-2xtint) var(--mico-color-chrome-2xtint) var(--mico-color-hue-2xtint));
-  --mico-color-gray-3xlight: oklch(from var(--mico-color-gray) var(--mico-color-light-3xtint) var(--mico-color-chrome-3xtint) var(--mico-color-hue-3xtint));
-  --mico-color-gray-4xlight: oklch(from var(--mico-color-gray) var(--mico-color-light-4xtint) var(--mico-color-chrome-4xtint) var(--mico-color-hue-4xtint));
-  --mico-color-gray-5xlight: oklch(from var(--mico-color-gray) var(--mico-color-light-5xtint) var(--mico-color-chrome-5xtint) var(--mico-color-hue-5xtint));
-  --mico-color-gray-6xlight: oklch(from var(--mico-color-gray) var(--mico-color-light-6xtint) var(--mico-color-chrome-6xtint) var(--mico-color-hue-6xtint));
-  --mico-color-gray-7xlight: oklch(from var(--mico-color-gray) var(--mico-color-light-7xtint) var(--mico-color-chrome-7xtint) var(--mico-color-hue-7xtint));
-  --mico-color-gray-8xlight: oklch(from var(--mico-color-gray) var(--mico-color-light-8xtint) var(--mico-color-chrome-8xtint) var(--mico-color-hue-8xtint));
-
-  /* Gray Shades (darker variations) */
-  --mico-color-gray-dark: oklch(from var(--mico-color-gray) var(--mico-color-light-shade) var(--mico-color-chrome-shade) var(--mico-color-hue-shade));
-  --mico-color-gray-2xdark: oklch(from var(--mico-color-gray) var(--mico-color-light-2xshade) var(--mico-color-chrome-2xshade) var(--mico-color-hue-2xshade));
-  --mico-color-gray-3xdark: oklch(from var(--mico-color-gray) var(--mico-color-light-3xshade) var(--mico-color-chrome-3xshade) var(--mico-color-hue-3xshade));
-  --mico-color-gray-4xdark: oklch(from var(--mico-color-gray) var(--mico-color-light-4xshade) var(--mico-color-chrome-4xshade) var(--mico-color-hue-4xshade));
-  --mico-color-gray-5xdark: oklch(from var(--mico-color-gray) var(--mico-color-light-5xshade) var(--mico-color-chrome-5xshade) var(--mico-color-hue-5xshade));
-  --mico-color-gray-6xdark: oklch(from var(--mico-color-gray) var(--mico-color-light-6xshade) var(--mico-color-chrome-6xshade) var(--mico-color-hue-6xshade));
-  --mico-color-gray-7xdark: oklch(from var(--mico-color-gray) var(--mico-color-light-7xshade) var(--mico-color-chrome-7xshade) var(--mico-color-hue-7xshade));
-  --mico-color-gray-8xdark: oklch(from var(--mico-color-gray) var(--mico-color-light-8xshade) var(--mico-color-chrome-8xshade) var(--mico-color-hue-8xshade));
+  /* Gray - Base color only (no tints/shades to reduce framework size) */
 
   /*
    * Neutral Colors - White System (OKLCH)
@@ -1717,25 +1663,7 @@
    */
   --mico-color-white: oklch(100% 0.00011 271.152); /* Base white color */
 
-  /* White Tints (lighter variations) */
-  --mico-color-white-light: oklch(from var(--mico-color-white) var(--mico-color-light-tint) var(--mico-color-chrome-tint) var(--mico-color-hue-tint));
-  --mico-color-white-2xlight: oklch(from var(--mico-color-white) var(--mico-color-light-2xtint) var(--mico-color-chrome-2xtint) var(--mico-color-hue-2xtint));
-  --mico-color-white-3xlight: oklch(from var(--mico-color-white) var(--mico-color-light-3xtint) var(--mico-color-chrome-3xtint) var(--mico-color-hue-3xtint));
-  --mico-color-white-4xlight: oklch(from var(--mico-color-white) var(--mico-color-light-4xtint) var(--mico-color-chrome-4xtint) var(--mico-color-hue-4xtint));
-  --mico-color-white-5xlight: oklch(from var(--mico-color-white) var(--mico-color-light-5xtint) var(--mico-color-chrome-5xtint) var(--mico-color-hue-5xtint));
-  --mico-color-white-6xlight: oklch(from var(--mico-color-white) var(--mico-color-light-6xtint) var(--mico-color-chrome-6xtint) var(--mico-color-hue-6xtint));
-  --mico-color-white-7xlight: oklch(from var(--mico-color-white) var(--mico-color-light-7xtint) var(--mico-color-chrome-7xtint) var(--mico-color-hue-7xtint));
-  --mico-color-white-8xlight: oklch(from var(--mico-color-white) var(--mico-color-light-8xtint) var(--mico-color-chrome-8xtint) var(--mico-color-hue-8xtint));
-
-  /* White Shades (darker variations) */
-  --mico-color-white-dark: oklch(from var(--mico-color-white) var(--mico-color-light-shade) var(--mico-color-chrome-shade) var(--mico-color-hue-shade));
-  --mico-color-white-2xdark: oklch(from var(--mico-color-white) var(--mico-color-light-2xshade) var(--mico-color-chrome-2xshade) var(--mico-color-hue-2xshade));
-  --mico-color-white-3xdark: oklch(from var(--mico-color-white) var(--mico-color-light-3xshade) var(--mico-color-chrome-3xshade) var(--mico-color-hue-3xshade));
-  --mico-color-white-4xdark: oklch(from var(--mico-color-white) var(--mico-color-light-4xshade) var(--mico-color-chrome-4xshade) var(--mico-color-hue-4xshade));
-  --mico-color-white-5xdark: oklch(from var(--mico-color-white) var(--mico-color-light-5xshade) var(--mico-color-chrome-5xshade) var(--mico-color-hue-5xshade));
-  --mico-color-white-6xdark: oklch(from var(--mico-color-white) var(--mico-color-light-6xshade) var(--mico-color-chrome-6xshade) var(--mico-color-hue-6xshade));
-  --mico-color-white-7xdark: oklch(from var(--mico-color-white) var(--mico-color-light-7xshade) var(--mico-color-chrome-7xshade) var(--mico-color-hue-7xshade));
-  --mico-color-white-8xdark: oklch(from var(--mico-color-white) var(--mico-color-light-8xshade) var(--mico-color-chrome-8xshade) var(--mico-color-hue-8xshade));
+  /* White - Base color only (no tints/shades to reduce framework size) */
 
   /* Brand Color Transparency Variations */
   /* Primary Color Percentage Variations (5% increments) */
@@ -1815,163 +1743,33 @@
   /* Red Color System - Error states, alerts, danger */
   --mico-color-red: oklch(0.55 0.22 27); /* Base red color - vibrant crimson, WCAG AA compliant */
 
-  /* Red Tints (lighter variations) */
-  --mico-color-red-light: oklch(from var(--mico-color-red) var(--mico-color-light-tint) var(--mico-color-chrome-tint) var(--mico-color-hue-tint));
-  --mico-color-red-2xlight: oklch(from var(--mico-color-red) var(--mico-color-light-2xtint) var(--mico-color-chrome-2xtint) var(--mico-color-hue-2xtint));
-  --mico-color-red-3xlight: oklch(from var(--mico-color-red) var(--mico-color-light-3xtint) var(--mico-color-chrome-3xtint) var(--mico-color-hue-3xtint));
-  --mico-color-red-4xlight: oklch(from var(--mico-color-red) var(--mico-color-light-4xtint) var(--mico-color-chrome-4xtint) var(--mico-color-hue-4xtint));
-  --mico-color-red-5xlight: oklch(from var(--mico-color-red) var(--mico-color-light-5xtint) var(--mico-color-chrome-5xtint) var(--mico-color-hue-5xtint));
-  --mico-color-red-6xlight: oklch(from var(--mico-color-red) var(--mico-color-light-6xtint) var(--mico-color-chrome-6xtint) var(--mico-color-hue-6xtint));
-  --mico-color-red-7xlight: oklch(from var(--mico-color-red) var(--mico-color-light-7xtint) var(--mico-color-chrome-7xtint) var(--mico-color-hue-7xtint));
-  --mico-color-red-8xlight: oklch(from var(--mico-color-red) var(--mico-color-light-8xtint) var(--mico-color-chrome-8xtint) var(--mico-color-hue-8xtint));
-
-  /* Red Shades (darker variations) */
-  --mico-color-red-dark: oklch(from var(--mico-color-red) var(--mico-color-light-shade) var(--mico-color-chrome-shade) var(--mico-color-hue-shade));
-  --mico-color-red-2xdark: oklch(from var(--mico-color-red) var(--mico-color-light-2xshade) var(--mico-color-chrome-2xshade) var(--mico-color-hue-2xshade));
-  --mico-color-red-3xdark: oklch(from var(--mico-color-red) var(--mico-color-light-3xshade) var(--mico-color-chrome-3xshade) var(--mico-color-hue-3xshade));
-  --mico-color-red-4xdark: oklch(from var(--mico-color-red) var(--mico-color-light-4xshade) var(--mico-color-chrome-4xshade) var(--mico-color-hue-4xshade));
-  --mico-color-red-5xdark: oklch(from var(--mico-color-red) var(--mico-color-light-5xshade) var(--mico-color-chrome-5xshade) var(--mico-color-hue-5xshade));
-  --mico-color-red-6xdark: oklch(from var(--mico-color-red) var(--mico-color-light-6xshade) var(--mico-color-chrome-6xshade) var(--mico-color-hue-6xshade));
-  --mico-color-red-7xdark: oklch(from var(--mico-color-red) var(--mico-color-light-7xshade) var(--mico-color-chrome-7xshade) var(--mico-color-hue-7xshade));
-  --mico-color-red-8xdark: oklch(from var(--mico-color-red) var(--mico-color-light-8xshade) var(--mico-color-chrome-8xshade) var(--mico-color-hue-8xshade));
+  /* Red - Base color only (no tints/shades to reduce framework size) */
 
   /* Yellow Color System - Warning states, highlights */
   --mico-color-yellow: oklch(96.267% 0.19961 108.728); /* Base yellow color - warm amber, not harsh */
 
-  /* Yellow Tints (lighter variations) */
-  --mico-color-yellow-light: oklch(from var(--mico-color-yellow) var(--mico-color-light-tint) var(--mico-color-chrome-tint) var(--mico-color-hue-tint));
-  --mico-color-yellow-2xlight: oklch(from var(--mico-color-yellow) var(--mico-color-light-2xtint) var(--mico-color-chrome-2xtint) var(--mico-color-hue-2xtint));
-  --mico-color-yellow-3xlight: oklch(from var(--mico-color-yellow) var(--mico-color-light-3xtint) var(--mico-color-chrome-3xtint) var(--mico-color-hue-3xtint));
-  --mico-color-yellow-4xlight: oklch(from var(--mico-color-yellow) var(--mico-color-light-4xtint) var(--mico-color-chrome-4xtint) var(--mico-color-hue-4xtint));
-  --mico-color-yellow-5xlight: oklch(from var(--mico-color-yellow) var(--mico-color-light-5xtint) var(--mico-color-chrome-5xtint) var(--mico-color-hue-5xtint));
-  --mico-color-yellow-6xlight: oklch(from var(--mico-color-yellow) var(--mico-color-light-6xtint) var(--mico-color-chrome-6xtint) var(--mico-color-hue-6xtint));
-  --mico-color-yellow-7xlight: oklch(from var(--mico-color-yellow) var(--mico-color-light-7xtint) var(--mico-color-chrome-7xtint) var(--mico-color-hue-7xtint));
-  --mico-color-yellow-8xlight: oklch(from var(--mico-color-yellow) var(--mico-color-light-8xtint) var(--mico-color-chrome-8xtint) var(--mico-color-hue-8xtint));
-
-  /* Yellow Shades (darker variations) */
-  --mico-color-yellow-dark: oklch(from var(--mico-color-yellow) var(--mico-color-light-shade) var(--mico-color-chrome-shade) var(--mico-color-hue-shade));
-  --mico-color-yellow-2xdark: oklch(from var(--mico-color-yellow) var(--mico-color-light-2xshade) var(--mico-color-chrome-2xshade) var(--mico-color-hue-2xshade));
-  --mico-color-yellow-3xdark: oklch(from var(--mico-color-yellow) var(--mico-color-light-3xshade) var(--mico-color-chrome-3xshade) var(--mico-color-hue-3xshade));
-  --mico-color-yellow-4xdark: oklch(from var(--mico-color-yellow) var(--mico-color-light-4xshade) var(--mico-color-chrome-4xshade) var(--mico-color-hue-4xshade));
-  --mico-color-yellow-5xdark: oklch(from var(--mico-color-yellow) var(--mico-color-light-5xshade) var(--mico-color-chrome-5xshade) var(--mico-color-hue-5xshade));
-  --mico-color-yellow-6xdark: oklch(from var(--mico-color-yellow) var(--mico-color-light-6xshade) var(--mico-color-chrome-6xshade) var(--mico-color-hue-6xshade));
-  --mico-color-yellow-7xdark: oklch(from var(--mico-color-yellow) var(--mico-color-light-7xshade) var(--mico-color-chrome-7xshade) var(--mico-color-hue-7xshade));
-  --mico-color-yellow-8xdark: oklch(from var(--mico-color-yellow) var(--mico-color-light-8xshade) var(--mico-color-chrome-8xshade) var(--mico-color-hue-8xshade));
+  /* Yellow - Base color only (no tints/shades to reduce framework size) */
 
   /* Green Color System - Success states, positive actions */
   --mico-color-green: oklch(67.749% 0.19955 141.94); /* Base green color - fresh emerald, nature-inspired */
 
-  /* Green Tints (lighter variations) */
-  --mico-color-green-light: oklch(from var(--mico-color-green) var(--mico-color-light-tint) var(--mico-color-chrome-tint) var(--mico-color-hue-tint));
-  --mico-color-green-2xlight: oklch(from var(--mico-color-green) var(--mico-color-light-2xtint) var(--mico-color-chrome-2xtint) var(--mico-color-hue-2xtint));
-  --mico-color-green-3xlight: oklch(from var(--mico-color-green) var(--mico-color-light-3xtint) var(--mico-color-chrome-3xtint) var(--mico-color-hue-3xtint));
-  --mico-color-green-4xlight: oklch(from var(--mico-color-green) var(--mico-color-light-4xtint) var(--mico-color-chrome-4xtint) var(--mico-color-hue-4xtint));
-  --mico-color-green-5xlight: oklch(from var(--mico-color-green) var(--mico-color-light-5xtint) var(--mico-color-chrome-5xtint) var(--mico-color-hue-5xtint));
-  --mico-color-green-6xlight: oklch(from var(--mico-color-green) var(--mico-color-light-6xtint) var(--mico-color-chrome-6xtint) var(--mico-color-hue-6xtint));
-  --mico-color-green-7xlight: oklch(from var(--mico-color-green) var(--mico-color-light-7xtint) var(--mico-color-chrome-7xtint) var(--mico-color-hue-7xtint));
-  --mico-color-green-8xlight: oklch(from var(--mico-color-green) var(--mico-color-light-8xtint) var(--mico-color-chrome-8xtint) var(--mico-color-hue-8xtint));
-
-  /* Green Shades (darker variations) */
-  --mico-color-green-dark: oklch(from var(--mico-color-green) var(--mico-color-light-shade) var(--mico-color-chrome-shade) var(--mico-color-hue-shade));
-  --mico-color-green-2xdark: oklch(from var(--mico-color-green) var(--mico-color-light-2xshade) var(--mico-color-chrome-2xshade) var(--mico-color-hue-2xshade));
-  --mico-color-green-3xdark: oklch(from var(--mico-color-green) var(--mico-color-light-3xshade) var(--mico-color-chrome-3xshade) var(--mico-color-hue-3xshade));
-  --mico-color-green-4xdark: oklch(from var(--mico-color-green) var(--mico-color-light-4xshade) var(--mico-color-chrome-4xshade) var(--mico-color-hue-4xshade));
-  --mico-color-green-5xdark: oklch(from var(--mico-color-green) var(--mico-color-light-5xshade) var(--mico-color-chrome-5xshade) var(--mico-color-hue-5xshade));
-  --mico-color-green-6xdark: oklch(from var(--mico-color-green) var(--mico-color-light-6xshade) var(--mico-color-chrome-6xshade) var(--mico-color-hue-6xshade));
-  --mico-color-green-7xdark: oklch(from var(--mico-color-green) var(--mico-color-light-7xshade) var(--mico-color-chrome-7xshade) var(--mico-color-hue-7xshade));
-  --mico-color-green-8xdark: oklch(from var(--mico-color-green) var(--mico-color-light-8xshade) var(--mico-color-chrome-8xshade) var(--mico-color-hue-8xshade));
+  /* Green - Base color only (no tints/shades to reduce framework size) */
 
   /* Blue Color System - Information, links, primary actions */
   --mico-color-blue: oklch(52% 0.20589 259.44); /* Base blue color - trustworthy azure, professional */
 
-  /* Blue Tints (lighter variations) */
-  --mico-color-blue-light: oklch(from var(--mico-color-blue) var(--mico-color-light-tint) var(--mico-color-chrome-tint) var(--mico-color-hue-tint));
-  --mico-color-blue-2xlight: oklch(from var(--mico-color-blue) var(--mico-color-light-2xtint) var(--mico-color-chrome-2xtint) var(--mico-color-hue-2xtint));
-  --mico-color-blue-3xlight: oklch(from var(--mico-color-blue) var(--mico-color-light-3xtint) var(--mico-color-chrome-3xtint) var(--mico-color-hue-3xtint));
-  --mico-color-blue-4xlight: oklch(from var(--mico-color-blue) var(--mico-color-light-4xtint) var(--mico-color-chrome-4xtint) var(--mico-color-hue-4xtint));
-  --mico-color-blue-5xlight: oklch(from var(--mico-color-blue) var(--mico-color-light-5xtint) var(--mico-color-chrome-5xtint) var(--mico-color-hue-5xtint));
-  --mico-color-blue-6xlight: oklch(from var(--mico-color-blue) var(--mico-color-light-6xtint) var(--mico-color-chrome-6xtint) var(--mico-color-hue-6xtint));
-  --mico-color-blue-7xlight: oklch(from var(--mico-color-blue) var(--mico-color-light-7xtint) var(--mico-color-chrome-7xtint) var(--mico-color-hue-7xtint));
-  --mico-color-blue-8xlight: oklch(from var(--mico-color-blue) var(--mico-color-light-8xtint) var(--mico-color-chrome-8xtint) var(--mico-color-hue-8xtint));
+  /* Extended Colors - Base colors only (no tints/shades to reduce framework size) */
 
-  /* Blue Shades (darker variations) */
-  --mico-color-blue-dark: oklch(from var(--mico-color-blue) var(--mico-color-light-shade) var(--mico-color-chrome-shade) var(--mico-color-hue-shade));
-  --mico-color-blue-2xdark: oklch(from var(--mico-color-blue) var(--mico-color-light-2xshade) var(--mico-color-chrome-2xshade) var(--mico-color-hue-2xshade));
-  --mico-color-blue-3xdark: oklch(from var(--mico-color-blue) var(--mico-color-light-3xshade) var(--mico-color-chrome-3xshade) var(--mico-color-hue-3xshade));
-  --mico-color-blue-4xdark: oklch(from var(--mico-color-blue) var(--mico-color-light-4xshade) var(--mico-color-chrome-4xshade) var(--mico-color-hue-4xshade));
-  --mico-color-blue-5xdark: oklch(from var(--mico-color-blue) var(--mico-color-light-5xshade) var(--mico-color-chrome-5xshade) var(--mico-color-hue-5xshade));
-  --mico-color-blue-6xdark: oklch(from var(--mico-color-blue) var(--mico-color-light-6xshade) var(--mico-color-chrome-6xshade) var(--mico-color-hue-6xshade));
-  --mico-color-blue-7xdark: oklch(from var(--mico-color-blue) var(--mico-color-light-7xshade) var(--mico-color-chrome-7xshade) var(--mico-color-hue-7xshade));
-  --mico-color-blue-8xdark: oklch(from var(--mico-color-blue) var(--mico-color-light-8xshade) var(--mico-color-chrome-8xshade) var(--mico-color-hue-8xshade));
+  /* Blue - Base color only */
 
-  /* Indigo Color System - Deep blues, professional themes */
+  /* Indigo - Base color only */
   --mico-color-indigo: oklch(0.52 0.17 275); /* Base indigo color - sophisticated violet-blue */
 
-  /* Indigo Tints (lighter variations) */
-  --mico-color-indigo-light: oklch(from var(--mico-color-indigo) var(--mico-color-light-tint) var(--mico-color-chrome-tint) var(--mico-color-hue-tint));
-  --mico-color-indigo-2xlight: oklch(from var(--mico-color-indigo) var(--mico-color-light-2xtint) var(--mico-color-chrome-2xtint) var(--mico-color-hue-2xtint));
-  --mico-color-indigo-3xlight: oklch(from var(--mico-color-indigo) var(--mico-color-light-3xtint) var(--mico-color-chrome-3xtint) var(--mico-color-hue-3xtint));
-  --mico-color-indigo-4xlight: oklch(from var(--mico-color-indigo) var(--mico-color-light-4xtint) var(--mico-color-chrome-4xtint) var(--mico-color-hue-4xtint));
-  --mico-color-indigo-5xlight: oklch(from var(--mico-color-indigo) var(--mico-color-light-5xtint) var(--mico-color-chrome-5xtint) var(--mico-color-hue-5xtint));
-  --mico-color-indigo-6xlight: oklch(from var(--mico-color-indigo) var(--mico-color-light-6xtint) var(--mico-color-chrome-6xtint) var(--mico-color-hue-6xtint));
-  --mico-color-indigo-7xlight: oklch(from var(--mico-color-indigo) var(--mico-color-light-7xtint) var(--mico-color-chrome-7xtint) var(--mico-color-hue-7xtint));
-  --mico-color-indigo-8xlight: oklch(from var(--mico-color-indigo) var(--mico-color-light-8xtint) var(--mico-color-chrome-8xtint) var(--mico-color-hue-8xtint));
-
-  /* Indigo Shades (darker variations) */
-  --mico-color-indigo-dark: oklch(from var(--mico-color-indigo) var(--mico-color-light-shade) var(--mico-color-chrome-shade) var(--mico-color-hue-shade));
-  --mico-color-indigo-2xdark: oklch(from var(--mico-color-indigo) var(--mico-color-light-2xshade) var(--mico-color-chrome-2xshade) var(--mico-color-hue-2xshade));
-  --mico-color-indigo-3xdark: oklch(from var(--mico-color-indigo) var(--mico-color-light-3xshade) var(--mico-color-chrome-3xshade) var(--mico-color-hue-3xshade));
-  --mico-color-indigo-4xdark: oklch(from var(--mico-color-indigo) var(--mico-color-light-4xshade) var(--mico-color-chrome-4xshade) var(--mico-color-hue-4xshade));
-  --mico-color-indigo-5xdark: oklch(from var(--mico-color-indigo) var(--mico-color-light-5xshade) var(--mico-color-chrome-5xshade) var(--mico-color-hue-5xshade));
-  --mico-color-indigo-6xdark: oklch(from var(--mico-color-indigo) var(--mico-color-light-6xshade) var(--mico-color-chrome-6xshade) var(--mico-color-hue-6xshade));
-  --mico-color-indigo-7xdark: oklch(from var(--mico-color-indigo) var(--mico-color-light-7xshade) var(--mico-color-chrome-7xshade) var(--mico-color-hue-7xshade));
-  --mico-color-indigo-8xdark: oklch(from var(--mico-color-indigo) var(--mico-color-light-8xshade) var(--mico-color-chrome-8xshade) var(--mico-color-hue-8xshade));
-
-  /* Purple Color System - Creative themes, luxury */
+  /* Purple - Base color only */
   --mico-color-purple: oklch(48.171% 0.20979 307.996); /* Base purple color - rich amethyst, creative */
 
-  /* Purple Tints (lighter variations) */
-  --mico-color-purple-light: oklch(from var(--mico-color-purple) var(--mico-color-light-tint) var(--mico-color-chrome-tint) var(--mico-color-hue-tint));
-  --mico-color-purple-2xlight: oklch(from var(--mico-color-purple) var(--mico-color-light-2xtint) var(--mico-color-chrome-2xtint) var(--mico-color-hue-2xtint));
-  --mico-color-purple-3xlight: oklch(from var(--mico-color-purple) var(--mico-color-light-3xtint) var(--mico-color-chrome-3xtint) var(--mico-color-hue-3xtint));
-  --mico-color-purple-4xlight: oklch(from var(--mico-color-purple) var(--mico-color-light-4xtint) var(--mico-color-chrome-4xtint) var(--mico-color-hue-4xtint));
-  --mico-color-purple-5xlight: oklch(from var(--mico-color-purple) var(--mico-color-light-5xtint) var(--mico-color-chrome-5xtint) var(--mico-color-hue-5xtint));
-  --mico-color-purple-6xlight: oklch(from var(--mico-color-purple) var(--mico-color-light-6xtint) var(--mico-color-chrome-6xtint) var(--mico-color-hue-6xtint));
-  --mico-color-purple-7xlight: oklch(from var(--mico-color-purple) var(--mico-color-light-7xtint) var(--mico-color-chrome-7xtint) var(--mico-color-hue-7xtint));
-  --mico-color-purple-8xlight: oklch(from var(--mico-color-purple) var(--mico-color-light-8xtint) var(--mico-color-chrome-8xtint) var(--mico-color-hue-8xtint));
-
-  /* Purple Shades (darker variations) */
-  --mico-color-purple-dark: oklch(from var(--mico-color-purple) var(--mico-color-light-shade) var(--mico-color-chrome-shade) var(--mico-color-hue-shade));
-  --mico-color-purple-2xdark: oklch(from var(--mico-color-purple) var(--mico-color-light-2xshade) var(--mico-color-chrome-2xshade) var(--mico-color-hue-2xshade));
-  --mico-color-purple-3xdark: oklch(from var(--mico-color-purple) var(--mico-color-light-3xshade) var(--mico-color-chrome-3xshade) var(--mico-color-hue-3xshade));
-  --mico-color-purple-4xdark: oklch(from var(--mico-color-purple) var(--mico-color-light-4xshade) var(--mico-color-chrome-4xshade) var(--mico-color-hue-4xshade));
-  --mico-color-purple-5xdark: oklch(from var(--mico-color-purple) var(--mico-color-light-5xshade) var(--mico-color-chrome-5xshade) var(--mico-color-hue-5xshade));
-  --mico-color-purple-6xdark: oklch(from var(--mico-color-purple) var(--mico-color-light-6xshade) var(--mico-color-chrome-6xshade) var(--mico-color-hue-6xshade));
-  --mico-color-purple-7xdark: oklch(from var(--mico-color-purple) var(--mico-color-light-7xshade) var(--mico-color-chrome-7xshade) var(--mico-color-hue-7xshade));
-  --mico-color-purple-8xdark: oklch(from var(--mico-color-purple) var(--mico-color-light-8xshade) var(--mico-color-chrome-8xshade) var(--mico-color-hue-8xshade));
-
-  /* Pink Color System - Warm themes, highlights */
+  /* Pink - Base color only */
   --mico-color-pink: oklch(70.383% 0.19028 6.147); /* Base pink color - warm rose, approachable */
-
-  /* Pink Tints (lighter variations) */
-  --mico-color-pink-light: oklch(from var(--mico-color-pink) var(--mico-color-light-tint) var(--mico-color-chrome-tint) var(--mico-color-hue-tint));
-  --mico-color-pink-2xlight: oklch(from var(--mico-color-pink) var(--mico-color-light-2xtint) var(--mico-color-chrome-2xtint) var(--mico-color-hue-2xtint));
-  --mico-color-pink-3xlight: oklch(from var(--mico-color-pink) var(--mico-color-light-3xtint) var(--mico-color-chrome-3xtint) var(--mico-color-hue-3xtint));
-  --mico-color-pink-4xlight: oklch(from var(--mico-color-pink) var(--mico-color-light-4xtint) var(--mico-color-chrome-4xtint) var(--mico-color-hue-4xtint));
-  --mico-color-pink-5xlight: oklch(from var(--mico-color-pink) var(--mico-color-light-5xtint) var(--mico-color-chrome-5xtint) var(--mico-color-hue-5xtint));
-  --mico-color-pink-6xlight: oklch(from var(--mico-color-pink) var(--mico-color-light-6xtint) var(--mico-color-chrome-6xtint) var(--mico-color-hue-6xtint));
-  --mico-color-pink-7xlight: oklch(from var(--mico-color-pink) var(--mico-color-light-7xtint) var(--mico-color-chrome-7xtint) var(--mico-color-hue-7xtint));
-  --mico-color-pink-8xlight: oklch(from var(--mico-color-pink) var(--mico-color-light-8xtint) var(--mico-color-chrome-8xtint) var(--mico-color-hue-8xtint));
-
-  /* Pink Shades (darker variations) */
-  --mico-color-pink-dark: oklch(from var(--mico-color-pink) var(--mico-color-light-shade) var(--mico-color-chrome-shade) var(--mico-color-hue-shade));
-  --mico-color-pink-2xdark: oklch(from var(--mico-color-pink) var(--mico-color-light-2xshade) var(--mico-color-chrome-2xshade) var(--mico-color-hue-2xshade));
-  --mico-color-pink-3xdark: oklch(from var(--mico-color-pink) var(--mico-color-light-3xshade) var(--mico-color-chrome-3xshade) var(--mico-color-hue-3xshade));
-  --mico-color-pink-4xdark: oklch(from var(--mico-color-pink) var(--mico-color-light-4xshade) var(--mico-color-chrome-4xshade) var(--mico-color-hue-4xshade));
-  --mico-color-pink-5xdark: oklch(from var(--mico-color-pink) var(--mico-color-light-5xshade) var(--mico-color-chrome-5xshade) var(--mico-color-hue-5xshade));
-  --mico-color-pink-6xdark: oklch(from var(--mico-color-pink) var(--mico-color-light-6xshade) var(--mico-color-chrome-6xshade) var(--mico-color-hue-6xshade));
-  --mico-color-pink-7xdark: oklch(from var(--mico-color-pink) var(--mico-color-light-7xshade) var(--mico-color-chrome-7xshade) var(--mico-color-hue-7xshade));
-  --mico-color-pink-8xdark: oklch(from var(--mico-color-pink) var(--mico-color-light-8xshade) var(--mico-color-chrome-8xshade) var(--mico-color-hue-8xshade));
 }
 
 /* Utility Classes Only */
@@ -5906,14 +5704,12 @@
 }
 
 /**
- * Color Utility Classes
+ * Color Utility Classes - OPTIMIZED
  *
- * Comprehensive color utilities for the Mico CSS Framework.
- * All color variables are defined in css/base/variables.css
- *
- * This file contains only utility classes that reference those variables.
- * Classes are organized by: Brand Colors, Neutral Colors, Extended Palette,
- * Transparency Colors, and Semantic Colors.
+ * Streamlined color utilities for the Mico CSS Framework.
+ * Only includes essential colors: primary, secondary, accent, and semantic colors.
+ * Extended colors (red, yellow, green, blue, indigo, purple, pink, black, gray, white, visited)
+ * are available as base colors only (no tints/shades) to reduce framework size.
  */
 
 /* ====================================================================== */
@@ -6174,994 +5970,44 @@
 
 .bg--accent-8xdark { background-color: var(--mico-color-accent-8xdark) !important; }
 
-/* Accent Color Percentage Text Utilities (5% increments) */
-
-.text--5p { color: var(--mico-color-5p) !important; }
-
-.text--10p { color: var(--mico-color-10p) !important; }
-
-.text--15p { color: var(--mico-color-15p) !important; }
-
-.text--20p { color: var(--mico-color-20p) !important; }
-
-.text--25p { color: var(--mico-color-25p) !important; }
-
-.text--30p { color: var(--mico-color-30p) !important; }
-
-.text--35p { color: var(--mico-color-35p) !important; }
-
-.text--40p { color: var(--mico-color-40p) !important; }
-
-.text--45p { color: var(--mico-color-45p) !important; }
-
-.text--50p { color: var(--mico-color-50p) !important; }
-
-.text--55p { color: var(--mico-color-55p) !important; }
-
-.text--60p { color: var(--mico-color-60p) !important; }
-
-.text--65p { color: var(--mico-color-65p) !important; }
-
-.text--70p { color: var(--mico-color-70p) !important; }
-
-.text--75p { color: var(--mico-color-75p) !important; }
-
-.text--80p { color: var(--mico-color-80p) !important; }
-
-.text--85p { color: var(--mico-color-85p) !important; }
-
-.text--90p { color: var(--mico-color-90p) !important; }
-
-.text--95p { color: var(--mico-color-95p) !important; }
-
-.text--100p { color: var(--mico-color-100p) !important; }
-
-.bg--color-5p { background-color: var(--mico-color-5p) !important; }
-
-.bg--color-10p { background-color: var(--mico-color-10p) !important; }
-
-.bg--color-15p { background-color: var(--mico-color-15p) !important; }
-
-.bg--color-20p { background-color: var(--mico-color-20p) !important; }
-
-.bg--color-25p { background-color: var(--mico-color-25p) !important; }
-
-.bg--color-30p { background-color: var(--mico-color-30p) !important; }
-
-.bg--color-35p { background-color: var(--mico-color-35p) !important; }
-
-.bg--color-40p { background-color: var(--mico-color-40p) !important; }
-
-.bg--color-45p { background-color: var(--mico-color-45p) !important; }
-
-.bg--color-50p { background-color: var(--mico-color-50p) !important; }
-
-.bg--color-55p { background-color: var(--mico-color-55p) !important; }
-
-.bg--color-60p { background-color: var(--mico-color-60p) !important; }
-
-.bg--color-65p { background-color: var(--mico-color-65p) !important; }
-
-.bg--color-70p { background-color: var(--mico-color-70p) !important; }
-
-.bg--color-75p { background-color: var(--mico-color-75p) !important; }
-
-.bg--color-80p { background-color: var(--mico-color-80p) !important; }
-
-.bg--color-85p { background-color: var(--mico-color-85p) !important; }
-
-.bg--color-90p { background-color: var(--mico-color-90p) !important; }
-
-.bg--color-95p { background-color: var(--mico-color-95p) !important; }
-
-.bg--color-100p { background-color: var(--mico-color-100p) !important; }
-
 /* ====================================================================== */
 
-/* NEUTRAL COLOR UTILITIES                                                */
+/* SEMANTIC COLOR UTILITIES                                               */
 
 /* ====================================================================== */
 
 /**
- * Black Color System - OKLCH
- * Base black with 5 tints and 5 shades for dark themes and high contrast
+ * Semantic Colors
+ * Success, error, warning, and info colors with full tint/shade variations
  */
 
-/* Black Base Color */
-
-.bg--black { background-color: var(--mico-color-black) !important; }
-
-.text--black { color: var(--mico-color-black) !important; }
-
-/* Black Tint Background Colors (lighter) */
-
-.bg--black-light { background-color: var(--mico-color-black-light) !important; }
-
-.bg--black-2xlight { background-color: var(--mico-color-black-2xlight) !important; }
-
-.bg--black-3xlight { background-color: var(--mico-color-black-3xlight) !important; }
-
-.bg--black-4xlight { background-color: var(--mico-color-black-4xlight) !important; }
-
-.bg--black-5xlight { background-color: var(--mico-color-black-5xlight) !important; }
-
-.bg--black-6xlight { background-color: var(--mico-color-black-6xlight) !important; }
-
-.bg--black-7xlight { background-color: var(--mico-color-black-7xlight) !important; }
-
-.bg--black-8xlight { background-color: var(--mico-color-black-8xlight) !important; }
-
-/* Black Shade Background Colors (darker) */
-
-.bg--black-dark { background-color: var(--mico-color-black-dark) !important; }
-
-.bg--black-2xdark { background-color: var(--mico-color-black-2xdark) !important; }
-
-.bg--black-3xdark { background-color: var(--mico-color-black-3xdark) !important; }
-
-.bg--black-4xdark { background-color: var(--mico-color-black-4xdark) !important; }
-
-.bg--black-5xdark { background-color: var(--mico-color-black-5xdark) !important; }
-
-.bg--black-6xdark { background-color: var(--mico-color-black-6xdark) !important; }
-
-.bg--black-7xdark { background-color: var(--mico-color-black-7xdark) !important; }
-
-.bg--black-8xdark { background-color: var(--mico-color-black-8xdark) !important; }
-
-/* Black Tint Text Colors (lighter) */
-
-.text--black-light { color: var(--mico-color-black-light) !important; }
-
-.text--black-2xlight { color: var(--mico-color-black-2xlight) !important; }
-
-.text--black-3xlight { color: var(--mico-color-black-3xlight) !important; }
-
-.text--black-4xlight { color: var(--mico-color-black-4xlight) !important; }
-
-.text--black-5xlight { color: var(--mico-color-black-5xlight) !important; }
-
-.text--black-6xlight { color: var(--mico-color-black-6xlight) !important; }
-
-.text--black-7xlight { color: var(--mico-color-black-7xlight) !important; }
-
-.text--black-8xlight { color: var(--mico-color-black-8xlight) !important; }
-
-/* Black Shade Text Colors (darker) */
-
-.text--black-dark { color: var(--mico-color-black-dark) !important; }
-
-.text--black-2xdark { color: var(--mico-color-black-2xdark) !important; }
-
-.text--black-3xdark { color: var(--mico-color-black-3xdark) !important; }
-
-.text--black-4xdark { color: var(--mico-color-black-4xdark) !important; }
-
-.text--black-5xdark { color: var(--mico-color-black-5xdark) !important; }
-
-.text--black-6xdark { color: var(--mico-color-black-6xdark) !important; }
-
-.text--black-7xdark { color: var(--mico-color-black-7xdark) !important; }
-
-.text--black-8xdark { color: var(--mico-color-black-8xdark) !important; }
-
-/**
- * Gray Color System - OKLCH
- * Base gray with 5 tints and 5 shades for UI elements, text, and backgrounds
- * Optimized for contrast and accessibility with perceptual uniformity
- */
-
-/* Gray Base Color */
-
-.bg--gray { background-color: var(--mico-color-gray) !important; }
-
-.text--gray { color: var(--mico-color-gray) !important; }
-
-/* Gray Tint Background Colors (lighter) */
-
-.bg--gray-light { background-color: var(--mico-color-gray-light) !important; }
-
-.bg--gray-2xlight { background-color: var(--mico-color-gray-2xlight) !important; }
-
-.bg--gray-3xlight { background-color: var(--mico-color-gray-3xlight) !important; }
-
-.bg--gray-4xlight { background-color: var(--mico-color-gray-4xlight) !important; }
-
-.bg--gray-5xlight { background-color: var(--mico-color-gray-5xlight) !important; }
-
-.bg--gray-6xlight { background-color: var(--mico-color-gray-6xlight) !important; }
-
-.bg--gray-7xlight { background-color: var(--mico-color-gray-7xlight) !important; }
-
-.bg--gray-8xlight { background-color: var(--mico-color-gray-8xlight) !important; }
-
-/* Gray Shade Background Colors (darker) */
-
-.bg--gray-dark { background-color: var(--mico-color-gray-dark) !important; }
-
-.bg--gray-2xdark { background-color: var(--mico-color-gray-2xdark) !important; }
-
-.bg--gray-3xdark { background-color: var(--mico-color-gray-3xdark) !important; }
-
-.bg--gray-4xdark { background-color: var(--mico-color-gray-4xdark) !important; }
-
-.bg--gray-5xdark { background-color: var(--mico-color-gray-5xdark) !important; }
-
-.bg--gray-6xdark { background-color: var(--mico-color-gray-6xdark) !important; }
-
-.bg--gray-7xdark { background-color: var(--mico-color-gray-7xdark) !important; }
-
-.bg--gray-8xdark { background-color: var(--mico-color-gray-8xdark) !important; }
-
-/* Gray Tint Text Colors (lighter) */
-
-.text--gray-light { color: var(--mico-color-gray-light) !important; }
-
-.text--gray-2xlight { color: var(--mico-color-gray-2xlight) !important; }
-
-.text--gray-3xlight { color: var(--mico-color-gray-3xlight) !important; }
-
-.text--gray-4xlight { color: var(--mico-color-gray-4xlight) !important; }
-
-.text--gray-5xlight { color: var(--mico-color-gray-5xlight) !important; }
-
-.text--gray-6xlight { color: var(--mico-color-gray-6xlight) !important; }
-
-.text--gray-7xlight { color: var(--mico-color-gray-7xlight) !important; }
-
-.text--gray-8xlight { color: var(--mico-color-gray-8xlight) !important; }
-
-/* Gray Shade Text Colors (darker) */
-
-.text--gray-dark { color: var(--mico-color-gray-dark) !important; }
-
-.text--gray-2xdark { color: var(--mico-color-gray-2xdark) !important; }
-
-.text--gray-3xdark { color: var(--mico-color-gray-3xdark) !important; }
-
-.text--gray-4xdark { color: var(--mico-color-gray-4xdark) !important; }
-
-.text--gray-5xdark { color: var(--mico-color-gray-5xdark) !important; }
-
-.text--gray-6xdark { color: var(--mico-color-gray-6xdark) !important; }
-
-.text--gray-7xdark { color: var(--mico-color-gray-7xdark) !important; }
-
-.text--gray-8xdark { color: var(--mico-color-gray-8xdark) !important; }
-
-/**
- * White Color System - OKLCH
- * Base white with 5 tints and 5 shades for clean, minimal aesthetics
- */
-
-/* White Base Color */
-
-.bg--white { background-color: var(--mico-color-white) !important; }
-
-.text--white { color: var(--mico-color-white) !important; }
-
-/* White Tint Background Colors (lighter) */
-
-.bg--white-light { background-color: var(--mico-color-white-light) !important; }
-
-.bg--white-2xlight { background-color: var(--mico-color-white-2xlight) !important; }
-
-.bg--white-3xlight { background-color: var(--mico-color-white-3xlight) !important; }
-
-.bg--white-4xlight { background-color: var(--mico-color-white-4xlight) !important; }
-
-.bg--white-5xlight { background-color: var(--mico-color-white-5xlight) !important; }
-
-.bg--white-6xlight { background-color: var(--mico-color-white-6xlight) !important; }
-
-.bg--white-7xlight { background-color: var(--mico-color-white-7xlight) !important; }
-
-.bg--white-8xlight { background-color: var(--mico-color-white-8xlight) !important; }
-
-/* White Shade Background Colors (darker) */
-
-.bg--white-dark { background-color: var(--mico-color-white-dark) !important; }
-
-.bg--white-2xdark { background-color: var(--mico-color-white-2xdark) !important; }
-
-.bg--white-3xdark { background-color: var(--mico-color-white-3xdark) !important; }
-
-.bg--white-4xdark { background-color: var(--mico-color-white-4xdark) !important; }
-
-.bg--white-5xdark { background-color: var(--mico-color-white-5xdark) !important; }
-
-.bg--white-6xdark { background-color: var(--mico-color-white-6xdark) !important; }
-
-.bg--white-7xdark { background-color: var(--mico-color-white-7xdark) !important; }
-
-.bg--white-8xdark { background-color: var(--mico-color-white-8xdark) !important; }
-
-/* White Tint Text Colors (lighter) */
-
-.text--white-light { color: var(--mico-color-white-light) !important; }
-
-.text--white-2xlight { color: var(--mico-color-white-2xlight) !important; }
-
-.text--white-3xlight { color: var(--mico-color-white-3xlight) !important; }
-
-.text--white-4xlight { color: var(--mico-color-white-4xlight) !important; }
-
-.text--white-5xlight { color: var(--mico-color-white-5xlight) !important; }
-
-.text--white-6xlight { color: var(--mico-color-white-6xlight) !important; }
-
-.text--white-7xlight { color: var(--mico-color-white-7xlight) !important; }
-
-.text--white-8xlight { color: var(--mico-color-white-8xlight) !important; }
-
-/* White Shade Text Colors (darker) */
-
-.text--white-dark { color: var(--mico-color-white-dark) !important; }
-
-.text--white-2xdark { color: var(--mico-color-white-2xdark) !important; }
-
-.text--white-3xdark { color: var(--mico-color-white-3xdark) !important; }
-
-.text--white-4xdark { color: var(--mico-color-white-4xdark) !important; }
-
-.text--white-5xdark { color: var(--mico-color-white-5xdark) !important; }
-
-.text--white-6xdark { color: var(--mico-color-white-6xdark) !important; }
-
-.text--white-7xdark { color: var(--mico-color-white-7xdark) !important; }
-
-.text--white-8xdark { color: var(--mico-color-white-8xdark) !important; }
-
-/* ====================================================================== */
-
-/* EXTENDED COLOR PALETTE UTILITIES                                       */
-
-/* ====================================================================== */
-
-/**
- * Red Color System - OKLCH
- * Base red with 5 tints and 5 shades for error states, alerts, danger
- */
-
-/* Red Base Color */
-
-.bg--red { background-color: var(--mico-color-red) !important; }
-
-.text--red { color: var(--mico-color-red) !important; }
-
-/* Red Tint Background Colors (lighter) */
-
-.bg--red-light { background-color: var(--mico-color-red-light) !important; }
-
-.bg--red-2xlight { background-color: var(--mico-color-red-2xlight) !important; }
-
-.bg--red-3xlight { background-color: var(--mico-color-red-3xlight) !important; }
-
-.bg--red-4xlight { background-color: var(--mico-color-red-4xlight) !important; }
-
-.bg--red-5xlight { background-color: var(--mico-color-red-5xlight) !important; }
-
-.bg--red-6xlight { background-color: var(--mico-color-red-6xlight) !important; }
-
-.bg--red-7xlight { background-color: var(--mico-color-red-7xlight) !important; }
-
-.bg--red-8xlight { background-color: var(--mico-color-red-8xlight) !important; }
-
-/* Red Shade Background Colors (darker) */
-
-.bg--red-dark { background-color: var(--mico-color-red-dark) !important; }
-
-.bg--red-2xdark { background-color: var(--mico-color-red-2xdark) !important; }
-
-.bg--red-3xdark { background-color: var(--mico-color-red-3xdark) !important; }
-
-.bg--red-4xdark { background-color: var(--mico-color-red-4xdark) !important; }
-
-.bg--red-5xdark { background-color: var(--mico-color-red-5xdark) !important; }
-
-.bg--red-6xdark { background-color: var(--mico-color-red-6xdark) !important; }
-
-.bg--red-7xdark { background-color: var(--mico-color-red-7xdark) !important; }
-
-.bg--red-8xdark { background-color: var(--mico-color-red-8xdark) !important; }
-
-/* Red Tint Text Colors (lighter) */
-
-.text--red-light { color: var(--mico-color-red-light) !important; }
-
-.text--red-2xlight { color: var(--mico-color-red-2xlight) !important; }
-
-.text--red-3xlight { color: var(--mico-color-red-3xlight) !important; }
-
-.text--red-4xlight { color: var(--mico-color-red-4xlight) !important; }
-
-.text--red-5xlight { color: var(--mico-color-red-5xlight) !important; }
-
-.text--red-6xlight { color: var(--mico-color-red-6xlight) !important; }
-
-.text--red-7xlight { color: var(--mico-color-red-7xlight) !important; }
-
-.text--red-8xlight { color: var(--mico-color-red-8xlight) !important; }
-
-/* Red Shade Text Colors (darker) */
-
-.text--red-dark { color: var(--mico-color-red-dark) !important; }
-
-.text--red-2xdark { color: var(--mico-color-red-2xdark) !important; }
-
-.text--red-3xdark { color: var(--mico-color-red-3xdark) !important; }
-
-.text--red-4xdark { color: var(--mico-color-red-4xdark) !important; }
-
-.text--red-5xdark { color: var(--mico-color-red-5xdark) !important; }
-
-.text--red-6xdark { color: var(--mico-color-red-6xdark) !important; }
-
-.text--red-7xdark { color: var(--mico-color-red-7xdark) !important; }
-
-.text--red-8xdark { color: var(--mico-color-red-8xdark) !important; }
-
-/**
- * Yellow Color System - OKLCH
- * Base yellow with 5 tints and 5 shades for warning states, highlights
- */
-
-/* Yellow Base Color */
-
-.bg--yellow { background-color: var(--mico-color-yellow) !important; }
-
-.text--yellow { color: var(--mico-color-yellow) !important; }
-
-/* Yellow Tint Background Colors (lighter) */
-
-.bg--yellow-light { background-color: var(--mico-color-yellow-light) !important; }
-
-.bg--yellow-2xlight { background-color: var(--mico-color-yellow-2xlight) !important; }
-
-.bg--yellow-3xlight { background-color: var(--mico-color-yellow-3xlight) !important; }
-
-.bg--yellow-4xlight { background-color: var(--mico-color-yellow-4xlight) !important; }
-
-.bg--yellow-5xlight { background-color: var(--mico-color-yellow-5xlight) !important; }
-
-.bg--yellow-6xlight { background-color: var(--mico-color-yellow-6xlight) !important; }
-
-.bg--yellow-7xlight { background-color: var(--mico-color-yellow-7xlight) !important; }
-
-.bg--yellow-8xlight { background-color: var(--mico-color-yellow-8xlight) !important; }
-
-/* Yellow Shade Background Colors (darker) */
-
-.bg--yellow-dark { background-color: var(--mico-color-yellow-dark) !important; }
-
-.bg--yellow-2xdark { background-color: var(--mico-color-yellow-2xdark) !important; }
-
-.bg--yellow-3xdark { background-color: var(--mico-color-yellow-3xdark) !important; }
-
-.bg--yellow-4xdark { background-color: var(--mico-color-yellow-4xdark) !important; }
-
-.bg--yellow-5xdark { background-color: var(--mico-color-yellow-5xdark) !important; }
-
-.bg--yellow-6xdark { background-color: var(--mico-color-yellow-6xdark) !important; }
-
-.bg--yellow-7xdark { background-color: var(--mico-color-yellow-7xdark) !important; }
-
-.bg--yellow-8xdark { background-color: var(--mico-color-yellow-8xdark) !important; }
-
-/* Yellow Tint Text Colors (lighter) */
-
-.text--yellow-light { color: var(--mico-color-yellow-light) !important; }
-
-.text--yellow-2xlight { color: var(--mico-color-yellow-2xlight) !important; }
-
-.text--yellow-3xlight { color: var(--mico-color-yellow-3xlight) !important; }
-
-.text--yellow-4xlight { color: var(--mico-color-yellow-4xlight) !important; }
-
-.text--yellow-5xlight { color: var(--mico-color-yellow-5xlight) !important; }
-
-.text--yellow-6xlight { color: var(--mico-color-yellow-6xlight) !important; }
-
-.text--yellow-7xlight { color: var(--mico-color-yellow-7xlight) !important; }
-
-.text--yellow-8xlight { color: var(--mico-color-yellow-8xlight) !important; }
-
-/* Yellow Shade Text Colors (darker) */
-
-.text--yellow-dark { color: var(--mico-color-yellow-dark) !important; }
-
-.text--yellow-2xdark { color: var(--mico-color-yellow-2xdark) !important; }
-
-.text--yellow-3xdark { color: var(--mico-color-yellow-3xdark) !important; }
-
-.text--yellow-4xdark { color: var(--mico-color-yellow-4xdark) !important; }
-
-.text--yellow-5xdark { color: var(--mico-color-yellow-5xdark) !important; }
-
-.text--yellow-6xdark { color: var(--mico-color-yellow-6xdark) !important; }
-
-.text--yellow-7xdark { color: var(--mico-color-yellow-7xdark) !important; }
-
-.text--yellow-8xdark { color: var(--mico-color-yellow-8xdark) !important; }
-
-/**
- * Green Color System - OKLCH
- * Base green with 5 tints and 5 shades for success states, positive actions
- */
-
-/* Green Base Color */
-
-.bg--green { background-color: var(--mico-color-green) !important; }
-
-.text--green { color: var(--mico-color-green) !important; }
-
-/* Green Tint Background Colors (lighter) */
-
-.bg--green-light { background-color: var(--mico-color-green-light) !important; }
-
-.bg--green-2xlight { background-color: var(--mico-color-green-2xlight) !important; }
-
-.bg--green-3xlight { background-color: var(--mico-color-green-3xlight) !important; }
-
-.bg--green-4xlight { background-color: var(--mico-color-green-4xlight) !important; }
-
-.bg--green-5xlight { background-color: var(--mico-color-green-5xlight) !important; }
-
-.bg--green-6xlight { background-color: var(--mico-color-green-6xlight) !important; }
-
-.bg--green-7xlight { background-color: var(--mico-color-green-7xlight) !important; }
-
-.bg--green-8xlight { background-color: var(--mico-color-green-8xlight) !important; }
-
-/* Green Shade Background Colors (darker) */
-
-.bg--green-dark { background-color: var(--mico-color-green-dark) !important; }
-
-.bg--green-2xdark { background-color: var(--mico-color-green-2xdark) !important; }
-
-.bg--green-3xdark { background-color: var(--mico-color-green-3xdark) !important; }
-
-.bg--green-4xdark { background-color: var(--mico-color-green-4xdark) !important; }
-
-.bg--green-5xdark { background-color: var(--mico-color-green-5xdark) !important; }
-
-.bg--green-6xdark { background-color: var(--mico-color-green-6xdark) !important; }
-
-.bg--green-7xdark { background-color: var(--mico-color-green-7xdark) !important; }
-
-.bg--green-8xdark { background-color: var(--mico-color-green-8xdark) !important; }
-
-/* Green Tint Text Colors (lighter) */
-
-.text--green-light { color: var(--mico-color-green-light) !important; }
-
-.text--green-2xlight { color: var(--mico-color-green-2xlight) !important; }
-
-.text--green-3xlight { color: var(--mico-color-green-3xlight) !important; }
-
-.text--green-4xlight { color: var(--mico-color-green-4xlight) !important; }
-
-.text--green-5xlight { color: var(--mico-color-green-5xlight) !important; }
-
-.text--green-6xlight { color: var(--mico-color-green-6xlight) !important; }
-
-.text--green-7xlight { color: var(--mico-color-green-7xlight) !important; }
-
-.text--green-8xlight { color: var(--mico-color-green-8xlight) !important; }
-
-/* Green Shade Text Colors (darker) */
-
-.text--green-dark { color: var(--mico-color-green-dark) !important; }
-
-.text--green-2xdark { color: var(--mico-color-green-2xdark) !important; }
-
-.text--green-3xdark { color: var(--mico-color-green-3xdark) !important; }
-
-.text--green-4xdark { color: var(--mico-color-green-4xdark) !important; }
-
-.text--green-5xdark { color: var(--mico-color-green-5xdark) !important; }
-
-.text--green-6xdark { color: var(--mico-color-green-6xdark) !important; }
-
-.text--green-7xdark { color: var(--mico-color-green-7xdark) !important; }
-
-.text--green-8xdark { color: var(--mico-color-green-8xdark) !important; }
-
-/**
- * Blue Color System - OKLCH
- * Base blue with 5 tints and 5 shades for information, links, primary actions
- */
-
-/* Blue Base Color */
-
-.bg--blue { background-color: var(--mico-color-blue) !important; }
-
-.text--blue { color: var(--mico-color-blue) !important; }
-
-/* Blue Tint Background Colors (lighter) */
-
-.bg--blue-light { background-color: var(--mico-color-blue-light) !important; }
-
-.bg--blue-2xlight { background-color: var(--mico-color-blue-2xlight) !important; }
-
-.bg--blue-3xlight { background-color: var(--mico-color-blue-3xlight) !important; }
-
-.bg--blue-4xlight { background-color: var(--mico-color-blue-4xlight) !important; }
-
-.bg--blue-5xlight { background-color: var(--mico-color-blue-5xlight) !important; }
-
-.bg--blue-6xlight { background-color: var(--mico-color-blue-6xlight) !important; }
-
-.bg--blue-7xlight { background-color: var(--mico-color-blue-7xlight) !important; }
-
-.bg--blue-8xlight { background-color: var(--mico-color-blue-8xlight) !important; }
-
-/* Blue Shade Background Colors (darker) */
-
-.bg--blue-dark { background-color: var(--mico-color-blue-dark) !important; }
-
-.bg--blue-2xdark { background-color: var(--mico-color-blue-2xdark) !important; }
-
-.bg--blue-3xdark { background-color: var(--mico-color-blue-3xdark) !important; }
-
-.bg--blue-4xdark { background-color: var(--mico-color-blue-4xdark) !important; }
-
-.bg--blue-5xdark { background-color: var(--mico-color-blue-5xdark) !important; }
-
-.bg--blue-6xdark { background-color: var(--mico-color-blue-6xdark) !important; }
-
-.bg--blue-7xdark { background-color: var(--mico-color-blue-7xdark) !important; }
-
-.bg--blue-8xdark { background-color: var(--mico-color-blue-8xdark) !important; }
-
-/* Blue Tint Text Colors (lighter) */
-
-.text--blue-light { color: var(--mico-color-blue-light) !important; }
-
-.text--blue-2xlight { color: var(--mico-color-blue-2xlight) !important; }
-
-.text--blue-3xlight { color: var(--mico-color-blue-3xlight) !important; }
-
-.text--blue-4xlight { color: var(--mico-color-blue-4xlight) !important; }
-
-.text--blue-5xlight { color: var(--mico-color-blue-5xlight) !important; }
-
-.text--blue-6xlight { color: var(--mico-color-blue-6xlight) !important; }
-
-.text--blue-7xlight { color: var(--mico-color-blue-7xlight) !important; }
-
-.text--blue-8xlight { color: var(--mico-color-blue-8xlight) !important; }
-
-/* Blue Shade Text Colors (darker) */
-
-.text--blue-dark { color: var(--mico-color-blue-dark) !important; }
-
-.text--blue-2xdark { color: var(--mico-color-blue-2xdark) !important; }
-
-.text--blue-3xdark { color: var(--mico-color-blue-3xdark) !important; }
-
-.text--blue-4xdark { color: var(--mico-color-blue-4xdark) !important; }
-
-.text--blue-5xdark { color: var(--mico-color-blue-5xdark) !important; }
-
-.text--blue-6xdark { color: var(--mico-color-blue-6xdark) !important; }
-
-.text--blue-7xdark { color: var(--mico-color-blue-7xdark) !important; }
-
-.text--blue-8xdark { color: var(--mico-color-blue-8xdark) !important; }
-
-/**
- * Indigo Color System - OKLCH
- * Base indigo with 5 tints and 5 shades for deep blues, professional themes
- */
-
-/* Indigo Base Color */
-
-.bg--indigo { background-color: var(--mico-color-indigo) !important; }
-
-.text--indigo { color: var(--mico-color-indigo) !important; }
-
-/* Indigo Tint Background Colors (lighter) */
-
-.bg--indigo-light { background-color: var(--mico-color-indigo-light) !important; }
-
-.bg--indigo-2xlight { background-color: var(--mico-color-indigo-2xlight) !important; }
-
-.bg--indigo-3xlight { background-color: var(--mico-color-indigo-3xlight) !important; }
-
-.bg--indigo-4xlight { background-color: var(--mico-color-indigo-4xlight) !important; }
-
-.bg--indigo-5xlight { background-color: var(--mico-color-indigo-5xlight) !important; }
-
-.bg--indigo-6xlight { background-color: var(--mico-color-indigo-6xlight) !important; }
-
-.bg--indigo-7xlight { background-color: var(--mico-color-indigo-7xlight) !important; }
-
-.bg--indigo-8xlight { background-color: var(--mico-color-indigo-8xlight) !important; }
-
-/* Indigo Shade Background Colors (darker) */
-
-.bg--indigo-dark { background-color: var(--mico-color-indigo-dark) !important; }
-
-.bg--indigo-2xdark { background-color: var(--mico-color-indigo-2xdark) !important; }
-
-.bg--indigo-3xdark { background-color: var(--mico-color-indigo-3xdark) !important; }
-
-.bg--indigo-4xdark { background-color: var(--mico-color-indigo-4xdark) !important; }
-
-.bg--indigo-5xdark { background-color: var(--mico-color-indigo-5xdark) !important; }
-
-.bg--indigo-6xdark { background-color: var(--mico-color-indigo-6xdark) !important; }
-
-.bg--indigo-7xdark { background-color: var(--mico-color-indigo-7xdark) !important; }
-
-.bg--indigo-8xdark { background-color: var(--mico-color-indigo-8xdark) !important; }
-
-/* Indigo Tint Text Colors (lighter) */
-
-.text--indigo-light { color: var(--mico-color-indigo-light) !important; }
-
-.text--indigo-2xlight { color: var(--mico-color-indigo-2xlight) !important; }
-
-.text--indigo-3xlight { color: var(--mico-color-indigo-3xlight) !important; }
-
-.text--indigo-4xlight { color: var(--mico-color-indigo-4xlight) !important; }
-
-.text--indigo-5xlight { color: var(--mico-color-indigo-5xlight) !important; }
-
-.text--indigo-6xlight { color: var(--mico-color-indigo-6xlight) !important; }
-
-.text--indigo-7xlight { color: var(--mico-color-indigo-7xlight) !important; }
-
-.text--indigo-8xlight { color: var(--mico-color-indigo-8xlight) !important; }
-
-/* Indigo Shade Text Colors (darker) */
-
-.text--indigo-dark { color: var(--mico-color-indigo-dark) !important; }
-
-.text--indigo-2xdark { color: var(--mico-color-indigo-2xdark) !important; }
-
-.text--indigo-3xdark { color: var(--mico-color-indigo-3xdark) !important; }
-
-.text--indigo-4xdark { color: var(--mico-color-indigo-4xdark) !important; }
-
-.text--indigo-5xdark { color: var(--mico-color-indigo-5xdark) !important; }
-
-.text--indigo-6xdark { color: var(--mico-color-indigo-6xdark) !important; }
-
-.text--indigo-7xdark { color: var(--mico-color-indigo-7xdark) !important; }
-
-.text--indigo-8xdark { color: var(--mico-color-indigo-8xdark) !important; }
-
-/**
- * Purple Color System - OKLCH
- * Base purple with 5 tints and 5 shades for creative themes, luxury
- */
-
-/* Purple Base Color */
-
-.bg--purple { background-color: var(--mico-color-purple) !important; }
-
-.text--purple { color: var(--mico-color-purple) !important; }
-
-/* Purple Tint Background Colors (lighter) */
-
-.bg--purple-light { background-color: var(--mico-color-purple-light) !important; }
-
-.bg--purple-2xlight { background-color: var(--mico-color-purple-2xlight) !important; }
-
-.bg--purple-3xlight { background-color: var(--mico-color-purple-3xlight) !important; }
-
-.bg--purple-4xlight { background-color: var(--mico-color-purple-4xlight) !important; }
-
-.bg--purple-5xlight { background-color: var(--mico-color-purple-5xlight) !important; }
-
-.bg--purple-6xlight { background-color: var(--mico-color-purple-6xlight) !important; }
-
-.bg--purple-7xlight { background-color: var(--mico-color-purple-7xlight) !important; }
-
-.bg--purple-8xlight { background-color: var(--mico-color-purple-8xlight) !important; }
-
-/* Purple Shade Background Colors (darker) */
-
-.bg--purple-dark { background-color: var(--mico-color-purple-dark) !important; }
-
-.bg--purple-2xdark { background-color: var(--mico-color-purple-2xdark) !important; }
-
-.bg--purple-3xdark { background-color: var(--mico-color-purple-3xdark) !important; }
-
-.bg--purple-4xdark { background-color: var(--mico-color-purple-4xdark) !important; }
-
-.bg--purple-5xdark { background-color: var(--mico-color-purple-5xdark) !important; }
-
-.bg--purple-6xdark { background-color: var(--mico-color-purple-6xdark) !important; }
-
-.bg--purple-7xdark { background-color: var(--mico-color-purple-7xdark) !important; }
-
-.bg--purple-8xdark { background-color: var(--mico-color-purple-8xdark) !important; }
-
-/* Purple Tint Text Colors (lighter) */
-
-.text--purple-light { color: var(--mico-color-purple-light) !important; }
-
-.text--purple-2xlight { color: var(--mico-color-purple-2xlight) !important; }
-
-.text--purple-3xlight { color: var(--mico-color-purple-3xlight) !important; }
-
-.text--purple-4xlight { color: var(--mico-color-purple-4xlight) !important; }
-
-.text--purple-5xlight { color: var(--mico-color-purple-5xlight) !important; }
-
-.text--purple-6xlight { color: var(--mico-color-purple-6xlight) !important; }
-
-.text--purple-7xlight { color: var(--mico-color-purple-7xlight) !important; }
-
-.text--purple-8xlight { color: var(--mico-color-purple-8xlight) !important; }
-
-/* Purple Shade Text Colors (darker) */
-
-.text--purple-dark { color: var(--mico-color-purple-dark) !important; }
-
-.text--purple-2xdark { color: var(--mico-color-purple-2xdark) !important; }
-
-.text--purple-3xdark { color: var(--mico-color-purple-3xdark) !important; }
-
-.text--purple-4xdark { color: var(--mico-color-purple-4xdark) !important; }
-
-.text--purple-5xdark { color: var(--mico-color-purple-5xdark) !important; }
-
-.text--purple-6xdark { color: var(--mico-color-purple-6xdark) !important; }
-
-.text--purple-7xdark { color: var(--mico-color-purple-7xdark) !important; }
-
-.text--purple-8xdark { color: var(--mico-color-purple-8xdark) !important; }
-
-/**
- * Pink Color System - OKLCH
- * Base pink with 5 tints and 5 shades for feminine themes, highlights
- */
-
-/* Pink Base Color */
-
-.bg--pink { background-color: var(--mico-color-pink) !important; }
-
-.text--pink { color: var(--mico-color-pink) !important; }
-
-/* Pink Tint Background Colors (lighter) */
-
-.bg--pink-light { background-color: var(--mico-color-pink-light) !important; }
-
-.bg--pink-2xlight { background-color: var(--mico-color-pink-2xlight) !important; }
-
-.bg--pink-3xlight { background-color: var(--mico-color-pink-3xlight) !important; }
-
-.bg--pink-4xlight { background-color: var(--mico-color-pink-4xlight) !important; }
-
-.bg--pink-5xlight { background-color: var(--mico-color-pink-5xlight) !important; }
-
-.bg--pink-6xlight { background-color: var(--mico-color-pink-6xlight) !important; }
-
-.bg--pink-7xlight { background-color: var(--mico-color-pink-7xlight) !important; }
-
-.bg--pink-8xlight { background-color: var(--mico-color-pink-8xlight) !important; }
-
-/* Pink Shade Background Colors (darker) */
-
-.bg--pink-dark { background-color: var(--mico-color-pink-dark) !important; }
-
-.bg--pink-2xdark { background-color: var(--mico-color-pink-2xdark) !important; }
-
-.bg--pink-3xdark { background-color: var(--mico-color-pink-3xdark) !important; }
-
-.bg--pink-4xdark { background-color: var(--mico-color-pink-4xdark) !important; }
-
-.bg--pink-5xdark { background-color: var(--mico-color-pink-5xdark) !important; }
-
-.bg--pink-6xdark { background-color: var(--mico-color-pink-6xdark) !important; }
-
-.bg--pink-7xdark { background-color: var(--mico-color-pink-7xdark) !important; }
-
-.bg--pink-8xdark { background-color: var(--mico-color-pink-8xdark) !important; }
-
-/* Pink Tint Text Colors (lighter) */
-
-.text--pink-light { color: var(--mico-color-pink-light) !important; }
-
-.text--pink-2xlight { color: var(--mico-color-pink-2xlight) !important; }
-
-.text--pink-3xlight { color: var(--mico-color-pink-3xlight) !important; }
-
-.text--pink-4xlight { color: var(--mico-color-pink-4xlight) !important; }
-
-.text--pink-5xlight { color: var(--mico-color-pink-5xlight) !important; }
-
-.text--pink-6xlight { color: var(--mico-color-pink-6xlight) !important; }
-
-.text--pink-7xlight { color: var(--mico-color-pink-7xlight) !important; }
-
-.text--pink-8xlight { color: var(--mico-color-pink-8xlight) !important; }
-
-/* Pink Shade Text Colors (darker) */
-
-.text--pink-dark { color: var(--mico-color-pink-dark) !important; }
-
-.text--pink-2xdark { color: var(--mico-color-pink-2xdark) !important; }
-
-.text--pink-3xdark { color: var(--mico-color-pink-3xdark) !important; }
-
-.text--pink-4xdark { color: var(--mico-color-pink-4xdark) !important; }
-
-.text--pink-5xdark { color: var(--mico-color-pink-5xdark) !important; }
-
-.text--pink-6xdark { color: var(--mico-color-pink-6xdark) !important; }
-
-.text--pink-7xdark { color: var(--mico-color-pink-7xdark) !important; }
-
-.text--pink-8xdark { color: var(--mico-color-pink-8xdark) !important; }
-
-/* ====================================================================== */
-
-/* SEMANTIC COLOR UTILITIES - OKLCH SYSTEM                               */
-
-/* ====================================================================== */
-
-/**
- * Colors that convey meaning and state information with OKLCH variations
- * Each semantic color includes 5 tints and 5 shades for comprehensive usage
- * All colors maintain WCAG AA contrast ratios for accessibility
- */
-
-/* Semantic Base Colors */
+/* Base Semantic Background Colors */
 
 .bg--success { background-color: var(--mico-color-success) !important; }
 
-.bg--warning { background-color: var(--mico-color-warning) !important; }
-
 .bg--error { background-color: var(--mico-color-error) !important; }
+
+.bg--warning { background-color: var(--mico-color-warning) !important; }
 
 .bg--info { background-color: var(--mico-color-info) !important; }
 
-.bg--visited { background-color: var(--mico-color-visited) !important; }
+/* Base Semantic Text Colors */
 
 .text--success { color: var(--mico-color-success) !important; }
 
-.text--warning { color: var(--mico-color-warning) !important; }
-
 .text--error { color: var(--mico-color-error) !important; }
+
+.text--warning { color: var(--mico-color-warning) !important; }
 
 .text--info { color: var(--mico-color-info) !important; }
 
-.text--visited { color: var(--mico-color-visited) !important; }
+/**
+ * Success Color Variations
+ */
 
-/* Success Color Variations */
+/* Success Tint Text Colors (lighter) */
 
-.bg--success-2xlight { background-color: var(--mico-color-success-2xlight) !important; }
-
-.bg--success-3xlight { background-color: var(--mico-color-success-3xlight) !important; }
-
-.bg--success-4xlight { background-color: var(--mico-color-success-4xlight) !important; }
-
-.bg--success-5xlight { background-color: var(--mico-color-success-5xlight) !important; }
-
-.bg--success-6xlight { background-color: var(--mico-color-success-6xlight) !important; }
-
-.bg--success-7xlight { background-color: var(--mico-color-success-7xlight) !important; }
-
-.bg--success-8xlight { background-color: var(--mico-color-success-8xlight) !important; }
-
-.bg--success-2xdark { background-color: var(--mico-color-success-2xdark) !important; }
-
-.bg--success-3xdark { background-color: var(--mico-color-success-3xdark) !important; }
-
-.bg--success-4xdark { background-color: var(--mico-color-success-4xdark) !important; }
-
-.bg--success-5xdark { background-color: var(--mico-color-success-5xdark) !important; }
-
-.bg--success-6xdark { background-color: var(--mico-color-success-6xdark) !important; }
-
-.bg--success-7xdark { background-color: var(--mico-color-success-7xdark) !important; }
-
-.bg--success-8xdark { background-color: var(--mico-color-success-8xdark) !important; }
+.text--success-light { color: var(--mico-color-success-light) !important; }
 
 .text--success-2xlight { color: var(--mico-color-success-2xlight) !important; }
 
@@ -7177,6 +6023,10 @@
 
 .text--success-8xlight { color: var(--mico-color-success-8xlight) !important; }
 
+/* Success Shade Text Colors (darker) */
+
+.text--success-dark { color: var(--mico-color-success-dark) !important; }
+
 .text--success-2xdark { color: var(--mico-color-success-2xdark) !important; }
 
 .text--success-3xdark { color: var(--mico-color-success-3xdark) !important; }
@@ -7191,57 +6041,49 @@
 
 .text--success-8xdark { color: var(--mico-color-success-8xdark) !important; }
 
-/* Warning Color Variations */
+/* Success Tint Background Colors (lighter) */
 
-.bg--warning-2xlight { background-color: var(--mico-color-warning-2xlight) !important; }
+.bg--success-light { background-color: var(--mico-color-success-light) !important; }
 
-.bg--warning-3xlight { background-color: var(--mico-color-warning-3xlight) !important; }
+.bg--success-2xlight { background-color: var(--mico-color-success-2xlight) !important; }
 
-.bg--warning-4xlight { background-color: var(--mico-color-warning-4xlight) !important; }
+.bg--success-3xlight { background-color: var(--mico-color-success-3xlight) !important; }
 
-.bg--warning-5xlight { background-color: var(--mico-color-warning-5xlight) !important; }
+.bg--success-4xlight { background-color: var(--mico-color-success-4xlight) !important; }
 
-.bg--warning-2xdark { background-color: var(--mico-color-warning-2xdark) !important; }
+.bg--success-5xlight { background-color: var(--mico-color-success-5xlight) !important; }
 
-.bg--warning-3xdark { background-color: var(--mico-color-warning-3xdark) !important; }
+.bg--success-6xlight { background-color: var(--mico-color-success-6xlight) !important; }
 
-.bg--warning-4xdark { background-color: var(--mico-color-warning-4xdark) !important; }
+.bg--success-7xlight { background-color: var(--mico-color-success-7xlight) !important; }
 
-.bg--warning-5xdark { background-color: var(--mico-color-warning-5xdark) !important; }
+.bg--success-8xlight { background-color: var(--mico-color-success-8xlight) !important; }
 
-.text--warning-2xlight { color: var(--mico-color-warning-2xlight) !important; }
+/* Success Shade Background Colors (darker) */
 
-.text--warning-3xlight { color: var(--mico-color-warning-3xlight) !important; }
+.bg--success-dark { background-color: var(--mico-color-success-dark) !important; }
 
-.text--warning-4xlight { color: var(--mico-color-warning-4xlight) !important; }
+.bg--success-2xdark { background-color: var(--mico-color-success-2xdark) !important; }
 
-.text--warning-5xlight { color: var(--mico-color-warning-5xlight) !important; }
+.bg--success-3xdark { background-color: var(--mico-color-success-3xdark) !important; }
 
-.text--warning-2xdark { color: var(--mico-color-warning-2xdark) !important; }
+.bg--success-4xdark { background-color: var(--mico-color-success-4xdark) !important; }
 
-.text--warning-3xdark { color: var(--mico-color-warning-3xdark) !important; }
+.bg--success-5xdark { background-color: var(--mico-color-success-5xdark) !important; }
 
-.text--warning-4xdark { color: var(--mico-color-warning-4xdark) !important; }
+.bg--success-6xdark { background-color: var(--mico-color-success-6xdark) !important; }
 
-.text--warning-5xdark { color: var(--mico-color-warning-5xdark) !important; }
+.bg--success-7xdark { background-color: var(--mico-color-success-7xdark) !important; }
 
-/* Error Color Variations */
+.bg--success-8xdark { background-color: var(--mico-color-success-8xdark) !important; }
 
-.bg--error-2xlight { background-color: var(--mico-color-error-2xlight) !important; }
+/**
+ * Error Color Variations
+ */
 
-.bg--error-3xlight { background-color: var(--mico-color-error-3xlight) !important; }
+/* Error Tint Text Colors (lighter) */
 
-.bg--error-4xlight { background-color: var(--mico-color-error-4xlight) !important; }
-
-.bg--error-5xlight { background-color: var(--mico-color-error-5xlight) !important; }
-
-.bg--error-2xdark { background-color: var(--mico-color-error-2xdark) !important; }
-
-.bg--error-3xdark { background-color: var(--mico-color-error-3xdark) !important; }
-
-.bg--error-4xdark { background-color: var(--mico-color-error-4xdark) !important; }
-
-.bg--error-5xdark { background-color: var(--mico-color-error-5xdark) !important; }
+.text--error-light { color: var(--mico-color-error-light) !important; }
 
 .text--error-2xlight { color: var(--mico-color-error-2xlight) !important; }
 
@@ -7251,6 +6093,16 @@
 
 .text--error-5xlight { color: var(--mico-color-error-5xlight) !important; }
 
+.text--error-6xlight { color: var(--mico-color-error-6xlight) !important; }
+
+.text--error-7xlight { color: var(--mico-color-error-7xlight) !important; }
+
+.text--error-8xlight { color: var(--mico-color-error-8xlight) !important; }
+
+/* Error Shade Text Colors (darker) */
+
+.text--error-dark { color: var(--mico-color-error-dark) !important; }
+
 .text--error-2xdark { color: var(--mico-color-error-2xdark) !important; }
 
 .text--error-3xdark { color: var(--mico-color-error-3xdark) !important; }
@@ -7259,23 +6111,131 @@
 
 .text--error-5xdark { color: var(--mico-color-error-5xdark) !important; }
 
-/* Info Color Variations */
+.text--error-6xdark { color: var(--mico-color-error-6xdark) !important; }
 
-.bg--info-2xlight { background-color: var(--mico-color-info-2xlight) !important; }
+.text--error-7xdark { color: var(--mico-color-error-7xdark) !important; }
 
-.bg--info-3xlight { background-color: var(--mico-color-info-3xlight) !important; }
+.text--error-8xdark { color: var(--mico-color-error-8xdark) !important; }
 
-.bg--info-4xlight { background-color: var(--mico-color-info-4xlight) !important; }
+/* Error Tint Background Colors (lighter) */
 
-.bg--info-5xlight { background-color: var(--mico-color-info-5xlight) !important; }
+.bg--error-light { background-color: var(--mico-color-error-light) !important; }
 
-.bg--info-2xdark { background-color: var(--mico-color-info-2xdark) !important; }
+.bg--error-2xlight { background-color: var(--mico-color-error-2xlight) !important; }
 
-.bg--info-3xdark { background-color: var(--mico-color-info-3xdark) !important; }
+.bg--error-3xlight { background-color: var(--mico-color-error-3xlight) !important; }
 
-.bg--info-4xdark { background-color: var(--mico-color-info-4xdark) !important; }
+.bg--error-4xlight { background-color: var(--mico-color-error-4xlight) !important; }
 
-.bg--info-5xdark { background-color: var(--mico-color-info-5xdark) !important; }
+.bg--error-5xlight { background-color: var(--mico-color-error-5xlight) !important; }
+
+.bg--error-6xlight { background-color: var(--mico-color-error-6xlight) !important; }
+
+.bg--error-7xlight { background-color: var(--mico-color-error-7xlight) !important; }
+
+.bg--error-8xlight { background-color: var(--mico-color-error-8xlight) !important; }
+
+/* Error Shade Background Colors (darker) */
+
+.bg--error-dark { background-color: var(--mico-color-error-dark) !important; }
+
+.bg--error-2xdark { background-color: var(--mico-color-error-2xdark) !important; }
+
+.bg--error-3xdark { background-color: var(--mico-color-error-3xdark) !important; }
+
+.bg--error-4xdark { background-color: var(--mico-color-error-4xdark) !important; }
+
+.bg--error-5xdark { background-color: var(--mico-color-error-5xdark) !important; }
+
+.bg--error-6xdark { background-color: var(--mico-color-error-6xdark) !important; }
+
+.bg--error-7xdark { background-color: var(--mico-color-error-7xdark) !important; }
+
+.bg--error-8xdark { background-color: var(--mico-color-error-8xdark) !important; }
+
+/**
+ * Warning Color Variations
+ */
+
+/* Warning Tint Text Colors (lighter) */
+
+.text--warning-light { color: var(--mico-color-warning-light) !important; }
+
+.text--warning-2xlight { color: var(--mico-color-warning-2xlight) !important; }
+
+.text--warning-3xlight { color: var(--mico-color-warning-3xlight) !important; }
+
+.text--warning-4xlight { color: var(--mico-color-warning-4xlight) !important; }
+
+.text--warning-5xlight { color: var(--mico-color-warning-5xlight) !important; }
+
+.text--warning-6xlight { color: var(--mico-color-warning-6xlight) !important; }
+
+.text--warning-7xlight { color: var(--mico-color-warning-7xlight) !important; }
+
+.text--warning-8xlight { color: var(--mico-color-warning-8xlight) !important; }
+
+/* Warning Shade Text Colors (darker) */
+
+.text--warning-dark { color: var(--mico-color-warning-dark) !important; }
+
+.text--warning-2xdark { color: var(--mico-color-warning-2xdark) !important; }
+
+.text--warning-3xdark { color: var(--mico-color-warning-3xdark) !important; }
+
+.text--warning-4xdark { color: var(--mico-color-warning-4xdark) !important; }
+
+.text--warning-5xdark { color: var(--mico-color-warning-5xdark) !important; }
+
+.text--warning-6xdark { color: var(--mico-color-warning-6xdark) !important; }
+
+.text--warning-7xdark { color: var(--mico-color-warning-7xdark) !important; }
+
+.text--warning-8xdark { color: var(--mico-color-warning-8xdark) !important; }
+
+/* Warning Tint Background Colors (lighter) */
+
+.bg--warning-light { background-color: var(--mico-color-warning-light) !important; }
+
+.bg--warning-2xlight { background-color: var(--mico-color-warning-2xlight) !important; }
+
+.bg--warning-3xlight { background-color: var(--mico-color-warning-3xlight) !important; }
+
+.bg--warning-4xlight { background-color: var(--mico-color-warning-4xlight) !important; }
+
+.bg--warning-5xlight { background-color: var(--mico-color-warning-5xlight) !important; }
+
+.bg--warning-6xlight { background-color: var(--mico-color-warning-6xlight) !important; }
+
+.bg--warning-7xlight { background-color: var(--mico-color-warning-7xlight) !important; }
+
+.bg--warning-8xlight { background-color: var(--mico-color-warning-8xlight) !important; }
+
+/* Warning Shade Background Colors (darker) */
+
+.bg--warning-dark { background-color: var(--mico-color-warning-dark) !important; }
+
+.bg--warning-2xdark { background-color: var(--mico-color-warning-2xdark) !important; }
+
+.bg--warning-3xdark { background-color: var(--mico-color-warning-3xdark) !important; }
+
+.bg--warning-4xdark { background-color: var(--mico-color-warning-4xdark) !important; }
+
+.bg--warning-5xdark { background-color: var(--mico-color-warning-5xdark) !important; }
+
+.bg--warning-6xdark { background-color: var(--mico-color-warning-6xdark) !important; }
+
+.bg--warning-7xdark { background-color: var(--mico-color-warning-7xdark) !important; }
+
+.bg--warning-8xdark { background-color: var(--mico-color-warning-8xdark) !important; }
+
+/**
+ * Info Color Variations
+ */
+
+/* Info Tint Text Colors (lighter) */
+
+.text--info-light { color: var(--mico-color-info-light) !important; }
 
 .text--info-2xlight { color: var(--mico-color-info-2xlight) !important; }
 
@@ -7285,6 +6245,16 @@
 
 .text--info-5xlight { color: var(--mico-color-info-5xlight) !important; }
 
+.text--info-6xlight { color: var(--mico-color-info-6xlight) !important; }
+
+.text--info-7xlight { color: var(--mico-color-info-7xlight) !important; }
+
+.text--info-8xlight { color: var(--mico-color-info-8xlight) !important; }
+
+/* Info Shade Text Colors (darker) */
+
+.text--info-dark { color: var(--mico-color-info-dark) !important; }
+
 .text--info-2xdark { color: var(--mico-color-info-2xdark) !important; }
 
 .text--info-3xdark { color: var(--mico-color-info-3xdark) !important; }
@@ -7293,39 +6263,109 @@
 
 .text--info-5xdark { color: var(--mico-color-info-5xdark) !important; }
 
-/* Visited Color Variations */
+.text--info-6xdark { color: var(--mico-color-info-6xdark) !important; }
 
-.bg--visited-2xlight { background-color: var(--mico-color-visited-2xlight) !important; }
+.text--info-7xdark { color: var(--mico-color-info-7xdark) !important; }
 
-.bg--visited-3xlight { background-color: var(--mico-color-visited-3xlight) !important; }
+.text--info-8xdark { color: var(--mico-color-info-8xdark) !important; }
 
-.bg--visited-4xlight { background-color: var(--mico-color-visited-4xlight) !important; }
+/* Info Tint Background Colors (lighter) */
 
-.bg--visited-5xlight { background-color: var(--mico-color-visited-5xlight) !important; }
+.bg--info-light { background-color: var(--mico-color-info-light) !important; }
 
-.bg--visited-2xdark { background-color: var(--mico-color-visited-2xdark) !important; }
+.bg--info-2xlight { background-color: var(--mico-color-info-2xlight) !important; }
 
-.bg--visited-3xdark { background-color: var(--mico-color-visited-3xdark) !important; }
+.bg--info-3xlight { background-color: var(--mico-color-info-3xlight) !important; }
 
-.bg--visited-4xdark { background-color: var(--mico-color-visited-4xdark) !important; }
+.bg--info-4xlight { background-color: var(--mico-color-info-4xlight) !important; }
 
-.bg--visited-5xdark { background-color: var(--mico-color-visited-5xdark) !important; }
+.bg--info-5xlight { background-color: var(--mico-color-info-5xlight) !important; }
 
-.text--visited-2xlight { color: var(--mico-color-visited-2xlight) !important; }
+.bg--info-6xlight { background-color: var(--mico-color-info-6xlight) !important; }
 
-.text--visited-3xlight { color: var(--mico-color-visited-3xlight) !important; }
+.bg--info-7xlight { background-color: var(--mico-color-info-7xlight) !important; }
 
-.text--visited-4xlight { color: var(--mico-color-visited-4xlight) !important; }
+.bg--info-8xlight { background-color: var(--mico-color-info-8xlight) !important; }
 
-.text--visited-5xlight { color: var(--mico-color-visited-5xlight) !important; }
+/* Info Shade Background Colors (darker) */
 
-.text--visited-2xdark { color: var(--mico-color-visited-2xdark) !important; }
+.bg--info-dark { background-color: var(--mico-color-info-dark) !important; }
 
-.text--visited-3xdark { color: var(--mico-color-visited-3xdark) !important; }
+.bg--info-2xdark { background-color: var(--mico-color-info-2xdark) !important; }
 
-.text--visited-4xdark { color: var(--mico-color-visited-4xdark) !important; }
+.bg--info-3xdark { background-color: var(--mico-color-info-3xdark) !important; }
 
-.text--visited-5xdark { color: var(--mico-color-visited-5xdark) !important; }
+.bg--info-4xdark { background-color: var(--mico-color-info-4xdark) !important; }
+
+.bg--info-5xdark { background-color: var(--mico-color-info-5xdark) !important; }
+
+.bg--info-6xdark { background-color: var(--mico-color-info-6xdark) !important; }
+
+.bg--info-7xdark { background-color: var(--mico-color-info-7xdark) !important; }
+
+.bg--info-8xdark { background-color: var(--mico-color-info-8xdark) !important; }
+
+/* ====================================================================== */
+
+/* EXTENDED COLOR UTILITIES - BASE COLORS ONLY                          */
+
+/* ====================================================================== */
+
+/**
+ * Extended Colors - Base Colors Only
+ * These colors are available as base colors only (no tints/shades)
+ * to reduce framework size while maintaining color variety.
+ */
+
+/* Neutral Colors - Base Only */
+
+.bg--black { background-color: var(--mico-color-black) !important; }
+
+.bg--gray { background-color: var(--mico-color-gray) !important; }
+
+.bg--white { background-color: var(--mico-color-white) !important; }
+
+.text--black { color: var(--mico-color-black) !important; }
+
+.text--gray { color: var(--mico-color-gray) !important; }
+
+.text--white { color: var(--mico-color-white) !important; }
+
+/* Extended Palette - Base Only */
+
+.bg--red { background-color: var(--mico-color-red) !important; }
+
+.bg--yellow { background-color: var(--mico-color-yellow) !important; }
+
+.bg--green { background-color: var(--mico-color-green) !important; }
+
+.bg--blue { background-color: var(--mico-color-blue) !important; }
+
+.bg--indigo { background-color: var(--mico-color-indigo) !important; }
+
+.bg--purple { background-color: var(--mico-color-purple) !important; }
+
+.bg--pink { background-color: var(--mico-color-pink) !important; }
+
+.text--red { color: var(--mico-color-red) !important; }
+
+.text--yellow { color: var(--mico-color-yellow) !important; }
+
+.text--green { color: var(--mico-color-green) !important; }
+
+.text--blue { color: var(--mico-color-blue) !important; }
+
+.text--indigo { color: var(--mico-color-indigo) !important; }
+
+.text--purple { color: var(--mico-color-purple) !important; }
+
+.text--pink { color: var(--mico-color-pink) !important; }
+
+/* Link Colors - Base Only */
+
+.bg--visited { background-color: var(--mico-color-visited) !important; }
+
+.text--visited { color: var(--mico-color-visited) !important; }
 
 /**
  * Mico CSS Framework - Interactive States
