@@ -181,10 +181,10 @@ git commit -am "Backup before Mico CSS v1.0.0 migration"
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelkatiba/mico@v0.2.5/dist/css/mico.min.css">
 
 <!-- New v1.0.0 (NPM CDN - Recommended) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mico-css@1.0.0/dist/css/mico.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@micoframework/micocss@1.0.0/dist/css/mico.min.css">
 
 <!-- Alternative: Latest version -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mico-css@latest/dist/css/mico.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@micoframework/micocss@latest/dist/css/mico.min.css">
 ```
 
 ### **3. Run Find & Replace**

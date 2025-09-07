@@ -1,5 +1,5 @@
 {
-  "name": "mico-css",
+  "name": "@micoframework/micocss",
   "version": "1.0.0",
   "description": "A lightweight utility-first CSS framework with semantic double-dash naming convention. Perfect for WordPress, modern web apps, and any project requiring clean, maintainable CSS.",
   "main": "dist/css/mico.min.css",

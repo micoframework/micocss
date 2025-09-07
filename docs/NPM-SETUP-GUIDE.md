@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/micoframework/micocss@v1.0.0/dist/css/mico.min.css">
 
 <!-- NPM CDN (New - Recommended) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mico-css@1.0.0/dist/css/mico.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@micoframework/micocss@1.0.0/dist/css/mico.min.css">
 ```
 
 ---
@@ -50,13 +50,13 @@ npm whoami
 
 #### **2.1 Check Package Name Availability**
 ```bash
-npm view mico-css
+npm view @micoframework/micocss
 # Should return 404 if available, or show existing package info
 ```
 
 #### **2.2 Verify Package.json**
 ✅ **Already Updated** - Current package.json includes:
-- ✅ `"name": "mico-css"`
+- ✅ `"name": "@micoframework/micocss"`
 - ✅ `"version": "1.0.0"`
 - ✅ Repository information
 - ✅ Keywords for discoverability
@@ -112,7 +112,7 @@ npm pack --dry-run
 # Create a test package
 npm pack
 
-# This creates mico-css-1.0.0.tgz
+# This creates micoframework-micocss-1.0.0.tgz
 # You can test install this locally in another project
 ```
 
@@ -132,16 +132,16 @@ npm pack
 npm publish
 
 # If successful, you'll see:
-# + mico-css@1.0.0
+# + @micoframework/micocss@1.0.0
 ```
 
 #### **5.3 Verify Publication**
 ```bash
 # Check if package is live
-npm view mico-css
+npm view @micoframework/micocss
 
 # Test CDN availability (may take a few minutes)
-curl -I https://cdn.jsdelivr.net/npm/mico-css@1.0.0/dist/css/mico.min.css
+curl -I https://cdn.jsdelivr.net/npm/@micoframework/micocss@1.0.0/dist/css/mico.min.css
 ```
 
 ---
@@ -160,8 +160,8 @@ Files to update with NPM CDN links:
 #### **6.2 Test NPM CDN**
 ```html
 <!-- Test these URLs in browser -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mico-css@1.0.0/dist/css/mico.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mico-css@latest/dist/css/mico.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@micoframework/micocss@1.0.0/dist/css/mico.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@micoframework/micocss@latest/dist/css/mico.min.css">
 ```
 
 ### **Step 7: GitHub Release**
@@ -184,7 +184,7 @@ git push origin v1.0.0
 
 ## 🚀 Now Available on NPM!
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mico-css@1.0.0/dist/css/mico.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@micoframework/micocss@1.0.0/dist/css/mico.min.css">
 ```
 
 ## ⚠️ Breaking Changes
@@ -198,8 +198,8 @@ git push origin v1.0.0
 - Modern CSS standards
 
 ## 📦 Installation
-- **CDN**: `https://cdn.jsdelivr.net/npm/mico-css@1.0.0/dist/css/mico.min.css`
-- **NPM**: `npm install mico-css`
+- **CDN**: `https://cdn.jsdelivr.net/npm/@micoframework/micocss@1.0.0/dist/css/mico.min.css`
+- **NPM**: `npm install @micoframework/micocss`
 ```
 
 ---
@@ -210,8 +210,8 @@ git push origin v1.0.0
 ```php
 function enqueue_mico_css() {
     wp_enqueue_style(
-        'mico-css', 
-        'https://cdn.jsdelivr.net/npm/mico-css@1.0.0/dist/css/mico.min.css',
+        'micocss',
+        'https://cdn.jsdelivr.net/npm/@micoframework/micocss@1.0.0/dist/css/mico.min.css',
         array(),
         '1.0.0'
     );
@@ -222,7 +222,7 @@ add_action('wp_enqueue_scripts', 'enqueue_mico_css');
 ### **Plugin Integration**
 ```php
 // For plugin developers
-wp_enqueue_style('mico-css', 'https://cdn.jsdelivr.net/npm/mico-css@latest/dist/css/mico.min.css');
+wp_enqueue_style('micocss', 'https://cdn.jsdelivr.net/npm/@micoframework/micocss@latest/dist/css/mico.min.css');
 ```
 
 ---
@@ -294,6 +294,20 @@ npm run build:clean
 - ✅ Clear documentation
 - ✅ WordPress compatibility
 - ✅ Migration guide available
+
+---
+
+## 🎯 **Expected Outcomes**
+
+### **NPM Package:**
+- **URL**: https://www.npmjs.com/package/@micoframework/micocss
+- **CDN**: https://cdn.jsdelivr.net/npm/@micoframework/micocss@1.0.0/dist/css/mico.min.css
+- **Install**: `npm install @micoframework/micocss`
+
+### **WordPress Integration:**
+```php
+wp_enqueue_style('micocss', 'https://cdn.jsdelivr.net/npm/@micoframework/micocss@1.0.0/dist/css/mico.min.css');
+```
 
 ---
 
