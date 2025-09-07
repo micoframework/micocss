@@ -1,32 +1,33 @@
 # Mico CSS Framework
 
-Welcome to Mico - a utility-first CSS framework for building beautiful, responsive, and customizable websites with ease!
+A modern, utility-first CSS framework for building beautiful, responsive websites with ease.
 
 Mico is a lightweight and versatile CSS framework designed to make building responsive and beautiful web interfaces a breeze. With Mico's utility classes, you can quickly create modern and stylish websites without the bloat of larger frameworks.
 
 ## Features
 
-- **Utility-First Approach**: Build custom designs without leaving your HTML using composable utility classes.
-- **Responsive Design**: Mico ensures that your website looks great on any device, from desktops to smartphones.
-- **Easy to Use**: With intuitive utility classes, Mico makes it simple to create stunning layouts.
-- **Customizable**: Tailor Mico to fit your unique style with customizable variables and utility classes.
-- **Lightweight**: Mico is designed to be lightweight, ensuring fast loading times for your website.
-- **Flexible**: Whether you're building a blog, portfolio, or e-commerce site, Mico adapts to your needs.
-- **Accessible**: Built with accessibility in mind, following WCAG 2.1 AA standards.
-- **Dark Mode Support**: Seamlessly switch between light and dark modes.
-- **Theming System**: Create custom themes with ease.
+- **Utility-First Approach**: Build custom designs without leaving your HTML using composable utility classes
+- **Responsive Design**: Looks great on any device, from desktops to smartphones
+- **Easy to Use**: Intuitive utility classes make it simple to create stunning layouts
+- **Customizable**: Tailor Mico to fit your unique style with CSS variables
+- **Lightweight**: Designed for fast loading times
+- **Flexible**: Adapts to any project - blogs, portfolios, e-commerce sites, and more
+- **Accessible**: Built following WCAG 2.1 AA standards
+- **Modern CSS**: Uses OKLCH colors, logical properties, and rem-based scaling
 
-## Getting Started
+## Quick Start
 
-### Via CDN
+### Via CDN (Recommended)
 
-Add the following link tag to your HTML file:
+Add this single line to your HTML `<head>`:
 
 ```html
-<!-- Latest version (recommended) -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@micoframework/micocss@latest/dist/css/mico.min.css">
+```
 
-<!-- Specific version (for production) -->
+For production, use a specific version:
+
+```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@micoframework/micocss@1.0.0/dist/css/mico.min.css">
 ```
 
@@ -36,7 +37,7 @@ Add the following link tag to your HTML file:
 npm install @micoframework/micocss
 ```
 
-Then import in your project:
+Then import in your CSS:
 
 ```css
 @import '@micoframework/micocss/dist/css/mico.min.css';
@@ -48,77 +49,23 @@ Or in JavaScript:
 import '@micoframework/micocss/dist/css/mico.min.css';
 ```
 
-For JavaScript functionality (theme switching, etc.):
+### WordPress Integration
 
-```html
-<script src="https://cdn.jsdelivr.net/gh/michaelkatiba/mico@latest/dist/js/mico.min.js"></script>
-```
-
-### Local Installation
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/michaelkatiba/mico.git
-```
-
-2. Install dependencies:
-
-```bash
-npm install
-```
-
-3. Build the CSS:
-
-```bash
-npm run build:css
-```
-
-4. Link the CSS in your HTML:
-
-```html
-<link rel="stylesheet" href="path/to/dist/css/mico.min.css">
-```
-
-### WordPress (Oxygen Builder Integration)
-_More integration coming soon_
-
-Add this code snippet using your preferred code snippet plugin:
+Add Mico to your WordPress site by adding this to your theme's functions.php or using a code snippets plugin:
 
 ```php
 function enqueue_mico_framework() {
-    if (defined('SHOW_CT_BUILDER') && !defined('OXYGEN_IFRAME')) {
-        return;
-    }
-
     wp_enqueue_style(
         'mico-framework',
-        'https://cdn.jsdelivr.net/gh/michaelkatiba/mico@latest/dist/css/mico.min.css',
+        'https://cdn.jsdelivr.net/npm/@micoframework/micocss@latest/dist/css/mico.min.css',
         array(),
         '1.0.0'
     );
-
-    wp_enqueue_script(
-        'mico-framework-js',
-        'https://cdn.jsdelivr.net/gh/michaelkatiba/mico@latest/dist/js/mico.min.js',
-        array(),
-        '1.0.0',
-        true
-    );
 }
-add_action('wp_enqueue_scripts', 'enqueue_mico_framework', 999);
+add_action('wp_enqueue_scripts', 'enqueue_mico_framework');
 ```
 
-### Usage with Astro
-
-Import Mico in your Astro project:
-
-```astro
----
-// In your Astro layout or component
-import '../path/to/dist/css/mico.min.css';
----
-```
+Most WordPress themes and page builders also have sections for adding custom CSS/JS resources where you can simply paste the CDN link.
 
 ## Customization
 
@@ -131,78 +78,81 @@ Mico uses CSS variables for easy customization. Override them in your own CSS:
   --mico-color-primary: #3498db;
   --mico-color-secondary: #2ecc71;
   --mico-color-accent: #e74c3c;
+  --mico-font-family-base: 'Inter', sans-serif;
+  --mico-border-radius-base: 0.5rem;
 }
-```
-
-### Using the Theme System
-
-Mico includes a powerful theming system. Add the theme CSS and JavaScript:
-
-```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelkatiba/mico@latest/dist/css/themes/theme.min.css">
-<script src="https://cdn.jsdelivr.net/gh/michaelkatiba/mico@latest/dist/js/mico.theme.min.js"></script>
-```
-
-Then use the theme attributes:
-
-```html
-<!-- Theme toggle button -->
-<button data-theme-toggle>Toggle Dark Mode</button>
-
-<!-- Theme selector dropdown -->
-<select data-theme-select>
-  <option value="system">System Preference</option>
-  <option value="light">Light</option>
-  <option value="dark">Dark</option>
-  <option value="ocean">Ocean</option>
-  <option value="forest">Forest</option>
-  <option value="sunset">Sunset</option>
-</select>
 ```
 
 ### Creating a Custom Build
 
-You can create a custom build with only the utilities you need:
+Want to include only the utilities you need? Create a custom build to reduce file size:
 
-1. Edit the `mico.config.js` file to include only the utilities you need.
-2. Run the custom build script:
+1. **Install Mico via NPM** (required for custom builds):
+   ```bash
+   npm install @micoframework/micocss
+   ```
 
-```bash
-npm run build:custom
-```
+2. **Create a configuration file** (`mico.config.js`) in your project root:
+   ```javascript
+   module.exports = {
+     utilities: [
+       'spacing',      // margin, padding utilities
+       'typography',   // font, text utilities
+       'colors',       // background, text colors
+       'layout',       // display, grid, flex utilities
+       'borders',      // border, radius utilities
+       // Add only the utilities you need
+     ]
+   };
+   ```
 
-3. Use the custom build in your HTML:
+3. **Run the custom build**:
+   ```bash
+   npx mico build
+   ```
+
+4. **Use your custom build**:
+   ```html
+   <link rel="stylesheet" href="dist/mico.custom.min.css">
+   ```
+
+This approach can reduce your CSS bundle size by up to 70% depending on which utilities you include.
+
+## Usage Examples
+
+Mico provides a comprehensive set of utility classes for building custom interfaces. Here are some examples to get you started:
+
+### Basic Layout
 
 ```html
-<link rel="stylesheet" href="path/to/dist/css/mico.custom.min.css">
+<!-- Flexbox container with spacing -->
+<div class="d--flex justify--center align--center p--4 gap--3">
+  <div class="bg--primary text--white p--3 rounded">Item 1</div>
+  <div class="bg--secondary text--white p--3 rounded">Item 2</div>
+  <div class="bg--accent text--white p--3 rounded">Item 3</div>
+</div>
 ```
 
-## Utility Classes
-
-Mico provides a comprehensive set of utility classes for building custom interfaces. Here are a few examples:
-
-### Example: Button
+### Responsive Grid
 
 ```html
-<button class="btn btn-primary">Primary Button</button>
-<button class="btn btn-secondary">Secondary Button</button>
-<button class="btn btn-sm">Small Button</button>
-<button class="btn btn-lg">Large Button</button>
-<button class="btn btn-outline">Outline Button</button>
+<!-- Responsive grid layout -->
+<div class="grid grid--cols-1 md:grid--cols-2 lg:grid--cols-3 gap--4">
+  <div class="bg--light p--4 rounded shadow--sm">Card 1</div>
+  <div class="bg--light p--4 rounded shadow--sm">Card 2</div>
+  <div class="bg--light p--4 rounded shadow--sm">Card 3</div>
+</div>
 ```
 
-### Example: Card-like Element Using Utilities
+### Typography & Buttons
 
 ```html
-<div class="d-flex flex-column border rounded overflow-hidden">
-  <div class="p-3 bg-light border-bottom">Card Header</div>
-  <div class="p-4 flex-grow-1">
-    <h3 class="mb-3">Card Title</h3>
-    <p class="mb-0">This is a card with some content.</p>
-  </div>
-  <div class="p-3 bg-light border-top">
-    <button class="btn btn-sm btn-primary">Read More</button>
-  </div>
+<!-- Typography and button examples -->
+<div class="text--center p--6">
+  <h1 class="text--3xl font--bold mb--4">Welcome to Mico</h1>
+  <p class="text--lg text--gray-600 mb--6">Build beautiful interfaces with utility classes</p>
+  <button class="btn btn--primary btn--lg">Get Started</button>
+  <button class="btn btn--outline btn--lg ml--3">Learn More</button>
 </div>
 ```
 
@@ -216,74 +166,17 @@ Mico supports all modern browsers:
 - Edge (latest)
 - Opera (latest)
 
-## Usage Notes
+## Resources
 
-- Production-ready for most projects
-- Optimized for performance and accessibility
-- Actively being developed with frequent updates
+- **Documentation**: [micocss.com](https://micocss.com) _(coming soon)_
+- **GitHub Repository**: [github.com/micoframework/micocss](https://github.com/micoframework/micocss)
+- **NPM Package**: [@micoframework/micocss](https://www.npmjs.com/package/@micoframework/micocss)
+- **CDN**: [jsdelivr.net](https://cdn.jsdelivr.net/npm/@micoframework/micocss@latest/dist/css/mico.min.css)
 
-## Feedback
+## Contributing
 
-Your feedback and bug reports are valuable to us as we work towards improving Mico. Feel free to open issues on GitHub.
-
-## 📁 Project Structure
-
-```
-mico/
-├── src/                          # Source files (development)
-│   ├── css/                      # CSS source files
-│   │   ├── core/                 # Core framework files
-│   │   │   ├── variables.css     # CSS custom properties
-│   │   │   └── reset.css         # CSS reset/normalize
-│   │   ├── utilities/            # Utility classes
-│   │   │   ├── spacing.css       # Margin, padding utilities
-│   │   │   ├── typography.css    # Font, text utilities
-│   │   │   ├── colors.css        # Background, text colors
-│   │   │   ├── borders.css       # Border, radius utilities
-│   │   │   ├── layout.css        # Display, grid, flex utilities
-│   │   │   └── states.css        # Hover, focus, active states
-│   │   └── mico.css              # Main entry point
-│   ├── js/                       # JavaScript source files
-│   └── jit/                      # Just-in-time compilation
-├── dist/                         # Built files (production)
-│   ├── css/
-│   │   ├── mico.css              # Full framework (unminified)
-│   │   ├── mico.min.css          # Full framework (minified)
-│   │   ├── variables.css         # Variables only
-│   │   └── variables.min.css     # Variables only (minified)
-│   └── js/
-│       ├── mico.js               # Framework JS (unminified)
-│       └── mico.min.js           # Framework JS (minified)
-├── docs/                         # Documentation
-│   └── guidelines/               # Development guidelines
-├── build/                        # Build scripts
-├── tests/                        # Test files
-└── sandbox/                      # Development playground
-```
-
-## 🎨 Framework Philosophy
-
-**Mico CSS** follows a **utility-first approach** with **semantic naming conventions**:
-
-### **Double-Dash Convention**
-Mico uses a unique **BEM-inspired naming convention** that provides semantic clarity:
-
-- **Property + Value = Double-dash**: `.w--100`, `.m--4`, `.bg--primary`
-- **Direct CSS Values = Single-dash**: `.flex`, `.inline-block`, `.space-between`
-
-This creates **self-documenting** utility classes that are easy to understand and maintain.
-
-### **Modern CSS Standards**
-- **OKLCH Color System**: Perceptually uniform colors
-- **Logical Properties**: `margin-inline`, `margin-block` for internationalization
-- **CSS Custom Properties**: Dynamic theming and customization
-- **Rem-Based Scaling**: Consistent typography and spacing
-
-## 🚀 Version History
-
-- **v0.2.5**: Previous release with single-dash convention
-- **v1.0.0**: (Upcoming) Major release with double-dash convention and modern CSS standards
+We welcome contributions! Please feel free to submit issues and pull requests on our [GitHub repository](https://github.com/micoframework/micocss).
 
 ---
 
-For more information and documentation, visit our [GitHub repository](https://github.com/MichaelKatiba/mico).
+**Mico CSS** - Build beautiful, responsive websites with utility-first CSS.
