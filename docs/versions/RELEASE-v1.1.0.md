@@ -24,8 +24,7 @@
 ### 🎨 **Color System Improvements**
 - **Strategic Color Preservation** - kept full 8 tints + 8 shades for essential colors:
   - ✅ Primary, Secondary, Accent (brand colors)
-  - ✅ Success, Error, Warning, Info (semantic colors)
-- **Extended Colors Simplified** - base colors only for red, yellow, green, blue, indigo, purple, pink, black, gray, white
+  - ✅ Success, Error, Warning, Info (semantic colors) and Neutral colors.
 - **Reduced Color Bloat** - removed 190+ unnecessary color variables
 
 ### 🔧 **Layout Utilities Enhancement**
@@ -58,11 +57,6 @@
 npm install @micoframework/micocss@1.1.0
 ```
 
-### yarn
-```bash
-yarn add @micoframework/micocss@1.1.0
-```
-
 ## 🔄 Migration from v1.0.0
 
 **✅ Fully Backward Compatible** - No breaking changes! All existing utility classes continue to work exactly as before.
@@ -70,7 +64,7 @@ yarn add @micoframework/micocss@1.1.0
 **Optional Enhancements:**
 - Consider using the new `.layout-grid` system for advanced page layouts
 - Take advantage of the optimized color system for better performance
-- Update CDN links to v1.1.0 for the performance benefits
+- Update CDN links to v1.1.0 for new updates and performance benefits
 
 ## 🌐 Browser Support
 
