@@ -214,7 +214,7 @@ ${changes}
         }
     }
 
-    async release(options = {}) {
+    release(options = {}) {
         console.log('🚀 Starting GitHub Release Process...\n');
         
         const analysis = this.analyzeChanges();
@@ -258,14 +258,19 @@ ${changes}
 // CLI usage
 if (require.main === module) {
     const iv = new IntelligentVersioning();
-    
+
     const command = process.argv[2];
     switch (command) {
         case 'analyze':
             iv.analyzeChanges();
             break;
         case 'release':
-            iv.release({ autoConfirm: process.argv.includes('--auto-confirm') });
+            try {
+                iv.release({ autoConfirm: process.argv.includes('--auto-confirm') });
+            } catch (error) {
+                console.error('❌ Release failed:', error.message);
+                process.exit(1);
+            }
             break;
         default:
             console.log('Usage: node scripts/intelligent-version.js [analyze|release]');
