@@ -1,182 +1,168 @@
 # Mico CSS Framework
 
-A modern, utility-first CSS framework for building beautiful, responsive websites with ease.
+An intelligent utility-first CSS framework for faster UI builds and zero CSS headaches. Perfect for frontend developers, WordPress, modern web apps, and any project requiring clean, maintainable CSS.
 
-Mico is a lightweight and versatile CSS framework designed to make building responsive and beautiful web interfaces a breeze. With Mico's utility classes, you can quickly create modern and stylish websites without the bloat of larger frameworks.
+[![npm version](https://badge.fury.io/js/@micoframework%2Fmicocss.svg)](https://badge.fury.io/js/@micoframework%2Fmicocss)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![CSS Framework](https://img.shields.io/badge/CSS-Framework-blue.svg)](https://github.com/micoframework/micocss)
 
-## Features
-
-- **Utility-First Approach**: Build custom designs without leaving your HTML using composable utility classes
-- **Responsive Design**: Looks great on any device, from desktops to smartphones
-- **Easy to Use**: Intuitive utility classes make it simple to create stunning layouts
-- **Customizable**: Tailor Mico to fit your unique style with CSS variables
-- **Lightweight**: Designed for fast loading times
-- **Flexible**: Adapts to any project - blogs, portfolios, e-commerce sites, and more
-- **Accessible**: Built following WCAG 2.1 AA standards
-- **Modern CSS**: Uses OKLCH colors, logical properties, and rem-based scaling
-
-## Quick Start
-
-### Via CDN (Recommended)
+## 🚀 Quick Start
 
 Add this single line to your HTML `<head>`:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@micoframework/micocss@latest/dist/css/mico.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@micoframework/micocss@1.1.0/dist/css/mico.min.css">
 ```
 
-For production, use a specific version:
+That's it! Start using utility classes in your HTML.
 
+## 📦 Installation
+
+### CDN (Recommended)
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@micoframework/micocss@1.0.0/dist/css/mico.min.css">
+<!-- Full Framework (Minified) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@micoframework/micocss@1.1.0/dist/css/mico.min.css">
+
+<!-- Full Framework (Unminified) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@micoframework/micocss@1.1.0/dist/css/mico.css">
+
+<!-- Variables Only (Minified) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@micoframework/micocss@1.1.0/dist/css/variables.min.css">
+
+<!-- Variables Only (Unminified) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@micoframework/micocss@1.1.0/dist/css/variables.css">
 ```
 
-### Via NPM
-
+### npm
 ```bash
-npm install @micoframework/micocss
+npm install @micoframework/micocss@1.1.0
 ```
 
-Then import in your CSS:
+### Download
+Download the latest release from our [GitHub releases page](https://github.com/micoframework/micocss/releases/tag/v1.1.0).
 
-```css
-@import '@micoframework/micocss/dist/css/mico.min.css';
-```
+## 🎨 Getting Started
 
-Or in JavaScript:
-
-```javascript
-import '@micoframework/micocss/dist/css/mico.min.css';
-```
-
-### WordPress Integration
-
-Add Mico to your WordPress site by adding this to your theme's functions.php or using a code snippets plugin:
-
-```php
-function enqueue_mico_framework() {
-    wp_enqueue_style(
-        'mico-framework',
-        'https://cdn.jsdelivr.net/npm/@micoframework/micocss@latest/dist/css/mico.min.css',
-        array(),
-        '1.0.0'
-    );
-}
-add_action('wp_enqueue_scripts', 'enqueue_mico_framework');
-```
-
-Most WordPress themes and page builders also have sections for adding custom CSS/JS resources where you can simply paste the CDN link.
-
-## Customization
-
-### Using CSS Variables
-
-Mico uses CSS variables for easy customization. Override them in your own CSS:
+### Customize Your Brand Colors
+Download or copy the content from [styleguide.css](https://github.com/micoframework/micocss/blob/main/src/css/styleguide.css) and customize your brand colors:
 
 ```css
 :root {
-  --mico-color-primary: #3498db;
-  --mico-color-secondary: #2ecc71;
-  --mico-color-accent: #e74c3c;
+  /* Customize your brand colors */
+  --mico-color-primary: oklch(0.7 0.15 250);     /* Your primary brand color */
+  --mico-color-secondary: oklch(0.6 0.12 200);   /* Your secondary brand color */
+  --mico-color-accent: oklch(0.8 0.18 300);      /* Your accent color */
+
+  /* You can also customize other variables */
   --mico-font-family-base: 'Inter', sans-serif;
   --mico-border-radius-base: 0.5rem;
 }
 ```
 
-### Creating a Custom Build
-
-Want to include only the utilities you need? Create a custom build to reduce file size:
-
-1. **Install Mico via NPM** (required for custom builds):
-   ```bash
-   npm install @micoframework/micocss
-   ```
-
-2. **Create a configuration file** (`mico.config.js`) in your project root:
-   ```javascript
-   module.exports = {
-     utilities: [
-       'spacing',      // margin, padding utilities
-       'typography',   // font, text utilities
-       'colors',       // background, text colors
-       'layout',       // display, grid, flex utilities
-       'borders',      // border, radius utilities
-       // Add only the utilities you need
-     ]
-   };
-   ```
-
-3. **Run the custom build**:
-   ```bash
-   npx mico build
-   ```
-
-4. **Use your custom build**:
-   ```html
-   <link rel="stylesheet" href="dist/mico.custom.min.css">
-   ```
-
-This approach can reduce your CSS bundle size by up to 70% depending on which utilities you include.
-
-## Usage Examples
-
-Mico provides a comprehensive set of utility classes for building custom interfaces. Here are some examples to get you started:
-
-### Basic Layout
-
+### Use the Layout Grid System
 ```html
-<!-- Flexbox container with spacing -->
-<div class="d--flex justify--center align--center p--4 gap--3">
-  <div class="bg--primary text--white p--3 rounded">Item 1</div>
-  <div class="bg--secondary text--white p--3 rounded">Item 2</div>
-  <div class="bg--accent text--white p--3 rounded">Item 3</div>
+<body class="layout-grid">
+  <main class="layout-content">
+    <!-- Your main content here -->
+  </main>
+
+  <section class="layout-wide">
+    <!-- Wider content that breaks out of main column -->
+  </section>
+
+  <section class="layout-full">
+    <!-- Full-width content edge-to-edge -->
+  </section>
+</body>
+```
+
+## 💡 Usage Examples
+
+### Responsive Typography
+```html
+<h1 class="fs--xxxl fw--700 text--primary">Large Heading</h1>
+<h2 class="fs--xxl fw--600 text--secondary">Medium Heading</h2>
+<p class="fs--lg text--gray">Body text with relaxed line height</p>
+```
+
+### Buttons
+```html
+<button class="bg--primary text--white p--4 rounded hover-bg--primary-dark">
+  Primary Button
+</button>
+<button class="bg--secondary text--white p--4 rounded hover-bg--secondary-dark">
+  Secondary Button
+</button>
+```
+
+### Flexbox Layout
+```html
+<div class="flex justify-content--between align-items--center gap--4">
+  <div class="flex-1">Content 1</div>
+  <div class="flex-1">Content 2</div>
+  <div class="flex-1">Content 3</div>
 </div>
 ```
 
-### Responsive Grid
-
+### Grid Layout
 ```html
-<!-- Responsive grid layout -->
-<div class="grid grid--cols-1 md:grid--cols-2 lg:grid--cols-3 gap--4">
-  <div class="bg--light p--4 rounded shadow--sm">Card 1</div>
-  <div class="bg--light p--4 rounded shadow--sm">Card 2</div>
-  <div class="bg--light p--4 rounded shadow--sm">Card 3</div>
+<div class="grid grid-cols--3 gap--4">
+  <div class="bg--primary-light p--4 rounded">Card 1</div>
+  <div class="bg--secondary-light p--4 rounded">Card 2</div>
+  <div class="bg--accent-light p--4 rounded">Card 3</div>
 </div>
 ```
 
-### Typography & Buttons
-
+### Responsive Utilities
 ```html
-<!-- Typography and button examples -->
-<div class="text--center p--6">
-  <h1 class="text--3xl font--bold mb--4">Welcome to Mico</h1>
-  <p class="text--lg text--gray-600 mb--6">Build beautiful interfaces with utility classes</p>
-  <button class="btn btn--primary btn--lg">Get Started</button>
-  <button class="btn btn--outline btn--lg ml--3">Learn More</button>
+<div class="p--2 md-p--4 lg-p--6">
+  <!-- Padding increases on larger screens -->
+</div>
+<div class="grid grid-cols--1 md-grid-cols--2 lg-grid-cols--3">
+  <!-- Responsive grid columns -->
 </div>
 ```
 
-## Browser Support
+### Spacing Examples
+```html
+<div class="m--4 p--6">Margin 4, Padding 6</div>
+<div class="mt--2 mb--4 px--3">Top margin 2, Bottom margin 4, Horizontal padding 3</div>
+```
 
-Mico supports all modern browsers:
+For all available utility classes, see our [Cheatsheet](https://micocss.com/cheatsheet) (coming soon).
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Opera (latest)
+
+
+
+
+## 🌐 Browser Support
+
+| Browser | Version | Grid Support | Flexbox | Custom Properties | OKLCH Colors |
+|---------|---------|--------------|---------|-------------------|--------------|
+| Chrome  | 88+     | ✅ Full      | ✅ Full | ✅ Full          | ✅ Full      |
+| Firefox | 113+    | ✅ Full      | ✅ Full | ✅ Full          | ✅ Full      |
+| Safari  | 15.4+   | ✅ Full      | ✅ Full | ✅ Full          | ✅ Full      |
+| Edge    | 88+     | ✅ Full      | ✅ Full | ✅ Full          | ✅ Full      |
+
+**Note**: Framework uses modern CSS features including CSS Grid, Flexbox, Custom Properties (CSS Variables), OKLCH color space, and `clamp()` functions for responsive typography.
 
 ## Resources
 
-- **Documentation**: [micocss.com](https://micocss.com) _(coming soon)_
+- **Documentation**: [micocss.com](https://micocss.com) (Coming Soon)
 - **GitHub Repository**: [github.com/micoframework/micocss](https://github.com/micoframework/micocss)
 - **NPM Package**: [@micoframework/micocss](https://www.npmjs.com/package/@micoframework/micocss)
-- **CDN**: [jsdelivr.net](https://cdn.jsdelivr.net/npm/@micoframework/micocss@latest/dist/css/mico.min.css)
+- **CDN**: [jsdelivr.net](https://cdn.jsdelivr.net/npm/@micoframework/micocss@1.1.0/dist/css/mico.min.css)
+
+## License & Usage
+
+- **License**: MIT - Free for personal and commercial use
+- **Browser Support**: Modern browsers (Chrome 88+, Firefox 113+, Safari 15.4+, Edge 88+)
+- **Production Ready**: Optimized for performance with comprehensive utility coverage
 
 ## Contributing
 
-We welcome contributions! Please feel free to submit issues and pull requests on our [GitHub repository](https://github.com/micoframework/micocss).
+We welcome contributions! Please feel free to submit issues and pull requests on our GitHub repository.
 
 ---
 
-**Mico CSS** - Build beautiful, responsive websites with utility-first CSS.
+**Ditch the CSS headaches and use Mico CSS build beautiful, responsive websites.**

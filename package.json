@@ -1,6 +1,6 @@
 {
   "name": "@micoframework/micocss",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A lightweight utility-first CSS framework with semantic double-dash naming convention. Perfect for WordPress, modern web apps, and any project requiring clean, maintainable CSS.",
   "main": "dist/css/mico.min.css",
   "scripts": {
@@ -14,6 +14,11 @@
     "build:variables": "node build/build-variables.js",
     "build:utilities": "echo \"Utilities-only build included in build:css\"",
     "build:components": "echo \"Components-only build included in build:css\"",
+    "version:analyze": "node scripts/intelligent-version.js",
+    "version:publish": "node -e \"const IV = require('./scripts/intelligent-version.js'); new IV().publish()\"",
+    "version:publish-auto": "node -e \"const IV = require('./scripts/intelligent-version.js'); new IV().publish({autoConfirm: true})\"",
+    "size-check": "node -e \"const fs = require('fs'); const size = Math.round(fs.statSync('dist/css/mico.min.css').size / 1024); console.log(`Main CSS: ${size}KB`);\"",
+    "test": "echo \"Tests will be implemented in future versions\"",
     "ensure-dirs": "node -e \"const fs = require('fs'); const path = require('path'); const dirs = ['dist/css', 'dist/js']; dirs.forEach(dir => { if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true }); });\"",
     "build:custom": "node build/build-custom.js",
     "build:jit": "node build/build-jit.js",

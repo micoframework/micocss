@@ -858,6 +858,9 @@
    */
   --mico-layout-wide-offset: 4rem;
 
+  /* Sets the second, larger breakout size, extending beyond the 'wide' lane. */
+  --mico-layout-wider-offset: 8rem;
+
   /*
    * Defines the minimum gutter space on the left and right sides of the page.
    * This also acts as the default padding on mobile devices.
@@ -871,11 +874,12 @@
    */
   --mico-layout-grid:
     [full-start] minmax(var(--mico-layout-gutter), 1fr)
-    [wide-start] minmax(0, var(--mico-layout-wide-offset))
-    [main-start] minmax(0, var(--mico-layout-page-width)) 
-    [main-end] minmax(0, var(--mico-layout-wide-offset)) 
-    [wide-end] minmax(var(--mico-layout-gutter), 1fr) 
-    [full-end];
+    [wider-start] minmax(0, min(var(--mico-layout-wider-offset), 8vw))
+    [wide-start] minmax(0, min(var(--mico-layout-wide-offset), 4vw))
+    [main-start] min(100% - (var(--mico-layout-gutter) * 2), var(--mico-layout-page-width)) [main-end]
+    minmax(0, min(var(--mico-layout-wide-offset), 4vw)) [wide-end]
+    minmax(0, min(var(--mico-layout-wider-offset), 8vw)) [wider-end]
+    minmax(var(--mico-layout-gutter), 1fr) [full-end];
 
 /* END OF THE PAGE GRID LAYOUT ENGINE                                         */
 
@@ -1240,14 +1244,6 @@
   --mico-anim-default-timing: ease-out;                         /* Default timing function */
   --mico-anim-default-fill-mode: both;                          /* Default fill mode */
 
-  /*
-   * Interactive Animation Variables
-   *
-   * These variables control interactive elements like ripples and typewriter effects.
-   */
-  --mico-ripple-bg-default: rgba(255, 255, 255, 0.3);          /* Default ripple background */
-  --mico-ripple-bg-dark: rgba(0, 0, 0, 0.2);                   /* Dark ripple background */
-  --mico-typewriter-cursor-color: currentColor;                 /* Typewriter cursor color */
 
   /*
    * Animation Properties
@@ -1351,8 +1347,6 @@
    * - UI suitability: Perfect for backgrounds, text, borders, and interactive states
    */
 
-   /* --mico-color-mode: oklch; */
-
   /* ====================================================================== */
   /* TINT GENERATION CONTROLS (Lighter Variations)                         */
   /* ====================================================================== */
@@ -1361,40 +1355,40 @@
    * Lightness Controls for Tints
    * Progressive lightening that maintains color vibrancy and character
    */
-  --mico-color-light-tint: calc(l + (1 - l) * 0.15);      /* Subtle lightening */
-  --mico-color-light-2xtint: calc(l + (1 - l) * 0.25);    /* Gentle lightening */
-  --mico-color-light-3xtint: calc(l + (1 - l) * 0.35);    /* Moderate lightening */
-  --mico-color-light-4xtint: calc(l + (1 - l) * 0.45);    /* Noticeable lightening */
-  --mico-color-light-5xtint: calc(l + (1 - l) * 0.55);    /* Significant lightening */
-  --mico-color-light-6xtint: calc(l + (1 - l) * 0.65);    /* Strong lightening */
-  --mico-color-light-7xtint: calc(l + (1 - l) * 0.75);    /* Very light */
-  --mico-color-light-8xtint: calc(l + (1 - l) * 0.85);    /* Extremely light */
+  --mico-color-light-tint: calc(l + (1 - l) * 0.10);      /* Subtle lightening */
+  --mico-color-light-2xtint: calc(l + (1 - l) * 0.20);    /* Gentle lightening */
+  --mico-color-light-3xtint: calc(l + (1 - l) * 0.30);    /* Moderate lightening */
+  --mico-color-light-4xtint: calc(l + (1 - l) * 0.40);    /* Noticeable lightening */
+  --mico-color-light-5xtint: calc(l + (1 - l) * 0.50);    /* Significant lightening */
+  --mico-color-light-6xtint: calc(l + (1 - l) * 0.60);    /* Strong lightening */
+  --mico-color-light-7xtint: calc(l + (1 - l) * 0.70);    /* Very light */
+  --mico-color-light-8xtint: calc(l + (1 - l) * 0.80);    /* Extremely light */
 
   /*
    * Chroma Controls for Tints
    * Gradual saturation reduction to prevent harsh, oversaturated light colors
    */
-  --mico-color-chrome-tint: calc(c * 0.95);               /* Minimal desaturation */
-  --mico-color-chrome-2xtint: calc(c * 0.88);             /* Slight desaturation */
-  --mico-color-chrome-3xtint: calc(c * 0.78);             /* Gentle desaturation */
-  --mico-color-chrome-4xtint: calc(c * 0.65);             /* Moderate desaturation */
-  --mico-color-chrome-5xtint: calc(c * 0.50);             /* Noticeable desaturation */
-  --mico-color-chrome-6xtint: calc(c * 0.38);             /* Strong desaturation */
-  --mico-color-chrome-7xtint: calc(c * 0.25);             /* Very desaturated */
-  --mico-color-chrome-8xtint: calc(c * 0.15);             /* Extremely desaturated */
+  --mico-color-chrome-tint: calc(c * 0.80);               /* Minimal desaturation */
+  --mico-color-chrome-2xtint: calc(c * 0.70);             /* Slight desaturation */
+  --mico-color-chrome-3xtint: calc(c * 0.60);             /* Gentle desaturation */
+  --mico-color-chrome-4xtint: calc(c * 0.50);             /* Moderate desaturation */
+  --mico-color-chrome-5xtint: calc(c * 0.40);             /* Noticeable desaturation */
+  --mico-color-chrome-6xtint: calc(c * 0.30);             /* Strong desaturation */
+  --mico-color-chrome-7xtint: calc(c * 0.20);             /* Very desaturated */
+  --mico-color-chrome-8xtint: calc(c * 0.10);             /* Extremely desaturated */
 
   /*
    * Hue Controls for Tints
    * Subtle hue shifts to create warmer, more appealing light variations
    */
-  --mico-color-hue-tint: calc(h + 2);                     /* Slight warm shift */
-  --mico-color-hue-2xtint: calc(h + 3);                   /* Gentle warm shift */
-  --mico-color-hue-3xtint: calc(h + 4);                   /* Moderate warm shift */
-  --mico-color-hue-4xtint: calc(h + 5);                   /* Noticeable warm shift */
-  --mico-color-hue-5xtint: calc(h + 6);                   /* Significant warm shift */
-  --mico-color-hue-6xtint: calc(h + 7);                   /* Strong warm shift */
-  --mico-color-hue-7xtint: calc(h + 8);                   /* Very warm shift */
-  --mico-color-hue-8xtint: calc(h + 9);                   /* Extremely warm shift */
+  --mico-color-hue-tint: calc(h + 1);                     /* Slight warm shift */
+  --mico-color-hue-2xtint: calc(h + 2);                   /* Gentle warm shift */
+  --mico-color-hue-3xtint: calc(h + 3);                   /* Moderate warm shift */
+  --mico-color-hue-4xtint: calc(h + 4);                   /* Noticeable warm shift */
+  --mico-color-hue-5xtint: calc(h + 5);                   /* Significant warm shift */
+  --mico-color-hue-6xtint: calc(h + 6);                   /* Strong warm shift */
+  --mico-color-hue-7xtint: calc(h + 7);                   /* Very warm shift */
+  --mico-color-hue-8xtint: calc(h + 8);                   /* Extremely warm shift */
 
   /* ====================================================================== */
   /* SHADE GENERATION CONTROLS (Darker Variations)                         */
@@ -1404,27 +1398,27 @@
    * Lightness Controls for Shades
    * Progressive darkening that maintains color richness without becoming muddy
    */
-  --mico-color-light-shade: calc(l * 0.92);               /* Subtle darkening */
-  --mico-color-light-2xshade: calc(l * 0.82);             /* Gentle darkening */
-  --mico-color-light-3xshade: calc(l * 0.70);             /* Moderate darkening */
-  --mico-color-light-4xshade: calc(l * 0.58);             /* Noticeable darkening */
-  --mico-color-light-5xshade: calc(l * 0.46);             /* Significant darkening */
-  --mico-color-light-6xshade: calc(l * 0.36);             /* Strong darkening */
-  --mico-color-light-7xshade: calc(l * 0.28);             /* Very dark */
-  --mico-color-light-8xshade: calc(l * 0.22);             /* Extremely dark */
+  --mico-color-light-shade: calc(l * 0.80);               /* Subtle darkening */
+  --mico-color-light-2xshade: calc(l * 0.70);             /* Gentle darkening */
+  --mico-color-light-3xshade: calc(l * 0.60);             /* Moderate darkening */
+  --mico-color-light-4xshade: calc(l * 0.50);             /* Noticeable darkening */
+  --mico-color-light-5xshade: calc(l * 0.40);             /* Significant darkening */
+  --mico-color-light-6xshade: calc(l * 0.30);             /* Strong darkening */
+  --mico-color-light-7xshade: calc(l * 0.20);             /* Very dark */
+  --mico-color-light-8xshade: calc(l * 0.10);             /* Extremely dark */
 
   /*
    * Chroma Controls for Shades
    * Gradual saturation enhancement to create rich, vibrant dark colors
    */
   --mico-color-chrome-shade: calc(c * 1.02);              /* Minimal saturation boost */
-  --mico-color-chrome-2xshade: calc(c * 1.05);           /* Slight saturation boost */
-  --mico-color-chrome-3xshade: calc(c * 1.08);           /* Gentle saturation boost */
-  --mico-color-chrome-4xshade: calc(c * 1.12);           /* Moderate saturation boost */
-  --mico-color-chrome-5xshade: calc(c * 1.16);           /* Noticeable saturation boost */
-  --mico-color-chrome-6xshade: calc(c * 1.20);           /* Strong saturation boost */
-  --mico-color-chrome-7xshade: calc(c * 1.24);           /* Very saturated */
-  --mico-color-chrome-8xshade: calc(c * 1.28);           /* Extremely saturated */
+  --mico-color-chrome-2xshade: calc(c * 1.04);           /* Slight saturation boost */
+  --mico-color-chrome-3xshade: calc(c * 1.06);           /* Gentle saturation boost */
+  --mico-color-chrome-4xshade: calc(c * 1.18);           /* Moderate saturation boost */
+  --mico-color-chrome-5xshade: calc(c * 1.12);           /* Noticeable saturation boost */
+  --mico-color-chrome-6xshade: calc(c * 1.24);           /* Strong saturation boost */
+  --mico-color-chrome-7xshade: calc(c * 1.28);           /* Very saturated */
+  --mico-color-chrome-8xshade: calc(c * 1.30);           /* Extremely saturated */
 
   /*
    * Hue Controls for Shades
@@ -1448,7 +1442,6 @@
    * Base color defined in styleguide.css, variations auto-generated here
    * Using the harmonious tint/shade control system for perfect color progression
    */
-
   /* Primary Color Tints (lighter variations) */
   --mico-color-primary-light: oklch(from var(--mico-color-primary) var(--mico-color-light-tint) var(--mico-color-chrome-tint) var(--mico-color-hue-tint)); /* Subtle primary tint */
   --mico-color-primary-2xlight: oklch(from var(--mico-color-primary) var(--mico-color-light-2xtint) var(--mico-color-chrome-2xtint) var(--mico-color-hue-2xtint)); /* Gentle primary tint */
@@ -1522,12 +1515,35 @@
   --mico-color-accent-8xdark: oklch(from var(--mico-color-accent) var(--mico-color-light-8xshade) var(--mico-color-chrome-8xshade) var(--mico-color-hue-8xshade)); /* Extremely dark accent */
 
   /*
-   * Semantic Colors - OKLCH System
+   * Neutral Semantic Colors - OKLCH System
    *
    * Colors that convey meaning and state information.
-   * Each semantic color includes 5 tints and 5 shades for comprehensive usage.
+   * Each semantic color includes 8 tints and 8 shades for comprehensive usage.
    * All colors maintain WCAG AA contrast ratios for accessibility.
    */
+
+   /* Nuetral Colors */
+  --mico-color-gray: oklch(0.9 0.01 270);
+    /* Neutral Tints (lighter variations) */
+  --mico-color-gray-light: oklch(from var(--mico-color-gray) var(--mico-color-light-tint) var(--mico-color-chrome-tint) var(--mico-color-hue-tint));
+  --mico-color-gray-2xlight: oklch(from var(--mico-color-gray) var(--mico-color-light-2xtint) var(--mico-color-chrome-2xtint) var(--mico-color-hue-2xtint));
+  --mico-color-gray-3xlight: oklch(from var(--mico-color-gray) var(--mico-color-light-3xtint) var(--mico-color-chrome-3xtint) var(--mico-color-hue-3xtint));
+  --mico-color-gray-4xlight: oklch(from var(--mico-color-gray) var(--mico-color-light-4xtint) var(--mico-color-chrome-4xtint) var(--mico-color-hue-4xtint));
+  --mico-color-gray-5xlight: oklch(from var(--mico-color-gray) var(--mico-color-light-5xtint) var(--mico-color-chrome-5xtint) var(--mico-color-hue-5xtint));
+  --mico-color-gray-6xlight: oklch(from var(--mico-color-gray) var(--mico-color-light-6xtint) var(--mico-color-chrome-6xtint) var(--mico-color-hue-6xtint));
+  --mico-color-gray-7xlight: oklch(from var(--mico-color-gray) var(--mico-color-light-7xtint) var(--mico-color-chrome-7xtint) var(--mico-color-hue-7xtint));
+  --mico-color-gray-8xlight: oklch(from var(--mico-color-gray) var(--mico-color-light-8xtint) var(--mico-color-chrome-8xtint) var(--mico-color-hue-8xtint));
+
+  /* Neutral Shades (darker variations) */
+  --mico-color-gray-dark: oklch(from var(--mico-color-gray) var(--mico-color-light-shade) var(--mico-color-chrome-shade) var(--mico-color-hue-shade));
+  --mico-color-gray-2xdark: oklch(from var(--mico-color-gray) var(--mico-color-light-2xshade) var(--mico-color-chrome-2xshade) var(--mico-color-hue-2xshade));
+  --mico-color-gray-3xdark: oklch(from var(--mico-color-gray) var(--mico-color-light-3xshade) var(--mico-color-chrome-3xshade) var(--mico-color-hue-3xshade));
+  --mico-color-gray-4xdark: oklch(from var(--mico-color-gray) var(--mico-color-light-4xshade) var(--mico-color-chrome-4xshade) var(--mico-color-hue-4xshade));
+  --mico-color-gray-5xdark: oklch(from var(--mico-color-gray) var(--mico-color-light-5xshade) var(--mico-color-chrome-5xshade) var(--mico-color-hue-5xshade));
+  --mico-color-gray-6xdark: oklch(from var(--mico-color-gray) var(--mico-color-light-6xshade) var(--mico-color-chrome-6xshade) var(--mico-color-hue-6xshade));
+  --mico-color-gray-7xdark: oklch(from var(--mico-color-gray) var(--mico-color-light-7xshade) var(--mico-color-chrome-7xshade) var(--mico-color-hue-7xshade));
+  --mico-color-gray-8xdark: oklch(from var(--mico-color-gray) var(--mico-color-light-8xshade) var(--mico-color-chrome-8xshade) var(--mico-color-hue-8xshade));
+
 
   /* Success Color System */
   --mico-color-success: oklch(0.65 0.15 150); /* Base success color - WCAG AA compliant */
@@ -1624,141 +1640,4 @@
   /* Visited Color System */
   --mico-color-visited: oklch(0.55 0.15 300); /* Base visited color - distinct from primary */
 
-  /* Visited - Base color only (no tints/shades to reduce framework size) */
-
-  /*
-   * Neutral Colors - Black System (OKLCH)
-   *
-   * Black color variations with 5 tints and 5 shades.
-   * These provide depth and contrast in dark themes with superior perceptual uniformity.
-   */
-  --mico-color-black: oklch(0.1 0.005 270); /* Base black color */
-
-  /* Black - Base color only (no tints/shades to reduce framework size) */
-
-  /*
-   * Neutral Colors - Gray System (OKLCH)
-   *
-   * Comprehensive gray palette with 5 tints and 5 shades for UI elements, text, and backgrounds.
-   * These colors provide optimal contrast and accessibility with perceptual uniformity.
-   */
-  --mico-color-gray: oklch(0.5 0.01 270); /* Base gray color - true neutral */
-
-  /* Gray - Base color only (no tints/shades to reduce framework size) */
-
-  /*
-   * Neutral Colors - White System (OKLCH)
-   *
-   * White color variations with 5 tints and 5 shades for subtle backgrounds and overlays.
-   * These provide clean, minimal aesthetics in light themes with superior color precision.
-   */
-  --mico-color-white: oklch(100% 0.00011 271.152); /* Base white color */
-
-  /* White - Base color only (no tints/shades to reduce framework size) */
-
-  /* Brand Color Transparency Variations */
-  /* Primary Color Percentage Variations (5% increments) */
-  --mico-color-primary-5p: oklch(from var(--mico-color-primary) l c h / 0.05);      /* 5% opacity */
-  --mico-color-primary-10p: oklch(from var(--mico-color-primary) l c h / 0.10);     /* 10% opacity */
-  --mico-color-primary-15p: oklch(from var(--mico-color-primary) l c h / 0.15);     /* 15% opacity */
-  --mico-color-primary-20p: oklch(from var(--mico-color-primary) l c h / 0.20);     /* 20% opacity */
-  --mico-color-primary-25p: oklch(from var(--mico-color-primary) l c h / 0.25);     /* 25% opacity */
-  --mico-color-primary-30p: oklch(from var(--mico-color-primary) l c h / 0.30);     /* 30% opacity */
-  --mico-color-primary-35p: oklch(from var(--mico-color-primary) l c h / 0.35);     /* 35% opacity */
-  --mico-color-primary-40p: oklch(from var(--mico-color-primary) l c h / 0.40);     /* 40% opacity */
-  --mico-color-primary-45p: oklch(from var(--mico-color-primary) l c h / 0.45);     /* 45% opacity */
-  --mico-color-primary-50p: oklch(from var(--mico-color-primary) l c h / 0.50);     /* 50% opacity */
-  --mico-color-primary-55p: oklch(from var(--mico-color-primary) l c h / 0.55);     /* 55% opacity */
-  --mico-color-primary-60p: oklch(from var(--mico-color-primary) l c h / 0.60);     /* 60% opacity */
-  --mico-color-primary-65p: oklch(from var(--mico-color-primary) l c h / 0.65);     /* 65% opacity */
-  --mico-color-primary-70p: oklch(from var(--mico-color-primary) l c h / 0.70);     /* 70% opacity */
-  --mico-color-primary-75p: oklch(from var(--mico-color-primary) l c h / 0.75);     /* 75% opacity */
-  --mico-color-primary-80p: oklch(from var(--mico-color-primary) l c h / 0.80);     /* 80% opacity */
-  --mico-color-primary-85p: oklch(from var(--mico-color-primary) l c h / 0.85);     /* 85% opacity */
-  --mico-color-primary-90p: oklch(from var(--mico-color-primary) l c h / 0.90);     /* 90% opacity */
-  --mico-color-primary-95p: oklch(from var(--mico-color-primary) l c h / 0.95);     /* 95% opacity */
-  --mico-color-primary-100p: oklch(from var(--mico-color-primary) l c h / 1.00);    /* 100% opacity */
-
-  /* Secondary Color Percentage Variations (5% increments) */
-  --mico-color-secondary-5p: oklch(from var(--mico-color-secondary) l c h / 0.05);    /* 5% opacity */
-  --mico-color-secondary-10p: oklch(from var(--mico-color-secondary) l c h / 0.10);   /* 10% opacity */
-  --mico-color-secondary-15p: oklch(from var(--mico-color-secondary) l c h / 0.15);   /* 15% opacity */
-  --mico-color-secondary-20p: oklch(from var(--mico-color-secondary) l c h / 0.20);   /* 20% opacity */
-  --mico-color-secondary-25p: oklch(from var(--mico-color-secondary) l c h / 0.25);   /* 25% opacity */
-  --mico-color-secondary-30p: oklch(from var(--mico-color-secondary) l c h / 0.30);   /* 30% opacity */
-  --mico-color-secondary-35p: oklch(from var(--mico-color-secondary) l c h / 0.35);   /* 35% opacity */
-  --mico-color-secondary-40p: oklch(from var(--mico-color-secondary) l c h / 0.40);   /* 40% opacity */
-  --mico-color-secondary-45p: oklch(from var(--mico-color-secondary) l c h / 0.45);   /* 45% opacity */
-  --mico-color-secondary-50p: oklch(from var(--mico-color-secondary) l c h / 0.50);   /* 50% opacity */
-  --mico-color-secondary-55p: oklch(from var(--mico-color-secondary) l c h / 0.55);   /* 55% opacity */
-  --mico-color-secondary-60p: oklch(from var(--mico-color-secondary) l c h / 0.60);   /* 60% opacity */
-  --mico-color-secondary-65p: oklch(from var(--mico-color-secondary) l c h / 0.65);   /* 65% opacity */
-  --mico-color-secondary-70p: oklch(from var(--mico-color-secondary) l c h / 0.70);   /* 70% opacity */
-  --mico-color-secondary-75p: oklch(from var(--mico-color-secondary) l c h / 0.75);   /* 75% opacity */
-  --mico-color-secondary-80p: oklch(from var(--mico-color-secondary) l c h / 0.80);   /* 80% opacity */
-  --mico-color-secondary-85p: oklch(from var(--mico-color-secondary) l c h / 0.85);   /* 85% opacity */
-  --mico-color-secondary-90p: oklch(from var(--mico-color-secondary) l c h / 0.90);   /* 90% opacity */
-  --mico-color-secondary-95p: oklch(from var(--mico-color-secondary) l c h / 0.95);   /* 95% opacity */
-  --mico-color-secondary-100p: oklch(from var(--mico-color-secondary) l c h / 1.00);  /* 100% opacity */
-
-  /* Accent Color Percentage Variations (5% increments) */
-  --mico-color-accent-5p: oklch(from var(--mico-color-accent) l c h / 0.05);        /* 5% opacity */
-  --mico-color-accent-10p: oklch(from var(--mico-color-accent) l c h / 0.10);       /* 10% opacity */
-  --mico-color-accent-15p: oklch(from var(--mico-color-accent) l c h / 0.15);       /* 15% opacity */
-  --mico-color-accent-20p: oklch(from var(--mico-color-accent) l c h / 0.20);       /* 20% opacity */
-  --mico-color-accent-25p: oklch(from var(--mico-color-accent) l c h / 0.25);       /* 25% opacity */
-  --mico-color-accent-30p: oklch(from var(--mico-color-accent) l c h / 0.30);       /* 30% opacity */
-  --mico-color-accent-35p: oklch(from var(--mico-color-accent) l c h / 0.35);       /* 35% opacity */
-  --mico-color-accent-40p: oklch(from var(--mico-color-accent) l c h / 0.40);       /* 40% opacity */
-  --mico-color-accent-45p: oklch(from var(--mico-color-accent) l c h / 0.45);       /* 45% opacity */
-  --mico-color-accent-50p: oklch(from var(--mico-color-accent) l c h / 0.50);       /* 50% opacity */
-  --mico-color-accent-55p: oklch(from var(--mico-color-accent) l c h / 0.55);       /* 55% opacity */
-  --mico-color-accent-60p: oklch(from var(--mico-color-accent) l c h / 0.60);       /* 60% opacity */
-  --mico-color-accent-65p: oklch(from var(--mico-color-accent) l c h / 0.65);       /* 65% opacity */
-  --mico-color-accent-70p: oklch(from var(--mico-color-accent) l c h / 0.70);       /* 70% opacity */
-  --mico-color-accent-75p: oklch(from var(--mico-color-accent) l c h / 0.75);       /* 75% opacity */
-  --mico-color-accent-80p: oklch(from var(--mico-color-accent) l c h / 0.80);       /* 80% opacity */
-  --mico-color-accent-85p: oklch(from var(--mico-color-accent) l c h / 0.85);       /* 85% opacity */
-  --mico-color-accent-90p: oklch(from var(--mico-color-accent) l c h / 0.90);       /* 90% opacity */
-  --mico-color-accent-95p: oklch(from var(--mico-color-accent) l c h / 0.95);       /* 95% opacity */
-  --mico-color-accent-100p: oklch(from var(--mico-color-accent) l c h / 1.00);      /* 100% opacity */
-
-  /*
-   * Extended Color Palette - OKLCH System
-   *
-   * Comprehensive color palette for diverse design needs using OKLCH color space.
-   * Each color includes 5 tints and 5 shades for superior color consistency.
-   * All colors maintain accessibility and contrast compliance with perceptual uniformity.
-   */
-
-  /* Red Color System - Error states, alerts, danger */
-  --mico-color-red: oklch(0.55 0.22 27); /* Base red color - vibrant crimson, WCAG AA compliant */
-
-  /* Red - Base color only (no tints/shades to reduce framework size) */
-
-  /* Yellow Color System - Warning states, highlights */
-  --mico-color-yellow: oklch(96.267% 0.19961 108.728); /* Base yellow color - warm amber, not harsh */
-
-  /* Yellow - Base color only (no tints/shades to reduce framework size) */
-
-  /* Green Color System - Success states, positive actions */
-  --mico-color-green: oklch(67.749% 0.19955 141.94); /* Base green color - fresh emerald, nature-inspired */
-
-  /* Green - Base color only (no tints/shades to reduce framework size) */
-
-  /* Blue Color System - Information, links, primary actions */
-  --mico-color-blue: oklch(52% 0.20589 259.44); /* Base blue color - trustworthy azure, professional */
-
-  /* Extended Colors - Base colors only (no tints/shades to reduce framework size) */
-
-  /* Blue - Base color only */
-
-  /* Indigo - Base color only */
-  --mico-color-indigo: oklch(0.52 0.17 275); /* Base indigo color - sophisticated violet-blue */
-
-  /* Purple - Base color only */
-  --mico-color-purple: oklch(48.171% 0.20979 307.996); /* Base purple color - rich amethyst, creative */
-
-  /* Pink - Base color only */
-  --mico-color-pink: oklch(70.383% 0.19028 6.147); /* Base pink color - warm rose, approachable */
-}
+  }

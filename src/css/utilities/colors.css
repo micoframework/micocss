@@ -171,16 +171,63 @@
  */
 
 /* Base Semantic Background Colors */
+.bg--gray { background-color: var(--mico-color-gray) !important; }
 .bg--success { background-color: var(--mico-color-success) !important; }
 .bg--error { background-color: var(--mico-color-error) !important; }
 .bg--warning { background-color: var(--mico-color-warning) !important; }
 .bg--info { background-color: var(--mico-color-info) !important; }
 
 /* Base Semantic Text Colors */
+.text--gray { color: var(--mico-color-gray) !important; }
 .text--success { color: var(--mico-color-success) !important; }
 .text--error { color: var(--mico-color-error) !important; }
 .text--warning { color: var(--mico-color-warning) !important; }
 .text--info { color: var(--mico-color-info) !important; }
+
+/**
+ * Gray Color Variations
+ * Shades (darker) and tones (lighter) of the gray brand color
+ */
+
+/* Gray Tint Text Colors (lighter) */
+.text--gray-light { color: var(--mico-color-gray-light) !important; }
+.text--gray-2xlight { color: var(--mico-color-gray-2xlight) !important; }
+.text--gray-3xlight { color: var(--mico-color-gray-3xlight) !important; }
+.text--gray-4xlight { color: var(--mico-color-gray-4xlight) !important; }
+.text--gray-5xlight { color: var(--mico-color-gray-5xlight) !important; }
+.text--gray-6xlight { color: var(--mico-color-gray-6xlight) !important; }
+.text--gray-7xlight { color: var(--mico-color-gray-7xlight) !important; }
+.text--gray-8xlight { color: var(--mico-color-gray-8xlight) !important; }
+
+/* Gray Shade Text Colors (darker) */
+.text--gray-dark { color: var(--mico-color-gray-dark) !important; }
+.text--gray-2xdark { color: var(--mico-color-gray-2xdark) !important; }
+.text--gray-3xdark { color: var(--mico-color-gray-3xdark) !important; }
+.text--gray-4xdark { color: var(--mico-color-gray-4xdark) !important; }
+.text--gray-5xdark { color: var(--mico-color-gray-5xdark) !important; }
+.text--gray-6xdark { color: var(--mico-color-gray-6xdark) !important; }
+.text--gray-7xdark { color: var(--mico-color-gray-7xdark) !important; }
+.text--gray-8xdark { color: var(--mico-color-gray-8xdark) !important; }
+
+/* Gray Tint Background Colors (lighter) */
+.bg--gray-light { background-color: var(--mico-color-gray-light) !important; }
+.bg--gray-2xlight { background-color: var(--mico-color-gray-2xlight) !important; }
+.bg--gray-3xlight { background-color: var(--mico-color-gray-3xlight) !important; }
+.bg--gray-4xlight { background-color: var(--mico-color-gray-4xlight) !important; }
+.bg--gray-5xlight { background-color: var(--mico-color-gray-5xlight) !important; }
+.bg--gray-6xlight { background-color: var(--mico-color-gray-6xlight) !important; }
+.bg--gray-7xlight { background-color: var(--mico-color-gray-7xlight) !important; }
+.bg--gray-8xlight { background-color: var(--mico-color-gray-8xlight) !important; }
+
+/* Gray Shade Background Colors (darker) */
+.bg--gray-dark { background-color: var(--mico-color-gray-dark) !important; }
+.bg--gray-2xdark { background-color: var(--mico-color-gray-2xdark) !important; }
+.bg--gray-3xdark { background-color: var(--mico-color-gray-3xdark) !important; }
+.bg--gray-4xdark { background-color: var(--mico-color-gray-4xdark) !important; }
+.bg--gray-5xdark { background-color: var(--mico-color-gray-5xdark) !important; }
+.bg--gray-6xdark { background-color: var(--mico-color-gray-6xdark) !important; }
+.bg--gray-7xdark { background-color: var(--mico-color-gray-7xdark) !important; }
+.bg--gray-8xdark { background-color: var(--mico-color-gray-8xdark) !important; }
 
 /**
  * Success Color Variations
@@ -367,32 +414,6 @@
  * These colors are available as base colors only (no tints/shades)
  * to reduce framework size while maintaining color variety.
  */
-
-/* Neutral Colors - Base Only */
-.bg--black { background-color: var(--mico-color-black) !important; }
-.bg--gray { background-color: var(--mico-color-gray) !important; }
-.bg--white { background-color: var(--mico-color-white) !important; }
-
-.text--black { color: var(--mico-color-black) !important; }
-.text--gray { color: var(--mico-color-gray) !important; }
-.text--white { color: var(--mico-color-white) !important; }
-
-/* Extended Palette - Base Only */
-.bg--red { background-color: var(--mico-color-red) !important; }
-.bg--yellow { background-color: var(--mico-color-yellow) !important; }
-.bg--green { background-color: var(--mico-color-green) !important; }
-.bg--blue { background-color: var(--mico-color-blue) !important; }
-.bg--indigo { background-color: var(--mico-color-indigo) !important; }
-.bg--purple { background-color: var(--mico-color-purple) !important; }
-.bg--pink { background-color: var(--mico-color-pink) !important; }
-
-.text--red { color: var(--mico-color-red) !important; }
-.text--yellow { color: var(--mico-color-yellow) !important; }
-.text--green { color: var(--mico-color-green) !important; }
-.text--blue { color: var(--mico-color-blue) !important; }
-.text--indigo { color: var(--mico-color-indigo) !important; }
-.text--purple { color: var(--mico-color-purple) !important; }
-.text--pink { color: var(--mico-color-pink) !important; }
 
 /* Link Colors - Base Only */
 .bg--visited { background-color: var(--mico-color-visited) !important; }

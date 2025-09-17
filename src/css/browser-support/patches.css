@@ -1,0 +1,9 @@
+/* @supports not (color: oklch(from color l c h)) {
+   --mico-color-mode: rbg; */
+
+   /* OKLCH AND HSL Color Support System */
+   /* --mico-color-mode-brightness: l;
+   --mico-color-mode-saturation: c;
+   --mico-color-mode-hue: h; */
+
+/* } */
