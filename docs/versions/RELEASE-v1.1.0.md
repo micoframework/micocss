@@ -38,24 +38,22 @@
 ### **Primary CDN (Recommended)**
 ```html
 <!-- Full Framework -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@micoframework/micocss@1.1.0/dist/css/mico.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/micoframework/micocss@v1.1.0/dist/css/mico.min.css">
 ```
 
 ### **Version Locking Options**
 ```html
 <!-- Exact Version (Maximum Stability) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@micoframework/micocss@1.1.0/dist/css/mico.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/micoframework/micocss@v1.1.0/dist/css/mico.min.css">
 
-<!-- Major Version Lock (Recommended for Production) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@micoframework/micocss@^1.0.0/dist/css/mico.min.css">
+<!-- Latest Version (Auto-updates) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/micoframework/micocss@latest/dist/css/mico.min.css">
 ```
 
 ## 📦 Installation
 
-### npm
-```bash
-npm install @micoframework/micocss@1.1.0
-```
+### Download
+Download the latest release from our [GitHub releases page](https://github.com/micoframework/micocss/releases/tag/v1.1.0).
 
 ## 🔄 Migration from v1.0.0
 
@@ -81,7 +79,7 @@ npm install @micoframework/micocss@1.1.0
 - **Homepage**: [micocss.com](https://micocss.com) (Coming Soon)
 - **Documentation**: [micocss.com/docs](https://micocss.com/docs) (Coming Soon)
 - **Examples**: [micocss.com/docs/examples](https://micocss.com/docs/examples) (Coming Soon)
-- **NPM Package**: [@micoframework/micocss](https://www.npmjs.com/package/@micoframework/micocss)
+- **Latest Release**: [GitHub Releases](https://github.com/micoframework/micocss/releases/latest)
 - **GitHub Repository**: [micoframework/micocss](https://github.com/micoframework/micocss)
 
 ## 🙏 Thank You

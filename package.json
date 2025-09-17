@@ -1,8 +1,8 @@
 {
-  "name": "@micoframework/micocss",
-  "version": "1.1.1",
-  "description": "An intelligent utility-first CSS framework for faster UI builds and zero CSS headaches. Perfect for frontend developers, WordPress, modern web apps, and any project requiring clean, maintainable CSS.",
-  "main": "dist/css/mico.min.css",
+  "name": "mico-css-framework",
+  "version": "1.0.0",
+  "description": "Development build tools for Mico CSS Framework",
+  "private": true,
   "scripts": {
     "dev": "npm run watch:css",
     "start": "npm run dev",
@@ -14,9 +14,7 @@
     "build:variables": "node build/build-variables.js",
     "build:utilities": "echo \"Utilities-only build included in build:css\"",
     "build:components": "echo \"Components-only build included in build:css\"",
-    "version:analyze": "node scripts/intelligent-version.js",
-    "version:publish": "node -e \"const IV = require('./scripts/intelligent-version.js'); new IV().publish()\"",
-    "version:publish-auto": "node -e \"const IV = require('./scripts/intelligent-version.js'); new IV().publish({autoConfirm: true})\"",
+
     "size-check": "node -e \"const fs = require('fs'); const size = Math.round(fs.statSync('dist/css/mico.min.css').size / 1024); console.log(`Main CSS: ${size}KB`);\"",
     "test": "echo 'Tests passed - build verification only'",
     "ensure-dirs": "node -e \"const fs = require('fs'); const path = require('path'); const dirs = ['dist/css', 'dist/js']; dirs.forEach(dir => { if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true }); });\"",
@@ -29,35 +27,10 @@
     "test:visual": "echo \"Visual regression tests would run here\"",
     "serve": "npx serve -l 8080",
     "serve:http": "node --no-deprecation node_modules/http-server/bin/http-server . -o -c-1",
-    "demo": "npm run build && npm run serve",
-    "prepublishOnly": "npm run build:clean",
-    "test:publish": "npm test || echo 'Tests failed but continuing with publish'",
-    "postpublish": "echo 'Successfully published mico-css to NPM! 🎉'"
+    "demo": "npm run build && npm run serve"
   },
-  "keywords": [
-    "css",
-    "framework",
-    "utility-first",
-    "responsive",
-    "lightweight",
-    "wordpress",
-    "semantic",
-    "double-dash",
-    "oklch",
-    "modern-css",
-    "vanilla-css",
-    "no-javascript"
-  ],
-  "author": "Mico Framework Team",
+  "author": "Michael Katiba",
   "license": "MIT",
-  "homepage": "https://github.com/micoframework/micocss#readme",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/micoframework/micocss.git"
-  },
-  "bugs": {
-    "url": "https://github.com/micoframework/micocss/issues"
-  },
   "files": [
     "dist/",
     "src/",

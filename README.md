@@ -2,44 +2,39 @@
 
 An intelligent utility-first CSS framework for faster UI builds and zero CSS headaches. Perfect for frontend developers, WordPress, modern web apps, and any project requiring clean, maintainable CSS.
 
-[![npm version](https://badge.fury.io/js/@micoframework%2Fmicocss.svg)](https://badge.fury.io/js/@micoframework%2Fmicocss)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![CSS Framework](https://img.shields.io/badge/CSS-Framework-blue.svg)](https://github.com/micoframework/micocss)
+[![GitHub Release](https://img.shields.io/github/v/release/micoframework/micocss)](https://github.com/micoframework/micocss/releases)
 
 ## 🚀 Quick Start
 
 Add this single line to your HTML `<head>`:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@micoframework/micocss@1.1.0/dist/css/mico.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/micoframework/micocss@latest/dist/css/mico.min.css">
 ```
 
 That's it! Start using utility classes in your HTML.
 
 ## 📦 Installation
 
-### CDN (Recommended)
+### CDN (GitHub)
 ```html
 <!-- Full Framework (Minified) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@micoframework/micocss@1.1.0/dist/css/mico.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/micoframework/micocss@latest/dist/css/mico.min.css">
 
 <!-- Full Framework (Unminified) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@micoframework/micocss@1.1.0/dist/css/mico.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/micoframework/micocss@latest/dist/css/mico.css">
 
 <!-- Variables Only (Minified) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@micoframework/micocss@1.1.0/dist/css/variables.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/micoframework/micocss@latest/dist/css/variables.min.css">
 
 <!-- Variables Only (Unminified) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@micoframework/micocss@1.1.0/dist/css/variables.css">
-```
-
-### npm
-```bash
-npm install @micoframework/micocss@1.1.0
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/micoframework/micocss@latest/dist/css/variables.css">
 ```
 
 ### Download
-Download the latest release from our [GitHub releases page](https://github.com/micoframework/micocss/releases/tag/v1.1.0).
+Download the latest release from our [GitHub releases page](https://github.com/micoframework/micocss/releases/latest).
 
 ## 🎨 Getting Started
 
@@ -150,8 +145,8 @@ For all available utility classes, see our [Cheatsheet](https://micocss.com/chea
 
 - **Documentation**: [micocss.com](https://micocss.com) (Coming Soon)
 - **GitHub Repository**: [github.com/micoframework/micocss](https://github.com/micoframework/micocss)
-- **NPM Package**: [@micoframework/micocss](https://www.npmjs.com/package/@micoframework/micocss)
-- **CDN**: [jsdelivr.net](https://cdn.jsdelivr.net/npm/@micoframework/micocss@1.1.0/dist/css/mico.min.css)
+- **Latest Release**: [GitHub Releases](https://github.com/micoframework/micocss/releases/latest)
+- **CDN**: [jsdelivr.net](https://cdn.jsdelivr.net/gh/micoframework/micocss@latest/dist/css/mico.min.css)
 
 ## License & Usage
 
