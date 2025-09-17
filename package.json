@@ -15,6 +15,9 @@
     "build:utilities": "echo \"Utilities-only build included in build:css\"",
     "build:components": "echo \"Components-only build included in build:css\"",
 
+    "version:analyze": "node scripts/intelligent-version.js analyze",
+    "version:release": "node scripts/intelligent-version.js release",
+    "version:release-auto": "node scripts/intelligent-version.js release --auto-confirm",
     "size-check": "node -e \"const fs = require('fs'); const size = Math.round(fs.statSync('dist/css/mico.min.css').size / 1024); console.log(`Main CSS: ${size}KB`);\"",
     "test": "echo 'Tests passed - build verification only'",
     "ensure-dirs": "node -e \"const fs = require('fs'); const path = require('path'); const dirs = ['dist/css', 'dist/js']; dirs.forEach(dir => { if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true }); });\"",
