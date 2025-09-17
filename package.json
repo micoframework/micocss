@@ -1,6 +1,6 @@
 {
   "name": "mico-css-framework",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Development build tools for Mico CSS Framework",
   "private": true,
   "scripts": {
@@ -14,7 +14,6 @@
     "build:variables": "node build/build-variables.js",
     "build:utilities": "echo \"Utilities-only build included in build:css\"",
     "build:components": "echo \"Components-only build included in build:css\"",
-
     "version:analyze": "node scripts/intelligent-version.js analyze",
     "version:release": "node scripts/intelligent-version.js release",
     "version:release-auto": "node scripts/intelligent-version.js release --auto-confirm",

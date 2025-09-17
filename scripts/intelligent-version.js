@@ -38,12 +38,12 @@ class IntelligentVersioning {
 
     analyzeChanges() {
         console.log('🔍 Analyzing changes since last release...\n');
-        
+
         try {
             // Get git changes since last tag
             const lastTag = execSync('git describe --tags --abbrev=0', { encoding: 'utf8' }).trim();
             const changes = execSync(`git log ${lastTag}..HEAD --oneline`, { encoding: 'utf8' }).trim();
-            
+
             if (!changes) {
                 console.log('ℹ️  No changes since last release.');
                 return null;
@@ -57,7 +57,7 @@ class IntelligentVersioning {
             const hasBreaking = changes.includes('BREAKING') || changes.includes('!:');
             const hasFeatures = changes.includes('feat:') || changes.includes('feature:');
             const hasFixes = changes.includes('fix:') || changes.includes('bugfix:');
-            
+
             // Suggest version bump
             let suggestedBump = 'patch';
             if (hasBreaking) {
@@ -75,15 +75,34 @@ class IntelligentVersioning {
                 hasFixes
             };
         } catch (error) {
-            console.log('ℹ️  No previous tags found. This will be the first release.');
-            return {
-                lastTag: null,
-                changes: 'Initial release',
-                suggestedBump: 'minor',
-                hasBreaking: false,
-                hasFeatures: true,
-                hasFixes: false
-            };
+            console.log('ℹ️  No previous tags found. Analyzing recent commits...');
+
+            try {
+                // Get recent commits for first release
+                const recentCommits = execSync('git log --oneline -10', { encoding: 'utf8' }).trim();
+                console.log('📋 Recent commits:');
+                console.log(recentCommits);
+                console.log('');
+
+                return {
+                    lastTag: null,
+                    changes: recentCommits || 'Initial framework release',
+                    suggestedBump: 'minor',
+                    hasBreaking: false,
+                    hasFeatures: true,
+                    hasFixes: false
+                };
+            } catch (gitError) {
+                console.log('⚠️  Could not analyze git history. Using default first release.');
+                return {
+                    lastTag: null,
+                    changes: 'Initial Mico CSS Framework release',
+                    suggestedBump: 'minor',
+                    hasBreaking: false,
+                    hasFeatures: true,
+                    hasFixes: false
+                };
+            }
         }
     }
 
