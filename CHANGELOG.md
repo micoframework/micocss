@@ -5,6 +5,13 @@ All notable changes to the Mico CSS Framework will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] - 2025-09-17
+
+6a6449a chore: release v1.1.0
+ff00d89 feat: restore intelligent versioning system for GitHub releases
+4f3b8c1 feat: remove NPM ecosystem and switch to GitHub-only releases
+
+
 ## [1.1.0] - 2025-09-17
 
 ff00d89 feat: restore intelligent versioning system for GitHub releases
