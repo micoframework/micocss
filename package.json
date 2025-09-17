@@ -1,7 +1,7 @@
 {
   "name": "@micoframework/micocss",
   "version": "1.1.0",
-  "description": "A lightweight utility-first CSS framework with semantic double-dash naming convention. Perfect for WordPress, modern web apps, and any project requiring clean, maintainable CSS.",
+  "description": "An intelligent utility-first CSS framework for faster UI builds and zero CSS headaches. Perfect for frontend developers, WordPress, modern web apps, and any project requiring clean, maintainable CSS.",
   "main": "dist/css/mico.min.css",
   "scripts": {
     "dev": "npm run watch:css",
